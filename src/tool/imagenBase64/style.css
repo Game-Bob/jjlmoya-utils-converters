@@ -220,7 +220,7 @@
 
 .copy-btn:hover {
     background: var(--accent);
-    color: var(--text-on-accent);
+    color: var(--text-on-primary);
 }
 
 .code-wrapper {

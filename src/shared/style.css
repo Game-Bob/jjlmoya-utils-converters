@@ -67,7 +67,7 @@
 
 .upload-btn {
     background: var(--accent);
-    color: var(--text-on-accent);
+    color: var(--text-on-primary);
     padding: 0.7rem 1.75rem;
     border-radius: 50px;
     font-weight: 600;
@@ -217,7 +217,7 @@
 /* ── Download button ───────────────────────────────────── */
 .dl-btn {
     background: var(--accent);
-    color: var(--text-on-accent);
+    color: var(--text-on-primary);
     width: 34px;
     height: 34px;
     border-radius: 50%;
