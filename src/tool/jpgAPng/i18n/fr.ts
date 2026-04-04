@@ -65,37 +65,102 @@ const bibliography: JpgAPngLocaleContent['bibliography'] = [
 const seo: JpgAPngLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Convertisseur JPG vers PNG en Ligne Gratuit',
+    text: 'Convertisseur JPG vers PNG : Éditez sans perte de qualité et ajoutez de la transparence',
+    level: 2,
   },
   {
     type: 'paragraph',
-    html:
-      'La conversion de JPG en PNG est une opération fréquente dans le flux de travail des designers, développeurs web et éditeurs de contenu. Le format JPG, bien qu\'efficace pour les photographies, applique un algorithme de compression avec perte qui introduit des artefacts visuels chaque fois que le fichier est resauvegardé.',
+    html: 'Le <strong>JPG</strong> est imbattable pour les photos de caméra, mais il a un talon d\'Achille : chaque fois que vous sauvegardez le fichier, il applique à nouveau sa compression avec perte, dégradant progressivement les bords et les dégradés. Le <strong>PNG</strong> utilise une compression sans perte — une fois sauvegardé, les pixels sont immuables. Convertir un JPG en PNG est l\'étape essentielle lorsque vous devez préparer une image pour une édition intensive, ajouter un fond transparent ou l\'intégrer dans un flux de travail de design nécessitant plusieurs sauvegardes.',
+  },
+  {
+    type: 'title',
+    text: 'JPG ou PNG ? Quand utiliser chaque format',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'L\'une des principales raisons de convertir de JPG en PNG est de préparer une image pour son édition. Lorsque vous travaillez avec du texte superposé, des logos ou des éléments graphiques précis, le PNG empêche l\'accumulation d\'artefacts JPEG qui rendraient les bords du texte flous ou les couleurs plates moins définies.',
+    html: 'Le <strong>JPG</strong> est le roi de la photographie : fichiers légers, compatibles avec tout. Mais ses artefacts de compression s\'accumulent à chaque édition et re-sauvegarde. Si vous devez recadrer, retoucher ou ajouter du texte à une image à plusieurs reprises, partir d\'un JPG signifie introduire de la dégradation à chaque cycle. Le JPG est également dépourvu de canal alpha : il ne peut pas avoir de fonds transparents, ce qui l\'exclut pour les logos, icônes et éléments d\'interface.',
+  },
+  {
+    type: 'paragraph',
+    html: 'Le <strong>PNG</strong> est le bon choix pour les logos d\'entreprise, les captures d\'écran avec du texte net, les éléments d\'interface, les images de produits sur fond blanc à découper, ou tout actif graphique qui sera édité plus d\'une fois. La compression sans perte garantit que les bords du texte restent parfaitement définis et que les couleurs unies demeurent pures — sans bruit JPEG.',
+  },
+  {
+    type: 'title',
+    text: 'Comparatif : Conversion locale vs Cloud',
+    level: 3,
+  },
+  {
+    type: 'comparative',
+    items: [
+      {
+        title: 'Convertisseurs Cloud',
+        description: 'Outils qui envoient vos fichiers vers un serveur distant.',
+        icon: 'mdi:cloud-upload',
+        pointIcon: 'mdi:close-circle-outline',
+        points: [
+          'Latence réseau à l\'envoi et au téléchargement',
+          'Vos images sont stockées sur des serveurs tiers',
+          'Limites de taille et quota quotidien de conversions',
+          'Publicités intrusives et traceurs tiers',
+        ],
+      },
+      {
+        title: 'Notre Architecture Locale',
+        description: 'Traitement direct sur votre matériel via la technologie Vanilla JS.',
+        icon: 'mdi:laptop-mac',
+        highlight: true,
+        points: [
+          'Vitesse instantanée — zéro latence réseau',
+          'Confidentialité totale — 0 octet envoyé à l\'extérieur',
+          'Aucune limite de taille ni de nombre de fichiers',
+          'Interface épurée, sans publicités ni traçage',
+        ],
+      },
+    ],
+  },
+  {
+    type: 'title',
+    text: 'Comment ça fonctionne techniquement',
+    level: 3,
+  },
+  {
+    type: 'paragraph',
+    html: 'Le processus est entièrement local : le navigateur crée un <strong>Blob</strong> à partir du JPG sélectionné et le dessine sur un <strong>Canvas HTML5</strong> en mémoire. Une fois rendu, il appelle <code>toDataURL(\'image/png\')</code> — le codec PNG intégré au navigateur ré-encode chaque pixel sans appliquer aucune nouvelle compression avec perte. Le résultat est un PNG qui préserve fidèlement l\'état actuel du JPG : ni meilleur ni moins bon, simplement figé.',
+  },
+  {
+    type: 'paragraph',
+    html: 'Le PNG résultant utilise la compression sans perte DEFLATE, la même qu\'emploient des outils professionnels comme Photoshop ou GIMP. Sa taille sera plus grande que le JPG original — généralement 2 à 5 fois — car il stocke tous les pixels sans en éliminer. C\'est le prix à payer pour la fidélité et l\'éditabilité infinie.',
   },
   {
     type: 'tip',
-    html:
-      'N\'oubliez pas que la conversion d\'un JPG en PNG ne récupère pas la qualité perdue par la compression JPEG originale. Le PNG fige simplement l\'image dans son état actuel sans introduire de nouvelles pertes.',
+    title: 'Important : le PNG ne récupère pas la qualité JPEG',
+    html: 'Convertir un JPG en PNG <strong>ne récupère pas la qualité perdue</strong> lors de la compression JPEG originale. Si votre JPG présentait déjà des artefacts de blocs ou du bruit de couleur, le PNG les conservera intacts — il empêche simplement d\'en ajouter davantage. Considérez la conversion comme le fait de "figer" l\'état actuel de l\'image pour que les éditions futures ne la dégradent pas davantage.',
+  },
+  {
+    type: 'title',
+    text: 'Cas d\'usage et compatibilité',
+    level: 3,
+  },
+  {
+    type: 'list',
+    icon: 'mdi:check-circle',
+    items: [
+      'Logos et éléments de marque nécessitant un fond transparent après découpe.',
+      'Captures d\'écran avec texte qui seront éditées et re-sauvegardées plusieurs fois.',
+      'Images de produits pour l\'e-commerce nécessitant un fond blanc propre et découpable.',
+      'Ressources graphiques pour des présentations PowerPoint ou Google Slides.',
+      'Actifs d\'interface pour applications web et mobiles où la netteté des bords est critique.',
+    ],
+  },
+  {
+    type: 'title',
+    text: 'Conclusion',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'Les fichiers PNG sont généralement 2 à 5 fois plus grands que leurs équivalents JPG. Cette différence de taille est le prix de la compression sans perte et du support de la transparence.',
-  },
-  {
-    type: 'paragraph',
-    html:
-      'Le processus de conversion est totalement privé. Notre convertisseur n\'envoie aucune donnée à des serveurs externes ; tout se passe localement sur votre appareil. Vous pouvez convertir des images d\'entreprise, des photographies personnelles ou tout matériel sensible sans vous soucier de la confidentialité.',
-  },
-  {
-    type: 'paragraph',
-    html:
-      'Convertissez JPG en PNG gratuitement, en toute sécurité et sans limites directement dans votre navigateur. Idéal pour préparer des images à l\'édition ou pour préserver la qualité dans des flux de travail nécessitant plusieurs sauvegardes.',
+    html: 'La conversion de JPG en PNG est la première étape de tout flux de travail de design sérieux. Elle ne transforme pas la qualité originale, mais protège chaque pixel des éditions futures. Avec cet outil, le processus se déroule instantanément et de manière totalement privée — vos images professionnelles ou personnelles ne quittent à aucun moment votre appareil.',
   },
 ];
 

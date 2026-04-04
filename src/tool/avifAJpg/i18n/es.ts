@@ -65,37 +65,102 @@ const bibliography: AvifAJpgLocaleContent['bibliography'] = [
 const seo: AvifAJpgLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Convertidor AVIF a JPG Online Gratuito',
+    text: 'Convertidor AVIF a JPG: Compatibilidad Universal para Tus Imágenes Modernas',
+    level: 2,
   },
   {
     type: 'paragraph',
-    html:
-      'AVIF (AV1 Image File Format) es el formato de imagen más moderno y eficiente disponible actualmente. Desarrollado por la Alliance for Open Media, ofrece una compresión significativamente superior a WebP, PNG y JPG. Sin embargo, su adopción aún es limitada: muchas aplicaciones de escritorio, editores de imágenes, y especialmente lectores de fotos en dispositivos más antiguos, no son capaces de abrir archivos AVIF.',
+    html: 'AVIF (AV1 Image File Format) es el formato de imagen más eficiente disponible hoy en día. Desarrollado por la Alliance for Open Media y basado en el códec de video AV1, ofrece una compresión un 50% superior a JPG a la misma calidad visual. Sin embargo, esta ventaja técnica tiene un precio: AVIF no está soportado por Photoshop, Lightroom, el Visor de Fotos de Windows, ni por la mayoría de herramientas de edición y visualización tradicionales. Convertir a JPG resuelve este problema de raíz.',
+  },
+  {
+    type: 'title',
+    text: 'AVIF vs JPG: Eficiencia frente a Compatibilidad Universal',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'Convertir AVIF a JPG es la solución para maximizar la compatibilidad. El formato JPG tiene soporte universal en todos los dispositivos y sistemas operativos del mundo, desde smartphones de gama baja hasta televisores inteligentes. Al convertir de AVIF a JPG, garantizas que cualquier persona puede ver tu imagen sin problemas de compatibilidad.',
+    html: 'AVIF comprime de forma extraordinaria: una foto de alta resolución que en JPG ocupa 4 MB puede pesar apenas 2 MB en AVIF manteniendo la misma calidad percibida. Esto lo hace perfecto para la entrega web donde el rendimiento de carga es crítico. Sin embargo, fuera del navegador, AVIF es prácticamente invisible: ni Windows Explorer lo previsualiza, ni las cámaras lo exportan, ni los diseñadores lo reciben con agrado en sus flujos de trabajo.',
   },
   {
     type: 'paragraph',
-    html:
-      'Nuestro convertidor realiza el proceso completamente en el navegador. El archivo AVIF se decodifica por el motor de imagen nativo del navegador (los navegadores modernos soportan AVIF), se renderiza en un canvas HTML5 y se exporta como JPG de alta calidad. Todo esto sin enviar ningún dato a internet.',
+    html: 'El JPG lleva más de 30 años siendo el estándar universal de la fotografía digital. Está soportado por el 100% de los dispositivos, sistemas operativos, aplicaciones de oficina, redes sociales, impresoras y cualquier software que haya visto una imagen alguna vez. Cuando necesitas compartir, imprimir, editar o enviar por email, JPG es la garantía de que todo funcionará sin fricción.',
+  },
+  {
+    type: 'title',
+    text: 'Comparativa: Convertidores Cloud vs Nuestra Arquitectura Local',
+    level: 3,
+  },
+  {
+    type: 'comparative',
+    items: [
+      {
+        title: 'Convertidores Cloud',
+        description: 'Herramientas que suben tus archivos AVIF a un servidor remoto para procesarlos.',
+        icon: 'mdi:cloud-upload',
+        pointIcon: 'mdi:close-circle-outline',
+        points: [
+          'Tus fotos privadas viajan por internet a servidores externos',
+          'Tiempos de espera por subida y bajada del archivo',
+          'Límites de tamaño y número de conversiones gratuitas',
+          'Riesgo de retención de imágenes en servidores de terceros',
+        ],
+      },
+      {
+        title: 'Nuestra Arquitectura Local',
+        description: 'Procesamiento directo en tu navegador mediante tecnología Vanilla JS y Canvas API.',
+        icon: 'mdi:laptop-mac',
+        highlight: true,
+        points: [
+          'Tus imágenes nunca salen de tu dispositivo',
+          'Conversión instantánea sin latencia de red',
+          'Sin límites de archivos ni de tamaño',
+          'Apto para imágenes médicas, legales o confidenciales',
+        ],
+      },
+    ],
+  },
+  {
+    type: 'title',
+    text: 'Cómo funciona la conversión técnica en el navegador',
+    level: 3,
+  },
+  {
+    type: 'paragraph',
+    html: 'Los navegadores modernos como Chrome, Firefox y Edge incluyen soporte nativo para AVIF gracias a sus decodificadores integrados de AV1. Cuando cargas un archivo AVIF, el navegador lo decodifica en memoria y lo convierte a una representación de mapa de bits en RAM. Esta representación se pinta sobre un elemento <code>Canvas</code> HTML5 invisible.',
+  },
+  {
+    type: 'paragraph',
+    html: 'A continuación, el Canvas exporta la imagen usando <code>toBlob(\'image/jpeg\', quality)</code>, aplicando la compresión JPG estándar. Dado que JPG no soporta transparencias, cualquier canal alfa presente en el AVIF se rellena con fondo blanco antes de la exportación. El resultado es un archivo JPG de alta calidad listo para descarga directa, sin que ningún byte haya salido de tu navegador.',
   },
   {
     type: 'tip',
-    html:
-      'Si compartes imágenes con personas que usan dispositivos o programas más antiguos, convierte siempre de AVIF a JPG para garantizar que puedan verlas sin instalar software adicional.',
+    title: 'El equilibrio perfecto entre compresión y compatibilidad',
+    html: 'AVIF es un 50% más pequeño que JPG a igual calidad — pero JPG tiene compatibilidad del 100% con cualquier software. Si recibes imágenes AVIF del servidor y necesitas editarlas, enviarlas por email o abrirlas en herramientas de escritorio, conviértelas a JPG primero.',
+  },
+  {
+    type: 'title',
+    text: 'Casos de uso: cuándo convertir AVIF a JPG',
+    level: 3,
+  },
+  {
+    type: 'list',
+    icon: 'mdi:check-circle',
+    items: [
+      'Editar en Photoshop, Lightroom, GIMP u otro software de escritorio.',
+      'Compartir imágenes con usuarios en dispositivos o sistemas operativos antiguos.',
+      'Adjuntar en emails para garantizar visualización en cualquier cliente de correo.',
+      'Publicar en plataformas que no aceptan AVIF como formato de subida.',
+      'Imprimir: los servicios de impresión profesional trabajan con JPG de forma nativa.',
+    ],
+  },
+  {
+    type: 'title',
+    text: 'Conclusión: La compatibilidad universal en un solo paso',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'AVIF puede lograr imágenes entre un 50% y un 60% más pequeñas que JPEG a calidad visual equivalente. Sin embargo, la compatibilidad universal de JPG lo sigue haciendo imprescindible para distribución masiva.',
-  },
-  {
-    type: 'paragraph',
-    html:
-      'Convierte AVIF a JPG de forma gratuita, local y sin límites. Máxima compatibilidad universal para tus imágenes sin comprometer la privacidad de tus archivos.',
+    html: 'AVIF es el futuro de la compresión de imágenes, pero el presente exige compatibilidad. Nuestro convertidor te permite obtener lo mejor de ambos mundos: recibe y almacena imágenes en AVIF para máxima eficiencia, y conviértelas a JPG al instante cuando necesites que funcionen en cualquier contexto. Todo de forma privada, gratuita y sin límites.',
   },
 ];
 

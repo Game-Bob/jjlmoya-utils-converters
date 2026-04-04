@@ -69,37 +69,102 @@ const bibliography: WebpAJpgLocaleContent['bibliography'] = [
 const seo: WebpAJpgLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Convertidor WebP a JPG Online Gratuito',
+    text: 'Convertidor WebP a JPG: Compatibilidad Universal sin Comprometer tu Privacidad',
+    level: 2,
   },
   {
     type: 'paragraph',
-    html:
-      'El formato WebP es el estándar moderno de Google para imágenes web, pero su compatibilidad con software antiguo y dispositivos más limitados puede ser problemática. Convertir WebP a JPG garantiza que tus imágenes puedan ser abiertas por prácticamente cualquier programa, dispositivo o plataforma del mundo, ya que JPG es el formato fotográfico más universalmente soportado.',
+    html: 'El formato <strong>WebP</strong> es la apuesta de Google por la eficiencia: imágenes más ligeras con calidad comparable al JPG tradicional. Sin embargo, su compatibilidad sigue siendo un problema real. Clientes de correo electrónico como Outlook, software de diseño heredado, aplicaciones de mensajería y flujos de trabajo corporativos todavía dependen del omnipresente <strong>JPG</strong>. Convertir WebP a JPG es el puente entre la web moderna y el mundo real.',
+  },
+  {
+    type: 'title',
+    text: 'WebP vs JPG: ¿Cuándo usar cada formato?',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'Un aspecto técnico importante a considerar es el manejo de las transparencias. El formato JPG no soporta el canal alfa, por lo que cualquier área transparente presente en el archivo WebP original será sustituida automáticamente por un fondo blanco sólido durante la conversión. Si necesitas preservar la transparencia, considera usar el formato PNG como destino en su lugar.',
+    html: 'WebP brilla en entornos controlados: sitios web modernos con Chrome, Edge o Firefox donde se puede garantizar la compatibilidad del navegador. Su compresión superior reduce el peso de los archivos entre un 25 y un 35 % respecto a JPG equivalente, mejorando los tiempos de carga y las métricas Core Web Vitals. Es el formato ideal cuando controlas el entorno de visualización.',
   },
   {
     type: 'paragraph',
-    html:
-      'La conversión se realiza completamente en tu navegador mediante JavaScript y el Canvas API de HTML5. No se requiere ninguna instalación de software adicional y los archivos nunca se envían a ningún servidor externo, lo que garantiza una privacidad total para imágenes personales, corporativas o de cualquier naturaleza sensible.',
+    html: 'JPG, por otro lado, funciona en <em>absolutamente todos los contextos</em>: correos electrónicos adjuntos, presentaciones de PowerPoint, documentos Word, impresoras domésticas, aplicaciones de edición antiguas y plataformas de redes sociales sin excepción. Si necesitas que alguien abra tu imagen sin fricción técnica alguna, JPG es la respuesta correcta.',
+  },
+  {
+    type: 'title',
+    text: 'Comparativa: Conversión Local vs Nube',
+    level: 3,
+  },
+  {
+    type: 'comparative',
+    items: [
+      {
+        title: 'Convertidores Cloud',
+        description: 'Herramientas que suben tus archivos a un servidor remoto.',
+        icon: 'mdi:cloud-upload',
+        pointIcon: 'mdi:close-circle-outline',
+        points: [
+          'Tus fotos viajan por Internet a servidores desconocidos',
+          'Tiempo de espera por subida y procesamiento remoto',
+          'Límites de tamaño y conversiones gratuitas por día',
+          'Riesgo real de retención de datos en servidores de terceros',
+        ],
+      },
+      {
+        title: 'Nuestra Arquitectura Local',
+        description: 'Procesamiento directo en tu hardware mediante tecnología Vanilla JS.',
+        icon: 'mdi:laptop-mac',
+        highlight: true,
+        points: [
+          'Cero bytes enviados: todo ocurre en tu RAM',
+          'Velocidad instantánea sin depender de tu conexión',
+          'Sin límites de tamaño ni número de archivos',
+          'Ideal para fotos personales, médicas o corporativas',
+        ],
+      },
+    ],
+  },
+  {
+    type: 'title',
+    text: 'Cómo funciona técnicamente',
+    level: 3,
+  },
+  {
+    type: 'paragraph',
+    html: 'Cuando arrastras un archivo WebP a la herramienta, el navegador lo decodifica de forma nativa usando su motor de renderizado interno. A continuación, el archivo se dibuja sobre un elemento <strong>Canvas HTML5</strong> invisible. Dado que JPG no admite transparencias, el algoritmo rellena previamente el canvas con un fondo blanco sólido antes de componer la imagen encima.',
+  },
+  {
+    type: 'paragraph',
+    html: 'El paso final es la exportación: el método <code>toDataURL(\'image/jpeg\')</code> del Canvas convierte los píxeles del lienzo en un flujo de bytes JPG comprimido con alta calidad. Este flujo se entrega directamente al sistema de descarga del navegador, sin ninguna comunicación de red. El proceso completo dura milisegundos incluso para imágenes de varios megapíxeles.',
   },
   {
     type: 'tip',
-    html:
-      'Para mejores resultados, convierte WebP a JPG cuando necesites compartir fotos por email o redes sociales donde el tamaño importa. Si necesitas transparencia, usa WebP a PNG en su lugar.',
+    title: 'Consejo de compatibilidad',
+    html: 'Cuando compartas fotos con usuarios no técnicos o las envíes por correo electrónico, usa siempre JPG. Es el formato con compatibilidad garantizada al 100 % en cualquier cliente de correo, sistema operativo o dispositivo, sin excepciones ni sorpresas desagradables.',
+  },
+  {
+    type: 'title',
+    text: 'Casos de uso y compatibilidad',
+    level: 3,
+  },
+  {
+    type: 'list',
+    icon: 'mdi:check-circle',
+    items: [
+      'Adjuntar fotos en correos electrónicos desde Outlook, Gmail o Apple Mail.',
+      'Insertar imágenes en documentos Word, Excel o presentaciones PowerPoint.',
+      'Publicar en plataformas de redes sociales que rechazan WebP.',
+      'Compartir por WhatsApp o aplicaciones de mensajería con soporte limitado de formatos.',
+      'Imprimir fotografías en servicios de impresión que solo aceptan JPG o PNG.',
+    ],
+  },
+  {
+    type: 'title',
+    text: 'Conclusión',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'El formato JPG tiene una compatibilidad del 100% entre todos los navegadores, sistemas operativos y dispositivos, mientras que WebP puede no ser compatible con algunos lectores de imágenes y editores más antiguos.',
-  },
-  {
-    type: 'paragraph',
-    html:
-      'Convierte WebP a JPG de forma local, gratuita y sin límites. Sin servidores, sin registro, compatible con todos tus dispositivos y archivos.',
+    html: 'WebP es el futuro de la imagen web, pero JPG sigue siendo el rey de la compatibilidad universal. Esta herramienta te permite cruzar ese puente en segundos, de forma completamente privada y sin instalar nada. Tu imagen nunca abandona tu dispositivo.',
   },
 ];
 

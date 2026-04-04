@@ -65,37 +65,102 @@ const bibliography: BmpAPngLocaleContent['bibliography'] = [
 const seo: BmpAPngLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Free Online BMP to PNG Converter',
+    text: 'BMP to PNG Converter: The Lossless Replacement for BMP Files',
+    level: 2,
   },
   {
     type: 'paragraph',
-    html:
-      'Both BMP and PNG are lossless image formats, meaning no visual information is discarded during storage. However, there is a fundamental difference in efficiency: BMP stores data raw without any compression, while PNG uses the Deflate compression algorithm to reduce file size without losing a single pixel of information.',
+    html: 'BMP is an uncompressed format that occupies enormous amounts of space with no technical benefit over PNG. Both are lossless formats: they store every pixel with absolute precision. But PNG adds lossless compression via the Deflate algorithm, reducing file size by 3 to 5 times without sacrificing a single bit of visual information. PNG is, in essence, what BMP always wanted to be.',
+  },
+  {
+    type: 'title',
+    text: 'BMP vs PNG: same quality, radically different file size',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'Converting BMP to PNG is particularly useful when working with screenshots, UI graphics, flat-color designs or any image where color accuracy is a priority. PNG will preserve every color value exactly the same as the original BMP, but with a considerably smaller file size.',
+    html: 'The fundamental difference between BMP and PNG is not image quality — both are lossless — but storage efficiency. BMP stores pixels raw: no compression, no optimization, no consideration for space. PNG analyzes repeated pixel patterns and encodes them compactly using Deflate, the same algorithm used by ZIP.',
+  },
+  {
+    type: 'paragraph',
+    html: 'Beyond superior compression, PNG adds a feature BMP never had: full alpha channel for transparency. Screenshots, UI graphics, logos, technical diagrams — all these image types benefit enormously from conversion to PNG, which preserves every exact color value while reducing file weight to a fraction of the original.',
+  },
+  {
+    type: 'title',
+    text: 'Architecture Comparison: Local vs Cloud',
+    level: 3,
+  },
+  {
+    type: 'comparative',
+    items: [
+      {
+        title: 'Cloud Converters',
+        description: 'Services that process your BMP files on third-party servers.',
+        icon: 'mdi:cloud-upload',
+        pointIcon: 'mdi:close-circle-outline',
+        points: [
+          'Your work images travel over the internet',
+          'Waiting time proportional to the BMP size',
+          'Size limits in free plans',
+          'Risk of analysis or retention of your files',
+        ],
+      },
+      {
+        title: 'Our Local Architecture',
+        description: 'Direct processing on your hardware using Vanilla JS technology.',
+        icon: 'mdi:laptop-mac',
+        highlight: true,
+        points: [
+          'BMP is processed locally, never leaves your device',
+          'Instant conversion in milliseconds',
+          'No size or file count limits',
+          'Total privacy: 0 bytes sent externally',
+        ],
+      },
+    ],
+  },
+  {
+    type: 'title',
+    text: 'How the local BMP to PNG conversion works',
+    level: 3,
+  },
+  {
+    type: 'paragraph',
+    html: 'The process uses the HTML5 Canvas API. The BMP file is read with the browser\'s <code>FileReader</code> API and decoded as a Blob in memory. That Blob is drawn onto an invisible HTML5 canvas. Then the <code>toDataURL(\'image/png\')</code> method applies the browser\'s native PNG compression algorithm and generates the resulting file.',
+  },
+  {
+    type: 'paragraph',
+    html: 'Unlike JPG conversion, PNG conversion is completely lossless: every color value from the original BMP is preserved exactly in the resulting PNG. No artifacts, no edge smoothing, no information loss. The final file is visually identical to the BMP but takes 3 to 5 times less disk space.',
   },
   {
     type: 'tip',
-    html:
-      'If you need maximum editing software compatibility and perfect color accuracy, convert BMP to PNG instead of JPG. Lossless PNG guarantees colors never deteriorate.',
+    title: 'PNG is the modern standard for everywhere BMP was used',
+    html: 'If you work with legacy software that exports BMP (industrial machinery, control systems, medical diagnostic software), converting to PNG is the best decision. PNG is compatible with every modern application, maintains perfect color fidelity, and takes up to 5 times less space. It is the simplest and safest migration possible.',
+  },
+  {
+    type: 'title',
+    text: 'Use cases and compatibility of the resulting PNG',
+    level: 3,
+  },
+  {
+    type: 'list',
+    icon: 'mdi:check-circle',
+    items: [
+      'Screenshots and UI graphics with exact colors preserved.',
+      'Technical documentation images and software diagrams.',
+      'Exports from CAD, industrial systems and legacy software.',
+      'Logos and brand identity elements with added transparency support.',
+      'Compatible with Adobe Photoshop, GIMP, Figma and all modern editors.',
+    ],
+  },
+  {
+    type: 'title',
+    text: 'Conclusion: PNG is what BMP always should have been',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'A typical full-screen BMP (1920x1080) takes about 6 MB. The same content in PNG can take 1-3 MB, achieving a 50-85% reduction without any quality loss.',
-  },
-  {
-    type: 'paragraph',
-    html:
-      'Our converter performs all processing locally. The BMP file is decoded in memory, drawn on an HTML5 canvas and exported as PNG using the browser\'s native compression algorithm. No data is transferred to external servers.',
-  },
-  {
-    type: 'paragraph',
-    html:
-      'Convert BMP to PNG without quality loss, for free and with complete privacy. The best option for preserving exact colors with an optimized file size.',
+    html: 'Converting BMP to PNG is the most natural modernization of an image file: same lossless quality, greater compatibility, transparency support, and 3 to 5 times less weight. Our tool performs this conversion in milliseconds, directly in your browser, without uploading any file to any server.',
   },
 ];
 

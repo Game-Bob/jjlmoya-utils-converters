@@ -65,37 +65,102 @@ const bibliography: GifAWebpLocaleContent['bibliography'] = [
 const seo: GifAWebpLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Free Online GIF to WebP Converter',
+    text: 'GIF to WebP Converter: The Modern Replacement for Heavy Animations',
+    level: 2,
   },
   {
     type: 'paragraph',
-    html:
-      'Converting GIF to WebP combines the best features of both formats. GIF can have transparency and multiple frames, while WebP can be static, lighter and with better quality. By extracting the first frame of the GIF and exporting it as WebP, you get a modern, ultra-lightweight image with full transparency support.',
+    html: 'Animated GIFs are the dinosaurs of modern web content: they consume disproportionate bandwidth, degrade the PageSpeed of any page, and are responsible for a significant percentage of total weight on thousands of websites. A typical 5 MB animated GIF can become a WebP animation under 1 MB with the same visual quality. WebP is the modern successor Google specifically designed to replace GIF on the web.',
+  },
+  {
+    type: 'title',
+    text: 'GIF vs WebP: the gap between the past and present of the web',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'The WebP format offers superior compression both lossy and lossless. For images extracted from GIFs with few colors or large uniform areas, lossless WebP compression can produce extraordinarily small files while maintaining perfect quality.',
+    html: 'GIF is a 1987 format not originally designed for animations — that feature arrived as a later hack. Its 256-color palette, inefficient compression, and inability to handle audio make it an obsolete format. WebP, developed by Google in 2010, offers superior compression both lossy and lossless, native animation support, and full alpha channel.',
+  },
+  {
+    type: 'paragraph',
+    html: 'For a web developer, replacing GIFs with WebP on pages can mean a 10-30 point improvement in Google PageSpeed score. Less page weight means better Core Web Vitals, better SEO rankings, and lower bandwidth costs on servers. It is not just an aesthetic improvement — it is a technical architecture decision.',
+  },
+  {
+    type: 'title',
+    text: 'Architecture Comparison: Local vs Cloud',
+    level: 3,
+  },
+  {
+    type: 'comparative',
+    items: [
+      {
+        title: 'Cloud Converters',
+        description: 'Platforms that process your GIFs on remote servers.',
+        icon: 'mdi:cloud-upload',
+        pointIcon: 'mdi:close-circle-outline',
+        points: [
+          'Your animations travel over the internet to third-party servers',
+          'Waiting time due to network latency on upload and download',
+          'Size limits (large GIFs are often rejected)',
+          'Risk of file retention and analysis',
+        ],
+      },
+      {
+        title: 'Our Local Architecture',
+        description: 'Direct processing on your hardware using Vanilla JS technology.',
+        icon: 'mdi:laptop-mac',
+        highlight: true,
+        points: [
+          'The GIF never leaves your device',
+          'Instant conversion with no network wait',
+          'No size limits: process GIFs of any weight',
+          'Total privacy: 0 bytes sent externally',
+        ],
+      },
+    ],
+  },
+  {
+    type: 'title',
+    text: 'How the local GIF to WebP conversion works',
+    level: 3,
+  },
+  {
+    type: 'paragraph',
+    html: 'The local conversion uses the HTML5 Canvas API. The GIF is loaded as a native browser Image element. By drawing it onto a canvas, the graphics engine captures the first animation frame with all its transparency information. The <code>toDataURL(\'image/webp\')</code> method exports the frame as WebP directly in RAM.',
+  },
+  {
+    type: 'paragraph',
+    html: 'WebP supports full alpha channel, so GIF transparencies are preserved in the resulting WebP without needing to add a background. WebP compression algorithms are significantly more efficient than GIF or PNG, which explains the drastic file size reduction of the final output.',
   },
   {
     type: 'tip',
-    html:
-      'Use GIF to WebP conversion to modernize your collection of animated avatars or stickers: you\'ll get ultra-compressed static images with perfect transparency, ideal for the web.',
+    title: 'Guaranteed PageSpeed improvement',
+    html: 'A 5 MB animated GIF can become a WebP under 1 MB. If you have GIFs on your website pages, replacing them with WebP can immediately improve your Largest Contentful Paint (LCP) and Total Blocking Time (TBT), directly impacting SEO rankings.',
+  },
+  {
+    type: 'title',
+    text: 'Use cases and compatibility of the resulting WebP',
+    level: 3,
+  },
+  {
+    type: 'list',
+    icon: 'mdi:check-circle',
+    items: [
+      'Replacing GIFs on web pages to improve PageSpeed scores.',
+      'Optimized avatars and stickers for Discord, Slack and modern platforms.',
+      'Banners and visuals for digital marketing campaigns.',
+      'Animations in progressive web applications (PWA).',
+      'Compatible with Chrome, Edge, Firefox, Safari 14+ and all modern browsers.',
+    ],
+  },
+  {
+    type: 'title',
+    text: 'Conclusion: migrate your GIFs to the 21st century',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'A 300 KB GIF can produce a static WebP of the first frame of just 15-50 KB if it has uniform areas and transparency. The size reduction can exceed 80%.',
-  },
-  {
-    type: 'paragraph',
-    html:
-      'The entire conversion process happens locally in your browser. The GIF file is decoded in memory, the first frame is rendered on an HTML5 canvas and exported as WebP. No servers are involved, guaranteeing maximum privacy.',
-  },
-  {
-    type: 'paragraph',
-    html:
-      'Convert GIF to static WebP for free and offline. Better compression than PNG and JPG, with transparency support. Processed locally without server contact.',
+    html: 'Every GIF on your website is a missed optimization opportunity. Our tool converts GIFs to WebP instantly, privately, and without limits, directly in your browser. The result: files up to 5 times smaller, perfect transparency, and compatibility with all modern browsers.',
   },
 ];
 

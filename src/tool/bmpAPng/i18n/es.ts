@@ -65,37 +65,102 @@ const bibliography: BmpAPngLocaleContent['bibliography'] = [
 const seo: BmpAPngLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Convertidor BMP a PNG Online Gratuito',
+    text: 'Convertidor de BMP a PNG: El Reemplazo Sin Pérdida del Formato BMP',
+    level: 2,
   },
   {
     type: 'paragraph',
-    html:
-      'Tanto BMP como PNG son formatos de imagen sin pérdida, lo que significa que no se descarta información visual durante el almacenamiento. Sin embargo, existe una diferencia fundamental en cuanto a eficiencia: BMP almacena los datos de manera cruda sin ningún tipo de compresión, mientras que PNG utiliza el algoritmo de compresión Deflate para reducir el tamaño del archivo sin perder un solo píxel de información.',
+    html: 'El BMP es un formato sin compresión que ocupa enormes cantidades de espacio sin ningún beneficio técnico frente al PNG. Ambos son formatos sin pérdida: guardan cada píxel con exactitud absoluta. Pero el PNG añade compresión lossless mediante el algoritmo Deflate, lo que reduce el tamaño del archivo entre 3 y 5 veces sin sacrificar ni un solo bit de información visual. El PNG es, en esencia, lo que el BMP siempre quiso ser.',
+  },
+  {
+    type: 'title',
+    text: 'BMP vs PNG: misma calidad, tamaño radicalmente diferente',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'La conversión de BMP a PNG es especialmente útil cuando trabajas con capturas de pantalla, gráficos de interfaz de usuario, diseños con colores planos o cualquier imagen donde la exactitud de color es prioritaria. PNG preservará cada valor de color exactamente igual que el BMP original, pero con un tamaño de archivo considerablemente más pequeño.',
+    html: 'La diferencia fundamental entre BMP y PNG no está en la calidad de imagen — ambos son sin pérdida — sino en la eficiencia de almacenamiento. El BMP almacena píxeles en bruto: sin compresión, sin optimización, sin consideración por el espacio. El PNG analiza los patrones de píxeles repetidos y los codifica de forma compacta mediante Deflate, el mismo algoritmo que usa ZIP.',
   },
   {
     type: 'paragraph',
-    html:
-      'Nuestro convertidor realiza todo el proceso localmente. El archivo BMP se decodifica en memoria, se dibuja en un canvas HTML5 y se exporta como PNG usando el algoritmo de compresión nativo del navegador. No hay transferencia de datos a servidores externos.',
+    html: 'Además de la compresión superior, el PNG añade una característica que el BMP nunca tuvo: canal alfa completo para transparencias. Capturas de pantalla, gráficos de interfaz, logotipos, diagramas técnicos: todos estos tipos de imágenes se benefician enormemente de la conversión a PNG, que mantiene cada valor de color exacto mientras reduce el peso del archivo a una fracción del original.',
+  },
+  {
+    type: 'title',
+    text: 'Comparativa de Arquitectura: Local vs Nube',
+    level: 3,
+  },
+  {
+    type: 'comparative',
+    items: [
+      {
+        title: 'Convertidores Cloud',
+        description: 'Servicios que procesan tus archivos BMP en servidores de terceros.',
+        icon: 'mdi:cloud-upload',
+        pointIcon: 'mdi:close-circle-outline',
+        points: [
+          'Tus imágenes de trabajo viajan por internet',
+          'Tiempo de espera proporcional al tamaño del BMP',
+          'Límites de tamaño en planes gratuitos',
+          'Riesgo de análisis o retención de tus archivos',
+        ],
+      },
+      {
+        title: 'Nuestra Arquitectura Local',
+        description: 'Procesamiento directo en tu hardware mediante tecnología Vanilla JS.',
+        icon: 'mdi:laptop-mac',
+        highlight: true,
+        points: [
+          'El BMP se procesa localmente, nunca sale de tu dispositivo',
+          'Conversión instantánea en milisegundos',
+          'Sin límites de tamaño ni de número de archivos',
+          'Privacidad total: 0 bytes enviados al exterior',
+        ],
+      },
+    ],
+  },
+  {
+    type: 'title',
+    text: 'Cómo funciona la conversión local de BMP a PNG',
+    level: 3,
+  },
+  {
+    type: 'paragraph',
+    html: 'El proceso utiliza el Canvas API de HTML5. El archivo BMP se lee con la API <code>FileReader</code> del navegador y se decodifica como un Blob en memoria. Ese Blob se dibuja sobre un canvas HTML5 invisible. A continuación, el método <code>toDataURL(\'image/png\')</code> aplica el algoritmo de compresión PNG nativo del navegador y genera el archivo resultante.',
+  },
+  {
+    type: 'paragraph',
+    html: 'A diferencia de la conversión a JPG, la conversión a PNG es completamente lossless: cada valor de color del BMP original se preserva exactamente en el PNG resultante. No hay artefactos, no hay suavizado de bordes, no hay pérdida de información. El archivo final es visualmente idéntico al BMP pero ocupa entre 3 y 5 veces menos espacio en disco.',
   },
   {
     type: 'tip',
-    html:
-      'Si necesitas máxima compatibilidad con software de edición y precisión de color perfecta, convierte BMP a PNG en lugar de JPG. El PNG lossless garantiza que los colores no se deterioren nunca.',
+    title: 'PNG es el estándar moderno donde BMP se usaba antes',
+    html: 'Si trabajas con software antiguo que exporta BMP (maquinaria industrial, sistemas de control, software de diagnóstico médico), convertir a PNG es la mejor decisión. PNG es compatible con absolutamente todos los programas modernos, mantiene la fidelidad de color perfecta y ocupa hasta 5 veces menos espacio. Es la migración más sencilla y segura posible.',
+  },
+  {
+    type: 'title',
+    text: 'Casos de uso y compatibilidad del PNG resultante',
+    level: 3,
+  },
+  {
+    type: 'list',
+    icon: 'mdi:check-circle',
+    items: [
+      'Capturas de pantalla y gráficos de interfaz con colores exactos preservados.',
+      'Imágenes de documentación técnica y diagramas de software.',
+      'Exportaciones de CAD, sistemas industriales y software legacy.',
+      'Logotipos y elementos de identidad visual con transparencia añadida.',
+      'Compatible con Adobe Photoshop, GIMP, Figma y todos los editores modernos.',
+    ],
+  },
+  {
+    type: 'title',
+    text: 'Conclusión: el PNG es lo que el BMP siempre debió ser',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'Un archivo BMP típico de pantalla completa (1920x1080) ocupa unos 6 MB. El mismo contenido en PNG puede ocupar entre 1 y 3 MB, logrando una reducción del 50-85% sin ninguna pérdida de calidad.',
-  },
-  {
-    type: 'paragraph',
-    html:
-      'Convierte BMP a PNG sin pérdida de calidad, gratuitamente y con total privacidad. La mejor opción para preservar colores exactos con un tamaño de archivo optimizado.',
+    html: 'Convertir BMP a PNG es la modernización más natural de un archivo de imagen: misma calidad sin pérdida, mayor compatibilidad, soporte de transparencia y entre 3 y 5 veces menos peso. Nuestra herramienta realiza esta conversión en milisegundos, directamente en tu navegador, sin subir ningún archivo a ningún servidor.',
   },
 ];
 

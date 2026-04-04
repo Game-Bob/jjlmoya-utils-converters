@@ -65,42 +65,102 @@ const bibliography: SvgAPngLocaleContent['bibliography'] = [
 const seo: SvgAPngLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Convertidor SVG a PNG Online Gratuito',
+    text: 'Convertidor SVG a PNG: Del Vector Infinito al Raster Universal',
+    level: 2,
   },
   {
     type: 'paragraph',
-    html:
-      'SVG (Scalable Vector Graphics) es un formato de imagen basado en XML que describe gráficos vectoriales. Sus principales ventajas son que escala perfectamente a cualquier tamaño sin perder calidad y que los archivos son generalmente pequeños. Sin embargo, no todos los programas, aplicaciones o plataformas de redes sociales soportan SVG directamente.',
+    html: '<strong>SVG</strong> (Scalable Vector Graphics) es la elección perfecta para el diseño web: escalable al infinito, ligero y editable con cualquier editor de código. Pero cuando necesitas usar ese logo o icono en una aplicación móvil, compartirlo en redes sociales o insertarlo en una presentación de PowerPoint, te topas con una barrera: la mayoría de estas plataformas no soportan SVG. El formato <strong>PNG</strong> es la solución universal: rasterizado, con canal alfa y compatible en absolutamente todos los contextos.',
+  },
+  {
+    type: 'title',
+    text: 'SVG vs PNG: Vectores para la Web, Raster para el Mundo',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'Convertir SVG a PNG es la solución cuando necesitas una versión rasterizada de tu gráfico vectorial. El PNG resultante es universalmente compatible y, gracias a su soporte para canal alfa, preserva todas las transparencias que tuviera el SVG original. Nuestro convertidor renderiza el SVG a doble resolución (2x) para garantizar que el PNG sea nítido incluso en pantallas de alta densidad como Retina o 4K.',
+    html: 'SVG almacena la imagen como instrucciones matemáticas: una curva de Bézier, un gradiente, un polígono. Esto significa que el mismo archivo luce perfectamente a 16px o a 16.000px. Es el formato ideal para el código de tu web, para animaciones CSS y para cualquier elemento que necesite adaptarse a diferentes resoluciones de pantalla sin pérdida de calidad.',
   },
   {
     type: 'paragraph',
-    html:
-      'El proceso de conversión utiliza el elemento Image nativo del navegador para cargar el SVG, lo dibuja sobre un Canvas HTML5 a escala 2x y exporta el resultado como PNG. Todo esto ocurre localmente en tu dispositivo sin ninguna comunicación con servidores externos.',
+    html: 'PNG almacena la imagen como una cuadrícula de píxeles con información de color y transparencia para cada uno. Es un formato <strong>sin pérdida</strong>, lo que significa que la calidad se preserva íntegramente. Una vez que un SVG se rasteriza a PNG, la resolución queda fijada. Por eso es crucial elegir bien el tamaño de exportación: nuestra herramienta renderiza a doble escala (2x) para garantizar nitidez en pantallas Retina y 4K.',
+  },
+  {
+    type: 'title',
+    text: 'Comparativa: Conversión Local vs Nube',
+    level: 3,
+  },
+  {
+    type: 'comparative',
+    items: [
+      {
+        title: 'Convertidores Cloud',
+        description: 'Herramientas que suben tus archivos a un servidor remoto.',
+        icon: 'mdi:cloud-upload',
+        pointIcon: 'mdi:close-circle-outline',
+        points: [
+          'Tu código SVG viaja a servidores externos',
+          'Renderizado remoto con calidad inconsistente',
+          'Tiempo de espera por subida y procesamiento',
+          'Limitaciones en el tamaño de archivo SVG',
+        ],
+      },
+      {
+        title: 'Nuestra Arquitectura Local',
+        description: 'Procesamiento directo en tu hardware mediante tecnología Vanilla JS.',
+        icon: 'mdi:laptop-mac',
+        highlight: true,
+        points: [
+          'Tu SVG nunca abandona tu navegador',
+          'Renderizado nativo del motor del navegador, máxima fidelidad',
+          'PNG a 2x de resolución para pantallas de alta densidad',
+          'Transparencias preservadas con canal alfa completo',
+        ],
+      },
+    ],
+  },
+  {
+    type: 'title',
+    text: 'Cómo funciona técnicamente',
+    level: 3,
+  },
+  {
+    type: 'paragraph',
+    html: 'El proceso comienza cargando el archivo SVG en un elemento <strong>Image</strong> de JavaScript. Una vez que el motor del navegador ha parseado y renderizado el XML vectorial, la imagen resultante se dibuja sobre un <strong>Canvas HTML5</strong> cuyas dimensiones son el doble del tamaño original del SVG (escala 2x). Esto produce un PNG con el doble de píxeles por dimensión, ideal para pantallas de alta resolución.',
+  },
+  {
+    type: 'paragraph',
+    html: 'A diferencia de la conversión a JPG, al exportar a PNG el canvas retiene el canal alfa completo: las zonas transparentes del SVG original se convierten en píxeles totalmente transparentes en el PNG resultante. No hay relleno de fondo blanco. La exportación usa el método <code>toDataURL(\'image/png\')</code> con compresión sin pérdida.',
   },
   {
     type: 'tip',
-    html:
-      'Para obtener la mejor calidad en el PNG resultante, asegúrate de que tu SVG tenga definidas las dimensiones (atributos width y height o viewBox). Un SVG sin dimensiones definidas podría renderizarse a un tamaño incorrecto.',
+    title: 'Consejo antes de rasterizar',
+    html: 'Elige bien el tamaño de exportación PNG porque la rasterización es un proceso de un solo sentido: no podrás recuperar los vectores desde el PNG resultante. Guarda siempre el SVG original como fuente maestra y genera los PNG a la resolución más alta que puedas necesitar.',
+  },
+  {
+    type: 'title',
+    text: 'Casos de uso y compatibilidad',
+    level: 3,
+  },
+  {
+    type: 'list',
+    icon: 'mdi:check-circle',
+    items: [
+      'Exportar logos vectoriales para presentaciones PowerPoint o Google Slides.',
+      'Crear iconos PNG para aplicaciones iOS, Android o Progressive Web Apps.',
+      'Compartir diseños SVG en Instagram, LinkedIn u otras redes sociales.',
+      'Insertar ilustraciones vectoriales en documentos Word o PDF.',
+      'Generar miniaturas PNG de gráficos SVG para previsualización en CMS.',
+    ],
+  },
+  {
+    type: 'title',
+    text: 'Conclusión',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'Los archivos SVG son escalables infinitamente, pero un PNG a 2x resolución de un SVG de 256x256 producirá una imagen de 512x512 píxeles, apta para la mayoría de los usos en pantallas modernas de alta densidad.',
-  },
-  {
-    type: 'paragraph',
-    html:
-      'Casos de uso habituales: exportar logos vectoriales para usarlos en presentaciones de PowerPoint o Word, crear versiones PNG de iconos para aplicaciones móviles, compartir diseños SVG en plataformas que no los soportan, y generar favicons PNG a partir de tu logo SVG.',
-  },
-  {
-    type: 'paragraph',
-    html:
-      'Convierte SVG a PNG HD de forma gratuita, privada y con preservación de transparencias. Renderizado a doble escala para pantallas Retina y 4K.',
+    html: 'SVG es el lenguaje de los vectores; PNG es el pasaporte al resto del mundo digital. Esta herramienta rasteriza tus SVG a resolución 2x con transparencias intactas, directamente en tu navegador, sin que ningún byte de tu diseño viaje a ningún servidor externo.',
   },
 ];
 

@@ -65,32 +65,102 @@ const bibliography: PngAIcoLocaleContent['bibliography'] = [
 const seo: PngAIcoLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Convertisseur PNG vers ICO en Ligne Gratuit',
+    text: 'Convertisseur PNG vers ICO : La Meilleure Source pour des Favicons à Transparence Parfaite',
+    level: 2,
   },
   {
     type: 'paragraph',
-    html:
-      'Le format ICO (Icon) est le standard de Microsoft pour les icônes d\'applications Windows et les Favicons de pages web. Contrairement à simplement renommer un PNG en .ico, un vrai fichier ICO nécessite une structure binaire spécifique avec des en-têtes de 22 octets, un répertoire d\'images et des données d\'image encodées d\'une manière particulière.',
+    html: 'Le <strong>PNG avec transparence</strong> est le matériau de départ idéal pour créer des icônes ICO professionnelles. Contrairement au JPG (qui n\'a pas de canal alpha) ou aux formats avec perte, le PNG vous offre exactement ce dont le format ICO a besoin : des pixels nets, des bords propres et un canal alpha 32 bits qui permet à l\'icône de s\'intégrer parfaitement sur n\'importe quel fond — que ce soit la barre de favoris blanche de Safari, la barre sombre de Firefox ou le bureau Windows 11.',
+  },
+  {
+    type: 'title',
+    text: 'PNG ou ICO ? Quand utiliser chaque format',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'Notre convertisseur crée des fichiers ICO authentiques. Le processus inclut : lire le PNG dans un canvas HTML5, créer l\'en-tête ICO binaire standard Microsoft avec le bon magic number (00 00 01 00), générer le répertoire d\'image et combiner le tout en un fichier .ico binaire valide. Le résultat est reconnu nativement par Windows, macOS et tous les navigateurs web.',
+    html: 'Le <strong>PNG</strong> est le format de travail : c\'est là que vous concevez votre logo, exportez depuis Figma ou Illustrator, et sauvegardez vos versions éditables. Sa transparence, sa précision de pixels et sa compression sans perte le rendent imbattable pour le processus de design. Mais les navigateurs, systèmes d\'exploitation et applications Windows cherchant un favicon ou une icône d\'application n\'acceptent pas directement le PNG — ils ont besoin de l\'ICO.',
+  },
+  {
+    type: 'paragraph',
+    html: 'L\'<strong>ICO</strong> est le format de distribution pour les icônes dans les environnements Microsoft et le web. Il contient une structure binaire spécifique permettant de regrouper plusieurs résolutions dans un seul fichier : le navigateur lit le répertoire interne du fichier ICO et sélectionne automatiquement <strong>16×16</strong> pour l\'onglet du navigateur, <strong>32×32</strong> pour les raccourcis, <strong>48×48</strong> pour l\'explorateur de fichiers et <strong>256×256</strong> pour les écrans Retina et 4K. Partir d\'un PNG transparent garantit que toutes ces résolutions auront des bords parfaits sans liseré blanc.',
+  },
+  {
+    type: 'title',
+    text: 'Comparatif : Conversion locale vs Cloud',
+    level: 3,
+  },
+  {
+    type: 'comparative',
+    items: [
+      {
+        title: 'Convertisseurs Cloud',
+        description: 'Outils qui envoient vos fichiers vers un serveur distant.',
+        icon: 'mdi:cloud-upload',
+        pointIcon: 'mdi:close-circle-outline',
+        points: [
+          'Latence réseau à l\'envoi et au téléchargement',
+          'Votre logo d\'entreprise stocké sur des serveurs tiers',
+          'Limites de taille et quota quotidien de conversions',
+          'Publicités intrusives et traceurs tiers',
+        ],
+      },
+      {
+        title: 'Notre Architecture Locale',
+        description: 'Traitement direct sur votre matériel via la technologie Vanilla JS.',
+        icon: 'mdi:laptop-mac',
+        highlight: true,
+        points: [
+          'Vitesse instantanée — zéro latence réseau',
+          'Confidentialité totale — 0 octet envoyé à l\'extérieur',
+          'Aucune limite de taille ni de nombre de fichiers',
+          'Interface épurée, sans publicités ni traçage',
+        ],
+      },
+    ],
+  },
+  {
+    type: 'title',
+    text: 'Comment ça fonctionne techniquement',
+    level: 3,
+  },
+  {
+    type: 'paragraph',
+    html: 'Le PNG est décodé dans un <strong>Canvas HTML5</strong> en mémoire avec une prise en charge complète du canal alpha 32 bits. Le moteur construit l\'en-tête ICO standard de Microsoft avec le bon nombre magique (<code>00 00 01 00</code>), le répertoire d\'images avec les dimensions et le décalage des données, et les données de pixels tout en maintenant les informations de transparence. Le résultat est un vrai fichier binaire .ico reconnu nativement par Windows, macOS et tous les navigateurs.',
+  },
+  {
+    type: 'paragraph',
+    html: 'La transparence du PNG est entièrement préservée dans l\'ICO résultant — les pixels transparents restent transparents, les pixels semi-transparents conservent leur valeur alpha exacte et les pixels opaques gardent leur couleur d\'origine. C\'est crucial pour les logos sur des fonds variables : votre favicon s\'affichera correctement en mode clair, mode sombre et dans toute combinaison de couleurs de l\'interface du navigateur.',
   },
   {
     type: 'tip',
-    html:
-      'Pour de meilleurs résultats en tant que Favicon, utilisez un PNG carré de 512x512 ou 256x256 pixels comme source. Notre convertisseur le redimensionnera à la taille ICO standard en préservant la proportion et la transparence.',
+    title: 'Conseil : utilisez un PNG de 512×512 comme source',
+    html: 'Pour le meilleur résultat possible, utilisez un <strong>PNG carré de 512×512 pixels</strong> comme image source. Cette résolution donne au convertisseur suffisamment d\'informations pour générer toutes les tailles ICO standard avec netteté — du favicon 16×16 jusqu\'au 256×256 pour les écrans haute densité — sans pixelisation ni perte de détail sur les bords. Plus le PNG source est grand, meilleurs seront les petites icônes résultantes.',
+  },
+  {
+    type: 'title',
+    text: 'Cas d\'usage et compatibilité',
+    level: 3,
+  },
+  {
+    type: 'list',
+    icon: 'mdi:check-circle',
+    items: [
+      'Favicon transparent pour sites web : fonctionne dans Chrome, Firefox, Safari, Edge et Internet Explorer.',
+      'Icône d\'application PWA : le manifest.json référence l\'ICO pour l\'installation sur bureau.',
+      'Personnalisation de dossiers Windows 10/11 avec logo d\'entreprise sans fond blanc.',
+      'Icône de raccourci pour applications de bureau, installateurs et exécutables.',
+      'Icône d\'extension navigateur pour les extensions Chrome et Firefox.',
+    ],
+  },
+  {
+    type: 'title',
+    text: 'Conclusion',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'Un fichier ICO standard occupe entre 1 Ko et 100 Ko selon la résolution et les couches incluses. Les Favicons ICO 16x16 et 32x32 sont les plus courants pour les sites web.',
-  },
-  {
-    type: 'paragraph',
-    html:
-      'Convertissez PNG en ICO authentique avec de vrais en-têtes binaires. Gratuit, privé et avec support de transparence. Parfait pour les Favicons web et les icônes Windows.',
+    html: 'Le PNG avec transparence est sans conteste le meilleur point de départ pour créer des icônes ICO de qualité professionnelle. Avec cet outil, la conversion est instantanée, les canaux alpha sont entièrement préservés et le fichier résultant est un vrai ICO avec la structure binaire correcte. Sans envoyer votre logo sur aucun serveur, sans filigrane, sans limites — et avec une transparence parfaite à toutes les tailles.',
   },
 ];
 

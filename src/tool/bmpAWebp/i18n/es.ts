@@ -65,37 +65,102 @@ const bibliography: BmpAWebpLocaleContent['bibliography'] = [
 const seo: BmpAWebpLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Convertidor BMP a WebP Online Gratuito',
+    text: 'Convertidor BMP a WebP: La Reducción de Tamaño Más Extrema Posible',
+    level: 2,
   },
   {
     type: 'paragraph',
-    html:
-      'Convertir BMP a WebP representa una de las reducciones de tamaño más dramáticas posibles entre formatos de imagen. Un archivo BMP sin comprimir puede ocupar 10, 20 o incluso 50 veces más espacio que su equivalente en WebP. El formato WebP de Google utiliza compresión avanzada tanto con pérdida como sin pérdida, logrando archivos extremadamente ligeros que mantienen una calidad visual excelente.',
+    html: 'Convertir BMP a WebP es, sin duda, la transformación más espectacular que puedes hacer con una imagen. El formato BMP (Bitmap) es el formato más antiguo y pesado del ecosistema digital: almacena cada píxel sin ningún tipo de compresión, resultando en archivos que pueden pesar 20, 50 o incluso 100 veces más que su equivalente moderno. WebP, desarrollado por Google, aplica algoritmos de compresión de última generación que reducen el tamaño al mínimo posible manteniendo una calidad visual excelente.',
+  },
+  {
+    type: 'title',
+    text: '¿Por qué BMP es tan pesado y WebP tan eficiente?',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'El proceso funciona completamente offline en tu navegador. Los archivos BMP se decodifican mediante el API nativo del navegador, se renderizan en un canvas HTML5 y se exportan como WebP. No se establece ninguna conexión de red durante la conversión, garantizando la confidencialidad total de tus archivos.',
+    html: 'El formato BMP nació en los años 80 para Windows, cuando el espacio en disco era enorme y la compresión no era una prioridad. Cada píxel se guarda tal cual, sin ningún algoritmo de reducción: una imagen de 1920x1080 píxeles en BMP ocupa exactamente 5,93 MB, independientemente de su contenido. Esto lo hace ideal para capturas de pantalla internas o edición sin pérdidas, pero completamente inapropiado para la web o el almacenamiento moderno.',
   },
   {
     type: 'paragraph',
-    html:
-      'WebP también soporta el canal alfa para transparencias, lo que lo hace versátil para cualquier tipo de imagen. Si tus BMPs tienen fondos de colores uniformes, la compresión WebP sin pérdida puede generar archivos especialmente pequeños al aprovechar la redundancia de los datos.',
+    html: 'WebP utiliza compresión predictiva basada en bloques y transformadas DCT (la misma tecnología que subyace al video digital), logrando que la misma imagen de 1920x1080 ocupe entre 80 KB y 300 KB. Eso supone una reducción del 95 al 99% respecto al BMP original. Además, WebP soporta canal alfa para transparencias y compresión tanto con pérdida como sin pérdida, ofreciendo versatilidad total.',
+  },
+  {
+    type: 'title',
+    text: 'Comparativa: Convertidores Cloud vs Nuestra Arquitectura Local',
+    level: 3,
+  },
+  {
+    type: 'comparative',
+    items: [
+      {
+        title: 'Convertidores Cloud',
+        description: 'Herramientas que suben tus archivos BMP a un servidor remoto para procesarlos.',
+        icon: 'mdi:cloud-upload',
+        pointIcon: 'mdi:close-circle-outline',
+        points: [
+          'Subir un BMP de 20 MB lleva minutos con conexión lenta',
+          'Tus imágenes quedan almacenadas en servidores ajenos',
+          'Límites de tamaño que excluyen archivos BMP grandes',
+          'Publicidad invasiva y rastreadores de datos',
+        ],
+      },
+      {
+        title: 'Nuestra Arquitectura Local',
+        description: 'Procesamiento directo en tu navegador mediante tecnología Vanilla JS y Canvas API.',
+        icon: 'mdi:laptop-mac',
+        highlight: true,
+        points: [
+          'Conversión instantánea sin transferencia de red',
+          'Privacidad absoluta — 0 bytes salen de tu dispositivo',
+          'Sin límites de tamaño por archivo',
+          'Funciona sin conexión a internet',
+        ],
+      },
+    ],
+  },
+  {
+    type: 'title',
+    text: 'Cómo funciona la conversión técnica en el navegador',
+    level: 3,
+  },
+  {
+    type: 'paragraph',
+    html: 'Al arrastrar un archivo BMP, el navegador lo lee como un Blob binario en memoria RAM. Este Blob se carga en un elemento <code>Image</code> de JavaScript, que lo decodifica usando el motor de imágenes nativo. A continuación, la imagen se pinta sobre un elemento <code>Canvas</code> HTML5 invisible. El Canvas actúa como lienzo virtual donde la imagen existe en su forma píxel a píxel.',
+  },
+  {
+    type: 'paragraph',
+    html: 'Una vez pintada en el Canvas, ejecutamos el método <code>toBlob()</code> con el tipo MIME <code>image/webp</code> y el nivel de calidad deseado. El navegador aplica internamente el algoritmo de compresión WebP y genera un nuevo Blob con el archivo resultante. Este Blob se convierte en una URL de descarga directa que tu navegador guarda en disco. En ningún momento se establece ninguna conexión de red.',
   },
   {
     type: 'tip',
-    html:
-      'Si tienes una colección de imágenes BMP antiguas de Windows, convertirlas a WebP es la manera más eficiente de modernizarlas para uso web manteniendo toda su calidad visual.',
+    title: 'El mayor salto de compresión posible',
+    html: 'La conversión de BMP a WebP puede lograr una reducción del 99% en el tamaño del archivo. Un BMP de 20 MB puede convertirse en un WebP de apenas 200 KB con calidad visual prácticamente idéntica. Es la transformación más eficiente disponible entre formatos de imagen estándar.',
+  },
+  {
+    type: 'title',
+    text: 'Casos de uso y compatibilidad de WebP',
+    level: 3,
+  },
+  {
+    type: 'list',
+    icon: 'mdi:check-circle',
+    items: [
+      'Publicación web — Chrome, Firefox, Safari, Edge y todos los navegadores modernos.',
+      'Redes sociales — Instagram, Twitter, Facebook aceptan WebP de forma nativa.',
+      'Aplicaciones web y PWA — tamaños mínimos para carga instantánea.',
+      'Archivado eficiente — sustituye colecciones de BMPs heredados ahorrando gigabytes.',
+      'Email marketing — imágenes ligeras que cargan rápido en cualquier cliente de correo moderno.',
+    ],
+  },
+  {
+    type: 'title',
+    text: 'Conclusión: La conversión más impactante en un solo clic',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'Un archivo BMP típico de pantalla de escritorio a 1920x1080 puede convertirse de sus 6 MB originales a un WebP de entre 100 KB y 500 KB, representando reducciones de hasta el 98%.',
-  },
-  {
-    type: 'paragraph',
-    html:
-      'Convierte BMP a WebP offline, gratis y sin límites. La conversión más eficiente disponible: de archivos enormes sin comprimir a WebP ultra-comprimido, con privacidad total garantizada.',
+    html: 'Si tienes archivos BMP heredados de Windows, capturas de pantalla sin comprimir o imágenes de herramientas antiguas, convertirlos a WebP es la acción más impactante que puedes tomar para optimizar tu almacenamiento y rendimiento web. Con nuestra herramienta, la conversión es instantánea, privada y sin límites — exactamente como debería ser.',
   },
 ];
 

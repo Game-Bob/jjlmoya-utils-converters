@@ -65,37 +65,102 @@ const bibliography: SvgAJpgLocaleContent['bibliography'] = [
 const seo: SvgAJpgLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Convertidor SVG a JPG Online Gratuito',
+    text: 'Convertidor SVG a JPG: Lleva tus Vectores a Cualquier Plataforma',
+    level: 2,
   },
   {
     type: 'paragraph',
-    html:
-      'Mientras que el formato SVG es perfectamente escalable y ligero para su uso en la web, en ocasiones necesitas una versión JPG de tu gráfico vectorial. El JPG es el formato fotográfico más compatible del mundo y puede ser abierto sin problemas por cualquier dispositivo, sistema operativo o programa de visualización de imágenes.',
+    html: 'El formato <strong>SVG</strong> es el lenguaje nativo de la web moderna: ligero, escalable, editable. Pero hay plataformas enteras que simplemente no entienden vectores. Las redes sociales, los clientes de correo electrónico, los documentos Word, las aplicaciones de impresión y la inmensa mayoría del software del mundo real trabajan con imágenes rasterizadas. El <strong>JPG</strong> es el denominador común universal: aceptado en todos partes, sin excepciones, sin necesidad de plugins ni conversiones adicionales.',
+  },
+  {
+    type: 'title',
+    text: 'SVG vs JPG: Cuando el Vector Necesita Convertirse en Foto',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'La conversión de SVG a JPG implica un proceso de rasterización: el gráfico vectorial se convierte en una cuadrícula de píxeles. Durante este proceso, las transparencias del SVG se fusionan con un fondo blanco sólido, ya que el formato JPG no soporta el canal alfa. Nuestro convertidor realiza esta rasterización a doble resolución (2x) para producir JPGs nítidos aptos para cualquier uso.',
+    html: 'SVG almacena la imagen como instrucciones matemáticas. Esta naturaleza vectorial lo hace perfecto para la web pero invisible para el mundo analógico y el software heredado. Un archivo SVG enviado por correo electrónico puede aparecer como texto XML incomprensible en el cliente del destinatario. Un SVG adjunto a un documento Word puede no renderizarse en absoluto en versiones antiguas de Office.',
   },
   {
     type: 'paragraph',
-    html:
-      'Todo el proceso ocurre en tu navegador sin necesidad de conectarse a ningún servidor. El SVG se carga en un elemento Image, se dibuja sobre un canvas HTML5 con fondo blanco a escala 2x y se exporta como JPG de alta calidad.',
+    html: 'JPG convierte cada imagen en una matriz de píxeles con información de color comprimida mediante el algoritmo JPEG. Al no admitir canal alfa, el convertidor fusiona automáticamente el fondo con blanco sólido. A cambio, obtienes un archivo que se abre en <em>cualquier dispositivo del planeta</em>: móviles antiguos, impresoras, televisores inteligentes, aplicaciones de edición de hace veinte años. Es el formato del mínimo común denominador, y en muchos contextos, el más valioso.',
+  },
+  {
+    type: 'title',
+    text: 'Comparativa: Conversión Local vs Nube',
+    level: 3,
+  },
+  {
+    type: 'comparative',
+    items: [
+      {
+        title: 'Convertidores Cloud',
+        description: 'Herramientas que suben tus archivos a un servidor remoto.',
+        icon: 'mdi:cloud-upload',
+        pointIcon: 'mdi:close-circle-outline',
+        points: [
+          'Tu código SVG (con datos de diseño propietario) viaja a servidores externos',
+          'Renderizado inconsistente de fuentes y gradientes',
+          'Necesitas conexión a Internet para cada conversión',
+          'Calidad JPG de salida no siempre configurable',
+        ],
+      },
+      {
+        title: 'Nuestra Arquitectura Local',
+        description: 'Procesamiento directo en tu hardware mediante tecnología Vanilla JS.',
+        icon: 'mdi:laptop-mac',
+        highlight: true,
+        points: [
+          'Cero bytes de tu SVG salen del navegador',
+          'Renderizado fiel usando el motor nativo del navegador',
+          'JPG a 2x de resolución para máxima nitidez',
+          'Fondo blanco aplicado automáticamente por el estándar JPG',
+        ],
+      },
+    ],
+  },
+  {
+    type: 'title',
+    text: 'Cómo funciona técnicamente',
+    level: 3,
+  },
+  {
+    type: 'paragraph',
+    html: 'El archivo SVG se carga en un elemento <strong>Image</strong> del navegador, que utiliza su propio motor de renderizado vectorial para interpretar el XML. El resultado visual se dibuja sobre un <strong>Canvas HTML5</strong> con fondo blanco previo (necesario porque JPG no admite transparencias) a doble escala para maximizar la resolución de salida.',
+  },
+  {
+    type: 'paragraph',
+    html: 'El método <code>toDataURL(\'image/jpeg\', 0.92)</code> convierte los píxeles del canvas en un archivo JPG de alta calidad. Los colores del SVG pueden experimentar ligeras variaciones debido a la conversión del espacio de color de la compresión JPEG. Por ello es recomendable previsualizar el resultado antes de usarlo en trabajos de impresión profesional donde la fidelidad cromática es crítica.',
   },
   {
     type: 'tip',
-    html:
-      'Si tu SVG tiene texto o fuentes personalizadas, asegúrate de que estén incrustados o convertidos a trayectorias antes de convertir. Las fuentes del sistema pueden no estar disponibles en el motor de renderizado.',
+    title: 'Consejo para impresión',
+    html: 'Los fondos y degradados SVG pueden lucir ligeramente diferentes en JPG debido al perfil de color de la compresión JPEG. Previsualiza siempre el resultado antes de enviarlo a imprenta o usarlo en materiales de marketing impresos donde el color exacto de marca es importante.',
+  },
+  {
+    type: 'title',
+    text: 'Casos de uso y compatibilidad',
+    level: 3,
+  },
+  {
+    type: 'list',
+    icon: 'mdi:check-circle',
+    items: [
+      'Compartir logos e ilustraciones SVG en Facebook, Twitter o LinkedIn.',
+      'Adjuntar gráficos vectoriales en correos electrónicos con Outlook o Gmail.',
+      'Insertar diseños SVG en documentos Word, Excel o presentaciones.',
+      'Publicar imágenes de producto en tiendas online que no soportan SVG.',
+      'Preparar archivos para servicios de impresión bajo demanda.',
+    ],
+  },
+  {
+    type: 'title',
+    text: 'Conclusión',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'Un SVG de 100KB convertido a JPG a 2x puede producir un archivo de entre 50KB y 500KB dependiendo de la complejidad del diseño y los colores utilizados.',
-  },
-  {
-    type: 'paragraph',
-    html:
-      'Convierte SVG a JPG de alta resolución de forma gratuita y privada. Renderizado 2x para máxima nitidez, fondo blanco automático para compatibilidad total con JPG.',
+    html: 'El mundo real todavía habla en píxeles. Esta herramienta traduce tus vectores SVG al lenguaje universal del JPG en segundos, con renderizado de alta resolución y sin que tus diseños propietarios abandonen jamás tu navegador.',
   },
 ];
 

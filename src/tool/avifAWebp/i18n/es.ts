@@ -65,37 +65,102 @@ const bibliography: AvifAWebpLocaleContent['bibliography'] = [
 const seo: AvifAWebpLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Convertidor AVIF a WebP Online Gratuito',
+    text: 'Convertidor AVIF a WebP: La Alternativa Moderna y Segura para la Web',
+    level: 2,
   },
   {
     type: 'paragraph',
-    html:
-      'La conversión de AVIF a WebP es una elección inteligente cuando necesitas ampliar la compatibilidad de tus imágenes sin sacrificar la eficiencia de compresión. Mientras que AVIF ofrece la mejor compresión posible, WebP tiene una compatibilidad mucho más amplia en navegadores, dispositivos y aplicaciones.',
+    html: 'AVIF es el formato de imagen más avanzado disponible hoy: más pequeño que WebP, más pequeño que JPG, con calidad visual superior. Sin embargo, su adopción ha sido irregular — Safari no lo soportó hasta 2024, y muchos dispositivos móviles más antiguos lo desconocen. WebP, en cambio, lleva años consolidado como el estándar moderno de la web con más del 95% de soporte global. Convertir AVIF a WebP es la decisión pragmática cuando necesitas modernidad sin arriesgar la compatibilidad.',
+  },
+  {
+    type: 'title',
+    text: 'AVIF vs WebP: El Más Nuevo vs El Más Seguro',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'WebP mantiene varias características que lo hacen superior al JPG para uso web: soporta el canal alfa para transparencias, puede usar compresión tanto con pérdida como sin pérdida, y tiene soporte universal en todos los navegadores modernos. Al convertir de AVIF a WebP, obtienes un archivo compatible con prácticamente todo el ecosistema web actual.',
+    html: 'AVIF ofrece la compresión más avanzada disponible — típicamente un 20-30% más pequeño que WebP a la misma calidad. Su tecnología basada en AV1 es la más moderna del sector. Sin embargo, el soporte de AVIF todavía tiene puntos ciegos: versiones antiguas de Safari, algunos navegadores en Android más antiguo, y ciertos reproductores de imagen de escritorio no lo reconocen. Para producción web con audiencias amplias y diversas, esto supone un riesgo.',
   },
   {
     type: 'paragraph',
-    html:
-      'El proceso de conversión utiliza el soporte nativo de AVIF en navegadores modernos para decodificar el archivo en memoria. Después, el canvas API de HTML5 renderiza la imagen y la exporta como WebP. Todo el proceso ocurre localmente sin comunicación externa.',
+    html: 'WebP tiene una historia de soporte mucho más sólida. Chrome lo adoptó en 2010, Firefox y Edge siguieron, y Safari lo incorporó en 2020. Con más del 95% de cobertura global en navegadores, WebP es la elección segura para cualquier sitio web que no quiera servir formatos de reserva. Soporta transparencias, compresión con y sin pérdida, y logra archivos mucho más pequeños que JPG o PNG.',
+  },
+  {
+    type: 'title',
+    text: 'Comparativa: Convertidores Cloud vs Nuestra Arquitectura Local',
+    level: 3,
+  },
+  {
+    type: 'comparative',
+    items: [
+      {
+        title: 'Convertidores Cloud',
+        description: 'Herramientas que suben tus archivos AVIF a un servidor remoto para procesarlos.',
+        icon: 'mdi:cloud-upload',
+        pointIcon: 'mdi:close-circle-outline',
+        points: [
+          'Tus imágenes privadas transitan por servidores externos',
+          'Latencia de red que ralentiza el flujo de trabajo',
+          'Límites de archivos por conversión gratuita',
+          'Dependencia de servicios de terceros que pueden cambiar',
+        ],
+      },
+      {
+        title: 'Nuestra Arquitectura Local',
+        description: 'Procesamiento directo en tu navegador mediante tecnología Vanilla JS y Canvas API.',
+        icon: 'mdi:laptop-mac',
+        highlight: true,
+        points: [
+          'Privacidad total — 0 bytes salen de tu dispositivo',
+          'Velocidad instantánea sin dependencia de red',
+          'Sin límites de tamaño ni de número de archivos',
+          'Funciona sin conexión a internet',
+        ],
+      },
+    ],
+  },
+  {
+    type: 'title',
+    text: 'Cómo funciona la conversión técnica en el navegador',
+    level: 3,
+  },
+  {
+    type: 'paragraph',
+    html: 'Chrome, Firefox y Edge incluyen decodificadores AVIF nativos. Al cargar el archivo, el motor de imágenes del navegador lo decodifica en RAM manteniendo la información de canal alfa. La imagen se pinta sobre un <code>Canvas</code> HTML5 invisible usando el contexto 2D, que preserva las transparencias correctamente.',
+  },
+  {
+    type: 'paragraph',
+    html: 'La exportación se realiza con <code>toBlob(\'image/webp\', quality)</code>. El navegador aplica el algoritmo de compresión WebP internamente, generando un Blob que incluye canal alfa si la imagen original lo tenía. Este Blob se convierte en enlace de descarga directa. El proceso completo ocurre en microsegundos sin ninguna comunicación con servidores externos.',
   },
   {
     type: 'tip',
-    html:
-      'Si gestionas imágenes para un sitio web y necesitas el mejor balance entre compatibilidad y rendimiento, WebP es la elección ideal. Convierte tus AVIF a WebP para servir imágenes web modernas con soporte universal.',
+    title: 'WebP: la elección pragmática del desarrollador moderno',
+    html: 'WebP tiene más del 95% de soporte en navegadores — AVIF está creciendo pero aún no llega a esa cifra. Para sitios en producción sin detección de formato adaptativa, WebP es la elección segura que cubre casi cualquier audiencia. Convierte tus AVIF a WebP y sirve imágenes modernas con confianza.',
+  },
+  {
+    type: 'title',
+    text: 'Casos de uso: cuándo elegir WebP sobre AVIF',
+    level: 3,
+  },
+  {
+    type: 'list',
+    icon: 'mdi:check-circle',
+    items: [
+      'Sitios web que necesitan soporte en navegadores desde 2020 sin polyfills.',
+      'CDNs y sistemas de entrega de imágenes que aceptan WebP pero no AVIF.',
+      'Aplicaciones móviles híbridas con WebViews que pueden no soportar AVIF.',
+      'Emails HTML modernos donde WebP tiene mayor soporte que AVIF.',
+      'Plataformas CMS y ecommerce con soporte de imagen WebP establecido.',
+    ],
+  },
+  {
+    type: 'title',
+    text: 'Conclusión: Modernidad con compatibilidad garantizada',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'WebP tiene soporte en más del 96% de todos los navegadores web globalmente, mientras que AVIF ronda el 80-85%. Esta diferencia de compatibilidad hace que WebP sea más seguro para implementación en producción.',
-  },
-  {
-    type: 'paragraph',
-    html:
-      'Convierte AVIF a WebP gratuitamente con soporte de transparencias y mejor compatibilidad web. Procesado localmente sin enviar datos a servidores externos.',
+    html: 'AVIF es la vanguardia de la compresión de imágenes, pero WebP es la elección fiable y universal del ecosistema web moderno. Con nuestra herramienta, conviertes de lo más nuevo a lo más soportado en un instante — sin subir nada a ningún servidor, con privacidad total y sin límites de tamaño.',
   },
 ];
 

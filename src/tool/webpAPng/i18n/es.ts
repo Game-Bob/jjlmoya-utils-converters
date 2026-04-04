@@ -69,42 +69,102 @@ const bibliography: WebpAPngLocaleContent['bibliography'] = [
 const seo: WebpAPngLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Convertidor WebP a PNG Online Gratuito',
+    text: 'Convertidor WebP a PNG: La Opción Profesional para Edición y Diseño',
+    level: 2,
   },
   {
     type: 'paragraph',
-    html:
-      'El formato WebP fue desarrollado por Google como una alternativa moderna a PNG y JPG, ofreciendo una compresión superior con o sin pérdida de calidad. Sin embargo, su adopción en herramientas de edición profesional como versiones antiguas de Photoshop, Illustrator o editores de imágenes especializados puede ser limitada, lo que hace necesario convertir WebP a PNG para garantizar la compatibilidad universal.',
+    html: 'Cuando un diseñador descarga un recurso gráfico en formato <strong>WebP</strong> y lo intenta abrir en Photoshop, Figma o Illustrator, el resultado puede ser frustrante: el archivo no se carga o pierde calidad. El formato <strong>PNG</strong> es el estándar indiscutible de la edición profesional: compresión sin pérdida, canal alfa completo y compatibilidad garantizada con toda la cadena de producción creativa.',
+  },
+  {
+    type: 'title',
+    text: 'WebP para la Web, PNG para el Estudio',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'Una ventaja fundamental de la conversión WebP a PNG es la preservación del canal alfa. A diferencia de la conversión a JPG donde los fondos transparentes se rellenan con blanco, el formato PNG mantiene íntegramente cualquier área transparente que tenga el archivo WebP original. Esto es especialmente valioso para logos, iconos, ilustraciones y cualquier gráfico con transparencias.',
+    html: 'WebP es un formato de producción web: sus algoritmos de compresión están optimizados para reducir el peso de transferencia, no para preservar la fidelidad máxima en flujos de edición iterativa. Cada vez que guardas un WebP editado, el codec aplica de nuevo la compresión. Para proyectos donde el archivo va a ser modificado varias veces, esto supone una degradación acumulativa de la calidad.',
   },
   {
     type: 'paragraph',
-    html:
-      'Nuestro convertidor funciona completamente en el lado del cliente. No existe ningún servidor intermediario; el proceso entero ocurre dentro del motor JavaScript de tu navegador. Esto significa que tus imágenes nunca abandonan tu dispositivo, garantizando una privacidad absoluta incluso para material corporativo o confidencial.',
+    html: 'PNG emplea compresión <strong>sin pérdida</strong>: los datos de cada píxel se conservan íntegramente sin importar cuántas veces guardes el archivo. Es el formato elegido por diseñadores de interfaces (UI/UX), ilustradores digitales y equipos de branding que necesitan mantener la integridad visual a lo largo de decenas de revisiones. Herramientas como Photoshop, Figma, Sketch e Illustrator tratan PNG como su formato de exportación principal.',
+  },
+  {
+    type: 'title',
+    text: 'Comparativa: Conversión Local vs Nube',
+    level: 3,
+  },
+  {
+    type: 'comparative',
+    items: [
+      {
+        title: 'Convertidores Cloud',
+        description: 'Herramientas que suben tus archivos a un servidor remoto.',
+        icon: 'mdi:cloud-upload',
+        pointIcon: 'mdi:close-circle-outline',
+        points: [
+          'Tus activos de diseño se almacenan en servidores ajenos',
+          'Procesamiento remoto lento para archivos de gran tamaño',
+          'Riesgo de filtraciones en proyectos confidenciales de clientes',
+          'Conversión por lotes limitada o de pago',
+        ],
+      },
+      {
+        title: 'Nuestra Arquitectura Local',
+        description: 'Procesamiento directo en tu hardware mediante tecnología Vanilla JS.',
+        icon: 'mdi:laptop-mac',
+        highlight: true,
+        points: [
+          'Tus diseños nunca salen de tu máquina',
+          'Conversión por lotes de decenas de archivos al instante',
+          'Preservación total del canal alfa y la gama de colores',
+          'Privacidad absoluta para proyectos de clientes',
+        ],
+      },
+    ],
+  },
+  {
+    type: 'title',
+    text: 'Cómo funciona técnicamente',
+    level: 3,
+  },
+  {
+    type: 'paragraph',
+    html: 'El navegador moderno es capaz de decodificar WebP de forma nativa. Nuestra herramienta aprovecha esta capacidad para cargar el archivo en un elemento <strong>Image</strong> de JavaScript y, a continuación, dibujarlo sobre un canvas HTML5 con las mismas dimensiones que el original. Al contrario que la conversión a JPG, aquí no es necesario rellenar el fondo: el canvas mantiene el canal alfa completo.',
+  },
+  {
+    type: 'paragraph',
+    html: 'La exportación final utiliza el método <code>toDataURL(\'image/png\')</code>, que genera un PNG con compresión sin pérdida fiel al original. El resultado es un archivo listo para importar directamente en cualquier software de diseño profesional sin pasos intermedios, degradación de color ni pérdida de transparencias.',
   },
   {
     type: 'tip',
-    html:
-      'Si tu archivo WebP tiene transparencias y necesitas editarlo en Photoshop, convierte siempre a PNG en lugar de JPG para conservar el canal alfa y poder editar la transparencia.',
+    title: 'Consejo para editores',
+    html: 'Usa PNG cuando necesites continuar editando la imagen. La compresión sin pérdida garantiza que no habrá degradación de calidad por guardado repetido, algo crítico cuando trabajas con capas, máscaras o ajustes de color en Photoshop o Figma.',
+  },
+  {
+    type: 'title',
+    text: 'Casos de uso y compatibilidad',
+    level: 3,
+  },
+  {
+    type: 'list',
+    icon: 'mdi:check-circle',
+    items: [
+      'Importar recursos WebP en Photoshop, Figma, Sketch o Illustrator.',
+      'Preservar transparencias en logos e iconos para uso en múltiples fondos.',
+      'Crear versiones maestras de gráficos para proyectos de larga duración.',
+      'Exportar assets para aplicaciones móviles que requieren PNG con canal alfa.',
+      'Usar imágenes en maquetas y presentaciones de diseño con fondos variables.',
+    ],
+  },
+  {
+    type: 'title',
+    text: 'Conclusión',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'El formato WebP puede reducir el tamaño de los archivos PNG hasta un 26% y los JPG hasta un 34%, según la documentación oficial de Google para imágenes sin pérdida y con pérdida respectivamente.',
-  },
-  {
-    type: 'paragraph',
-    html:
-      'La herramienta soporta la conversión en lote. Puedes arrastrar múltiples archivos WebP simultáneamente y descargar todos los PNG resultantes en un único archivo ZIP comprimido, ahorrando tiempo cuando necesitas convertir colecciones completas de imágenes.',
-  },
-  {
-    type: 'paragraph',
-    html:
-      'Convierte WebP a PNG con total privacidad y calidad, preservando transparencias. Gratis, sin límites y procesado localmente en tu navegador.',
+    html: 'Si WebP es el formato del servidor web, PNG es el formato del estudio de diseño. Esta herramienta convierte tus recursos WebP en PNG de producción, con transparencias intactas y calidad máxima, todo en tu navegador y sin que tus archivos abandonen tu equipo.',
   },
 ];
 

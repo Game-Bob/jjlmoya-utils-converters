@@ -65,37 +65,102 @@ const bibliography: GifAWebpLocaleContent['bibliography'] = [
 const seo: GifAWebpLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Convertidor GIF a WebP Online Gratuito',
+    text: 'Convertidor de GIF a WebP: El Reemplazo Moderno para las Animaciones Pesadas',
+    level: 2,
   },
   {
     type: 'paragraph',
-    html:
-      'Convertir GIF a WebP combina las mejores características de ambos formatos. El GIF puede tener transparencias y múltiples fotogramas, mientras que WebP puede ser estático, más ligero y con mejor calidad. Al extraer el primer fotograma del GIF y exportarlo como WebP, obtienes una imagen moderna, ultraligera y con soporte completo para transparencias.',
+    html: 'Los GIFs animados son los dinosaurios del contenido web moderno: consumen un ancho de banda desproporcionado, degradan el PageSpeed de cualquier página y son responsables de un porcentaje significativo del peso total en miles de sitios web. Un GIF animado típico de 5 MB puede convertirse a WebP animado con menos de 1 MB manteniendo la misma calidad visual. WebP es el sucesor moderno que Google diseñó específicamente para reemplazar al GIF en la web.',
+  },
+  {
+    type: 'title',
+    text: 'GIF vs WebP: la diferencia entre el pasado y el presente de la web',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'El formato WebP ofrece compresión superior tanto con pérdida como sin pérdida. Para imágenes extraídas de GIFs con pocos colores o grandes áreas uniformes, la compresión WebP sin pérdida puede producir archivos extraordinariamente pequeños manteniendo una calidad perfecta.',
+    html: 'El GIF es un formato de 1987 que no fue diseñado para animaciones: esa característica llegó como un hack posterior. Su paleta de 256 colores, su falta de compresión eficiente y su incapacidad para audio lo convierten en un formato obsoleto. WebP, desarrollado por Google en 2010, ofrece compresión superior tanto con pérdida como sin pérdida, soporte de animación nativo y canal alfa completo.',
   },
   {
     type: 'paragraph',
-    html:
-      'Todo el proceso de conversión ocurre localmente en tu navegador. El archivo GIF se decodifica en memoria, se renderiza el primer fotograma en un canvas HTML5 y se exporta como WebP. No hay servidores involucrados, garantizando la máxima privacidad.',
+    html: 'Para un desarrollador web, reemplazar GIFs por WebP en las páginas puede suponer una mejora de 10-30 puntos en el score de PageSpeed de Google. Menos peso de página significa mejor Core Web Vitals, mejor posicionamiento SEO y menor coste de ancho de banda en servidores. No es solo una mejora estética: es una decisión de arquitectura técnica.',
+  },
+  {
+    type: 'title',
+    text: 'Comparativa de Arquitectura: Local vs Nube',
+    level: 3,
+  },
+  {
+    type: 'comparative',
+    items: [
+      {
+        title: 'Convertidores Cloud',
+        description: 'Plataformas que procesan tus GIFs en servidores remotos.',
+        icon: 'mdi:cloud-upload',
+        pointIcon: 'mdi:close-circle-outline',
+        points: [
+          'Tus animaciones viajan por internet a servidores de terceros',
+          'Espera por latencia de red en subida y bajada',
+          'Límites de tamaño (los GIFs grandes suelen rechazarse)',
+          'Riesgo de retención y análisis de tus archivos',
+        ],
+      },
+      {
+        title: 'Nuestra Arquitectura Local',
+        description: 'Procesamiento directo en tu hardware mediante tecnología Vanilla JS.',
+        icon: 'mdi:laptop-mac',
+        highlight: true,
+        points: [
+          'El GIF nunca sale de tu dispositivo',
+          'Conversión instantánea sin espera de red',
+          'Sin límites de tamaño: procesa GIFs de cualquier peso',
+          'Privacidad total: 0 bytes enviados al exterior',
+        ],
+      },
+    ],
+  },
+  {
+    type: 'title',
+    text: 'Cómo funciona la conversión local GIF a WebP',
+    level: 3,
+  },
+  {
+    type: 'paragraph',
+    html: 'La conversión local utiliza el Canvas API de HTML5. El GIF se carga como un elemento Image nativo del navegador. Al dibujarlo sobre un canvas, el motor gráfico captura el primer fotograma de la animación con toda su información de transparencia. El método <code>toDataURL(\'image/webp\')</code> exporta el fotograma como WebP directamente en la RAM.',
+  },
+  {
+    type: 'paragraph',
+    html: 'El formato WebP soporta canal alfa completo, por lo que las transparencias del GIF se preservan en el WebP resultante sin necesidad de añadir fondo. Los algoritmos de compresión WebP son significativamente más eficientes que los del GIF o PNG, lo que explica la drástica reducción de tamaño del archivo final.',
   },
   {
     type: 'tip',
-    html:
-      'Usa la conversión GIF a WebP para modernizar tu colección de avatares o stickers animados: obtendrás imágenes estáticas ultra-comprimidas con transparencias perfectas, ideales para web.',
+    title: 'Ganancia de PageSpeed garantizada',
+    html: 'Un GIF animado de 5 MB puede convertirse en un WebP de menos de 1 MB. Si tienes GIFs en las páginas de tu sitio web, reemplazarlos por WebP puede mejorar tu Largest Contentful Paint (LCP) y tu Total Blocking Time (TBT) de forma inmediata, impactando directamente en el posicionamiento SEO.',
+  },
+  {
+    type: 'title',
+    text: 'Casos de uso y compatibilidad del WebP resultante',
+    level: 3,
+  },
+  {
+    type: 'list',
+    icon: 'mdi:check-circle',
+    items: [
+      'Sustitución de GIFs en páginas web para mejorar PageSpeed.',
+      'Avatares y stickers optimizados para Discord, Slack y plataformas modernas.',
+      'Banners y elementos visuales para campañas de marketing digital.',
+      'Animaciones en aplicaciones web progresivas (PWA).',
+      'Compatible con Chrome, Edge, Firefox, Safari 14+ y todos los navegadores modernos.',
+    ],
+  },
+  {
+    type: 'title',
+    text: 'Conclusión: migra tus GIFs al siglo XXI',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'Un GIF de 300 KB puede producir un WebP estático del primer fotograma de apenas 15-50 KB si tiene áreas uniformes y transparencias. La reducción de tamaño puede superar el 80%.',
-  },
-  {
-    type: 'paragraph',
-    html:
-      'Convierte GIF a WebP estático gratis y offline. Mejor compresión que PNG y JPG, con soporte de transparencias. Procesado localmente sin contacto con servidores.',
+    html: 'Cada GIF en tu sitio web es una oportunidad de optimización perdida. Nuestra herramienta convierte GIFs a WebP de forma instantánea, privada y sin límites, directamente en tu navegador. El resultado: archivos hasta 5 veces más pequeños, transparencias perfectas y compatibilidad con todos los navegadores modernos.',
   },
 ];
 

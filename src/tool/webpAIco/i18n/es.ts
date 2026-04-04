@@ -65,37 +65,102 @@ const bibliography: WebpAIcoLocaleContent['bibliography'] = [
 const seo: WebpAIcoLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Convertidor WebP a ICO Online Gratuito',
+    text: 'Convertidor WebP a ICO: Crea Favicons Perfectos desde tus Assets Modernos',
+    level: 2,
   },
   {
     type: 'paragraph',
-    html:
-      'El formato WebP es el formato de imagen moderno preferido para la web, utilizado frecuentemente para logos, iconos de interfaz y gráficos de aplicaciones. Cuando necesitas convertir estos diseños WebP en iconos reales para Windows o Favicons para sitios web, necesitas el formato ICO con la estructura binaria correcta.',
+    html: 'El flujo de trabajo moderno de diseño web genera recursos en formato <strong>WebP</strong>: logos optimizados, iconos de interfaz y elementos de marca. Pero cuando llega el momento de configurar el <strong>favicon</strong> de tu sitio o los iconos de una aplicación de escritorio en Windows, el formato requerido sigue siendo <strong>ICO</strong>. Convertir WebP a ICO te permite reutilizar tus assets de mayor calidad sin perder la fuente original.',
+  },
+  {
+    type: 'title',
+    text: 'WebP vs ICO: Formatos con Propósitos Distintos',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'Una ventaja clave de convertir WebP a ICO (en lugar de JPG a ICO) es la preservación de las transparencias. El WebP soporta el canal alfa igual que PNG, por lo que nuestro convertidor puede transferir esas transparencias al ICO resultante. Obtendrás un icono con fondo transparente perfectamente funcional tanto en Windows como en navegadores web.',
+    html: 'WebP es un formato de imagen de propósito general, excelente para fotografías, ilustraciones e iconos de interfaz en la web. Su compresión eficiente lo hace ideal para acelerar la carga de páginas. Sin embargo, no tiene la estructura binaria específica que requieren los sistemas operativos y los navegadores para reconocer y mostrar un icono de aplicación o favicon.',
   },
   {
     type: 'paragraph',
-    html:
-      'El proceso completo ocurre en tu navegador. El archivo WebP se decodifica usando el soporte nativo del navegador, se renderiza en un canvas HTML5 y se codifica como ICO con las cabeceras binarias de Microsoft correctas. No hay transferencia de datos a servidores externos.',
+    html: 'ICO es un formato contenedor de Microsoft diseñado específicamente para iconos. Puede almacenar múltiples resoluciones en un único archivo y soporta transparencia total mediante canal alfa de 32 bits. Los navegadores buscan un archivo <code>favicon.ico</code> por convención, y este formato garantiza que tu icono se muestre nítido tanto en pantallas estándar como en displays Retina y 4K.',
+  },
+  {
+    type: 'title',
+    text: 'Comparativa: Conversión Local vs Nube',
+    level: 3,
+  },
+  {
+    type: 'comparative',
+    items: [
+      {
+        title: 'Convertidores Cloud',
+        description: 'Herramientas que suben tus archivos a un servidor remoto.',
+        icon: 'mdi:cloud-upload',
+        pointIcon: 'mdi:close-circle-outline',
+        points: [
+          'Tu logo de empresa viaja a servidores de terceros',
+          'Dependencia de conexión a Internet para cada conversión',
+          'Calidad de salida variable según el servidor',
+          'Limitaciones en el número de conversiones diarias',
+        ],
+      },
+      {
+        title: 'Nuestra Arquitectura Local',
+        description: 'Procesamiento directo en tu hardware mediante tecnología Vanilla JS.',
+        icon: 'mdi:laptop-mac',
+        highlight: true,
+        points: [
+          'Tu logo nunca abandona tu navegador',
+          'Cabeceras binarias ICO generadas al estándar de Microsoft',
+          'Transparencia de 32 bits preservada íntegramente',
+          'Conversión por lotes de sets completos de iconos',
+        ],
+      },
+    ],
+  },
+  {
+    type: 'title',
+    text: 'Cómo funciona técnicamente',
+    level: 3,
+  },
+  {
+    type: 'paragraph',
+    html: 'El navegador decodifica el archivo WebP de forma nativa y lo dibuja sobre un <strong>Canvas HTML5</strong> a 32 bits de profundidad de color, conservando el canal alfa original. A continuación, nuestro motor JavaScript extrae los datos de píxeles mediante el método <code>getImageData()</code> y construye la estructura binaria del archivo ICO con las cabeceras ICONDIR e ICONDIRENTRY que especifica el estándar de Microsoft.',
+  },
+  {
+    type: 'paragraph',
+    html: 'El resultado es un archivo ICO legítimo, no un simple renombrado de archivo. Los datos de píxeles están empaquetados con la estructura correcta que Windows, macOS y todos los navegadores modernos esperan encontrar al cargar un favicon o icono de aplicación.',
   },
   {
     type: 'tip',
-    html:
-      'Si tienes un logo o sticker en formato WebP con fondo transparente y quieres usarlo como Favicon de tu sitio web, convierte directamente a ICO para obtener el mejor resultado con transparencia preservada.',
+    title: 'Consejo para favicons nítidos',
+    html: 'Genera siempre tu ICO a partir de la fuente de mayor resolución disponible. Un WebP de 512×512 o mayor producirá un favicon perfectamente nítido en pantallas Retina y 4K, donde los iconos de baja resolución se ven borrosos.',
+  },
+  {
+    type: 'title',
+    text: 'Casos de uso y compatibilidad',
+    level: 3,
+  },
+  {
+    type: 'list',
+    icon: 'mdi:check-circle',
+    items: [
+      'Crear el archivo favicon.ico para cualquier sitio web o aplicación web.',
+      'Generar iconos de aplicación para instaladores de software Windows.',
+      'Producir iconos de escritorio para aplicaciones Electron o similares.',
+      'Crear sets de iconos para extensiones de navegador Chrome y Firefox.',
+      'Convertir logos de marca WebP en iconos para aplicaciones corporativas.',
+    ],
+  },
+  {
+    type: 'title',
+    text: 'Conclusión',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'El formato Favicon ICO es el estándar soportado por el 100% de los navegadores web para mostrar el icono de la pestaña del navegador. Aunque PNG también funciona, ICO ofrece compatibilidad máxima incluyendo Internet Explorer y navegadores más antiguos.',
-  },
-  {
-    type: 'paragraph',
-    html:
-      'Convierte WebP a ICO con transparencias preservadas y cabeceras binarias reales. Gratis, privado y sin límites. El mejor conversor para Favicons y iconos de Windows desde WebP.',
+    html: 'Tu flujo de diseño moderno produce WebP; el ecosistema de aplicaciones todavía exige ICO. Esta herramienta cierra esa brecha en segundos, generando iconos con la estructura binaria correcta y transparencias intactas, sin que tus assets de marca abandonen tu navegador.',
   },
 ];
 

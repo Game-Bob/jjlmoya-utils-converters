@@ -74,37 +74,83 @@ const bibliography: ImagenBase64LocaleContent['bibliography'] = [
 const seo: ImagenBase64LocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Convertisseur d\'Image vers Base64 en Ligne',
+    text: 'Convertisseur Image vers Base64 : Intégrez des Images Sans Requêtes HTTP',
+    level: 2,
   },
   {
     type: 'paragraph',
-    html:
-      'L\'encodage Base64 est une technique fondamentale dans le développement web moderne. Il permet de représenter des données binaires (comme des images) sous forme de texte ASCII, rendant possible l\'intégration d\'images directement dans le code HTML, CSS ou JavaScript sans fichiers séparés. Cela se fait via ce qu\'on appelle les Data URIs (Uniform Resource Identifiers de données).',
+    html: 'Base64 est une technique d\'encodage qui transforme des données binaires — comme une image — en une chaîne de texte ASCII pur. Le résultat est un Data URI : une URL auto-contenue qui commence par <code>data:image/png;base64,...</code> et contient l\'image entière encodée. En intégrant ce code directement dans votre HTML, CSS ou JSON, l\'image se charge sans aucune requête HTTP supplémentaire au serveur — zéro latence réseau, chargement instantané.',
+  },
+  {
+    type: 'title',
+    text: 'Quand utiliser les images en Base64',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'Un Data URI pour une image suit le format : data:[type MIME];base64,[données encodées]. Notre outil génère automatiquement le bon type MIME selon le format de l\'image que vous téléchargez, que ce soit PNG, JPG, WebP, GIF ou SVG.',
+    html: 'Le principal argument en faveur de Base64 est l\'élimination des requêtes réseau. Chaque image sur une page web représente une requête HTTP avec son overhead de connexion, DNS, handshake TLS et latence. Pour les très petites images critiques — le logo principal de l\'application, le favicon, une icône d\'interface — les intégrer en Base64 dans le CSS ou HTML élimine ce coût et garantit leur affichage instantané même avant que le navigateur n\'ait rien mis en cache.',
   },
   {
     type: 'paragraph',
-    html:
-      'Les principaux cas d\'utilisation pour les images Base64 incluent : les icônes SVG en CSS, les petits logos dans les applications SPA, les images critiques pour le chargement initial de page qui ne devraient pas causer de requêtes réseau supplémentaires, et les données d\'image en JSON ou APIs REST.',
+    html: 'Cette technique est particulièrement puissante dans les applications SPA (Single Page Applications) où le bundle JavaScript et CSS est généré au moment de la compilation : intégrer de petites images dans le bundle garantit qu\'elles se chargent avec le code sans requêtes supplémentaires. Elle est aussi indispensable pour les emails HTML, où les clients de messagerie bloquent les images externes mais affichent toujours les Data URIs intégrés.',
+  },
+  {
+    type: 'title',
+    text: 'Cas d\'utilisation pour les images Base64',
+    level: 3,
+  },
+  {
+    type: 'list',
+    icon: 'mdi:check-circle',
+    items: [
+      'HTML inline : <code>&lt;img src="data:image/png;base64,..."&gt;</code> pour les icônes critiques.',
+      'CSS background : <code>background-image: url("data:image/svg+xml;base64,...")</code> pour les SVGs d\'interface.',
+      'JSON et APIs REST : envoi d\'images comme données texte dans les payloads JSON.',
+      'Emails HTML : images intégrées qui s\'affichent même quand le client bloque les URLs externes.',
+      'Intégration SVG : intégrer des images raster dans des fichiers SVG comme données inline.',
+    ],
+  },
+  {
+    type: 'title',
+    text: 'Comment fonctionne la conversion dans le navigateur',
+    level: 3,
+  },
+  {
+    type: 'paragraph',
+    html: 'Lorsque vous sélectionnez ou faites glisser une image, l\'API <code>FileReader</code> du navigateur la lit directement depuis le disque comme données binaires en RAM. La méthode <code>readAsDataURL()</code> convertit ces octets binaires en leur représentation Base64 selon l\'algorithme RFC 4648 — chaque 3 octets de données originales sont représentés par 4 caractères ASCII de l\'alphabet Base64. Le résultat inclut le type MIME correct détecté automatiquement.',
   },
   {
     type: 'tip',
-    html:
-      'Le code Base64 est environ 33% plus grand que le fichier original. Pour les petites images (icônes, logos, petits sprites) c\'est efficace. Pour les grandes photographies, il vaut mieux utiliser des fichiers séparés et profiter du cache du navigateur.',
+    title: 'Utilisez-le uniquement pour les petites images (moins de 10 Ko)',
+    html: 'Base64 augmente la taille du fichier d\'environ 33% : une image de 10 Ko devient ~13,3 Ko de texte. Pour les petites icônes et logos, ce coût est minimal et l\'élimination de la requête HTTP le compense. Pour les photographies ou grandes images, le surcoût de taille est significatif — utilisez toujours un CDN pour les grandes images.',
+  },
+  {
+    type: 'title',
+    text: 'Quand NE PAS utiliser Base64',
+    level: 3,
+  },
+  {
+    type: 'tip',
+    title: 'Évitez Base64 pour les grandes images — utilisez un CDN',
+    html: 'Si vous avez des images de plus de 10-20 Ko, Base64 nuit aux performances : il gonfle la taille du HTML/CSS, empêche le navigateur de mettre l\'image en cache de façon indépendante, et bloque le rendu pendant que le parseur traite la chaîne géante. Pour les grandes images, servez toujours depuis un CDN avec des en-têtes de cache appropriés.',
+  },
+  {
+    type: 'title',
+    text: 'Compatibilité et confidentialité',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'Une image PNG de 1Ko se convertit en environ 1,37Ko de Base64. Une image de 100Ko donnerait environ 137Ko de texte Base64. Ce facteur de 1,33x est constant pour tout type de fichier.',
+    html: 'Les Data URIs sont compatibles avec 100% des navigateurs modernes et la plupart des clients de messagerie. Notre outil traite tout localement via l\'API FileReader — vos images ne quittent jamais votre appareil. Cela le rend adapté aux images d\'entreprise, aux captures d\'écran privées ou à tout contenu visuel confidentiel que vous devez convertir en Base64.',
+  },
+  {
+    type: 'title',
+    text: 'Conclusion : L\'outil d\'intégration le plus rapide et le plus privé',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'Convertissez des images en Base64 et Data URI gratuitement et en toute confidentialité. Support JPG, PNG, WebP, SVG et GIF. Résultat immédiat dans votre navigateur sans traitement côté serveur.',
+    html: 'Convertir des images en Base64 est une technique ciblée mais très puissante quand elle est appliquée correctement. Utilisez-la pour les petites images critiques où zéro requête HTTP fait la différence, et évitez-la pour les grandes images où un CDN gagne toujours. Avec notre outil, vous obtenez le Data URI en un instant, sans rien téléverser sur aucun serveur.',
   },
 ];
 

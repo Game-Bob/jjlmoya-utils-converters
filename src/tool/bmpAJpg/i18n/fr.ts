@@ -65,32 +65,102 @@ const bibliography: BmpAJpgLocaleContent['bibliography'] = [
 const seo: BmpAJpgLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Convertisseur BMP vers JPG en Ligne Gratuit',
+    text: 'Convertisseur BMP vers JPG : Réduisez un Fichier Géant en Quelques Secondes',
+    level: 2,
   },
   {
     type: 'paragraph',
-    html:
-      'BMP (Bitmap) est l\'un des formats d\'image les plus anciens, développé à l\'origine par Microsoft pour Windows. Sa caractéristique principale est qu\'il stocke les données d\'image sans compression, ce qui signifie qu\'un fichier BMP d\'une photographie standard peut occuper des dizaines voire des centaines de mégaoctets.',
+    html: 'Le BMP (Bitmap) est le format d\'image le plus naïf de l\'informatique : il stocke chaque pixel tel quel, sans aucune compression. Une capture d\'écran 1920x1080 en BMP pèse environ 6 Mo. Cette même image en JPG occupe entre 200 et 400 Ko avec une qualité visuellement indiscernable. La différence est abyssale, et notre outil vous permet d\'effectuer cette conversion en quelques secondes, directement dans votre navigateur, sans envoyer quoi que ce soit à un serveur.',
+  },
+  {
+    type: 'title',
+    text: 'BMP vs JPG : données brutes contre compression intelligente',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'Convertir BMP en JPG est la solution la plus pratique pour réduire drastiquement la taille de ces fichiers. Le JPG applique une compression intelligente qui peut réduire un BMP de 95% ou plus tout en maintenant une excellente qualité visuelle pour les photographies.',
+    html: 'Le BMP a été créé par Microsoft à l\'ère de Windows 3.1. Sa philosophie est la plus simple possible : chaque pixel occupe 3 octets (rouge, vert, bleu), et les pixels sont stockés ligne par ligne sans aucun traitement supplémentaire. Cette absence totale de compression rend les fichiers BMP entre 50 et 100 fois plus grands que leur équivalent JPG pour les photographies et captures d\'écran réelles.',
+  },
+  {
+    type: 'paragraph',
+    html: 'Le JPG, en revanche, utilise la Transformée en Cosinus Discrète (DCT) pour analyser chaque bloc de 8x8 pixels et supprimer les informations haute fréquence que l\'œil humain perçoit à peine. Le résultat est une image qui semble identique mais qui pèse une fraction de l\'original. Pour les fichiers BMP provenant de captures d\'écran, scanners ou applications Windows legacy, la conversion en JPG est l\'action d\'optimisation la plus impactante possible.',
+  },
+  {
+    type: 'title',
+    text: 'Comparaison d\'Architecture : Local vs Cloud',
+    level: 3,
+  },
+  {
+    type: 'comparative',
+    items: [
+      {
+        title: 'Convertisseurs Cloud',
+        description: 'Services qui envoient vos fichiers BMP vers des serveurs distants pour les traiter.',
+        icon: 'mdi:cloud-upload',
+        pointIcon: 'mdi:close-circle-outline',
+        points: [
+          'Envoyer un BMP de 10 Mo prend du temps sur des connexions lentes',
+          'Vos captures d\'écran et images confidentielles transitent sur internet',
+          'Limites de taille fréquentes dans les plans gratuits',
+          'Double latence : envoi et téléchargement du fichier converti',
+        ],
+      },
+      {
+        title: 'Notre Architecture Locale',
+        description: 'Traitement direct sur votre matériel via la technologie Vanilla JS.',
+        icon: 'mdi:laptop-mac',
+        highlight: true,
+        points: [
+          'Le BMP est traité dans votre RAM, ne voyage vers aucun serveur',
+          'Conversion instantanée sans attente',
+          'Aucune limite de taille de fichier',
+          'Confidentialité totale : 0 octet envoyé à l\'extérieur',
+        ],
+      },
+    ],
+  },
+  {
+    type: 'title',
+    text: 'Comment fonctionne la conversion technique BMP vers JPG',
+    level: 3,
+  },
+  {
+    type: 'paragraph',
+    html: 'Lorsque vous faites glisser un fichier BMP dans l\'outil, le navigateur le lit avec l\'API <code>FileReader</code> et le décode comme un objet Blob en mémoire. Ce Blob est rendu sur un canvas HTML5 invisible. Ensuite, la méthode <code>toDataURL(\'image/jpeg\')</code> applique l\'algorithme de compression JPEG aux données du canvas et génère le fichier JPG résultant.',
+  },
+  {
+    type: 'paragraph',
+    html: 'Comme le BMP n\'a pas de canal alpha (pas de support de transparence), la conversion en JPG est directe sans avoir besoin de composition avec un fond blanc. Le processus entier se déroule dans la RAM de votre ordinateur, sans aucune transmission de données par le réseau, en quelques millisecondes même pour des fichiers de plusieurs mégaoctets.',
   },
   {
     type: 'tip',
-    html:
-      'Si vous avez de très gros fichiers BMP, convertissez-en un d\'abord pour vérifier que la qualité JPG résultante est satisfaisante, puis traitez le lot complet.',
+    title: 'Les fichiers BMP Windows peuvent être énormes',
+    html: 'Les fichiers BMP générés par les captures d\'écran Windows (touche Impr écran) ou les applications legacy comme Paint peuvent peser entre 50 et 100 fois plus qu\'un JPG équivalent. Un seul BMP Full HD peut dépasser 6 Mo. Les convertir en JPG avant de les envoyer par email ou de les télécharger vers une plateforme est une pratique essentielle.',
+  },
+  {
+    type: 'title',
+    text: 'Cas d\'usage et compatibilité du JPG résultant',
+    level: 3,
+  },
+  {
+    type: 'list',
+    icon: 'mdi:check-circle',
+    items: [
+      'Optimisation des captures d\'écran Windows pour l\'envoi par email.',
+      'Conversion d\'images exportées par des logiciels legacy (CAO, anciens scanners).',
+      'Réduction du poids pour le téléchargement sur des plateformes web et réseaux sociaux.',
+      'Préparation de fichiers pour insertion dans des documents Word, PowerPoint ou PDF.',
+      'Compatibilité universelle avec tous les visionneuses et navigateurs modernes.',
+    ],
+  },
+  {
+    type: 'title',
+    text: 'Conclusion : 10 Mo de BMP, 500 Ko de JPG, même image',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'Un BMP non compressé pour une image 1920x1080 occupe environ 6 Mo. Le même contenu en JPG de haute qualité peut n\'occuper que 200-400 Ko, une réduction de 93-97%.',
-  },
-  {
-    type: 'paragraph',
-    html:
-      'Convertissez BMP en JPG gratuitement, en toute confidentialité et sans limites directement dans votre navigateur. Réduisez la taille de vos images jusqu\'à 97% sans perte de qualité visuelle notable.',
+    html: 'La conversion de BMP en JPG est l\'un des exercices d\'optimisation les plus rentables dans la gestion des fichiers image. Notre outil effectue cette transformation en quelques secondes, sans envoyer de fichier, sans créer de compte, directement dans votre navigateur. Le résultat est un JPG de haute qualité, universellement compatible, pesant jusqu\'à 97% de moins que le BMP original.',
   },
 ];
 

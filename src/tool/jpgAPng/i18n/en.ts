@@ -65,42 +65,102 @@ const bibliography: JpgAPngLocaleContent['bibliography'] = [
 const seo: JpgAPngLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Free Online JPG to PNG Converter',
+    text: 'JPG to PNG Converter: Edit Without Quality Loss and Add Transparency',
+    level: 2,
   },
   {
     type: 'paragraph',
-    html:
-      'Converting JPG to PNG is a frequent operation in the workflow of designers, web developers and content editors. The JPG format, while efficient for photographs, applies a lossy compression algorithm that introduces visual artifacts every time the file is re-saved. PNG, on the other hand, uses lossless compression, meaning the image maintains its original fidelity without degrading with each save.',
+    html: '<strong>JPG</strong> is unbeatable for camera photographs, but it has a critical weakness: every time you save the file, it applies its lossy compression again, progressively degrading edges and gradients. <strong>PNG</strong> uses lossless compression — once saved, pixels are immutable. Converting a JPG to PNG is the essential step when you need to prepare an image for intensive editing, add a transparent background, or integrate it into a design workflow that requires multiple saves.',
+  },
+  {
+    type: 'title',
+    text: 'JPG or PNG? When to use each format',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'One of the main reasons to convert from JPG to PNG is to prepare an image for editing. When working with overlaid text, logos or precise graphic elements, PNG prevents the accumulation of JPEG artifacts that would make text edges look blurry or flat colors lose definition.',
+    html: '<strong>JPG</strong> is the king of photography: small files, compatible with everything. But its compression artifacts accumulate with each edit and re-save. If you need to crop, retouch, or add text to an image repeatedly, starting from JPG means introducing degradation in every cycle. JPG also lacks an alpha channel: it cannot have transparent backgrounds, which disqualifies it for logos, icons, and UI elements.',
   },
   {
     type: 'paragraph',
-    html:
-      'Our converter uses the HTML5 Canvas API to perform the conversion entirely in your browser. The JPG file is decoded in memory, drawn on a virtual canvas and exported as lossless PNG. This process ensures you get the best possible result starting from the original JPG file.',
+    html: '<strong>PNG</strong> is the right choice for corporate logos, screenshots with sharp text, interface elements, product images with white backgrounds that you will later need to cut out, or any graphic asset that will be edited more than once. Lossless compression guarantees that text edges remain perfectly defined and flat colors stay pure — no JPEG noise.',
+  },
+  {
+    type: 'title',
+    text: 'Comparison: Local vs Cloud Conversion',
+    level: 3,
+  },
+  {
+    type: 'comparative',
+    items: [
+      {
+        title: 'Cloud Converters',
+        description: 'Tools that upload your files to a remote server.',
+        icon: 'mdi:cloud-upload',
+        pointIcon: 'mdi:close-circle-outline',
+        points: [
+          'Network latency on upload and download',
+          'Your images are stored on third-party servers',
+          'File size limits and daily conversion caps',
+          'Intrusive ads and third-party trackers',
+        ],
+      },
+      {
+        title: 'Our Local Architecture',
+        description: 'Direct processing on your hardware using Vanilla JS technology.',
+        icon: 'mdi:laptop-mac',
+        highlight: true,
+        points: [
+          'Instant speed — zero network latency',
+          'Complete privacy — 0 bytes sent externally',
+          'No MB limits or file count restrictions',
+          'Clean interface, no ads or tracking',
+        ],
+      },
+    ],
+  },
+  {
+    type: 'title',
+    text: 'How it works technically',
+    level: 3,
+  },
+  {
+    type: 'paragraph',
+    html: 'The process is entirely local: the browser creates a <strong>Blob</strong> from the selected JPG and draws it onto an in-memory <strong>HTML5 Canvas</strong>. Once rendered, it calls <code>toDataURL(\'image/png\')</code> — the browser\'s built-in PNG codec re-encodes every pixel without applying any new lossy compression. The result is a PNG that faithfully preserves the current state of the JPG: neither better nor worse, simply frozen.',
+  },
+  {
+    type: 'paragraph',
+    html: 'The resulting PNG uses lossless DEFLATE compression, the same used by professional tools like Photoshop or GIMP. Its size will be larger than the original JPG — typically 2 to 5 times — because it stores all pixels without discarding any information. This is the price paid for fidelity and infinite editability.',
   },
   {
     type: 'tip',
-    html:
-      'Remember that converting a JPG to PNG does not recover quality lost by the original JPEG compression. PNG simply freezes the image in its current state without introducing more losses.',
+    title: 'Important: PNG does not recover JPEG quality',
+    html: 'Converting a JPG to PNG <strong>does not recover quality lost</strong> during the original JPEG compression. If your JPG already had block artifacts or color noise, the PNG will preserve them intact — it simply prevents more from being added. Think of the conversion as "freezing" the current state of the image so that future edits do not degrade it further.',
+  },
+  {
+    type: 'title',
+    text: 'Use cases and compatibility',
+    level: 3,
+  },
+  {
+    type: 'list',
+    icon: 'mdi:check-circle',
+    items: [
+      'Logos and brand elements that need a transparent background after cutting out.',
+      'Screenshots with text that will be edited and re-saved multiple times.',
+      'Product images for e-commerce requiring a clean, cuttable white background.',
+      'Graphic assets for PowerPoint or Google Slides presentations.',
+      'UI assets for web and mobile applications where edge sharpness is critical.',
+    ],
+  },
+  {
+    type: 'title',
+    text: 'Conclusion',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'PNG files are typically 2 to 5 times larger than their JPG equivalents. This size difference is the price of lossless compression and transparency support.',
-  },
-  {
-    type: 'paragraph',
-    html:
-      'The conversion process is completely private. Our converter does not send any data to external servers; everything happens locally on your device. You can convert corporate images, personal photographs or any sensitive material without worrying about privacy.',
-  },
-  {
-    type: 'paragraph',
-    html:
-      'Convert JPG to PNG for free, securely and without limits directly in your browser. Ideal for preparing images for editing or preserving quality in workflows that require multiple saves.',
+    html: 'Converting JPG to PNG is the first step in any serious design workflow. It does not transform the original quality, but it protects every pixel from future edits. With this tool, the process happens instantly and completely privately — your corporate or personal images never leave your device at any point.',
   },
 ];
 

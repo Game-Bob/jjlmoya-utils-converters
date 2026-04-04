@@ -65,37 +65,102 @@ const bibliography: JpgAIcoLocaleContent['bibliography'] = [
 const seo: JpgAIcoLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Free Online JPG to ICO Converter',
+    text: 'JPG to ICO Converter: Create Favicons and Windows Icons from Your Photos',
+    level: 2,
   },
   {
     type: 'paragraph',
-    html:
-      'Converting JPG to ICO is necessary when you want to create custom icons for Windows, Favicons for websites or visual identifiers for applications. Microsoft\'s ICO format is the standard for all these uses and our converter generates genuine ICO files with the correct binary structure.',
+    html: 'The <strong>ICO</strong> format is Microsoft\'s standard for Windows application icons and website favicons. Unlike simply renaming a JPG as .ico, a genuine ICO file requires a specific binary structure with 22-byte headers and an embedded image directory. <strong>JPG</strong> is the most common starting point for creating these icons — a company logo, a profile photo, or any image you want to turn into the visual icon of your application or website.',
+  },
+  {
+    type: 'title',
+    text: 'JPG or ICO? When to use each format',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'An important technical consideration when converting JPG to ICO is image proportion. The ICO format requires square images. If your original JPG is rectangular, our converter will center and automatically crop it to fit in a square format, preserving the central part of the image.',
+    html: '<strong>JPG</strong> is a source format, not a destination for icons. Perfect for photographs and banners, but incompatible with systems that require icons: Windows Explorer, the browser\'s bookmark bar, desktop shortcuts, or PWA application manifests. An operating system or browser looking for an icon expects the ICO format — and if it doesn\'t find it, it will display a generic icon or a broken square.',
+  },
+  {
+    type: 'paragraph',
+    html: 'The <strong>ICO</strong> format was designed to contain multiple resolutions in a single file: <strong>16×16</strong> for the bookmark bar, <strong>32×32</strong> for shortcuts, <strong>48×48</strong> for the file explorer, and <strong>256×256</strong> for high-density displays. Browsers and operating systems automatically select the appropriate resolution based on the display context — the user doesn\'t have to manage anything.',
+  },
+  {
+    type: 'title',
+    text: 'Comparison: Local vs Cloud Conversion',
+    level: 3,
+  },
+  {
+    type: 'comparative',
+    items: [
+      {
+        title: 'Cloud Converters',
+        description: 'Tools that upload your files to a remote server.',
+        icon: 'mdi:cloud-upload',
+        pointIcon: 'mdi:close-circle-outline',
+        points: [
+          'Network latency on upload and download',
+          'Your corporate logos stored on third-party servers',
+          'File size limits and daily conversion caps',
+          'Intrusive ads and third-party trackers',
+        ],
+      },
+      {
+        title: 'Our Local Architecture',
+        description: 'Direct processing on your hardware using Vanilla JS technology.',
+        icon: 'mdi:laptop-mac',
+        highlight: true,
+        points: [
+          'Instant speed — zero network latency',
+          'Complete privacy — 0 bytes sent externally',
+          'No MB limits or file count restrictions',
+          'Clean interface, no ads or tracking',
+        ],
+      },
+    ],
+  },
+  {
+    type: 'title',
+    text: 'How it works technically',
+    level: 3,
+  },
+  {
+    type: 'paragraph',
+    html: 'The JPG is decoded and drawn onto an in-memory <strong>HTML5 Canvas</strong>. Since the ICO format requires a square image, the engine automatically detects if the JPG is rectangular and crops it by centering the most relevant part. It then builds the standard Microsoft ICO header with the correct magic number (<code>00 00 01 00</code>), the image directory, and the encoded pixel data. The result is a genuine binary .ico file — not a renamed PNG.',
+  },
+  {
+    type: 'paragraph',
+    html: 'Since JPG lacks an alpha channel, the resulting ICO will also have no transparency — it will have a solid background inherited from the original photograph. If you need a favicon with a transparent background (for example, to adapt to dark or light bookmark bars), the recommended workflow is: remove the background in an editor, save as PNG, and use the PNG to ICO converter.',
   },
   {
     type: 'tip',
-    html:
-      'For better quality icons, always use a high-resolution square JPG (at least 256x256) as source. The converter will resize to the standard ICO size maintaining maximum possible sharpness.',
+    title: 'Tip: multiple resolutions in a single ICO',
+    html: 'ICO files can pack <strong>multiple resolutions</strong> into a single file — the browser or OS automatically picks the most appropriate one for each context. For the best possible result, use a square JPG of at least <strong>256×256 pixels</strong> as your source: this gives the converter enough information to generate sharp 16×16, 32×32, and 48×48 sizes without pixelation.',
+  },
+  {
+    type: 'title',
+    text: 'Use cases and compatibility',
+    level: 3,
+  },
+  {
+    type: 'list',
+    icon: 'mdi:check-circle',
+    items: [
+      'Website favicon: compatible with all browsers including Internet Explorer.',
+      'Folder and desktop icon customization in Windows 10/11.',
+      'Shortcut icon for desktop applications or installers.',
+      'Application icon for Electron projects or PWA applications.',
+      'Icons for file management systems and corporate file explorers.',
+    ],
+  },
+  {
+    type: 'title',
+    text: 'Conclusion',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'ICO files for Windows can contain multiple resolutions (16x16, 32x32, 48x48, 256x256) in a single file. Our converter generates the ICO at the optimal resolution based on your source image.',
-  },
-  {
-    type: 'paragraph',
-    html:
-      'Since JPG has no alpha channel, the resulting ICO will not have transparency. For icons with transparency, we recommend first removing the background in an image editor, saving as PNG and then converting from PNG to ICO to get an icon with perfect transparency.',
-  },
-  {
-    type: 'paragraph',
-    html:
-      'Convert JPG to authentic ICO with real binary headers. Automatic crop for square format. Free, private and compatible with Windows and all browsers.',
+    html: 'Converting a JPG to ICO is a technically essential step for any web or desktop project that needs a recognizable visual identity. This tool generates authentic ICOs with the correct binary structure, in seconds, without uploading your logo to any external server. The result works in all browsers, in Windows Explorer, and in any system that consumes Microsoft\'s ICO standard.',
   },
 ];
 

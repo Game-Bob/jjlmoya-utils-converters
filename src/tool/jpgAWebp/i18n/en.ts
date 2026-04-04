@@ -65,32 +65,102 @@ const bibliography: JpgAWebpLocaleContent['bibliography'] = [
 const seo: JpgAWebpLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Free Online JPG to WebP Converter',
+    text: 'JPG to WebP Converter: Speed Up Your Site with Google\'s Modern Format',
+    level: 2,
   },
   {
     type: 'paragraph',
-    html:
-      'JPG has been the standard for web photographs for decades. However, Google\'s modern WebP format offers a better quality-to-size ratio, allowing JPG file sizes to be reduced by 25% to 35% while maintaining virtually identical visual quality. For any website looking to improve loading speed, converting JPG to WebP is one of the most impactful optimizations available.',
+    html: 'The <strong>JPG</strong> format has dominated digital photography for decades — universally compatible and widely supported. But Google engineered <strong>WebP</strong> to beat JPG at its own game: the same visual quality at 25–35% less file size. For developers and marketing teams fighting slow page loads, converting JPG to WebP is the single highest-return optimization you can apply without touching your design.',
+  },
+  {
+    type: 'title',
+    text: 'JPG or WebP? When to use each format',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'The JPG to WebP conversion process preserves all the color information of the original image. Unlike PNG which can be affected by transparency handling, JPG is a purely flat format, meaning conversion to WebP is straightforward with no alpha channel complications.',
+    html: '<strong>JPG</strong> remains the right choice when you need universal compatibility: client emails, Word documents, legacy social media platforms, or CMS systems that do not yet accept WebP. Its thirty-year ecosystem guarantees that any screen, printer, or viewer will open it without issues. The main drawback is size — a 1.5 MB header JPG can drag down your page\'s LCP score and fail Core Web Vitals thresholds.',
+  },
+  {
+    type: 'paragraph',
+    html: '<strong>WebP</strong> is the smart choice for all content that lives on your website. Chrome, Firefox, Safari and Edge have supported it natively for years. Product images in e-commerce, blog banners, video thumbnails, and any photo published online all benefit directly: lighter pages, better Google PageSpeed Insights scores, and a smoother user experience — especially on slow mobile connections.',
+  },
+  {
+    type: 'title',
+    text: 'Comparison: Local vs Cloud Conversion',
+    level: 3,
+  },
+  {
+    type: 'comparative',
+    items: [
+      {
+        title: 'Cloud Converters',
+        description: 'Tools that upload your files to a remote server.',
+        icon: 'mdi:cloud-upload',
+        pointIcon: 'mdi:close-circle-outline',
+        points: [
+          'Network latency on upload and download',
+          'Your photos are stored on third-party servers',
+          'File size limits and daily conversion caps',
+          'Intrusive ads and third-party trackers',
+        ],
+      },
+      {
+        title: 'Our Local Architecture',
+        description: 'Direct processing on your hardware using Vanilla JS technology.',
+        icon: 'mdi:laptop-mac',
+        highlight: true,
+        points: [
+          'Instant speed — zero network latency',
+          'Complete privacy — 0 bytes sent externally',
+          'No MB limits or file count restrictions',
+          'Clean interface, no ads or tracking',
+        ],
+      },
+    ],
+  },
+  {
+    type: 'title',
+    text: 'How it works technically',
+    level: 3,
+  },
+  {
+    type: 'paragraph',
+    html: 'When you drag a JPG into the tool, the browser creates a <strong>Blob object</strong> that lives only in your RAM. That Blob is decoded and drawn onto an invisible <strong>HTML5 Canvas</strong> element. Since JPG has no alpha channel, the conversion to WebP is direct: the engine exports the canvas by calling <code>toDataURL(\'image/webp\')</code>, generating a byte stream that your OS downloads instantly — no server involved.',
+  },
+  {
+    type: 'paragraph',
+    html: 'The WebP compression algorithm combines block prediction techniques (similar to those in VP8, Google\'s video codec) with color transforms and arithmetic coding. The result is a file that contains the same perceptual information as the original JPG but packaged far more efficiently — meaning fewer kilobytes transferred with every page visit.',
   },
   {
     type: 'tip',
-    html:
-      'Use WebP for product images in e-commerce, blog photographs and any image on your website. Modern browsers like Chrome, Firefox and Safari fully support WebP.',
+    title: 'Core Web Vitals Tip: LCP and image weight',
+    html: 'The <strong>Largest Contentful Paint (LCP)</strong> is the Google metric that measures how long it takes to load the largest visual element on your page. A 1.5 MB header JPG can become a WebP of just 900 KB — or even 600 KB — with no noticeable visual difference. That <strong>25–35% saving</strong> can move your LCP from "Needs Improvement" to "Good" and push you up the search rankings.',
+  },
+  {
+    type: 'title',
+    text: 'Use cases and compatibility',
+    level: 3,
+  },
+  {
+    type: 'list',
+    icon: 'mdi:check-circle',
+    items: [
+      'Product images on WooCommerce or Shopify stores: less weight, more conversions.',
+      'Blog and article photography: better PageSpeed score without redesigning anything.',
+      'Web banners and display advertising creatives: lighter files with the same sharpness.',
+      'Portfolio galleries for architecture, photography, or design studios.',
+      'Video thumbnails on streaming sites or online course platforms.',
+    ],
+  },
+  {
+    type: 'title',
+    text: 'Conclusion',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'According to studies by Google, lossy WebP images are between 25% and 34% smaller than comparable JPG files, which can speed up web page load time by several seconds.',
-  },
-  {
-    type: 'paragraph',
-    html:
-      'Convert JPG to WebP at no cost, without limits and with complete privacy. Reduce the weight of your images and improve your website performance immediately.',
+    html: 'Converting your JPGs to WebP is today one of the simplest and most cost-effective optimizations you can apply to any website. With this tool you do it in seconds, for free, and without your images ever leaving your device. Fewer kilobytes, better LCP, faster pages — all with the exact same visual appearance you already had.',
   },
 ];
 
