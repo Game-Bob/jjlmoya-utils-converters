@@ -64,31 +64,31 @@ const bibliography: GifAJpgLocaleContent['bibliography'] = [
 const seo: GifAJpgLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Convertisseur GIF vers JPG en Ligne Gratuit',
+    text: 'Convertisseur GIF vers JPG en Ligne Gratuit',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Les fichiers GIF sont largement connus pour leur capacité à jouer de courtes animations. Cependant, il y a des situations où vous avez besoin d\'une image statique du contenu GIF : pour l\'utiliser comme miniature, l\'envoyer par e-mail, ou simplement pour obtenir une version de haute qualité d\'un moment spécifique de l\'animation.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Convertir GIF en JPG extrait la première image de l\'animation et la convertit en une image JPG statique. Pendant ce processus, les zones transparentes du GIF original sont remplacées par un fond blanc solide, car le JPG ne supporte pas la transparence.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Si vous devez extraire plusieurs images d\'un GIF animé (pas seulement la première), envisagez d\'utiliser un outil spécialisé d\'édition GIF. Ce convertisseur est optimisé pour obtenir rapidement l\'image statique de la première trame.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'Un GIF animé de 2 Mo peut produire un JPG de la première image de seulement 50-200 Ko, selon la résolution et la complexité de l\'image.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convertissez GIF en JPG en extrayant la première image. Gratuit, privé et local. Fonds transparents automatiquement remplacés par du blanc pour une compatibilité JPG totale.',
   },
 ];

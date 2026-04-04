@@ -64,31 +64,31 @@ const bibliography: BmpAPngLocaleContent['bibliography'] = [
 const seo: BmpAPngLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Convertisseur BMP vers PNG en Ligne Gratuit',
+    text: 'Convertisseur BMP vers PNG en Ligne Gratuit',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'BMP et PNG sont tous deux des formats d\'image sans perte, ce qui signifie qu\'aucune information visuelle n\'est jetée lors du stockage. Cependant, il existe une différence fondamentale en termes d\'efficacité : BMP stocke les données brutes sans compression, tandis que PNG utilise l\'algorithme de compression Deflate pour réduire la taille du fichier sans perdre un seul pixel d\'information.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'La conversion BMP vers PNG est particulièrement utile lors du travail avec des captures d\'écran, des graphiques d\'interface utilisateur, des designs à couleurs plates ou toute image où la précision des couleurs est prioritaire. PNG préservera chaque valeur de couleur exactement comme dans le BMP original, mais avec une taille de fichier considérablement plus petite.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Si vous avez besoin d\'une compatibilité maximale avec les logiciels d\'édition et d\'une précision parfaite des couleurs, convertissez BMP en PNG plutôt qu\'en JPG. Le PNG sans perte garantit que les couleurs ne se dégradent jamais.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'Un BMP plein écran typique (1920x1080) occupe environ 6 Mo. Le même contenu en PNG peut occuper 1 à 3 Mo, soit une réduction de 50 à 85% sans aucune perte de qualité.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convertissez BMP en PNG sans perte de qualité, gratuitement et en toute confidentialité. La meilleure option pour préserver des couleurs exactes avec une taille de fichier optimisée.',
   },
 ];

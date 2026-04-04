@@ -64,31 +64,31 @@ const bibliography: AvifAWebpLocaleContent['bibliography'] = [
 const seo: AvifAWebpLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Convertisseur AVIF vers WebP en Ligne Gratuit',
+    text: 'Convertisseur AVIF vers WebP en Ligne Gratuit',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Convertir AVIF en WebP est un choix judicieux lorsque vous devez élargir la compatibilité de vos images sans sacrifier l\'efficacité de compression. Tandis qu\'AVIF offre la meilleure compression possible, WebP a une compatibilité bien plus large sur les navigateurs, appareils et applications.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'WebP maintient plusieurs caractéristiques qui le rendent supérieur au JPG pour le web : il supporte le canal alpha pour la transparence, peut utiliser à la fois la compression avec et sans perte, et bénéficie d\'un support universel dans tous les navigateurs modernes.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Si vous gérez des images pour un site web et avez besoin du meilleur équilibre entre compatibilité et performances, WebP est le choix idéal. Convertissez vos AVIF en WebP pour servir des images web modernes avec un support universel.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'WebP bénéficie d\'un support dans plus de 96% de tous les navigateurs web mondiaux, tandis qu\'AVIF est autour de 80-85%. Cette différence de compatibilité rend WebP plus sûr pour le déploiement en production.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convertissez AVIF en WebP gratuitement avec support de transparence et meilleure compatibilité web. Traitement local sans envoi de données vers des serveurs externes.',
   },
 ];

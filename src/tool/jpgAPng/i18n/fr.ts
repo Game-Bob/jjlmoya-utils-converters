@@ -64,36 +64,36 @@ const bibliography: JpgAPngLocaleContent['bibliography'] = [
 const seo: JpgAPngLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Convertisseur JPG vers PNG en Ligne Gratuit',
+    text: 'Convertisseur JPG vers PNG en Ligne Gratuit',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'La conversion de JPG en PNG est une opération fréquente dans le flux de travail des designers, développeurs web et éditeurs de contenu. Le format JPG, bien qu\'efficace pour les photographies, applique un algorithme de compression avec perte qui introduit des artefacts visuels chaque fois que le fichier est resauvegardé.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'L\'une des principales raisons de convertir de JPG en PNG est de préparer une image pour son édition. Lorsque vous travaillez avec du texte superposé, des logos ou des éléments graphiques précis, le PNG empêche l\'accumulation d\'artefacts JPEG qui rendraient les bords du texte flous ou les couleurs plates moins définies.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'N\'oubliez pas que la conversion d\'un JPG en PNG ne récupère pas la qualité perdue par la compression JPEG originale. Le PNG fige simplement l\'image dans son état actuel sans introduire de nouvelles pertes.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'Les fichiers PNG sont généralement 2 à 5 fois plus grands que leurs équivalents JPG. Cette différence de taille est le prix de la compression sans perte et du support de la transparence.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Le processus de conversion est totalement privé. Notre convertisseur n\'envoie aucune donnée à des serveurs externes ; tout se passe localement sur votre appareil. Vous pouvez convertir des images d\'entreprise, des photographies personnelles ou tout matériel sensible sans vous soucier de la confidentialité.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convertissez JPG en PNG gratuitement, en toute sécurité et sans limites directement dans votre navigateur. Idéal pour préparer des images à l\'édition ou pour préserver la qualité dans des flux de travail nécessitant plusieurs sauvegardes.',
   },
 ];

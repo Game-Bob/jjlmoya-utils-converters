@@ -64,36 +64,36 @@ const bibliography: SvgAJpgLocaleContent['bibliography'] = [
 const seo: SvgAJpgLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Convertidor SVG a JPG Online Gratuito',
+    text: 'Convertidor SVG a JPG Online Gratuito',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Mientras que el formato SVG es perfectamente escalable y ligero para su uso en la web, en ocasiones necesitas una versión JPG de tu gráfico vectorial. El JPG es el formato fotográfico más compatible del mundo y puede ser abierto sin problemas por cualquier dispositivo, sistema operativo o programa de visualización de imágenes.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'La conversión de SVG a JPG implica un proceso de rasterización: el gráfico vectorial se convierte en una cuadrícula de píxeles. Durante este proceso, las transparencias del SVG se fusionan con un fondo blanco sólido, ya que el formato JPG no soporta el canal alfa. Nuestro convertidor realiza esta rasterización a doble resolución (2x) para producir JPGs nítidos aptos para cualquier uso.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Todo el proceso ocurre en tu navegador sin necesidad de conectarse a ningún servidor. El SVG se carga en un elemento Image, se dibuja sobre un canvas HTML5 con fondo blanco a escala 2x y se exporta como JPG de alta calidad.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Si tu SVG tiene texto o fuentes personalizadas, asegúrate de que estén incrustados o convertidos a trayectorias antes de convertir. Las fuentes del sistema pueden no estar disponibles en el motor de renderizado.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'Un SVG de 100KB convertido a JPG a 2x puede producir un archivo de entre 50KB y 500KB dependiendo de la complejidad del diseño y los colores utilizados.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convierte SVG a JPG de alta resolución de forma gratuita y privada. Renderizado 2x para máxima nitidez, fondo blanco automático para compatibilidad total con JPG.',
   },
 ];

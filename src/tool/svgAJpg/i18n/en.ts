@@ -64,31 +64,31 @@ const bibliography: SvgAJpgLocaleContent['bibliography'] = [
 const seo: SvgAJpgLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Free Online SVG to JPG Converter',
+    text: 'Free Online SVG to JPG Converter',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'While SVG is perfectly scalable and lightweight for web use, sometimes you need a JPG version of your vector graphic. JPG is the world\'s most compatible photographic format and can be opened without issues by any device, operating system or image viewing program.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Converting SVG to JPG involves a rasterization process: the vector graphic is converted into a pixel grid. During this process, SVG transparencies are merged with a solid white background, since JPG does not support the alpha channel. Our converter performs this rasterization at double resolution (2x) to produce crisp JPGs suitable for any use.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'If your SVG has text or custom fonts, make sure they are embedded or converted to paths before converting. System fonts may not be available in the rendering engine.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'A 100KB SVG converted to JPG at 2x can produce a file between 50KB and 500KB depending on the complexity of the design and colors used.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convert SVG to high-resolution JPG for free and privately. 2x rendering for maximum sharpness, automatic white background for full JPG compatibility.',
   },
 ];

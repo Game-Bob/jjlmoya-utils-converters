@@ -64,31 +64,31 @@ const bibliography: JpgAWebpLocaleContent['bibliography'] = [
 const seo: JpgAWebpLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Convertisseur JPG vers WebP en Ligne Gratuit',
+    text: 'Convertisseur JPG vers WebP en Ligne Gratuit',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Le JPG est le standard pour les photographies web depuis des décennies. Cependant, le format moderne WebP de Google offre un meilleur rapport qualité-taille, permettant de réduire la taille des fichiers JPG de 25% à 35% tout en maintenant une qualité visuelle pratiquement identique.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Le processus de conversion JPG vers WebP préserve toutes les informations de couleur de l\'image originale. Contrairement au PNG qui peut être affecté par la gestion de la transparence, le JPG est un format purement plat, ce qui signifie que la conversion en WebP est simple.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Utilisez WebP pour les images de produits en e-commerce, les photographies de blog et toute image sur votre site web. Les navigateurs modernes comme Chrome, Firefox et Safari supportent entièrement WebP.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'Selon des études de Google, les images WebP avec perte sont entre 25% et 34% plus petites que les fichiers JPG comparables, ce qui peut accélérer le temps de chargement d\'une page web de plusieurs secondes.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convertissez JPG en WebP sans frais, sans limites et avec une confidentialité totale. Réduisez le poids de vos images et améliorez immédiatement les performances de votre site web.',
   },
 ];

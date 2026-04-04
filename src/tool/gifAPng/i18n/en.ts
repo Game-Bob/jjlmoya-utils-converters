@@ -64,36 +64,36 @@ const bibliography: GifAPngLocaleContent['bibliography'] = [
 const seo: GifAPngLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Free Online GIF to PNG Converter',
+    text: 'Free Online GIF to PNG Converter',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Converting GIF to PNG has a significant advantage over converting to JPG: transparency preservation. PNG, like some GIFs, supports the alpha channel. If your GIF has a transparent background, the resulting PNG will preserve it with complete fidelity. This is especially important for logos, avatars, icons and any graphic that will be used on different colored backgrounds.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Another advantage of PNG over JPG for this type of conversion is lossless quality. PNG uses lossless compression, meaning the image extracted from the GIF will maintain all its details without the compression artifacts that JPG format would introduce.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'If you have an animated GIF avatar for Discord, Telegram or other platforms and need the static PNG version, this converter is the perfect tool to get it in seconds.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'A 500 KB animated GIF can produce a PNG of the first frame between 50 KB and 200 KB, depending on image complexity and colors. If it has transparency, the PNG will preserve it perfectly.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'The conversion is done entirely in the browser. The GIF is loaded into memory, the first frame is rendered on an HTML5 canvas and exported as PNG. No network connection is established throughout the process.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convert GIF to PNG preserving transparency and without quality loss. First frame extraction for free, privately and locally in your browser.',
   },
 ];

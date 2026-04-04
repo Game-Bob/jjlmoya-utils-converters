@@ -64,36 +64,36 @@ const bibliography: JpgAWebpLocaleContent['bibliography'] = [
 const seo: JpgAWebpLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Convertidor JPG a WebP Online Gratuito',
+    text: 'Convertidor JPG a WebP Online Gratuito',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'El formato JPG ha sido durante décadas el estándar para fotografías en la web. Sin embargo, el moderno formato WebP de Google ofrece una mejor relación calidad-peso, permitiendo reducir el tamaño de los archivos JPG entre un 25% y un 35% manteniendo una calidad visual prácticamente idéntica. Para cualquier sitio web que busque mejorar su velocidad de carga, la conversión de JPG a WebP es una de las optimizaciones más impactantes disponibles.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'El proceso de conversión de JPG a WebP preserva toda la información de color de la imagen original. A diferencia de PNG que puede verse afectado por transparencias, el JPG es un formato puramente plano, lo que significa que la conversión a WebP es directa y sin complicaciones en cuanto al canal alfa.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Nuestro convertidor opera completamente en el navegador. Las imágenes JPG se cargan a través del Canvas API de HTML5, se renderiza su contenido y se exporta en formato WebP. Ningún archivo viaja a través de internet hacia un servidor remoto, garantizando la confidencialidad total de tu material.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Utiliza WebP para imágenes de productos en e-commerce, fotografías de blog y cualquier imagen en tu web. Los navegadores modernos como Chrome, Firefox y Safari soportan WebP completamente.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'Según estudios realizados por Google, las imágenes WebP con pérdida son entre un 25% y un 34% más pequeñas que los archivos JPG comparables, lo que puede acelerar el tiempo de carga de una página web en varios segundos.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convierte JPG a WebP sin coste, sin límites y con total privacidad. Reduce el peso de tus imágenes y mejora el rendimiento de tu sitio web de forma inmediata.',
   },
 ];

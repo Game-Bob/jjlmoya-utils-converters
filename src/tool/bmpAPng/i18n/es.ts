@@ -64,36 +64,36 @@ const bibliography: BmpAPngLocaleContent['bibliography'] = [
 const seo: BmpAPngLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Convertidor BMP a PNG Online Gratuito',
+    text: 'Convertidor BMP a PNG Online Gratuito',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Tanto BMP como PNG son formatos de imagen sin pérdida, lo que significa que no se descarta información visual durante el almacenamiento. Sin embargo, existe una diferencia fundamental en cuanto a eficiencia: BMP almacena los datos de manera cruda sin ningún tipo de compresión, mientras que PNG utiliza el algoritmo de compresión Deflate para reducir el tamaño del archivo sin perder un solo píxel de información.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'La conversión de BMP a PNG es especialmente útil cuando trabajas con capturas de pantalla, gráficos de interfaz de usuario, diseños con colores planos o cualquier imagen donde la exactitud de color es prioritaria. PNG preservará cada valor de color exactamente igual que el BMP original, pero con un tamaño de archivo considerablemente más pequeño.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Nuestro convertidor realiza todo el proceso localmente. El archivo BMP se decodifica en memoria, se dibuja en un canvas HTML5 y se exporta como PNG usando el algoritmo de compresión nativo del navegador. No hay transferencia de datos a servidores externos.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Si necesitas máxima compatibilidad con software de edición y precisión de color perfecta, convierte BMP a PNG en lugar de JPG. El PNG lossless garantiza que los colores no se deterioren nunca.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'Un archivo BMP típico de pantalla completa (1920x1080) ocupa unos 6 MB. El mismo contenido en PNG puede ocupar entre 1 y 3 MB, logrando una reducción del 50-85% sin ninguna pérdida de calidad.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convierte BMP a PNG sin pérdida de calidad, gratuitamente y con total privacidad. La mejor opción para preservar colores exactos con un tamaño de archivo optimizado.',
   },
 ];

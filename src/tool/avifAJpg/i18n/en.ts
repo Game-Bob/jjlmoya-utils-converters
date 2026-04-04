@@ -64,36 +64,36 @@ const bibliography: AvifAJpgLocaleContent['bibliography'] = [
 const seo: AvifAJpgLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Free Online AVIF to JPG Converter',
+    text: 'Free Online AVIF to JPG Converter',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'AVIF (AV1 Image File Format) is the most modern and efficient image format currently available. Developed by the Alliance for Open Media, it offers significantly superior compression to WebP, PNG and JPG. However, its adoption is still limited: many desktop applications, image editors, and especially photo viewers on older devices are unable to open AVIF files.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Converting AVIF to JPG is the solution to maximize compatibility. JPG has universal support on all devices and operating systems worldwide. By converting from AVIF to JPG, you ensure anyone can view your image without compatibility issues.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'If you share images with people using older devices or programs, always convert from AVIF to JPG to ensure they can view them without installing additional software.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'AVIF can achieve images 50-60% smaller than JPEG at equivalent visual quality. However, the universal compatibility of JPG still makes it essential for mass distribution.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Our converter performs the entire process in the browser. The AVIF file is decoded by the browser\'s native image engine, rendered on an HTML5 canvas and exported as high-quality JPG. All this without sending any data to the internet.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convert AVIF to JPG for free, locally and without limits. Maximum universal compatibility for your images without compromising your file privacy.',
   },
 ];

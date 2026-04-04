@@ -68,36 +68,36 @@ const bibliography: WebpAJpgLocaleContent['bibliography'] = [
 const seo: WebpAJpgLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Convertidor WebP a JPG Online Gratuito',
+    text: 'Convertidor WebP a JPG Online Gratuito',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'El formato WebP es el estándar moderno de Google para imágenes web, pero su compatibilidad con software antiguo y dispositivos más limitados puede ser problemática. Convertir WebP a JPG garantiza que tus imágenes puedan ser abiertas por prácticamente cualquier programa, dispositivo o plataforma del mundo, ya que JPG es el formato fotográfico más universalmente soportado.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Un aspecto técnico importante a considerar es el manejo de las transparencias. El formato JPG no soporta el canal alfa, por lo que cualquier área transparente presente en el archivo WebP original será sustituida automáticamente por un fondo blanco sólido durante la conversión. Si necesitas preservar la transparencia, considera usar el formato PNG como destino en su lugar.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'La conversión se realiza completamente en tu navegador mediante JavaScript y el Canvas API de HTML5. No se requiere ninguna instalación de software adicional y los archivos nunca se envían a ningún servidor externo, lo que garantiza una privacidad total para imágenes personales, corporativas o de cualquier naturaleza sensible.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Para mejores resultados, convierte WebP a JPG cuando necesites compartir fotos por email o redes sociales donde el tamaño importa. Si necesitas transparencia, usa WebP a PNG en su lugar.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'El formato JPG tiene una compatibilidad del 100% entre todos los navegadores, sistemas operativos y dispositivos, mientras que WebP puede no ser compatible con algunos lectores de imágenes y editores más antiguos.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convierte WebP a JPG de forma local, gratuita y sin límites. Sin servidores, sin registro, compatible con todos tus dispositivos y archivos.',
   },
 ];

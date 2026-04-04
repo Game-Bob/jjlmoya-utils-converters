@@ -1,4 +1,4 @@
-﻿---
+---
 import type { KnownLocale } from '../types';
 
 interface Props {
@@ -131,13 +131,22 @@ const otherLocales = Object.entries(localeUrls).filter(([l]) => l !== currentLoc
   }
 
   :global(.theme-light) .theme-icon {
-    background: #f59e0b;
-    box-shadow: 0 0 8px #fbbf24;
+    --sun-color: #f59e0b;
+    --sun-shadow-color: #fbbf24;
+    --sun-shadow-blur: 8px;
+
+    background: var(--sun-color);
+    box-shadow: 0 0 var(--sun-shadow-blur) var(--sun-shadow-color);
   }
 
   :global(.theme-dark) .theme-icon {
-    background: #94a3b8;
-    box-shadow: inset -4px -2px 0 #1e293b;
+    --moon-color: #94a3b8;
+    --moon-shadow-color: #1e293b;
+    --moon-offset-x: -4px;
+    --moon-offset-y: -2px;
+
+    background: var(--moon-color);
+    box-shadow: inset var(--moon-offset-x) var(--moon-offset-y) 0 var(--moon-shadow-color);
   }
 </style>
 

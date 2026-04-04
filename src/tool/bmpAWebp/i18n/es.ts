@@ -64,36 +64,36 @@ const bibliography: BmpAWebpLocaleContent['bibliography'] = [
 const seo: BmpAWebpLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Convertidor BMP a WebP Online Gratuito',
+    text: 'Convertidor BMP a WebP Online Gratuito',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Convertir BMP a WebP representa una de las reducciones de tamaño más dramáticas posibles entre formatos de imagen. Un archivo BMP sin comprimir puede ocupar 10, 20 o incluso 50 veces más espacio que su equivalente en WebP. El formato WebP de Google utiliza compresión avanzada tanto con pérdida como sin pérdida, logrando archivos extremadamente ligeros que mantienen una calidad visual excelente.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'El proceso funciona completamente offline en tu navegador. Los archivos BMP se decodifican mediante el API nativo del navegador, se renderizan en un canvas HTML5 y se exportan como WebP. No se establece ninguna conexión de red durante la conversión, garantizando la confidencialidad total de tus archivos.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'WebP también soporta el canal alfa para transparencias, lo que lo hace versátil para cualquier tipo de imagen. Si tus BMPs tienen fondos de colores uniformes, la compresión WebP sin pérdida puede generar archivos especialmente pequeños al aprovechar la redundancia de los datos.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Si tienes una colección de imágenes BMP antiguas de Windows, convertirlas a WebP es la manera más eficiente de modernizarlas para uso web manteniendo toda su calidad visual.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'Un archivo BMP típico de pantalla de escritorio a 1920x1080 puede convertirse de sus 6 MB originales a un WebP de entre 100 KB y 500 KB, representando reducciones de hasta el 98%.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convierte BMP a WebP offline, gratis y sin límites. La conversión más eficiente disponible: de archivos enormes sin comprimir a WebP ultra-comprimido, con privacidad total garantizada.',
   },
 ];

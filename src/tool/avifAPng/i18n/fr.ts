@@ -64,31 +64,31 @@ const bibliography: AvifAPngLocaleContent['bibliography'] = [
 const seo: AvifAPngLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Convertisseur AVIF vers PNG en Ligne Gratuit',
+    text: 'Convertisseur AVIF vers PNG en Ligne Gratuit',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'AVIF est l\'un des formats les plus avancés disponibles aujourd\'hui, capable de compresser des images avec une efficacité remarquable. Cependant, l\'adoption d\'AVIF dans les outils d\'édition, les visionneuses d\'images et les systèmes d\'exploitation plus anciens est encore limitée. PNG, en revanche, est un format largement compatible, supporté par pratiquement n\'importe quel outil logiciel.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'La conversion AVIF vers PNG présente un avantage fondamental par rapport à la conversion en JPG : la préservation du canal alpha. Si votre image AVIF a des zones transparentes, lors de la conversion en PNG celles-ci sont conservées intactes. Ceci est crucial pour les logos, icônes, autocollants et tout graphique où la transparence est essentielle.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Si vous recevez un fichier AVIF que vous devez éditer dans Photoshop ou GIMP, convertissez-le d\'abord en PNG pour assurer une compatibilité totale et préserver toute transparence présente.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'PNG bénéficie d\'un support universel dans tous les éditeurs d\'image, systèmes d\'exploitation et navigateurs web. AVIF, malgré son efficacité, n\'est toujours pas supporté dans Internet Explorer, les anciennes versions de Safari et de nombreux programmes d\'édition.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convertissez AVIF en PNG en préservant la transparence, gratuitement et localement. Obtenez la compatibilité universelle du PNG sans sacrifier la qualité d\'image de votre AVIF.',
   },
 ];

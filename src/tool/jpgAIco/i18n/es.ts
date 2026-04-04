@@ -64,36 +64,36 @@ const bibliography: JpgAIcoLocaleContent['bibliography'] = [
 const seo: JpgAIcoLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Convertidor JPG a ICO Online Gratuito',
+    text: 'Convertidor JPG a ICO Online Gratuito',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Convertir JPG a ICO es necesario cuando quieres crear iconos personalizados para Windows, Favicons para sitios web o identificadores visuales para aplicaciones. El formato ICO de Microsoft es el estándar para todos estos usos y nuestro convertidor genera archivos ICO genuinos con la estructura binaria correcta.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Una consideración técnica importante al convertir JPG a ICO es la proporción de la imagen. El formato ICO requiere imágenes cuadradas. Si tu foto JPG original es rectangular (horizontal o vertical), nuestro convertidor la centrará y recortará automáticamente para que quepa en un formato cuadrado, preservando la parte central de la imagen.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Como el JPG no tiene canal alfa, el ICO resultante no tendrá transparencia. Para iconos con transparencia, te recomendamos primero eliminar el fondo en un editor de imágenes, guardar como PNG y luego convertir de PNG a ICO para obtener un icono con transparencia perfecta.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Para iconos de mejor calidad, usa siempre una imagen JPG cuadrada de alta resolución (al menos 256x256) como fuente. El convertidor redimensionará al tamaño ICO estándar manteniendo la máxima nitidez posible.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'Los archivos ICO para Windows pueden contener múltiples resoluciones (16x16, 32x32, 48x48, 256x256) en un mismo archivo. Nuestro convertidor genera el ICO en la resolución óptima según tu imagen de origen.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convierte JPG a ICO auténtico con cabeceras binarias reales. Recorte automático para formato cuadrado. Gratis, privado y compatible con Windows y todos los navegadores.',
   },
 ];

@@ -64,31 +64,31 @@ const bibliography: JpgAIcoLocaleContent['bibliography'] = [
 const seo: JpgAIcoLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Convertisseur JPG vers ICO en Ligne Gratuit',
+    text: 'Convertisseur JPG vers ICO en Ligne Gratuit',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Convertir JPG en ICO est nécessaire lorsque vous voulez créer des icônes personnalisées pour Windows, des Favicons pour des sites web ou des identificateurs visuels pour des applications. Le format ICO de Microsoft est le standard pour tous ces usages et notre convertisseur génère de vrais fichiers ICO avec la structure binaire correcte.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Une considération technique importante lors de la conversion JPG en ICO est la proportion de l\'image. Le format ICO nécessite des images carrées. Si votre JPG original est rectangulaire, notre convertisseur le centrera et le recadrera automatiquement pour s\'adapter à un format carré, préservant la partie centrale de l\'image.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Pour des icônes de meilleure qualité, utilisez toujours un JPG carré haute résolution (au moins 256x256) comme source. Le convertisseur redimensionnera à la taille ICO standard en maintenant la netteté maximale possible.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'Les fichiers ICO pour Windows peuvent contenir plusieurs résolutions (16x16, 32x32, 48x48, 256x256) dans un même fichier. Notre convertisseur génère l\'ICO à la résolution optimale selon votre image source.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convertissez JPG en ICO authentique avec de vrais en-têtes binaires. Recadrage automatique pour format carré. Gratuit, privé et compatible avec Windows et tous les navigateurs.',
   },
 ];

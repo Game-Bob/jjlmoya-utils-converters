@@ -64,36 +64,36 @@ const bibliography: GifAWebpLocaleContent['bibliography'] = [
 const seo: GifAWebpLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Free Online GIF to WebP Converter',
+    text: 'Free Online GIF to WebP Converter',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Converting GIF to WebP combines the best features of both formats. GIF can have transparency and multiple frames, while WebP can be static, lighter and with better quality. By extracting the first frame of the GIF and exporting it as WebP, you get a modern, ultra-lightweight image with full transparency support.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'The WebP format offers superior compression both lossy and lossless. For images extracted from GIFs with few colors or large uniform areas, lossless WebP compression can produce extraordinarily small files while maintaining perfect quality.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Use GIF to WebP conversion to modernize your collection of animated avatars or stickers: you\'ll get ultra-compressed static images with perfect transparency, ideal for the web.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'A 300 KB GIF can produce a static WebP of the first frame of just 15-50 KB if it has uniform areas and transparency. The size reduction can exceed 80%.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'The entire conversion process happens locally in your browser. The GIF file is decoded in memory, the first frame is rendered on an HTML5 canvas and exported as WebP. No servers are involved, guaranteeing maximum privacy.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convert GIF to static WebP for free and offline. Better compression than PNG and JPG, with transparency support. Processed locally without server contact.',
   },
 ];

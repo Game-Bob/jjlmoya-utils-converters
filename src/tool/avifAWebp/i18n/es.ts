@@ -64,36 +64,36 @@ const bibliography: AvifAWebpLocaleContent['bibliography'] = [
 const seo: AvifAWebpLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Convertidor AVIF a WebP Online Gratuito',
+    text: 'Convertidor AVIF a WebP Online Gratuito',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'La conversión de AVIF a WebP es una elección inteligente cuando necesitas ampliar la compatibilidad de tus imágenes sin sacrificar la eficiencia de compresión. Mientras que AVIF ofrece la mejor compresión posible, WebP tiene una compatibilidad mucho más amplia en navegadores, dispositivos y aplicaciones.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'WebP mantiene varias características que lo hacen superior al JPG para uso web: soporta el canal alfa para transparencias, puede usar compresión tanto con pérdida como sin pérdida, y tiene soporte universal en todos los navegadores modernos. Al convertir de AVIF a WebP, obtienes un archivo compatible con prácticamente todo el ecosistema web actual.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'El proceso de conversión utiliza el soporte nativo de AVIF en navegadores modernos para decodificar el archivo en memoria. Después, el canvas API de HTML5 renderiza la imagen y la exporta como WebP. Todo el proceso ocurre localmente sin comunicación externa.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Si gestionas imágenes para un sitio web y necesitas el mejor balance entre compatibilidad y rendimiento, WebP es la elección ideal. Convierte tus AVIF a WebP para servir imágenes web modernas con soporte universal.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'WebP tiene soporte en más del 96% de todos los navegadores web globalmente, mientras que AVIF ronda el 80-85%. Esta diferencia de compatibilidad hace que WebP sea más seguro para implementación en producción.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convierte AVIF a WebP gratuitamente con soporte de transparencias y mejor compatibilidad web. Procesado localmente sin enviar datos a servidores externos.',
   },
 ];

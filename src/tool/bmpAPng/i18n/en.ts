@@ -64,36 +64,36 @@ const bibliography: BmpAPngLocaleContent['bibliography'] = [
 const seo: BmpAPngLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Free Online BMP to PNG Converter',
+    text: 'Free Online BMP to PNG Converter',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Both BMP and PNG are lossless image formats, meaning no visual information is discarded during storage. However, there is a fundamental difference in efficiency: BMP stores data raw without any compression, while PNG uses the Deflate compression algorithm to reduce file size without losing a single pixel of information.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Converting BMP to PNG is particularly useful when working with screenshots, UI graphics, flat-color designs or any image where color accuracy is a priority. PNG will preserve every color value exactly the same as the original BMP, but with a considerably smaller file size.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'If you need maximum editing software compatibility and perfect color accuracy, convert BMP to PNG instead of JPG. Lossless PNG guarantees colors never deteriorate.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'A typical full-screen BMP (1920x1080) takes about 6 MB. The same content in PNG can take 1-3 MB, achieving a 50-85% reduction without any quality loss.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Our converter performs all processing locally. The BMP file is decoded in memory, drawn on an HTML5 canvas and exported as PNG using the browser\'s native compression algorithm. No data is transferred to external servers.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convert BMP to PNG without quality loss, for free and with complete privacy. The best option for preserving exact colors with an optimized file size.',
   },
 ];

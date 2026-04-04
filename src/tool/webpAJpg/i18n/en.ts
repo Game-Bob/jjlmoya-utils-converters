@@ -68,31 +68,31 @@ const bibliography: WebpAJpgLocaleContent['bibliography'] = [
 const seo: WebpAJpgLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Free Online WebP to JPG Converter',
+    text: 'Free Online WebP to JPG Converter',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'WebP is Google\'s modern web image standard, but compatibility with older software and more limited devices can be problematic. Converting WebP to JPG ensures your images can be opened by virtually any program, device or platform in the world, since JPG is the most universally supported photographic format.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'An important technical aspect to consider is transparency handling. The JPG format does not support the alpha channel, so any transparent area in the original WebP file will automatically be replaced with a solid white background during conversion. If you need to preserve transparency, consider using PNG as the target format instead.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'For best results, convert WebP to JPG when you need to share photos by email or social media where size matters. If you need transparency, use WebP to PNG instead.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'The JPG format has 100% compatibility across all browsers, operating systems and devices, while WebP may not be compatible with some older image viewers and editors.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convert WebP to JPG locally, for free and without limits. No servers, no registration, compatible with all your devices and files.',
   },
 ];

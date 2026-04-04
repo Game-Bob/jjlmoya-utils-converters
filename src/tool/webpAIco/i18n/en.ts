@@ -64,36 +64,36 @@ const bibliography: WebpAIcoLocaleContent['bibliography'] = [
 const seo: WebpAIcoLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Free Online WebP to ICO Converter',
+    text: 'Free Online WebP to ICO Converter',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'WebP is the preferred modern image format for the web, frequently used for logos, UI icons and application graphics. When you need to convert these WebP designs into real icons for Windows or Favicons for websites, you need the ICO format with the correct binary structure.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'A key advantage of converting WebP to ICO (instead of JPG to ICO) is the preservation of transparencies. WebP supports the alpha channel just like PNG, so our converter can transfer those transparencies to the resulting ICO. You will get a perfectly functional transparent background icon both in Windows and web browsers.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'If you have a logo or sticker in WebP format with transparent background and want to use it as a Favicon for your website, convert directly to ICO for the best result with preserved transparency.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'The ICO Favicon format is supported by 100% of web browsers for displaying the browser tab icon. While PNG also works, ICO offers maximum compatibility including Internet Explorer and older browsers.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'The entire process happens in your browser. The WebP file is decoded using the browser\'s native support, rendered on an HTML5 canvas and encoded as ICO with the correct Microsoft binary headers. No data is transferred to external servers.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convert WebP to ICO with preserved transparency and real binary headers. Free, private and unlimited. The best converter for Favicons and Windows icons from WebP.',
   },
 ];

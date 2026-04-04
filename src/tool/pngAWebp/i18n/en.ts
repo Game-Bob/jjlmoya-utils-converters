@@ -68,36 +68,36 @@ const bibliography: PngAWebpLocaleContent['bibliography'] = [
 const seo: PngAWebpLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Free Online PNG to WebP Converter',
+    text: 'Free Online PNG to WebP Converter',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'WebP has become Google\'s recommended standard for web images. When your page uses WebP images instead of PNG, Google PageSpeed Insights recognizes it as a positive optimization that can significantly improve your performance score and page load time.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'A key technical feature of WebP is that it supports both lossy and lossless compression, and also supports the alpha channel for transparency. This means you can convert PNG to WebP without losing the transparent areas of your image, getting a significantly lighter file with the same visual quality.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Before uploading images to your website or blog, convert all your PNGs to WebP to improve load times and user experience, especially on slow mobile connections.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'According to Google, lossless WebP images are 26% smaller than equivalent PNGs. Lossy WebP images are 25-34% smaller than comparable JPGs at the same visual quality.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'The tool is completely free, with no file limits or registrations. All conversion happens locally, ensuring your original images remain private and secure on your device.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convert PNG to WebP for free, with transparency support and without sending images to servers. Reduce image weight by up to 40% and improve web performance.',
   },
 ];

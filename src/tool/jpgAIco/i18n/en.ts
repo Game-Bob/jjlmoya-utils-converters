@@ -64,36 +64,36 @@ const bibliography: JpgAIcoLocaleContent['bibliography'] = [
 const seo: JpgAIcoLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Free Online JPG to ICO Converter',
+    text: 'Free Online JPG to ICO Converter',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Converting JPG to ICO is necessary when you want to create custom icons for Windows, Favicons for websites or visual identifiers for applications. Microsoft\'s ICO format is the standard for all these uses and our converter generates genuine ICO files with the correct binary structure.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'An important technical consideration when converting JPG to ICO is image proportion. The ICO format requires square images. If your original JPG is rectangular, our converter will center and automatically crop it to fit in a square format, preserving the central part of the image.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'For better quality icons, always use a high-resolution square JPG (at least 256x256) as source. The converter will resize to the standard ICO size maintaining maximum possible sharpness.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'ICO files for Windows can contain multiple resolutions (16x16, 32x32, 48x48, 256x256) in a single file. Our converter generates the ICO at the optimal resolution based on your source image.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Since JPG has no alpha channel, the resulting ICO will not have transparency. For icons with transparency, we recommend first removing the background in an image editor, saving as PNG and then converting from PNG to ICO to get an icon with perfect transparency.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convert JPG to authentic ICO with real binary headers. Automatic crop for square format. Free, private and compatible with Windows and all browsers.',
   },
 ];

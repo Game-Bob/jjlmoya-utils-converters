@@ -68,41 +68,41 @@ const bibliography: WebpAPngLocaleContent['bibliography'] = [
 const seo: WebpAPngLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Convertidor WebP a PNG Online Gratuito',
+    text: 'Convertidor WebP a PNG Online Gratuito',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'El formato WebP fue desarrollado por Google como una alternativa moderna a PNG y JPG, ofreciendo una compresión superior con o sin pérdida de calidad. Sin embargo, su adopción en herramientas de edición profesional como versiones antiguas de Photoshop, Illustrator o editores de imágenes especializados puede ser limitada, lo que hace necesario convertir WebP a PNG para garantizar la compatibilidad universal.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Una ventaja fundamental de la conversión WebP a PNG es la preservación del canal alfa. A diferencia de la conversión a JPG donde los fondos transparentes se rellenan con blanco, el formato PNG mantiene íntegramente cualquier área transparente que tenga el archivo WebP original. Esto es especialmente valioso para logos, iconos, ilustraciones y cualquier gráfico con transparencias.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Nuestro convertidor funciona completamente en el lado del cliente. No existe ningún servidor intermediario; el proceso entero ocurre dentro del motor JavaScript de tu navegador. Esto significa que tus imágenes nunca abandonan tu dispositivo, garantizando una privacidad absoluta incluso para material corporativo o confidencial.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Si tu archivo WebP tiene transparencias y necesitas editarlo en Photoshop, convierte siempre a PNG en lugar de JPG para conservar el canal alfa y poder editar la transparencia.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'El formato WebP puede reducir el tamaño de los archivos PNG hasta un 26% y los JPG hasta un 34%, según la documentación oficial de Google para imágenes sin pérdida y con pérdida respectivamente.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'La herramienta soporta la conversión en lote. Puedes arrastrar múltiples archivos WebP simultáneamente y descargar todos los PNG resultantes en un único archivo ZIP comprimido, ahorrando tiempo cuando necesitas convertir colecciones completas de imágenes.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convierte WebP a PNG con total privacidad y calidad, preservando transparencias. Gratis, sin límites y procesado localmente en tu navegador.',
   },
 ];

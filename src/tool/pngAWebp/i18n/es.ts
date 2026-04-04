@@ -68,41 +68,41 @@ const bibliography: PngAWebpLocaleContent['bibliography'] = [
 const seo: PngAWebpLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Convertidor PNG a WebP Online Gratuito',
+    text: 'Convertidor PNG a WebP Online Gratuito',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'El formato WebP se ha convertido en el estándar recomendado por Google para imágenes web. Cuando tu página usa imágenes WebP en lugar de PNG, Google PageSpeed Insights lo reconoce como una optimización positiva que puede mejorar significativamente la puntuación de rendimiento y el tiempo de carga de la página.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Una característica técnica clave de WebP es que soporta tanto compresión con pérdida como sin pérdida, además de admitir el canal alfa para transparencias. Esto significa que puedes convertir PNG a WebP sin perder las áreas transparentes de tu imagen, obteniendo un archivo significativamente más ligero con la misma calidad visual y sin comprometer las transparencias.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Nuestro convertidor procesa todo en el lado del cliente. La imagen PNG se carga en el Canvas API de HTML5, se renderiza y se exporta como WebP mediante el método toDataURL del canvas con el tipo MIME correspondiente. No hay transferencia de datos a ningún servidor externo.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Antes de subir imágenes a tu sitio web o blog, convierte todos tus PNG a WebP para mejorar los tiempos de carga y la experiencia del usuario, especialmente en conexiones móviles lentas.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'Según Google, las imágenes WebP sin pérdida son un 26% más pequeñas que los PNG equivalentes. Las imágenes WebP con pérdida son un 25-34% más pequeñas que los JPG comparables a la misma calidad visual.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'La herramienta es completamente gratuita, sin límites de archivos ni registros. Toda la conversión ocurre localmente, garantizando que tus imágenes originales permanezcan privadas y seguras en tu dispositivo.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convierte PNG a WebP gratuitamente, con soporte para transparencias y sin enviar imágenes a servidores. Reduce el peso de tus imágenes hasta un 40% y mejora el rendimiento web.',
   },
 ];

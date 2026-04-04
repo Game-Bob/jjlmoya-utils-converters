@@ -36,7 +36,7 @@ const acceptInput = (from || 'jpg') === 'svg' ? '.svg' : 'image/*';
 ---
 
 <style is:global>
-  @import './style.css';
+  @import url('./style.css');
 </style>
 
 <div class="image-converter-dashboard animate-in">
@@ -48,7 +48,7 @@ const acceptInput = (from || 'jpg') === 'svg' ? '.svg' : 'image/*';
     data-target={targetFormat}
   >
     <div class="upload-icon">
-      <Icon name="mdi:image-sync" size={64} />
+      <Icon name="mdi:image-move" size={96} />
     </div>
     <div class="upload-text">
       <span>{ui.dragText}</span>
@@ -59,16 +59,9 @@ const acceptInput = (from || 'jpg') === 'svg' ? '.svg' : 'image/*';
   </div>
 
   <div id="converter-list-container" class="converter-file-list hidden">
-    <div
-      class="list-summary"
-      style="display: flex; justify-content: space-between; align-items: center; margin: 1rem 0; padding: 0 1rem;"
-    >
-      <h3 style="font-weight: 700;">{ui.processedFiles}</h3>
-      <button
-        id="download-zip"
-        class="upload-btn hidden"
-        style="background:var(--brand-primary, #6366f1); padding: 0.5rem 1.25rem; font-size: 0.85rem;"
-      >
+    <div class="list-summary">
+      <h3>{ui.processedFiles}</h3>
+      <button id="download-zip" class="upload-btn hidden">
         <Icon name="mdi:zip-box" /> {ui.downloadAll}
       </button>
     </div>
@@ -95,7 +88,7 @@ const acceptInput = (from || 'jpg') === 'svg' ? '.svg' : 'image/*';
       <a href="#" download class="dl-btn hidden" title="Descargar">
         <Icon name="mdi:download" size={20} />
       </a>
-      <span class="final-size" style="font-size: 0.85rem; font-weight: 600;"></span>
+      <span class="final-size"></span>
     </div>
   </div>
 </template>

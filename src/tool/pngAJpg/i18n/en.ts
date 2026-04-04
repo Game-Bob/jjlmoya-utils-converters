@@ -64,46 +64,46 @@ const bibliography: PngAJpgLocaleContent['bibliography'] = [
 const seo: PngAJpgLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Free Online PNG to JPG Converter',
+    text: 'Free Online PNG to JPG Converter',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'PNG (Portable Network Graphics) is widely used for its lossless quality and transparency (alpha channel) support. However, this fidelity comes at a cost: PNG files are considerably larger than their JPG equivalents, especially for photographs or images with complex gradients.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'JPG (or JPEG) uses a lossy compression algorithm that drastically reduces file size. For photographs and images where a small loss of detail is acceptable, JPG is the standard choice. A 2 MB PNG can become a 200 KB JPG with virtually identical visual quality.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Our PNG to JPG converter works entirely in your web browser using the HTML5 Canvas API. The process is simple: the PNG image is loaded into memory, drawn on a virtual canvas, and exported as JPG at optimal quality. Transparent areas in the PNG are replaced with a solid white background, as the JPG format does not support the alpha channel.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'For images with text or logos requiring transparent backgrounds, consider using WebP instead of JPG. WebP offers similar compression but retains transparency support.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'JPG can reduce the size of a photographic image by 70% to 90% compared to PNG, depending on image complexity and the quality settings applied.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Typical use cases for converting PNG to JPG include: preparing images for email where size matters, optimizing product photos for online stores, reducing screenshot weight before sharing, and compressing images for faster web page loading.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Privacy is a priority in our tool. Unlike online converters that upload your files to remote servers, our converter processes everything locally on your device. Your images never leave your computer, which is especially important for corporate documents, personal photos, or any sensitive material.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convert PNG to JPG instantly, for free, and privately directly in your browser. No registration, no limits, and without compromising the security of your files.',
   },
 ];

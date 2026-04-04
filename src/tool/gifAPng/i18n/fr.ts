@@ -64,31 +64,31 @@ const bibliography: GifAPngLocaleContent['bibliography'] = [
 const seo: GifAPngLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Convertisseur GIF vers PNG en Ligne Gratuit',
+    text: 'Convertisseur GIF vers PNG en Ligne Gratuit',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Convertir GIF en PNG présente un avantage significatif par rapport à la conversion en JPG : la préservation de la transparence. Le PNG, comme certains GIF, supporte le canal alpha. Si votre GIF a un fond transparent, le PNG résultant le préservera avec une totale fidélité.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Un autre avantage du PNG sur le JPG pour ce type de conversion est la qualité sans perte. Le PNG utilise une compression sans perte, ce qui signifie que l\'image extraite du GIF conservera tous ses détails sans les artefacts de compression que le format JPG introduirait.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Si vous avez un avatar GIF animé pour Discord, Telegram ou d\'autres plateformes et avez besoin de la version PNG statique, ce convertisseur est l\'outil parfait pour l\'obtenir en quelques secondes.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'Un GIF animé de 500 Ko peut produire un PNG de la première image entre 50 Ko et 200 Ko, selon la complexité et les couleurs de l\'image. S\'il a de la transparence, le PNG la préservera parfaitement.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convertissez GIF en PNG en préservant la transparence et sans perte de qualité. Extraction de la première image gratuitement, en toute confidentialité et localement dans votre navigateur.',
   },
 ];

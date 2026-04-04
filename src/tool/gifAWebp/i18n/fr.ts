@@ -64,31 +64,31 @@ const bibliography: GifAWebpLocaleContent['bibliography'] = [
 const seo: GifAWebpLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Convertisseur GIF vers WebP en Ligne Gratuit',
+    text: 'Convertisseur GIF vers WebP en Ligne Gratuit',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Convertir GIF en WebP combine les meilleures caractéristiques des deux formats. Le GIF peut avoir de la transparence et plusieurs images, tandis que WebP peut être statique, plus léger et de meilleure qualité. En extrayant la première image du GIF et en l\'exportant en WebP, vous obtenez une image moderne, ultra-légère avec support complet de la transparence.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Le format WebP offre une compression supérieure avec et sans perte. Pour les images extraites de GIF avec peu de couleurs ou de grandes zones uniformes, la compression WebP sans perte peut produire des fichiers extraordinairement petits tout en maintenant une qualité parfaite.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Utilisez la conversion GIF vers WebP pour moderniser votre collection d\'avatars animés ou de stickers : vous obtiendrez des images statiques ultra-compressées avec une transparence parfaite, idéales pour le web.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'Un GIF de 300 Ko peut produire un WebP statique de la première image de seulement 15-50 Ko s\'il a des zones uniformes et de la transparence. La réduction de taille peut dépasser 80%.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convertissez GIF en WebP statique gratuitement et hors ligne. Meilleure compression que PNG et JPG, avec support de transparence. Traitement local sans contact avec les serveurs.',
   },
 ];

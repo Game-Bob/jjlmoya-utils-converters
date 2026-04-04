@@ -64,31 +64,31 @@ const bibliography: AvifAPngLocaleContent['bibliography'] = [
 const seo: AvifAPngLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Free Online AVIF to PNG Converter',
+    text: 'Free Online AVIF to PNG Converter',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'AVIF is one of the most advanced formats available today, capable of compressing images with remarkable efficiency. However, AVIF adoption in editing tools, image viewers and older operating systems is still limited. PNG, on the other hand, is a widely compatible format supported by virtually any software tool.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Converting AVIF to PNG has a fundamental advantage over converting to JPG: the preservation of the alpha channel. If your AVIF image has transparent areas, when converting to PNG these are kept intact. This is crucial for logos, icons, stickers and any graphic where transparency is essential for the design.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'If you receive an AVIF file that you need to edit in Photoshop or GIMP, convert it first to PNG to ensure full compatibility and preserve any transparency present.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'PNG has universal support in all image editors, operating systems and web browsers. AVIF, despite its efficiency, is still not supported in Internet Explorer, older Safari versions and many editing programs.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convert AVIF to PNG preserving transparency, for free and locally. Get the universal compatibility of PNG without sacrificing the image quality of your AVIF.',
   },
 ];

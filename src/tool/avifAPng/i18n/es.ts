@@ -64,36 +64,36 @@ const bibliography: AvifAPngLocaleContent['bibliography'] = [
 const seo: AvifAPngLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Convertidor AVIF a PNG Online Gratuito',
+    text: 'Convertidor AVIF a PNG Online Gratuito',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'El formato AVIF es uno de los más avanzados disponibles hoy, capaz de comprimir imágenes con una eficiencia notable. Sin embargo, la adopción de AVIF en herramientas de edición, visores de imágenes y sistemas operativos más antiguos es aún limitada. PNG, en cambio, es un formato ampliamente compatible, soportado por prácticamente cualquier herramienta de software.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'La conversión de AVIF a PNG tiene una ventaja fundamental sobre la conversión a JPG: la preservación del canal alfa. Si tu imagen AVIF tiene áreas transparentes, al convertir a PNG estas se mantienen intactas. Esto es crucial para logos, iconos, pegatinas y cualquier gráfico donde la transparencia es esencial para el diseño.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Toda la conversión ocurre en tu navegador web. Los navegadores modernos ya incluyen soporte nativo para AVIF, lo que permite decodificar el archivo localmente, renderizarlo en un canvas y exportarlo como PNG sin ninguna comunicación con servidores externos.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Si recibes un archivo AVIF que necesitas editar en Photoshop o GIMP, conviértelo primero a PNG para garantizar compatibilidad total y preservar cualquier transparencia presente.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'PNG tiene soporte universal en todos los editores de imagen, sistemas operativos y navegadores web. AVIF, a pesar de su eficiencia, todavía no está soportado en Internet Explorer, versiones antiguas de Safari y muchos programas de edición.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convierte AVIF a PNG preservando transparencias, de forma gratuita y local. Obtén la compatibilidad universal de PNG sin sacrificar la calidad de imagen de tu AVIF.',
   },
 ];

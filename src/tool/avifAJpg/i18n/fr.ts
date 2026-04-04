@@ -64,31 +64,31 @@ const bibliography: AvifAJpgLocaleContent['bibliography'] = [
 const seo: AvifAJpgLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Convertisseur AVIF vers JPG en Ligne Gratuit',
+    text: 'Convertisseur AVIF vers JPG en Ligne Gratuit',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'AVIF (AV1 Image File Format) est le format d\'image le plus moderne et efficace actuellement disponible. Développé par l\'Alliance for Open Media, il offre une compression significativement supérieure au WebP, PNG et JPG. Cependant, son adoption est encore limitée : de nombreuses applications de bureau, éditeurs d\'images et visionneuses de photos sur appareils plus anciens ne peuvent pas ouvrir les fichiers AVIF.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Convertir AVIF en JPG est la solution pour maximiser la compatibilité. Le JPG bénéficie d\'un support universel sur tous les appareils et systèmes d\'exploitation dans le monde. En convertissant d\'AVIF en JPG, vous garantissez que n\'importe qui peut voir votre image sans problèmes de compatibilité.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Si vous partagez des images avec des personnes utilisant des appareils ou programmes plus anciens, convertissez toujours d\'AVIF en JPG pour vous assurer qu\'ils peuvent les voir sans installer de logiciels supplémentaires.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'AVIF peut produire des images 50 à 60% plus petites que JPEG à qualité visuelle équivalente. Cependant, la compatibilité universelle du JPG le rend toujours essentiel pour la distribution de masse.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convertissez AVIF en JPG gratuitement, localement et sans limites. Compatibilité universelle maximale pour vos images sans compromettre la confidentialité de vos fichiers.',
   },
 ];

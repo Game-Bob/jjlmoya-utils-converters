@@ -64,31 +64,31 @@ const bibliography: JpgAWebpLocaleContent['bibliography'] = [
 const seo: JpgAWebpLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Free Online JPG to WebP Converter',
+    text: 'Free Online JPG to WebP Converter',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'JPG has been the standard for web photographs for decades. However, Google\'s modern WebP format offers a better quality-to-size ratio, allowing JPG file sizes to be reduced by 25% to 35% while maintaining virtually identical visual quality. For any website looking to improve loading speed, converting JPG to WebP is one of the most impactful optimizations available.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'The JPG to WebP conversion process preserves all the color information of the original image. Unlike PNG which can be affected by transparency handling, JPG is a purely flat format, meaning conversion to WebP is straightforward with no alpha channel complications.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Use WebP for product images in e-commerce, blog photographs and any image on your website. Modern browsers like Chrome, Firefox and Safari fully support WebP.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'According to studies by Google, lossy WebP images are between 25% and 34% smaller than comparable JPG files, which can speed up web page load time by several seconds.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convert JPG to WebP at no cost, without limits and with complete privacy. Reduce the weight of your images and improve your website performance immediately.',
   },
 ];

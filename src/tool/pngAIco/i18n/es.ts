@@ -64,36 +64,36 @@ const bibliography: PngAIcoLocaleContent['bibliography'] = [
 const seo: PngAIcoLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Convertidor PNG a ICO Online Gratuito',
+    text: 'Convertidor PNG a ICO Online Gratuito',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'El formato ICO (Icon) es el estándar de Microsoft para iconos de aplicaciones de Windows y Favicons de páginas web. A diferencia de simplemente renombrar un PNG como .ico, un archivo ICO genuino requiere una estructura binaria específica con cabeceras de 22 bytes, un directorio de imágenes y los datos de imagen codificados de forma particular.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Nuestro convertidor crea archivos ICO auténticos, no simples renombrados. El proceso incluye: leer el PNG en un canvas HTML5, crear la cabecera ICO binaria estándar de Microsoft con el magic number correcto (00 00 01 00), generar el directorio de imagen y combinar todo en un archivo .ico binario válido. El resultado es reconocido nativamente por Windows, macOS y todos los navegadores web.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Las transparencias del PNG se preservan completamente en el ICO resultante. Esto es crucial para Favicons donde el icono se muestra sobre diferentes fondos (la barra de favoritos puede ser clara u oscura). Un ICO con canal alfa de 32 bits funciona perfectamente en todos los contextos.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Para mejores resultados como Favicon, usa un PNG cuadrado de 512x512 o 256x256 píxeles como fuente. Nuestro convertidor lo redimensionará al tamaño estándar ICO preservando la proporción y la transparencia.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'Un archivo ICO estándar ocupa entre 1 KB y 100 KB dependiendo de la resolución y las capas incluidas. Los Favicons ICO de 16x16 y 32x32 son los más comunes para sitios web.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convierte PNG a ICO auténtico con cabeceras binarias reales. Gratis, privado y con soporte de transparencias. Perfecto para Favicons web e iconos de Windows.',
   },
 ];

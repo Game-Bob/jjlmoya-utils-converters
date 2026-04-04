@@ -64,36 +64,36 @@ const bibliography: GifAWebpLocaleContent['bibliography'] = [
 const seo: GifAWebpLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Convertidor GIF a WebP Online Gratuito',
+    text: 'Convertidor GIF a WebP Online Gratuito',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Convertir GIF a WebP combina las mejores características de ambos formatos. El GIF puede tener transparencias y múltiples fotogramas, mientras que WebP puede ser estático, más ligero y con mejor calidad. Al extraer el primer fotograma del GIF y exportarlo como WebP, obtienes una imagen moderna, ultraligera y con soporte completo para transparencias.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'El formato WebP ofrece compresión superior tanto con pérdida como sin pérdida. Para imágenes extraídas de GIFs con pocos colores o grandes áreas uniformes, la compresión WebP sin pérdida puede producir archivos extraordinariamente pequeños manteniendo una calidad perfecta.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Todo el proceso de conversión ocurre localmente en tu navegador. El archivo GIF se decodifica en memoria, se renderiza el primer fotograma en un canvas HTML5 y se exporta como WebP. No hay servidores involucrados, garantizando la máxima privacidad.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Usa la conversión GIF a WebP para modernizar tu colección de avatares o stickers animados: obtendrás imágenes estáticas ultra-comprimidas con transparencias perfectas, ideales para web.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'Un GIF de 300 KB puede producir un WebP estático del primer fotograma de apenas 15-50 KB si tiene áreas uniformes y transparencias. La reducción de tamaño puede superar el 80%.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convierte GIF a WebP estático gratis y offline. Mejor compresión que PNG y JPG, con soporte de transparencias. Procesado localmente sin contacto con servidores.',
   },
 ];

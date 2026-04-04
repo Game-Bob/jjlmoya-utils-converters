@@ -64,31 +64,31 @@ const bibliography: SvgAPngLocaleContent['bibliography'] = [
 const seo: SvgAPngLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Convertisseur SVG vers PNG en Ligne Gratuit',
+    text: 'Convertisseur SVG vers PNG en Ligne Gratuit',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'SVG (Scalable Vector Graphics) est un format d\'image basé sur XML qui décrit des graphiques vectoriels. Ses principaux avantages sont qu\'il s\'adapte parfaitement à n\'importe quelle taille sans perte de qualité et que les fichiers sont généralement petits. Cependant, tous les programmes, applications ou plateformes de réseaux sociaux ne supportent pas directement le SVG.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Convertir SVG en PNG est la solution lorsque vous avez besoin d\'une version rastérisée de votre graphique vectoriel. Le PNG résultant est universellement compatible et, grâce à son support du canal alpha, préserve toutes les transparences du SVG original.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Pour la meilleure qualité dans le PNG résultant, assurez-vous que votre SVG a des dimensions définies (attributs width et height ou viewBox). Un SVG sans dimensions définies pourrait se rendre à une taille incorrecte.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'Les fichiers SVG sont infiniment évolutifs, mais un PNG à résolution 2x d\'un SVG 256x256 produira une image de 512x512 pixels, adaptée à la plupart des utilisations sur les écrans modernes à haute densité.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convertissez SVG en PNG HD gratuitement, en toute confidentialité et avec préservation de la transparence. Rendu à double échelle pour les écrans Retina et 4K.',
   },
 ];

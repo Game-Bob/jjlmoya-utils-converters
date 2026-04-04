@@ -68,31 +68,31 @@ const bibliography: WebpAPngLocaleContent['bibliography'] = [
 const seo: WebpAPngLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Convertisseur WebP vers PNG en Ligne Gratuit',
+    text: 'Convertisseur WebP vers PNG en Ligne Gratuit',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'WebP a été développé par Google comme alternative moderne au PNG et JPG, offrant une compression supérieure avec ou sans perte de qualité. Cependant, son adoption dans les outils d\'édition professionnels peut être limitée, rendant nécessaire la conversion WebP vers PNG pour garantir une compatibilité universelle.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Un avantage clé de la conversion WebP vers PNG est la préservation du canal alpha. Contrairement à la conversion en JPG où les fonds transparents sont remplis de blanc, le PNG maintient intégralement toutes les zones transparentes présentes dans le fichier WebP original.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Si votre fichier WebP a de la transparence et que vous devez l\'éditer dans Photoshop, convertissez toujours en PNG plutôt qu\'en JPG pour conserver le canal alpha.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'Le format WebP peut réduire la taille des fichiers PNG jusqu\'à 26% et les fichiers JPG jusqu\'à 34%, selon la documentation officielle de Google.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convertissez WebP en PNG avec une confidentialité et une qualité totales, en préservant les transparences. Gratuit, sans limites et traité localement dans votre navigateur.',
   },
 ];

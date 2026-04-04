@@ -73,36 +73,36 @@ const bibliography: ImagenBase64LocaleContent['bibliography'] = [
 const seo: ImagenBase64LocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Convertisseur d\'Image vers Base64 en Ligne',
+    text: 'Convertisseur d\'Image vers Base64 en Ligne',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'L\'encodage Base64 est une technique fondamentale dans le développement web moderne. Il permet de représenter des données binaires (comme des images) sous forme de texte ASCII, rendant possible l\'intégration d\'images directement dans le code HTML, CSS ou JavaScript sans fichiers séparés. Cela se fait via ce qu\'on appelle les Data URIs (Uniform Resource Identifiers de données).',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Un Data URI pour une image suit le format : data:[type MIME];base64,[données encodées]. Notre outil génère automatiquement le bon type MIME selon le format de l\'image que vous téléchargez, que ce soit PNG, JPG, WebP, GIF ou SVG.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Les principaux cas d\'utilisation pour les images Base64 incluent : les icônes SVG en CSS, les petits logos dans les applications SPA, les images critiques pour le chargement initial de page qui ne devraient pas causer de requêtes réseau supplémentaires, et les données d\'image en JSON ou APIs REST.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Le code Base64 est environ 33% plus grand que le fichier original. Pour les petites images (icônes, logos, petits sprites) c\'est efficace. Pour les grandes photographies, il vaut mieux utiliser des fichiers séparés et profiter du cache du navigateur.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'Une image PNG de 1Ko se convertit en environ 1,37Ko de Base64. Une image de 100Ko donnerait environ 137Ko de texte Base64. Ce facteur de 1,33x est constant pour tout type de fichier.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convertissez des images en Base64 et Data URI gratuitement et en toute confidentialité. Support JPG, PNG, WebP, SVG et GIF. Résultat immédiat dans votre navigateur sans traitement côté serveur.',
   },
 ];

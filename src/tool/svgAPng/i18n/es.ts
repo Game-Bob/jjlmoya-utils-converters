@@ -64,41 +64,41 @@ const bibliography: SvgAPngLocaleContent['bibliography'] = [
 const seo: SvgAPngLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Convertidor SVG a PNG Online Gratuito',
+    text: 'Convertidor SVG a PNG Online Gratuito',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'SVG (Scalable Vector Graphics) es un formato de imagen basado en XML que describe gráficos vectoriales. Sus principales ventajas son que escala perfectamente a cualquier tamaño sin perder calidad y que los archivos son generalmente pequeños. Sin embargo, no todos los programas, aplicaciones o plataformas de redes sociales soportan SVG directamente.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Convertir SVG a PNG es la solución cuando necesitas una versión rasterizada de tu gráfico vectorial. El PNG resultante es universalmente compatible y, gracias a su soporte para canal alfa, preserva todas las transparencias que tuviera el SVG original. Nuestro convertidor renderiza el SVG a doble resolución (2x) para garantizar que el PNG sea nítido incluso en pantallas de alta densidad como Retina o 4K.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'El proceso de conversión utiliza el elemento Image nativo del navegador para cargar el SVG, lo dibuja sobre un Canvas HTML5 a escala 2x y exporta el resultado como PNG. Todo esto ocurre localmente en tu dispositivo sin ninguna comunicación con servidores externos.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Para obtener la mejor calidad en el PNG resultante, asegúrate de que tu SVG tenga definidas las dimensiones (atributos width y height o viewBox). Un SVG sin dimensiones definidas podría renderizarse a un tamaño incorrecto.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'Los archivos SVG son escalables infinitamente, pero un PNG a 2x resolución de un SVG de 256x256 producirá una imagen de 512x512 píxeles, apta para la mayoría de los usos en pantallas modernas de alta densidad.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Casos de uso habituales: exportar logos vectoriales para usarlos en presentaciones de PowerPoint o Word, crear versiones PNG de iconos para aplicaciones móviles, compartir diseños SVG en plataformas que no los soportan, y generar favicons PNG a partir de tu logo SVG.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convierte SVG a PNG HD de forma gratuita, privada y con preservación de transparencias. Renderizado a doble escala para pantallas Retina y 4K.',
   },
 ];

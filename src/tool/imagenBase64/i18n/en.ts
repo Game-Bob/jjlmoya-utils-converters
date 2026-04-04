@@ -73,41 +73,41 @@ const bibliography: ImagenBase64LocaleContent['bibliography'] = [
 const seo: ImagenBase64LocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Online Image to Base64 Converter',
+    text: 'Online Image to Base64 Converter',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Base64 encoding is a fundamental technique in modern web development. It allows representing binary data (like images) as ASCII text, making it possible to embed images directly in HTML, CSS or JavaScript code without separate files. This is done through what are called Data URIs (Data Uniform Resource Identifiers).',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'A Data URI for an image follows the format: data:[MIME type];base64,[encoded data]. Our tool automatically generates the correct MIME type based on the image format you upload, whether it is PNG, JPG, WebP, GIF or SVG.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Main use cases for Base64 images include: SVG icons in CSS, small logos in SPA (Single Page Application) apps, critical images for initial page load that should not cause additional network requests, and image data in JSON or REST APIs.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Base64 code is approximately 33% larger than the original file. For small images (icons, logos, small sprites) it is efficient. For large photographs, it is better to use separate files and take advantage of browser caching.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'A 1KB PNG image converts to approximately 1.37KB of Base64. A 100KB image would result in about 137KB of Base64 text. This 1.33x factor is constant for any file type.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Our tool processes everything locally. The image is read via the browser\'s FileReader API, which converts it directly to Base64 without any data being sent to external servers. This guarantees complete privacy for your images, whether personal or corporate.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convert images to Base64 and Data URI for free and privately. Support for JPG, PNG, WebP, SVG and GIF. Immediate result in your browser without server-side processing.',
   },
 ];

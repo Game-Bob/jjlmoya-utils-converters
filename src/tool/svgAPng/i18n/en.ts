@@ -64,36 +64,36 @@ const bibliography: SvgAPngLocaleContent['bibliography'] = [
 const seo: SvgAPngLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Free Online SVG to PNG Converter',
+    text: 'Free Online SVG to PNG Converter',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'SVG (Scalable Vector Graphics) is an XML-based image format that describes vector graphics. Its main advantages are that it scales perfectly to any size without quality loss and files are generally small. However, not all programs, applications or social media platforms support SVG directly.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Converting SVG to PNG is the solution when you need a rasterized version of your vector graphic. The resulting PNG is universally compatible and, thanks to its alpha channel support, preserves all transparencies from the original SVG. Our converter renders the SVG at double resolution (2x) to ensure the PNG is crisp even on high-density screens like Retina or 4K.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'For best quality in the resulting PNG, ensure your SVG has defined dimensions (width and height attributes or viewBox). An SVG without defined dimensions might render at an incorrect size.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'SVG files are infinitely scalable, but a PNG at 2x resolution from a 256x256 SVG will produce a 512x512 pixel image, suitable for most uses on modern high-density screens.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Common use cases: exporting vector logos for PowerPoint or Word presentations, creating PNG icon versions for mobile apps, sharing SVG designs on platforms that don\'t support them, and generating PNG favicons from your SVG logo.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convert SVG to HD PNG for free, privately and with transparency preservation. Rendered at double scale for Retina and 4K screens.',
   },
 ];

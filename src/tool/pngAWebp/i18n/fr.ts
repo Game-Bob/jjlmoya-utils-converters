@@ -68,31 +68,31 @@ const bibliography: PngAWebpLocaleContent['bibliography'] = [
 const seo: PngAWebpLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Convertisseur PNG vers WebP en Ligne Gratuit',
+    text: 'Convertisseur PNG vers WebP en Ligne Gratuit',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'WebP est devenu le standard recommandé par Google pour les images web. Lorsque votre page utilise des images WebP au lieu de PNG, Google PageSpeed Insights le reconnaît comme une optimisation positive qui peut améliorer significativement votre score de performance et le temps de chargement de la page.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Une caractéristique technique clé de WebP est qu\'il supporte à la fois la compression avec et sans perte, et supporte également le canal alpha pour la transparence. Cela signifie que vous pouvez convertir PNG en WebP sans perdre les zones transparentes de votre image.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Avant de télécharger des images sur votre site web ou blog, convertissez tous vos PNG en WebP pour améliorer les temps de chargement et l\'expérience utilisateur, surtout sur les connexions mobiles lentes.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'Selon Google, les images WebP sans perte sont 26% plus petites que les PNG équivalents. Les images WebP avec perte sont 25-34% plus petites que les JPG comparables à la même qualité visuelle.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convertissez PNG en WebP gratuitement, avec support de transparence et sans envoyer d\'images aux serveurs. Réduisez le poids des images jusqu\'à 40% et améliorez les performances web.',
   },
 ];

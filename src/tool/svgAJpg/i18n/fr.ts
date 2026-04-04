@@ -64,31 +64,31 @@ const bibliography: SvgAJpgLocaleContent['bibliography'] = [
 const seo: SvgAJpgLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Convertisseur SVG vers JPG en Ligne Gratuit',
+    text: 'Convertisseur SVG vers JPG en Ligne Gratuit',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Bien que le SVG soit parfaitement évolutif et léger pour le web, vous avez parfois besoin d\'une version JPG de votre graphique vectoriel. Le JPG est le format photographique le plus compatible au monde et peut être ouvert sans problème par n\'importe quel appareil, système d\'exploitation ou programme de visualisation d\'images.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'La conversion SVG en JPG implique un processus de rastérisation : le graphique vectoriel est converti en grille de pixels. Pendant ce processus, les transparences SVG sont fusionnées avec un fond blanc solide, car le JPG ne supporte pas le canal alpha. Notre convertisseur effectue cette rastérisation à double résolution (2x).',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Si votre SVG contient du texte ou des polices personnalisées, assurez-vous qu\'ils sont incorporés ou convertis en chemins avant la conversion. Les polices système peuvent ne pas être disponibles dans le moteur de rendu.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'Un SVG de 100 Ko converti en JPG à 2x peut produire un fichier entre 50 Ko et 500 Ko selon la complexité du design et les couleurs utilisées.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convertissez SVG en JPG haute résolution gratuitement et en toute confidentialité. Rendu 2x pour une netteté maximale, fond blanc automatique pour une compatibilité JPG totale.',
   },
 ];

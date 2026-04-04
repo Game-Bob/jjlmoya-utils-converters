@@ -64,41 +64,41 @@ const bibliography: JpgAPngLocaleContent['bibliography'] = [
 const seo: JpgAPngLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Convertidor JPG a PNG Online Gratuito',
+    text: 'Convertidor JPG a PNG Online Gratuito',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Convertir JPG a PNG es una operación frecuente en el flujo de trabajo de diseñadores, desarrolladores web y editores de contenido. El formato JPG, aunque eficiente para fotografías, aplica un algoritmo de compresión con pérdida que introduce artefactos visuales cada vez que se vuelve a guardar el archivo. El PNG, en cambio, utiliza compresión sin pérdida, lo que significa que la imagen mantiene su fidelidad original sin degradarse con cada guardado.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Una de las principales razones para convertir de JPG a PNG es preparar una imagen para su edición. Cuando se trabaja con texto superpuesto, logotipos o elementos gráficos precisos, el formato PNG evita la acumulación de artefactos JPEG que harían que los bordes del texto se vean borrosos o que los colores planos pierdan definición.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Nuestro convertidor utiliza el Canvas API de HTML5 para realizar la conversión completamente en tu navegador. El archivo JPG se decodifica en memoria, se dibuja en un canvas virtual y se exporta como PNG sin pérdida. Este proceso garantiza que obtienes el mejor resultado posible partiendo del archivo JPG original.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Recuerda que convertir un JPG a PNG no recupera la calidad perdida por la compresión JPEG original. El PNG simplemente congela la imagen en su estado actual sin introducir más pérdidas.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'Los archivos PNG suelen ser entre 2 y 5 veces más grandes que sus equivalentes JPG. Esta diferencia de tamaño es el precio de la compresión sin pérdida y soporte de transparencia.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'El proceso de conversión es completamente privado. Nuestro convertidor no envía ningún dato a servidores externos; todo ocurre localmente en tu dispositivo. Puedes convertir imágenes corporativas, fotografías personales o cualquier material sensible sin preocuparte por la privacidad.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convierte JPG a PNG de forma gratuita, segura y sin límites directamente en tu navegador. Ideal para preparar imágenes para edición o para preservar la calidad en flujos de trabajo que requieren múltiples guardados.',
   },
 ];

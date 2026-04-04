@@ -64,31 +64,31 @@ const bibliography: PngAIcoLocaleContent['bibliography'] = [
 const seo: PngAIcoLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Convertisseur PNG vers ICO en Ligne Gratuit',
+    text: 'Convertisseur PNG vers ICO en Ligne Gratuit',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Le format ICO (Icon) est le standard de Microsoft pour les icônes d\'applications Windows et les Favicons de pages web. Contrairement à simplement renommer un PNG en .ico, un vrai fichier ICO nécessite une structure binaire spécifique avec des en-têtes de 22 octets, un répertoire d\'images et des données d\'image encodées d\'une manière particulière.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Notre convertisseur crée des fichiers ICO authentiques. Le processus inclut : lire le PNG dans un canvas HTML5, créer l\'en-tête ICO binaire standard Microsoft avec le bon magic number (00 00 01 00), générer le répertoire d\'image et combiner le tout en un fichier .ico binaire valide. Le résultat est reconnu nativement par Windows, macOS et tous les navigateurs web.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Pour de meilleurs résultats en tant que Favicon, utilisez un PNG carré de 512x512 ou 256x256 pixels comme source. Notre convertisseur le redimensionnera à la taille ICO standard en préservant la proportion et la transparence.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'Un fichier ICO standard occupe entre 1 Ko et 100 Ko selon la résolution et les couches incluses. Les Favicons ICO 16x16 et 32x32 sont les plus courants pour les sites web.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convertissez PNG en ICO authentique avec de vrais en-têtes binaires. Gratuit, privé et avec support de transparence. Parfait pour les Favicons web et les icônes Windows.',
   },
 ];

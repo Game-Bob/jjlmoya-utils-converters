@@ -64,31 +64,31 @@ const bibliography: BmpAJpgLocaleContent['bibliography'] = [
 const seo: BmpAJpgLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Convertisseur BMP vers JPG en Ligne Gratuit',
+    text: 'Convertisseur BMP vers JPG en Ligne Gratuit',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'BMP (Bitmap) est l\'un des formats d\'image les plus anciens, développé à l\'origine par Microsoft pour Windows. Sa caractéristique principale est qu\'il stocke les données d\'image sans compression, ce qui signifie qu\'un fichier BMP d\'une photographie standard peut occuper des dizaines voire des centaines de mégaoctets.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Convertir BMP en JPG est la solution la plus pratique pour réduire drastiquement la taille de ces fichiers. Le JPG applique une compression intelligente qui peut réduire un BMP de 95% ou plus tout en maintenant une excellente qualité visuelle pour les photographies.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Si vous avez de très gros fichiers BMP, convertissez-en un d\'abord pour vérifier que la qualité JPG résultante est satisfaisante, puis traitez le lot complet.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'Un BMP non compressé pour une image 1920x1080 occupe environ 6 Mo. Le même contenu en JPG de haute qualité peut n\'occuper que 200-400 Ko, une réduction de 93-97%.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convertissez BMP en JPG gratuitement, en toute confidentialité et sans limites directement dans votre navigateur. Réduisez la taille de vos images jusqu\'à 97% sans perte de qualité visuelle notable.',
   },
 ];

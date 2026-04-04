@@ -64,36 +64,36 @@ const bibliography: GifAJpgLocaleContent['bibliography'] = [
 const seo: GifAJpgLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Free Online GIF to JPG Converter',
+    text: 'Free Online GIF to JPG Converter',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'GIF files are widely known for their ability to play short animations. However, there are situations where you need a static image from GIF content: to use it as a thumbnail, send it by email, or simply to get a high-quality version of a specific moment in the animation.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Converting GIF to JPG extracts the first frame of the animation and converts it into a static JPG image. During this process, any transparent areas in the original GIF are replaced with a solid white background, since JPG does not support transparency.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'If you need to extract multiple frames from an animated GIF (not just the first), consider using a specialized GIF editing tool. This converter is optimized for quickly getting the static image of the first frame.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'A 2 MB animated GIF can produce a JPG of the first frame of just 50-200 KB, depending on the resolution and complexity of the image.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Our converter loads the GIF into the browser\'s native Image element, draws it on an HTML5 canvas and exports it as JPG. This process is completely local: no data is sent to any server. You can convert GIFs with complete privacy.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convert GIF to JPG by extracting the first frame. Free, private and local. Transparent backgrounds automatically replaced with white for full JPG compatibility.',
   },
 ];

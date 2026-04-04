@@ -64,41 +64,41 @@ const bibliography: PngAJpgLocaleContent['bibliography'] = [
 const seo: PngAJpgLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Convertisseur PNG vers JPG en Ligne Gratuit',
+    text: 'Convertisseur PNG vers JPG en Ligne Gratuit',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Le format PNG (Portable Network Graphics) est largement utilisé pour sa qualité sans perte et son support de la transparence (canal alpha). Cependant, cette fidélité a un coût : les fichiers PNG sont considérablement plus grands que leurs équivalents JPG, notamment pour les photographies ou les images avec des dégradés complexes.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Le JPG (ou JPEG) utilise un algorithme de compression avec perte qui réduit considérablement la taille du fichier. Pour les photographies et les images où une légère perte de détail est acceptable, JPG est le choix standard. Un PNG de 2 Mo peut devenir un JPG de 200 Ko avec une qualité visuelle pratiquement identique.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Notre convertisseur PNG vers JPG fonctionne entièrement dans votre navigateur via l\'API Canvas HTML5. Les zones transparentes du PNG original sont remplacées par un fond blanc solide, car le format JPG ne supporte pas le canal alpha.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Pour les images avec du texte ou des logos nécessitant des fonds transparents, envisagez d\'utiliser WebP plutôt que JPG. WebP offre une compression similaire mais conserve la transparence.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'Le JPG peut réduire la taille d\'une image photographique de 70 % à 90 % par rapport au PNG, selon la complexité de l\'image et les paramètres de qualité appliqués.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Les cas d\'utilisation typiques pour la conversion PNG vers JPG comprennent : préparer des images pour l\'e-mail, optimiser les photos de produits pour les boutiques en ligne, réduire le poids des captures d\'écran avant de les partager, et compresser les images pour un chargement plus rapide des pages web.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convertissez PNG en JPG instantanément, gratuitement et en toute confidentialité directement dans votre navigateur. Sans inscription, sans limites et sans compromettre la sécurité de vos fichiers.',
   },
 ];

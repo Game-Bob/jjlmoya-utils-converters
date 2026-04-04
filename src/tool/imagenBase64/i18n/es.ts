@@ -73,41 +73,41 @@ const bibliography: ImagenBase64LocaleContent['bibliography'] = [
 const seo: ImagenBase64LocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Convertidor de Imagen a Base64 Online',
+    text: 'Convertidor de Imagen a Base64 Online',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'La codificación Base64 es una técnica fundamental en el desarrollo web moderno. Permite representar datos binarios (como imágenes) como texto ASCII, lo que hace posible incrustar imágenes directamente en código HTML, CSS o JavaScript sin necesidad de archivos separados. Esto se realiza mediante los llamados Data URIs (Uniform Resource Identifiers de datos).',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Un Data URI para una imagen sigue el formato: data:[tipo MIME];base64,[datos codificados]. Por ejemplo, una imagen PNG pequeña podría representarse como data:image/png;base64,iVBORw0KGgo... Nuestra herramienta genera automáticamente el tipo MIME correcto según el formato de la imagen que subas.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Los principales casos de uso para imágenes en Base64 incluyen: iconos SVG en CSS, logotipos pequeños en aplicaciones SPA (Single Page Applications), imágenes críticas para carga inicial que no deben causar peticiones adicionales de red, y datos de imagen en JSON o APIs REST.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'El código Base64 es aproximadamente un 33% más grande que el archivo original. Para imágenes pequeñas (iconos, logos, pequeños sprites) es eficiente. Para fotografías grandes, es mejor usar archivos separados y aprovechar la caché del navegador.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'Una imagen PNG de 1KB se convierte en aproximadamente 1.37KB de Base64. Una imagen de 100KB resultaría en unos 137KB de texto Base64. Este factor de 1.33x es constante para cualquier tipo de archivo.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Nuestra herramienta procesa todo localmente. La imagen se lee mediante la API FileReader del navegador, que la convierte directamente a Base64 sin ningún envío de datos a servidores externos. Esto garantiza la privacidad total de tus imágenes, sean personales o corporativas.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convierte imágenes a Base64 y Data URI de forma gratuita y privada. Soporte para JPG, PNG, WebP, SVG y GIF. Resultado inmediato en tu navegador sin procesamiento en servidores.',
   },
 ];

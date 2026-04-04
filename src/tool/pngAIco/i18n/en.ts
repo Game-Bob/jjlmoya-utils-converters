@@ -64,36 +64,36 @@ const bibliography: PngAIcoLocaleContent['bibliography'] = [
 const seo: PngAIcoLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Free Online PNG to ICO Converter',
+    text: 'Free Online PNG to ICO Converter',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'The ICO (Icon) format is Microsoft\'s standard for Windows application icons and web page Favicons. Unlike simply renaming a PNG as .ico, a genuine ICO file requires a specific binary structure with 22-byte headers, an image directory and image data encoded in a particular way.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Our converter creates authentic ICO files, not simple renames. The process includes: reading the PNG in an HTML5 canvas, creating the standard Microsoft binary ICO header with the correct magic number (00 00 01 00), generating the image directory and combining everything into a valid binary .ico file. The result is natively recognized by Windows, macOS and all web browsers.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'For best results as a Favicon, use a square PNG of 512x512 or 256x256 pixels as source. Our converter will resize it to the standard ICO size preserving proportion and transparency.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'A standard ICO file takes between 1 KB and 100 KB depending on resolution and included layers. 16x16 and 32x32 ICO Favicons are the most common for websites.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'PNG transparencies are completely preserved in the resulting ICO. This is crucial for Favicons where the icon is displayed on different backgrounds. A 32-bit alpha channel ICO works perfectly in all contexts.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convert PNG to authentic ICO with real binary headers. Free, private and with transparency support. Perfect for web Favicons and Windows icons.',
   },
 ];

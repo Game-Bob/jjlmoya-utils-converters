@@ -64,36 +64,36 @@ const bibliography: GifAPngLocaleContent['bibliography'] = [
 const seo: GifAPngLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Convertidor GIF a PNG Online Gratuito',
+    text: 'Convertidor GIF a PNG Online Gratuito',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Convertir GIF a PNG tiene una ventaja significativa sobre convertir a JPG: la preservación de la transparencia. El formato PNG, al igual que algunos GIFs, soporta el canal alfa. Si tu GIF tiene un fondo transparente, el PNG resultante lo conservará con total fidelidad. Esto es especialmente importante para logos, avatares, iconos y cualquier gráfico que se vaya a usar sobre fondos de diferentes colores.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Otra ventaja del PNG sobre el JPG para este tipo de conversión es la calidad sin pérdida. PNG utiliza compresión sin pérdida, lo que significa que la imagen extraída del GIF mantendrá todos sus detalles sin los artefactos de compresión que introduciría el formato JPG.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'La conversión se realiza íntegramente en el navegador. El GIF se carga en memoria, se renderiza el primer fotograma en un canvas HTML5 y se exporta como PNG. No se establece ninguna conexión de red durante todo el proceso.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Si tienes un GIF de avatar para Discord, Telegram u otras plataformas y necesitas la versión estática en PNG, este convertidor es la herramienta perfecta para obtenerla en segundos.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'Un GIF animado de 500 KB puede producir un PNG del primer fotograma de entre 50 KB y 200 KB, dependiendo de la complejidad y colores de la imagen. Si tiene transparencias, el PNG las preservará perfectamente.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convierte GIF a PNG preservando transparencias y sin pérdida de calidad. Extracción del primer fotograma de forma gratuita, privada y local en tu navegador.',
   },
 ];

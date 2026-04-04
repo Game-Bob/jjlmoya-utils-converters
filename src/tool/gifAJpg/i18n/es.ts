@@ -64,36 +64,36 @@ const bibliography: GifAJpgLocaleContent['bibliography'] = [
 const seo: GifAJpgLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Convertidor GIF a JPG Online Gratuito',
+    text: 'Convertidor GIF a JPG Online Gratuito',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Los archivos GIF son ampliamente conocidos por su capacidad de reproducir animaciones cortas. Sin embargo, hay situaciones en que necesitas una imagen estática del contenido de un GIF: para usarla como miniatura, para enviarla por correo, o simplemente para obtener una versión de alta calidad de un momento específico de la animación.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Convertir GIF a JPG extrae el primer fotograma de la animación y lo convierte en una imagen JPG estática. Durante este proceso, cualquier área transparente del GIF original (frecuente en GIFs animados con fondos transparentes) se sustituye por un fondo blanco sólido, ya que el formato JPG no soporta transparencias.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Nuestro convertidor carga el GIF en el elemento Image nativo del navegador, lo dibuja en un canvas HTML5 y lo exporta como JPG. Este proceso es completamente local: no se envían datos a ningún servidor. Puedes convertir GIFs con total privacidad.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Si necesitas extraer múltiples fotogramas de un GIF animado (no solo el primero), considera usar una herramienta especializada en edición de GIFs. Este convertidor está optimizado para obtener la imagen estática del primer fotograma de forma rápida.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'Un GIF animado de 2 MB puede producir un JPG del primer fotograma de apenas 50-200 KB, dependiendo de la resolución y complejidad de la imagen.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convierte GIF a JPG extrayendo el primer fotograma. Gratis, privado y local. Fondos transparentes sustituidos automáticamente por blanco para compatibilidad total con JPG.',
   },
 ];

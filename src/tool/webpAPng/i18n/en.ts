@@ -68,36 +68,36 @@ const bibliography: WebpAPngLocaleContent['bibliography'] = [
 const seo: WebpAPngLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Free Online WebP to PNG Converter',
+    text: 'Free Online WebP to PNG Converter',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'WebP was developed by Google as a modern alternative to PNG and JPG, offering superior compression with or without quality loss. However, its adoption in professional editing tools like older versions of Photoshop, Illustrator, or specialized image editors can be limited, making it necessary to convert WebP to PNG to ensure universal compatibility.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'A key advantage of WebP to PNG conversion is the preservation of the alpha channel. Unlike conversion to JPG where transparent backgrounds are filled with white, PNG fully maintains any transparent areas present in the original WebP file. This is especially valuable for logos, icons, illustrations and any graphics with transparency.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'If your WebP file has transparency and you need to edit it in Photoshop, always convert to PNG rather than JPG to preserve the alpha channel.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'The WebP format can reduce PNG file sizes by up to 26% and JPG files by up to 34%, according to Google\'s official documentation for lossless and lossy images respectively.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'The tool supports batch conversion. You can drag multiple WebP files simultaneously and download all resulting PNGs in a single compressed ZIP file, saving time when converting entire image collections.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convert WebP to PNG with complete privacy and quality, preserving transparencies. Free, unlimited and processed locally in your browser.',
   },
 ];

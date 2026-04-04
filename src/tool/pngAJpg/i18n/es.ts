@@ -64,46 +64,46 @@ const bibliography: PngAJpgLocaleContent['bibliography'] = [
 const seo: PngAJpgLocaleContent['seo'] = [
   {
     type: 'title',
-    content: 'Convertidor PNG a JPG Online Gratuito',
+    text: 'Convertidor PNG a JPG Online Gratuito',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'El formato PNG (Portable Network Graphics) es ampliamente utilizado por su capacidad de almacenar imágenes sin pérdida de calidad y con soporte para transparencias (canal alfa). Sin embargo, esta fidelidad tiene un coste: los archivos PNG suelen ser considerablemente más grandes que sus equivalentes en JPG, especialmente cuando se trata de fotografías o imágenes con gradientes complejos.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'El formato JPG (o JPEG) utiliza un algoritmo de compresión con pérdida que reduce drásticamente el tamaño del archivo. Para fotografías e imágenes donde una pequeña pérdida de detalle es aceptable, JPG es la elección estándar. Un PNG que ocupa 2 MB puede transformarse en un JPG de apenas 200 KB con una calidad visualmente idéntica para el ojo humano.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Nuestro convertidor PNG a JPG funciona íntegramente en tu navegador web mediante la API Canvas de HTML5. El proceso es sencillo: la imagen PNG se carga en memoria, se dibuja sobre un canvas virtual y se exporta como JPG con un nivel de calidad óptimo. Las zonas transparentes del PNG original son sustituidas por un fondo blanco sólido, ya que el formato JPG no soporta el canal alfa.',
   },
   {
     type: 'tip',
-    content:
+    html:
       'Para imágenes con texto o logotipos que requieran fondo transparente, considera usar el formato WebP en lugar de JPG. WebP ofrece compresión similar pero mantiene la transparencia.',
   },
   {
-    type: 'stats',
-    content:
+    type: 'paragraph',
+    html:
       'El formato JPG puede reducir el tamaño de una imagen fotográfica entre un 70% y un 90% comparado con PNG, dependiendo de la complejidad de la imagen y los ajustes de calidad aplicados.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'Casos de uso típicos para convertir PNG a JPG incluyen: preparar imágenes para envío por correo electrónico donde el tamaño importa, optimizar fotografías de productos para tiendas online, reducir el peso de capturas de pantalla antes de compartirlas, y comprimir imágenes para que carguen más rápido en páginas web.',
   },
   {
     type: 'paragraph',
-    content:
+    html:
       'La privacidad es una prioridad en nuestra herramienta. A diferencia de convertidores online que suben tus archivos a servidores remotos, nuestro convertidor procesa todo localmente en tu dispositivo. Tus imágenes nunca abandonan tu ordenador, lo que es especialmente importante cuando se trata de documentos corporativos, fotografías personales o cualquier material sensible.',
   },
   {
-    type: 'summary',
-    content:
+    type: 'paragraph',
+    html:
       'Convierte PNG a JPG de forma instantánea, gratuita y privada directamente en tu navegador. Sin registros, sin límites y sin comprometer la seguridad de tus archivos.',
   },
 ];
