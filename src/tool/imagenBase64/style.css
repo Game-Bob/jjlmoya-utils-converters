@@ -116,7 +116,7 @@
 }
 
 .drop-zone .file-input-native {
-    pointer-events: auto; /* allow clicking the button */
+    pointer-events: auto;
 }
 
 .preview-container {
@@ -259,8 +259,8 @@ textarea {
     gap: 0.5rem;
 
     --toast-shadow: rgba(0, 0, 0, 0.2);
-    --toast-shadow-blur: 30px;
     --toast-shadow-y: 10px;
+    --toast-shadow-blur: 30px;
 
     box-shadow: 0 var(--toast-shadow-y) var(--toast-shadow-blur) var(--toast-shadow);
     opacity: 0;
@@ -278,7 +278,7 @@ textarea {
     .card-section {
         padding: 1rem;
     }
-    
+
     .drop-zone {
         min-height: 280px;
     }
@@ -288,7 +288,7 @@ textarea {
     .card-section {
         padding: 1.5rem;
     }
-    
+
     .drop-zone {
         min-height: 250px;
     }

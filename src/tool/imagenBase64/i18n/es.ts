@@ -19,6 +19,7 @@ const ui: ImageToBase64UI = {
   toastMessage: '¡Código copiado al portapapeles!',
   invalidImageAlert: 'Por favor sube un archivo de imagen válido.',
   bibliographyTitle: 'Referencias Bibliográficas',
+  faqTitle: 'Preguntas Frecuentes',
 };
 
 const faq: ImagenBase64LocaleContent['faq'] = [

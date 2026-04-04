@@ -19,6 +19,7 @@ const ui: ImageToBase64UI = {
   toastMessage: 'Code copied to clipboard!',
   invalidImageAlert: 'Please upload a valid image file.',
   bibliographyTitle: 'Bibliographic References',
+  faqTitle: 'Frequently Asked Questions',
 };
 
 const faq: ImagenBase64LocaleContent['faq'] = [

@@ -15,6 +15,7 @@ const ui: ImageConverterUI = {
   downloadAll: 'Tout télécharger (.zip)',
   pending: 'En attente',
   bibliographyTitle: 'Références Bibliographiques',
+  faqTitle: 'Questions Fréquentes',
 };
 
 const faq: AvifAJpgLocaleContent['faq'] = [
