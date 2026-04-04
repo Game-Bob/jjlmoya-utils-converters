@@ -3,7 +3,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import type { BmpAWebpLocaleContent } from '../index';
 
 const slug = 'convertidor-bmp-a-webp';
-const title = 'Convertir BMP a WebP Gratis | Tu Compresor Nativo Offline';
+const title = 'Convertir BMP a WebP Gratis';
 const description =
   'Convierte imágenes BMP a WebP sin conexión. Reduce archivos enormes a kilobytes. Sin subir archivos. Gratis, offline y completamente privado.';
 

@@ -3,7 +3,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import type { AvifAJpgLocaleContent } from '../index';
 
 const slug = 'convertidor-avif-a-jpg';
-const title = 'Convertir AVIF a JPG Online - Sin Subir Fotos a Internet';
+const title = 'Convertir AVIF a JPG Online';
 const description =
   'Convierte imágenes AVIF a JPG en tu navegador. Sin servidor. Procesamiento local 100% privado. Gratis e ilimitado.';
 

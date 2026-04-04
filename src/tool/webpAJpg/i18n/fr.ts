@@ -3,7 +3,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import type { WebpAJpgLocaleContent } from '../index';
 
 const slug = 'convertisseur-webp-en-jpg';
-const title = 'Convertir WebP en JPG en Ligne et Gratuitement - Sans Téléchargement';
+const title = 'Convertir WebP en JPG en Ligne et Gratuitement';
 const description =
   'Convertissez des images WebP en JPG sans télécharger de fichiers. Traitement local 100% privé. Les fonds transparents sont automatiquement remplacés par du blanc.';
 

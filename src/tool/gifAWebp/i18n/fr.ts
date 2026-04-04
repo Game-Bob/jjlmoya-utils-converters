@@ -3,7 +3,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import type { GifAWebpLocaleContent } from '../index';
 
 const slug = 'convertisseur-gif-en-webp';
-const title = 'Convertir GIF en WebP Statique | Économisez du Poids Hors Ligne';
+const title = 'Convertir GIF en WebP Statique';
 const description =
   'Convertissez des GIF animés en WebP statique. Préserve la transparence. Sans serveur. Traitement local dans votre navigateur. Gratuit.';
 

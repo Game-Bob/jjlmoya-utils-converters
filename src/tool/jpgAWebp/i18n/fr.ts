@@ -3,7 +3,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import type { JpgAWebpLocaleContent } from '../index';
 
 const slug = 'convertisseur-jpg-en-webp';
-const title = 'Convertir JPG en WebP en Ligne et Gratuitement - Haute Qualité';
+const title = 'Convertir JPG en WebP en Ligne et Gratuitement';
 const description =
   'Convertissez des images JPG en WebP dans votre navigateur. Compression supérieure sans perte visible. Sans téléchargement. Gratuit, illimité et privé.';
 

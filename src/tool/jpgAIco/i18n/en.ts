@@ -3,7 +3,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import type { JpgAIcoLocaleContent } from '../index';
 
 const slug = 'jpg-to-ico-converter';
-const title = 'JPG to ICO Converter | Create Official Icons for Windows and Web';
+const title = 'JPG to ICO Converter';
 const description =
   'Convert JPG photos to ICO with real Microsoft binary headers. Automatic square crop. No file uploads. Free and private.';
 

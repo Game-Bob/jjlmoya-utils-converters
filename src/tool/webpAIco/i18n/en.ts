@@ -3,7 +3,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import type { WebpAIcoLocaleContent } from '../index';
 
 const slug = 'webp-to-ico-converter';
-const title = 'Convert WebP to ICO | Install Your Favicons and Logos in Windows';
+const title = 'Convert WebP to ICO';
 const description =
   'Convert WebP images to official ICO with transparency. No file uploads. Real Microsoft binary headers. Free and private.';
 

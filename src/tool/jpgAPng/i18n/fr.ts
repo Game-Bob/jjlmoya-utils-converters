@@ -3,7 +3,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import type { JpgAPngLocaleContent } from '../index';
 
 const slug = 'convertisseur-jpg-en-png';
-const title = 'Convertir JPG en PNG en Ligne et Gratuitement - Privé';
+const title = 'Convertir JPG en PNG en Ligne et Gratuitement';
 const description =
   'Convertissez des images JPG en PNG dans votre navigateur sans télécharger de fichiers. Conversion sans perte, gratuite et totalement privée.';
 

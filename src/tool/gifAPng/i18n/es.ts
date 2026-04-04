@@ -3,7 +3,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import type { GifAPngLocaleContent } from '../index';
 
 const slug = 'convertidor-gif-a-png';
-const title = 'Convertir GIF a PNG Online | Extrae un fotograma estático sin pérdida';
+const title = 'Convertir GIF a PNG Online';
 const description =
   'Extrae el primer fotograma de tus GIF y conviértelo a PNG preservando transparencias. Sin servidor. Procesado local. Gratis.';
 

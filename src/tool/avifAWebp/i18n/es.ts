@@ -3,7 +3,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import type { AvifAWebpLocaleContent } from '../index';
 
 const slug = 'convertidor-avif-a-webp';
-const title = 'Convertir AVIF a WebP Online - Seguridad y Velocidad';
+const title = 'Convertir AVIF a WebP Online';
 const description =
   'Convierte imágenes AVIF a WebP con mejor compatibilidad. Procesado local sin servidores. Gratis, privado e ilimitado.';
 

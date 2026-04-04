@@ -3,7 +3,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import type { BmpAWebpLocaleContent } from '../index';
 
 const slug = 'convertisseur-bmp-en-webp';
-const title = 'Convertir BMP en WebP Gratuit | Votre Compresseur Natif Hors Ligne';
+const title = 'Convertir BMP en WebP Gratuit';
 const description =
   'Convertissez des images BMP en WebP hors ligne. Réduisez les fichiers volumineux à des kilo-octets. Sans téléchargement. Gratuit, hors ligne et totalement privé.';
 
@@ -74,7 +74,7 @@ const seo: BmpAWebpLocaleContent['seo'] = [
   },
   {
     type: 'title',
-    text: 'Pourquoi le BMP est-il si lourd et le WebP si efficace ?',
+    text: 'Pourquoi le BMP est',
     level: 3,
   },
   {

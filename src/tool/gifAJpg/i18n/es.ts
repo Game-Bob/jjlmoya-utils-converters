@@ -3,7 +3,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import type { GifAJpgLocaleContent } from '../index';
 
 const slug = 'convertidor-gif-a-jpg';
-const title = 'Convertir GIF a JPG Online | Vuelve tus animaciones fotos estáticas';
+const title = 'Convertir GIF a JPG Online';
 const description =
   'Extrae el primer fotograma de tus GIF y conviértelo a JPG. Sin servidor. Procesado local en tu navegador. Gratis e ilimitado.';
 

@@ -3,7 +3,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import type { SvgAJpgLocaleContent } from '../index';
 
 const slug = 'convertisseur-svg-en-jpg';
-const title = 'Convertir SVG en JPG en Ligne et Gratuitement - Haute Résolution';
+const title = 'Convertir SVG en JPG en Ligne et Gratuitement';
 const description =
   'Convertissez des fichiers SVG vectoriels en JPG dans votre navigateur. Rendu haute résolution 2x. Sans téléchargement. Gratuit et 100% privé.';
 

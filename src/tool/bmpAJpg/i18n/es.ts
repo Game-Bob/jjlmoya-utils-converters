@@ -3,7 +3,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import type { BmpAJpgLocaleContent } from '../index';
 
 const slug = 'convertidor-bmp-a-jpg';
-const title = 'Convertir BMP a JPG Online - Rápido, Gratis y Privado';
+const title = 'Convertir BMP a JPG Online';
 const description =
   'Convierte imágenes BMP a JPG en tu navegador. Reduce el tamaño drásticamente. Sin subir archivos a servidores. Gratis y 100% privado.';
 

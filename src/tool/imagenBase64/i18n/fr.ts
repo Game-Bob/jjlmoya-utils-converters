@@ -3,7 +3,7 @@ import type { ImagenBase64LocaleContent } from '../index';
 import type { ImageToBase64UI } from '../index';
 
 const slug = 'convertisseur-image-base64';
-const title = 'Convertisseur Image vers Base64 en Ligne - Gratuit et 100% Privé';
+const title = 'Convertisseur Image vers Base64 en Ligne';
 const description =
   'Convertissez n\'importe quelle image en code Base64 et Data URI directement dans votre navigateur. Sans téléchargement. Gratuit, privé et instantané.';
 
@@ -121,7 +121,7 @@ const seo: ImagenBase64LocaleContent['seo'] = [
   },
   {
     type: 'tip',
-    title: 'Utilisez-le uniquement pour les petites images (moins de 10 Ko)',
+    title: 'Utilisez',
     html: 'Base64 augmente la taille du fichier d\'environ 33% : une image de 10 Ko devient ~13,3 Ko de texte. Pour les petites icônes et logos, ce coût est minimal et l\'élimination de la requête HTTP le compense. Pour les photographies ou grandes images, le surcoût de taille est significatif — utilisez toujours un CDN pour les grandes images.',
   },
   {

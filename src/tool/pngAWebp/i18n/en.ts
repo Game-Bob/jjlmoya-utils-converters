@@ -3,7 +3,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import type { PngAWebpLocaleContent } from '../index';
 
 const slug = 'png-to-webp-converter';
-const title = 'Convert PNG to WebP Online and Free - High Quality';
+const title = 'Convert PNG to WebP Online and Free';
 const description =
   'Convert PNG images to WebP in your browser. Up to 40% less file size. Preserves transparency. No file uploads. Free and private.';
 

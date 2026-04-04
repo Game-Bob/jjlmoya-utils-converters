@@ -3,7 +3,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import type { SvgAPngLocaleContent } from '../index';
 
 const slug = 'svg-to-png-converter';
-const title = 'Convert SVG to PNG Online and Free - High Resolution';
+const title = 'Convert SVG to PNG Online and Free';
 const description =
   'Convert SVG vector files to PNG in your browser. Double-scale HD output. Preserves transparency. Free and 100% private.';
 

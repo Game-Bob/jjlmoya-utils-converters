@@ -3,7 +3,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import type { GifAJpgLocaleContent } from '../index';
 
 const slug = 'gif-to-jpg-converter';
-const title = 'Convert GIF to JPG Online | Turn Your Animations into Static Photos';
+const title = 'Convert GIF to JPG Online';
 const description =
   'Extract the first frame of your GIFs and convert to JPG. No server. Processed locally in your browser. Free and unlimited.';
 
@@ -65,7 +65,7 @@ const bibliography: GifAJpgLocaleContent['bibliography'] = [
 const seo: GifAJpgLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'GIF to JPG Converter: Extract Frames as High-Quality Static Images',
+    text: 'GIF to JPG Converter: Extract Frames as High',
     level: 2,
   },
   {

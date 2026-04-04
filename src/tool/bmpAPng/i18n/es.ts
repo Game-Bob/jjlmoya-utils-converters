@@ -3,7 +3,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import type { BmpAPngLocaleContent } from '../index';
 
 const slug = 'convertidor-bmp-a-png';
-const title = 'Convertidor de BMP a PNG | Formato Sin Pérdida Local';
+const title = 'Convertidor de BMP a PNG';
 const description =
   'Convierte imágenes BMP a PNG sin pérdida de calidad. Compresión moderna sin artefactos. Sin subir archivos. Gratis y 100% privado.';
 

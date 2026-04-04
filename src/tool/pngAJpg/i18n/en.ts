@@ -3,7 +3,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import type { PngAJpgLocaleContent } from '../index';
 
 const slug = 'png-to-jpg-converter';
-const title = 'Convert PNG to JPG Online - Fast, Free and 100% Private';
+const title = 'Convert PNG to JPG Online';
 const description =
   'Convert PNG images to JPG directly in your browser. No file uploads to servers. Fast, free and completely private.';
 

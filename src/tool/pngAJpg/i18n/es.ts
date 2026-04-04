@@ -3,7 +3,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import type { PngAJpgLocaleContent } from '../index';
 
 const slug = 'convertidor-png-a-jpg';
-const title = 'Convertir PNG a JPG Online - Rápido, Gratis y 100% Privado';
+const title = 'Convertir PNG a JPG Online';
 const description =
   'Convierte tus imágenes PNG a formato JPG de compresión rápida al instante en tu propio ordenador. Sin subir fotos a internet. Optimización por lotes.';
 

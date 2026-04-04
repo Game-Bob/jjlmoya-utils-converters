@@ -3,7 +3,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import type { SvgAJpgLocaleContent } from '../index';
 
 const slug = 'svg-to-jpg-converter';
-const title = 'Convert SVG to JPG Online and Free - High Resolution';
+const title = 'Convert SVG to JPG Online and Free';
 const description =
   'Convert SVG vector files to JPG in your browser. 2x high resolution rendering. No file uploads. Free and 100% private.';
 

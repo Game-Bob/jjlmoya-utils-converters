@@ -3,7 +3,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import type { AvifAWebpLocaleContent } from '../index';
 
 const slug = 'avif-to-webp-converter';
-const title = 'Convert AVIF to WebP Online - Security and Speed';
+const title = 'Convert AVIF to WebP Online';
 const description =
   'Convert AVIF images to WebP with better compatibility. Local processing without servers. Free, private and unlimited.';
 

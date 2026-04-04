@@ -3,7 +3,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import type { GifAPngLocaleContent } from '../index';
 
 const slug = 'gif-to-png-converter';
-const title = 'Convert GIF to PNG Online | Extract a Static Frame Without Loss';
+const title = 'Convert GIF to PNG Online';
 const description =
   'Extract the first frame of your GIFs and convert to PNG preserving transparency. No server. Local processing. Free.';
 
@@ -74,7 +74,7 @@ const seo: GifAPngLocaleContent['seo'] = [
   },
   {
     type: 'title',
-    text: 'GIF vs PNG: the 16-million-color revolution',
+    text: 'GIF vs PNG: the 16',
     level: 3,
   },
   {

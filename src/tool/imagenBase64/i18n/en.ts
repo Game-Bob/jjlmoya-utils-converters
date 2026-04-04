@@ -3,7 +3,7 @@ import type { ImagenBase64LocaleContent } from '../index';
 import type { ImageToBase64UI } from '../index';
 
 const slug = 'image-to-base64-converter';
-const title = 'Image to Base64 Converter Online - Free and 100% Private';
+const title = 'Image to Base64 Converter Online';
 const description =
   'Convert any image to Base64 code and Data URI directly in your browser. No file uploads. Free, private and instant.';
 

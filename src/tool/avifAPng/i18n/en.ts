@@ -3,7 +3,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import type { AvifAPngLocaleContent } from '../index';
 
 const slug = 'avif-to-png-converter';
-const title = 'Convert AVIF to PNG Online - Fast, Local and 100% Private';
+const title = 'Convert AVIF to PNG Online';
 const description =
   'Convert AVIF images to PNG preserving transparency. No file uploads. Processed locally in your browser. Free and unlimited.';
 

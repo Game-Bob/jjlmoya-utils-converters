@@ -3,7 +3,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import type { PngAIcoLocaleContent } from '../index';
 
 const slug = 'png-to-ico-converter';
-const title = 'Convert PNG to ICO Online | Create 100% Real Icons for PC and Web';
+const title = 'Convert PNG to ICO Online';
 const description =
   'Convert PNG to ICO with real binary headers. Transparencies preserved. No file uploads. Free and 100% private.';
 

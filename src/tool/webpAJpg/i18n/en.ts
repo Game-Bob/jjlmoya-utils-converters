@@ -3,7 +3,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import type { WebpAJpgLocaleContent } from '../index';
 
 const slug = 'webp-to-jpg-converter';
-const title = 'Convert WebP to JPG Online and Free - No Upload Required';
+const title = 'Convert WebP to JPG Online and Free';
 const description =
   'Convert WebP images to JPG without uploading files. 100% private local processing. Transparent backgrounds are automatically replaced with white.';
 

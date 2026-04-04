@@ -3,7 +3,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import type { GifAJpgLocaleContent } from '../index';
 
 const slug = 'convertisseur-gif-en-jpg';
-const title = 'Convertir GIF en JPG en Ligne | Transformez vos Animations en Photos Statiques';
+const title = 'Convertir GIF en JPG en Ligne';
 const description =
   'Extrayez la première image de vos GIF et convertissez en JPG. Sans serveur. Traitement local dans votre navigateur. Gratuit et illimité.';
 

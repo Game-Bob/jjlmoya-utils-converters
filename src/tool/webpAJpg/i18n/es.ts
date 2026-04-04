@@ -3,7 +3,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import type { WebpAJpgLocaleContent } from '../index';
 
 const slug = 'convertidor-webp-a-jpg';
-const title = 'Convertir WebP a JPG Online y Gratis - Sin Subir a Internet';
+const title = 'Convertir WebP a JPG Online y Gratis';
 const description =
   'Convierte imágenes WebP a JPG sin subir archivos. Procesamiento local 100% privado. Los fondos transparentes se sustituyen por blanco automáticamente.';
 
