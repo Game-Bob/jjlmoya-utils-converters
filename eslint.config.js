@@ -1,4 +1,4 @@
-import eslintPluginAstro from "eslint-plugin-astro";
+﻿import eslintPluginAstro from "eslint-plugin-astro";
 import tseslint from "typescript-eslint";
 import noComments from "eslint-plugin-no-comments";
 
@@ -198,3 +198,4 @@ export default [
         },
     },
 ];
+

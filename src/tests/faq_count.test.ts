@@ -1,18 +1,10 @@
 import { describe, it, expect } from 'vitest';
-import * as DATA from '../data';
-
-const TOOLS: typeof DATA.templateCategory[] = [];
+import { ALL_TOOLS } from '../tools';
 
 describe('FAQ Content Validation', () => {
-  TOOLS.forEach((entry) => {
-    describe(`Tool: ${entry.icon}`, () => {
-      it('placeholder', () => {
-        expect(true).toBe(true);
-      });
+  it('all tools have i18n defined', () => {
+    ALL_TOOLS.forEach((tool) => {
+      expect(tool.entry.i18n).toBeDefined();
     });
-  });
-
-  it('no tools registered yet', () => {
-    expect(TOOLS.length).toBe(0);
   });
 });

@@ -1,4 +1,4 @@
-Aquí tienes la Mega-Prompt Final Evolucionada. Está diseñada para que sea un estándar universal: funciona para calculadoras, conversores, generadores o cualquier utilidad técnica.
+﻿Aquí tienes la Mega-Prompt Final Evolucionada. Está diseñada para que sea un estándar universal: funciona para calculadoras, conversores, generadores o cualquier utilidad técnica.
 
 El secreto de esta prompt es que no pide "un texto", sino una arquitectura de información que Google interpreta como contenido de alta calidad (E-E-A-T).
 
@@ -55,3 +55,4 @@ Un <SEODiagnostic> para ayudar al usuario a interpretar sus resultados.
 
 Formato de Salida:
 Devuelve exclusivamente el código para un archivo .astro. No incluyas explicaciones innecesarias fuera del código. Usa las props correctamente (ej: <SEOTitle level={2}>).
+

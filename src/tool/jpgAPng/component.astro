@@ -1,0 +1,8 @@
+---
+import SharedImageConverter from '../../shared/ImageConverter.astro';
+import type { ImageConverterUI } from '../../shared/ImageConverter.astro';
+
+interface Props { ui: ImageConverterUI }
+const { ui } = Astro.props;
+---
+<SharedImageConverter from="jpg" to="png" ui={ui} />

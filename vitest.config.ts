@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitest/config';
+﻿import { defineConfig } from 'vitest/config';
 import path from 'path';
 
 export default defineConfig({
@@ -17,3 +17,4 @@ export default defineConfig({
     external: ['astro']
   }
 });
+

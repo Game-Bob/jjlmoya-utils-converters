@@ -1,16 +1,17 @@
-import { describe, it, expect } from 'vitest';
+﻿import { describe, it, expect } from 'vitest';
 import { ALL_TOOLS } from '../tools';
-import { templateCategory } from '../data';
+import { convertersCategory } from '../data';
 
 describe('Tool Validation Suite', () => {
   describe('Library Registration', () => {
-    it('should have 0 tools in ALL_TOOLS (replace with actual count after adding tools)', () => {
-      expect(ALL_TOOLS.length).toBe(0);
+    it('should have 21 tools in ALL_TOOLS', () => {
+      expect(ALL_TOOLS.length).toBe(21);
     });
 
-    it('templateCategory should be defined', () => {
-      expect(templateCategory).toBeDefined();
-      expect(templateCategory.i18n).toBeDefined();
+    it('convertersCategory should be defined', () => {
+      expect(convertersCategory).toBeDefined();
+      expect(convertersCategory.i18n).toBeDefined();
     });
   });
 });
+
