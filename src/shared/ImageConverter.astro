@@ -352,7 +352,8 @@ const acceptInput = (from || 'jpg') === 'svg' ? '.svg' : 'image/*';
     processSvgToRaster,
   } from './logic/converter';
   import type { ConversionItem, ImageFormat } from './logic/converter';
-  import JSZip from 'jszip';
+  import * as JSZipModule from 'jszip';
+  const JSZip = JSZipModule.default || JSZipModule;
 
   const dropZone = document.getElementById('converter-drop-zone');
   const fileInput = document.getElementById('converter-input') as HTMLInputElement;
