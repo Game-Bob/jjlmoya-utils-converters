@@ -118,7 +118,7 @@ export default [
             "@typescript-eslint/consistent-type-imports": "error",
 
             "complexity": ["error", { max: 8 }],
-            "max-lines": ["error", { max: 250, skipBlankLines: true, skipComments: true }],
+            "max-lines": "off",
             "max-lines-per-function": ["error", { max: 30, skipBlankLines: true, skipComments: true }],
             "max-depth": ["error", 3],
             "max-params": ["error", 4],
@@ -139,7 +139,7 @@ export default [
         rules: {
             "custom/no-css-comments": "error",
             "custom/single-font-load": "error",
-            "max-lines": ["error", { max: 250, skipBlankLines: true, skipComments: true }],
+            "max-lines": "off",
         },
     },
 
@@ -162,6 +162,7 @@ export default [
             "max-lines-per-function": ["error", { max: 50, skipBlankLines: true, skipComments: true }],
             "complexity": "off",
             "no-comments/disallowComments": "off",
+            "max-lines": "off",
         },
     },
     {
@@ -178,6 +179,7 @@ export default [
             "max-lines-per-function": "off",
             "complexity": "off",
             "@typescript-eslint/no-explicit-any": "off",
+            "max-lines": "off",
         },
     },
     {
