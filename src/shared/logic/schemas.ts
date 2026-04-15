@@ -9,10 +9,8 @@ interface SchemaOptions {
   howTo: HowToStep[];
 }
 
-export function generateSchemas(options: SchemaOptions): WithContext<Thing>[] {
-  const { title, description, inLanguage, faq, howTo } = options;
-
-  const appSchema: WithContext<SoftwareApplication> = {
+function buildAppSchema(title: string, description: string, inLanguage: string): WithContext<SoftwareApplication> {
+  return {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
     name: title,
@@ -22,35 +20,38 @@ export function generateSchemas(options: SchemaOptions): WithContext<Thing>[] {
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
     inLanguage,
   };
+}
 
-  const faqSchema: WithContext<FAQPage> = {
+function buildFaqSchema(faq: FAQItem[]): WithContext<FAQPage> {
+  return {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity: faq.map((item) => ({
       '@type': 'Question',
       name: item.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: item.answer,
-      },
+      acceptedAnswer: { '@type': 'Answer', text: item.answer },
     })),
   };
+}
 
-  const howToSchema: WithContext<HowTo> = {
+function buildHowToSchema(title: string, howTo: HowToStep[]): WithContext<HowTo> {
+  return {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
     name: title,
     step: howTo.map((step) => ({
       '@type': 'HowToStep',
       name: step.name,
-      itemListElement: [
-        {
-          '@type': 'HowToDirection',
-          text: step.text,
-        },
-      ],
+      itemListElement: [{ '@type': 'HowToDirection', text: step.text }],
     })),
   };
+}
 
-  return [appSchema as any, faqSchema as any, howToSchema as any];
+export function generateSchemas(options: SchemaOptions): WithContext<Thing>[] {
+  const { title, description, inLanguage, faq, howTo } = options;
+  return [
+    buildAppSchema(title, description, inLanguage),
+    buildFaqSchema(faq),
+    buildHowToSchema(title, howTo),
+  ] as WithContext<Thing>[];
 }

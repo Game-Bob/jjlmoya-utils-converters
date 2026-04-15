@@ -62,10 +62,6 @@ const bibliography: SvgAJpgLocaleContent['bibliography'] = [
   },
 ];
 
-const seo: SvgAJpgLocaleContent = {
-  // Wait, I should follow the exact structure of seo array like in en.ts
-};
-// I'll restart with the correct seo structure
 const seoArray: SvgAJpgLocaleContent['seo'] = [
   {
     type: 'title',
