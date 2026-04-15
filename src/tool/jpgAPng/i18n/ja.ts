@@ -2,7 +2,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { JpgAPngLocaleContent } from '../index';
 
-const slug = 'convert-jpg-to-png';
+const slug = 'jpg-to-png-converter';
 const title = 'JPGをPNGにオンラインで無料で変換';
 const description =
   'ブラウザ上でファイルをアップロードせずにJPG画像をPNGに変換します。ロスレス変換、無料で完全にプライベートに使用できます。';

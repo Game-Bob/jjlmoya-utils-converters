@@ -2,7 +2,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { BmpAWebpLocaleContent } from '../index';
 
-const slug = 'convert-bmp-to-webp';
+const slug = 'bmp-to-webp-converter';
 const title = 'BMPをWebPに無料で変換';
 const description =
   'BMP画像をオフラインでWebPに変換します。巨大なファイルをキロバイト単位に削減。ファイルのアップロードは不要。無料でオフライン、完全にプライベートに使用できます。';

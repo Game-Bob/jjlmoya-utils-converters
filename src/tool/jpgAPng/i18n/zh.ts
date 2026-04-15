@@ -2,7 +2,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { JpgAPngLocaleContent } from '../index';
 
-const slug = 'convert-jpg-to-png';
+const slug = 'jpg-to-png-converter';
 const title = '在线免费将 JPG 转换为 PNG';
 const description =
   '在您的浏览器中完成 JPG 到 PNG 的转换，无需上传文件。无损转换、免费且完全私密。';

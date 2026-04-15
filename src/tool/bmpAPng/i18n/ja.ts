@@ -2,7 +2,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { BmpAPngLocaleContent } from '../index';
 
-const slug = 'convert-bmp-to-png';
+const slug = 'bmp-to-png-converter';
 const title = 'BMPからPNGへのコンバーター';
 const description =
   'BMP画像を品質を損なうことなくPNGに変換します。ノイズのないモダンな圧縮。ファイルのアップロードは不要。無料で100%プライベートに使用できます。';

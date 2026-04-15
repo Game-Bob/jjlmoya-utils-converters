@@ -2,7 +2,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { AvifAJpgLocaleContent } from '../index';
 
-const slug = 'convert-avif-to-jpg';
+const slug = 'avif-to-jpg-converter';
 const title = '在线将 AVIF 转换为 JPG';
 const description =
   '在浏览器中将 AVIF 图像转换为 JPG。无需服务器。100% 私密本地处理。免费且无限制。';

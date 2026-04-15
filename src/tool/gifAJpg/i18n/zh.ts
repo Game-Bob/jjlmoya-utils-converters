@@ -2,7 +2,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { GifAJpgLocaleContent } from '../index';
 
-const slug = 'convert-gif-to-jpg';
+const slug = 'gif-to-jpg-converter';
 const title = '在线将 GIF 转换为 JPG';
 const description =
   '从 GIF 中提取第一帧并将其转换为 JPG。无需服务器。在您的浏览器中进行本地处理。免费且无限制。';

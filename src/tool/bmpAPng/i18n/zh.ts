@@ -2,7 +2,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { BmpAPngLocaleContent } from '../index';
 
-const slug = 'convert-bmp-to-png';
+const slug = 'bmp-to-png-converter';
 const title = 'BMP 转 PNG 转换器';
 const description =
   '无损地将 BMP 图像转换为 PNG。现代压缩技术，无伪影。无需上传文件。免费且 100% 私密。';

@@ -2,7 +2,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { GifAJpgLocaleContent } from '../index';
 
-const slug = 'convert-gif-to-jpg';
+const slug = 'gif-to-jpg-converter';
 const title = 'GIF JPG 온라인 변환기';
 const description =
   'GIF 파일에서 첫 번째 프레임을 추출하여 JPG로 변환하세요. 서버 전송 없음. 브라우저 내 로컬 처리. 무료 및 무제한 이용 가능.';

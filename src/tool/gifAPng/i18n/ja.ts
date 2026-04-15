@@ -2,7 +2,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { GifAPngLocaleContent } from '../index';
 
-const slug = 'convert-gif-to-png';
+const slug = 'gif-to-png-converter';
 const title = 'GIFをPNGにオンラインで変換';
 const description =
   'GIFファイルから最初のフレームを抽出し、透明度を維持したままPNGに変換します。サーバー不要。ブラウザ内ローカル処理。無料。';

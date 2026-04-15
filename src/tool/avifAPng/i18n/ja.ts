@@ -2,7 +2,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { AvifAPngLocaleContent } from '../index';
 
-const slug = 'convert-avif-to-png';
+const slug = 'avif-to-png-converter';
 const title = 'AVIFをPNGにオンラインで変換';
 const description =
   '透明度を維持しながらAVIF画像をPNGに変換します。ファイルをアップロードする必要はありません。ブラウザ上でのローカル処理で、無料で無制限に使用できます。';

@@ -2,7 +2,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { BmpAPngLocaleContent } from '../index';
 
-const slug = 'convert-bmp-to-png';
+const slug = 'bmp-to-png-converter';
 const title = 'BMP PNG 변환기';
 const description =
   '품질 저하 없이 BMP 이미지를 PNG로 변환하세요. 노이즈 없는 현대적인 압축 기술. 파일 업로드 없음. 무료이며 100% 안전한 로컬 변환.';

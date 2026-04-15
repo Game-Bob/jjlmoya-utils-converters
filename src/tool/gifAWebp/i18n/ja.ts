@@ -2,7 +2,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { GifAWebpLocaleContent } from '../index';
 
-const slug = 'convert-gif-to-webp';
+const slug = 'gif-to-webp-converter';
 const title = 'GIFを静的WebPにオンライン変換';
 const description =
   'アニメーションGIFを静的WebPに変換します。透明度を維持。サーバー不要。ブラウザ内でローカルに処理。無料。';

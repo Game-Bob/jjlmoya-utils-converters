@@ -2,7 +2,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { GifAPngLocaleContent } from '../index';
 
-const slug = 'convert-gif-to-png';
+const slug = 'gif-to-png-converter';
 const title = 'GIF PNG 온라인 변환기';
 const description =
   'GIF 파일에서 첫 번째 프레임을 추출하고 투명도를 유지하여 PNG로 변환하세요. 서버 필요 없음. 로컬 처리. 무료 이용 가능.';

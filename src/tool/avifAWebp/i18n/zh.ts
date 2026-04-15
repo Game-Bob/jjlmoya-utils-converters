@@ -2,7 +2,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { AvifAWebpLocaleContent } from '../index';
 
-const slug = 'convert-avif-to-webp';
+const slug = 'avif-to-webp-converter';
 const title = '在线将 AVIF 转换为 WebP';
 const description =
   '为了获得更好的兼容性，将 AVIF 图像转换为 WebP 格式。无需服务器，本地完成处理。免费、私密且无限制。';

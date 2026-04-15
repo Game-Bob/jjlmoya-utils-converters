@@ -2,7 +2,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { BmpAWebpLocaleContent } from '../index';
 
-const slug = 'convert-bmp-to-webp';
+const slug = 'bmp-to-webp-converter';
 const title = '免费将 BMP 转换为 WebP';
 const description =
   '离线将 BMP 图像转换为 WebP。将巨大文件缩减至千字节。无需上传文件。免费、离线且完全私密。';

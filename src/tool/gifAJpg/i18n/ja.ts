@@ -2,7 +2,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { GifAJpgLocaleContent } from '../index';
 
-const slug = 'convert-gif-to-jpg';
+const slug = 'gif-to-jpg-converter';
 const title = 'GIFをJPGにオンラインで変換';
 const description =
   'GIFファイルから最初のフレームを抽出してJPGに変換します。サーバーを介さず、ブラウザ内でローカル処理を行います。無料で無制限に使用できます。';

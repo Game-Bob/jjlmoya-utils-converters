@@ -2,7 +2,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { BmpAWebpLocaleContent } from '../index';
 
-const slug = 'convert-bmp-to-webp';
+const slug = 'bmp-to-webp-converter';
 const title = 'BMP WebP 무료 변환기';
 const description =
   'BMP 이미지를 오프라인에서 WebP로 변환하세요. 방대한 파일을 킬로바이트 단위로 대폭 압축합니다. 파일 업로드 없음. 무료, 오프라인, 100% 안전한 로컬 처리.';

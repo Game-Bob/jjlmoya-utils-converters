@@ -2,7 +2,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { BmpAJpgLocaleContent } from '../index';
 
-const slug = 'convert-bmp-to-jpg';
+const slug = 'bmp-to-jpg-converter';
 const title = '在线将 BMP 转换为 JPG';
 const description =
   '在您的浏览器中将 BMP 图像转换为 JPG。大幅减小文件大小。无需将文件上传到服务器。免费且 100% 私密。';

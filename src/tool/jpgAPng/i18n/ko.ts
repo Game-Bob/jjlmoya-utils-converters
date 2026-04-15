@@ -2,7 +2,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { JpgAPngLocaleContent } from '../index';
 
-const slug = 'convert-jpg-to-png';
+const slug = 'jpg-to-png-converter';
 const title = 'JPG를 PNG로 온라인 무료 변환';
 const description =
   '파일 업로드 없이 브라우저에서 JPG 이미지를 PNG로 변환하세요. 로컬에서 처리되는 무손실 변환으로 무료이며 100% 안전합니다.';

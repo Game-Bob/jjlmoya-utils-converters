@@ -2,7 +2,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { GifAWebpLocaleContent } from '../index';
 
-const slug = 'convert-gif-to-webp';
+const slug = 'gif-to-webp-converter';
 const title = '在线将 GIF 转换为静态 WebP';
 const description =
   '将动态 GIF 转换为静态 WebP。保留透明度。无需服务器。在浏览器中本地处理。免费。';

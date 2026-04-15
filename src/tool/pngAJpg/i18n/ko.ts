@@ -2,7 +2,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { PngAJpgLocaleContent } from '../index';
 
-const slug = 'convert-png-to-jpg';
+const slug = 'png-to-jpg-converter';
 const title = 'PNG를 JPG로 온라인 변환';
 const description =
   'PNG 이미지를 즉시 사용자 컴퓨터에서 빠른 압축 JPG 형식으로 변환하세요. 인터넷에 사진을 업로드할 필요가 없습니다. 일괄 최적화가 가능합니다.';

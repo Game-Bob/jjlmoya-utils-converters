@@ -2,7 +2,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { AvifAPngLocaleContent } from '../index';
 
-const slug = 'convert-avif-to-png';
+const slug = 'avif-to-png-converter';
 const title = 'AVIF를 PNG로 온라인 변환';
 const description =
   '투명도를 유지하면서 AVIF 이미지를 PNG로 변환하세요. 파일을 업로드할 필요가 없습니다. 브라우저에서의 로컬 처리 방식으로 무료이며 무제한으로 사용할 수 있습니다.';

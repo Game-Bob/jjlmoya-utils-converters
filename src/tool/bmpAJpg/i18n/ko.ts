@@ -2,7 +2,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { BmpAJpgLocaleContent } from '../index';
 
-const slug = 'convert-bmp-to-jpg';
+const slug = 'bmp-to-jpg-converter';
 const title = 'BMP를 JPG로 온라인 변환';
 const description =
   '브라우저에서 BMP 이미지를 JPG로 변환하세요. 파일 크기를 획기적으로 줄일 수 있습니다. 서버 업로드 없이 로컬에서 처리되어 무료이며 100% 안전합니다.';

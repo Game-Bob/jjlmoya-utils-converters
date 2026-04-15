@@ -2,7 +2,7 @@ import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { GifAWebpLocaleContent } from '../index';
 
-const slug = 'convert-gif-to-webp';
+const slug = 'gif-to-webp-converter';
 const title = 'GIF를 정적 WebP로 온라인 변환';
 const description =
   '애니메이션 GIF를 정적 WebP로 변환하세요. 투명도를 유지합니다. 서버 불필요. 브라우저에서 로컬로 처리됩니다. 무료.';
