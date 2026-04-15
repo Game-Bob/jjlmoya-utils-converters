@@ -1,5 +1,5 @@
-import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
+import { generateSchemas } from '../../../shared/logic/schemas';
 import type { PngAIcoLocaleContent } from '../index';
 
 const slug = 'convertisseur-png-en-ico';
@@ -14,7 +14,7 @@ const ui: ImageConverterUI = {
   processedFiles: 'Fichiers traités',
   downloadAll: 'Tout télécharger (.zip)',
   pending: 'En attente',
-  bibliographyTitle: 'Références Bibliographiques',
+  bibliographyTitle: 'Références Bibliographique',
   faqTitle: 'Questions Fréquentes',
 };
 
@@ -83,7 +83,7 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'L\'<strong>ICO</strong> est le format de distribution pour les icônes dans les environnements Microsoft et le web. Il contient une structure binaire spécifique permettant de regrouper plusieurs résolutions dans un seul fichier : le navigateur lit le répertoire interne du fichier ICO et sélectionne automatiquement <strong>16×16</strong> pour l\'onglet du navigateur, <strong>32×32</strong> pour les raccourcis, <strong>48×48</strong> pour l\'explorateur de fichiers et <strong>256×256</strong> pour les écrans Retina et 4K. Partir d\'un PNG transparent garantit que toutes ces résolutions auront des bords parfaits sans liseré blanc.',
+    html: 'L\'<strong>ICO</strong> est le format de distribution pour les icônes dans les environnements Microsoft und le web. Il contient une structure binaire spécifique permettant de regrouper plusieurs résolutions dans un seul fichier : le navigateur lit le répertoire interne du fichier ICO und sélectionne automatiquement <strong>16×16</strong> pour l\'onglet du navigateur, <strong>32×32</strong> pour les raccourcis, <strong>48×48</strong> pour l\'explorateur de fichiers und <strong>256×256</strong> pour les écrans Retina und 4K. Partir d\'un PNG transparent garantit que toutes ces résolutions auront des bords parfaits sans liseré blanc.',
   },
   {
     type: 'title',
@@ -99,10 +99,10 @@ const seo: PngAIcoLocaleContent['seo'] = [
         icon: 'mdi:cloud-upload',
         pointIcon: 'mdi:close-circle-outline',
         points: [
-          'Latence réseau à l\'envoi et au téléchargement',
+          'Latence réseau à l\'envoi und au téléchargement',
           'Votre logo d\'entreprise stocké sur des serveurs tiers',
-          'Limites de taille et quota quotidien de conversions',
-          'Publicités intrusives et traceurs tiers',
+          'Limites de taille und quota quotidien de conversions',
+          'Publicités intrusives und traceurs tiers',
         ],
       },
       {
@@ -126,11 +126,11 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Le PNG est décodé dans un <strong>Canvas HTML5</strong> en mémoire avec une prise en charge complète du canal alpha 32 bits. Le moteur construit l\'en-tête ICO standard de Microsoft avec le bon nombre magique (<code>00 00 01 00</code>), le répertoire d\'images avec les dimensions et le décalage des données, et les données de pixels tout en maintenant les informations de transparence. Le résultat est un vrai fichier binaire .ico reconnu nativement par Windows, macOS et tous les navigateurs.',
+    html: 'Le PNG est décodé dans un <strong>Canvas HTML5</strong> en mémoire avec une prise en charge complète du canal alpha 32 bits. Le moteur construit l\'en-tête ICO standard de Microsoft avec le bon nombre magique (<code>00 00 01 00</code>), le répertoire d\'images avec les dimensions und le décalage des données, und les données de pixels tout en maintenant les informations de transparence. Le résultat est un vrai fichier binaire .ico reconnu nativement par Windows, macOS und tous les navigateurs.',
   },
   {
     type: 'paragraph',
-    html: 'La transparence du PNG est entièrement préservée dans l\'ICO résultant — les pixels transparents restent transparents, les pixels semi-transparents conservent leur valeur alpha exacte et les pixels opaques gardent leur couleur d\'origine. C\'est crucial pour les logos sur des fonds variables : votre favicon s\'affichera correctement en mode clair, mode sombre et dans toute combinaison de couleurs de l\'interface du navigateur.',
+    html: 'La transparence du PNG est entièrement préservée dans l\'ICO résultant — les pixels transparents restent transparents, les pixels semi-transparents conservent leur valeur alpha exacte und les pixels opaques gardent leur couleur d\'origine. C\'est crucial pour les logos sur des fonds variables : votre favicon s\'affichera correctement en mode clair, mode sombre und dans toute combinaison de couleurs de l\'interface du navigateur.',
   },
   {
     type: 'tip',
@@ -139,18 +139,18 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'title',
-    text: 'Cas d\'usage et compatibilité',
+    text: 'Cas d\'usage und compatibilité',
     level: 3,
   },
   {
     type: 'list',
     icon: 'mdi:check-circle',
     items: [
-      'Favicon transparent pour sites web : fonctionne dans Chrome, Firefox, Safari, Edge et Internet Explorer.',
+      'Favicon transparent pour sites web : fonctionne dans Chrome, Firefox, Safari, Edge e Internet Explorer.',
       'Icône d\'application PWA : le manifest.json référence l\'ICO pour l\'installation sur bureau.',
       'Personnalisation de dossiers Windows 10/11 avec logo d\'entreprise sans fond blanc.',
-      'Icône de raccourci pour applications de bureau, installateurs et exécutables.',
-      'Icône d\'extension navigateur pour les extensions Chrome et Firefox.',
+      'Icône de raccourci pour applications de bureau, installateurs und exécutables.',
+      'Icône d\'extension navigateur pour les extensions Chrome und Firefox.',
     ],
   },
   {
@@ -160,20 +160,9 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Le PNG avec transparence est sans conteste le meilleur point de départ pour créer des icônes ICO de qualité professionnelle. Avec cet outil, la conversion est instantanée, les canaux alpha sont entièrement préservés et le fichier résultant est un vrai ICO avec la structure binaire correcte. Sans envoyer votre logo sur aucun serveur, sans filigrane, sans limites — et avec une transparence parfaite à toutes les tailles.',
+    html: 'Le PNG avec transparence est sans conteste le meilleur point de départ pour créer des icônes ICO de qualité professionnelle. Avec cet outil, la conversion est instantanée, les canaux alpha sont entièrement préservés und le fichier résultant est un vrai ICO avec la structure binaire correcte. Sans envoyer votre logo sur aucun serveur, sans filigrane, sans limites — und avec une transparence parfaite à toutes les tailles.',
   },
 ];
-
-const appSchema: WithContext<SoftwareApplication> = {
-  '@context': 'https://schema.org',
-  '@type': 'SoftwareApplication',
-  name: title,
-  description,
-  applicationCategory: 'UtilitiesApplication',
-  operatingSystem: 'Web',
-  offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
-  inLanguage: 'fr',
-};
 
 export const content: PngAIcoLocaleContent = {
   slug,
@@ -184,5 +173,11 @@ export const content: PngAIcoLocaleContent = {
   faq,
   bibliography,
   howTo,
-  schemas: [appSchema as any],
+  schemas: generateSchemas({
+    title,
+    description,
+    inLanguage: 'fr',
+    faq,
+    howTo,
+  }),
 };

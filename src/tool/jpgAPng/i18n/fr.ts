@@ -1,5 +1,5 @@
-import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
+import { generateSchemas } from '../../../shared/logic/schemas';
 import type { JpgAPngLocaleContent } from '../index';
 
 const slug = 'convertisseur-jpg-en-png';
@@ -164,16 +164,6 @@ const seo: JpgAPngLocaleContent['seo'] = [
   },
 ];
 
-const appSchema: WithContext<SoftwareApplication> = {
-  '@context': 'https://schema.org',
-  '@type': 'SoftwareApplication',
-  name: title,
-  description,
-  applicationCategory: 'UtilitiesApplication',
-  operatingSystem: 'Web',
-  offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
-  inLanguage: 'fr',
-};
 
 export const content: JpgAPngLocaleContent = {
   slug,
@@ -184,5 +174,5 @@ export const content: JpgAPngLocaleContent = {
   faq,
   bibliography,
   howTo,
-  schemas: [appSchema as any],
+  schemas: generateSchemas({ title, description, inLanguage: 'fr', faq, howTo }),
 };

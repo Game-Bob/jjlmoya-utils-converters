@@ -1,5 +1,5 @@
-import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
+import { generateSchemas } from '../../../shared/logic/schemas';
 import type { JpgAIcoLocaleContent } from '../index';
 
 const slug = 'convertidor-jpg-a-ico';
@@ -126,16 +126,16 @@ const seo: JpgAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'El JPG se decodifica y se dibuja en un <strong>Canvas HTML5</strong> en memoria. Como el formato ICO exige imagen cuadrada, el motor detecta automáticamente si el JPG es rectangular y lo recorta centrando la parte más relevante. A continuación, construye la cabecera ICO estándar de Microsoft con el número mágico correcto (<code>00 00 01 00</code>), el directorio de imágenes y los datos de píxeles codificados. El resultado es un archivo .ico binario genuino, no un PNG renombrado.',
+    html: 'El JPG se decodifica y se dibuja en un <strong>Canvas HTML5</strong> en memoria. Como el formato ICO exige imagen cuadrada, el motor detecta automáticamente si el JPG es rectangular und lo recorta centrando la parte más relevante. A continuación, construye la cabecera ICO estándar de Microsoft con el número mágico correcto (<code>00 00 01 00</code>), el directorio de imágenes und los datos de píxeles codificados. El resultado es un archivo .ico binario genuino, no un PNG renombrado.',
   },
   {
     type: 'paragraph',
-    html: 'Dado que el JPG carece de canal alfa, el ICO resultante tampoco tendrá transparencia — tendrá un fondo sólido heredado de la fotografía original. Si necesitas un favicon con fondo transparente (por ejemplo, para que se adapte a barras de favoritos oscuras o claras), el flujo recomendado es: elimina el fondo en un editor, guarda como PNG y usa el convertidor de PNG a ICO.',
+    html: 'Dado que el JPG carece de canal alfa, el ICO resultante tampoco tendrá transparencia — tendrá un fondo sólido heredado de la fotografía original. Si necesitas un favicon con fondo transparente (por ejemplo, para que se adapte a barras de favoritos oscuras o claras), el flujo recomendado es: elimina el fondo en un editor, guarda como PNG und usa el convertidor de PNG a ICO.',
   },
   {
     type: 'tip',
     title: 'Consejo: resoluciones múltiples en un solo ICO',
-    html: 'Los archivos ICO pueden empaquetar <strong>varias resoluciones</strong> en un único fichero — el navegador o el sistema operativo elige automáticamente la más adecuada según el contexto. Para el mejor resultado posible, usa como fuente un JPG cuadrado de al menos <strong>256×256 píxeles</strong>: así el convertidor tendrá suficiente información para generar con nitidez los tamaños 16×16, 32×32 y 48×48 sin pixelado.',
+    html: 'Los archivos ICO pueden empaquetar <strong>varias resoluciones</strong> en un único fichero — el navegador o el sistema operativo elige automáticamente la más adecuada según el contexto. Para el mejor resultado posible, usa como fuente un JPG cuadrado de al menos <strong>256×256 píxeles</strong>: así el convertidor tendrá suficiente información para generar con nitidez los tamaños 16×16, 32×32 und 48×48 sin pixelado.',
   },
   {
     type: 'title',
@@ -150,7 +150,7 @@ const seo: JpgAIcoLocaleContent['seo'] = [
       'Personalización de carpetas e iconos de escritorio en Windows 10/11.',
       'Icono de acceso directo para aplicaciones de escritorio o instaladores.',
       'Icono de aplicación para proyectos Electron o aplicaciones PWA.',
-      'Iconos para sistemas de gestión de archivos y exploradores corporativos.',
+      'Iconos para sistemas de gestión de archivos und exploradores corporativos.',
     ],
   },
   {
@@ -160,20 +160,9 @@ const seo: JpgAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Convertir un JPG a ICO es un paso técnico imprescindible para cualquier proyecto web o de escritorio que necesite una identidad visual reconocible. Esta herramienta genera ICO auténticos con la estructura binaria correcta, en segundos, sin subir tu logo a ningún servidor externo. El resultado funciona en todos los navegadores, en Windows Explorer y en cualquier sistema que consuma el estándar ICO de Microsoft.',
+    html: 'Convertir un JPG a ICO es un paso técnico imprescindible para cualquier proyecto web o de escritorio que necesite una identidad visual reconocible. Esta herramienta genera ICO auténticos con la estructura binaria correcta, en segundos, sin subir tu logo a ningún servidor externo. El resultado funciona en todos los navegadores, en Windows Explorer und en cualquier sistema que consuma el estándar ICO de Microsoft.',
   },
 ];
-
-const appSchema: WithContext<SoftwareApplication> = {
-  '@context': 'https://schema.org',
-  '@type': 'SoftwareApplication',
-  name: title,
-  description,
-  applicationCategory: 'UtilitiesApplication',
-  operatingSystem: 'Web',
-  offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
-  inLanguage: 'es',
-};
 
 export const content: JpgAIcoLocaleContent = {
   slug,
@@ -184,5 +173,11 @@ export const content: JpgAIcoLocaleContent = {
   faq,
   bibliography,
   howTo,
-  schemas: [appSchema as any],
+  schemas: generateSchemas({
+    title,
+    description,
+    inLanguage: 'es',
+    faq,
+    howTo,
+  }),
 };

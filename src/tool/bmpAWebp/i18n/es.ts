@@ -1,5 +1,5 @@
-import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
+import { generateSchemas } from '../../../shared/logic/schemas';
 import type { BmpAWebpLocaleContent } from '../index';
 
 const slug = 'convertidor-bmp-a-webp';
@@ -164,16 +164,6 @@ const seo: BmpAWebpLocaleContent['seo'] = [
   },
 ];
 
-const appSchema: WithContext<SoftwareApplication> = {
-  '@context': 'https://schema.org',
-  '@type': 'SoftwareApplication',
-  name: title,
-  description,
-  applicationCategory: 'UtilitiesApplication',
-  operatingSystem: 'Web',
-  offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
-  inLanguage: 'es',
-};
 
 export const content: BmpAWebpLocaleContent = {
   slug,
@@ -184,5 +174,5 @@ export const content: BmpAWebpLocaleContent = {
   faq,
   bibliography,
   howTo,
-  schemas: [appSchema as any],
+  schemas: generateSchemas({ title, description, inLanguage: 'es', faq, howTo }),
 };

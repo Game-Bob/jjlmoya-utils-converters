@@ -1,5 +1,5 @@
-import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
+import { generateSchemas } from '../../../shared/logic/schemas';
 import type { WebpAIcoLocaleContent } from '../index';
 
 const slug = 'convertisseur-webp-en-ico';
@@ -27,7 +27,7 @@ const faq: WebpAIcoLocaleContent['faq'] = [
   {
     question: 'Dois-je attendre des files d\'attente en ligne lors de la création de mon énorme lot d\'icônes corporatives ?',
     answer:
-      'Pas du tout. Notre convertisseur charge le Javascript et coupe tout réseau de téléchargement. Votre propre CPU de téléphone traite cent photos ou plus de manière asynchrone.',
+      'Pas du tout. Notre convertisseur charge le Javascript et coupe tout réseau de téléchargement. Votre propre CPU de téléphone traite cent photos or plus de manière asynchrone.',
   },
   {
     question: 'L\'ICO résultant supportera-t-il les transparences de mon WebP original ?',
@@ -65,7 +65,7 @@ const bibliography: WebpAIcoLocaleContent['bibliography'] = [
 const seo: WebpAIcoLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Convertisseur WebP vers ICO : Créez des Favicons Parfaits depuis vos Assets Modernes',
+    text: 'Convertisseur WebP vers ICO : Créez des Favicons Parfaits depuis vos Assets Modernos',
     level: 2,
   },
   {
@@ -130,7 +130,7 @@ const seo: WebpAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Le résultat est un fichier ICO légitime, pas un simple renommage de fichier. Les données de pixels sont empaquetées avec la structure correcte que Windows, macOS et tous les navigateurs modernes s\'attendent à trouver lors du chargement d\'un favicon ou d\'une icône d\'application.',
+    html: 'Le résultat est un fichier ICO légitime, pas un simple renommage de fichier. Les données de pixels sont empaquetées avec la structure correcte que Windows, macOS et tous les navigateurs modernes s\'attendent à trouver lors du chargement d\'un favicon o d\'une icône d\'application.',
   },
   {
     type: 'tip',
@@ -164,17 +164,6 @@ const seo: WebpAIcoLocaleContent['seo'] = [
   },
 ];
 
-const appSchema: WithContext<SoftwareApplication> = {
-  '@context': 'https://schema.org',
-  '@type': 'SoftwareApplication',
-  name: title,
-  description,
-  applicationCategory: 'UtilitiesApplication',
-  operatingSystem: 'Web',
-  offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
-  inLanguage: 'fr',
-};
-
 export const content: WebpAIcoLocaleContent = {
   slug,
   title,
@@ -184,5 +173,11 @@ export const content: WebpAIcoLocaleContent = {
   faq,
   bibliography,
   howTo,
-  schemas: [appSchema as any],
+  schemas: generateSchemas({
+    title,
+    description,
+    inLanguage: 'fr',
+    faq,
+    howTo,
+  }),
 };

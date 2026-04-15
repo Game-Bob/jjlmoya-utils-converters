@@ -1,5 +1,5 @@
-import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
+import { generateSchemas } from '../../../shared/logic/schemas';
 import type { PngAIcoLocaleContent } from '../index';
 
 const slug = 'convertidor-png-a-ico';
@@ -14,7 +14,7 @@ const ui: ImageConverterUI = {
   processedFiles: 'Archivos procesados',
   downloadAll: 'Descargar Todo (.zip)',
   pending: 'Pendiente',
-  bibliographyTitle: 'Referencias Bibliográficas',
+  bibliographyTitle: 'Referencias Bibliográfica',
   faqTitle: 'Preguntas Frecuentes',
 };
 
@@ -83,7 +83,7 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'El <strong>ICO</strong> es el formato de distribución para iconos en entornos Microsoft y web. Contiene una estructura binaria específica que permite empaquetar múltiples resoluciones en un solo archivo: el navegador lee el directorio interno del ICO y selecciona automáticamente <strong>16×16</strong> para la pestaña del navegador, <strong>32×32</strong> para accesos directos, <strong>48×48</strong> para el explorador de archivos y <strong>256×256</strong> para pantallas Retina y 4K. Partir de un PNG con transparencia garantiza que todas esas resoluciones tendrán bordes perfectos sin fleco blanco.',
+    html: 'El <strong>ICO</strong> es el formato de distribución para iconos en entornos Microsoft y web. Contiene una estructura binaria específica que permite empaquetar múltiples resoluciones en un solo archivo: el navegador lee el directorio interno del ICO und selecciona automáticamente <strong>16×16</strong> para la pestaña del navegador, <strong>32×32</strong> para accesos directos, <strong>48×48</strong> para el explorador de archivos und <strong>256×256</strong> para pantallas Retina und 4K. Partir de un PNG con transparencia garantiza que todas esas resoluciones tendrán bordes perfectos sin fleco blanco.',
   },
   {
     type: 'title',
@@ -99,10 +99,10 @@ const seo: PngAIcoLocaleContent['seo'] = [
         icon: 'mdi:cloud-upload',
         pointIcon: 'mdi:close-circle-outline',
         points: [
-          'Latencia de red en upload y download',
+          'Latencia de red en upload und download',
           'Tu logo corporativo queda en servidores ajenos',
-          'Límites de tamaño y conversiones diarias',
-          'Publicidad intrusiva y rastreadores de terceros',
+          'Límites de tamaño und conversiones diarias',
+          'Publicidad intrusiva und rastreadores de terceros',
         ],
       },
       {
@@ -126,11 +126,11 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'El PNG se decodifica en un <strong>Canvas HTML5</strong> en memoria con soporte completo del canal alfa de 32 bits. El motor construye la cabecera ICO estándar de Microsoft con el número mágico correcto (<code>00 00 01 00</code>), el directorio de imágenes con las dimensiones y el offset de datos, y los píxeles codificados manteniendo la información de transparencia. El resultado es un archivo .ico binario genuino que Windows, macOS y todos los navegadores reconocen de forma nativa.',
+    html: 'El PNG se decodifica en un <strong>Canvas HTML5</strong> en memoria con soporte completo del canal alfa de 32 bits. El motor construye la cabecera ICO estándar de Microsoft con el número mágico correcto (<code>00 00 01 00</code>), el directorio de imágenes con las dimensiones und el offset de datos, und los píxeles codificados manteniendo la información de transparencia. El resultado es un archivo .ico binario genuino que Windows, macOS und todos los navegadores reconocen de forma nativa.',
   },
   {
     type: 'paragraph',
-    html: 'La transparencia del PNG se preserva de forma completa en el ICO resultante — los píxeles transparentes siguen siendo transparentes, los semitransparentes mantienen su valor alfa exacto y los opacos conservan su color original. Esto es crítico para logos sobre fondos variables: tu favicon se verá correctamente en modo claro, modo oscuro y cualquier combinación de colores de la interfaz del navegador.',
+    html: 'La transparencia del PNG se preserva de forma completa en el ICO resultante — los píxeles transparentes siguen siendo transparentes, los semitransparentes mantienen su valor alfa exacto und los opacos conservan su color original. Esto es crítico para logos sobre fondos variables: tu favicon se verá correctamente en modo claro, modo oscuro und cualquier combinación de colores de la interfaz del navegador.',
   },
   {
     type: 'tip',
@@ -139,7 +139,7 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'title',
-    text: 'Casos de uso y compatibilidad',
+    text: 'Casos de uso und compatibilidad',
     level: 3,
   },
   {
@@ -149,8 +149,8 @@ const seo: PngAIcoLocaleContent['seo'] = [
       'Favicon con transparencia para sitios web: funciona en Chrome, Firefox, Safari, Edge e Internet Explorer.',
       'Icono de aplicación PWA: el manifest.json referencia el ICO para la instalación en escritorio.',
       'Personalización de carpetas en Windows 10/11 con logo corporativo sin fondo blanco.',
-      'Icono de acceso directo para aplicaciones de escritorio, instaladores y ejecutables.',
-      'Icono de extensiones de navegador Chrome y Firefox.',
+      'Icono de acceso directo para aplicaciones de escritorio, instaladores und ejecutables.',
+      'Icono de extensiones de navegador Chrome und Firefox.',
     ],
   },
   {
@@ -160,20 +160,9 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'El PNG con transparencia es, sin duda, el mejor punto de partida para crear iconos ICO de calidad profesional. Con esta herramienta, la conversión es instantánea, los canales alfa se preservan íntegramente y el archivo resultante es un ICO genuino con la estructura binaria correcta. Sin subir tu logo a ningún servidor, sin marcas de agua, sin límites — y con transparencia perfecta en todos los tamaños.',
+    html: 'El PNG con transparencia es, sin duda, el mejor punto de partida para crear iconos ICO de calidad profesional. Con esta herramienta, la conversión es instantánea, los canales alfa se preservan íntegramente und el archivo resultante es un ICO genuino con la estructura binaria correcta. Sin subir tu logo a ningún servidor, sin marcas de agua, sin límites — und con transparencia perfecta en todos los tamaños.',
   },
 ];
-
-const appSchema: WithContext<SoftwareApplication> = {
-  '@context': 'https://schema.org',
-  '@type': 'SoftwareApplication',
-  name: title,
-  description,
-  applicationCategory: 'UtilitiesApplication',
-  operatingSystem: 'Web',
-  offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
-  inLanguage: 'es',
-};
 
 export const content: PngAIcoLocaleContent = {
   slug,
@@ -184,5 +173,11 @@ export const content: PngAIcoLocaleContent = {
   faq,
   bibliography,
   howTo,
-  schemas: [appSchema as any],
+  schemas: generateSchemas({
+    title,
+    description,
+    inLanguage: 'es',
+    faq,
+    howTo,
+  }),
 };

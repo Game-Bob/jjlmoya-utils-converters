@@ -1,5 +1,5 @@
-import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
+import { generateSchemas } from '../../../shared/logic/schemas';
 import type { WebpAIcoLocaleContent } from '../index';
 
 const slug = 'convertidor-webp-a-ico';
@@ -148,7 +148,7 @@ const seo: WebpAIcoLocaleContent['seo'] = [
     items: [
       'Crear el archivo favicon.ico para cualquier sitio web o aplicación web.',
       'Generar iconos de aplicación para instaladores de software Windows.',
-      'Producir iconos de escritorio para aplicaciones Electron o similares.',
+      'Producer iconos de escritorio para aplicaciones Electron o similares.',
       'Crear sets de iconos para extensiones de navegador Chrome y Firefox.',
       'Convertir logos de marca WebP en iconos para aplicaciones corporativas.',
     ],
@@ -164,17 +164,6 @@ const seo: WebpAIcoLocaleContent['seo'] = [
   },
 ];
 
-const appSchema: WithContext<SoftwareApplication> = {
-  '@context': 'https://schema.org',
-  '@type': 'SoftwareApplication',
-  name: title,
-  description,
-  applicationCategory: 'UtilitiesApplication',
-  operatingSystem: 'Web',
-  offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
-  inLanguage: 'es',
-};
-
 export const content: WebpAIcoLocaleContent = {
   slug,
   title,
@@ -184,5 +173,11 @@ export const content: WebpAIcoLocaleContent = {
   faq,
   bibliography,
   howTo,
-  schemas: [appSchema as any],
+  schemas: generateSchemas({
+    title,
+    description,
+    inLanguage: 'es',
+    faq,
+    howTo,
+  }),
 };

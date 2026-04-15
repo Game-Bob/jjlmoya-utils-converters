@@ -1,5 +1,5 @@
-import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
+import { generateSchemas } from '../../../shared/logic/schemas';
 import type { WebpAJpgLocaleContent } from '../index';
 
 const slug = 'webp-to-jpg-converter';
@@ -25,6 +25,7 @@ const faq: WebpAJpgLocaleContent['faq'] = [
       'Yes. There is no upload server. Your browser processes the WebP on your computer and generates the JPG for you to download. Nobody else sees it.',
   },
   {
+    author: 'Admin',
     question: 'What happens to my WebP background if it is transparent?',
     answer:
       'Since JPG does not support transparency, the converter will automatically fill transparent areas with a solid white background.',
@@ -168,17 +169,6 @@ const seo: WebpAJpgLocaleContent['seo'] = [
   },
 ];
 
-const appSchema: WithContext<SoftwareApplication> = {
-  '@context': 'https://schema.org',
-  '@type': 'SoftwareApplication',
-  name: title,
-  description,
-  applicationCategory: 'UtilitiesApplication',
-  operatingSystem: 'Web',
-  offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
-  inLanguage: 'en',
-};
-
 export const content: WebpAJpgLocaleContent = {
   slug,
   title,
@@ -188,5 +178,11 @@ export const content: WebpAJpgLocaleContent = {
   faq,
   bibliography,
   howTo,
-  schemas: [appSchema as any],
+  schemas: generateSchemas({
+    title,
+    description,
+    inLanguage: 'en',
+    faq,
+    howTo,
+  }),
 };

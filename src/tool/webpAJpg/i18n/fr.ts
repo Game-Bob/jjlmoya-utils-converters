@@ -1,5 +1,5 @@
-import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
+import { generateSchemas } from '../../../shared/logic/schemas';
 import type { WebpAJpgLocaleContent } from '../index';
 
 const slug = 'convertisseur-webp-en-jpg';
@@ -22,32 +22,32 @@ const faq: WebpAJpgLocaleContent['faq'] = [
   {
     question: 'Puis-je télécharger des images privées en toute sécurité ?',
     answer:
-      'Oui. Il n\'y a pas de serveur de téléchargement. Votre navigateur traite le WebP sur votre ordinateur et génère le JPG à télécharger. Personne d\'autre ne le voit.',
+      'Oui. Il n\'y a pas de serveur de téléchargement. Votre navigateur traite le WebP sur votre ordinateur et génère le JPG que vous téléchargez. Personne d\'autre ne le voit.',
   },
   {
-    question: 'Que se passe-t-il avec le fond de mon WebP s\'il est transparent ?',
+    question: 'Qu\'advient-il de mon fond WebP s\'il est transparent ?',
     answer:
-      'Comme le JPG ne supporte pas la transparence, le convertisseur remplira automatiquement les zones transparentes avec un fond blanc solide.',
+      'Comme le JPG ne supporte pas la transparence, le convertisseur remplira automatiquement les zones transparentes avec un fond blanc uni.',
   },
   {
-    question: 'Y a-t-il une limite aux conversions ou à la taille des fichiers ?',
+    question: 'Y a-t-il une limite sur les conversions ou la taille des fichiers ?',
     answer:
-      'Nous n\'imposons aucune restriction. Vous pouvez convertir des centaines d\'images tant que votre ordinateur dispose de la puissance de traitement et de la RAM suffisantes.',
+      'Nous n\'imposons aucune restriction. Vous pouvez convertir des centaines d\'images tant que votre ordinateur a une puissance de traitement et une RAM suffisantes.',
   },
 ];
 
 const howTo: WebpAJpgLocaleContent['howTo'] = [
   {
     name: 'Faites glisser vos fichiers',
-    text: 'Déposez vos fichiers WebP modernes dans la zone de téléchargement ou sélectionnez-les à l\'aide du navigateur de fichiers interactif.',
+    text: 'Déposez vos fichiers WebP modernes dans la zone de téléchargement ou sélectionnez-les avec l\'explorateur.',
   },
   {
-    name: 'Conversion locale',
-    text: 'Observez le moteur local appliquer un fond et interpréter chaque pixel au format JPG universel.',
+    name: 'Conversion Locale',
+    text: 'Regardez comment le moteur local applique un fond et interprète chaque pixel au format JPG universel.',
   },
   {
     name: 'Obtenez vos résultats',
-    text: 'Téléchargez individuellement ou utilisez le package ZIP pour consolider toutes vos nouvelles photographies.',
+    text: 'Téléchargez individuellement ou utilisez le package ZIP pour regrouper toutes vos nouvelles photographies.',
   },
 ];
 
@@ -58,7 +58,7 @@ const bibliography: WebpAJpgLocaleContent['bibliography'] = [
   },
   {
     name: 'Mozilla Developer Network - image/jpeg',
-    url: 'https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types#jpeg',
+    url: 'https://developer.mozilla.org/fr/docs/Web/Media/Formats/Image_types#jpeg',
   },
   {
     name: 'Compatibilité WebP vers JPEG',
@@ -74,20 +74,20 @@ const seo: WebpAJpgLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Le format <strong>WebP</strong> est le pari de Google sur l\'efficacité : des images plus légères avec une qualité comparable au JPG traditionnel. Pourtant, sa compatibilité reste un problème concret. Les clients de messagerie comme Outlook, les logiciels de design anciens, les applications de messagerie et les flux de travail d\'entreprise dépendent encore du <strong>JPG</strong> omniprésent. Convertir WebP en JPG, c\'est construire le pont entre le web moderne et le monde réel.',
+    html: '<strong>WebP</strong> est le pari de Google sur l\'efficacité : des images plus légères avec une qualité comparable au JPG traditionnel. Cependant, sa compatibilité reste un problème dans le monde réel. Les clients de messagerie comme Outlook, les anciens logiciels de conception, les applications de messagerie et les flux de travail en entreprise dépendent toujours de l\'ubiquitaire <strong>JPG</strong>. Convertir WebP en JPG est le pont entre le web moderne et le monde réel.',
   },
   {
     type: 'title',
-    text: 'WebP vs JPG : Quand Utiliser Chaque Format ?',
+    text: 'WebP vs JPG : Quand utiliser chaque format ?',
     level: 3,
   },
   {
     type: 'paragraph',
-    html: 'WebP excelle dans les environnements maîtrisés : sites web modernes sur Chrome, Edge ou Firefox où la compatibilité du navigateur est garantie. Sa compression supérieure réduit le poids des fichiers de 25 à 35 % par rapport à un JPG équivalent, améliorant les temps de chargement et les métriques Core Web Vitals. C\'est le format idéal quand vous contrôlez l\'environnement d\'affichage.',
+    html: 'WebP excelle dans les environnements contrôlés : sites web modernes sur Chrome, Edge ou Firefox où la compatibilité du navigateur peut être garantie. Sa compression supérieure réduit le poids des fichiers de 25-35% par rapport à un JPG équivalent, améliorant les temps de chargement et les métriques Core Web Vitals. C\'est le format idéal lorsque vous contrôlez l\'environnement de visualisation.',
   },
   {
     type: 'paragraph',
-    html: 'Le JPG, en revanche, fonctionne dans <em>absolument tous les contextes</em> : pièces jointes d\'e-mail, présentations PowerPoint, documents Word, imprimantes domestiques, applications d\'édition héritées et plateformes de réseaux sociaux sans exception. Si vous avez besoin qu\'une personne ouvre votre image sans aucune friction technique, JPG est la bonne réponse.',
+    html: 'Le JPG, quant à lui, fonctionne dans <em>absolument tous les contextes</em> : pièces jointes d\'e-mails, présentations PowerPoint, documents Word, imprimantes domestiques, applications d\'édition héritées et plateformes sociales sans exception. Si vous avez besoin que quelqu\'un ouvre votre image sans friction technique, le JPG est la bonne réponse.',
   },
   {
     type: 'title',
@@ -103,9 +103,9 @@ const seo: WebpAJpgLocaleContent['seo'] = [
         icon: 'mdi:cloud-upload',
         pointIcon: 'mdi:close-circle-outline',
         points: [
-          'Vos photos transitent par Internet vers des serveurs inconnus',
-          'Temps d\'attente pour l\'upload et le traitement distant',
-          'Limites quotidiennes de taille et de conversions gratuites',
+          'Vos photos voyagent sur Internet vers des serveurs inconnus',
+          'Temps d\'attente pour le téléchargement et le traitement à distance',
+          'Limites quotidiennes sur la taille et le nombre de conversions gratuites',
           'Risque réel de rétention des données sur des serveurs tiers',
         ],
       },
@@ -115,9 +115,9 @@ const seo: WebpAJpgLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Zéro octet envoyé : tout se passe dans votre RAM',
+          'Zéro octet envoyé : tout se passe dans votre mémoire RAM',
           'Vitesse instantanée sans dépendre de votre connexion',
-          'Aucune limite de taille ni de nombre de fichiers',
+          'Aucune limite sur la taille des fichiers ou le nombre de fichiers',
           'Idéal pour les photos personnelles, médicales ou d\'entreprise',
         ],
       },
@@ -130,16 +130,16 @@ const seo: WebpAJpgLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Lorsque vous glissez un fichier WebP dans l\'outil, le navigateur le décode nativement via son moteur de rendu interne. Le fichier est ensuite dessiné sur un élément <strong>Canvas HTML5</strong> invisible. Comme le JPG ne supporte pas la transparence, l\'algorithme pré-remplit le canvas avec un fond blanc solide avant de composer l\'image par-dessus.',
+    html: 'En faisant glisser un WebP vers l\'outil, le navigateur le décode nativement en utilisant son moteur de rendu interne. Le fichier est ensuite dessiné sur un élément <strong>Canvas HTML5</strong> invisible. Comme le JPG ne supporte pas la transparence, l\'algorithme pré-remplit le canevas avec un fond blanc uni avant de composer l\'image par-dessus.',
   },
   {
     type: 'paragraph',
-    html: 'L\'étape finale est l\'export : la méthode Canvas <code>toDataURL(\'image/jpeg\')</code> convertit les pixels du canevas en un flux d\'octets JPG compressé en haute qualité. Ce flux est livré directement au système de téléchargement du navigateur, sans aucune communication réseau. L\'ensemble du processus prend quelques millisecondes même pour des images de plusieurs mégapixels.',
+    html: 'L\'étape finale est l\'exportation : la méthode <code>toDataURL(\'image/jpeg\')</code> du Canvas convertit les pixels du canevas en un flux d\'octets JPG compressé de haute qualité. Ce flux est livré directement au système de téléchargement du navigateur, sans aucune communication réseau. Tout le processus prend quelques millisecondes, même pour des images de plusieurs mégapixels.',
   },
   {
     type: 'tip',
     title: 'Conseil de compatibilité',
-    html: 'Lorsque vous partagez des photos avec des utilisateurs non techniques ou les envoyez par e-mail, utilisez toujours le JPG — compatibilité garantie à 100 % sur tout client de messagerie, système d\'exploitation ou appareil, sans exceptions ni mauvaises surprises.',
+    html: 'Lorsque vous partagez des photos avec des utilisateurs non techniques ou que vous les envoyez par e-mail, utilisez toujours le JPG — zéro problème de compatibilité sur n\'importe quel client de messagerie, système d\'exploitation ou appareil, sans exception et sans mauvaise surprise.',
   },
   {
     type: 'title',
@@ -151,10 +151,10 @@ const seo: WebpAJpgLocaleContent['seo'] = [
     icon: 'mdi:check-circle',
     items: [
       'Joindre des photos dans des e-mails depuis Outlook, Gmail ou Apple Mail.',
-      'Insérer des images dans des documents Word, Excel ou présentations PowerPoint.',
-      'Publier sur des plateformes de réseaux sociaux qui rejettent le WebP.',
-      'Partager via WhatsApp ou applications de messagerie au support de formats limité.',
-      'Imprimer des photographies dans des services qui n\'acceptent que le JPG ou PNG.',
+      'Insérer des images dans des documents Word, Excel ou des présentations PowerPoint.',
+      'Publier sur des réseaux sociaux qui rejettent le format WebP.',
+      'Partager via WhatsApp ou des applications de messagerie au support limité.',
+      'Imprimer des photographies chez des services de tirage qui n\'acceptent que le JPG ou le PNG.',
     ],
   },
   {
@@ -164,20 +164,9 @@ const seo: WebpAJpgLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'WebP est l\'avenir de l\'image web, mais le JPG reste le roi de la compatibilité universelle. Cet outil vous permet de franchir ce pont en quelques secondes, en toute confidentialité et sans rien installer. Votre image ne quitte jamais votre appareil.',
+    html: 'Le WebP est l\'avenir des images web, mais le JPG reste le roi de la compatibilité universelle. Cet outil vous permet de franchir ce pont en quelques secondes, de manière totalement privée et sans rien installer. Votre image ne quitte jamais votre appareil.',
   },
 ];
-
-const appSchema: WithContext<SoftwareApplication> = {
-  '@context': 'https://schema.org',
-  '@type': 'SoftwareApplication',
-  name: title,
-  description,
-  applicationCategory: 'UtilitiesApplication',
-  operatingSystem: 'Web',
-  offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
-  inLanguage: 'fr',
-};
 
 export const content: WebpAJpgLocaleContent = {
   slug,
@@ -188,5 +177,11 @@ export const content: WebpAJpgLocaleContent = {
   faq,
   bibliography,
   howTo,
-  schemas: [appSchema as any],
+  schemas: generateSchemas({
+    title,
+    description,
+    inLanguage: 'fr',
+    faq,
+    howTo,
+  }),
 };

@@ -1,5 +1,5 @@
-import type { WithContext, SoftwareApplication } from 'schema-dts';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
+import { generateSchemas } from '../../../shared/logic/schemas';
 import type { JpgAIcoLocaleContent } from '../index';
 
 const slug = 'convertisseur-jpg-en-ico';
@@ -130,7 +130,7 @@ const seo: JpgAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Comme le JPG ne possède pas de canal alpha, l\'ICO résultant n\'aura pas non plus de transparence — il aura un fond solide hérité de la photographie originale. Si vous avez besoin d\'un favicon avec fond transparent (par exemple pour s\'adapter aux barres de favoris sombres ou claires), le flux recommandé est : supprimez le fond dans un éditeur, sauvegardez en PNG, puis utilisez le convertisseur PNG vers ICO.',
+    html: 'Comme le JPG ne possède pas de canal alfa, l\'ICO résultant n\'aura pas non plus de transparence — il aura un fond solide hérité de la photographie originale. Si vous avez besoin d\'un favicon avec fond transparent (par exemple pour s\'adapter aux barres de favoris sombres ou claires), le flux recommandé est : supprimez le fond dans un éditeur, sauvegardez en PNG, puis utilisez le convertisseur PNG vers ICO.',
   },
   {
     type: 'tip',
@@ -164,17 +164,6 @@ const seo: JpgAIcoLocaleContent['seo'] = [
   },
 ];
 
-const appSchema: WithContext<SoftwareApplication> = {
-  '@context': 'https://schema.org',
-  '@type': 'SoftwareApplication',
-  name: title,
-  description,
-  applicationCategory: 'UtilitiesApplication',
-  operatingSystem: 'Web',
-  offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
-  inLanguage: 'fr',
-};
-
 export const content: JpgAIcoLocaleContent = {
   slug,
   title,
@@ -184,5 +173,11 @@ export const content: JpgAIcoLocaleContent = {
   faq,
   bibliography,
   howTo,
-  schemas: [appSchema as any],
+  schemas: generateSchemas({
+    title,
+    description,
+    inLanguage: 'fr',
+    faq,
+    howTo,
+  }),
 };
