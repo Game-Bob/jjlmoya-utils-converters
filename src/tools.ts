@@ -68,3 +68,5 @@ export {
   JPG_A_ICO_TOOL,
   WEBP_A_ICO_TOOL,
 };
+
+export const ALL_ENTRIES = ALL_TOOLS.map(t => t.entry);
