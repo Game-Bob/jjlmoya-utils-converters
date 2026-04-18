@@ -1,8 +1,5 @@
 import type { ConvertersToolEntry, ToolLocaleContent, ToolDefinition } from '../../types';
 import type { ImageConverterUI } from '../../shared/ImageConverter.astro';
-import PngAJpgCalculator from './component.astro';
-import PngAJpgSEO from './seo.astro';
-import PngAJpgBibliography from './bibliography.astro';
 
 export type PngAJpgLocaleContent = ToolLocaleContent<ImageConverterUI>;
 
@@ -31,11 +28,10 @@ export const pngAJpg: ConvertersToolEntry<ImageConverterUI> = {
   },
 };
 
-export { PngAJpgCalculator, PngAJpgSEO, PngAJpgBibliography };
 
 export const PNG_A_JPG_TOOL: ToolDefinition = {
   entry: pngAJpg,
-  Component: PngAJpgCalculator,
-  SEOComponent: PngAJpgSEO,
-  BibliographyComponent: PngAJpgBibliography,
+  Component: () => import('./component.astro'),
+  SEOComponent: () => import('./seo.astro'),
+  BibliographyComponent: () => import('./bibliography.astro'),
 };

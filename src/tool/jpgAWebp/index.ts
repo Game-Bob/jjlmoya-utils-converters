@@ -1,8 +1,5 @@
 import type { ConvertersToolEntry, ToolLocaleContent, ToolDefinition } from '../../types';
 import type { ImageConverterUI } from '../../shared/ImageConverter.astro';
-import JpgAWebpCalculator from './component.astro';
-import JpgAWebpSEO from './seo.astro';
-import JpgAWebpBibliography from './bibliography.astro';
 
 export type JpgAWebpLocaleContent = ToolLocaleContent<ImageConverterUI>;
 
@@ -31,11 +28,10 @@ export const jpgAWebp: ConvertersToolEntry<ImageConverterUI> = {
   },
 };
 
-export { JpgAWebpCalculator, JpgAWebpSEO, JpgAWebpBibliography };
 
 export const JPG_A_WEBP_TOOL: ToolDefinition = {
   entry: jpgAWebp,
-  Component: JpgAWebpCalculator,
-  SEOComponent: JpgAWebpSEO,
-  BibliographyComponent: JpgAWebpBibliography,
+  Component: () => import('./component.astro'),
+  SEOComponent: () => import('./seo.astro'),
+  BibliographyComponent: () => import('./bibliography.astro'),
 };

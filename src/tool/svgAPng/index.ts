@@ -1,8 +1,5 @@
 import type { ConvertersToolEntry, ToolLocaleContent, ToolDefinition } from '../../types';
 import type { ImageConverterUI } from '../../shared/ImageConverter.astro';
-import SvgAPngCalculator from './component.astro';
-import SvgAPngSEO from './seo.astro';
-import SvgAPngBibliography from './bibliography.astro';
 
 export type SvgAPngLocaleContent = ToolLocaleContent<ImageConverterUI>;
 
@@ -31,11 +28,10 @@ export const svgAPng: ConvertersToolEntry<ImageConverterUI> = {
   },
 };
 
-export { SvgAPngCalculator, SvgAPngSEO, SvgAPngBibliography };
 
 export const SVG_A_PNG_TOOL: ToolDefinition = {
   entry: svgAPng,
-  Component: SvgAPngCalculator,
-  SEOComponent: SvgAPngSEO,
-  BibliographyComponent: SvgAPngBibliography,
+  Component: () => import('./component.astro'),
+  SEOComponent: () => import('./seo.astro'),
+  BibliographyComponent: () => import('./bibliography.astro'),
 };

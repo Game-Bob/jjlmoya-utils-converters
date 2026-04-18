@@ -1,8 +1,5 @@
 import type { ConvertersToolEntry, ToolLocaleContent, ToolDefinition } from '../../types';
 import type { ImageConverterUI } from '../../shared/ImageConverter.astro';
-import GifAWebpCalculator from './component.astro';
-import GifAWebpSEO from './seo.astro';
-import GifAWebpBibliography from './bibliography.astro';
 
 export type GifAWebpLocaleContent = ToolLocaleContent<ImageConverterUI>;
 
@@ -31,11 +28,10 @@ export const gifAWebp: ConvertersToolEntry<ImageConverterUI> = {
   },
 };
 
-export { GifAWebpCalculator, GifAWebpSEO, GifAWebpBibliography };
 
 export const GIF_A_WEBP_TOOL: ToolDefinition = {
   entry: gifAWebp,
-  Component: GifAWebpCalculator,
-  SEOComponent: GifAWebpSEO,
-  BibliographyComponent: GifAWebpBibliography,
+  Component: () => import('./component.astro'),
+  SEOComponent: () => import('./seo.astro'),
+  BibliographyComponent: () => import('./bibliography.astro'),
 };

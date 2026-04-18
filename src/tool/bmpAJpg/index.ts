@@ -1,8 +1,5 @@
 import type { ConvertersToolEntry, ToolLocaleContent, ToolDefinition } from '../../types';
 import type { ImageConverterUI } from '../../shared/ImageConverter.astro';
-import BmpAJpgCalculator from './component.astro';
-import BmpAJpgSEO from './seo.astro';
-import BmpAJpgBibliography from './bibliography.astro';
 
 export type BmpAJpgLocaleContent = ToolLocaleContent<ImageConverterUI>;
 
@@ -31,11 +28,10 @@ export const bmpAJpg: ConvertersToolEntry<ImageConverterUI> = {
   },
 };
 
-export { BmpAJpgCalculator, BmpAJpgSEO, BmpAJpgBibliography };
 
 export const BMP_A_JPG_TOOL: ToolDefinition = {
   entry: bmpAJpg,
-  Component: BmpAJpgCalculator,
-  SEOComponent: BmpAJpgSEO,
-  BibliographyComponent: BmpAJpgBibliography,
+  Component: () => import('./component.astro'),
+  SEOComponent: () => import('./seo.astro'),
+  BibliographyComponent: () => import('./bibliography.astro'),
 };

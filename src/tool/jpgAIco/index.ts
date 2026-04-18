@@ -1,8 +1,5 @@
 import type { ConvertersToolEntry, ToolLocaleContent, ToolDefinition } from '../../types';
 import type { ImageConverterUI } from '../../shared/ImageConverter.astro';
-import JpgAIcoCalculator from './component.astro';
-import JpgAIcoSEO from './seo.astro';
-import JpgAIcoBibliography from './bibliography.astro';
 
 export type JpgAIcoLocaleContent = ToolLocaleContent<ImageConverterUI>;
 
@@ -31,11 +28,10 @@ export const jpgAIco: ConvertersToolEntry<ImageConverterUI> = {
   },
 };
 
-export { JpgAIcoCalculator, JpgAIcoSEO, JpgAIcoBibliography };
 
 export const JPG_A_ICO_TOOL: ToolDefinition = {
   entry: jpgAIco,
-  Component: JpgAIcoCalculator,
-  SEOComponent: JpgAIcoSEO,
-  BibliographyComponent: JpgAIcoBibliography,
+  Component: () => import('./component.astro'),
+  SEOComponent: () => import('./seo.astro'),
+  BibliographyComponent: () => import('./bibliography.astro'),
 };

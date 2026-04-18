@@ -1,8 +1,5 @@
 import type { ConvertersToolEntry, ToolLocaleContent, ToolDefinition } from '../../types';
 import type { ImageConverterUI } from '../../shared/ImageConverter.astro';
-import AvifAJpgCalculator from './component.astro';
-import AvifAJpgSEO from './seo.astro';
-import AvifAJpgBibliography from './bibliography.astro';
 
 export type AvifAJpgLocaleContent = ToolLocaleContent<ImageConverterUI>;
 
@@ -31,11 +28,10 @@ export const avifAJpg: ConvertersToolEntry<ImageConverterUI> = {
   },
 };
 
-export { AvifAJpgCalculator, AvifAJpgSEO, AvifAJpgBibliography };
 
 export const AVIF_A_JPG_TOOL: ToolDefinition = {
   entry: avifAJpg,
-  Component: AvifAJpgCalculator,
-  SEOComponent: AvifAJpgSEO,
-  BibliographyComponent: AvifAJpgBibliography,
+  Component: () => import('./component.astro'),
+  SEOComponent: () => import('./seo.astro'),
+  BibliographyComponent: () => import('./bibliography.astro'),
 };

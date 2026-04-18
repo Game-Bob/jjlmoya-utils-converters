@@ -1,8 +1,5 @@
 import type { ConvertersToolEntry, ToolLocaleContent, ToolDefinition } from '../../types';
 import type { ImageConverterUI } from '../../shared/ImageConverter.astro';
-import GifAPngCalculator from './component.astro';
-import GifAPngSEO from './seo.astro';
-import GifAPngBibliography from './bibliography.astro';
 
 export type GifAPngLocaleContent = ToolLocaleContent<ImageConverterUI>;
 
@@ -31,11 +28,10 @@ export const gifAPng: ConvertersToolEntry<ImageConverterUI> = {
   },
 };
 
-export { GifAPngCalculator, GifAPngSEO, GifAPngBibliography };
 
 export const GIF_A_PNG_TOOL: ToolDefinition = {
   entry: gifAPng,
-  Component: GifAPngCalculator,
-  SEOComponent: GifAPngSEO,
-  BibliographyComponent: GifAPngBibliography,
+  Component: () => import('./component.astro'),
+  SEOComponent: () => import('./seo.astro'),
+  BibliographyComponent: () => import('./bibliography.astro'),
 };

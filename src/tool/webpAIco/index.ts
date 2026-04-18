@@ -1,8 +1,5 @@
 import type { ConvertersToolEntry, ToolLocaleContent, ToolDefinition } from '../../types';
 import type { ImageConverterUI } from '../../shared/ImageConverter.astro';
-import WebpAIcoCalculator from './component.astro';
-import WebpAIcoSEO from './seo.astro';
-import WebpAIcoBibliography from './bibliography.astro';
 
 export type WebpAIcoLocaleContent = ToolLocaleContent<ImageConverterUI>;
 
@@ -31,11 +28,10 @@ export const webpAIco: ConvertersToolEntry<ImageConverterUI> = {
   },
 };
 
-export { WebpAIcoCalculator, WebpAIcoSEO, WebpAIcoBibliography };
 
 export const WEBP_A_ICO_TOOL: ToolDefinition = {
   entry: webpAIco,
-  Component: WebpAIcoCalculator,
-  SEOComponent: WebpAIcoSEO,
-  BibliographyComponent: WebpAIcoBibliography,
+  Component: () => import('./component.astro'),
+  SEOComponent: () => import('./seo.astro'),
+  BibliographyComponent: () => import('./bibliography.astro'),
 };

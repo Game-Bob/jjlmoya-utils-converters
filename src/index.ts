@@ -21,7 +21,7 @@ export * from './tool/jpgAIco';
 export * from './tool/webpAIco';
 
 export { convertersCategory } from './category';
-export { default as ConvertersCategorySEO } from './category/seo.astro';
+export const ConvertersCategorySEO = () => import('./category/seo.astro').then((m) => m.default);
 
 export type {
   KnownLocale,

@@ -1,8 +1,5 @@
 import type { ConvertersToolEntry, ToolLocaleContent, ToolDefinition } from '../../types';
 import type { ImageConverterUI } from '../../shared/ImageConverter.astro';
-import PngAIcoCalculator from './component.astro';
-import PngAIcoSEO from './seo.astro';
-import PngAIcoBibliography from './bibliography.astro';
 
 export type PngAIcoLocaleContent = ToolLocaleContent<ImageConverterUI>;
 
@@ -31,11 +28,10 @@ export const pngAIco: ConvertersToolEntry<ImageConverterUI> = {
   },
 };
 
-export { PngAIcoCalculator, PngAIcoSEO, PngAIcoBibliography };
 
 export const PNG_A_ICO_TOOL: ToolDefinition = {
   entry: pngAIco,
-  Component: PngAIcoCalculator,
-  SEOComponent: PngAIcoSEO,
-  BibliographyComponent: PngAIcoBibliography,
+  Component: () => import('./component.astro'),
+  SEOComponent: () => import('./seo.astro'),
+  BibliographyComponent: () => import('./bibliography.astro'),
 };

@@ -1,7 +1,4 @@
 import type { ConvertersToolEntry, ToolLocaleContent, ToolDefinition } from '../../types';
-import ImagenBase64Calculator from './component.astro';
-import ImagenBase64SEO from './seo.astro';
-import ImagenBase64Bibliography from './bibliography.astro';
 
 export interface ImageToBase64UI {
   [key: string]: string;
@@ -45,11 +42,10 @@ export const imagenBase64: ConvertersToolEntry<ImageToBase64UI> = {
   },
 };
 
-export { ImagenBase64Calculator, ImagenBase64SEO, ImagenBase64Bibliography };
 
 export const IMAGEN_BASE64_TOOL: ToolDefinition = {
   entry: imagenBase64,
-  Component: ImagenBase64Calculator,
-  SEOComponent: ImagenBase64SEO,
-  BibliographyComponent: ImagenBase64Bibliography,
+  Component: () => import('./component.astro'),
+  SEOComponent: () => import('./seo.astro'),
+  BibliographyComponent: () => import('./bibliography.astro'),
 };
