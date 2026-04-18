@@ -1,3 +1,4 @@
+export { ALL_ENTRIES } from './entries';
 import { PNG_A_JPG_TOOL } from './tool/pngAJpg';
 import { JPG_A_PNG_TOOL } from './tool/jpgAPng';
 import { WEBP_A_PNG_TOOL } from './tool/webpAPng';
@@ -69,4 +70,3 @@ export {
   WEBP_A_ICO_TOOL,
 };
 
-export const ALL_ENTRIES = ALL_TOOLS.map(t => t.entry);

@@ -1,25 +1,25 @@
 import type { ConvertersCategoryEntry } from '../types';
-import { pngAJpg } from '../tool/pngAJpg';
-import { jpgAPng } from '../tool/jpgAPng';
-import { webpAPng } from '../tool/webpAPng';
-import { webpAJpg } from '../tool/webpAJpg';
-import { pngAWebp } from '../tool/pngAWebp';
-import { jpgAWebp } from '../tool/jpgAWebp';
-import { svgAPng } from '../tool/svgAPng';
-import { svgAJpg } from '../tool/svgAJpg';
+import { pngAJpg } from '../tool/pngAJpg/entry';
+import { jpgAPng } from '../tool/jpgAPng/entry';
+import { webpAPng } from '../tool/webpAPng/entry';
+import { webpAJpg } from '../tool/webpAJpg/entry';
+import { pngAWebp } from '../tool/pngAWebp/entry';
+import { jpgAWebp } from '../tool/jpgAWebp/entry';
+import { svgAPng } from '../tool/svgAPng/entry';
+import { svgAJpg } from '../tool/svgAJpg/entry';
 import { imagenBase64 } from '../tool/imagenBase64';
-import { bmpAJpg } from '../tool/bmpAJpg';
-import { bmpAPng } from '../tool/bmpAPng';
-import { bmpAWebp } from '../tool/bmpAWebp';
-import { avifAJpg } from '../tool/avifAJpg';
-import { avifAPng } from '../tool/avifAPng';
-import { avifAWebp } from '../tool/avifAWebp';
-import { gifAJpg } from '../tool/gifAJpg';
-import { gifAPng } from '../tool/gifAPng';
-import { gifAWebp } from '../tool/gifAWebp';
-import { pngAIco } from '../tool/pngAIco';
-import { jpgAIco } from '../tool/jpgAIco';
-import { webpAIco } from '../tool/webpAIco';
+import { bmpAJpg } from '../tool/bmpAJpg/entry';
+import { bmpAPng } from '../tool/bmpAPng/entry';
+import { bmpAWebp } from '../tool/bmpAWebp/entry';
+import { avifAJpg } from '../tool/avifAJpg/entry';
+import { avifAPng } from '../tool/avifAPng/entry';
+import { avifAWebp } from '../tool/avifAWebp/entry';
+import { gifAJpg } from '../tool/gifAJpg/entry';
+import { gifAPng } from '../tool/gifAPng/entry';
+import { gifAWebp } from '../tool/gifAWebp/entry';
+import { pngAIco } from '../tool/pngAIco/entry';
+import { jpgAIco } from '../tool/jpgAIco/entry';
+import { webpAIco } from '../tool/webpAIco/entry';
 
 export const convertersCategory: ConvertersCategoryEntry = {
   icon: 'mdi:image-sync',
