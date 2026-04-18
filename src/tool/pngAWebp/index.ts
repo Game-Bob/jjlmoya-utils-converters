@@ -1,3 +1,4 @@
+import { pngAWebp } from './entry';
 export * from './entry';
 export const PNG_A_WEBP_TOOL: ToolDefinition = {
   entry: pngAWebp,

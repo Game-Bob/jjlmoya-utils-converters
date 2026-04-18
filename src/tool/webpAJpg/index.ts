@@ -1,3 +1,4 @@
+import { webpAJpg } from './entry';
 export * from './entry';
 export const WEBP_A_JPG_TOOL: ToolDefinition = {
   entry: webpAJpg,

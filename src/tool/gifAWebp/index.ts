@@ -1,3 +1,4 @@
+import { gifAWebp } from './entry';
 export * from './entry';
 export const GIF_A_WEBP_TOOL: ToolDefinition = {
   entry: gifAWebp,

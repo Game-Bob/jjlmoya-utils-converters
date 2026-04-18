@@ -1,3 +1,4 @@
+import { pngAJpg } from './entry';
 export * from './entry';
 export const PNG_A_JPG_TOOL: ToolDefinition = {
   entry: pngAJpg,

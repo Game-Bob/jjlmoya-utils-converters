@@ -1,3 +1,4 @@
+import { avifAJpg } from './entry';
 export * from './entry';
 export const AVIF_A_JPG_TOOL: ToolDefinition = {
   entry: avifAJpg,

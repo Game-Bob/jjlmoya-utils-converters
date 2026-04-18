@@ -1,3 +1,4 @@
+import { gifAPng } from './entry';
 export * from './entry';
 export const GIF_A_PNG_TOOL: ToolDefinition = {
   entry: gifAPng,

@@ -1,3 +1,4 @@
+import { jpgAIco } from './entry';
 export * from './entry';
 export const JPG_A_ICO_TOOL: ToolDefinition = {
   entry: jpgAIco,
