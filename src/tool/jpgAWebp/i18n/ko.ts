@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { JpgAWebpLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: '파일 선택',
   processedFiles: '처리된 파일',
   downloadAll: '모두 다운로드 (.zip)',
-  pending: '대기 중',
-  bibliographyTitle: '참고 문헌',
+  pending: '대기 중': '참고 문헌',
   faqTitle: '자주 묻는 질문',
 };
 
@@ -48,17 +48,6 @@ const howTo: JpgAWebpLocaleContent['howTo'] = [
   {
     name: '결과 다운로드',
     text: '각 WebP를 개별적으로 저장하거나 변환된 모든 파일이 포함된 ZIP 파일을 다운로드하세요.',
-  },
-];
-
-const bibliography: JpgAWebpLocaleContent['bibliography'] = [
-  {
-    name: 'Google WebP 압축 연구',
-    url: 'https://developers.google.com/speed/webp/docs/webp_study',
-  },
-  {
-    name: 'Web.dev: 현대적인 형식으로 이미지 제공하기',
-    url: 'https://web.dev/uses-webp-images/',
   },
 ];
 

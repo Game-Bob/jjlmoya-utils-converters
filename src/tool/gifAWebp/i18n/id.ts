@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { GifAWebpLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Pilih file',
   processedFiles: 'File yang diproses',
   downloadAll: 'Unduh Semua (.zip)',
-  pending: 'Tertunda',
-  bibliographyTitle: 'Referensi Bibliografi',
+  pending: 'Tertunda': 'Referensi Bibliografi',
   faqTitle: 'Pertanyaan yang Sering Diajukan',
 };
 
@@ -48,17 +48,6 @@ const howTo: GifAWebpLocaleContent['howTo'] = [
   {
     name: 'Simpan gudang hasil bersih Anda',
     text: 'Ambil file yang diekstrak satu per satu atau tekan Unduh Zip untuk mengemas semuanya.',
-  },
-];
-
-const bibliography: GifAWebpLocaleContent['bibliography'] = [
-  {
-    name: 'Spesifikasi GIF89a',
-    url: 'https://www.w3.org/Graphics/GIF/spec-gif89a.txt',
-  },
-  {
-    name: 'Dokumentasi Google WebP',
-    url: 'https://developers.google.com/speed/webp',
   },
 ];
 

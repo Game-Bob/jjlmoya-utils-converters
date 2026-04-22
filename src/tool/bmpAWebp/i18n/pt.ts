@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { BmpAWebpLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Selecionar ficheiros',
   processedFiles: 'Ficheiros processados',
   downloadAll: 'Descarregar Tudo (.zip)',
-  pending: 'Pendente',
-  bibliographyTitle: 'Referências Bibliográficas',
+  pending: 'Pendente': 'Referências Bibliográficas',
   faqTitle: 'Perguntas Frequentes',
 };
 
@@ -48,17 +48,6 @@ const howTo: BmpAWebpLocaleContent['howTo'] = [
   {
     name: 'Evacuação do Lote WebP',
     text: 'Pressione os resultados e obterá separadamente a imagem em disco de micro-pesos ou como comprimidos imediatos.',
-  },
-];
-
-const bibliography: BmpAWebpLocaleContent['bibliography'] = [
-  {
-    name: 'BMP File Format',
-    url: 'https://en.wikipedia.org/wiki/BMP_file_format',
-  },
-  {
-    name: 'Google WebP Documentation',
-    url: 'https://developers.google.com/speed/webp',
   },
 ];
 

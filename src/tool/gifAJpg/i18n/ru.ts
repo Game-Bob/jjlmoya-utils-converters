@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { GifAJpgLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Выбрать файлы',
   processedFiles: 'Обработанные файлы',
   downloadAll: 'Скачать всё (.zip)',
-  pending: 'В ожидании',
-  bibliographyTitle: 'Библиографические ссылки',
+  pending: 'В ожидании': 'Библиографические ссылки',
   faqTitle: 'Часто задаваемые вопросы',
 };
 
@@ -48,17 +48,6 @@ const howTo: GifAJpgLocaleContent['howTo'] = [
   {
     name: 'Получите их в виде ZIP-архива',
     text: 'Скачайте файлы по отдельности или в виде ZIP-архива, если вы обработали большое количество файлов.',
-  },
-];
-
-const bibliography: GifAJpgLocaleContent['bibliography'] = [
-  {
-    name: 'Техническая спецификация Joint Photographic Experts Group',
-    url: 'https://en.wikipedia.org/wiki/JPEG',
-  },
-  {
-    name: 'CompuServe GIF Information',
-    url: 'https://www.w3.org/Graphics/GIF/spec-gif89a.txt',
   },
 ];
 

@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { BmpAWebpLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Wybierz pliki',
   processedFiles: 'Przetworzone pliki',
   downloadAll: 'Pobierz wszystko (.zip)',
-  pending: 'Oczekiwanie',
-  bibliographyTitle: 'Bibliografia',
+  pending: 'Oczekiwanie': 'Bibliografia',
   faqTitle: 'Często zadawane pytania',
 };
 
@@ -48,17 +48,6 @@ const howTo: BmpAWebpLocaleContent['howTo'] = [
   {
     name: 'Ewakuacja wsadowa WebP',
     text: 'Kliknij wyniki, a otrzymasz osobno obrazy o mikrowadze lub jako natychmiastowe paczki ZIP.',
-  },
-];
-
-const bibliography: BmpAWebpLocaleContent['bibliography'] = [
-  {
-    name: 'BMP File Format',
-    url: 'https://en.wikipedia.org/wiki/BMP_file_format',
-  },
-  {
-    name: 'Google WebP Documentation',
-    url: 'https://developers.google.com/speed/webp',
   },
 ];
 

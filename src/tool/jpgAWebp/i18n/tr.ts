@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { JpgAWebpLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Dosyaları seçin',
   processedFiles: 'İşlenmiş dosyalar',
   downloadAll: 'Tümünü İndir (.zip)',
-  pending: 'Bekliyor',
-  bibliographyTitle: 'Bibliyografik Referanslar',
+  pending: 'Bekliyor': 'Bibliyografik Referanslar',
   faqTitle: 'Sıkça Sorulan Sorular',
 };
 
@@ -48,17 +48,6 @@ const howTo: JpgAWebpLocaleContent['howTo'] = [
   {
     name: 'Sonuçları indirin',
     text: 'Her WebP\'yi ayrı ayrı kaydedin veya tüm dönüştürülmüş dosyaları içeren ZIP dosyasını indirin.',
-  },
-];
-
-const bibliography: JpgAWebpLocaleContent['bibliography'] = [
-  {
-    name: 'Google WebP Sıkıştırma Çalışması',
-    url: 'https://developers.google.com/speed/webp/docs/webp_study',
-  },
-  {
-    name: 'Web.dev: Görüntüleri modern formatlarda sunun',
-    url: 'https://web.dev/uses-webp-images/',
   },
 ];
 

@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { WebpAPngLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'ファイルを選択',
   processedFiles: '処理済みファイル',
   downloadAll: 'すべてダウンロード (.zip)',
-  pending: '保留中',
-  bibliographyTitle: '参考文献',
+  pending: '保留中': '参考文献',
   faqTitle: 'よくある質問',
 };
 
@@ -48,21 +48,6 @@ const howTo: WebpAPngLocaleContent['howTo'] = [
   {
     name: '個別または一括ダウンロード',
     text: '各ファイルを個別に保存するか、バッチ処理をした場合はZIPボタンをクリックして、すべてをまとめてダウンロードしてください。',
-  },
-];
-
-const bibliography: WebpAPngLocaleContent['bibliography'] = [
-  {
-    name: 'WebP APIおよびライブラリドキュメント',
-    url: 'https://developers.google.com/speed/webp/docs/api',
-  },
-  {
-    name: 'HTML Canvas 2Dコンテキスト仕様',
-    url: 'https://html.spec.whatwg.org/multipage/canvas.html',
-  },
-  {
-    name: 'Can I use: WebP画像形式',
-    url: 'https://caniuse.com/webp',
   },
 ];
 

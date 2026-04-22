@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { AvifAWebpLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Dosyaları seçin',
   processedFiles: 'İşlenen dosyalar',
   downloadAll: 'Tümünü İndir (.zip)',
-  pending: 'Bekliyor',
-  bibliographyTitle: 'Bibliyografik Referanslar',
+  pending: 'Bekliyor': 'Bibliyografik Referanslar',
   faqTitle: 'Sıkça Sorulan Sorular',
 };
 
@@ -48,17 +48,6 @@ const howTo: AvifAWebpLocaleContent['howTo'] = [
   {
     name: 'Hazır İndirmelerinizi Biriktirin',
     text: 'Panele basın ve toplu dosyaları ZIP kutularında veya tek tek alarak doğrudan yayınlayın.',
-  },
-];
-
-const bibliography: AvifAWebpLocaleContent['bibliography'] = [
-  {
-    name: 'AV1 Image File Format',
-    url: 'https://aomediacodec.github.io/av1-avif/',
-  },
-  {
-    name: 'Google WebP Format Overview',
-    url: 'https://developers.google.com/speed/webp',
   },
 ];
 

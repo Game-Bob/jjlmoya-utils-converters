@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { PngAJpgLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Dateien auswählen',
   processedFiles: 'Verarbeitete Dateien',
   downloadAll: 'Alles herunterladen (.zip)',
-  pending: 'Ausstehend',
-  bibliographyTitle: 'Literaturhinweise',
+  pending: 'Ausstehend': 'Literaturhinweise',
   faqTitle: 'Häufig gestellte Fragen',
 };
 
@@ -53,17 +53,6 @@ const howTo: PngAJpgLocaleContent['howTo'] = [
   {
     name: 'Optimierter Download',
     text: 'Speichern Sie Ihre neuen JPG-Dateien einzeln oder verwenden Sie die Schaltfläche "Alles herunterladen", um eine komprimierte ZIP-Datei mit allen Bildern zu erhalten.',
-  },
-];
-
-const bibliography: PngAJpgLocaleContent['bibliography'] = [
-  {
-    name: 'PNG Consortium Spezifikationen',
-    url: 'http://www.libpng.org/pub/png/',
-  },
-  {
-    name: 'Das JPEG-Komitee',
-    url: 'https://jpeg.org/',
   },
 ];
 

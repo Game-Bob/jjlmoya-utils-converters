@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { WebpAJpgLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'ファイルを選択',
   processedFiles: '処理済みファイル',
   downloadAll: 'すべてダウンロード (.zip)',
-  pending: '保留中',
-  bibliographyTitle: '参考文献',
+  pending: '保留中': '参考文献',
   faqTitle: 'よくある質問',
 };
 
@@ -48,21 +48,6 @@ const howTo: WebpAJpgLocaleContent['howTo'] = [
   {
     name: '結果を確認',
     text: '個別にダウンロードするか、ZIPパッケージを使用してすべての新しい写真を1つにまとめてください。',
-  },
-];
-
-const bibliography: WebpAJpgLocaleContent['bibliography'] = [
-  {
-    name: 'JPEG.org: JPEG規格',
-    url: 'https://jpeg.org/jpeg/',
-  },
-  {
-    name: 'Mozilla Developer Network - image/jpeg',
-    url: 'https://developer.mozilla.org/ja/docs/Web/Media/Formats/Image_types#jpeg',
-  },
-  {
-    name: 'WebPからJPEGへの互換性',
-    url: 'https://developers.google.com/speed/webp/faq',
   },
 ];
 

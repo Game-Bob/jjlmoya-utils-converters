@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { GifAWebpLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Выбрать файлы',
   processedFiles: 'Обработанные файлы',
   downloadAll: 'Скачать всё (.zip)',
-  pending: 'В ожидании',
-  bibliographyTitle: 'Библиографические ссылки',
+  pending: 'В ожидании': 'Библиографические ссылки',
   faqTitle: 'Часто задаваемые вопросы',
 };
 
@@ -48,17 +48,6 @@ const howTo: GifAWebpLocaleContent['howTo'] = [
   {
     name: 'Сохраните ваш чистый арсенал результатов',
     text: 'Забирайте извлеченные файлы по отдельности или нажмите «Скачать ZIP», чтобы упаковать всё сразу.',
-  },
-];
-
-const bibliography: GifAWebpLocaleContent['bibliography'] = [
-  {
-    name: 'Спецификация GIF89a',
-    url: 'https://www.w3.org/Graphics/GIF/spec-gif89a.txt',
-  },
-  {
-    name: 'Документация Google WebP',
-    url: 'https://developers.google.com/speed/webp',
   },
 ];
 

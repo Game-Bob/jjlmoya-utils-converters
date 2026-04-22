@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { AvifAPngLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: '选择文件',
   processedFiles: '已处理文件',
   downloadAll: '下载全部 (.zip)',
-  pending: '等待中',
-  bibliographyTitle: '参考文献',
+  pending: '等待中': '参考文献',
   faqTitle: '常见问题',
 };
 
@@ -48,17 +48,6 @@ const howTo: AvifAPngLocaleContent['howTo'] = [
   {
     name: '获取您的 PNG 文件',
     text: '逐个下载转换后的图像，或通过 ZIP 按钮下载整个压缩包。',
-  },
-];
-
-const bibliography: AvifAPngLocaleContent['bibliography'] = [
-  {
-    name: 'Alliance for Open Media: AVIF 格式',
-    url: 'https://aomediacodec.github.io/av1-avif/',
-  },
-  {
-    name: 'W3C - Portable Network Graphics (PNG) 规范',
-    url: 'https://www.w3.org/TR/png/',
   },
 ];
 

@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { PngAJpgLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Välj filer',
   processedFiles: 'Bearbetade filer',
   downloadAll: 'Ladda ner alla (.zip)',
-  pending: 'Väntande',
-  bibliographyTitle: 'Bibliografiska Referenser',
+  pending: 'Väntande': 'Bibliografiska Referenser',
   faqTitle: 'Vanliga Frågor',
 };
 
@@ -53,17 +53,6 @@ const howTo: PngAJpgLocaleContent['howTo'] = [
   {
     name: 'Optimerad nedladdning',
     text: 'Spara dina nya JPG-bilder en och en eller använd knappen "Ladda ner alla" för att få en komprimerad ZIP-fil med alla bilder.',
-  },
-];
-
-const bibliography: PngAJpgLocaleContent['bibliography'] = [
-  {
-    name: 'PNG Consortium Specifikationer',
-    url: 'http://www.libpng.org/pub/png/',
-  },
-  {
-    name: 'JPEG-kommittén',
-    url: 'https://jpeg.org/',
   },
 ];
 

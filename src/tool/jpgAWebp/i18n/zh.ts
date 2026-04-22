@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { JpgAWebpLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: '选择文件',
   processedFiles: '已处理文件',
   downloadAll: '下载全部 (.zip)',
-  pending: '等待中',
-  bibliographyTitle: '参考文献',
+  pending: '等待中': '参考文献',
   faqTitle: '常见问题',
 };
 
@@ -48,17 +48,6 @@ const howTo: JpgAWebpLocaleContent['howTo'] = [
   {
     name: '下载结果',
     text: '您可以单独保存每个 WebP 文件, 也可以下载包含所有已转换文件的 ZIP 压缩包。',
-  },
-];
-
-const bibliography: JpgAWebpLocaleContent['bibliography'] = [
-  {
-    name: 'Google WebP 压缩研究',
-    url: 'https://developers.google.com/speed/webp/docs/webp_study',
-  },
-  {
-    name: 'Web.dev: 使用现代格式提供图像',
-    url: 'https://web.dev/uses-webp-images/',
   },
 ];
 

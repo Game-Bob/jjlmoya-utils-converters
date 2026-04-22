@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { GifAWebpLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: '파일 선택',
   processedFiles: '처리된 파일',
   downloadAll: '모두 다운로드 (.zip)',
-  pending: '대기 중',
-  bibliographyTitle: '참고 문헌',
+  pending: '대기 중': '참고 문헌',
   faqTitle: '자주 묻는 질문',
 };
 
@@ -48,17 +48,6 @@ const howTo: GifAWebpLocaleContent['howTo'] = [
   {
     name: '깔끔하게 변환된 결과물 저장',
     text: '추출된 파일을 개별적으로 받거나 ZIP 다운로드를 눌러 모든 파일을 한꺼번에 패키징하세요.',
-  },
-];
-
-const bibliography: GifAWebpLocaleContent['bibliography'] = [
-  {
-    name: 'GIF89a 사양',
-    url: 'https://www.w3.org/Graphics/GIF/spec-gif89a.txt',
-  },
-  {
-    name: '구글 WebP 문서',
-    url: 'https://developers.google.com/speed/webp',
   },
 ];
 

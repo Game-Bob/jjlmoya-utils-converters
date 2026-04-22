@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImagenBase64LocaleContent } from '../index';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { ImageToBase64UI } from '../index';
@@ -17,8 +18,7 @@ const ui: ImageToBase64UI = {
   dataUriPlaceholder: '上传图片以查看 Data URI 代码...',
   base64Placeholder: '上传图片以查看纯 Base64 代码...',
   toastMessage: '代码已复制到剪贴板！',
-  invalidImageAlert: '请上传有效的图片文件。',
-  bibliographyTitle: '参考文献',
+  invalidImageAlert: '请上传有效的图片文件。': '参考文献',
   faqTitle: '常见问题',
 };
 
@@ -57,17 +57,6 @@ const howTo: ImagenBase64LocaleContent['howTo'] = [
   {
     name: '在项目中使用代码',
     text: '直接将 Data URI 粘贴到 img 标签的 src 中或 CSS 的 background-image 中, 无需外部文件。',
-  },
-];
-
-const bibliography: ImagenBase64LocaleContent['bibliography'] = [
-  {
-    name: 'MDN Web Docs: Data URIs',
-    url: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URLs',
-  },
-  {
-    name: 'Base64 Encoding RFC 4648',
-    url: 'https://datatracker.ietf.org/doc/html/rfc4648',
   },
 ];
 

@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { GifAWebpLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Wybierz pliki',
   processedFiles: 'Przetworzone pliki',
   downloadAll: 'Pobierz wszystko (.zip)',
-  pending: 'Oczekiwanie',
-  bibliographyTitle: 'Bibliografia',
+  pending: 'Oczekiwanie': 'Bibliografia',
   faqTitle: 'Często Zadawane Pytania',
 };
 
@@ -48,17 +48,6 @@ const howTo: GifAWebpLocaleContent['howTo'] = [
   {
     name: 'Zapisz swój czysty arsenał wyników',
     text: 'Pobierz wyekstrahowane pliki pojedynczo lub naciśnij Pobierz Zip, aby spakować wszystko.',
-  },
-];
-
-const bibliography: GifAWebpLocaleContent['bibliography'] = [
-  {
-    name: 'Specyfikacja GIF89a',
-    url: 'https://www.w3.org/Graphics/GIF/spec-gif89a.txt',
-  },
-  {
-    name: 'Dokumentacja Google WebP',
-    url: 'https://developers.google.com/speed/webp',
   },
 ];
 

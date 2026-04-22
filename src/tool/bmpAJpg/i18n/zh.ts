@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { BmpAJpgLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: '选择文件',
   processedFiles: '已处理文件',
   downloadAll: '下载全部 (.zip)',
-  pending: '等待中',
-  bibliographyTitle: '参考文献',
+  pending: '等待中': '参考文献',
   faqTitle: '常见问题',
 };
 
@@ -48,17 +48,6 @@ const howTo: BmpAJpgLocaleContent['howTo'] = [
   {
     name: '单个或批量下载',
     text: '逐个获取您为网页优化的新图像，或通过下载 ZIP 文件一次性获取。',
-  },
-];
-
-const bibliography: BmpAJpgLocaleContent['bibliography'] = [
-  {
-    name: 'BMP File Format Specification',
-    url: 'https://en.wikipedia.org/wiki/BMP_file_format',
-  },
-  {
-    name: 'JPEG.org',
-    url: 'https://jpeg.org/',
   },
 ];
 

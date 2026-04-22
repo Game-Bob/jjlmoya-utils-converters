@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { PngAJpgLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: '파일 선택',
   processedFiles: '처리된 파일',
   downloadAll: '모두 다운로드 (.zip)',
-  pending: '대기 중',
-  bibliographyTitle: '참고 문헌',
+  pending: '대기 중': '참고 문헌',
   faqTitle: '자주 묻는 질문',
 };
 
@@ -53,17 +53,6 @@ const howTo: PngAJpgLocaleContent['howTo'] = [
   {
     name: '최적화된 다운로드',
     text: '새 JPG를 하나씩 저장하거나 "모두 다운로드" 버튼을 사용하여 모든 이미지가 포함된 압축 ZIP 파일을 받으세요.',
-  },
-];
-
-const bibliography: PngAJpgLocaleContent['bibliography'] = [
-  {
-    name: 'PNG 컨소시엄 사양',
-    url: 'http://www.libpng.org/pub/png/',
-  },
-  {
-    name: 'JPEG 위원회',
-    url: 'https://jpeg.org/',
   },
 ];
 

@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { JpgAPngLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Välj filer',
   processedFiles: 'Bearbetade filer',
   downloadAll: 'Ladda ner alla (.zip)',
-  pending: 'Väntande',
-  bibliographyTitle: 'Bibliografiska Referenser',
+  pending: 'Väntande': 'Bibliografiska Referenser',
   faqTitle: 'Vanliga Frågor',
 };
 
@@ -48,17 +48,6 @@ const howTo: JpgAPngLocaleContent['howTo'] = [
   {
     name: 'Avsluta sessionen',
     text: 'Klicka på panelen så lägger din webbläsare de nedladdade webbtillgångarna i dina användarmappar.',
-  },
-];
-
-const bibliography: JpgAPngLocaleContent['bibliography'] = [
-  {
-    name: 'The W3C PNG Graphics',
-    url: 'https://www.w3.org/Graphics/PNG/',
-  },
-  {
-    name: 'Understanding Digital Image Compression',
-    url: 'https://en.wikipedia.org/wiki/Image_compression',
   },
 ];
 

@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { WebpAPngLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Välj filer',
   processedFiles: 'Bearbetade filer',
   downloadAll: 'Ladda ner alla (.zip)',
-  pending: 'Väntande',
-  bibliographyTitle: 'Bibliografiska Referenser',
+  pending: 'Väntande': 'Bibliografiska Referenser',
   faqTitle: 'Vanliga Frågor',
 };
 
@@ -48,21 +48,6 @@ const howTo: WebpAPngLocaleContent['howTo'] = [
   {
     name: 'Individuell nedladdning eller Batch-nedladdning',
     text: 'Spara varje fil individuellt eller, om du har bearbetat ett parti, klicka på ZIP-knappen för att ladda ner dem alla paketerade tillsammans.',
-  },
-];
-
-const bibliography: WebpAPngLocaleContent['bibliography'] = [
-  {
-    name: 'WebP API och Biblioteksdokumentation',
-    url: 'https://developers.google.com/speed/webp/docs/api',
-  },
-  {
-    name: 'HTML Canvas 2D Context-specifikation',
-    url: 'https://html.spec.whatwg.org/multipage/canvas.html',
-  },
-  {
-    name: 'Can I use: WebP-bildformat',
-    url: 'https://caniuse.com/webp',
   },
 ];
 

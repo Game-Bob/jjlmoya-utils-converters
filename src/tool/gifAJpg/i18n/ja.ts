@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { GifAJpgLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'ファイルを選択',
   processedFiles: '処理済みファイル',
   downloadAll: 'すべてダウンロード (.zip)',
-  pending: '待機中',
-  bibliographyTitle: '参考文献',
+  pending: '待機中': '参考文献',
   faqTitle: 'よくある質問',
 };
 
@@ -48,17 +48,6 @@ const howTo: GifAJpgLocaleContent['howTo'] = [
   {
     name: 'ZIPパッケージでまとめて取得',
     text: '個別ダウンロード、または大量のファイルを処理した場合はZIP形式でまとめて取得してください。',
-  },
-];
-
-const bibliography: GifAJpgLocaleContent['bibliography'] = [
-  {
-    name: 'Joint Photographic Experts Group 技術仕様',
-    url: 'https://en.wikipedia.org/wiki/JPEG',
-  },
-  {
-    name: 'CompuServe GIF Information',
-    url: 'https://www.w3.org/Graphics/GIF/spec-gif89a.txt',
   },
 ];
 

@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { JpgAWebpLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Seleccionar archivos',
   processedFiles: 'Archivos procesados',
   downloadAll: 'Descargar Todo (.zip)',
-  pending: 'Pendiente',
-  bibliographyTitle: 'Referencias Bibliográficas',
+  pending: 'Pendiente': 'Referencias Bibliográficas',
   faqTitle: 'Preguntas Frecuentes',
 };
 
@@ -48,17 +48,6 @@ const howTo: JpgAWebpLocaleContent['howTo'] = [
   {
     name: 'Descarga los resultados',
     text: 'Guarda cada WebP individualmente o descarga el ZIP con todos los archivos convertidos.',
-  },
-];
-
-const bibliography: JpgAWebpLocaleContent['bibliography'] = [
-  {
-    name: 'Google WebP Compression Study',
-    url: 'https://developers.google.com/speed/webp/docs/webp_study',
-  },
-  {
-    name: 'Web.dev: Serve images in modern formats',
-    url: 'https://web.dev/uses-webp-images/',
   },
 ];
 

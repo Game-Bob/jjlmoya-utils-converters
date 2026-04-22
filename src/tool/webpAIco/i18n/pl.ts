@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { WebpAIcoLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Wybierz pliki',
   processedFiles: 'Przetworzone pliki',
   downloadAll: 'Pobierz wszystko (.zip)',
-  pending: 'Oczekujące',
-  bibliographyTitle: 'Bibliografia',
+  pending: 'Oczekujące': 'Bibliografia',
   faqTitle: 'Często Zadawane Pytania',
 };
 
@@ -48,17 +48,6 @@ const howTo: WebpAIcoLocaleContent['howTo'] = [
   {
     name: 'Zabierz swój pakiet do tworzenia systemów i stron WWW',
     text: 'Kliknij swobodnie ogromny przycisk pobierania wspólnego pliku lub pobieraj ręcznie, jeśli potrzebujesz tylko jednego.',
-  },
-];
-
-const bibliography: WebpAIcoLocaleContent['bibliography'] = [
-  {
-    name: 'Ogólna dokumentacja nagłówka internetowego ICO',
-    url: 'https://en.wikipedia.org/wiki/ICO_(file_format)',
-  },
-  {
-    name: 'Dokumentacja Google WebP',
-    url: 'https://developers.google.com/speed/webp',
   },
 ];
 

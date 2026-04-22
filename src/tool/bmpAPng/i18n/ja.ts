@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { BmpAPngLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'ファイルを選択',
   processedFiles: '処理済みファイル',
   downloadAll: 'すべてダウンロード (.zip)',
-  pending: '待機中',
-  bibliographyTitle: '参考文献',
+  pending: '待機中': '参考文献',
   faqTitle: 'よくある質問',
 };
 
@@ -48,17 +48,6 @@ const howTo: BmpAPngLocaleContent['howTo'] = [
   {
     name: '純粋なPNGを入手',
     text: 'PNG形式の複製を個別に、または圧縮パッケージとしてダウンロードしてください。',
-  },
-];
-
-const bibliography: BmpAPngLocaleContent['bibliography'] = [
-  {
-    name: 'BMP File Format',
-    url: 'https://en.wikipedia.org/wiki/BMP_file_format',
-  },
-  {
-    name: 'PNG Specification W3C',
-    url: 'https://www.w3.org/TR/png/',
   },
 ];
 

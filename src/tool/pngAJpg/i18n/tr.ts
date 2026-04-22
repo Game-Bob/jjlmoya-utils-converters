@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { PngAJpgLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Dosyaları seçin',
   processedFiles: 'İşlenen dosyalar',
   downloadAll: 'Tümünü İndir (.zip)',
-  pending: 'Bekliyor',
-  bibliographyTitle: 'Bibliyografik Referanslar',
+  pending: 'Bekliyor': 'Bibliyografik Referanslar',
   faqTitle: 'Sıkça Sorulan Sorular',
 };
 
@@ -53,17 +53,6 @@ const howTo: PngAJpgLocaleContent['howTo'] = [
   {
     name: 'Optimize edilmiş indirme',
     text: 'Yeni JPG\'lerinizi tek tek kaydedin veya tüm görüntüleri içeren sıkıştırılmış bir ZIP dosyası almak için "Tümünü İndir" düğmesini kullanın.',
-  },
-];
-
-const bibliography: PngAJpgLocaleContent['bibliography'] = [
-  {
-    name: 'PNG Konsorsiyumu Özellikleri',
-    url: 'http://www.libpng.org/pub/png/',
-  },
-  {
-    name: 'JPEG Komitesi',
-    url: 'https://jpeg.org/',
   },
 ];
 

@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImagenBase64LocaleContent } from '../index';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { ImageToBase64UI } from '../index';
@@ -17,8 +18,7 @@ const ui: ImageToBase64UI = {
   dataUriPlaceholder: '画像をアップロードしてData URIコードを表示...',
   base64Placeholder: '画像をアップロードして純粋なBase64コードを表示...',
   toastMessage: 'コードをクリップボードにコピーしました！',
-  invalidImageAlert: '有効な画像ファイルをアップロードしてください。',
-  bibliographyTitle: '参考文献',
+  invalidImageAlert: '有効な画像ファイルをアップロードしてください。': '参考文献',
   faqTitle: 'よくある質問',
 };
 
@@ -57,17 +57,6 @@ const howTo: ImagenBase64LocaleContent['howTo'] = [
   {
     name: 'プロジェクトでコードを使用',
     text: '外部ファイルを必要とせず、Data URIをimgタグのsrcやCSSのbackground-imageに直接貼り付けます。',
-  },
-];
-
-const bibliography: ImagenBase64LocaleContent['bibliography'] = [
-  {
-    name: 'MDN Web Docs: Data URIs',
-    url: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URLs',
-  },
-  {
-    name: 'Base64 Encoding RFC 4648',
-    url: 'https://datatracker.ietf.org/doc/html/rfc4648',
   },
 ];
 

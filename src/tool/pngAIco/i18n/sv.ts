@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { PngAIcoLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Välj filer',
   processedFiles: 'Bearbetade filer',
   downloadAll: 'Ladda ner alla (.zip)',
-  pending: 'Väntande',
-  bibliographyTitle: 'Bibliografiska Referenser',
+  pending: 'Väntande': 'Bibliografiska Referenser',
   faqTitle: 'Vanliga Frågor',
 };
 
@@ -48,17 +48,6 @@ const howTo: PngAIcoLocaleContent['howTo'] = [
   {
     name: 'Samla eller kom iväg med din ZIP',
     text: 'Ladda ner dem genom att klicka på en megasamling för dina webbplatser (globala ZIP-knappar) eller ladda ner miniatyren för den körbara Windows-filen.',
-  },
-];
-
-const bibliography: PngAIcoLocaleContent['bibliography'] = [
-  {
-    name: 'Microsoft ICO Format Teknisk Struktur',
-    url: 'https://en.wikipedia.org/wiki/ICO_(file_format)',
-  },
-  {
-    name: 'Favicon Standard - W3C',
-    url: 'https://www.w3.org/2005/10/howto-favicon',
   },
 ];
 

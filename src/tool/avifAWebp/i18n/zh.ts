@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { AvifAWebpLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: '选择文件',
   processedFiles: '已处理文件',
   downloadAll: '下载全部 (.zip)',
-  pending: '等待中',
-  bibliographyTitle: '参考文献',
+  pending: '等待中': '参考文献',
   faqTitle: '常见问题',
 };
 
@@ -48,17 +48,6 @@ const howTo: AvifAWebpLocaleContent['howTo'] = [
   {
     name: '收集您的下载成果',
     text: '点击面板，接收 ZIP 压缩包或单个文件，以便直接发布。',
-  },
-];
-
-const bibliography: AvifAWebpLocaleContent['bibliography'] = [
-  {
-    name: 'AV1 Image File Format',
-    url: 'https://aomediacodec.github.io/av1-avif/',
-  },
-  {
-    name: 'Google WebP Format Overview',
-    url: 'https://developers.google.com/speed/webp',
   },
 ];
 

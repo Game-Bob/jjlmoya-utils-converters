@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { SvgAPngLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Wybierz pliki',
   processedFiles: 'Przetworzone pliki',
   downloadAll: 'Pobierz wszystko (.zip)',
-  pending: 'Oczekujące',
-  bibliographyTitle: 'Bibliografia',
+  pending: 'Oczekujące': 'Bibliografia',
   faqTitle: 'Często Zadawane Pytania',
 };
 
@@ -48,17 +48,6 @@ const howTo: SvgAPngLocaleContent['howTo'] = [
   {
     name: 'Pobierz pliki',
     text: 'Zapisz wygenerowane pliki PNG pojedynczo lub jako pakiet ZIP.',
-  },
-];
-
-const bibliography: SvgAPngLocaleContent['bibliography'] = [
-  {
-    name: 'Specyfikacja W3C SVG',
-    url: 'https://www.w3.org/TR/SVG/',
-  },
-  {
-    name: 'Mozilla: Samouczek SVG',
-    url: 'https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial',
   },
 ];
 

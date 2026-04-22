@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { GifAWebpLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'ファイルを選択',
   processedFiles: '処理済みファイル',
   downloadAll: 'すべてダウンロード (.zip)',
-  pending: '待機中',
-  bibliographyTitle: '参考文献',
+  pending: '待機中': '参考文献',
   faqTitle: 'よくある質問',
 };
 
@@ -48,17 +48,6 @@ const howTo: GifAWebpLocaleContent['howTo'] = [
   {
     name: '変換された結果を保存',
     text: '抽出されたファイルを個別に取得するか、「Zipダウンロード」を押してすべてをパッケージ化します。',
-  },
-];
-
-const bibliography: GifAWebpLocaleContent['bibliography'] = [
-  {
-    name: 'GIF89a 仕様',
-    url: 'https://www.w3.org/Graphics/GIF/spec-gif89a.txt',
-  },
-  {
-    name: 'Google WebP ドキュメント',
-    url: 'https://developers.google.com/speed/webp',
   },
 ];
 

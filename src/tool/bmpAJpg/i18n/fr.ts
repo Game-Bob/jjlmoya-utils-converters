@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { BmpAJpgLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Sélectionner des fichiers',
   processedFiles: 'Fichiers traités',
   downloadAll: 'Tout télécharger (.zip)',
-  pending: 'En attente',
-  bibliographyTitle: 'Références Bibliographiques',
+  pending: 'En attente': 'Références Bibliographiques',
   faqTitle: 'Questions Fréquentes',
 };
 
@@ -48,17 +48,6 @@ const howTo: BmpAJpgLocaleContent['howTo'] = [
   {
     name: 'Téléchargement individuel ou par lot',
     text: 'Obtenez vos nouvelles images optimisées pour le web une à une ou en téléchargeant un fichier ZIP.',
-  },
-];
-
-const bibliography: BmpAJpgLocaleContent['bibliography'] = [
-  {
-    name: 'Spécification du format de fichier BMP',
-    url: 'https://en.wikipedia.org/wiki/BMP_file_format',
-  },
-  {
-    name: 'JPEG.org',
-    url: 'https://jpeg.org/',
   },
 ];
 

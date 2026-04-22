@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { WebpAJpgLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Select files',
   processedFiles: 'Processed files',
   downloadAll: 'Download All (.zip)',
-  pending: 'Pending',
-  bibliographyTitle: 'Bibliographic References',
+  pending: 'Pending': 'Bibliographic References',
   faqTitle: 'Frequently Asked Questions',
 };
 
@@ -49,21 +49,6 @@ const howTo: WebpAJpgLocaleContent['howTo'] = [
   {
     name: 'Get your results',
     text: 'Download individually or use the ZIP package to consolidate all your new photographs.',
-  },
-];
-
-const bibliography: WebpAJpgLocaleContent['bibliography'] = [
-  {
-    name: 'JPEG.org: The JPEG standards',
-    url: 'https://jpeg.org/jpeg/',
-  },
-  {
-    name: 'Mozilla Developer Network - image/jpeg',
-    url: 'https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types#jpeg',
-  },
-  {
-    name: 'WebP to JPEG compatibility',
-    url: 'https://developers.google.com/speed/webp/faq',
   },
 ];
 

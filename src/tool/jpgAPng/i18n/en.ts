@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { JpgAPngLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Select files',
   processedFiles: 'Processed files',
   downloadAll: 'Download All (.zip)',
-  pending: 'Pending',
-  bibliographyTitle: 'Bibliographic References',
+  pending: 'Pending': 'Bibliographic References',
   faqTitle: 'Frequently Asked Questions',
 };
 
@@ -48,17 +48,6 @@ const howTo: JpgAPngLocaleContent['howTo'] = [
   {
     name: 'Finish Session',
     text: 'Click the panel and your browser will deposit the downloaded web assets in your User Folders.',
-  },
-];
-
-const bibliography: JpgAPngLocaleContent['bibliography'] = [
-  {
-    name: 'The W3C PNG Graphics',
-    url: 'https://www.w3.org/Graphics/PNG/',
-  },
-  {
-    name: 'Understanding Digital Image Compression',
-    url: 'https://en.wikipedia.org/wiki/Image_compression',
   },
 ];
 

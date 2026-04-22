@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { BmpAWebpLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Välj filer',
   processedFiles: 'Bearbetade filer',
   downloadAll: 'Ladda ner alla (.zip)',
-  pending: 'Väntande',
-  bibliographyTitle: 'Bibliografiska Referenser',
+  pending: 'Väntande': 'Bibliografiska Referenser',
   faqTitle: 'Vanliga Frågor',
 };
 
@@ -48,17 +48,6 @@ const howTo: BmpAWebpLocaleContent['howTo'] = [
   {
     name: 'WebP batch-evakuering',
     text: 'Klicka på resultaten så får du separat bilderna med mikrovikt eller som omedelbara ZIP-paket.',
-  },
-];
-
-const bibliography: BmpAWebpLocaleContent['bibliography'] = [
-  {
-    name: 'BMP File Format',
-    url: 'https://en.wikipedia.org/wiki/BMP_file_format',
-  },
-  {
-    name: 'Google WebP Documentation',
-    url: 'https://developers.google.com/speed/webp',
   },
 ];
 

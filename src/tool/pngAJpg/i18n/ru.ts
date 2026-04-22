@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { PngAJpgLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Выбрать файлы',
   processedFiles: 'Обработанные файлы',
   downloadAll: 'Скачать всё (.zip)',
-  pending: 'В ожидании',
-  bibliographyTitle: 'Библиографические ссылки',
+  pending: 'В ожидании': 'Библиографические ссылки',
   faqTitle: 'Часто задаваемые вопросы',
 };
 
@@ -53,17 +53,6 @@ const howTo: PngAJpgLocaleContent['howTo'] = [
   {
     name: 'Оптимизированное скачивание',
     text: 'Сохраняйте новые JPG по одному или используйте кнопку «Скачать всё», чтобы получить сжатый ZIP-архив со всеми изображениями.',
-  },
-];
-
-const bibliography: PngAJpgLocaleContent['bibliography'] = [
-  {
-    name: 'Спецификации PNG Consortium',
-    url: 'http://www.libpng.org/pub/png/',
-  },
-  {
-    name: 'Комитет JPEG',
-    url: 'https://jpeg.org/',
   },
 ];
 

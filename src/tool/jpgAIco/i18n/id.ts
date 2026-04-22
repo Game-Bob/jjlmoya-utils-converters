@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { JpgAIcoLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Pilih file',
   processedFiles: 'File yang diproses',
   downloadAll: 'Unduh Semua (.zip)',
-  pending: 'Menunggu',
-  bibliographyTitle: 'Referensi Bibliografi',
+  pending: 'Menunggu': 'Referensi Bibliografi',
   faqTitle: 'Pertanyaan yang Sering Diajukan',
 };
 
@@ -48,17 +48,6 @@ const howTo: JpgAIcoLocaleContent['howTo'] = [
   {
     name: 'Kompilasi beberapa desain ZIP',
     text: 'Selesaikan pekerjaan dengan mengunduh semuanya secara massal dalam paket kompak hanya dalam hitungan detik.',
-  },
-];
-
-const bibliography: JpgAIcoLocaleContent['bibliography'] = [
-  {
-    name: 'Struktur Ikonografi ICO und Penggunaan Sistem',
-    url: 'https://en.wikipedia.org/wiki/ICO_(file_format)',
-  },
-  {
-    name: 'Standar JPEG.org',
-    url: 'https://jpeg.org/',
   },
 ];
 

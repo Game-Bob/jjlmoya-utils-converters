@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { GifAPngLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Välj filer',
   processedFiles: 'Bearbetade filer',
   downloadAll: 'Ladda ner alla (.zip)',
-  pending: 'Väntande',
-  bibliographyTitle: 'Bibliografiska Referenser',
+  pending: 'Väntande': 'Bibliografiska Referenser',
   faqTitle: 'Vanliga Frågor',
 };
 
@@ -48,17 +48,6 @@ const howTo: GifAPngLocaleContent['howTo'] = [
   {
     name: 'Spara din statiska bild',
     text: 'Spara alla statiska GIF-avatarer som konverterats till PNG i ett samlat ZIP-arkiv.',
-  },
-];
-
-const bibliography: GifAPngLocaleContent['bibliography'] = [
-  {
-    name: 'World Wide Web Consortium: PNG format',
-    url: 'https://www.w3.org/TR/png/',
-  },
-  {
-    name: 'CompuServe GIF Information',
-    url: 'https://www.w3.org/Graphics/GIF/spec-gif89a.txt',
   },
 ];
 

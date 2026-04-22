@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { PngAWebpLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Selecionar arquivos',
   processedFiles: 'Arquivos processados',
   downloadAll: 'Baixar tudo (.zip)',
-  pending: 'Pendente',
-  bibliographyTitle: 'Referências Bibliográficas',
+  pending: 'Pendente': 'Referências Bibliográficas',
   faqTitle: 'Perguntas Frequentes',
 };
 
@@ -48,21 +48,6 @@ const howTo: PngAWebpLocaleContent['howTo'] = [
   {
     name: 'Download Direto',
     text: 'Baixe os seus arquivos WebP altamente comprimidos individualmente ou agrupe-os utilizando o conversor de pacotes ZIP.',
-  },
-];
-
-const bibliography: PngAWebpLocaleContent['bibliography'] = [
-  {
-    name: 'Google: Detalhes de Implementação WebP',
-    url: 'https://developers.google.com/speed/webp/',
-  },
-  {
-    name: 'W3C: Orientação sobre Core Web Vitals',
-    url: 'https://web.dev/vitals/',
-  },
-  {
-    name: 'Mozilla Docs: Formatos de Imagem',
-    url: 'https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types',
   },
 ];
 

@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { BmpAPngLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Select files',
   processedFiles: 'Processed files',
   downloadAll: 'Download All (.zip)',
-  pending: 'Pending',
-  bibliographyTitle: 'Bibliographic References',
+  pending: 'Pending': 'Bibliographic References',
   faqTitle: 'Frequently Asked Questions',
 };
 
@@ -48,17 +48,6 @@ const howTo: BmpAPngLocaleContent['howTo'] = [
   {
     name: 'Get pure PNGs',
     text: 'Download the PNG replicas individually or via a compressed package.',
-  },
-];
-
-const bibliography: BmpAPngLocaleContent['bibliography'] = [
-  {
-    name: 'BMP File Format',
-    url: 'https://en.wikipedia.org/wiki/BMP_file_format',
-  },
-  {
-    name: 'PNG Specification W3C',
-    url: 'https://www.w3.org/TR/png/',
   },
 ];
 

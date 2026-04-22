@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { AvifAJpgLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: '选择文件',
   processedFiles: '已处理文件',
   downloadAll: '下载全部 (.zip)',
-  pending: '等待中',
-  bibliographyTitle: '参考文献记录',
+  pending: '等待中': '参考文献记录',
   faqTitle: '常见问题',
 };
 
@@ -48,17 +48,6 @@ const howTo: AvifAJpgLocaleContent['howTo'] = [
   {
     name: '保存或下载 ZIP',
     text: '逐个下载新的 JPG 图像，或者如果进行了批量处理，点击“下载全部”进行保存。',
-  },
-];
-
-const bibliography: AvifAJpgLocaleContent['bibliography'] = [
-  {
-    name: 'AV1 Image File Format (AVIF)',
-    url: 'https://aomediacodec.github.io/av1-avif/',
-  },
-  {
-    name: 'JPG 通用信息',
-    url: 'https://en.wikipedia.org/wiki/JPEG',
   },
 ];
 

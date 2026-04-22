@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { BmpAPngLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Pilih file',
   processedFiles: 'File yang diproses',
   downloadAll: 'Unduh Semua (.zip)',
-  pending: 'Tertunda',
-  bibliographyTitle: 'Referensi Bibliografi',
+  pending: 'Tertunda': 'Referensi Bibliografi',
   faqTitle: 'Pertanyaan Umum',
 };
 
@@ -48,17 +48,6 @@ const howTo: BmpAPngLocaleContent['howTo'] = [
   {
     name: 'Dapatkan PNG Murni',
     text: 'Unduh replika dalam format PNG satu per satu atau melalui paket terkompresi.',
-  },
-];
-
-const bibliography: BmpAPngLocaleContent['bibliography'] = [
-  {
-    name: 'BMP File Format',
-    url: 'https://en.wikipedia.org/wiki/BMP_file_format',
-  },
-  {
-    name: 'PNG Specification W3C',
-    url: 'https://www.w3.org/TR/png/',
   },
 ];
 

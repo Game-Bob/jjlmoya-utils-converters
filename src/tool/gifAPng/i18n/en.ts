@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { GifAPngLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Select files',
   processedFiles: 'Processed files',
   downloadAll: 'Download All (.zip)',
-  pending: 'Pending',
-  bibliographyTitle: 'Bibliographic References',
+  pending: 'Pending': 'Bibliographic References',
   faqTitle: 'Frequently Asked Questions',
 };
 
@@ -48,17 +48,6 @@ const howTo: GifAPngLocaleContent['howTo'] = [
   {
     name: 'Save your static image',
     text: 'Store in bulk ZIP all those volumes of static GIF avatars converted to PNG.',
-  },
-];
-
-const bibliography: GifAPngLocaleContent['bibliography'] = [
-  {
-    name: 'World Wide Web Consortium: PNG format',
-    url: 'https://www.w3.org/TR/png/',
-  },
-  {
-    name: 'CompuServe GIF Information',
-    url: 'https://www.w3.org/Graphics/GIF/spec-gif89a.txt',
   },
 ];
 

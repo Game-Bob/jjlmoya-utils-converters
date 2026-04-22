@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { BmpAWebpLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: '파일 선택',
   processedFiles: '처리된 파일',
   downloadAll: '모두 다운로드 (.zip)',
-  pending: '대기 중',
-  bibliographyTitle: '참고 문헌',
+  pending: '대기 중': '참고 문헌',
   faqTitle: '자주 묻는 질문',
 };
 
@@ -48,17 +48,6 @@ const howTo: BmpAWebpLocaleContent['howTo'] = [
   {
     name: '최적화된 WebP 결과물 확인',
     text: '변환된 결과물을 개별적으로 다운로드하거나 즉시 생성된 ZIP 패키지로 한번에 받으세요.',
-  },
-];
-
-const bibliography: BmpAWebpLocaleContent['bibliography'] = [
-  {
-    name: 'BMP File Format',
-    url: 'https://en.wikipedia.org/wiki/BMP_file_format',
-  },
-  {
-    name: 'Google WebP Documentation',
-    url: 'https://developers.google.com/speed/webp',
   },
 ];
 

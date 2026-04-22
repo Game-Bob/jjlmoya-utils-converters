@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { PngAIcoLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: '选择文件',
   processedFiles: '已处理文件',
   downloadAll: '下载全部 (.zip)',
-  pending: '等待中',
-  bibliographyTitle: '参考文献',
+  pending: '等待中': '参考文献',
   faqTitle: '常见问题',
 };
 
@@ -48,17 +48,6 @@ const howTo: PngAIcoLocaleContent['howTo'] = [
   {
     name: '打包 ZIP 批量下载',
     text: '点击网站专用的批量编译按钮 (全局 ZIP 按钮) 下载, 或单独下载适用于 Windows 可执行文件的缩略图。',
-  },
-];
-
-const bibliography: PngAIcoLocaleContent['bibliography'] = [
-  {
-    name: 'Microsoft ICO 格式技术结构',
-    url: 'https://en.wikipedia.org/wiki/ICO_(file_format)',
-  },
-  {
-    name: 'Favicon 标准 - W3C',
-    url: 'https://www.w3.org/2005/10/howto-favicon',
   },
 ];
 

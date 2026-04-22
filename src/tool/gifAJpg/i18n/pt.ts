@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { GifAJpgLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Selecionar ficheiros',
   processedFiles: 'Ficheiros processados',
   downloadAll: 'Descarregar Tudo (.zip)',
-  pending: 'Pendente',
-  bibliographyTitle: 'Referências Bibliográficas',
+  pending: 'Pendente': 'Referências Bibliográficas',
   faqTitle: 'Perguntas Frequentes',
 };
 
@@ -48,17 +48,6 @@ const howTo: GifAJpgLocaleContent['howTo'] = [
   {
     name: 'Capture-os Empacotados em Massa ZIP',
     text: 'Descarregue com os botões ou usando o Zip se processou um grande número de ficheiros.',
-  },
-];
-
-const bibliography: GifAJpgLocaleContent['bibliography'] = [
-  {
-    name: 'Especificação Técnica Joint Photographic Experts Group',
-    url: 'https://en.wikipedia.org/wiki/JPEG',
-  },
-  {
-    name: 'CompuServe GIF Information',
-    url: 'https://www.w3.org/Graphics/GIF/spec-gif89a.txt',
   },
 ];
 

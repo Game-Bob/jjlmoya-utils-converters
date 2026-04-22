@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { AvifAJpgLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'ファイルを選択',
   processedFiles: '処理済みファイル',
   downloadAll: 'すべてダウンロード (.zip)',
-  pending: '待機中',
-  bibliographyTitle: '参考文献',
+  pending: '待機中': '参考文献',
   faqTitle: 'よくある質問',
 };
 
@@ -48,17 +48,6 @@ const howTo: AvifAJpgLocaleContent['howTo'] = [
   {
     name: '保存またはZIPダウンロード',
     text: '新しいJPG画像を個別に、または一括処理した場合は「すべてダウンロード」を押して保存してください。',
-  },
-];
-
-const bibliography: AvifAJpgLocaleContent['bibliography'] = [
-  {
-    name: 'AV1 Image File Format (AVIF)',
-    url: 'https://aomediacodec.github.io/av1-avif/',
-  },
-  {
-    name: 'JPGの概要',
-    url: 'https://en.wikipedia.org/wiki/JPEG',
   },
 ];
 

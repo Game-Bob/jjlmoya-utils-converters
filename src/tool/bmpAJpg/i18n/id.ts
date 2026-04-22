@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { BmpAJpgLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Pilih file',
   processedFiles: 'File yang diproses',
   downloadAll: 'Unduh Semua (.zip)',
-  pending: 'Tertunda',
-  bibliographyTitle: 'Referensi Bibliografi',
+  pending: 'Tertunda': 'Referensi Bibliografi',
   faqTitle: 'Pertanyaan Umum',
 };
 
@@ -48,17 +48,6 @@ const howTo: BmpAJpgLocaleContent['howTo'] = [
   {
     name: 'Unduh Tunggal atau Massal',
     text: 'Dapatkan gambar baru Anda yang dioptimalkan untuk web baik satu per satu atau dengan mengunduh file ZIP.',
-  },
-];
-
-const bibliography: BmpAJpgLocaleContent['bibliography'] = [
-  {
-    name: 'BMP File Format Specification',
-    url: 'https://en.wikipedia.org/wiki/BMP_file_format',
-  },
-  {
-    name: 'JPEG.org',
-    url: 'https://jpeg.org/',
   },
 ];
 

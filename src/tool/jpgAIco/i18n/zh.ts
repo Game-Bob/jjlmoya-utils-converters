@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { JpgAIcoLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: '选择文件',
   processedFiles: '已处理文件',
   downloadAll: '下载全部 (.zip)',
-  pending: '等待中',
-  bibliographyTitle: '参考文献',
+  pending: '等待中': '参考文献',
   faqTitle: '常见问题',
 };
 
@@ -48,17 +48,6 @@ const howTo: JpgAIcoLocaleContent['howTo'] = [
   {
     name: '编译多个 ZIP 设计',
     text: '只需几秒钟即可将所有内容打包成压缩包批量下载, 完成工作。',
-  },
-];
-
-const bibliography: JpgAIcoLocaleContent['bibliography'] = [
-  {
-    name: 'ICO 图像结构和系统使用',
-    url: 'https://en.wikipedia.org/wiki/ICO_(file_format)',
-  },
-  {
-    name: 'JPEG.org 标准',
-    url: 'https://jpeg.org/',
   },
 ];
 

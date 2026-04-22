@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { SvgAPngLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Bestanden selecteren',
   processedFiles: 'Verwerkte bestanden',
   downloadAll: 'Alles downloaden (.zip)',
-  pending: 'In afwachting',
-  bibliographyTitle: 'Bibliografische Referenties',
+  pending: 'In afwachting': 'Bibliografische Referenties',
   faqTitle: 'Veelgestelde Vragen',
 };
 
@@ -48,17 +48,6 @@ const howTo: SvgAPngLocaleContent['howTo'] = [
   {
     name: 'Download de bestanden',
     text: 'Sla de gegenereerde PNG\'s afzonderlijk op of als een ZIP-pakket.',
-  },
-];
-
-const bibliography: SvgAPngLocaleContent['bibliography'] = [
-  {
-    name: 'W3C SVG Specificatie',
-    url: 'https://www.w3.org/TR/SVG/',
-  },
-  {
-    name: 'Mozilla: SVG Tutorial',
-    url: 'https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial',
   },
 ];
 

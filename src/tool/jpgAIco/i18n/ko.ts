@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { JpgAIcoLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: '파일 선택',
   processedFiles: '처리된 파일',
   downloadAll: '모두 다운로드 (.zip)',
-  pending: '대기 중',
-  bibliographyTitle: '참고 문헌',
+  pending: '대기 중': '참고 문헌',
   faqTitle: '자주 묻는 질문',
 };
 
@@ -48,17 +48,6 @@ const howTo: JpgAIcoLocaleContent['howTo'] = [
   {
     name: '멀티 ZIP 디자인 컴파일',
     text: '단 몇 초 만에 모든 결과물을 압축 패키지로 대량 다운로드하여 작업을 완료하세요.',
-  },
-];
-
-const bibliography: JpgAIcoLocaleContent['bibliography'] = [
-  {
-    name: 'ICO 도상학적 구조 및 시스템 사용법',
-    url: 'https://en.wikipedia.org/wiki/ICO_(file_format)',
-  },
-  {
-    name: 'JPEG.org 표준',
-    url: 'https://jpeg.org/',
   },
 ];
 

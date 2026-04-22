@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { PngAWebpLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: '选择文件',
   processedFiles: '已处理文件',
   downloadAll: '下载全部 (.zip)',
-  pending: '等待中',
-  bibliographyTitle: '参考文献',
+  pending: '等待中': '参考文献',
   faqTitle: '常见问题',
 };
 
@@ -48,21 +48,6 @@ const howTo: PngAWebpLocaleContent['howTo'] = [
   {
     name: '直接下载',
     text: '您可以单独下载高压缩率的 WebP 文件, 也可以使用 ZIP 打包转换器批量下载。',
-  },
-];
-
-const bibliography: PngAWebpLocaleContent['bibliography'] = [
-  {
-    name: 'Google: WebP 实现详情',
-    url: 'https://developers.google.com/speed/webp/',
-  },
-  {
-    name: 'W3C: Core Web Vitals 指南',
-    url: 'https://web.dev/vitals/',
-  },
-  {
-    name: 'Mozilla Docs: 图像格式',
-    url: 'https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types',
   },
 ];
 

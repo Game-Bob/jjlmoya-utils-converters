@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { AvifAJpgLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Выбрать файлы',
   processedFiles: 'Обработанные файлы',
   downloadAll: 'Скачать всё (.zip)',
-  pending: 'В ожидании',
-  bibliographyTitle: 'Библиографические ссылки',
+  pending: 'В ожидании': 'Библиографические ссылки',
   faqTitle: 'Часто задаваемые вопросы',
 };
 
@@ -48,17 +48,6 @@ const howTo: AvifAJpgLocaleContent['howTo'] = [
   {
     name: 'Сохраните или скачайте ZIP',
     text: 'Сохраняйте новые JPG по одному или используйте кнопку «Скачать всё», если вы обрабатывали их пакетом.',
-  },
-];
-
-const bibliography: AvifAJpgLocaleContent['bibliography'] = [
-  {
-    name: 'AV1 Image File Format (AVIF)',
-    url: 'https://aomediacodec.github.io/av1-avif/',
-  },
-  {
-    name: 'Общая информация о JPG',
-    url: 'https://en.wikipedia.org/wiki/JPEG',
   },
 ];
 

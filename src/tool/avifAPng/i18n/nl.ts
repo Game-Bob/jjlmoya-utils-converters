@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { AvifAPngLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Bestanden selecteren',
   processedFiles: 'Verwerkte bestanden',
   downloadAll: 'Alles downloaden (.zip)',
-  pending: 'In afwachting',
-  bibliographyTitle: 'Bibliografische Referenties',
+  pending: 'In afwachting': 'Bibliografische Referenties',
   faqTitle: 'Veelgestelde Vragen',
 };
 
@@ -48,17 +48,6 @@ const howTo: AvifAPngLocaleContent['howTo'] = [
   {
     name: 'Download je PNG\'s',
     text: 'Download de geconverteerde afbeeldingen één voor één of download een compleet blok via de ZIP-knop.',
-  },
-];
-
-const bibliography: AvifAPngLocaleContent['bibliography'] = [
-  {
-    name: 'Alliance for Open Media: AVIF-formaat',
-    url: 'https://aomediacodec.github.io/av1-avif/',
-  },
-  {
-    name: 'W3C - Portable Network Graphics (PNG) Specificatie',
-    url: 'https://www.w3.org/TR/png/',
   },
 ];
 

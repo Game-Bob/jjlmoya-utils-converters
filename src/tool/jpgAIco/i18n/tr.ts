@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { JpgAIcoLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Dosyaları seçin',
   processedFiles: 'İşlenmiş dosyalar',
   downloadAll: 'Tümünü İndir (.zip)',
-  pending: 'Bekliyor',
-  bibliographyTitle: 'Bibliyografik Referanslar',
+  pending: 'Bekliyor': 'Bibliyografik Referanslar',
   faqTitle: 'Sıkça Sorulan Sorular',
 };
 
@@ -48,17 +48,6 @@ const howTo: JpgAIcoLocaleContent['howTo'] = [
   {
     name: 'Birden fazla ZIP tasarımını derleyin',
     text: 'Saniyeler içinde her şeyi toplu olarak kompakt bir pakette indirerek işi bitirin.',
-  },
-];
-
-const bibliography: JpgAIcoLocaleContent['bibliography'] = [
-  {
-    name: 'ICO İkonografik Yapısı ve Sistem Kullanımı',
-    url: 'https://en.wikipedia.org/wiki/ICO_(file_format)',
-  },
-  {
-    name: 'JPEG.org Standartları',
-    url: 'https://jpeg.org/',
   },
 ];
 

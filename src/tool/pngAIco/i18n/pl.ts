@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { PngAIcoLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Wybierz pliki',
   processedFiles: 'Przetworzone pliki',
   downloadAll: 'Pobierz wszystko (.zip)',
-  pending: 'Oczekujące',
-  bibliographyTitle: 'Bibliografia',
+  pending: 'Oczekujące': 'Bibliografia',
   faqTitle: 'Często Zadawane Pytania',
 };
 
@@ -48,17 +48,6 @@ const howTo: PngAIcoLocaleContent['howTo'] = [
   {
     name: 'Pobierz ZIP',
     text: 'Pobierz wyniki jednym kliknięciem (przyciski zbiorczego ZIP) lub pobierz miniaturę dla pliku wykonywalnego Windows.',
-  },
-];
-
-const bibliography: PngAIcoLocaleContent['bibliography'] = [
-  {
-    name: 'Struktura techniczna formatu Microsoft ICO',
-    url: 'https://en.wikipedia.org/wiki/ICO_(file_format)',
-  },
-  {
-    name: 'Standard Favicon - W3C',
-    url: 'https://www.w3.org/2005/10/howto-favicon',
   },
 ];
 

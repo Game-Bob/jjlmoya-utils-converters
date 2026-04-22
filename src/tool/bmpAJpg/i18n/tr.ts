@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { BmpAJpgLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Dosyaları seçin',
   processedFiles: 'İşlenen dosyalar',
   downloadAll: 'Tümünü İndir (.zip)',
-  pending: 'Bekliyor',
-  bibliographyTitle: 'Bibliyografik Referanslar',
+  pending: 'Bekliyor': 'Bibliyografik Referanslar',
   faqTitle: 'Sıkça Sorulan Sorular',
 };
 
@@ -48,17 +48,6 @@ const howTo: BmpAJpgLocaleContent['howTo'] = [
   {
     name: 'Tekli veya Toplu İndirme',
     text: 'Yeni web optimize edilmiş resimlerinizi tek tek veya bir ZIP dosyası olarak indirin.',
-  },
-];
-
-const bibliography: BmpAJpgLocaleContent['bibliography'] = [
-  {
-    name: 'BMP File Format Specification',
-    url: 'https://en.wikipedia.org/wiki/BMP_file_format',
-  },
-  {
-    name: 'JPEG.org',
-    url: 'https://jpeg.org/',
   },
 ];
 

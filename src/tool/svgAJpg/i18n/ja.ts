@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { SvgAJpgLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'ファイルを選択',
   processedFiles: '処理済みファイル',
   downloadAll: 'すべてダウンロード (.zip)',
-  pending: '保留中',
-  bibliographyTitle: '参考文献',
+  pending: '保留中': '参考文献',
   faqTitle: 'よくある質問',
 };
 
@@ -48,17 +48,6 @@ const howTo: SvgAJpgLocaleContent['howTo'] = [
   {
     name: '結果をダウンロード',
     text: 'JPGファイルを個別に、またはZIPパッケージとして取得してください。',
-  },
-];
-
-const bibliography: SvgAJpgLocaleContent['bibliography'] = [
-  {
-    name: 'W3C SVG仕様',
-    url: 'https://www.w3.org/TR/SVG/',
-  },
-  {
-    name: 'JPEG標準の概要',
-    url: 'https://jpeg.org/jpeg/',
   },
 ];
 

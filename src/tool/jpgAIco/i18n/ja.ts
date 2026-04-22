@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { JpgAIcoLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'ファイルを選択',
   processedFiles: '処理済みファイル',
   downloadAll: 'すべてダウンロード (.zip)',
-  pending: '保留中',
-  bibliographyTitle: '参考文献',
+  pending: '保留中': '参考文献',
   faqTitle: 'よくある質問',
 };
 
@@ -48,17 +48,6 @@ const howTo: JpgAIcoLocaleContent['howTo'] = [
   {
     name: 'マルチZIPデザインをコンパイル',
     text: 'わずか数秒で、すべての成果物を圧縮パッケージとして一括ダウンロードして作業を完了します。',
-  },
-];
-
-const bibliography: JpgAIcoLocaleContent['bibliography'] = [
-  {
-    name: 'ICOの図像的構造とシステムの使用法',
-    url: 'https://en.wikipedia.org/wiki/ICO_(file_format)',
-  },
-  {
-    name: 'JPEG.org 標準',
-    url: 'https://jpeg.org/',
   },
 ];
 

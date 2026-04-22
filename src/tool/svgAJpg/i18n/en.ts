@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { SvgAJpgLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Select files',
   processedFiles: 'Processed files',
   downloadAll: 'Download All (.zip)',
-  pending: 'Pending',
-  bibliographyTitle: 'Bibliographic References',
+  pending: 'Pending': 'Bibliographic References',
   faqTitle: 'Frequently Asked Questions',
 };
 
@@ -48,17 +48,6 @@ const howTo: SvgAJpgLocaleContent['howTo'] = [
   {
     name: 'Download the results',
     text: 'Get your JPG files one by one or as a ZIP package.',
-  },
-];
-
-const bibliography: SvgAJpgLocaleContent['bibliography'] = [
-  {
-    name: 'W3C SVG Specification',
-    url: 'https://www.w3.org/TR/SVG/',
-  },
-  {
-    name: 'JPEG Standard Overview',
-    url: 'https://jpeg.org/jpeg/',
   },
 ];
 

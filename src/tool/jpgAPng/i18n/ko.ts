@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { JpgAPngLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: '파일 선택',
   processedFiles: '처리된 파일',
   downloadAll: '모두 다운로드 (.zip)',
-  pending: '대기 중',
-  bibliographyTitle: '참고 문헌',
+  pending: '대기 중': '참고 문헌',
   faqTitle: '자주 묻는 질문',
 };
 
@@ -48,17 +48,6 @@ const howTo: JpgAPngLocaleContent['howTo'] = [
   {
     name: '세션 종료',
     text: '패널을 클릭하면 브라우저가 다운로드된 웹 에셋을 사용자의 다운로드 폴더에 저장합니다.',
-  },
-];
-
-const bibliography: JpgAPngLocaleContent['bibliography'] = [
-  {
-    name: 'The W3C PNG Graphics',
-    url: 'https://www.w3.org/Graphics/PNG/',
-  },
-  {
-    name: 'Understanding Digital Image Compression',
-    url: 'https://en.wikipedia.org/wiki/Image_compression',
   },
 ];
 

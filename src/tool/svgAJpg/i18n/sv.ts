@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { SvgAJpgLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Välj filer',
   processedFiles: 'Bearbetade filer',
   downloadAll: 'Ladda ner alla (.zip)',
-  pending: 'Väntande',
-  bibliographyTitle: 'Bibliografiska Referenser',
+  pending: 'Väntande': 'Bibliografiska Referenser',
   faqTitle: 'Vanliga Frågor',
 };
 
@@ -48,17 +48,6 @@ const howTo: SvgAJpgLocaleContent['howTo'] = [
   {
     name: 'Ladda ner resultaten',
     text: 'Hämta dina JPG-filer en och en eller som ett ZIP-paket.',
-  },
-];
-
-const bibliography: SvgAJpgLocaleContent['bibliography'] = [
-  {
-    name: 'W3C SVG-specifikation',
-    url: 'https://www.w3.org/TR/SVG/',
-  },
-  {
-    name: 'Översikt över JPEG-standarden',
-    url: 'https://jpeg.org/jpeg/',
   },
 ];
 

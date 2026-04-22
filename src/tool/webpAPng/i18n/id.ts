@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { WebpAPngLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Pilih file',
   processedFiles: 'File yang diproses',
   downloadAll: 'Unduh Semua (.zip)',
-  pending: 'Menunggu',
-  bibliographyTitle: 'Referensi Bibliografi',
+  pending: 'Menunggu': 'Referensi Bibliografi',
   faqTitle: 'Pertanyaan yang Sering Diajukan',
 };
 
@@ -48,21 +48,6 @@ const howTo: WebpAPngLocaleContent['howTo'] = [
   {
     name: 'Unduhan Individu atau Massal',
     text: 'Simpan setiap file secara terpisah atau, jika Anda memproses dalam jumlah banyak, klik tombol ZIP untuk mengunduh semuanya secara bersamaan.',
-  },
-];
-
-const bibliography: WebpAPngLocaleContent['bibliography'] = [
-  {
-    name: 'Dokumentasi API dan Perpustakaan WebP',
-    url: 'https://developers.google.com/speed/webp/docs/api',
-  },
-  {
-    name: 'Spesifikasi Konteks 2D HTML Canvas',
-    url: 'https://html.spec.whatwg.org/multipage/canvas.html',
-  },
-  {
-    name: 'Can I use: format gambar WebP',
-    url: 'https://caniuse.com/webp',
   },
 ];
 

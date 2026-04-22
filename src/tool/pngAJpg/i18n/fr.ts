@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { PngAJpgLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Sélectionner des fichiers',
   processedFiles: 'Fichiers traités',
   downloadAll: 'Tout télécharger (.zip)',
-  pending: 'En attente',
-  bibliographyTitle: 'Références Bibliographiques',
+  pending: 'En attente': 'Références Bibliographiques',
   faqTitle: 'Questions Fréquentes',
 };
 
@@ -48,17 +48,6 @@ const howTo: PngAJpgLocaleContent['howTo'] = [
   {
     name: 'Export direct',
     text: 'Cliquez sur les icônes de téléchargement vertes et sauvegardez vos nouveaux fichiers JPG.',
-  },
-];
-
-const bibliography: PngAJpgLocaleContent['bibliography'] = [
-  {
-    name: 'Spécifications du PNG Consortium',
-    url: 'http://www.libpng.org/pub/png/',
-  },
-  {
-    name: 'Le comité JPEG',
-    url: 'https://jpeg.org/',
   },
 ];
 

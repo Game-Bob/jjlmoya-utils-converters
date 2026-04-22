@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { WebpAIcoLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Seleziona file',
   processedFiles: 'File elaborati',
   downloadAll: 'Scarica tutto (.zip)',
-  pending: 'In attesa',
-  bibliographyTitle: 'Riferimenti Bibliografici',
+  pending: 'In attesa': 'Riferimenti Bibliografici',
   faqTitle: 'Domande Frequenti',
 };
 
@@ -48,17 +48,6 @@ const howTo: WebpAIcoLocaleContent['howTo'] = [
   {
     name: 'Prendi il tuo pacchetto per lo sviluppo di sistemi e web',
     text: 'Fai clic liberamente su un enorme pulsante scaricabile in un file congiunto o scarica manualmente se ne serve solo uno.',
-  },
-];
-
-const bibliography: WebpAIcoLocaleContent['bibliography'] = [
-  {
-    name: 'Documentazione Generale dell\'Intestazione Web ICO',
-    url: 'https://en.wikipedia.org/wiki/ICO_(file_format)',
-  },
-  {
-    name: 'Documentazione Google WebP',
-    url: 'https://developers.google.com/speed/webp',
   },
 ];
 

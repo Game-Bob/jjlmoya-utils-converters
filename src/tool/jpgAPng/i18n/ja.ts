@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { JpgAPngLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'ファイルを選択',
   processedFiles: '処理済みファイル',
   downloadAll: 'すべてダウンロード (.zip)',
-  pending: '待機中',
-  bibliographyTitle: '参考文献',
+  pending: '待機中': '参考文献',
   faqTitle: 'よくある質問',
 };
 
@@ -48,17 +48,6 @@ const howTo: JpgAPngLocaleContent['howTo'] = [
   {
     name: 'セッションを終了',
     text: 'パネルをクリックすると、ブラウザがダウンロードされたウェブアセットをユーザーフォルダに保存します。',
-  },
-];
-
-const bibliography: JpgAPngLocaleContent['bibliography'] = [
-  {
-    name: 'The W3C PNG Graphics',
-    url: 'https://www.w3.org/Graphics/PNG/',
-  },
-  {
-    name: 'Understanding Digital Image Compression',
-    url: 'https://en.wikipedia.org/wiki/Image_compression',
   },
 ];
 

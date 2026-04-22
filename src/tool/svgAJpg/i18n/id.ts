@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { SvgAJpgLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'Pilih file',
   processedFiles: 'File yang diproses',
   downloadAll: 'Unduh Semua (.zip)',
-  pending: 'Menunggu',
-  bibliographyTitle: 'Referensi Bibliografi',
+  pending: 'Menunggu': 'Referensi Bibliografi',
   faqTitle: 'Pertanyaan yang Sering Diajukan',
 };
 
@@ -48,17 +48,6 @@ const howTo: SvgAJpgLocaleContent['howTo'] = [
   {
     name: 'Unduh hasilnya',
     text: 'Dapatkan file JPG Anda satu per satu atau sebagai paket ZIP.',
-  },
-];
-
-const bibliography: SvgAJpgLocaleContent['bibliography'] = [
-  {
-    name: 'Spesifikasi W3C SVG',
-    url: 'https://www.w3.org/TR/SVG/',
-  },
-  {
-    name: 'Ikhtisar Standar JPEG',
-    url: 'https://jpeg.org/jpeg/',
   },
 ];
 

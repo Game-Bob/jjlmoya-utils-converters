@@ -41,3 +41,5 @@ export const imagenBase64: ConvertersToolEntry<ImageToBase64UI> = {
     zh: () => import('./i18n/zh').then((m) => m.content),
   },
 };
+
+export { bibliography } from './bibliography';

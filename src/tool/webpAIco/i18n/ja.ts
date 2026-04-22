@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { WebpAIcoLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'ファイルを選択',
   processedFiles: '処理済みファイル',
   downloadAll: 'すべてダウンロード (.zip)',
-  pending: '保留中',
-  bibliographyTitle: '参考文献',
+  pending: '保留中': '参考文献',
   faqTitle: 'よくある質問',
 };
 
@@ -48,17 +48,6 @@ const howTo: WebpAIcoLocaleContent['howTo'] = [
   {
     name: 'システムおよびウェブ開発用のパッケージを持ち帰りましょう',
     text: '統合ファイルの巨大なダウンロードボタンをクリックするか、1つだけ必要な場合は個別にダウンロードしてください。',
-  },
-];
-
-const bibliography: WebpAIcoLocaleContent['bibliography'] = [
-  {
-    name: 'ICOウェブヘッダ一般ドキュメント',
-    url: 'https://en.wikipedia.org/wiki/ICO_(file_format)',
-  },
-  {
-    name: 'Google WebPドキュメント',
-    url: 'https://developers.google.com/speed/webp',
   },
 ];
 

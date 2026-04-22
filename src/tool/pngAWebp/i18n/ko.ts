@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { PngAWebpLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: '파일 선택',
   processedFiles: '처리된 파일',
   downloadAll: '모두 다운로드 (.zip)',
-  pending: '대기 중',
-  bibliographyTitle: '참고 문헌',
+  pending: '대기 중': '참고 문헌',
   faqTitle: '자주 묻는 질문',
 };
 
@@ -48,21 +48,6 @@ const howTo: PngAWebpLocaleContent['howTo'] = [
   {
     name: '직접 다운로드',
     text: '고도로 압축된 WebP 파일을 개별적으로 다운로드하거나 ZIP 패키지 변환기를 사용하여 한 번에 묶어서 다운로드하세요.',
-  },
-];
-
-const bibliography: PngAWebpLocaleContent['bibliography'] = [
-  {
-    name: 'Google: WebP 구현 세부 정보',
-    url: 'https://developers.google.com/speed/webp/',
-  },
-  {
-    name: 'W3C: Core Web Vitals 가이드',
-    url: 'https://web.dev/vitals/',
-  },
-  {
-    name: 'Mozilla Docs: 이미지 형식',
-    url: 'https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types',
   },
 ];
 

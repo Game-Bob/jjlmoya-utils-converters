@@ -27,3 +27,5 @@ export const webpAJpg: ConvertersToolEntry<ImageConverterUI> = {
     zh: () => import('./i18n/zh').then((m) => m.content),
   },
 };
+
+export { bibliography } from './bibliography';

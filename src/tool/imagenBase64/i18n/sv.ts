@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImagenBase64LocaleContent } from '../index';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { ImageToBase64UI } from '../index';
@@ -17,8 +18,7 @@ const ui: ImageToBase64UI = {
   dataUriPlaceholder: 'Ladda upp en bild för att se Data URI-koden...',
   base64Placeholder: 'Ladda upp en bild för att se den rena Base64-koden...',
   toastMessage: 'Koden kopierad till urklipp!',
-  invalidImageAlert: 'Vänligen ladda upp en giltig bildfil.',
-  bibliographyTitle: 'Bibliografiska Referenser',
+  invalidImageAlert: 'Vänligen ladda upp en giltig bildfil.': 'Bibliografiska Referenser',
   faqTitle: 'Vanliga Frågor',
 };
 
@@ -57,17 +57,6 @@ const howTo: ImagenBase64LocaleContent['howTo'] = [
   {
     name: 'Använd koden i ditt projekt',
     text: 'Klistra in Data URI direkt i src för en img-tagg eller i din CSS som background-image utan att behöva externa filer.',
-  },
-];
-
-const bibliography: ImagenBase64LocaleContent['bibliography'] = [
-  {
-    name: 'MDN Web Docs: Data URIs',
-    url: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URLs',
-  },
-  {
-    name: 'Base64 Encoding RFC 4648',
-    url: 'https://datatracker.ietf.org/doc/html/rfc4648',
   },
 ];
 

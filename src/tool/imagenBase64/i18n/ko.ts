@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImagenBase64LocaleContent } from '../index';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { ImageToBase64UI } from '../index';
@@ -17,8 +18,7 @@ const ui: ImageToBase64UI = {
   dataUriPlaceholder: '이미지를 업로드하여 Data URI 코드를 확인하세요...',
   base64Placeholder: '이미지를 업로드하여 순수 Base64 코드를 확인하세요...',
   toastMessage: '코드가 클립보드에 복사되었습니다!',
-  invalidImageAlert: '유효한 이미지 파일을 업로드해 주세요.',
-  bibliographyTitle: '참고 문헌',
+  invalidImageAlert: '유효한 이미지 파일을 업로드해 주세요.': '참고 문헌',
   faqTitle: '자주 묻는 질문',
 };
 
@@ -57,17 +57,6 @@ const howTo: ImagenBase64LocaleContent['howTo'] = [
   {
     name: '프로젝트에서 코드 사용',
     text: '외부 파일 없이 Data URI를 img 태그의 src 또는 CSS의 background-image에 직접 붙여넣으세요.',
-  },
-];
-
-const bibliography: ImagenBase64LocaleContent['bibliography'] = [
-  {
-    name: 'MDN Web Docs: Data URIs',
-    url: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URLs',
-  },
-  {
-    name: 'Base64 Encoding RFC 4648',
-    url: 'https://datatracker.ietf.org/doc/html/rfc4648',
   },
 ];
 

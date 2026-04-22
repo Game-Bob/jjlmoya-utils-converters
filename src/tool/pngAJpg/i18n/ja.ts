@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImageConverterUI } from '../../../shared/ImageConverter.astro';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { PngAJpgLocaleContent } from '../index';
@@ -13,8 +14,7 @@ const ui: ImageConverterUI = {
   selectFiles: 'ファイルを選択',
   processedFiles: '処理済みファイル',
   downloadAll: 'すべてダウンロード (.zip)',
-  pending: '待機中',
-  bibliographyTitle: '参考文献',
+  pending: '待機中': '参考文献',
   faqTitle: 'よくある質問',
 };
 
@@ -53,17 +53,6 @@ const howTo: PngAJpgLocaleContent['howTo'] = [
   {
     name: '最適化されたダウンロード',
     text: '新しいJPGを一つずつ保存するか、「すべてダウンロード」ボタンを使用して、すべての画像を含む圧縮ZIPファイルを取得してください。',
-  },
-];
-
-const bibliography: PngAJpgLocaleContent['bibliography'] = [
-  {
-    name: 'PNGコンソーシアム仕様書',
-    url: 'http://www.libpng.org/pub/png/',
-  },
-  {
-    name: 'JPEG委員会',
-    url: 'https://jpeg.org/',
   },
 ];
 

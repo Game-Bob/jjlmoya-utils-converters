@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImagenBase64LocaleContent } from '../index';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { ImageToBase64UI } from '../index';
@@ -17,8 +18,7 @@ const ui: ImageToBase64UI = {
   dataUriPlaceholder: 'Unggah gambar untuk melihat kode Data URI...',
   base64Placeholder: 'Unggah gambar untuk melihat kode Base64 murni...',
   toastMessage: 'Kode disalin ke papan klip!',
-  invalidImageAlert: 'Silakan unggah file gambar yang valid.',
-  bibliographyTitle: 'Referensi Bibliografi',
+  invalidImageAlert: 'Silakan unggah file gambar yang valid.': 'Referensi Bibliografi',
   faqTitle: 'Pertanyaan yang Sering Diajukan',
 };
 
@@ -57,17 +57,6 @@ const howTo: ImagenBase64LocaleContent['howTo'] = [
   {
     name: 'Gunakan Kode dalam Proyek Anda',
     text: 'Tempelkan Data URI secara langsung ke src dari tag img atau di CSS Anda sebagai background-image tanpa memerlukan file eksternal.',
-  },
-];
-
-const bibliography: ImagenBase64LocaleContent['bibliography'] = [
-  {
-    name: 'MDN Web Docs: Data URIs',
-    url: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URLs',
-  },
-  {
-    name: 'Base64 Encoding RFC 4648',
-    url: 'https://datatracker.ietf.org/doc/html/rfc4648',
   },
 ];
 

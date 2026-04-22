@@ -1,3 +1,4 @@
+import { bibliography } from '../bibliography';
 import type { ImagenBase64LocaleContent } from '../index';
 import { generateSchemas } from '../../../shared/logic/schemas';
 import type { ImageToBase64UI } from '../index';
@@ -17,8 +18,7 @@ const ui: ImageToBase64UI = {
   dataUriPlaceholder: 'Laden Sie ein Bild hoch, um den Data-URI-Code zu sehen...',
   base64Placeholder: 'Laden Sie ein Bild hoch, um den reinen Base64-Code zu sehen...',
   toastMessage: 'Code in die Zwischenablage kopiert!',
-  invalidImageAlert: 'Bitte laden Sie eine gültige Bilddatei hoch.',
-  bibliographyTitle: 'Literaturhinweise',
+  invalidImageAlert: 'Bitte laden Sie eine gültige Bilddatei hoch.': 'Literaturhinweise',
   faqTitle: 'Häufig gestellte Fragen',
 };
 
@@ -57,17 +57,6 @@ const howTo: ImagenBase64LocaleContent['howTo'] = [
   {
     name: 'Code in Ihrem Projekt verwenden',
     text: 'Fügen Sie die Data URI direkt in den src-Attribut eines img-Tags oder in Ihr CSS als background-image ein, ohne externe Dateien zu benötigen.',
-  },
-];
-
-const bibliography: ImagenBase64LocaleContent['bibliography'] = [
-  {
-    name: 'MDN Web Docs: Data URIs',
-    url: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URLs',
-  },
-  {
-    name: 'Base64 Kodierung RFC 4648',
-    url: 'https://datatracker.ietf.org/doc/html/rfc4648',
   },
 ];
 
