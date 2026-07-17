@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Sélectionner des fichiers',
   processedFiles: 'Fichiers traités',
   downloadAll: 'Tout télécharger (.zip)',
-  pending: 'En attente': 'Références Bibliographiques',
+  pending: 'En attente',
+  bibliographyTitle: 'Références Bibliographiques',
   faqTitle: 'Questions Fréquentes',
 };
 
@@ -59,7 +60,7 @@ const seo: PngAJpgLocaleContent['seo'] = [
   {
     type: 'paragraph',
     html:
-      'Le format PNG (Portable Network Graphics) est largement utilisé pour sa qualité sans perte et son support de la transparence (canal alpha). Cependant, cette fidélité a un coût : les fichiers PNG sont considérablement plus grands que leurs équivalents JPG, notamment pour les photographies ou les images avec des dégradés complexes.',
+      'Le format PNG (Portable Network Graphics) est largement utilisé pour sa qualité sans perte et son support de la transparence (canal alpha). Cependant, cette fidélité a un coût: les fichiers PNG sont considérablement plus grands que leurs équivalents JPG, notamment pour les photographies ou les images avec des dégradés complexes.',
   },
   {
     type: 'paragraph',
@@ -84,7 +85,7 @@ const seo: PngAJpgLocaleContent['seo'] = [
   {
     type: 'paragraph',
     html:
-      'Les cas d\'utilisation typiques pour la conversion PNG vers JPG comprennent : préparer des images pour l\'e-mail, optimiser les photos de produits pour les boutiques en ligne, réduire le poids des captures d\'écran avant de les partager, et compresser les images pour un chargement plus rapide des pages web.',
+      'Les cas d\'utilisation typiques pour la conversion PNG vers JPG comprennent: préparer des images pour l\'e-mail, optimiser les photos de produits pour les boutiques en ligne, réduire le poids des captures d\'écran avant de les partager, et compresser les images pour un chargement plus rapide des pages web.',
   },
   {
     type: 'paragraph',

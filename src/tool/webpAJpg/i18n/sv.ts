@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Välj filer',
   processedFiles: 'Bearbetade filer',
   downloadAll: 'Ladda ner alla (.zip)',
-  pending: 'Väntande': 'Bibliografiska Referenser',
+  pending: 'Väntande',
+  bibliographyTitle: 'Bibliografiska Referenser',
   faqTitle: 'Vanliga Frågor',
 };
 
@@ -68,7 +69,7 @@ const seo: WebpAJpgLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'WebP briljerar i kontrollerade miljöer: moderna webbplatser i Chrome, Edge eller Firefox där webbläsarkompatibilitet kan garanteras. Dess överlägsna komprimering minskar filstorleken med 25–35 % jämfört med motsvarande JPG, vilket förbättrar laddningstider och mätvärden för Core Web Vitals. Det är det ideala formatet när du kontrollerar visningsmiljön.',
+    html: 'WebP briljerar i kontrollerade miljöer: moderna webbplatser i Chrome, Edge eller Firefox där webbläsarkompatibilitet kan garanteras. Dess överlägsna komprimering minskar filstorleken med 25-35 % jämfört med motsvarande JPG, vilket förbättrar laddningstider och mätvärden för Core Web Vitals. Det är det ideala formatet när du kontrollerar visningsmiljön.',
   },
   {
     type: 'paragraph',
@@ -124,7 +125,7 @@ const seo: WebpAJpgLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'Tips för kompatibilitet',
-    html: 'När du delar foton med icke-tekniska användare eller skickar dem via e-post, använd alltid JPG – noll kompatibilitetsproblem i alla e-postklienter, operativsystem eller enheter, inga undantag och inga obehagliga överraskningar.',
+    html: 'När du delar foton med icke-tekniska användare eller skickar dem via e-post, använd alltid JPG - noll kompatibilitetsproblem i alla e-postklienter, operativsystem eller enheter, inga undantag och inga obehagliga överraskningar.',
   },
   {
     type: 'title',

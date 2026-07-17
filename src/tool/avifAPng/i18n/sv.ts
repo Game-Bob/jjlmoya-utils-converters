@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Välj filer',
   processedFiles: 'Bearbetade filer',
   downloadAll: 'Ladda ner alla (.zip)',
-  pending: 'Väntande': 'Bibliografiska Referenser',
+  pending: 'Väntande',
+  bibliographyTitle: 'Bibliografiska Referenser',
   faqTitle: 'Vanliga Frågor',
 };
 
@@ -59,7 +60,7 @@ const seo: AvifAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'AVIF är det idealiska formatet för att leverera bilder på webben – litet, effektivt och av hög kvalitet. Men när det är dags att redigera, retuschera eller arbeta med dessa bilder i designverktyg, blir AVIF ett hinder. Figma, Photoshop, Illustrator, Sketch och praktiskt taget alla professionella designverktyg förväntar sig att få PNG för arbete med transparens och förlustfri redigering. Att konvertera AVIF till PNG är bron mellan webben och den kreativa redigeringens värld.',
+    html: 'AVIF är det idealiska formatet för att leverera bilder på webben - litet, effektivt och av hög kvalitet. Men när det är dags att redigera, retuschera eller arbeta med dessa bilder i designverktyg, blir AVIF ett hinder. Figma, Photoshop, Illustrator, Sketch och praktiskt taget alla professionella designverktyg förväntar sig att få PNG för arbete med transparens och förlustfri redigering. Att konvertera AVIF till PNG är bron mellan webben och den kreativa redigeringens värld.',
   },
   {
     type: 'title',
@@ -115,7 +116,7 @@ const seo: AvifAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Moderna webbläsare avkodar AVIF nativt tack vare sina integrerade AV1-motorer. Vid laddning av filen avkodar webbläsaren den i minnet och bevarar all information från alfakanalen. Den avkodade bilden – inklusive dess transparens – ritas på ett HTML5 <code>Canvas</code>-element med rätt kompositionsläge för att bevara alfakanalen.',
+    html: 'Moderna webbläsare avkodar AVIF nativt tack vare sina integrerade AV1-motorer. Vid laddning av filen avkodar webbläsaren den i minnet och bevarar all information från alfakanalen. Den avkodade bilden - inklusive dess transparens - ritas på ett HTML5 <code>Canvas</code>-element med rätt kompositionsläge för att bevara alfakanalen.',
   },
   {
     type: 'paragraph',
@@ -149,7 +150,7 @@ const seo: AvifAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'AVIF och PNG är perfekta partners i ett modernt arbetsflöde: AVIF för effektiv leverans på webben, PNG för redigering och samarbete i designverktyg. Med vår konverterare är övergången från den ena till den andra omedelbar, privat och bevarar varje detalj – exakt vad du behöver när dina visuella tillgångar spelar roll.',
+    html: 'AVIF och PNG är perfekta partners i ett modernt arbetsflöde: AVIF för effektiv leverans på webben, PNG för redigering och samarbete i designverktyg. Med vår konverterare är övergången från den ena till den andra omedelbar, privat och bevarar varje detalj - exakt vad du behöver när dina visuella tillgångar spelar roll.',
   },
 ];
 

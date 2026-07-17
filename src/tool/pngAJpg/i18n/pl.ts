@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Wybierz pliki',
   processedFiles: 'Przetworzone pliki',
   downloadAll: 'Pobierz wszystko (.zip)',
-  pending: 'Oczekiwanie': 'Bibliografia',
+  pending: 'Oczekiwanie',
+  bibliographyTitle: 'Bibliografia',
   faqTitle: 'Często zadawane pytania',
 };
 
@@ -37,7 +38,7 @@ const faq: PngAJpgLocaleContent['faq'] = [
   {
     question: 'Czy jest to bezpieczne dla dokumentów poufnych?',
     answer:
-      'Tak, to najbezpieczniejsza opcja dla profesjonalistów z branży bankowej, służby zdrowia czy prawa. Będąc „czarną skrzynką”, która używa tylko Twojej pamięci RAM, to, co dzieje się wewnątrz, znika wraz z zamknięciem karty, co zapobiega wyciekom w chmurach zewnętrznych.',
+      'Tak, to najbezpieczniejsza opcja dla profesjonalistów z branży bankowej, służby zdrowia czy prawa. Będąc \"czarną skrzynką\", która używa tylko Twojej pamięci RAM, to, co dzieje się wewnątrz, znika wraz z zamknięciem karty, co zapobiega wyciekom w chmurach zewnętrznych.',
   },
 ];
 
@@ -48,11 +49,11 @@ const howTo: PngAJpgLocaleContent['howTo'] = [
   },
   {
     name: 'Błyskawiczne przetwarzanie',
-    text: 'Sprawdź, czy status zmieni się na „Gotowe” dla każdego pliku, podczas gdy przeglądarka optymalizuje wagę lokalnie.',
+    text: 'Sprawdź, czy status zmieni się na \"Gotowe\" dla każdego pliku, podczas gdy przeglądarka optymalizuje wagę lokalnie.',
   },
   {
     name: 'Zoptymalizowane pobieranie',
-    text: 'Zapisz swoje nowe pliki JPG jeden po drugim lub użyj przycisku „Pobierz wszystko”, aby uzyskać skompresowany plik ZIP ze wszystkimi obrazami.',
+    text: 'Zapisz swoje nowe pliki JPG jeden po drugim lub użyj przycisku \"Pobierz wszystko\", aby uzyskać skompresowany plik ZIP ze wszystkimi obrazami.',
   },
 ];
 
@@ -64,7 +65,7 @@ const seo: PngAJpgLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'W świecie cyfrowego projektowania i tworzenia stron internetowych wydajność jest wszystkim. Format PNG (Portable Network Graphics) jest ceniony za zdolność zachowania przezroczystości i kompresję bezstratną, ale ma jednego wielkiego wroga: wagę pliku. Gdy chcesz, aby Twoja strona internetowa „latała” lub Twoje e-maile ładowały się błyskawicznie, przejście z PNG na JPG jest najmądrzejszą decyzją techniczną.',
+    html: 'W świecie cyfrowego projektowania i tworzenia stron internetowych wydajność jest wszystkim. Format PNG (Portable Network Graphics) jest ceniony za zdolność zachowania przezroczystości i kompresję bezstratną, ale ma jednego wielkiego wroga: wagę pliku. Gdy chcesz, aby Twoja strona internetowa \"latała\" lub Twoje e-maile ładowały się błyskawicznie, przejście z PNG na JPG jest najmądrzejszą decyzją techniczną.',
   },
   {
     type: 'title',
@@ -124,7 +125,7 @@ const seo: PngAJpgLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Ponieważ JPG nie obsługuje przezroczystości, nasz algorytm wypełnia tło jednolitym białym kolorem przed „namalowaniem” na nim obrazu PNG. Po skomponowaniu obrazu uruchamiamy natywną metodę eksportu, generując strumień bajtów, który Twój komputer pobiera bezpośrednio.',
+    html: 'Ponieważ JPG nie obsługuje przezroczystości, nasz algorytm wypełnia tło jednolitym białym kolorem przed \"namalowaniem\" na nim obrazu PNG. Po skomponowaniu obrazu uruchamiamy natywną metodę eksportu, generując strumień bajtów, który Twój komputer pobiera bezpośrednio.',
   },
   {
     type: 'tip',
@@ -138,7 +139,7 @@ const seo: PngAJpgLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Jeśli pracujesz w sektorach wrażliwych, takich jak bankowość, służba zdrowia czy prawo, przesyłanie plików do konwerterów online jest naruszeniem bezpieczeństwa. Nasze narzędzie działa jak „czarna skrzynka”: to, co dzieje się wewnątrz, pozostaje w Twojej pamięci RAM. To jedyny bezpieczny sposób pracy z poufnymi dokumentami.',
+    html: 'Jeśli pracujesz w sektorach wrażliwych, takich jak bankowość, służba zdrowia czy prawo, przesyłanie plików do konwerterów online jest naruszeniem bezpieczeństwa. Nasze narzędzie działa jak \"czarna skrzynka\": to, co dzieje się wewnątrz, pozostaje w Twojej pamięci RAM. To jedyny bezpieczny sposób pracy z poufnymi dokumentami.',
   },
   {
     type: 'title',

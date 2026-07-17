@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Dosyaları seçin',
   processedFiles: 'İşlenen dosyalar',
   downloadAll: 'Tümünü İndir (.zip)',
-  pending: 'Bekliyor': 'Bibliyografik Referanslar',
+  pending: 'Bekliyor',
+  bibliographyTitle: 'Bibliyografik Referanslar',
   faqTitle: 'Sıkça Sorulan Sorular',
 };
 
@@ -101,7 +102,7 @@ const seo: BmpAWebpLocaleContent['seo'] = [
         highlight: true,
         points: [
           'Ağ aktarımı olmadan anında dönüşüm',
-          'Mutlak gizlilik — cihazınızdan 0 bayt çıkar',
+          'Mutlak gizlilik - cihazınızdan 0 bayt çıkar',
           'Dosya başına boyut sınırı yok',
           'İnternet bağlantısı olmadan çalışır',
         ],
@@ -135,11 +136,11 @@ const seo: BmpAWebpLocaleContent['seo'] = [
     type: 'list',
     icon: 'mdi:check-circle',
     items: [
-      'Web yayını — Chrome, Firefox, Safari, Edge ve tüm modern tarayıcılar.',
-      'Sosyal ağlar — Instagram, Twitter, Facebook WebP\'yi yerel olarak kabul eder.',
-      'Web uygulamaları ve PWA — anında yükleme için minimum boyutlar.',
-      'Verimli arşivleme — eski BMP koleksiyonlarını değiştirerek gigabaytlarca tasarruf sağlar.',
-      'E-posta pazarlaması — herhangi bir modern e-posta istemcisinde hızlı yüklenen hafif görüntüler.',
+      'Web yayını - Chrome, Firefox, Safari, Edge ve tüm modern tarayıcılar.',
+      'Sosyal ağlar - Instagram, Twitter, Facebook WebP\'yi yerel olarak kabul eder.',
+      'Web uygulamaları ve PWA - anında yükleme için minimum boyutlar.',
+      'Verimli arşivleme - eski BMP koleksiyonlarını değiştirerek gigabaytlarca tasarruf sağlar.',
+      'E-posta pazarlaması - herhangi bir modern e-posta istemcisinde hızlı yüklenen hafif görüntüler.',
     ],
   },
   {
@@ -149,7 +150,7 @@ const seo: BmpAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Eğer elinizde Windows\'tan kalma eski BMP dosyaları, sıkıştırılmamış ekran görüntüleri veya eski araçlardan görüntüler varsa, bunları WebP\'ye dönüştürmek, depolama alanınızı ve web performansınızı optimize etmek için atabileceğiniz en etkili adımdır. Aracımızla dönüşüm anında, özel ve sınırsızdır — tam olması gerektiği gibi.',
+    html: 'Eğer elinizde Windows\'tan kalma eski BMP dosyaları, sıkıştırılmamış ekran görüntüleri veya eski araçlardan görüntüler varsa, bunları WebP\'ye dönüştürmek, depolama alanınızı ve web performansınızı optimize etmek için atabileceğiniz en etkili adımdır. Aracımızla dönüşüm anında, özel ve sınırsızdır - tam olması gerektiği gibi.',
   },
 ];
 

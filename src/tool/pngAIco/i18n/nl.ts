@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Bestanden selecteren',
   processedFiles: 'Verwerkte bestanden',
   downloadAll: 'Alles downloaden (.zip)',
-  pending: 'In afwachting': 'Bibliografische Referenties',
+  pending: 'In afwachting',
+  bibliographyTitle: 'Bibliografische Referenties',
   faqTitle: 'Veelgestelde Vragen',
 };
 
@@ -59,7 +60,7 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>PNG met transparantie</strong> is het ideale basismateriaal voor het maken van professionele ICO-pictogrammen. In tegenstelling tot JPG (dat geen alfakanaal heeft) of formaten met verlies, PNG geeft je precies wat het ICO-formaat nodig heeft: scherpe pixels, strakke randen en een 32-bits alfakanaal waardoor het pictogram perfect integreert op elke achtergrond — of het nu de witte favorietenbalk van Safari is, de donkere balk van Firefox of het bureaublad van Windows 11.',
+    html: '<strong>PNG met transparantie</strong> is het ideale basismateriaal voor het maken van professionele ICO-pictogrammen. In tegenstelling tot JPG (dat geen alfakanaal heeft) of formaten met verlies, PNG geeft je precies wat het ICO-formaat nodig heeft: scherpe pixels, strakke randen en een 32-bits alfakanaal waardoor het pictogram perfect integreert op elke achtergrond - of het nu de witte favorietenbalk van Safari is, de donkere balk van Firefox of het bureaublad van Windows 11.',
   },
   {
     type: 'title',
@@ -68,7 +69,7 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>PNG</strong> is het werkformaat: het is de plek waar je je logo ontwerpt, exporteert vanuit Figma of Illustrator en je bewerkbare versies opslaat. De transparantie, pixelprecisie en verliesvrije compressie maken het onverslaanbaar voor het ontwerpproces. Maar browsers, besturingssystemen und Windows-applicaties die op zoek zijn naar een favicon of app-pictogram accepteren PNG niet rechtstreeks — ze hebben ICO nodig.',
+    html: '<strong>PNG</strong> is het werkformaat: het is de plek waar je je logo ontwerpt, exporteert vanuit Figma of Illustrator en je bewerkbare versies opslaat. De transparantie, pixelprecisie en verliesvrije compressie maken het onverslaanbaar voor het ontwerpproces. Maar browsers, besturingssystemen und Windows-applicaties die op zoek zijn naar een favicon of app-pictogram accepteren PNG niet rechtstreeks - ze hebben ICO nodig.',
   },
   {
     type: 'paragraph',
@@ -100,8 +101,8 @@ const seo: PngAIcoLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Onmiddellijke snelheid — geen netwerklatentie',
-          'Volledige privacy — 0 bytes extern verzonden',
+          'Onmiddellijke snelheid - geen netwerklatentie',
+          'Volledige privacy - 0 bytes extern verzonden',
           'Geen MB-limieten of beperkingen op aantal bestanden',
           'Schone interface, geen advertenties of tracking',
         ],
@@ -119,12 +120,12 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'De transparantie van de PNG wordt volledig behouden in de resulterende ICO — transparante pixels blijven transparant, semi-transparante pixels behouden hun exacte alfawaarde und ondoorzichtige pixels behouden hun oorspronkelijke kleur. Dit is cruciaal voor logo\'s op variabele achtergronden: je favicon ziet er correct uit in de lichte modus, donkere modus und elke combinatie van interfacekleuren van de browser.',
+    html: 'De transparantie van de PNG wordt volledig behouden in de resulterende ICO - transparante pixels blijven transparant, semi-transparante pixels behouden hun exacte alfawaarde und ondoorzichtige pixels behouden hun oorspronkelijke kleur. Dit is cruciaal voor logo\'s op variabele achtergronden: je favicon ziet er correct uit in de lichte modus, donkere modus und elke combinatie van interfacekleuren van de browser.',
   },
   {
     type: 'tip',
     title: 'Tip: gebruik een 512×512 PNG als bron',
-    html: 'Gebruik voor het best mogelijke resultaat een <strong>vierkante PNG van 512×512</strong> als bronafbeelding. Deze resolutie geeft de converter genoeg informatie om alle standaard ICO-formaten scherp te genereren — van de 16×16 favicon tot de 256×256 voor schermen met hoge densiteit — zonder pixelvorming of verlies van detail in de randen. Hoe groter de bron-PNG, hoe beter de kleine pictogramformaten eruit zullen zien.',
+    html: 'Gebruik voor het best mogelijke resultaat een <strong>vierkante PNG van 512×512</strong> als bronafbeelding. Deze resolutie geeft de converter genoeg informatie om alle standaard ICO-formaten scherp te genereren - van de 16×16 favicon tot de 256×256 voor schermen met hoge densiteit - zonder pixelvorming of verlies van detail in de randen. Hoe groter de bron-PNG, hoe beter de kleine pictogramformaten eruit zullen zien.',
   },
   {
     type: 'title',
@@ -149,7 +150,7 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'PNG met transparantie is ongetwijfeld het beste startpunt voor het maken van ICO-pictogrammen van professionele kwaliteit. Met deze tool is de conversie onmiddellijk, worden alfakanalen volledig behouden und is het resulterende bestand een echte ICO met de juiste binaire structuur. Je uploadt je logo naar geen enkele server, geen watermerken, geen limieten — und perfecte transparantie in alle formaten.',
+    html: 'PNG met transparantie is ongetwijfeld het beste startpunt voor het maken van ICO-pictogrammen van professionele kwaliteit. Met deze tool is de conversie onmiddellijk, worden alfakanalen volledig behouden und is het resulterende bestand een echte ICO met de juiste binaire structuur. Je uploadt je logo naar geen enkele server, geen watermerken, geen limieten - und perfecte transparantie in alle formaten.',
   },
 ];
 

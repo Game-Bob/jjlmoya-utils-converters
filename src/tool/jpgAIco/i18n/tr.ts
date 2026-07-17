@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Dosyaları seçin',
   processedFiles: 'İşlenmiş dosyalar',
   downloadAll: 'Tümünü İndir (.zip)',
-  pending: 'Bekliyor': 'Bibliyografik Referanslar',
+  pending: 'Bekliyor',
+  bibliographyTitle: 'Bibliyografik Referanslar',
   faqTitle: 'Sıkça Sorulan Sorular',
 };
 
@@ -100,8 +101,8 @@ const seo: JpgAIcoLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Anında hız — sıfır ağ gecikmesi',
-          'Tam gizlilik — harici olarak gönderilen 0 bayt',
+          'Anında hız - sıfır ağ gecikmesi',
+          'Tam gizlilik - harici olarak gönderilen 0 bayt',
           'MB sınırı veya dosya sayısı kısıtlaması yok',
           'Temiz arayüz, reklam veya izleme yok',
         ],

@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Seleziona file',
   processedFiles: 'File elaborati',
   downloadAll: 'Scarica tutto (.zip)',
-  pending: 'In attesa': 'Riferimenti Bibliografici',
+  pending: 'In attesa',
+  bibliographyTitle: 'Riferimenti Bibliografici',
   faqTitle: 'Domande Frequenti',
 };
 
@@ -100,8 +101,8 @@ const seo: PngAIcoLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Velocità istantanea — latenza di rete zero',
-          'Privacy completa — 0 byte inviati esternamente',
+          'Velocità istantanea - latenza di rete zero',
+          'Privacy completa - 0 byte inviati esternamente',
           'Nessun limite di MB o restrizioni sul numero di file',
           'Interfaccia pulita, senza pubblicità o tracciamento',
         ],
@@ -149,7 +150,7 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Il PNG con trasparenza è senza dubbio il miglior punto di partenza per la creazione di icone ICO di qualità professionale. Con questo strumento, la conversione è istantanea, i canali alfa sono pienamente preservati und il file risultante è un vero ICO con la corretta struttura binaria. Nessun caricamento del logo su server esterni, niente filigrane, niente limiti — e trasparenza perfetta in tutte le dimensioni.',
+    html: 'Il PNG con trasparenza è senza dubbio il miglior punto di partenza per la creazione di icone ICO di qualità professionale. Con questo strumento, la conversione è istantanea, i canali alfa sono pienamente preservati und il file risultante è un vero ICO con la corretta struttura binaria. Nessun caricamento del logo su server esterni, niente filigrane, niente limiti - e trasparenza perfetta in tutte le dimensioni.',
   },
 ];
 

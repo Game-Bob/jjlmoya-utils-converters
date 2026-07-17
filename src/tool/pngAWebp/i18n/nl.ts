@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Bestanden selecteren',
   processedFiles: 'Verwerkte bestanden',
   downloadAll: 'Alles downloaden (.zip)',
-  pending: 'In afwachting': 'Bibliografische Referenties',
+  pending: 'In afwachting',
+  bibliographyTitle: 'Bibliografische Referenties',
   faqTitle: 'Veelgestelde Vragen',
 };
 
@@ -59,7 +60,7 @@ const seo: PngAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>PNG</strong> is decennialang het referentieformaat geweest voor webafbeeldingen met transparantie — logo\'s, pictogrammen, UI-elementen, productafbeeldingen op uitgesneden achtergronden. Het probleem is de bestandsgrootte: de verliesvrije compressie die kwaliteit garandeert, genereert ook merkbaar grote bestanden. Google\'s <strong>WebP</strong> lost deze tegenstrijdigheid op: het ondersteunt het alfakanaal (transparantie) <em>en</em> comprimeert veel beter dan PNG, waardoor de overstap van PNG naar WebP op je website een perfecte optimalisatie is die niets opoffert.',
+    html: '<strong>PNG</strong> is decennialang het referentieformaat geweest voor webafbeeldingen met transparantie - logo\'s, pictogrammen, UI-elementen, productafbeeldingen op uitgesneden achtergronden. Het probleem is de bestandsgrootte: de verliesvrije compressie die kwaliteit garandeert, genereert ook merkbaar grote bestanden. Google\'s <strong>WebP</strong> lost deze tegenstrijdigheid op: het ondersteunt het alfakanaal (transparantie) <em>en</em> comprimeert veel beter dan PNG, waardoor de overstap van PNG naar WebP op je website een perfecte optimalisatie is die niets opoffert.',
   },
   {
     type: 'title',
@@ -68,7 +69,7 @@ const seo: PngAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>PNG</strong> blijft het juiste formaat wanneer compatibiliteit cruciaal is: ontwerptools zoals Photoshop of Figma, printworkflows, verouderde desktopapplicaties of elke context waarin WebP-ondersteuning niet gegarandeerd is. Het is ook het ideale formaat voor het opslaan van werklagen in bewerkingspipelines, aangezien de verliesvrije compressie elke pixel behoudt. De kosten: bestanden die 3–8 keer meer kunnen wegen dan hun WebP-equivalent.',
+    html: '<strong>PNG</strong> blijft het juiste formaat wanneer compatibiliteit cruciaal is: ontwerptools zoals Photoshop of Figma, printworkflows, verouderde desktopapplicaties of elke context waarin WebP-ondersteuning niet gegarandeerd is. Het is ook het ideale formaat voor het opslaan van werklagen in bewerkingspipelines, aangezien de verliesvrije compressie elke pixel behoudt. De kosten: bestanden die 3-8 keer meer kunnen wegen dan hun WebP-equivalent.',
   },
   {
     type: 'paragraph',
@@ -100,8 +101,8 @@ const seo: PngAWebpLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Onmiddellijke snelheid — geen netwerklatentie',
-          'Volledige privacy — 0 bytes extern verzonden',
+          'Onmiddellijke snelheid - geen netwerklatentie',
+          'Volledige privacy - 0 bytes extern verzonden',
           'Geen MB-limieten of beperkingen op aantal bestanden',
           'Schone interface, geen advertenties of tracking',
         ],
@@ -115,7 +116,7 @@ const seo: PngAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'De PNG wordt lokaal geladen en gedecodeerd in een in-memory <strong>HTML5 Canvas</strong>. De Canvas API behoudt het alfakanaal van de originele PNG — alle transparante en semi-transparante pixels blijven intact in de RGBA-pixelbuffer. Het canvas wordt vervolgens geëxporteerd door <code>toDataURL(\'image/webp\')</code> aan te roepen, wat de WebP-codec van de browser (gebaseerd op Google\'s libwebp) toepast om een compacter bestand te genereren zonder de transparantiegegevens te wijzigen.',
+    html: 'De PNG wordt lokaal geladen en gedecodeerd in een in-memory <strong>HTML5 Canvas</strong>. De Canvas API behoudt het alfakanaal van de originele PNG - alle transparante en semi-transparante pixels blijven intact in de RGBA-pixelbuffer. Het canvas wordt vervolgens geëxporteerd door <code>toDataURL(\'image/webp\')</code> aan te roepen, wat de WebP-codec van de browser (gebaseerd op Google\'s libwebp) toepast om een compacter bestand te genereren zonder de transparantiegegevens te wijzigen.',
   },
   {
     type: 'paragraph',
@@ -149,7 +150,7 @@ const seo: PngAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'De overstap van PNG naar WebP is de meest complete webafbeeldingsoptimalisatie die beschikbaar is: je krijgt lichtere bestanden, behoudt transparantie en verbetert Core Web Vitals-metrieken zonder iets aan je visuele ontwerp te veranderen. Deze tool doet het onmiddellijk, gratis en volledig privé — je afbeeldingen worden verwerkt in je browser en gaan nooit naar een externe server.',
+    html: 'De overstap van PNG naar WebP is de meest complete webafbeeldingsoptimalisatie die beschikbaar is: je krijgt lichtere bestanden, behoudt transparantie en verbetert Core Web Vitals-metrieken zonder iets aan je visuele ontwerp te veranderen. Deze tool doet het onmiddellijk, gratis en volledig privé - je afbeeldingen worden verwerkt in je browser en gaan nooit naar een externe server.',
   },
 ];
 

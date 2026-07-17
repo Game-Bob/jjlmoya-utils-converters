@@ -18,7 +18,8 @@ const ui: ImageToBase64UI = {
   dataUriPlaceholder: 'Ladda upp en bild för att se Data URI-koden...',
   base64Placeholder: 'Ladda upp en bild för att se den rena Base64-koden...',
   toastMessage: 'Koden kopierad till urklipp!',
-  invalidImageAlert: 'Vänligen ladda upp en giltig bildfil.': 'Bibliografiska Referenser',
+  invalidImageAlert: 'Vänligen ladda upp en giltig bildfil.',
+  bibliographyTitle: 'Bibliografiska Referenser',
   faqTitle: 'Vanliga Frågor',
 };
 
@@ -68,7 +69,7 @@ const seo: ImagenBase64LocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Base64 är en kodningsteknik som transformerar binära data — som en bild — till en ren ASCII-textsträng. Resultatet är en Data URI: en självständig URL som börjar med <code>data:image/png;base64,...</code> och innehåller hela den kodade bilden. Genom att bädda in denna kod direkt i din HTML, CSS eller JSON, laddas bilden utan något extra HTTP-anrop till servern — noll nätverkslatens, omedelbar laddning.',
+    html: 'Base64 är en kodningsteknik som transformerar binära data - som en bild - till en ren ASCII-textsträng. Resultatet är en Data URI: en självständig URL som börjar med <code>data:image/png;base64,...</code> och innehåller hela den kodade bilden. Genom att bädda in denna kod direkt i din HTML, CSS eller JSON, laddas bilden utan något extra HTTP-anrop till servern - noll nätverkslatens, omedelbar laddning.',
   },
   {
     type: 'title',
@@ -77,7 +78,7 @@ const seo: ImagenBase64LocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Huvudargumentet för Base64 är elimineringen av nätverksanrop. Varje bild på en webbsida innebär ett HTTP-anrop med dess overhead för anslutning, DNS, TLS-handskakning och latens. För mycket små kritiska bilder — applikationens huvudlogotyp, favicon, en UI-ikon — eliminerar inbäddning i Base64 i CSS eller HTML den kostnaden och garanterar att de visas omedelbart även innan webbläsaren har hunnit cacha något.',
+    html: 'Huvudargumentet för Base64 är elimineringen av nätverksanrop. Varje bild på en webbsida innebär ett HTTP-anrop med dess overhead för anslutning, DNS, TLS-handskakning och latens. För mycket små kritiska bilder - applikationens huvudlogotyp, favicon, en UI-ikon - eliminerar inbäddning i Base64 i CSS eller HTML den kostnaden och garanterar att de visas omedelbart även innan webbläsaren har hunnit cacha något.',
   },
   {
     type: 'paragraph',
@@ -106,12 +107,12 @@ const seo: ImagenBase64LocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'När du väljer eller drar en bild på plats, läser webbläsarens <code>FileReader</code>-API den direkt från disken som binära data i RAM-minnet. Metoden <code>readAsDataURL()</code> konverterar de binära byten till deras Base64-representation med RFC 4648-algoritmen — var 3:e byte av originaldata representeras som 4 ASCII-tecken från Base64-alfabetet. Resultatet inkluderar den automatiskt detekterade korrekta MIME-typen.',
+    html: 'När du väljer eller drar en bild på plats, läser webbläsarens <code>FileReader</code>-API den direkt från disken som binära data i RAM-minnet. Metoden <code>readAsDataURL()</code> konverterar de binära byten till deras Base64-representation med RFC 4648-algoritmen - var 3:e byte av originaldata representeras som 4 ASCII-tecken från Base64-alfabetet. Resultatet inkluderar den automatiskt detekterade korrekta MIME-typen.',
   },
   {
     type: 'tip',
     title: 'Använd det endast för små bilder (under 10 KB)',
-    html: 'Base64 ökar filstorleken med cirka 33%: en bild på 10 KB blir ~13,3 KB text. För små ikoner och logotyper är denna kostnad minimal och elimineringen av HTTP-anropet kompenserar för det. För fotografier eller stora bilder är storleksökningen betydande — använd alltid ett CDN för stora bilder.',
+    html: 'Base64 ökar filstorleken med cirka 33%: en bild på 10 KB blir ~13,3 KB text. För små ikoner och logotyper är denna kostnad minimal och elimineringen av HTTP-anropet kompenserar för det. För fotografier eller stora bilder är storleksökningen betydande - använd alltid ett CDN för stora bilder.',
   },
   {
     type: 'title',
@@ -120,7 +121,7 @@ const seo: ImagenBase64LocaleContent['seo'] = [
   },
   {
     type: 'tip',
-    title: 'Undvik Base64 för stora bilder — använd ett CDN istället',
+    title: 'Undvik Base64 för stora bilder: använd ett CDN istället',
     html: 'Om du har bilder som är större än 10-20 KB, skadar Base64 prestandan: det blåser upp HTML/CSS-storleken, förhindrar att webbläsaren kan cacha bilden oberoende och blockerar renderingen medan tolken bearbetar den gigantiska strängen. För stora bilder, leverera alltid från ett CDN med lämpliga cache-headers.',
   },
   {
@@ -130,7 +131,7 @@ const seo: ImagenBase64LocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Data URI:er är kompatibla med 100% av moderna webbläsare och de flesta e-postklienter. Vårt verktyg bearbetar allt lokalt via FileReader-API:et — dina bilder lämnar aldrig din enhet. Detta gör det lämpligt för företagsbilder, privata skärmdumpar eller annat konfidentiellt visuellt innehåll som du behöver konvertera till Base64.',
+    html: 'Data URI:er är kompatibla med 100% av moderna webbläsare och de flesta e-postklienter. Vårt verktyg bearbetar allt lokalt via FileReader-API:et - dina bilder lämnar aldrig din enhet. Detta gör det lämpligt för företagsbilder, privata skärmdumpar eller annat konfidentiellt visuellt innehåll som du behöver konvertera till Base64.',
   },
   {
     type: 'title',

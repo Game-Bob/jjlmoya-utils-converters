@@ -1,6 +1,6 @@
 import type { BibliographyEntry } from '../../types';
 
-export const bibliography: BibliographyEntry[] = ['bibliography'] = [
+export const bibliography: BibliographyEntry[] = [
   {
     name: 'The W3C PNG Graphics',
     url: 'https://www.w3.org/Graphics/PNG/',

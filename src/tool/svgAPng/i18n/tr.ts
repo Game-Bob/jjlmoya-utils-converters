@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Dosyaları seçin',
   processedFiles: 'İşlenmiş dosyalar',
   downloadAll: 'Tümünü İndir (.zip)',
-  pending: 'Bekliyor': 'Bibliyografik Referanslar',
+  pending: 'Bekliyor',
+  bibliographyTitle: 'Bibliyografik Referanslar',
   faqTitle: 'Sıkça Sorulan Sorular',
 };
 
@@ -119,12 +120,12 @@ const seo: SvgAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'JPG\'ye dönüştürmenin aksine, PNG\'ye dışa aktarırken tuval tam alfa kanalını korur: Orijinal SVG\'deki şeffaf alanlar, sonuçta elde edilen PNG\'de tamamen şeffaf pikseller haline gelir — beyaz arka plan dolgusu olmaz. Dışa aktarma işlemi, kayıpsız sıkıştırma ile <code>toDataURL(\'image/png\')</code> yöntemini kullanır.',
+    html: 'JPG\'ye dönüştürmenin aksine, PNG\'ye dışa aktarırken tuval tam alfa kanalını korur: Orijinal SVG\'deki şeffaf alanlar, sonuçta elde edilen PNG\'de tamamen şeffaf pikseller haline gelir - beyaz arka plan dolgusu olmaz. Dışa aktarma işlemi, kayıpsız sıkıştırma ile <code>toDataURL(\'image/png\')</code> yöntemini kullanır.',
   },
   {
     type: 'tip',
     title: 'Rasterleştirmeden önce ipucu',
-    html: 'PNG dışa aktarma boyutunuzu dikkatli seçin — bir SVG\'yi rasterleştirmek tek yönlü bir işlemdir: vektörleri sonuçta elde edilen PNG\'den geri kazanamazsınız. Her zaman orijinal SVG\'yi ana kaynak olarak tutun ve ihtiyaç duyabileceğiniz en yüksek çözünürlükte PNG\'ler oluşturun.',
+    html: 'PNG dışa aktarma boyutunuzu dikkatli seçin - bir SVG\'yi rasterleştirmek tek yönlü bir işlemdir: vektörleri sonuçta elde edilen PNG\'den geri kazanamazsınız. Her zaman orijinal SVG\'yi ana kaynak olarak tutun ve ihtiyaç duyabileceğiniz en yüksek çözünürlükte PNG\'ler oluşturun.',
   },
   {
     type: 'title',

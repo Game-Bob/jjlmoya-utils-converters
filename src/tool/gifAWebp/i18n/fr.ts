@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Sélectionner des fichiers',
   processedFiles: 'Fichiers traités',
   downloadAll: 'Tout télécharger (.zip)',
-  pending: 'En attente': 'Références Bibliographiques',
+  pending: 'En attente',
+  bibliographyTitle: 'Références Bibliographiques',
   faqTitle: 'Questions Fréquentes',
 };
 
@@ -54,29 +55,29 @@ const howTo: GifAWebpLocaleContent['howTo'] = [
 const seo: GifAWebpLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Convertisseur GIF vers WebP : Le Remplacement Moderne des Animations Lourdes',
+    text: 'Convertisseur GIF vers WebP: Le Remplacement Moderne des Animations Lourdes',
     level: 2,
   },
   {
     type: 'paragraph',
-    html: 'Les GIF animés sont les dinosaures du contenu web moderne : ils consomment une bande passante disproportionnée, dégradent le PageSpeed de toute page et sont responsables d\'un pourcentage significatif du poids total sur des milliers de sites web. Un GIF animé typique de 5 Mo peut devenir une animation WebP de moins de 1 Mo avec la même qualité visuelle. WebP est le successeur moderne que Google a spécifiquement conçu pour remplacer le GIF sur le web.',
+    html: 'Les GIF animés sont les dinosaures du contenu web moderne: ils consomment une bande passante disproportionnée, dégradent le PageSpeed de toute page et sont responsables d\'un pourcentage significatif du poids total sur des milliers de sites web. Un GIF animé typique de 5 Mo peut devenir une animation WebP de moins de 1 Mo avec la même qualité visuelle. WebP est le successeur moderne que Google a spécifiquement conçu pour remplacer le GIF sur le web.',
   },
   {
     type: 'title',
-    text: 'GIF vs WebP : l\'écart entre le passé et le présent du web',
+    text: 'GIF vs WebP: l\'écart entre le passé et le présent du web',
     level: 3,
   },
   {
     type: 'paragraph',
-    html: 'Le GIF est un format de 1987 qui n\'a pas été conçu à l\'origine pour les animations — cette fonctionnalité est arrivée comme un hack ultérieur. Sa palette de 256 couleurs, sa compression inefficace et son incapacité à gérer l\'audio en font un format obsolète. WebP, développé par Google en 2010, offre une compression supérieure avec et sans perte, un support d\'animation natif et un canal alpha complet.',
+    html: 'Le GIF est un format de 1987 qui n\'a pas été conçu à l\'origine pour les animations - cette fonctionnalité est arrivée comme un hack ultérieur. Sa palette de 256 couleurs, sa compression inefficace et son incapacité à gérer l\'audio en font un format obsolète. WebP, développé par Google en 2010, offre une compression supérieure avec et sans perte, un support d\'animation natif et un canal alpha complet.',
   },
   {
     type: 'paragraph',
-    html: 'Pour un développeur web, remplacer les GIF par des WebP sur les pages peut représenter une amélioration de 10 à 30 points dans le score PageSpeed de Google. Moins de poids de page signifie de meilleurs Core Web Vitals, un meilleur référencement SEO et des coûts de bande passante réduits sur les serveurs. Ce n\'est pas seulement une amélioration esthétique — c\'est une décision d\'architecture technique.',
+    html: 'Pour un développeur web, remplacer les GIF par des WebP sur les pages peut représenter une amélioration de 10 à 30 points dans le score PageSpeed de Google. Moins de poids de page signifie de meilleurs Core Web Vitals, un meilleur référencement SEO et des coûts de bande passante réduits sur les serveurs. Ce n\'est pas seulement une amélioration esthétique - c\'est une décision d\'architecture technique.',
   },
   {
     type: 'title',
-    text: 'Comparaison d\'Architecture : Local vs Cloud',
+    text: 'Comparaison d\'Architecture: Local vs Cloud',
     level: 3,
   },
   {
@@ -102,8 +103,8 @@ const seo: GifAWebpLocaleContent['seo'] = [
         points: [
           'Le GIF ne quitte jamais votre appareil',
           'Conversion instantanée sans attente réseau',
-          'Aucune limite de taille : traitez des GIF de tout poids',
-          'Confidentialité totale : 0 octet envoyé à l\'extérieur',
+          'Aucune limite de taille: traitez des GIF de tout poids',
+          'Confidentialité totale: 0 octet envoyé à l\'extérieur',
         ],
       },
     ],
@@ -144,12 +145,12 @@ const seo: GifAWebpLocaleContent['seo'] = [
   },
   {
     type: 'title',
-    text: 'Conclusion : migrez vos GIF vers le XXIe siècle',
+    text: 'Conclusion: migrez vos GIF vers le XXIe siècle',
     level: 3,
   },
   {
     type: 'paragraph',
-    html: 'Chaque GIF sur votre site web est une opportunité d\'optimisation manquée. Notre outil convertit les GIF en WebP instantanément, en toute confidentialité et sans limites, directement dans votre navigateur. Le résultat : des fichiers jusqu\'à 5 fois plus petits, une transparence parfaite et une compatibilité avec tous les navigateurs modernes.',
+    html: 'Chaque GIF sur votre site web est une opportunité d\'optimisation manquée. Notre outil convertit les GIF en WebP instantanément, en toute confidentialité et sans limites, directement dans votre navigateur. Le résultat: des fichiers jusqu\'à 5 fois plus petits, une transparence parfaite et une compatibilité avec tous les navigateurs modernes.',
   },
 ];
 

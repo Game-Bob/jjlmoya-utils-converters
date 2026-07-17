@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Pilih file',
   processedFiles: 'File yang diproses',
   downloadAll: 'Unduh Semua (.zip)',
-  pending: 'Menunggu': 'Referensi Bibliografi',
+  pending: 'Menunggu',
+  bibliographyTitle: 'Referensi Bibliografi',
   faqTitle: 'Pertanyaan yang Sering Diajukan',
 };
 
@@ -119,12 +120,12 @@ const seo: SvgAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Berbeda dengan konversi ke JPG, saat mengekspor ke PNG, kanvas mempertahankan saluran alfa penuh: area transparan dalam SVG asli menjadi piksel transparan sepenuhnya dalam PNG yang dihasilkan — tanpa pengisian latar belakang putih. Ekspor menggunakan metode <code>toDataURL(\'image/png\')</code> dengan kompresi lossless.',
+    html: 'Berbeda dengan konversi ke JPG, saat mengekspor ke PNG, kanvas mempertahankan saluran alfa penuh: area transparan dalam SVG asli menjadi piksel transparan sepenuhnya dalam PNG yang dihasilkan - tanpa pengisian latar belakang putih. Ekspor menggunakan metode <code>toDataURL(\'image/png\')</code> dengan kompresi lossless.',
   },
   {
     type: 'tip',
     title: 'Tip sebelum merasterisasi',
-    html: 'Pilih ukuran ekspor PNG Anda dengan hati-hati — merasterisasi SVG adalah proses satu arah: Anda tidak dapat memulihkan vektor dari PNG yang dihasilkan. Selalu simpan SVG asli sebagai sumber master, dan hasilkan PNG pada resolusi tertinggi yang mungkin Anda butuhkan.',
+    html: 'Pilih ukuran ekspor PNG Anda dengan hati-hati - merasterisasi SVG adalah proses satu arah: Anda tidak dapat memulihkan vektor dari PNG yang dihasilkan. Selalu simpan SVG asli sebagai sumber master, dan hasilkan PNG pada resolusi tertinggi yang mungkin Anda butuhkan.',
   },
   {
     type: 'title',

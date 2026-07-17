@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Välj filer',
   processedFiles: 'Bearbetade filer',
   downloadAll: 'Ladda ner alla (.zip)',
-  pending: 'Väntande': 'Bibliografiska Referenser',
+  pending: 'Väntande',
+  bibliographyTitle: 'Bibliografiska Referenser',
   faqTitle: 'Vanliga Frågor',
 };
 
@@ -68,7 +69,7 @@ const seo: BmpAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Den grundläggande skillnaden mellan BMP och PNG ligger inte i bildkvaliteten — båda är förlustfria — utan i lagringseffektiviteten. BMP lagrar pixlar rått: utan komprimering, utan optimering, utan hänsyn till utrymme. PNG analyserar återkommande pixelmönster och kodar dem kompakt genom Deflate, samma algoritm som ZIP använder.',
+    html: 'Den grundläggande skillnaden mellan BMP och PNG ligger inte i bildkvaliteten - båda är förlustfria - utan i lagringseffektiviteten. BMP lagrar pixlar rått: utan komprimering, utan optimering, utan hänsyn till utrymme. PNG analyserar återkommande pixelmönster och kodar dem kompakt genom Deflate, samma algoritm som ZIP använder.',
   },
   {
     type: 'paragraph',

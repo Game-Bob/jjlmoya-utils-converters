@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Seleziona file',
   processedFiles: 'File elaborati',
   downloadAll: 'Scarica tutto (.zip)',
-  pending: 'In attesa': 'Riferimenti Bibliografici',
+  pending: 'In attesa',
+  bibliographyTitle: 'Riferimenti Bibliografici',
   faqTitle: 'Domande Frequenti',
 };
 
@@ -124,7 +125,7 @@ const seo: WebpAJpgLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'Suggerimento per la compatibilità',
-    html: 'Quando condividi foto con utenti non tecnici o le invii via e-mail, usa sempre il JPG — zero problemi di compatibilità su qualsiasi client di posta, sistema operativo o dispositivo, nessuna eccezione e nessuna spiacevole sorpresa.',
+    html: 'Quando condividi foto con utenti non tecnici o le invii via e-mail, usa sempre il JPG - zero problemi di compatibilità su qualsiasi client di posta, sistema operativo o dispositivo, nessuna eccezione e nessuna spiacevole sorpresa.',
   },
   {
     type: 'title',

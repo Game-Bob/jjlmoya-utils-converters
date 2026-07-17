@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Select files',
   processedFiles: 'Processed files',
   downloadAll: 'Download All (.zip)',
-  pending: 'Pending': 'Bibliographic References',
+  pending: 'Pending',
+  bibliographyTitle: 'Bibliographic References',
   faqTitle: 'Frequently Asked Questions',
 };
 
@@ -59,7 +60,7 @@ const seo: JpgAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>JPG</strong> is unbeatable for camera photographs, but it has a critical weakness: every time you save the file, it applies its lossy compression again, progressively degrading edges and gradients. <strong>PNG</strong> uses lossless compression — once saved, pixels are immutable. Converting a JPG to PNG is the essential step when you need to prepare an image for intensive editing, add a transparent background, or integrate it into a design workflow that requires multiple saves.',
+    html: '<strong>JPG</strong> is unbeatable for camera photographs, but it has a critical weakness: every time you save the file, it applies its lossy compression again, progressively degrading edges and gradients. <strong>PNG</strong> uses lossless compression - once saved, pixels are immutable. Converting a JPG to PNG is the essential step when you need to prepare an image for intensive editing, add a transparent background, or integrate it into a design workflow that requires multiple saves.',
   },
   {
     type: 'title',
@@ -72,7 +73,7 @@ const seo: JpgAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>PNG</strong> is the right choice for corporate logos, screenshots with sharp text, interface elements, product images with white backgrounds that you will later need to cut out, or any graphic asset that will be edited more than once. Lossless compression guarantees that text edges remain perfectly defined and flat colors stay pure — no JPEG noise.',
+    html: '<strong>PNG</strong> is the right choice for corporate logos, screenshots with sharp text, interface elements, product images with white backgrounds that you will later need to cut out, or any graphic asset that will be edited more than once. Lossless compression guarantees that text edges remain perfectly defined and flat colors stay pure - no JPEG noise.',
   },
   {
     type: 'title',
@@ -100,8 +101,8 @@ const seo: JpgAPngLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Instant speed — zero network latency',
-          'Complete privacy — 0 bytes sent externally',
+          'Instant speed - zero network latency',
+          'Complete privacy - 0 bytes sent externally',
           'No MB limits or file count restrictions',
           'Clean interface, no ads or tracking',
         ],
@@ -115,16 +116,16 @@ const seo: JpgAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'The process is entirely local: the browser creates a <strong>Blob</strong> from the selected JPG and draws it onto an in-memory <strong>HTML5 Canvas</strong>. Once rendered, it calls <code>toDataURL(\'image/png\')</code> — the browser\'s built-in PNG codec re-encodes every pixel without applying any new lossy compression. The result is a PNG that faithfully preserves the current state of the JPG: neither better nor worse, simply frozen.',
+    html: 'The process is entirely local: the browser creates a <strong>Blob</strong> from the selected JPG and draws it onto an in-memory <strong>HTML5 Canvas</strong>. Once rendered, it calls <code>toDataURL(\'image/png\')</code> - the browser\'s built-in PNG codec re-encodes every pixel without applying any new lossy compression. The result is a PNG that faithfully preserves the current state of the JPG: neither better nor worse, simply frozen.',
   },
   {
     type: 'paragraph',
-    html: 'The resulting PNG uses lossless DEFLATE compression, the same used by professional tools like Photoshop or GIMP. Its size will be larger than the original JPG — typically 2 to 5 times — because it stores all pixels without discarding any information. This is the price paid for fidelity and infinite editability.',
+    html: 'The resulting PNG uses lossless DEFLATE compression, the same used by professional tools like Photoshop or GIMP. Its size will be larger than the original JPG - typically 2 to 5 times - because it stores all pixels without discarding any information. This is the price paid for fidelity and infinite editability.',
   },
   {
     type: 'tip',
     title: 'Important: PNG does not recover JPEG quality',
-    html: 'Converting a JPG to PNG <strong>does not recover quality lost</strong> during the original JPEG compression. If your JPG already had block artifacts or color noise, the PNG will preserve them intact — it simply prevents more from being added. Think of the conversion as "freezing" the current state of the image so that future edits do not degrade it further.',
+    html: 'Converting a JPG to PNG <strong>does not recover quality lost</strong> during the original JPEG compression. If your JPG already had block artifacts or color noise, the PNG will preserve them intact - it simply prevents more from being added. Think of the conversion as "freezing" the current state of the image so that future edits do not degrade it further.',
   },
   {
     type: 'title',
@@ -149,7 +150,7 @@ const seo: JpgAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Converting JPG to PNG is the first step in any serious design workflow. It does not transform the original quality, but it protects every pixel from future edits. With this tool, the process happens instantly and completely privately — your corporate or personal images never leave your device at any point.',
+    html: 'Converting JPG to PNG is the first step in any serious design workflow. It does not transform the original quality, but it protects every pixel from future edits. With this tool, the process happens instantly and completely privately - your corporate or personal images never leave your device at any point.',
   },
 ];
 

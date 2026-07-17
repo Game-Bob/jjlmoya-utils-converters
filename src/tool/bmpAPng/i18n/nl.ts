@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Bestanden selecteren',
   processedFiles: 'Verwerkte bestanden',
   downloadAll: 'Alles downloaden (.zip)',
-  pending: 'In afwachting': 'Bibliografische Referenties',
+  pending: 'In afwachting',
+  bibliographyTitle: 'Bibliografische Referenties',
   faqTitle: 'Veelgestelde Vragen',
 };
 
@@ -68,7 +69,7 @@ const seo: BmpAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Het fundamentele verschil tussen BMP en PNG zit niet in de beeldkwaliteit — beide zijn lossless — maar in de opslagefficiëntie. BMP slaat pixels ruw op: zonder compressie, zonder optimalisatie, zonder rekening te houden met de ruimte. PNG analyseert herhalende pixelpatronen en codeert ze compact via Deflate, hetzelfde algoritme dat ZIP gebruikt.',
+    html: 'Het fundamentele verschil tussen BMP en PNG zit niet in de beeldkwaliteit - beide zijn lossless - maar in de opslagefficiëntie. BMP slaat pixels ruw op: zonder compressie, zonder optimalisatie, zonder rekening te houden met de ruimte. PNG analyseert herhalende pixelpatronen en codeert ze compact via Deflate, hetzelfde algoritme dat ZIP gebruikt.',
   },
   {
     type: 'paragraph',

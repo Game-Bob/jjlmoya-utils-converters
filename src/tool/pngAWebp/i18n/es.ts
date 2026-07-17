@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Seleccionar archivos',
   processedFiles: 'Archivos procesados',
   downloadAll: 'Descargar Todo (.zip)',
-  pending: 'Pendiente': 'Referencias Bibliográficas',
+  pending: 'Pendiente',
+  bibliographyTitle: 'Referencias Bibliográficas',
   faqTitle: 'Preguntas Frecuentes',
 };
 
@@ -59,7 +60,7 @@ const seo: PngAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'El <strong>PNG</strong> ha sido el formato de referencia para imágenes web con transparencia durante décadas — logos, iconos, elementos de UI, imágenes de producto sobre fondo recortado. Su problema es el peso: la compresión sin pérdida que garantiza su calidad también genera archivos notablemente grandes. El <strong>WebP</strong> de Google resuelve esta contradicción: soporta canal alfa (transparencias) <em>y</em> comprime mucho mejor que PNG, haciendo que cambiar PNG por WebP en tu web sea la optimización perfecta que no sacrifica nada.',
+    html: 'El <strong>PNG</strong> ha sido el formato de referencia para imágenes web con transparencia durante décadas - logos, iconos, elementos de UI, imágenes de producto sobre fondo recortado. Su problema es el peso: la compresión sin pérdida que garantiza su calidad también genera archivos notablemente grandes. El <strong>WebP</strong> de Google resuelve esta contradicción: soporta canal alfa (transparencias) <em>y</em> comprime mucho mejor que PNG, haciendo que cambiar PNG por WebP en tu web sea la optimización perfecta que no sacrifica nada.',
   },
   {
     type: 'title',
@@ -100,8 +101,8 @@ const seo: PngAWebpLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Velocidad instantánea — cero latencia de red',
-          'Privacidad total — 0 bytes enviados al exterior',
+          'Velocidad instantánea - cero latencia de red',
+          'Privacidad total - 0 bytes enviados al exterior',
           'Sin límites de MB ni de número de archivos',
           'Interfaz limpia, sin anuncios ni rastreos',
         ],
@@ -115,7 +116,7 @@ const seo: PngAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'El PNG se carga localmente y se decodifica en un <strong>Canvas HTML5</strong> en memoria. El Canvas API preserva el canal alfa del PNG original — todos los píxeles transparentes y semitransparentes se mantienen intactos en el buffer de píxeles RGBA. A continuación se exporta llamando a <code>toDataURL(\'image/webp\')</code>, que aplica el codec WebP del navegador (basado en libwebp de Google) para generar un archivo más compacto sin alterar la información de transparencia.',
+    html: 'El PNG se carga localmente y se decodifica en un <strong>Canvas HTML5</strong> en memoria. El Canvas API preserva el canal alfa del PNG original - todos los píxeles transparentes y semitransparentes se mantienen intactos en el buffer de píxeles RGBA. A continuación se exporta llamando a <code>toDataURL(\'image/webp\')</code>, que aplica el codec WebP del navegador (basado en libwebp de Google) para generar un archivo más compacto sin alterar la información de transparencia.',
   },
   {
     type: 'paragraph',
@@ -149,7 +150,7 @@ const seo: PngAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'El paso de PNG a WebP es la optimización de imágenes web más completa disponible: consigues archivos más ligeros, preservas las transparencias y mejoras las métricas Core Web Vitals sin cambiar nada del diseño visual. Esta herramienta lo hace de forma instantánea, gratuita y completamente privada — tus imágenes se procesan en tu navegador y no viajan a ningún servidor externo.',
+    html: 'El paso de PNG a WebP es la optimización de imágenes web más completa disponible: consigues archivos más ligeros, preservas las transparencias y mejoras las métricas Core Web Vitals sin cambiar nada del diseño visual. Esta herramienta lo hace de forma instantánea, gratuita y completamente privada - tus imágenes se procesan en tu navegador y no viajan a ningún servidor externo.',
   },
 ];
 

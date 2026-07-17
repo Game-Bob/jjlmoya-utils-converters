@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Pilih file',
   processedFiles: 'File yang diproses',
   downloadAll: 'Unduh Semua (.zip)',
-  pending: 'Menunggu': 'Referensi Bibliografi',
+  pending: 'Menunggu',
+  bibliographyTitle: 'Referensi Bibliografi',
   faqTitle: 'Pertanyaan yang Sering Diajukan',
 };
 
@@ -124,7 +125,7 @@ const seo: WebpAPngLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'Tip untuk editor',
-    html: 'Gunakan PNG saat Anda perlu terus mengedit gambar. Kompresi lossless menjamin tidak ada penurunan kualitas akibat penyimpanan berulang kali — sangat penting saat bekerja dengan lapisan, masker, atau penyesuaian warna di Photoshop atau Figma.',
+    html: 'Gunakan PNG saat Anda perlu terus mengedit gambar. Kompresi lossless menjamin tidak ada penurunan kualitas akibat penyimpanan berulang kali - sangat penting saat bekerja dengan lapisan, masker, atau penyesuaian warna di Photoshop atau Figma.',
   },
   {
     type: 'title',
@@ -149,7 +150,7 @@ const seo: WebpAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Jika WebP adalah format server web, maka PNG adalah format studio desain. Alat ini mengonversi aset WebP Anda menjadi PNG siap produksi, dengan transparansi yang utuh dan kualitas maksimal — semuanya di browser Anda dan tanpa file Anda pernah meninggalkan mesin Anda.',
+    html: 'Jika WebP adalah format server web, maka PNG adalah format studio desain. Alat ini mengonversi aset WebP Anda menjadi PNG siap produksi, dengan transparansi yang utuh dan kualitas maksimal - semuanya di browser Anda dan tanpa file Anda pernah meninggalkan mesin Anda.',
   },
 ];
 

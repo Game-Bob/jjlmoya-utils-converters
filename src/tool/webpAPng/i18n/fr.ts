@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Sélectionner des fichiers',
   processedFiles: 'Fichiers traités',
   downloadAll: 'Tout télécharger (.zip)',
-  pending: 'En attente': 'Références Bibliographiques',
+  pending: 'En attente',
+  bibliographyTitle: 'Références Bibliographiques',
   faqTitle: 'Questions Fréquentes',
 };
 
@@ -54,12 +55,12 @@ const howTo: WebpAPngLocaleContent['howTo'] = [
 const seo: WebpAPngLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Convertisseur WebP vers PNG : Le Choix Professionnel pour l\'Édition et le Design',
+    text: 'Convertisseur WebP vers PNG: Le Choix Professionnel pour l\'Édition et le Design',
     level: 2,
   },
   {
     type: 'paragraph',
-    html: 'Lorsqu\'un designer télécharge une ressource graphique au format <strong>WebP</strong> et tente de l\'ouvrir dans Photoshop, Figma ou Illustrator, le résultat peut être frustrant : le fichier ne se charge pas ou perd en qualité. Le format <strong>PNG</strong> est le standard incontesté de l\'édition professionnelle : compression sans perte, canal alpha complet et compatibilité garantie avec toute la chaîne de production créative.',
+    html: 'Lorsqu\'un designer télécharge une ressource graphique au format <strong>WebP</strong> et tente de l\'ouvrir dans Photoshop, Figma ou Illustrator, le résultat peut être frustrant: le fichier ne se charge pas ou perd en qualité. Le format <strong>PNG</strong> est le standard incontesté de l\'édition professionnelle: compression sans perte, canal alpha complet et compatibilité garantie avec toute la chaîne de production créative.',
   },
   {
     type: 'title',
@@ -68,15 +69,15 @@ const seo: WebpAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'WebP est un format de production web : ses algorithmes de compression sont optimisés pour réduire le poids de transfert, pas pour préserver une fidélité maximale dans les flux d\'édition itératifs. Chaque fois que vous sauvegardez un WebP modifié, le codec applique à nouveau la compression. Pour les projets où un fichier sera modifié de nombreuses fois, cela représente une dégradation cumulative de la qualité.',
+    html: 'WebP est un format de production web: ses algorithmes de compression sont optimisés pour réduire le poids de transfert, pas pour préserver une fidélité maximale dans les flux d\'édition itératifs. Chaque fois que vous sauvegardez un WebP modifié, le codec applique à nouveau la compression. Pour les projets où un fichier sera modifié de nombreuses fois, cela représente une dégradation cumulative de la qualité.',
   },
   {
     type: 'paragraph',
-    html: 'Le PNG utilise une compression <strong>sans perte</strong> : les données de chaque pixel sont préservées intégralement, quel que soit le nombre de fois où vous sauvegardez. C\'est le format choisi par les designers UI/UX, les illustrateurs numériques et les équipes de branding qui ont besoin de maintenir l\'intégrité visuelle sur des dizaines de révisions. Des outils comme Photoshop, Figma, Sketch et Illustrator traitent le PNG comme leur principal format d\'exportation.',
+    html: 'Le PNG utilise une compression <strong>sans perte</strong>: les données de chaque pixel sont préservées intégralement, quel que soit le nombre de fois où vous sauvegardez. C\'est le format choisi par les designers UI/UX, les illustrateurs numériques et les équipes de branding qui ont besoin de maintenir l\'intégrité visuelle sur des dizaines de révisions. Des outils comme Photoshop, Figma, Sketch et Illustrator traitent le PNG comme leur principal format d\'exportation.',
   },
   {
     type: 'title',
-    text: 'Comparatif : Conversion Locale vs Cloud',
+    text: 'Comparatif: Conversion Locale vs Cloud',
     level: 3,
   },
   {
@@ -115,7 +116,7 @@ const seo: WebpAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Les navigateurs modernes peuvent décoder le WebP nativement. Notre outil exploite cette capacité pour charger le fichier dans un élément JavaScript <strong>Image</strong>, puis le dessine sur un canvas HTML5 aux mêmes dimensions que l\'original. Contrairement à la conversion en JPG, aucun remplissage de fond n\'est nécessaire ici : le canvas conserve le canal alpha complet.',
+    html: 'Les navigateurs modernes peuvent décoder le WebP nativement. Notre outil exploite cette capacité pour charger le fichier dans un élément JavaScript <strong>Image</strong>, puis le dessine sur un canvas HTML5 aux mêmes dimensions que l\'original. Contrairement à la conversion en JPG, aucun remplissage de fond n\'est nécessaire ici: le canvas conserve le canal alpha complet.',
   },
   {
     type: 'paragraph',
@@ -124,7 +125,7 @@ const seo: WebpAPngLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'Conseil pour les éditeurs',
-    html: 'Utilisez le PNG lorsque vous devez continuer à éditer l\'image. La compression sans perte garantit qu\'il n\'y aura aucune dégradation de qualité lors des sauvegardes répétées — essentiel quand vous travaillez avec des calques, des masques ou des ajustements de couleur dans Photoshop ou Figma.',
+    html: 'Utilisez le PNG lorsque vous devez continuer à éditer l\'image. La compression sans perte garantit qu\'il n\'y aura aucune dégradation de qualité lors des sauvegardes répétées - essentiel quand vous travaillez avec des calques, des masques ou des ajustements de couleur dans Photoshop ou Figma.',
   },
   {
     type: 'title',
@@ -149,7 +150,7 @@ const seo: WebpAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Si le WebP est le format du serveur web, le PNG est le format du studio de design. Cet outil convertit vos ressources WebP en PNG prêts à la production, avec les transparences intactes et une qualité maximale — le tout dans votre navigateur, sans que vos fichiers ne quittent jamais votre machine.',
+    html: 'Si le WebP est le format du serveur web, le PNG est le format du studio de design. Cet outil convertit vos ressources WebP en PNG prêts à la production, avec les transparences intactes et une qualité maximale - le tout dans votre navigateur, sans que vos fichiers ne quittent jamais votre machine.',
   },
 ];
 

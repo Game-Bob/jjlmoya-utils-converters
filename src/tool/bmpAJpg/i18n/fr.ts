@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Sélectionner des fichiers',
   processedFiles: 'Fichiers traités',
   downloadAll: 'Tout télécharger (.zip)',
-  pending: 'En attente': 'Références Bibliographiques',
+  pending: 'En attente',
+  bibliographyTitle: 'Références Bibliographiques',
   faqTitle: 'Questions Fréquentes',
 };
 
@@ -54,21 +55,21 @@ const howTo: BmpAJpgLocaleContent['howTo'] = [
 const seo: BmpAJpgLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Convertisseur BMP vers JPG : Réduisez un Fichier Géant en Quelques Secondes',
+    text: 'Convertisseur BMP vers JPG: Réduisez un Fichier Géant en Quelques Secondes',
     level: 2,
   },
   {
     type: 'paragraph',
-    html: 'Le BMP (Bitmap) est le format d\'image le plus naïf de l\'informatique : il stocke chaque pixel tel quel, sans aucune compression. Une capture d\'écran 1920x1080 en BMP pèse environ 6 Mo. Cette même image en JPG occupe entre 200 et 400 Ko avec une qualité visuellement indiscernable. La différence est abyssale, et notre outil vous permet d\'effectuer cette conversion en quelques secondes, directement dans votre navigateur, sans envoyer quoi que ce soit à un serveur.',
+    html: 'Le BMP (Bitmap) est le format d\'image le plus naïf de l\'informatique: il stocke chaque pixel tel quel, sans aucune compression. Une capture d\'écran 1920x1080 en BMP pèse environ 6 Mo. Cette même image en JPG occupe entre 200 et 400 Ko avec une qualité visuellement indiscernable. La différence est abyssale, et notre outil vous permet d\'effectuer cette conversion en quelques secondes, directement dans votre navigateur, sans envoyer quoi que ce soit à un serveur.',
   },
   {
     type: 'title',
-    text: 'BMP vs JPG : données brutes contre compression intelligente',
+    text: 'BMP vs JPG: données brutes contre compression intelligente',
     level: 3,
   },
   {
     type: 'paragraph',
-    html: 'Le BMP a été créé par Microsoft à l\'ère de Windows 3.1. Sa philosophie est la plus simple possible : chaque pixel occupe 3 octets (rouge, vert, bleu), et les pixels sont stockés ligne par ligne sans aucun traitement supplémentaire. Cette absence totale de compression rend les fichiers BMP entre 50 et 100 fois plus grands que leur équivalent JPG pour les photographies et captures d\'écran réelles.',
+    html: 'Le BMP a été créé par Microsoft à l\'ère de Windows 3.1. Sa philosophie est la plus simple possible: chaque pixel occupe 3 octets (rouge, vert, bleu), et les pixels sont stockés ligne par ligne sans aucun traitement supplémentaire. Cette absence totale de compression rend les fichiers BMP entre 50 et 100 fois plus grands que leur équivalent JPG pour les photographies et captures d\'écran réelles.',
   },
   {
     type: 'paragraph',
@@ -76,7 +77,7 @@ const seo: BmpAJpgLocaleContent['seo'] = [
   },
   {
     type: 'title',
-    text: 'Comparaison d\'Architecture : Local vs Cloud',
+    text: 'Comparaison d\'Architecture: Local vs Cloud',
     level: 3,
   },
   {
@@ -91,7 +92,7 @@ const seo: BmpAJpgLocaleContent['seo'] = [
           'Envoyer un BMP de 10 Mo prend du temps sur des connexions lentes',
           'Vos captures d\'écran et images confidentielles transitent sur internet',
           'Limites de taille fréquentes dans les plans gratuits',
-          'Double latence : envoi et téléchargement du fichier converti',
+          'Double latence: envoi et téléchargement du fichier converti',
         ],
       },
       {
@@ -103,7 +104,7 @@ const seo: BmpAJpgLocaleContent['seo'] = [
           'Le BMP est traité dans votre RAM, ne voyage vers aucun serveur',
           'Conversion instantanée sans attente',
           'Aucune limite de taille de fichier',
-          'Confidentialité totale : 0 octet envoyé à l\'extérieur',
+          'Confidentialité totale: 0 octet envoyé à l\'extérieur',
         ],
       },
     ],
@@ -144,7 +145,7 @@ const seo: BmpAJpgLocaleContent['seo'] = [
   },
   {
     type: 'title',
-    text: 'Conclusion : 10 Mo de BMP, 500 Ko de JPG, même image',
+    text: 'Conclusion: 10 Mo de BMP, 500 Ko de JPG, même image',
     level: 3,
   },
   {

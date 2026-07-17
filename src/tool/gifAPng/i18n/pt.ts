@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Selecionar ficheiros',
   processedFiles: 'Ficheiros processados',
   downloadAll: 'Descarregar Tudo (.zip)',
-  pending: 'Pendente': 'Referências Bibliográficas',
+  pending: 'Pendente',
+  bibliographyTitle: 'Referências Bibliográficas',
   faqTitle: 'Perguntas Frequentes',
 };
 
@@ -124,7 +125,7 @@ const seo: GifAPngLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'Transparência binária do GIF vs canal alfa do PNG',
-    html: 'O GIF apenas suporta transparência binária (opaco ou transparente). Ao converter para PNG, os píxeis semitransparentes do GIF mantêm-se como o navegador os interpreta. Se o seu GIF tem bordas serrilhadas, o PNG conservá-las-á — mas poderá editá-las com suavização de bordas em qualquer editor, algo impossível com o GIF original.',
+    html: 'O GIF apenas suporta transparência binária (opaco ou transparente). Ao converter para PNG, os píxeis semitransparentes do GIF mantêm-se como o navegador os interpreta. Se o seu GIF tem bordas serrilhadas, o PNG conservá-las-á - mas poderá editá-las com suavização de bordas em qualquer editor, algo impossível com o GIF original.',
   },
   {
     type: 'title',

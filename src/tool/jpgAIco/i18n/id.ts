@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Pilih file',
   processedFiles: 'File yang diproses',
   downloadAll: 'Unduh Semua (.zip)',
-  pending: 'Menunggu': 'Referensi Bibliografi',
+  pending: 'Menunggu',
+  bibliographyTitle: 'Referensi Bibliografi',
   faqTitle: 'Pertanyaan yang Sering Diajukan',
 };
 
@@ -59,7 +60,7 @@ const seo: JpgAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Format <strong>ICO</strong> adalah standar Microsoft untuk ikon aplikasi Windows und favicon situs web. Berbeda dengan sekadar mengganti nama JPG menjadi .ico, file ICO asli memerlukan struktur biner khusus dengan header 22-byte und direktori gambar yang disematkan. <strong>JPG</strong> adalah titik awal yang paling umum untuk membuat ikon-ikon ini — logo perusahaan, foto profil, atau gambar apa pun yang ingin Anda ubah menjadi ikon visual aplikasi atau situs web Anda.',
+    html: 'Format <strong>ICO</strong> adalah standar Microsoft untuk ikon aplikasi Windows und favicon situs web. Berbeda dengan sekadar mengganti nama JPG menjadi .ico, file ICO asli memerlukan struktur biner khusus dengan header 22-byte und direktori gambar yang disematkan. <strong>JPG</strong> adalah titik awal yang paling umum untuk membuat ikon-ikon ini - logo perusahaan, foto profil, atau gambar apa pun yang ingin Anda ubah menjadi ikon visual aplikasi atau situs web Anda.',
   },
   {
     type: 'title',
@@ -68,11 +69,11 @@ const seo: JpgAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>JPG</strong> adalah format sumber, bukan tujuan untuk ikon. Sempurna untuk foto und banner, tetapi tidak kompatibel dengan sistem yang memerlukan ikon: Windows Explorer, bilah bookmark browser, pintasan desktop, atau manifes aplikasi PWA. Sistem operasi atau browser yang mencari ikon mengharapkan format ICO — und jika tidak menemukannya, ia akan menampilkan ikon generik atau kotak rusak.',
+    html: '<strong>JPG</strong> adalah format sumber, bukan tujuan untuk ikon. Sempurna untuk foto und banner, tetapi tidak kompatibel dengan sistem yang memerlukan ikon: Windows Explorer, bilah bookmark browser, pintasan desktop, atau manifes aplikasi PWA. Sistem operasi atau browser yang mencari ikon mengharapkan format ICO - und jika tidak menemukannya, ia akan menampilkan ikon generik atau kotak rusak.',
   },
   {
     type: 'paragraph',
-    html: 'Format <strong>ICO</strong> dirancang untuk menampung beberapa resolusi dalam satu file: <strong>16×16</strong> untuk bilah bookmark, <strong>32×32</strong> untuk pintasan, <strong>48×48</strong> untuk file explorer, und <strong>256×256</strong> untuk layar dengan kepadatan tinggi. Browser und sistem operasi secara otomatis memilih resolusi yang sesuai berdasarkan konteks tampilan — pengguna tidak perlu mengelola apa pun.',
+    html: 'Format <strong>ICO</strong> dirancang untuk menampung beberapa resolusi dalam satu file: <strong>16×16</strong> untuk bilah bookmark, <strong>32×32</strong> untuk pintasan, <strong>48×48</strong> untuk file explorer, und <strong>256×256</strong> untuk layar dengan kepadatan tinggi. Browser und sistem operasi secara otomatis memilih resolusi yang sesuai berdasarkan konteks tampilan - pengguna tidak perlu mengelola apa pun.',
   },
   {
     type: 'title',
@@ -100,8 +101,8 @@ const seo: JpgAIcoLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Kecepatan instan — nol latensi jaringan',
-          'Privasi lengkap — 0 byte dikirim secara eksternal',
+          'Kecepatan instan - nol latensi jaringan',
+          'Privasi lengkap - 0 byte dikirim secara eksternal',
           'Tanpa batas MB atau batasan jumlah file',
           'Antarmuka bersih, tanpa iklan atau pelacakan',
         ],
@@ -115,16 +116,16 @@ const seo: JpgAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'JPG didekodekan und digambar ke dalam <strong>HTML5 Canvas</strong> di memori. Karena format ICO memerlukan gambar persegi, mesin secara otomatis mendeteksi jika JPG berbentuk persegi panjang und memotongnya dengan memusatkan bagian yang paling relevan. Kemudian ia membangun header Microsoft ICO standar dengan magic number yang benar (<code>00 00 01 00</code>), direktori gambar, und data piksel yang dikodekan. Hasilnya adalah file biner .ico asli — bukan PNG yang diganti namanya.',
+    html: 'JPG didekodekan und digambar ke dalam <strong>HTML5 Canvas</strong> di memori. Karena format ICO memerlukan gambar persegi, mesin secara otomatis mendeteksi jika JPG berbentuk persegi panjang und memotongnya dengan memusatkan bagian yang paling relevan. Kemudian ia membangun header Microsoft ICO standar dengan magic number yang benar (<code>00 00 01 00</code>), direktori gambar, und data piksel yang dikodekan. Hasilnya adalah file biner .ico asli - bukan PNG yang diganti namanya.',
   },
   {
     type: 'paragraph',
-    html: 'Karena JPG tidak memiliki saluran alfa, ICO yang dihasilkan juga tidak akan memiliki transparansi — ia akan memiliki latar belakang padat yang diwarisi dari foto asli. Jika Anda memerlukan favicon dengan latar belakang transparan (misalnya, untuk beradaptasi dengan bilah bookmark gelap atau terang), alur kerja yang disarankan adalah: hapus latar belakang di editor, simpan sebagai PNG, und gunakan konverter PNG ke ICO.',
+    html: 'Karena JPG tidak memiliki saluran alfa, ICO yang dihasilkan juga tidak akan memiliki transparansi - ia akan memiliki latar belakang padat yang diwarisi dari foto asli. Jika Anda memerlukan favicon dengan latar belakang transparan (misalnya, untuk beradaptasi dengan bilah bookmark gelap atau terang), alur kerja yang disarankan adalah: hapus latar belakang di editor, simpan sebagai PNG, und gunakan konverter PNG ke ICO.',
   },
   {
     type: 'tip',
     title: 'Tip: beberapa resolusi dalam satu ICO',
-    html: 'File ICO dapat mengemas <strong>beberapa resolusi</strong> ke dalam satu file — browser atau OS secara otomatis memilih yang paling sesuai untuk setiap konteks. Untuk hasil terbaik, gunakan JPG persegi minimal <strong>256×256 piksel</strong> sebagai sumber Anda: ini memberi konverter informasi yang cukup untuk menghasilkan ukuran 16×16, 32×32, und 48×48 yang tajam tanpa pikselasi.',
+    html: 'File ICO dapat mengemas <strong>beberapa resolusi</strong> ke dalam satu file - browser atau OS secara otomatis memilih yang paling sesuai untuk setiap konteks. Untuk hasil terbaik, gunakan JPG persegi minimal <strong>256×256 piksel</strong> sebagai sumber Anda: ini memberi konverter informasi yang cukup untuk menghasilkan ukuran 16×16, 32×32, und 48×48 yang tajam tanpa pikselasi.',
   },
   {
     type: 'title',

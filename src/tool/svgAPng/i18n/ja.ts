@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'ファイルを選択',
   processedFiles: '処理済みファイル',
   downloadAll: 'すべてダウンロード (.zip)',
-  pending: '保留中': '参考文献',
+  pending: '保留中',
+  bibliographyTitle: '参考文献',
   faqTitle: 'よくある質問',
 };
 

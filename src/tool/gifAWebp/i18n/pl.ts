@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Wybierz pliki',
   processedFiles: 'Przetworzone pliki',
   downloadAll: 'Pobierz wszystko (.zip)',
-  pending: 'Oczekiwanie': 'Bibliografia',
+  pending: 'Oczekiwanie',
+  bibliographyTitle: 'Bibliografia',
   faqTitle: 'Często Zadawane Pytania',
 };
 
@@ -68,11 +69,11 @@ const seo: GifAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'GIF to format z 1987 roku, który pierwotnie nie był projektowany z myślą o animacjach — ta funkcja pojawiła się później jako rozwiązanie tymczasowe. Paleta 256 kolorów, niewydajna kompresja i brak obsługi dźwięku sprawiają, że jest to format przestarzały. WebP, opracowany przez Google w 2010 roku, oferuje doskonałą kompresję zarówno stratną, jak i bezstratną, natywną obsługę animacji oraz pełny kanał alfa.',
+    html: 'GIF to format z 1987 roku, który pierwotnie nie był projektowany z myślą o animacjach - ta funkcja pojawiła się później jako rozwiązanie tymczasowe. Paleta 256 kolorów, niewydajna kompresja i brak obsługi dźwięku sprawiają, że jest to format przestarzały. WebP, opracowany przez Google w 2010 roku, oferuje doskonałą kompresję zarówno stratną, jak i bezstratną, natywną obsługę animacji oraz pełny kanał alfa.',
   },
   {
     type: 'paragraph',
-    html: 'Dla web developera zastąpienie plików GIF formatem WebP na stronach może oznaczać poprawę wyniku Google PageSpeed o 10 do 30 punktów. Mniejsza waga strony oznacza lepsze wskaźniki Core Web Vitals, wyższe pozycje w SEO i niższe koszty transferu na serwerach. To nie tylko poprawa estetyczna — to decyzja dotycząca architektury technicznej.',
+    html: 'Dla web developera zastąpienie plików GIF formatem WebP na stronach może oznaczać poprawę wyniku Google PageSpeed o 10 do 30 punktów. Mniejsza waga strony oznacza lepsze wskaźniki Core Web Vitals, wyższe pozycje w SEO i niższe koszty transferu na serwerach. To nie tylko poprawa estetyczna - to decyzja dotycząca architektury technicznej.',
   },
   {
     type: 'title',

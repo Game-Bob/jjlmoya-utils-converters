@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Dateien auswählen',
   processedFiles: 'Verarbeitete Dateien',
   downloadAll: 'Alles herunterladen (.zip)',
-  pending: 'Ausstehend': 'Literaturhinweise',
+  pending: 'Ausstehend',
+  bibliographyTitle: 'Literaturhinweise',
   faqTitle: 'Häufig gestellte Fragen',
 };
 
@@ -59,7 +60,7 @@ const seo: JpgAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Das <strong>JPG</strong>-Format dominiert seit Jahrzehnten die digitale Fotografie – universell kompatibel und weit verbreitet. Doch Google hat <strong>WebP</strong> entwickelt, um JPG in seinem eigenen Bereich zu schlagen: dieselbe visuelle Qualität bei 25–35 % geringerer Dateigröße. Für Entwickler und Marketingteams, die gegen langsame Ladezeiten kämpfen, ist die Konvertierung von JPG in WebP die wertvollste Optimierung, die ohne Änderungen am Design vorgenommen werden kann.',
+    html: 'Das <strong>JPG</strong>-Format dominiert seit Jahrzehnten die digitale Fotografie - universell kompatibel und weit verbreitet. Doch Google hat <strong>WebP</strong> entwickelt, um JPG in seinem eigenen Bereich zu schlagen: dieselbe visuelle Qualität bei 25-35 % geringerer Dateigröße. Für Entwickler und Marketingteams, die gegen langsame Ladezeiten kämpfen, ist die Konvertierung von JPG in WebP die wertvollste Optimierung, die ohne Änderungen am Design vorgenommen werden kann.',
   },
   {
     type: 'title',
@@ -68,11 +69,11 @@ const seo: JpgAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>JPG</strong> bleibt die richtige Wahl, wenn Sie universelle Kompatibilität benötigen: E-Mails an Kunden, Word-Dokumente, ältere Social-Media-Plattformen oder CMS-Systeme, die WebP noch nicht akzeptieren. Sein dreißigjähriges Ökosystem garantiert, dass jeder Bildschirm, Drucker oder Betrachter es problemlos öffnen kann. Der Hauptnachteil ist die Größe – ein 1,5 MB großes JPG im Header kann den LCP-Score Ihrer Seite verschlechtern und die Schwellenwerte für Google Core Web Vitals verfehlen.',
+    html: '<strong>JPG</strong> bleibt die richtige Wahl, wenn Sie universelle Kompatibilität benötigen: E-Mails an Kunden, Word-Dokumente, ältere Social-Media-Plattformen oder CMS-Systeme, die WebP noch nicht akzeptieren. Sein dreißigjähriges Ökosystem garantiert, dass jeder Bildschirm, Drucker oder Betrachter es problemlos öffnen kann. Der Hauptnachteil ist die Größe - ein 1,5 MB großes JPG im Header kann den LCP-Score Ihrer Seite verschlechtern und die Schwellenwerte für Google Core Web Vitals verfehlen.',
   },
   {
     type: 'paragraph',
-    html: '<strong>WebP</strong> ist die intelligente Wahl für alle Inhalte auf Ihrer Website. Chrome, Firefox, Safari und Edge unterstützen es seit Jahren nativ. Produktbilder im E-Commerce, Blog-Banner, Video-Thumbnails und alle online veröffentlichten Fotos profitieren direkt: leichtere Seiten, bessere Google PageSpeed Insights Scores und eine flüssigere Benutzererfahrung – besonders bei langsamen mobilen Verbindungen.',
+    html: '<strong>WebP</strong> ist die intelligente Wahl für alle Inhalte auf Ihrer Website. Chrome, Firefox, Safari und Edge unterstützen es seit Jahren nativ. Produktbilder im E-Commerce, Blog-Banner, Video-Thumbnails und alle online veröffentlichten Fotos profitieren direkt: leichtere Seiten, bessere Google PageSpeed Insights Scores und eine flüssigere Benutzererfahrung - besonders bei langsamen mobilen Verbindungen.',
   },
   {
     type: 'title',
@@ -100,8 +101,8 @@ const seo: JpgAWebpLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Sofortige Geschwindigkeit – keine Netzwerklatenz',
-          'Vollständige Privatsphäre – 0 Byte werden extern gesendet',
+          'Sofortige Geschwindigkeit - keine Netzwerklatenz',
+          'Vollständige Privatsphäre - 0 Byte werden extern gesendet',
           'Keine Megabyte-Limits oder Dateianzahlbeschränkungen',
           'Saubere Benutzeroberfläche, keine Werbung oder Tracking',
         ],
@@ -115,16 +116,16 @@ const seo: JpgAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Wenn Sie ein JPG in das Tool ziehen, erstellt der Browser ein <strong>Blob-Objekt</strong>, das nur in Ihrem RAM existiert. Dieser Blob wird dekodiert und auf ein unsichtbares <strong>HTML5 Canvas</strong>-Element gezeichnet. Da JPG kein Alpha-Kanal besitzt, erfolgt die Konvertierung in WebP direkt: Die Engine exportiert das Canvas durch Aufruf von <code>toDataURL(\'image/webp\')</code> und erzeugt einen Byte-Stream, den Ihr Betriebssystem sofort herunterlädt – ganz ohne Server.',
+    html: 'Wenn Sie ein JPG in das Tool ziehen, erstellt der Browser ein <strong>Blob-Objekt</strong>, das nur in Ihrem RAM existiert. Dieser Blob wird dekodiert und auf ein unsichtbares <strong>HTML5 Canvas</strong>-Element gezeichnet. Da JPG kein Alpha-Kanal besitzt, erfolgt die Konvertierung in WebP direkt: Die Engine exportiert das Canvas durch Aufruf von <code>toDataURL(\'image/webp\')</code> und erzeugt einen Byte-Stream, den Ihr Betriebssystem sofort herunterlädt - ganz ohne Server.',
   },
   {
     type: 'paragraph',
-    html: 'Der WebP-Kompressionsalgorithmus kombiniert Techniken zur Blockvorhersage (ähnlich denen in VP8, Googles Video-Codec) mit Farbumwandlungen und arithmetischer Kodierung. Das Ergebnis ist eine Datei, die dieselben Wahrnehmungsinformationen wie das ursprüngliche JPG enthält, aber weitaus effizienter verpackt ist – was bedeutet, dass bei jedem Seitenaufruf weniger Kilobyte übertragen werden.',
+    html: 'Der WebP-Kompressionsalgorithmus kombiniert Techniken zur Blockvorhersage (ähnlich denen in VP8, Googles Video-Codec) mit Farbumwandlungen und arithmetischer Kodierung. Das Ergebnis ist eine Datei, die dieselben Wahrnehmungsinformationen wie das ursprüngliche JPG enthält, aber weitaus effizienter verpackt ist - was bedeutet, dass bei jedem Seitenaufruf weniger Kilobyte übertragen werden.',
   },
   {
     type: 'tip',
     title: 'Core Web Vitals Tipp: LCP und Bildgewicht',
-    html: 'Der <strong>Largest Contentful Paint (LCP)</strong> ist die Google-Metrik, die misst, wie lange es dauert, bis das größte visuelle Element auf Ihrer Seite geladen ist. Ein 1,5 MB großes Header-JPG kann zu einem WebP von nur 900 KB – oder sogar 600 KB – werden, ohne dass ein sichtbarer Unterschied besteht. Diese <strong>Ersparnis von 25–35 %</strong> kann Ihren LCP von "Verbesserungswürdig" auf "Gut" heben und Sie in den Suchergebnissen weiter nach oben bringen.',
+    html: 'Der <strong>Largest Contentful Paint (LCP)</strong> ist die Google-Metrik, die misst, wie lange es dauert, bis das größte visuelle Element auf Ihrer Seite geladen ist. Ein 1,5 MB großes Header-JPG kann zu einem WebP von nur 900 KB - oder sogar 600 KB - werden, ohne dass ein sichtbarer Unterschied besteht. Diese <strong>Ersparnis von 25-35 %</strong> kann Ihren LCP von "Verbesserungswürdig" auf "Gut" heben und Sie in den Suchergebnissen weiter nach oben bringen.',
   },
   {
     type: 'title',
@@ -149,7 +150,7 @@ const seo: JpgAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Die Konvertierung Ihrer JPGs in WebP ist heute eine der einfachsten und kosteneffizientesten Optimierungen, die Sie für jede Website vornehmen können. Mit diesem Tool erledigen Sie das in Sekunden, kostenlos und ohne dass Ihre Bilder jemals Ihr Gerät verlassen. Weniger Kilobyte, besserer LCP, schnellere Seiten – alles bei exakt demselben Erscheinungsbild wie zuvor.',
+    html: 'Die Konvertierung Ihrer JPGs in WebP ist heute eine der einfachsten und kosteneffizientesten Optimierungen, die Sie für jede Website vornehmen können. Mit diesem Tool erledigen Sie das in Sekunden, kostenlos und ohne dass Ihre Bilder jemals Ihr Gerät verlassen. Weniger Kilobyte, besserer LCP, schnellere Seiten - alles bei exakt demselben Erscheinungsbild wie zuvor.',
   },
 ];
 

@@ -9,15 +9,15 @@ export const content: CategoryLocaleContent = {
       type: 'summary',
       title: 'Pourquoi utiliser nos convertisseurs',
       items: [
-        'Conversion 100% locale : vos images ne quittent jamais votre appareil.',
-        'Support de 21 combinaisons de formats : PNG, JPG, WebP, SVG, AVIF, GIF, BMP et ICO.',
+        'Conversion 100% locale: vos images ne quittent jamais votre appareil.',
+        'Support de 21 combinaisons de formats: PNG, JPG, WebP, SVG, AVIF, GIF, BMP et ICO.',
         'Traitement par lots avec téléchargement ZIP.',
         'Sans inscription, sans limites, sans publicité intrusive.',
       ],
     },
     {
       type: 'title',
-      text: 'Conversion d\'Images : Guide Complet des Formats',
+      text: 'Conversion d\'Images: Guide Complet des Formats',
       level: 2,
     },
     {
@@ -26,12 +26,12 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'title',
-      text: 'PNG, JPG et WebP : Les Trois Piliers du Web Moderne',
+      text: 'PNG, JPG et WebP: Les Trois Piliers du Web Moderne',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'Le <strong>format PNG</strong> se distingue par sa compression sans perte et son support de la transparence (canal alpha), étant le standard pour les logos, icônes et graphiques aux bords nets. Le <strong>format JPG</strong> offre une compatibilité universelle maximale et des tailles réduites pour les photos, mais sacrifie la qualité à chaque sauvegarde. Le <strong>format WebP</strong>, développé par Google, combine le meilleur des deux : une compression 30-40% supérieure à PNG/JPG avec support de la transparence et des animations.',
+      html: 'Le <strong>format PNG</strong> se distingue par sa compression sans perte et son support de la transparence (canal alpha), étant le standard pour les logos, icônes et graphiques aux bords nets. Le <strong>format JPG</strong> offre une compatibilité universelle maximale et des tailles réduites pour les photos, mais sacrifie la qualité à chaque sauvegarde. Le <strong>format WebP</strong>, développé par Google, combine le meilleur des deux: une compression 30-40% supérieure à PNG/JPG avec support de la transparence et des animations.',
     },
     {
       type: 'table',
@@ -47,7 +47,7 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'title',
-      text: 'Formats Nouvelle Génération : AVIF et WebP',
+      text: 'Formats Nouvelle Génération: AVIF et WebP',
       level: 2,
     },
     {
@@ -61,7 +61,7 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'title',
-      text: 'SVG, BMP et ICO : Cas d\'Usage Spéciaux',
+      text: 'SVG, BMP et ICO: Cas d\'Usage Spéciaux',
       level: 2,
     },
     {
@@ -79,12 +79,12 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'title',
-      text: 'Confidentialité Totale : Conversion sans Serveurs',
+      text: 'Confidentialité Totale: Conversion sans Serveurs',
       level: 2,
     },
     {
       type: 'paragraph',
-      html: 'Contrairement à d\'autres outils en ligne qui téléchargent vos images sur des serveurs distants, nos convertisseurs utilisent exclusivement les APIs natives du navigateur : <strong>Canvas 2D API</strong> pour la rastérisation, <strong>FileReader API</strong> pour lire les fichiers localement et <strong>Blob/URL.createObjectURL</strong> pour les téléchargements. Vous pouvez ainsi convertir des images confidentielles, des logos d\'entreprise ou des documents privés en toute sécurité.',
+      html: 'Contrairement à d\'autres outils en ligne qui téléchargent vos images sur des serveurs distants, nos convertisseurs utilisent exclusivement les APIs natives du navigateur: <strong>Canvas 2D API</strong> pour la rastérisation, <strong>FileReader API</strong> pour lire les fichiers localement et <strong>Blob/URL.createObjectURL</strong> pour les téléchargements. Vous pouvez ainsi convertir des images confidentielles, des logos d\'entreprise ou des documents privés en toute sécurité.',
     },
   ],
 };

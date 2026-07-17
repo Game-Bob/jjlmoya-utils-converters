@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Dateien auswählen',
   processedFiles: 'Verarbeitete Dateien',
   downloadAll: 'Alles herunterladen (.zip)',
-  pending: 'Ausstehend': 'Literaturhinweise',
+  pending: 'Ausstehend',
+  bibliographyTitle: 'Literaturhinweise',
   faqTitle: 'Häufig gestellte Fragen',
 };
 
@@ -119,12 +120,12 @@ const seo: SvgAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Im Gegensatz zur Konvertierung in JPG behält das Canvas beim Export in PNG den vollen Alpha-Kanal bei: Transparente Bereiche in der ursprünglichen SVG werden zu vollständig transparenten Pixeln in der resultierenden PNG – ohne weiße Hintergrundfüllung. Der Export nutzt die Methode <code>toDataURL(\'image/png\')</code> mit verlustfreier Kompression.',
+    html: 'Im Gegensatz zur Konvertierung in JPG behält das Canvas beim Export in PNG den vollen Alpha-Kanal bei: Transparente Bereiche in der ursprünglichen SVG werden zu vollständig transparenten Pixeln in der resultierenden PNG - ohne weiße Hintergrundfüllung. Der Export nutzt die Methode <code>toDataURL(\'image/png\')</code> mit verlustfreier Kompression.',
   },
   {
     type: 'tip',
     title: 'Tipp vor dem Rastern',
-    html: 'Wählen Sie Ihre PNG-Exportgröße sorgfältig – das Rastern einer SVG ist ein Einwegprozess: Sie können die Vektoren nicht aus der resultierenden PNG wiederherstellen. Behalten Sie immer die Original-SVG als Masterquelle und generieren Sie PNGs in der höchsten Auflösung, die Sie jemals benötigen könnten.',
+    html: 'Wählen Sie Ihre PNG-Exportgröße sorgfältig - das Rastern einer SVG ist ein Einwegprozess: Sie können die Vektoren nicht aus der resultierenden PNG wiederherstellen. Behalten Sie immer die Original-SVG als Masterquelle und generieren Sie PNGs in der höchsten Auflösung, die Sie jemals benötigen könnten.',
   },
   {
     type: 'title',

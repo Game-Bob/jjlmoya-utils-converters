@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Wybierz pliki',
   processedFiles: 'Przetworzone pliki',
   downloadAll: 'Pobierz wszystko (.zip)',
-  pending: 'Oczekujące': 'Bibliografia',
+  pending: 'Oczekujące',
+  bibliographyTitle: 'Bibliografia',
   faqTitle: 'Często Zadawane Pytania',
 };
 
@@ -124,7 +125,7 @@ const seo: WebpAPngLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'Wskazówka dla edytorów',
-    html: 'Używaj formatu PNG, gdy chcesz kontynuować edycję obrazu. Bezstratna kompresja gwarantuje brak utraty jakości przy wielokrotnym zapisie — co jest kluczowe podczas pracy z warstwami, maskami lub korekcją kolorów w programie Photoshop lub Figma.',
+    html: 'Używaj formatu PNG, gdy chcesz kontynuować edycję obrazu. Bezstratna kompresja gwarantuje brak utraty jakości przy wielokrotnym zapisie - co jest kluczowe podczas pracy z warstwami, maskami lub korekcją kolorów w programie Photoshop lub Figma.',
   },
   {
     type: 'title',
@@ -149,7 +150,7 @@ const seo: WebpAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Jeśli WebP jest formatem serwera WWW, to PNG jest formatem studia projektowego. To narzędzie konwertuje Twoje zasoby WebP na gotowe do produkcji pliki PNG, z nienaruszoną przezroczystością i maksymalną jakością — wszystko w Twojej przeglądarce i bez opuszczania maszyny przez Twoje pliki.',
+    html: 'Jeśli WebP jest formatem serwera WWW, to PNG jest formatem studia projektowego. To narzędzie konwertuje Twoje zasoby WebP na gotowe do produkcji pliki PNG, z nienaruszoną przezroczystością i maksymalną jakością - wszystko w Twojej przeglądarce i bez opuszczania maszyny przez Twoje pliki.',
   },
 ];
 

@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: '选择文件',
   processedFiles: '已处理文件',
   downloadAll: '下载全部 (.zip)',
-  pending: '等待中': '参考文献',
+  pending: '等待中',
+  bibliographyTitle: '参考文献',
   faqTitle: '常见问题',
 };
 
@@ -124,7 +125,7 @@ const seo: GifAPngLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'GIF 的二进制透明 vs PNG 的 Alpha 通道',
-    html: 'GIF 仅支持二进制透明（全透明或不透明）。转换为 PNG 时，GIF 的半透明像素将保持浏览器解释的样子。如果您的 GIF 有锯齿状边缘，PNG 会保留它们——但您可以在任何编辑器中通过平滑边缘来修复它们，这在原 GIF 中是不可能实现的。',
+    html: 'GIF 仅支持二进制透明（全透明或不透明）。转换为 PNG 时，GIF 的半透明像素将保持浏览器解释的样子。如果您的 GIF 有锯齿状边缘，PNG 会保留它们-但您可以在任何编辑器中通过平滑边缘来修复它们，这在原 GIF 中是不可能实现的。',
   },
   {
     type: 'title',

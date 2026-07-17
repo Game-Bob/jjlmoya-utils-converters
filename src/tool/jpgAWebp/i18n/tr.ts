@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Dosyaları seçin',
   processedFiles: 'İşlenmiş dosyalar',
   downloadAll: 'Tümünü İndir (.zip)',
-  pending: 'Bekliyor': 'Bibliyografik Referanslar',
+  pending: 'Bekliyor',
+  bibliographyTitle: 'Bibliyografik Referanslar',
   faqTitle: 'Sıkça Sorulan Sorular',
 };
 
@@ -59,7 +60,7 @@ const seo: JpgAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>JPG</strong> formatı onlarca yıldır dijital fotoğrafçılığa hakim oldu; evrensel olarak uyumlu ve yaygın olarak destekleniyor. Ancak Google, <strong>WebP</strong>\'yi JPG\'yi kendi oyununda yenmek için tasarladı: %25–35 daha az dosya boyutunda aynı görsel kalite. Yavaş sayfa yüklemeleriyle mücadele eden geliştiriciler ve pazarlama ekipleri için JPG\'yi WebP\'ye dönüştürmek, tasarımınıza dokunmadan uygulayabileceğiniz en yüksek getirili optimizasyondur.',
+    html: '<strong>JPG</strong> formatı onlarca yıldır dijital fotoğrafçılığa hakim oldu; evrensel olarak uyumlu ve yaygın olarak destekleniyor. Ancak Google, <strong>WebP</strong>\'yi JPG\'yi kendi oyununda yenmek için tasarladı: %25-35 daha az dosya boyutunda aynı görsel kalite. Yavaş sayfa yüklemeleriyle mücadele eden geliştiriciler ve pazarlama ekipleri için JPG\'yi WebP\'ye dönüştürmek, tasarımınıza dokunmadan uygulayabileceğiniz en yüksek getirili optimizasyondur.',
   },
   {
     type: 'title',
@@ -100,8 +101,8 @@ const seo: JpgAWebpLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Anında hız — sıfır ağ gecikmesi',
-          'Tam gizlilik — harici olarak gönderilen 0 bayt',
+          'Anında hız - sıfır ağ gecikmesi',
+          'Tam gizlilik - harici olarak gönderilen 0 bayt',
           'MB sınırı veya dosya sayısı kısıtlaması yok',
           'Temiz arayüz, reklam veya izleme yok',
         ],
@@ -124,7 +125,7 @@ const seo: JpgAWebpLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'Core Web Vitals İpucu: LCP ve görüntü ağırlığı',
-    html: '<strong>Largest Contentful Paint (LCP)</strong>, sayfanızdaki en büyük görsel öğenin yüklenmesinin ne kadar sürdüğünü ölçen Google metriğidir. 1,5 MB\'lık bir başlık JPG\'si, gözle görülür bir görsel fark olmadan sadece 900 KB — hatta 600 KB — bir WebP haline gelebilir. Bu <strong>%25–35 tasarruf</strong>, LCP\'nizi "İyileştirme Gerekiyor" durumundan "İyi" durumuna taşıyabilir ve sizi arama sıralamalarında yukarı taşıyabilir.',
+    html: '<strong>Largest Contentful Paint (LCP)</strong>, sayfanızdaki en büyük görsel öğenin yüklenmesinin ne kadar sürdüğünü ölçen Google metriğidir. 1,5 MB\'lık bir başlık JPG\'si, gözle görülür bir görsel fark olmadan sadece 900 KB - hatta 600 KB - bir WebP haline gelebilir. Bu <strong>%25-35 tasarruf</strong>, LCP\'nizi "İyileştirme Gerekiyor" durumundan "İyi" durumuna taşıyabilir ve sizi arama sıralamalarında yukarı taşıyabilir.',
   },
   {
     type: 'title',

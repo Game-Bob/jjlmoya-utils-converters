@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Bestanden selecteren',
   processedFiles: 'Verwerkte bestanden',
   downloadAll: 'Alles downloaden (.zip)',
-  pending: 'In afwachting': 'Bibliografische Referenties',
+  pending: 'In afwachting',
+  bibliographyTitle: 'Bibliografische Referenties',
   faqTitle: 'Veelgestelde Vragen',
 };
 
@@ -68,11 +69,11 @@ const seo: GifAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'GIF is een formaat uit 1987 dat oorspronkelijk niet bedoeld was voor animaties – die functie kwam later als een hack. Het palet van 256 kleuren, de inefficiënte compressie en het onvermogen om audio te verwerken maken het een verouderd formaat. WebP, ontwikkeld door Google in 2010, biedt superieure compressie (zowel met als zonder verlies), systeemeigen ondersteuning voor animaties en een volledig alfakanaal.',
+    html: 'GIF is een formaat uit 1987 dat oorspronkelijk niet bedoeld was voor animaties - die functie kwam later als een hack. Het palet van 256 kleuren, de inefficiënte compressie en het onvermogen om audio te verwerken maken het een verouderd formaat. WebP, ontwikkeld door Google in 2010, biedt superieure compressie (zowel met als zonder verlies), systeemeigen ondersteuning voor animaties en een volledig alfakanaal.',
   },
   {
     type: 'paragraph',
-    html: 'Voor een webontwikkelaar kan het vervangen van GIF\'s door WebP op pagina\'s een verbetering van 10 tot 30 punten in de Google PageSpeed score betekenen. Minder paginagewicht betekent betere Core Web Vitals, betere SEO-rankings en lagere bandbreedtekosten op servers. Het is niet alleen een esthetische verbetering – het is een technische architectuurbeslissing.',
+    html: 'Voor een webontwikkelaar kan het vervangen van GIF\'s door WebP op pagina\'s een verbetering van 10 tot 30 punten in de Google PageSpeed score betekenen. Minder paginagewicht betekent betere Core Web Vitals, betere SEO-rankings en lagere bandbreedtekosten op servers. Het is niet alleen een esthetische verbetering - het is een technische architectuurbeslissing.',
   },
   {
     type: 'title',

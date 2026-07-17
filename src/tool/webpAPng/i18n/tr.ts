@@ -13,8 +13,8 @@ const ui: ImageConverterUI = {
   convertText: 'Onları anında PNG\'ye dönüştürmek için',
   selectFiles: 'Dosyaları seçin',
   processedFiles: 'İşlenmiş dosyalar',
-  downloadAll: 'Tümünü İndir (.zip)',
-  pending: 'Bekliyor': 'Bibliyografik Referanslar',
+  pending: 'Bekliyor',
+  bibliographyTitle: 'Bibliyografik Referanslar',
   faqTitle: 'Sıkça Sorulan Sorular',
 };
 
@@ -124,7 +124,7 @@ const seo: WebpAPngLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'Düzenleyiciler için ipucu',
-    html: 'Görüntüyü düzenlemeye devam etmeniz gerektiğinde PNG kullanın. Kayıpsız sıkıştırma, tekrarlanan kaydetmelerden dolayı kalite kaybı olmayacağını garanti eder — bu, Photoshop veya Figma\'da katmanlar, maskeler veya renk ayarlamalarıyla çalışırken kritiktir.',
+    html: 'Görüntüyü düzenlemeye devam etmeniz gerektiğinde PNG kullanın. Kayıpsız sıkıştırma, tekrarlanan kaydetmelerden dolayı kalite kaybı olmayacağını garanti eder - bu, Photoshop veya Figma\'da katmanlar, maskeler veya renk ayarlamalarıyla çalışırken kritiktir.',
   },
   {
     type: 'title',

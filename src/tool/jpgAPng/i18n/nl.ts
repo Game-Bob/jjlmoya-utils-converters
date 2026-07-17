@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Bestanden selecteren',
   processedFiles: 'Verwerkte bestanden',
   downloadAll: 'Alles downloaden (.zip)',
-  pending: 'In afwachting': 'Bibliografische Referenties',
+  pending: 'In afwachting',
+  bibliographyTitle: 'Bibliografische Referenties',
   faqTitle: 'Veelgestelde Vragen',
 };
 
@@ -59,7 +60,7 @@ const seo: JpgAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>JPG</strong> is onverslaanbaar voor camerafoto\'s, maar heeft een zwakke plek: elke keer dat je het bestand opslaat, wordt de compressie met verlies opnieuw toegepast, waardoor randen en gradiënten progressief verslechteren. <strong>PNG</strong> gebruikt verliesvrije compressie — eenmaal opgeslagen, zijn de pixels onveranderlijk. JPG naar PNG converteren is de sleuteloperatie wanneer je een afbeelding moet voorbereiden voor intensieve bewerking, een transparante achtergrond wilt toevoegen of deze wilt integreren in een ontwerpproces dat meerdere keren opslaan vereist.',
+    html: '<strong>JPG</strong> is onverslaanbaar voor camerafoto\'s, maar heeft een zwakke plek: elke keer dat je het bestand opslaat, wordt de compressie met verlies opnieuw toegepast, waardoor randen en gradiënten progressief verslechteren. <strong>PNG</strong> gebruikt verliesvrije compressie - eenmaal opgeslagen, zijn de pixels onveranderlijk. JPG naar PNG converteren is de sleuteloperatie wanneer je een afbeelding moet voorbereiden voor intensieve bewerking, een transparante achtergrond wilt toevoegen of deze wilt integreren in een ontwerpproces dat meerdere keren opslaan vereist.',
   },
   {
     type: 'title',
@@ -100,8 +101,8 @@ const seo: JpgAPngLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Directe snelheid — nul netwerklatentie',
-          'Volledige privacy — 0 bytes naar buiten verzonden',
+          'Directe snelheid - nul netwerklatentie',
+          'Volledige privacy - 0 bytes naar buiten verzonden',
           'Geen MB-limieten of beperkingen op aantal bestanden',
           'Schone interface, zonder advertenties of tracking',
         ],
@@ -115,16 +116,16 @@ const seo: JpgAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Het proces is puur lokaal: de browser maakt een <strong>Blob</strong> met de geselecteerde JPG en tekent deze op een <strong>HTML5 Canvas</strong> in het geheugen. Eenmaal gerenderd, wordt <code>toDataURL(\'image/png\')</code> aangeroepen — de in de browser geïntegreerde PNG-codec hercodeert elke pixel zonder nieuwe compressie met verlies toe te passen. Het resultaat is een PNG die de huidige staat van de JPG natuurgetrouw bewaart: niet beter en niet slechter, gewoon bevroren.',
+    html: 'Het proces is puur lokaal: de browser maakt een <strong>Blob</strong> met de geselecteerde JPG en tekent deze op een <strong>HTML5 Canvas</strong> in het geheugen. Eenmaal gerenderd, wordt <code>toDataURL(\'image/png\')</code> aangeroepen - de in de browser geïntegreerde PNG-codec hercodeert elke pixel zonder nieuwe compressie met verlies toe te passen. Het resultaat is een PNG die de huidige staat van de JPG natuurgetrouw bewaart: niet beter en niet slechter, gewoon bevroren.',
   },
   {
     type: 'paragraph',
-    html: 'De resulterende PNG gebruikt verliesvrije DEFLATE-compressie, dezelfde die professionele tools zoals Photoshop of GIMP gebruiken. De grootte zal groter zijn dan de originele JPG — meestal tussen 2 en 5 keer — omdat het alle pixels opslaat zonder informatie weg te gooien. Dat is de prijs voor trouw en oneindige bewerkbaarheid.',
+    html: 'De resulterende PNG gebruikt verliesvrije DEFLATE-compressie, dezelfde die professionele tools zoals Photoshop of GIMP gebruiken. De grootte zal groter zijn dan de originele JPG - meestal tussen 2 en 5 keer - omdat het alle pixels opslaat zonder informatie weg te gooien. Dat is de prijs voor trouw en oneindige bewerkbaarheid.',
   },
   {
     type: 'tip',
     title: 'Belangrijk: PNG herstelt de JPEG kwaliteit niet',
-    html: 'Een JPG naar PNG converteren <strong>herstelt de verloren kwaliteit niet</strong> die tijdens de originele JPEG-compressie is verloren gegaan. Als je JPG al blok-artefacten of kleurruis had, zal de PNG deze intact houden — het voorkomt simpelweg dat er meer wordt toegevoegd. Zie de conversie als het "bevriezen" van de huidige staat van de afbeelding zodat toekomstige bewerkingen deze niet verder verslechteren.',
+    html: 'Een JPG naar PNG converteren <strong>herstelt de verloren kwaliteit niet</strong> die tijdens de originele JPEG-compressie is verloren gegaan. Als je JPG al blok-artefacten of kleurruis had, zal de PNG deze intact houden - het voorkomt simpelweg dat er meer wordt toegevoegd. Zie de conversie als het "bevriezen" van de huidige staat van de afbeelding zodat toekomstige bewerkingen deze niet verder verslechteren.',
   },
   {
     type: 'title',

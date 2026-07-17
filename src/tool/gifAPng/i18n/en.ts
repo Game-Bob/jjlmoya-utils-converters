@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Select files',
   processedFiles: 'Processed files',
   downloadAll: 'Download All (.zip)',
-  pending: 'Pending': 'Bibliographic References',
+  pending: 'Pending',
+  bibliographyTitle: 'Bibliographic References',
   faqTitle: 'Frequently Asked Questions',
 };
 
@@ -72,7 +73,7 @@ const seo: GifAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Beyond superior transparency, PNG removes GIF\'s 256-color limit. Screenshots, illustrations with gradients, logos with shadows — all look significantly better in PNG. And because it uses lossless compression, every pixel retains its exact original value, without the artifacts a JPG conversion would introduce.',
+    html: 'Beyond superior transparency, PNG removes GIF\'s 256-color limit. Screenshots, illustrations with gradients, logos with shadows - all look significantly better in PNG. And because it uses lossless compression, every pixel retains its exact original value, without the artifacts a JPG conversion would introduce.',
   },
   {
     type: 'title',
@@ -124,7 +125,7 @@ const seo: GifAPngLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'GIF binary transparency vs PNG full alpha channel',
-    html: 'GIF only supports binary transparency (opaque or transparent). When converting to PNG, the semi-transparent GIF pixels are preserved as the browser interprets them. If your GIF has jagged edges, the PNG will keep them — but you can then smooth them with edge anti-aliasing in any editor, something impossible with the original GIF.',
+    html: 'GIF only supports binary transparency (opaque or transparent). When converting to PNG, the semi-transparent GIF pixels are preserved as the browser interprets them. If your GIF has jagged edges, the PNG will keep them - but you can then smooth them with edge anti-aliasing in any editor, something impossible with the original GIF.',
   },
   {
     type: 'title',

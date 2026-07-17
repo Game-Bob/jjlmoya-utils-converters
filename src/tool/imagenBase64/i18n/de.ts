@@ -18,7 +18,8 @@ const ui: ImageToBase64UI = {
   dataUriPlaceholder: 'Laden Sie ein Bild hoch, um den Data-URI-Code zu sehen...',
   base64Placeholder: 'Laden Sie ein Bild hoch, um den reinen Base64-Code zu sehen...',
   toastMessage: 'Code in die Zwischenablage kopiert!',
-  invalidImageAlert: 'Bitte laden Sie eine gültige Bilddatei hoch.': 'Literaturhinweise',
+  invalidImageAlert: 'Bitte laden Sie eine gültige Bilddatei hoch.',
+  bibliographyTitle: 'Literaturhinweise',
   faqTitle: 'Häufig gestellte Fragen',
 };
 
@@ -68,7 +69,7 @@ const seo: ImagenBase64LocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Base64 ist eine Kodierungstechnik, die Binärdaten – wie ein Bild – in eine reine ASCII-Textzeichenfolge transformiert. Das Ergebnis ist eine Data URI: eine in sich geschlossene URL, die mit <code>data:image/png;base64,...</code> beginnt und das gesamte kodierte Bild enthält. Durch das direkte Einbetten dieses Codes in Ihr HTML, CSS oder JSON wird das Bild ohne zusätzliche HTTP-Anfrage an den Server geladen – null Netzwerklatenz, sofortiges Laden.',
+    html: 'Base64 ist eine Kodierungstechnik, die Binärdaten - wie ein Bild - in eine reine ASCII-Textzeichenfolge transformiert. Das Ergebnis ist eine Data URI: eine in sich geschlossene URL, die mit <code>data:image/png;base64,...</code> beginnt und das gesamte kodierte Bild enthält. Durch das direkte Einbetten dieses Codes in Ihr HTML, CSS oder JSON wird das Bild ohne zusätzliche HTTP-Anfrage an den Server geladen - null Netzwerklatenz, sofortiges Laden.',
   },
   {
     type: 'title',
@@ -77,7 +78,7 @@ const seo: ImagenBase64LocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Das Hauptargument für Base64 ist die Eliminierung von Netzwerkanfragen. Jedes Bild auf einer Webseite bedeutet eine HTTP-Anfrage mit dem entsprechenden Overhead für Verbindung, DNS, TLS-Handshake und Latenz. Bei sehr kleinen, kritischen Bildern – dem Hauptlogo der Anwendung, dem Favicon oder einem UI-Icon – eliminiert das Einbetten in Base64 in CSS oder HTML diese Kosten und garantiert eine sofortige Anzeige, noch bevor der Browser etwas zwischengespeichert hat.',
+    html: 'Das Hauptargument für Base64 ist die Eliminierung von Netzwerkanfragen. Jedes Bild auf einer Webseite bedeutet eine HTTP-Anfrage mit dem entsprechenden Overhead für Verbindung, DNS, TLS-Handshake und Latenz. Bei sehr kleinen, kritischen Bildern - dem Hauptlogo der Anwendung, dem Favicon oder einem UI-Icon - eliminiert das Einbetten in Base64 in CSS oder HTML diese Kosten und garantiert eine sofortige Anzeige, noch bevor der Browser etwas zwischengespeichert hat.',
   },
   {
     type: 'paragraph',
@@ -106,12 +107,12 @@ const seo: ImagenBase64LocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Wenn Sie ein Bild auswählen oder ziehen, liest die <code>FileReader</code>-API des Browsers es direkt von der Festplatte als Binärdaten in den RAM. Die Methode <code>readAsDataURL()</code> konvertiert diese Binärbytes mithilfe des RFC 4648-Algorithmus in ihre Base64-Darstellung – alle 3 Bytes der Originaldaten werden als 4 ASCII-Zeichen aus dem Base64-Alphabet dargestellt. Das Ergebnis enthält den automatisch erkannten korrekten MIME-Typ.',
+    html: 'Wenn Sie ein Bild auswählen oder ziehen, liest die <code>FileReader</code>-API des Browsers es direkt von der Festplatte als Binärdaten in den RAM. Die Methode <code>readAsDataURL()</code> konvertiert diese Binärbytes mithilfe des RFC 4648-Algorithmus in ihre Base64-Darstellung - alle 3 Bytes der Originaldaten werden als 4 ASCII-Zeichen aus dem Base64-Alphabet dargestellt. Das Ergebnis enthält den automatisch erkannten korrekten MIME-Typ.',
   },
   {
     type: 'tip',
     title: 'Nur für kleine Bilder verwenden (unter 10 KB)',
-    html: 'Base64 erhöht die Dateigröße um etwa 33 %: Ein 10 KB großes Bild wird zu ca. 13,3 KB Text. Bei kleinen Icons und Logos ist dieser Aufwand minimal, und die Eliminierung der HTTP-Anfrage gleicht dies aus. Bei Fotos oder großen Bildern ist der Größen-Overhead signifikant – verwenden Sie für große Bilder immer ein CDN.',
+    html: 'Base64 erhöht die Dateigröße um etwa 33 %: Ein 10 KB großes Bild wird zu ca. 13,3 KB Text. Bei kleinen Icons und Logos ist dieser Aufwand minimal, und die Eliminierung der HTTP-Anfrage gleicht dies aus. Bei Fotos oder großen Bildern ist der Größen-Overhead signifikant - verwenden Sie für große Bilder immer ein CDN.',
   },
   {
     type: 'title',
@@ -120,7 +121,7 @@ const seo: ImagenBase64LocaleContent['seo'] = [
   },
   {
     type: 'tip',
-    title: 'Vermeiden Sie Base64 für große Bilder – nutzen Sie ein CDN',
+    title: 'Vermeiden Sie Base64 für große Bilder: nutzen Sie ein CDN',
     html: 'Wenn Sie Bilder haben, die größer als 10-20 KB sind, schadet Base64 der Performance: Es bläht die HTML/CSS-Größe auf, verhindert, dass der Browser das Bild unabhängig zwischenspeichert, und blockiert das Rendering, während der Parser den riesigen String verarbeitet. Für große Bilder sollten Sie immer ein CDN mit entsprechenden Cache-Headern verwenden.',
   },
   {
@@ -130,7 +131,7 @@ const seo: ImagenBase64LocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Data URIs sind mit 100 % der modernen Browser und den meisten E-Mail-Clients kompatibel. Unser Tool verarbeitet alles lokal über die FileReader-API – Ihre Bilder verlassen niemals Ihr Gerät. Damit eignet es sich für Unternehmensbilder, private Screenshots oder alle vertraulichen visuellen Inhalte, die Sie in Base64 konvertieren müssen.',
+    html: 'Data URIs sind mit 100 % der modernen Browser und den meisten E-Mail-Clients kompatibel. Unser Tool verarbeitet alles lokal über die FileReader-API - Ihre Bilder verlassen niemals Ihr Gerät. Damit eignet es sich für Unternehmensbilder, private Screenshots oder alle vertraulichen visuellen Inhalte, die Sie in Base64 konvertieren müssen.',
   },
   {
     type: 'title',

@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Pilih file',
   processedFiles: 'File yang diproses',
   downloadAll: 'Unduh Semua (.zip)',
-  pending: 'Tertunda': 'Referensi Bibliografi',
+  pending: 'Tertunda',
+  bibliographyTitle: 'Referensi Bibliografi',
   faqTitle: 'Pertanyaan Umum',
 };
 
@@ -68,7 +69,7 @@ const seo: BmpAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Perbedaan mendasar antara BMP dan PNG bukan pada kualitas gambar — keduanya tanpa kehilangan — tetapi pada efisiensi penyimpanan. BMP menyimpan piksel mentah: tanpa kompresi, tanpa optimalisasi, tanpa mempertimbangkan ruang. PNG menganalisis pola piksel yang berulang dan mengodekannya secara ringkas melalui Deflate, algoritma yang sama yang digunakan oleh ZIP.',
+    html: 'Perbedaan mendasar antara BMP dan PNG bukan pada kualitas gambar - keduanya tanpa kehilangan - tetapi pada efisiensi penyimpanan. BMP menyimpan piksel mentah: tanpa kompresi, tanpa optimalisasi, tanpa mempertimbangkan ruang. PNG menganalisis pola piksel yang berulang dan mengodekannya secara ringkas melalui Deflate, algoritma yang sama yang digunakan oleh ZIP.',
   },
   {
     type: 'paragraph',

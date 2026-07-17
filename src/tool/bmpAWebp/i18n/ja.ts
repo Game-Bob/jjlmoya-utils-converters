@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'ファイルを選択',
   processedFiles: '処理済みファイル',
   downloadAll: 'すべてダウンロード (.zip)',
-  pending: '待機中': '参考文献',
+  pending: '待機中',
+  bibliographyTitle: '参考文献',
   faqTitle: 'よくある質問',
 };
 
@@ -101,7 +102,7 @@ const seo: BmpAWebpLocaleContent['seo'] = [
         highlight: true,
         points: [
           'ネットワーク転送なしでの即時変換',
-          '完全なプライバシー — 0バイトが外部に送信される',
+          '完全なプライバシー - 0バイトが外部に送信される',
           'ファイルごとのサイズ制限なし',
           'インターネット接続なしでも動作',
         ],
@@ -135,11 +136,11 @@ const seo: BmpAWebpLocaleContent['seo'] = [
     type: 'list',
     icon: 'mdi:check-circle',
     items: [
-      'ウェブ公開 — Chrome, Firefox, Safari, Edgeおよびすべての最新ブラウザ。',
-      'ソーシャルネットワーク — Instagram, Twitter, FacebookはWebPをネイティブにサポート。',
-      'ウェブアプリとPWA — 即座に読み込むための最小サイズ。',
-      '効率的なアーカイブ — 旧来のBMPコレクションを置き換えてギガバイト単位で節約。',
-      'メールマーケティング — 最新のメールクライアントで高速に読み込める軽量画像。',
+      'ウェブ公開 - Chrome, Firefox, Safari, Edgeおよびすべての最新ブラウザ。',
+      'ソーシャルネットワーク - Instagram, Twitter, FacebookはWebPをネイティブにサポート。',
+      'ウェブアプリとPWA - 即座に読み込むための最小サイズ。',
+      '効率的なアーカイブ - 旧来のBMPコレクションを置き換えてギガバイト単位で節約。',
+      'メールマーケティング - 最新のメールクライアントで高速に読み込める軽量画像。',
     ],
   },
   {

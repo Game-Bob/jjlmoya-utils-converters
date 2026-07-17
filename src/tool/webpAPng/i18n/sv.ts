@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Välj filer',
   processedFiles: 'Bearbetade filer',
   downloadAll: 'Ladda ner alla (.zip)',
-  pending: 'Väntande': 'Bibliografiska Referenser',
+  pending: 'Väntande',
+  bibliographyTitle: 'Bibliografiska Referenser',
   faqTitle: 'Vanliga Frågor',
 };
 
@@ -124,7 +125,7 @@ const seo: WebpAPngLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'Tips för redaktörer',
-    html: 'Använd PNG när du behöver fortsätta redigera bilden. Förlustfri komprimering garanterar ingen kvalitetsförsämring vid upprepade sparanden — avgörande vid arbete med lager, masker eller färgjusteringar i Photoshop eller Figma.',
+    html: 'Använd PNG när du behöver fortsätta redigera bilden. Förlustfri komprimering garanterar ingen kvalitetsförsämring vid upprepade sparanden - avgörande vid arbete med lager, masker eller färgjusteringar i Photoshop eller Figma.',
   },
   {
     type: 'title',
@@ -149,7 +150,7 @@ const seo: WebpAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Om WebP är formatet för webbservern är PNG formatet för designstudion. Detta verktyg konverterar dina WebP-resurser till produktionsklara PNG:er, med intakt transparens och maximal kvalitet — allt i din webbläsare och utan att dina filer någonsin lämnar din maskin.',
+    html: 'Om WebP är formatet för webbservern är PNG formatet för designstudion. Detta verktyg konverterar dina WebP-resurser till produktionsklara PNG:er, med intakt transparens och maximal kvalitet - allt i din webbläsare och utan att dina filer någonsin lämnar din maskin.',
   },
 ];
 

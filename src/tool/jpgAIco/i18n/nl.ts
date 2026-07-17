@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Bestanden selecteren',
   processedFiles: 'Verwerkte bestanden',
   downloadAll: 'Alles downloaden (.zip)',
-  pending: 'In afwachting': 'Bibliografische Referenties',
+  pending: 'In afwachting',
+  bibliographyTitle: 'Bibliografische Referenties',
   faqTitle: 'Veelgestelde Vragen',
 };
 
@@ -59,7 +60,7 @@ const seo: JpgAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Het <strong>ICO</strong>-formaat is de standaard van Microsoft voor pictogrammen van Windows-applicaties en favicons van websites. In tegenstelling tot het simpelweg hernoemen van een JPG naar .ico, vereist een echt ICO-bestand een specifieke binaire structuur met 22-byte headers en een ingesloten afbeeldingsoverzicht. <strong>JPG</strong> is het meest voorkomende startpunt voor het maken van deze pictogrammen — een bedrijfslogo, een profielfoto of een afbeelding die je wilt veranderen in het visuele icoon van je applicatie of website.',
+    html: 'Het <strong>ICO</strong>-formaat is de standaard van Microsoft voor pictogrammen van Windows-applicaties en favicons van websites. In tegenstelling tot het simpelweg hernoemen van een JPG naar .ico, vereist een echt ICO-bestand een specifieke binaire structuur met 22-byte headers en een ingesloten afbeeldingsoverzicht. <strong>JPG</strong> is het meest voorkomende startpunt voor het maken van deze pictogrammen - een bedrijfslogo, een profielfoto of een afbeelding die je wilt veranderen in het visuele icoon van je applicatie of website.',
   },
   {
     type: 'title',
@@ -68,11 +69,11 @@ const seo: JpgAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>JPG</strong> is een bronformaat, geen doel voor pictogrammen. Perfect voor foto\'s en banners, maar incompatibel met systemen die pictogrammen vereisen: Windows Verkenner, de favorietenbalk van de browser, snelkoppelingen op het bureaublad of PWA-applicatiedocumenten. Een besturingssysteem of browser die op zoek is naar een pictogram verwacht het ICO-formaat — und als het dat niet vindt, wordt een generiek pictogram of een gebroken vierkant weergegeven.',
+    html: '<strong>JPG</strong> is een bronformaat, geen doel voor pictogrammen. Perfect voor foto\'s en banners, maar incompatibel met systemen die pictogrammen vereisen: Windows Verkenner, de favorietenbalk van de browser, snelkoppelingen op het bureaublad of PWA-applicatiedocumenten. Een besturingssysteem of browser die op zoek is naar een pictogram verwacht het ICO-formaat - und als het dat niet vindt, wordt een generiek pictogram of een gebroken vierkant weergegeven.',
   },
   {
     type: 'paragraph',
-    html: 'Het <strong>ICO</strong>-formaat is ontworpen om meerdere resoluties in één bestand te bevatten: <strong>16×16</strong> voor de favorietenbalk, <strong>32×32</strong> voor snelkoppelingen, <strong>48×48</strong> voor de Verkenner und <strong>256×256</strong> voor displays met hoge densiteit. Browsers und besturingssystemen selecteren automatisch de juiste resolutie op basis van de weergavecontext — de gebruiker hoeft niets te beheren.',
+    html: 'Het <strong>ICO</strong>-formaat is ontworpen om meerdere resoluties in één bestand te bevatten: <strong>16×16</strong> voor de favorietenbalk, <strong>32×32</strong> voor snelkoppelingen, <strong>48×48</strong> voor de Verkenner und <strong>256×256</strong> voor displays met hoge densiteit. Browsers und besturingssystemen selecteren automatisch de juiste resolutie op basis van de weergavecontext - de gebruiker hoeft niets te beheren.',
   },
   {
     type: 'title',
@@ -100,8 +101,8 @@ const seo: JpgAIcoLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Onmiddellijke snelheid — geen netwerklatentie',
-          'Volledige privacy — 0 bytes extern verzonden',
+          'Onmiddellijke snelheid - geen netwerklatentie',
+          'Volledige privacy - 0 bytes extern verzonden',
           'Geen MB-limieten of beperkingen op aantal bestanden',
           'Schone interface, geen advertenties of tracking',
         ],
@@ -115,16 +116,16 @@ const seo: JpgAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'De JPG wordt gedecodeerd und getekend op een in-memory <strong>HTML5 Canvas</strong>. Omdat het ICO-formaat een vierkante afbeelding vereist, detecteert de engine automatisch of de JPG rechthoekig is und snijdt deze bij door het meest relevante deel te centreren. Vervolgens bouwt het de standaard Microsoft ICO-header met het juiste magische getal (<code>00 00 01 00</code>), het afbeeldingsoverzicht und de gecodeerde pixelgegevens. Het resultaat is een authentiek binair .ico-bestand — geen hernoemd PNG.',
+    html: 'De JPG wordt gedecodeerd und getekend op een in-memory <strong>HTML5 Canvas</strong>. Omdat het ICO-formaat een vierkante afbeelding vereist, detecteert de engine automatisch of de JPG rechthoekig is und snijdt deze bij door het meest relevante deel te centreren. Vervolgens bouwt het de standaard Microsoft ICO-header met het juiste magische getal (<code>00 00 01 00</code>), het afbeeldingsoverzicht und de gecodeerde pixelgegevens. Het resultaat is een authentiek binair .ico-bestand - geen hernoemd PNG.',
   },
   {
     type: 'paragraph',
-    html: 'Omdat JPG geen alfakanaal heeft, zal het resulterende ICO-bestand ook geen transparantie hebben — het zal een effen achtergrond hebben die is overgenomen van de originele foto. Als je een favicon met een transparante achtergrond nodig hebt (bijvoorbeeld om je aan te passen aan donkere of lichte favorietenbalken), is de aanbevolen werkwijze: de achtergrond verwijderen in een editor, opslaan als PNG und de PNG naar ICO converter gebruiken.',
+    html: 'Omdat JPG geen alfakanaal heeft, zal het resulterende ICO-bestand ook geen transparantie hebben - het zal een effen achtergrond hebben die is overgenomen van de originele foto. Als je een favicon met een transparante achtergrond nodig hebt (bijvoorbeeld om je aan te passen aan donkere of lichte favorietenbalken), is de aanbevolen werkwijze: de achtergrond verwijderen in een editor, opslaan als PNG und de PNG naar ICO converter gebruiken.',
   },
   {
     type: 'tip',
     title: 'Tip: meerdere resoluties in een enkele ICO',
-    html: 'ICO-bestanden kunnen <strong>meerdere resoluties</strong> in één bestand bevatten — de browser of het OS kiest automatisch de meest geschikte voor elke context. Gebruik voor het best mogelijke resultaat een vierkante JPG van minimaal <strong>256×256 pixels</strong> als bron: dit geeft de converter genoeg informatie om scherpe 16×16, 32×32 und 48×48 formaten te genereren zonder pixelvorming.',
+    html: 'ICO-bestanden kunnen <strong>meerdere resoluties</strong> in één bestand bevatten - de browser of het OS kiest automatisch de meest geschikte voor elke context. Gebruik voor het best mogelijke resultaat een vierkante JPG van minimaal <strong>256×256 pixels</strong> als bron: dit geeft de converter genoeg informatie om scherpe 16×16, 32×32 und 48×48 formaten te genereren zonder pixelvorming.',
   },
   {
     type: 'title',

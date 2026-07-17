@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Pilih file',
   processedFiles: 'File yang diproses',
   downloadAll: 'Unduh Semua (.zip)',
-  pending: 'Menunggu': 'Referensi Bibliografi',
+  pending: 'Menunggu',
+  bibliographyTitle: 'Referensi Bibliografi',
   faqTitle: 'Pertanyaan yang Sering Diajukan',
 };
 
@@ -68,7 +69,7 @@ const seo: WebpAJpgLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'WebP unggul dalam lingkungan terkontrol: situs web modern di Chrome, Edge, atau Firefox di mana kompatibilitas browser dapat dijamin. Kompresinya yang unggul mengurangi berat file sebesar 25–35% dibandingkan dengan JPG yang setara, meningkatkan waktu pemuatan dan metrik Core Web Vitals. Ini adalah format ideal saat Anda mengontrol lingkungan tampilan.',
+    html: 'WebP unggul dalam lingkungan terkontrol: situs web modern di Chrome, Edge, atau Firefox di mana kompatibilitas browser dapat dijamin. Kompresinya yang unggul mengurangi berat file sebesar 25-35% dibandingkan dengan JPG yang setara, meningkatkan waktu pemuatan dan metrik Core Web Vitals. Ini adalah format ideal saat Anda mengontrol lingkungan tampilan.',
   },
   {
     type: 'paragraph',
@@ -124,7 +125,7 @@ const seo: WebpAJpgLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'Tip kompatibilitas',
-    html: 'Saat berbagi foto dengan pengguna non-teknis atau mengirimnya melalui email, selalu gunakan JPG — nol masalah kompatibilitas di klien email, sistem operasi, atau perangkat apa pun, tanpa pengecualian dan tanpa kejutan yang tidak menyenangkan.',
+    html: 'Saat berbagi foto dengan pengguna non-teknis atau mengirimnya melalui email, selalu gunakan JPG - nol masalah kompatibilitas di klien email, sistem operasi, atau perangkat apa pun, tanpa pengecualian dan tanpa kejutan yang tidak menyenangkan.',
   },
   {
     type: 'title',

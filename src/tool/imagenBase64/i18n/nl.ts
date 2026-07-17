@@ -18,7 +18,8 @@ const ui: ImageToBase64UI = {
   dataUriPlaceholder: 'Upload een afbeelding om de Data URI-code te zien...',
   base64Placeholder: 'Upload een afbeelding om de pure Base64-code te zien...',
   toastMessage: 'Code gekopieerd naar klembord!',
-  invalidImageAlert: 'Upload een geldig afbeeldingsbestand.': 'Bibliografische Referenties',
+  invalidImageAlert: 'Upload een geldig afbeeldingsbestand.',
+  bibliographyTitle: 'Bibliografische Referenties',
   faqTitle: 'Veelgestelde Vragen',
 };
 
@@ -68,7 +69,7 @@ const seo: ImagenBase64LocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Base64 is een coderingstechniek die binaire data — zoals een afbeelding — transformeert naar een pure ASCII-tekstreeks. Het resultaat is een Data URI: een onafhankelijke URL die begint met <code>data:image/png;base64,...</code> en de volledige gecodeerde afbeelding bevat. Door deze code direct in je HTML, CSS of JSON in te sluiten, wordt de afbeelding geladen zonder enig extra HTTP-verzoek aan de server — nul netwerklatentie, direct laden.',
+    html: 'Base64 is een coderingstechniek die binaire data - zoals een afbeelding - transformeert naar een pure ASCII-tekstreeks. Het resultaat is een Data URI: een onafhankelijke URL die begint met <code>data:image/png;base64,...</code> en de volledige gecodeerde afbeelding bevat. Door deze code direct in je HTML, CSS of JSON in te sluiten, wordt de afbeelding geladen zonder enig extra HTTP-verzoek aan de server - nul netwerklatentie, direct laden.',
   },
   {
     type: 'title',
@@ -77,7 +78,7 @@ const seo: ImagenBase64LocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Het belangrijkste argument voor Base64 is het elimineren van netwerkverzoeken. Elke afbeelding op een webpagina betekent een HTTP-verzoek met bijbehorende overhead van verbinding, DNS, TLS-handshake en latentie. Voor zeer kleine kritieke afbeeldingen — het hoofdbestand van de applicatie, favicon, een UI-icoon — elimineert het insluiten in Base64 in de CSS of HTML die kosten en garandeert het dat ze onmiddellijk worden weergegeven, zelfs voordat de browser iets heeft kunnen cachen.',
+    html: 'Het belangrijkste argument voor Base64 is het elimineren van netwerkverzoeken. Elke afbeelding op een webpagina betekent een HTTP-verzoek met bijbehorende overhead van verbinding, DNS, TLS-handshake en latentie. Voor zeer kleine kritieke afbeeldingen - het hoofdbestand van de applicatie, favicon, een UI-icoon - elimineert het insluiten in Base64 in de CSS of HTML die kosten en garandeert het dat ze onmiddellijk worden weergegeven, zelfs voordat de browser iets heeft kunnen cachen.',
   },
   {
     type: 'paragraph',
@@ -106,12 +107,12 @@ const seo: ImagenBase64LocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Wanneer je een afbeelding selecteert of sleept, leest de <code>FileReader</code>-API van de browser deze direct van de schijf als binaire data in het RAM. De methode <code>readAsDataURL()</code> converteert die binaire bytes naar hun Base64-representatie met behulp van het RFC 4648-algoritme — elke 3 bytes aan originele data worden weergegeven als 4 ASCII-tekens uit het Base64-alfabet. Het resultaat bevat het automatisch gedetecteerde correcte MIME-type.',
+    html: 'Wanneer je een afbeelding selecteert of sleept, leest de <code>FileReader</code>-API van de browser deze direct van de schijf als binaire data in het RAM. De methode <code>readAsDataURL()</code> converteert die binaire bytes naar hun Base64-representatie met behulp van het RFC 4648-algoritme - elke 3 bytes aan originele data worden weergegeven als 4 ASCII-tekens uit het Base64-alfabet. Het resultaat bevat het automatisch gedetecteerde correcte MIME-type.',
   },
   {
     type: 'tip',
     title: 'Gebruik het alleen voor kleine afbeeldingen (onder de 10 KB)',
-    html: 'Base64 verhoogt de bestandsgrootte met ongeveer 33%: een afbeelding van 10 KB wordt ~13,3 KB aan tekst. Voor kleine iconen en logo\'s zijn deze kosten minimaal en compenseert de eliminatie van het HTTP-verzoek dit. Voor foto\'s of grote afbeeldingen is de extra grootte aanzienlijk — gebruik altijd een CDN voor grote afbeeldingen.',
+    html: 'Base64 verhoogt de bestandsgrootte met ongeveer 33%: een afbeelding van 10 KB wordt ~13,3 KB aan tekst. Voor kleine iconen en logo\'s zijn deze kosten minimaal en compenseert de eliminatie van het HTTP-verzoek dit. Voor foto\'s of grote afbeeldingen is de extra grootte aanzienlijk - gebruik altijd een CDN voor grote afbeeldingen.',
   },
   {
     type: 'title',
@@ -120,7 +121,7 @@ const seo: ImagenBase64LocaleContent['seo'] = [
   },
   {
     type: 'tip',
-    title: 'Vermijd Base64 voor grote afbeeldingen — gebruik een CDN',
+    title: 'Vermijd Base64 voor grote afbeeldingen: gebruik een CDN',
     html: 'Als je afbeeldingen hebt die groter zijn dan 10-20 KB, schaad Base64 de prestaties: het blaast de HTML/CSS-grootte op, voorkomt dat de browser de afbeelding onafhankelijk kan cachen en blokkeert de rendering terwijl de parser de gigantische string verwerkt. Gebruik voor grote afbeeldingen altijd een CDN met de juiste cache-headers.',
   },
   {
@@ -130,7 +131,7 @@ const seo: ImagenBase64LocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Data URI\'s zijn compatibel met 100% van de moderne browsers en de meeste e-mailclients. Onze tool verwerkt alles lokaal via de FileReader-API — je afbeeldingen verlaten nooit je apparaat. Dit maakt het geschikt voor bedrijfsafbeeldingen, privé-screenshots of andere vertrouwelijke visuele inhoud die je naar Base64 wilt converteren.',
+    html: 'Data URI\'s zijn compatibel met 100% van de moderne browsers en de meeste e-mailclients. Onze tool verwerkt alles lokaal via de FileReader-API - je afbeeldingen verlaten nooit je apparaat. Dit maakt het geschikt voor bedrijfsafbeeldingen, privé-screenshots of andere vertrouwelijke visuele inhoud die je naar Base64 wilt converteren.',
   },
   {
     type: 'title',

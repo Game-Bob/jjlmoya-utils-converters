@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Pilih file',
   processedFiles: 'File yang diproses',
   downloadAll: 'Unduh Semua (.zip)',
-  pending: 'Tertunda': 'Referensi Bibliografi',
+  pending: 'Tertunda',
+  bibliographyTitle: 'Referensi Bibliografi',
   faqTitle: 'Pertanyaan Umum',
 };
 
@@ -59,7 +60,7 @@ const seo: AvifAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'AVIF adalah format ideal untuk menyajikan gambar di web — kecil, efisien, dan berkualitas tinggi. Namun saat tiba waktunya untuk mengedit, merekayasa ulang, atau mengerjakan gambar tersebut di alat desain, AVIF menjadi penghalang. Figma, Photoshop, Illustrator, Sketch, dan hampir semua alat desain profesional mengharapkan PNG untuk pengerjaan transparansi dan pengeditan tanpa kehilangan. Mengubah AVIF ke PNG adalah jembatan antara dunia pengiriman web dan dunia pengeditan kreatif.',
+    html: 'AVIF adalah format ideal untuk menyajikan gambar di web - kecil, efisien, dan berkualitas tinggi. Namun saat tiba waktunya untuk mengedit, merekayasa ulang, atau mengerjakan gambar tersebut di alat desain, AVIF menjadi penghalang. Figma, Photoshop, Illustrator, Sketch, dan hampir semua alat desain profesional mengharapkan PNG untuk pengerjaan transparansi dan pengeditan tanpa kehilangan. Mengubah AVIF ke PNG adalah jembatan antara dunia pengiriman web dan dunia pengeditan kreatif.',
   },
   {
     type: 'title',
@@ -115,7 +116,7 @@ const seo: AvifAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Browser modern mendekode AVIF secara asli berkat mesin AV1 terintegrasi mereka. Saat memuat file, browser mendekodenya dalam memori dengan tetap mempertahankan semua informasi saluran alfa. Gambar yang didekodekan — termasuk transparansinya — digambar di atas elemen <code>Canvas</code> HTML5 dengan mode komposisi yang tepat untuk mempertahankan saluran alfa.',
+    html: 'Browser modern mendekode AVIF secara asli berkat mesin AV1 terintegrasi mereka. Saat memuat file, browser mendekodenya dalam memori dengan tetap mempertahankan semua informasi saluran alfa. Gambar yang didekodekan - termasuk transparansinya - digambar di atas elemen <code>Canvas</code> HTML5 dengan mode komposisi yang tepat untuk mempertahankan saluran alfa.',
   },
   {
     type: 'paragraph',
@@ -149,7 +150,7 @@ const seo: AvifAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'AVIF dan PNG adalah mitra sempurna dalam alur kerja modern: AVIF untuk pengiriman web yang efisien, PNG untuk pengeditan dan kolaborasi dalam alat desain. Dengan konverter kami, peralihan dari satu ke yang lain bersifat instan, pribadi, dan mempertahankan setiap detail — tepat seperti yang Anda butuhkan saat aset visual Anda sangat penting.',
+    html: 'AVIF dan PNG adalah mitra sempurna dalam alur kerja modern: AVIF untuk pengiriman web yang efisien, PNG untuk pengeditan dan kolaborasi dalam alat desain. Dengan konverter kami, peralihan dari satu ke yang lain bersifat instan, pribadi, dan mempertahankan setiap detail - tepat seperti yang Anda butuhkan saat aset visual Anda sangat penting.',
   },
 ];
 

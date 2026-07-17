@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Select files',
   processedFiles: 'Processed files',
   downloadAll: 'Download All (.zip)',
-  pending: 'Pending': 'Bibliographic References',
+  pending: 'Pending',
+  bibliographyTitle: 'Bibliographic References',
   faqTitle: 'Frequently Asked Questions',
 };
 
@@ -69,7 +70,7 @@ const seo: WebpAJpgLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'WebP excels in controlled environments: modern websites on Chrome, Edge or Firefox where browser compatibility can be guaranteed. Its superior compression reduces file weight by 25–35% compared to equivalent JPG, improving load times and Core Web Vitals metrics. It is the ideal format when you control the viewing environment.',
+    html: 'WebP excels in controlled environments: modern websites on Chrome, Edge or Firefox where browser compatibility can be guaranteed. Its superior compression reduces file weight by 25-35% compared to equivalent JPG, improving load times and Core Web Vitals metrics. It is the ideal format when you control the viewing environment.',
   },
   {
     type: 'paragraph',
@@ -125,7 +126,7 @@ const seo: WebpAJpgLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'Compatibility tip',
-    html: 'When sharing photos with non-technical users or sending them via email, always use JPG — zero compatibility issues across any email client, operating system or device, no exceptions and no unpleasant surprises.',
+    html: 'When sharing photos with non-technical users or sending them via email, always use JPG - zero compatibility issues across any email client, operating system or device, no exceptions and no unpleasant surprises.',
   },
   {
     type: 'title',

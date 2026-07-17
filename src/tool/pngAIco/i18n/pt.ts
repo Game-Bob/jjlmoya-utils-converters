@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Selecionar arquivos',
   processedFiles: 'Arquivos processados',
   downloadAll: 'Baixar tudo (.zip)',
-  pending: 'Pendente': 'Referências Bibliográfica',
+  pending: 'Pendente',
+  bibliographyTitle: 'Referências Bibliográfica',
   faqTitle: 'Perguntas Frequentes',
 };
 
@@ -59,7 +60,7 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'O <strong>PNG com transparência</strong> é o material de partida ideal para a criação de ícones ICO profissionais. Ao contrário do JPG (que não possui canal alfa) ou formatos com perdas, o PNG oferece exatamente o que o formato ICO necessita: píxeis nítidos, bordas limpas e um canal alfa de 32 bits que permite ao ícone integrar-se perfeitamente em qualquer fundo — seja na barra de favoritos branca do Safari, na barra escura do Firefox ou no ambiente de trabalho do Windows 11.',
+    html: 'O <strong>PNG com transparência</strong> é o material de partida ideal para a criação de ícones ICO profissionais. Ao contrário do JPG (que não possui canal alfa) ou formatos com perdas, o PNG oferece exatamente o que o formato ICO necessita: píxeis nítidos, bordas limpas e um canal alfa de 32 bits que permite ao ícone integrar-se perfeitamente em qualquer fundo - seja na barra de favoritos branca do Safari, na barra escura do Firefox ou no ambiente de trabalho do Windows 11.',
   },
   {
     type: 'title',
@@ -68,7 +69,7 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'O <strong>PNG</strong> é o formato de trabalho: é onde desenha o seu logótipo, exporta do Figma ou Illustrator e guarda as suas versões editáveis. A sua transparência, precisão de píxeis e compressão sem perdas tornam-no imbatível para o processo de design. Mas os navegadores, sistemas operativos e aplicações Windows que procuram um favicon ou um ícone de aplicação não aceitam PNG diretamente — precisam de ICO.',
+    html: 'O <strong>PNG</strong> é o formato de trabalho: é onde desenha o seu logótipo, exporta do Figma ou Illustrator e guarda as suas versões editáveis. A sua transparência, precisão de píxeis e compressão sem perdas tornam-no imbatível para o processo de design. Mas os navegadores, sistemas operativos e aplicações Windows que procuram um favicon ou um ícone de aplicação não aceitam PNG diretamente - precisam de ICO.',
   },
   {
     type: 'paragraph',
@@ -100,8 +101,8 @@ const seo: PngAIcoLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Velocidade instantânea — latência de rede zero',
-          'Privacidade total — 0 bytes enviados externamente',
+          'Velocidade instantânea - latência de rede zero',
+          'Privacidade total - 0 bytes enviados externamente',
           'Sem limites de MB ou restrições no número de arquivos',
           'Interface limpa, sem anúncios ou rastreamento',
         ],
@@ -119,12 +120,12 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'A transparência do PNG é totalmente preservada no ICO resultante — píxeis transparentes continuam transparentes, píxeis semitransparentes mantêm o seu valor alfa exato und píxeis opacos conservam a sua cor original. Isto é crítico para logótipos em fundos variáveis: o seu favicon terá o aspeto correto em modo claro, modo escuro und qualquer combinação de cores de interface do navegador.',
+    html: 'A transparência do PNG é totalmente preservada no ICO resultante - píxeis transparentes continuam transparentes, píxeis semitransparentes mantêm o seu valor alfa exato und píxeis opacos conservam a sua cor original. Isto é crítico para logótipos em fundos variáveis: o seu favicon terá o aspeto correto em modo claro, modo escuro und qualquer combinação de cores de interface do navegador.',
   },
   {
     type: 'tip',
     title: 'Dica: use un PNG 512×512 como fonte',
-    html: 'Para o melhor resultado possível, use um <strong>PNG quadrado de 512×512</strong> como imagem de origem. Esta resolução oferece ao conversor informação suficiente para gerar todos os tamanhos ICO padrão com nitidez — desde o favicon 16×16 até ao ícone 256×256 para ecrãs de alta densidade — sem pixelização ou perda de detalhe nas bordas. Quanto maior for o PNG de origem, melhor será o aspeto dos ícones de tamanhos pequenos.',
+    html: 'Para o melhor resultado possível, use um <strong>PNG quadrado de 512×512</strong> como imagem de origem. Esta resolução oferece ao conversor informação suficiente para gerar todos os tamanhos ICO padrão com nitidez - desde o favicon 16×16 até ao ícone 256×256 para ecrãs de alta densidade - sem pixelização ou perda de detalhe nas bordas. Quanto maior for o PNG de origem, melhor será o aspeto dos ícones de tamanhos pequenos.',
   },
   {
     type: 'title',
@@ -149,7 +150,7 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'O PNG com transparência é sem dúvida o melhor ponto de partida para a criação de ícones ICO de qualidade profissional. Com esta ferramenta, a conversão é instantânea, os canais alfa são totalmente preservados und o arquivo resultante é um ICO genuíno com a estrutura binária correta. Sem carregar o seu logótipo para qualquer servidor, sem marcas de agua, sem limites — und transparência perfeita em todos os tamanhos.',
+    html: 'O PNG com transparência é sem dúvida o melhor ponto de partida para a criação de ícones ICO de qualidade profissional. Com esta ferramenta, a conversão é instantânea, os canais alfa são totalmente preservados und o arquivo resultante é um ICO genuíno com a estrutura binária correta. Sem carregar o seu logótipo para qualquer servidor, sem marcas de agua, sem limites - und transparência perfeita em todos os tamanhos.',
   },
 ];
 

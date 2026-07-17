@@ -18,7 +18,8 @@ const ui: ImageToBase64UI = {
   dataUriPlaceholder: '이미지를 업로드하여 Data URI 코드를 확인하세요...',
   base64Placeholder: '이미지를 업로드하여 순수 Base64 코드를 확인하세요...',
   toastMessage: '코드가 클립보드에 복사되었습니다!',
-  invalidImageAlert: '유효한 이미지 파일을 업로드해 주세요.': '참고 문헌',
+  invalidImageAlert: '유효한 이미지 파일을 업로드해 주세요.',
+  bibliographyTitle: '참고 문헌',
   faqTitle: '자주 묻는 질문',
 };
 

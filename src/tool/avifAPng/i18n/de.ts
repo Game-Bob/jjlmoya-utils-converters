@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Dateien auswählen',
   processedFiles: 'Verarbeitete Dateien',
   downloadAll: 'Alles herunterladen (.zip)',
-  pending: 'Ausstehend': 'Literaturhinweise',
+  pending: 'Ausstehend',
+  bibliographyTitle: 'Literaturhinweise',
   faqTitle: 'Häufig gestellte Fragen',
 };
 
@@ -59,7 +60,7 @@ const seo: AvifAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'AVIF ist das ideale Format für die Bereitstellung von Bildern im Web – klein, effizient und von hoher Qualität. Aber wenn es an der Zeit ist, diese Bilder in Design-Tools zu bearbeiten oder zu retuschieren, wird AVIF zu einem Hindernis. Figma, Photoshop, Illustrator, Sketch und praktisch jedes professionelle Design-Tool erwarten PNG für die Arbeit mit Transparenzen und verlustfreier Bearbeitung. Das Konvertieren von AVIF in PNG ist die Brücke zwischen der Welt der Web-Bereitstellung und der kreativen Bearbeitung.',
+    html: 'AVIF ist das ideale Format für die Bereitstellung von Bildern im Web - klein, effizient und von hoher Qualität. Aber wenn es an der Zeit ist, diese Bilder in Design-Tools zu bearbeiten oder zu retuschieren, wird AVIF zu einem Hindernis. Figma, Photoshop, Illustrator, Sketch und praktisch jedes professionelle Design-Tool erwarten PNG für die Arbeit mit Transparenzen und verlustfreier Bearbeitung. Das Konvertieren von AVIF in PNG ist die Brücke zwischen der Welt der Web-Bereitstellung und der kreativen Bearbeitung.',
   },
   {
     type: 'title',
@@ -115,7 +116,7 @@ const seo: AvifAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Moderne Browser dekodieren AVIF dank ihrer integrierten AV1-Engines nativ. Beim Laden der Datei dekodiert der Browser sie im Speicher und behält dabei alle Informationen des Alphakanals bei. Das dekodierte Bild – einschließlich seiner Transparenzen – wird auf ein HTML5-<code>Canvas</code>-Element mit dem richtigen Kompositionsmodus gezeichnet, um den Alphakanal zu erhalten.',
+    html: 'Moderne Browser dekodieren AVIF dank ihrer integrierten AV1-Engines nativ. Beim Laden der Datei dekodiert der Browser sie im Speicher und behält dabei alle Informationen des Alphakanals bei. Das dekodierte Bild - einschließlich seiner Transparenzen - wird auf ein HTML5-<code>Canvas</code>-Element mit dem richtigen Kompositionsmodus gezeichnet, um den Alphakanal zu erhalten.',
   },
   {
     type: 'paragraph',
@@ -149,7 +150,7 @@ const seo: AvifAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'AVIF und PNG sind perfekte Begleiter in einem modernen Arbeitsablauf: AVIF für die effiziente Bereitstellung im Web, PNG für die Bearbeitung und Zusammenarbeit in Design-Tools. Mit unserem Konverter ist der Übergang von einem zum anderen sofortig, privat und bewahrt jedes Detail – genau das, was Sie brauchen, wenn es auf Ihre visuellen Assets ankommt.',
+    html: 'AVIF und PNG sind perfekte Begleiter in einem modernen Arbeitsablauf: AVIF für die effiziente Bereitstellung im Web, PNG für die Bearbeitung und Zusammenarbeit in Design-Tools. Mit unserem Konverter ist der Übergang von einem zum anderen sofortig, privat und bewahrt jedes Detail - genau das, was Sie brauchen, wenn es auf Ihre visuellen Assets ankommt.',
   },
 ];
 

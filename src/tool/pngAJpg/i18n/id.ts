@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Pilih file',
   processedFiles: 'File yang diproses',
   downloadAll: 'Unduh Semua (.zip)',
-  pending: 'Tertunda': 'Referensi Bibliografi',
+  pending: 'Tertunda',
+  bibliographyTitle: 'Referensi Bibliografi',
   faqTitle: 'Pertanyaan Umum',
 };
 

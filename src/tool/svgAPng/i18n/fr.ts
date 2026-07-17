@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Sélectionner des fichiers',
   processedFiles: 'Fichiers traités',
   downloadAll: 'Tout télécharger (.zip)',
-  pending: 'En attente': 'Références Bibliographiques',
+  pending: 'En attente',
+  bibliographyTitle: 'Références Bibliographiques',
   faqTitle: 'Questions Fréquentes',
 };
 
@@ -54,29 +55,29 @@ const howTo: SvgAPngLocaleContent['howTo'] = [
 const seo: SvgAPngLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Convertisseur SVG vers PNG : Du Vecteur Infini au Raster Universel',
+    text: 'Convertisseur SVG vers PNG: Du Vecteur Infini au Raster Universel',
     level: 2,
   },
   {
     type: 'paragraph',
-    html: '<strong>SVG</strong> (Scalable Vector Graphics) est le choix parfait pour le design web : infiniment évolutif, léger et éditable avec n\'importe quel éditeur de code. Mais lorsque vous devez utiliser ce logo ou cette icône dans une application mobile, le partager sur les réseaux sociaux ou l\'insérer dans une présentation PowerPoint, vous vous heurtez à un obstacle : la plupart de ces plateformes ne supportent pas le SVG. Le format <strong>PNG</strong> est la solution universelle : rastérisé, avec canal alpha, compatible dans absolument tous les contextes.',
+    html: '<strong>SVG</strong> (Scalable Vector Graphics) est le choix parfait pour le design web: infiniment évolutif, léger et éditable avec n\'importe quel éditeur de code. Mais lorsque vous devez utiliser ce logo ou cette icône dans une application mobile, le partager sur les réseaux sociaux ou l\'insérer dans une présentation PowerPoint, vous vous heurtez à un obstacle: la plupart de ces plateformes ne supportent pas le SVG. Le format <strong>PNG</strong> est la solution universelle: rastérisé, avec canal alpha, compatible dans absolument tous les contextes.',
   },
   {
     type: 'title',
-    text: 'SVG vs PNG : Vecteurs pour le Web, Raster pour le Monde',
+    text: 'SVG vs PNG: Vecteurs pour le Web, Raster pour le Monde',
     level: 3,
   },
   {
     type: 'paragraph',
-    html: 'SVG stocke l\'image sous forme d\'instructions mathématiques : une courbe de Bézier, un dégradé, un polygone. Cela signifie que le même fichier est parfaitement net à 16px comme à 16 000px. C\'est le format idéal pour votre code web, les animations CSS et tout élément devant s\'adapter à différentes résolutions d\'écran sans perte de qualité.',
+    html: 'SVG stocke l\'image sous forme d\'instructions mathématiques: une courbe de Bézier, un dégradé, un polygone. Cela signifie que le même fichier est parfaitement net à 16px comme à 16 000px. C\'est le format idéal pour votre code web, les animations CSS et tout élément devant s\'adapter à différentes résolutions d\'écran sans perte de qualité.',
   },
   {
     type: 'paragraph',
-    html: 'PNG stocke l\'image comme une grille de pixels avec des informations de couleur et de transparence pour chacun. C\'est un format <strong>sans perte</strong>, ce qui signifie que la qualité est préservée intégralement. Une fois qu\'un SVG est rastérisé en PNG, la résolution est fixée. C\'est pourquoi le choix de la taille d\'export est crucial : notre outil effectue le rendu à double échelle (2x) pour garantir la netteté sur les écrans Retina et 4K.',
+    html: 'PNG stocke l\'image comme une grille de pixels avec des informations de couleur et de transparence pour chacun. C\'est un format <strong>sans perte</strong>, ce qui signifie que la qualité est préservée intégralement. Une fois qu\'un SVG est rastérisé en PNG, la résolution est fixée. C\'est pourquoi le choix de la taille d\'export est crucial: notre outil effectue le rendu à double échelle (2x) pour garantir la netteté sur les écrans Retina et 4K.',
   },
   {
     type: 'title',
-    text: 'Comparatif : Conversion Locale vs Cloud',
+    text: 'Comparatif: Conversion Locale vs Cloud',
     level: 3,
   },
   {
@@ -119,12 +120,12 @@ const seo: SvgAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Contrairement à la conversion en JPG, lors de l\'export en PNG le canvas conserve le canal alpha complet : les zones transparentes du SVG original deviennent des pixels entièrement transparents dans le PNG résultant — sans remplissage de fond blanc. L\'export utilise la méthode <code>toDataURL(\'image/png\')</code> avec compression sans perte.',
+    html: 'Contrairement à la conversion en JPG, lors de l\'export en PNG le canvas conserve le canal alpha complet: les zones transparentes du SVG original deviennent des pixels entièrement transparents dans le PNG résultant - sans remplissage de fond blanc. L\'export utilise la méthode <code>toDataURL(\'image/png\')</code> avec compression sans perte.',
   },
   {
     type: 'tip',
     title: 'Conseil avant de rastériser',
-    html: 'Choisissez soigneusement la taille d\'export du PNG — rastériser un SVG est un processus à sens unique : vous ne pourrez pas récupérer les vecteurs depuis le PNG résultant. Conservez toujours le SVG original comme source maîtresse, et générez les PNG à la résolution la plus élevée dont vous pourriez avoir besoin.',
+    html: 'Choisissez soigneusement la taille d\'export du PNG - rastériser un SVG est un processus à sens unique: vous ne pourrez pas récupérer les vecteurs depuis le PNG résultant. Conservez toujours le SVG original comme source maîtresse, et générez les PNG à la résolution la plus élevée dont vous pourriez avoir besoin.',
   },
   {
     type: 'title',

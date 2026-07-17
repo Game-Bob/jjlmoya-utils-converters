@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Select files',
   processedFiles: 'Processed files',
   downloadAll: 'Download All (.zip)',
-  pending: 'Pending': 'Bibliographic References',
+  pending: 'Pending',
+  bibliographyTitle: 'Bibliographic References',
   faqTitle: 'Frequently Asked Questions',
 };
 
@@ -59,7 +60,7 @@ const seo: AvifAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'AVIF is the ideal format for serving images on the web — small, efficient and high quality. But when the time comes to edit, retouch or work with those images in design tools, AVIF becomes an obstacle. Figma, Photoshop, Illustrator, Sketch and virtually any professional design tool expect PNG for transparency work and lossless editing. Converting AVIF to PNG is the bridge between the world of web delivery and creative editing.',
+    html: 'AVIF is the ideal format for serving images on the web - small, efficient and high quality. But when the time comes to edit, retouch or work with those images in design tools, AVIF becomes an obstacle. Figma, Photoshop, Illustrator, Sketch and virtually any professional design tool expect PNG for transparency work and lossless editing. Converting AVIF to PNG is the bridge between the world of web delivery and creative editing.',
   },
   {
     type: 'title',
@@ -115,7 +116,7 @@ const seo: AvifAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Modern browsers decode AVIF natively thanks to their built-in AV1 engines. When loading the file, the browser decodes it in memory preserving all alpha channel information. The decoded image — including its transparencies — is drawn onto an HTML5 <code>Canvas</code> element with the correct compositing mode to preserve the alpha channel.',
+    html: 'Modern browsers decode AVIF natively thanks to their built-in AV1 engines. When loading the file, the browser decodes it in memory preserving all alpha channel information. The decoded image - including its transparencies - is drawn onto an HTML5 <code>Canvas</code> element with the correct compositing mode to preserve the alpha channel.',
   },
   {
     type: 'paragraph',
@@ -149,7 +150,7 @@ const seo: AvifAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'AVIF and PNG are perfect companions in a modern workflow: AVIF for efficient web delivery, PNG for editing and collaboration in design tools. With our converter, the step from one to the other is instant, private and preserves every detail — exactly what you need when your visual assets matter.',
+    html: 'AVIF and PNG are perfect companions in a modern workflow: AVIF for efficient web delivery, PNG for editing and collaboration in design tools. With our converter, the step from one to the other is instant, private and preserves every detail - exactly what you need when your visual assets matter.',
   },
 ];
 

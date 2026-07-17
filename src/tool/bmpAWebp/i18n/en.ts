@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Select files',
   processedFiles: 'Processed files',
   downloadAll: 'Download All (.zip)',
-  pending: 'Pending': 'Bibliographic References',
+  pending: 'Pending',
+  bibliographyTitle: 'Bibliographic References',
   faqTitle: 'Frequently Asked Questions',
 };
 
@@ -101,7 +102,7 @@ const seo: BmpAWebpLocaleContent['seo'] = [
         highlight: true,
         points: [
           'Instant conversion with no network transfer',
-          'Absolute privacy — 0 bytes leave your device',
+          'Absolute privacy - 0 bytes leave your device',
           'No file size limits',
           'Works without an internet connection',
         ],
@@ -135,11 +136,11 @@ const seo: BmpAWebpLocaleContent['seo'] = [
     type: 'list',
     icon: 'mdi:check-circle',
     items: [
-      'Web publishing — Chrome, Firefox, Safari, Edge and all modern browsers.',
-      'Social media — Instagram, Twitter, Facebook natively accept WebP.',
-      'Web apps and PWAs — minimal sizes for instant loading.',
-      'Efficient archiving — replace legacy BMP collections saving gigabytes.',
-      'Email marketing — lightweight images that load fast in any modern mail client.',
+      'Web publishing - Chrome, Firefox, Safari, Edge and all modern browsers.',
+      'Social media - Instagram, Twitter, Facebook natively accept WebP.',
+      'Web apps and PWAs - minimal sizes for instant loading.',
+      'Efficient archiving - replace legacy BMP collections saving gigabytes.',
+      'Email marketing - lightweight images that load fast in any modern mail client.',
     ],
   },
   {
@@ -149,7 +150,7 @@ const seo: BmpAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'If you have legacy BMP files from Windows, uncompressed screenshots or images from old tools, converting them to WebP is the most impactful action you can take to optimize your storage and web performance. With our tool, the conversion is instant, private and unlimited — exactly as it should be.',
+    html: 'If you have legacy BMP files from Windows, uncompressed screenshots or images from old tools, converting them to WebP is the most impactful action you can take to optimize your storage and web performance. With our tool, the conversion is instant, private and unlimited - exactly as it should be.',
   },
 ];
 

@@ -18,7 +18,8 @@ const ui: ImageToBase64UI = {
   dataUriPlaceholder: '上传图片以查看 Data URI 代码...',
   base64Placeholder: '上传图片以查看纯 Base64 代码...',
   toastMessage: '代码已复制到剪贴板！',
-  invalidImageAlert: '请上传有效的图片文件。': '参考文献',
+  invalidImageAlert: '请上传有效的图片文件。',
+  bibliographyTitle: '参考文献',
   faqTitle: '常见问题',
 };
 
@@ -68,7 +69,7 @@ const seo: ImagenBase64LocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Base64 是一种编码技术, 它将二进制数据 (如图片) 转换为纯 ASCII 文本字符串。结果是一个 Data URI: 一个以 <code>data:image/png;base64,...</code> 开头的自包含 URL, 包含整个编码后的图片。通过将此代码直接嵌入 HTML、CSS 或 JSON, 图片无需任何额外的服务器 HTTP 请求即可加载——零网络延迟, 即时加载。',
+    html: 'Base64 是一种编码技术, 它将二进制数据 (如图片) 转换为纯 ASCII 文本字符串。结果是一个 Data URI: 一个以 <code>data:image/png;base64,...</code> 开头的自包含 URL, 包含整个编码后的图片。通过将此代码直接嵌入 HTML、CSS 或 JSON, 图片无需任何额外的服务器 HTTP 请求即可加载-零网络延迟, 即时加载。',
   },
   {
     type: 'title',
@@ -77,7 +78,7 @@ const seo: ImagenBase64LocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '支持 Base64 的主要理由是消除网络请求。网页上的每张图片都意味着一次 HTTP 请求, 带有连接、DNS、TLS 握手和延迟的开销。对于非常小的关键图片——主应用程序图标、favicon、UI 图标——在 CSS 或 HTML 中以 Base64 嵌入可以消除该成本, 并保证它们即使在浏览器缓存任何内容之前也能立即显示。',
+    html: '支持 Base64 的主要理由是消除网络请求。网页上的每张图片都意味着一次 HTTP 请求, 带有连接、DNS、TLS 握手和延迟的开销。对于非常小的关键图片-主应用程序图标、favicon、UI 图标-在 CSS 或 HTML 中以 Base64 嵌入可以消除该成本, 并保证它们即使在浏览器缓存任何内容之前也能立即显示。',
   },
   {
     type: 'paragraph',
@@ -106,12 +107,12 @@ const seo: ImagenBase64LocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '当您选择或拖动图片时, 浏览器的 <code>FileReader</code> API 直接从磁盘读取图片作为 RAM 中的二进制数据。 <code>readAsDataURL()</code> 方法使用 RFC 4648 算法将这些二进制字节转换为其 Base64 表示形式——原始数据的每 3 个字节表示为 Base64 字母表中的 4 个 ASCII 字符。结果包含自动检测到的正确 MIME 类型。',
+    html: '当您选择或拖动图片时, 浏览器的 <code>FileReader</code> API 直接从磁盘读取图片作为 RAM 中的二进制数据。 <code>readAsDataURL()</code> 方法使用 RFC 4648 算法将这些二进制字节转换为其 Base64 表示形式-原始数据的每 3 个字节表示为 Base64 字母表中的 4 个 ASCII 字符。结果包含自动检测到的正确 MIME 类型。',
   },
   {
     type: 'tip',
     title: '仅对小图片使用 (10 KB 以下)',
-    html: 'Base64 会使文件大小增加约 33%: 10 KB 的图片变成约 13.3 KB 的文本。对于小图标和徽标, 此成本很小, 而消除 HTTP 请求可以弥补这一点。对于照片或大图片, 大小开销非常大——对于大图片, 请务必使用 CDN。',
+    html: 'Base64 会使文件大小增加约 33%: 10 KB 的图片变成约 13.3 KB 的文本。对于小图标和徽标, 此成本很小, 而消除 HTTP 请求可以弥补这一点。对于照片或大图片, 大小开销非常大-对于大图片, 请务必使用 CDN。',
   },
   {
     type: 'title',
@@ -120,7 +121,7 @@ const seo: ImagenBase64LocaleContent['seo'] = [
   },
   {
     type: 'tip',
-    title: '大图片请避免使用 Base64——请改用 CDN',
+    title: '大图片请避免使用 Base64: 请改用 CDN',
     html: '如果图片大于 10-20 KB, Base64 会损害性能: 它会使 HTML/CSS 大小膨胀, 阻止浏览器独立缓存图片, 并在解析器处理巨型字符串时阻塞渲染。对于大图片, 请务必使用带有适当缓存头的 CDN 服务。',
   },
   {
@@ -130,7 +131,7 @@ const seo: ImagenBase64LocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Data URI 兼容 100% 的现代浏览器和大多数电子邮件客户端。我们的工具通过 FileReader API 在本地处理所有内容——您的图片绝不会离开您的设备。这使其适用于公司内部图片、私人截图或您需要转换为 Base64 的任何机密视觉内容。',
+    html: 'Data URI 兼容 100% 的现代浏览器和大多数电子邮件客户端。我们的工具通过 FileReader API 在本地处理所有内容-您的图片绝不会离开您的设备。这使其适用于公司内部图片、私人截图或您需要转换为 Base64 的任何机密视觉内容。',
   },
   {
     type: 'title',

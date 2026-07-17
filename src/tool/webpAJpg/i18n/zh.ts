@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: '选择文件',
   processedFiles: '已处理文件',
   downloadAll: '下载全部 (.zip)',
-  pending: '等待中': '参考文献',
+  pending: '等待中',
+  bibliographyTitle: '参考文献',
   faqTitle: '常见问题',
 };
 
@@ -124,7 +125,7 @@ const seo: WebpAJpgLocaleContent['seo'] = [
   {
     type: 'tip',
     title: '兼容性建议',
-    html: '与非技术用户分享照片或通过邮件发送时, 请始终使用 JPG——在任何邮件客户端、操作系统或设备上都没有任何兼容性问题, 没有例外, 也没有令人不快的意外。',
+    html: '与非技术用户分享照片或通过邮件发送时, 请始终使用 JPG-在任何邮件客户端、操作系统或设备上都没有任何兼容性问题, 没有例外, 也没有令人不快的意外。',
   },
   {
     type: 'title',

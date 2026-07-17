@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Dateien auswählen',
   processedFiles: 'Verarbeitete Dateien',
   downloadAll: 'Alles herunterladen (.zip)',
-  pending: 'Ausstehend': 'Literaturhinweise',
+  pending: 'Ausstehend',
+  bibliographyTitle: 'Literaturhinweise',
   faqTitle: 'Häufig gestellte Fragen',
 };
 
@@ -124,7 +125,7 @@ const seo: GifAPngLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'Binäre Transparenz von GIF vs. Alphakanal von PNG',
-    html: 'GIF unterstützt nur binäre Transparenz (opak oder transparent). Bei der Konvertierung in PNG bleiben die halbtransparenten Pixel des GIFs so erhalten, wie der Browser sie interpretiert. Wenn Ihr GIF gezackte Kanten hat, behält das PNG diese bei — aber Sie können sie mit Kantenglättung in jedem Editor bearbeiten, was mit dem ursprünglichen GIF unmöglich ist.',
+    html: 'GIF unterstützt nur binäre Transparenz (opak oder transparent). Bei der Konvertierung in PNG bleiben die halbtransparenten Pixel des GIFs so erhalten, wie der Browser sie interpretiert. Wenn Ihr GIF gezackte Kanten hat, behält das PNG diese bei - aber Sie können sie mit Kantenglättung in jedem Editor bearbeiten, was mit dem ursprünglichen GIF unmöglich ist.',
   },
   {
     type: 'title',

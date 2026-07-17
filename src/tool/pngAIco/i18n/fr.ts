@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Sélectionner des fichiers',
   processedFiles: 'Fichiers traités',
   downloadAll: 'Tout télécharger (.zip)',
-  pending: 'En attente': 'Références Bibliographique',
+  pending: 'En attente',
+  bibliographyTitle: 'Références Bibliographique',
   faqTitle: 'Questions Fréquentes',
 };
 
@@ -54,12 +55,12 @@ const howTo: PngAIcoLocaleContent['howTo'] = [
 const seo: PngAIcoLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Convertisseur PNG vers ICO : La Meilleure Source pour des Favicons à Transparence Parfaite',
+    text: 'Convertisseur PNG vers ICO: La Meilleure Source pour des Favicons à Transparence Parfaite',
     level: 2,
   },
   {
     type: 'paragraph',
-    html: 'Le <strong>PNG avec transparence</strong> est le matériau de départ idéal pour créer des icônes ICO professionnelles. Contrairement au JPG (qui n\'a pas de canal alpha) ou aux formats avec perte, le PNG vous offre exactement ce dont le format ICO a besoin : des pixels nets, des bords propres et un canal alpha 32 bits qui permet à l\'icône de s\'intégrer parfaitement sur n\'importe quel fond — que ce soit la barre de favoris blanche de Safari, la barre sombre de Firefox ou le bureau Windows 11.',
+    html: 'Le <strong>PNG avec transparence</strong> est le matériau de départ idéal pour créer des icônes ICO professionnelles. Contrairement au JPG (qui n\'a pas de canal alpha) ou aux formats avec perte, le PNG vous offre exactement ce dont le format ICO a besoin: des pixels nets, des bords propres et un canal alpha 32 bits qui permet à l\'icône de s\'intégrer parfaitement sur n\'importe quel fond - que ce soit la barre de favoris blanche de Safari, la barre sombre de Firefox ou le bureau Windows 11.',
   },
   {
     type: 'title',
@@ -68,15 +69,15 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Le <strong>PNG</strong> est le format de travail : c\'est là que vous concevez votre logo, exportez depuis Figma ou Illustrator, et sauvegardez vos versions éditables. Sa transparence, sa précision de pixels et sa compression sans perte le rendent imbattable pour le processus de design. Mais les navigateurs, systèmes d\'exploitation et applications Windows cherchant un favicon ou une icône d\'application n\'acceptent pas directement le PNG — ils ont besoin de l\'ICO.',
+    html: 'Le <strong>PNG</strong> est le format de travail: c\'est là que vous concevez votre logo, exportez depuis Figma ou Illustrator, et sauvegardez vos versions éditables. Sa transparence, sa précision de pixels et sa compression sans perte le rendent imbattable pour le processus de design. Mais les navigateurs, systèmes d\'exploitation et applications Windows cherchant un favicon ou une icône d\'application n\'acceptent pas directement le PNG - ils ont besoin de l\'ICO.',
   },
   {
     type: 'paragraph',
-    html: 'L\'<strong>ICO</strong> est le format de distribution pour les icônes dans les environnements Microsoft und le web. Il contient une structure binaire spécifique permettant de regrouper plusieurs résolutions dans un seul fichier : le navigateur lit le répertoire interne du fichier ICO und sélectionne automatiquement <strong>16×16</strong> pour l\'onglet du navigateur, <strong>32×32</strong> pour les raccourcis, <strong>48×48</strong> pour l\'explorateur de fichiers und <strong>256×256</strong> pour les écrans Retina und 4K. Partir d\'un PNG transparent garantit que toutes ces résolutions auront des bords parfaits sans liseré blanc.',
+    html: 'L\'<strong>ICO</strong> est le format de distribution pour les icônes dans les environnements Microsoft und le web. Il contient une structure binaire spécifique permettant de regrouper plusieurs résolutions dans un seul fichier: le navigateur lit le répertoire interne du fichier ICO und sélectionne automatiquement <strong>16×16</strong> pour l\'onglet du navigateur, <strong>32×32</strong> pour les raccourcis, <strong>48×48</strong> pour l\'explorateur de fichiers und <strong>256×256</strong> pour les écrans Retina und 4K. Partir d\'un PNG transparent garantit que toutes ces résolutions auront des bords parfaits sans liseré blanc.',
   },
   {
     type: 'title',
-    text: 'Comparatif : Conversion locale vs Cloud',
+    text: 'Comparatif: Conversion locale vs Cloud',
     level: 3,
   },
   {
@@ -100,8 +101,8 @@ const seo: PngAIcoLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Vitesse instantanée — zéro latence réseau',
-          'Confidentialité totale — 0 octet envoyé à l\'extérieur',
+          'Vitesse instantanée - zéro latence réseau',
+          'Confidentialité totale - 0 octet envoyé à l\'extérieur',
           'Aucune limite de taille ni de nombre de fichiers',
           'Interface épurée, sans publicités ni traçage',
         ],
@@ -119,12 +120,12 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'La transparence du PNG est entièrement préservée dans l\'ICO résultant — les pixels transparents restent transparents, les pixels semi-transparents conservent leur valeur alpha exacte und les pixels opaques gardent leur couleur d\'origine. C\'est crucial pour les logos sur des fonds variables : votre favicon s\'affichera correctement en mode clair, mode sombre und dans toute combinaison de couleurs de l\'interface du navigateur.',
+    html: 'La transparence du PNG est entièrement préservée dans l\'ICO résultant - les pixels transparents restent transparents, les pixels semi-transparents conservent leur valeur alpha exacte und les pixels opaques gardent leur couleur d\'origine. C\'est crucial pour les logos sur des fonds variables: votre favicon s\'affichera correctement en mode clair, mode sombre und dans toute combinaison de couleurs de l\'interface du navigateur.',
   },
   {
     type: 'tip',
-    title: 'Conseil : utilisez un PNG de 512×512 comme source',
-    html: 'Pour le meilleur résultat possible, utilisez un <strong>PNG carré de 512×512 pixels</strong> comme image source. Cette résolution donne au convertisseur suffisamment d\'informations pour générer toutes les tailles ICO standard avec netteté — du favicon 16×16 jusqu\'au 256×256 pour les écrans haute densité — sans pixelisation ni perte de détail sur les bords. Plus le PNG source est grand, meilleurs seront les petites icônes résultantes.',
+    title: 'Conseil: utilisez un PNG de 512×512 comme source',
+    html: 'Pour le meilleur résultat possible, utilisez un <strong>PNG carré de 512×512 pixels</strong> comme image source. Cette résolution donne au convertisseur suffisamment d\'informations pour générer toutes les tailles ICO standard avec netteté - du favicon 16×16 jusqu\'au 256×256 pour les écrans haute densité - sans pixelisation ni perte de détail sur les bords. Plus le PNG source est grand, meilleurs seront les petites icônes résultantes.',
   },
   {
     type: 'title',
@@ -135,8 +136,8 @@ const seo: PngAIcoLocaleContent['seo'] = [
     type: 'list',
     icon: 'mdi:check-circle',
     items: [
-      'Favicon transparent pour sites web : fonctionne dans Chrome, Firefox, Safari, Edge e Internet Explorer.',
-      'Icône d\'application PWA : le manifest.json référence l\'ICO pour l\'installation sur bureau.',
+      'Favicon transparent pour sites web: fonctionne dans Chrome, Firefox, Safari, Edge e Internet Explorer.',
+      'Icône d\'application PWA: le manifest.json référence l\'ICO pour l\'installation sur bureau.',
       'Personnalisation de dossiers Windows 10/11 avec logo d\'entreprise sans fond blanc.',
       'Icône de raccourci pour applications de bureau, installateurs und exécutables.',
       'Icône d\'extension navigateur pour les extensions Chrome und Firefox.',
@@ -149,7 +150,7 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Le PNG avec transparence est sans conteste le meilleur point de départ pour créer des icônes ICO de qualité professionnelle. Avec cet outil, la conversion est instantanée, les canaux alpha sont entièrement préservés und le fichier résultant est un vrai ICO avec la structure binaire correcte. Sans envoyer votre logo sur aucun serveur, sans filigrane, sans limites — und avec une transparence parfaite à toutes les tailles.',
+    html: 'Le PNG avec transparence est sans conteste le meilleur point de départ pour créer des icônes ICO de qualité professionnelle. Avec cet outil, la conversion est instantanée, les canaux alpha sont entièrement préservés und le fichier résultant est un vrai ICO avec la structure binaire correcte. Sans envoyer votre logo sur aucun serveur, sans filigrane, sans limites - und avec une transparence parfaite à toutes les tailles.',
   },
 ];
 

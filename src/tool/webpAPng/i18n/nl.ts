@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Bestanden selecteren',
   processedFiles: 'Verwerkte bestanden',
   downloadAll: 'Alles downloaden (.zip)',
-  pending: 'In afwachting': 'Bibliografische Referenties',
+  pending: 'In afwachting',
+  bibliographyTitle: 'Bibliografische Referenties',
   faqTitle: 'Veelgestelde Vragen',
 };
 
@@ -124,7 +125,7 @@ const seo: WebpAPngLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'Tip voor bewerkers',
-    html: 'Gebruik PNG wanneer je de afbeelding verder moet bewerken. Verliesvrije compressie garandeert dat er geen kwaliteitsverlies optreedt door herhaaldelijk opslaan — cruciaal bij het werken met lagen, maskers of kleuraanpassingen in Photoshop of Figma.',
+    html: 'Gebruik PNG wanneer je de afbeelding verder moet bewerken. Verliesvrije compressie garandeert dat er geen kwaliteitsverlies optreedt door herhaaldelijk opslaan - cruciaal bij het werken met lagen, maskers of kleuraanpassingen in Photoshop of Figma.',
   },
   {
     type: 'title',
@@ -149,7 +150,7 @@ const seo: WebpAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Als WebP het formaat voor webservers is, dan is PNG het formaat voor de ontwerpstudio. Deze tool converteert je WebP-assets naar productieklare PNG\'s, met behoud van transparantie en maximale kwaliteit — allemaal in je browser en zonder dat je bestanden je machine ooit verlaten.',
+    html: 'Als WebP het formaat voor webservers is, dan is PNG het formaat voor de ontwerpstudio. Deze tool converteert je WebP-assets naar productieklare PNG\'s, met behoud van transparantie en maximale kwaliteit - allemaal in je browser en zonder dat je bestanden je machine ooit verlaten.',
   },
 ];
 

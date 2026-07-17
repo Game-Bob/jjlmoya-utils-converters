@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: '选择文件',
   processedFiles: '已处理文件',
   downloadAll: '下载全部 (.zip)',
-  pending: '等待中': '参考文献',
+  pending: '等待中',
+  bibliographyTitle: '参考文献',
   faqTitle: '常见问题',
 };
 
@@ -59,7 +60,7 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>带透明度的 PNG</strong> 是制作专业 ICO 图标的理想原始素材。与不含 Alpha 通道的 JPG 或有损格式不同, PNG 能提供 ICO 格式所需的精准要素: 清晰的像素、干净的边缘以及 32 位 Alpha 通道。这使得图标能完美融入任何背景——无论是 Safari 的白色书签栏、Firefox 的深色栏, 还是 Windows 11 的桌面。',
+    html: '<strong>带透明度的 PNG</strong> 是制作专业 ICO 图标的理想原始素材。与不含 Alpha 通道的 JPG 或有损格式不同, PNG 能提供 ICO 格式所需的精准要素: 清晰的像素、干净的边缘以及 32 位 Alpha 通道。这使得图标能完美融入任何背景-无论是 Safari 的白色书签栏、Firefox 的深色栏, 还是 Windows 11 的桌面。',
   },
   {
     type: 'title',
@@ -68,7 +69,7 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>PNG</strong> 是工作格式: 您可以在其中设计徽标、从 Figma 或 Illustrator 导出并保存可编辑版本。它的透明度、像素精确度和无损压缩特性使其在设计过程中无可替代。但浏览器、操作系统和 Windows 应用程序在寻找 Favicon 或应用图标时并不直接接受 PNG——它们需要 ICO。',
+    html: '<strong>PNG</strong> 是工作格式: 您可以在其中设计徽标、从 Figma 或 Illustrator 导出并保存可编辑版本。它的透明度、像素精确度和无损压缩特性使其在设计过程中无可替代。但浏览器、操作系统和 Windows 应用程序在寻找 Favicon 或应用图标时并不直接接受 PNG-它们需要 ICO。',
   },
   {
     type: 'paragraph',
@@ -100,8 +101,8 @@ const seo: PngAIcoLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          '即时处理——零网络延迟',
-          '完全私密——数据向外发送量为 0 字节',
+          '即时处理-零网络延迟',
+          '完全私密-数据向外发送量为 0 字节',
           '无 MB 限制或文件数量限制',
           '界面简洁, 无广告或追踪',
         ],
@@ -119,12 +120,12 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'PNG 的透明度在生成的 ICO 中得到完整保留——透明像素保持透明, 半透明像素保留其精确的 Alpha 值, 而不透明像素保留其原始颜色。这对于在多变背景下展示徽标至关重要: 您的 Favicon 在浅色模式、深色模式以及浏览器界面的任何颜色组合下都能正确显示。',
+    html: 'PNG 的透明度在生成的 ICO 中得到完整保留-透明像素保持透明, 半透明像素保留其精确的 Alpha 值, 而不透明像素保留其原始颜色。这对于在多变背景下展示徽标至关重要: 您的 Favicon 在浅色模式、深色模式以及浏览器界面的任何颜色组合下都能正确显示。',
   },
   {
     type: 'tip',
     title: '提示: 使用 512×512 的 PNG 作为源文件',
-    html: '为了获得最佳效果, 请使用 <strong>512×512 的正方形 PNG</strong> 作为源图像。此分辨率为转换器提供了足够的信息, 从而能够清晰地生成所有标准的 ICO 尺寸——从 16×16 的 Favicon 到 256×256 的高清屏幕图标——而不会出现像素化或边缘细节丢失。源 PNG 越大, 小尺寸图标的效果就越好。',
+    html: '为了获得最佳效果, 请使用 <strong>512×512 的正方形 PNG</strong> 作为源图像。此分辨率为转换器提供了足够的信息, 从而能够清晰地生成所有标准的 ICO 尺寸-从 16×16 的 Favicon 到 256×256 的高清屏幕图标-而不会出现像素化或边缘细节丢失。源 PNG 越大, 小尺寸图标的效果就越好。',
   },
   {
     type: 'title',
@@ -149,7 +150,7 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '带透明度的 PNG 无疑是制作专业品质 ICO 图标的最佳起点。使用此工具, 转换是即时的, Alpha 通道得到完整保留, 生成的文件是具有正确二进制结构的真实 ICO。无需将徽标上传到任何服务器, 无水印, 无限制——并在所有尺寸下拥有完美的透明效果。',
+    html: '带透明度的 PNG 无疑是制作专业品质 ICO 图标的最佳起点。使用此工具, 转换是即时的, Alpha 通道得到完整保留, 生成的文件是具有正确二进制结构的真实 ICO。无需将徽标上传到任何服务器, 无水印, 无限制-并在所有尺寸下拥有完美的透明效果。',
   },
 ];
 

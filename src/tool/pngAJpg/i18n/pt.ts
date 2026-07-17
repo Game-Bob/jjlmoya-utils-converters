@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Selecionar ficheiros',
   processedFiles: 'Ficheiros processados',
   downloadAll: 'Descarregar Tudo (.zip)',
-  pending: 'Pendente': 'Referências Bibliográficas',
+  pending: 'Pendente',
+  bibliographyTitle: 'Referências Bibliográficas',
   faqTitle: 'Perguntas Frequentes',
 };
 

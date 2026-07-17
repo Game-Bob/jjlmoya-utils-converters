@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'ファイルを選択',
   processedFiles: '処理済みファイル',
   downloadAll: 'すべてダウンロード (.zip)',
-  pending: '保留中': '参考文献',
+  pending: '保留中',
+  bibliographyTitle: '参考文献',
   faqTitle: 'よくある質問',
 };
 
@@ -101,7 +102,7 @@ const seo: PngAWebpLocaleContent['seo'] = [
         highlight: true,
         points: [
           'ネットワーク遅延のない即座の処理速度',
-          '完全なプライバシー — 外部送信データ0バイト',
+          '完全なプライバシー - 外部送信データ0バイト',
           '容量制限やファイル数の制限なし',
           '広告や追跡のないクリーンなインターフェース',
         ],

@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: '파일 선택',
   processedFiles: '처리된 파일',
   downloadAll: '모두 다운로드 (.zip)',
-  pending: '대기 중': '참고 문헌',
+  pending: '대기 중',
+  bibliographyTitle: '참고 문헌',
   faqTitle: '자주 묻는 질문',
 };
 
@@ -101,7 +102,7 @@ const seo: JpgAWebpLocaleContent['seo'] = [
         highlight: true,
         points: [
           '네트워크 지연 없는 즉각적인 속도',
-          '완벽한 개인 정보 보호 — 외부 전송 데이터 0바이트',
+          '완벽한 개인 정보 보호 - 외부 전송 데이터 0바이트',
           '용량 제한이나 파일 개수 제한 없음',
           '광고나 추적이 없는 깨끗한 인터페이스',
         ],
@@ -149,7 +150,7 @@ const seo: JpgAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'JPG를 WebP로 변환하는 것은 현재 웹사이트에 적용할 수 있는 가장 간단하고 비용 효율적인 최적화 중 하나입니다. 이 도구를 사용하면 이미지가 기기를 떠나지 않고도 몇 초 만에 무료로 변환할 수 있습니다. 더 적은 킬로바이트, 더 나은 LCP, 더 빠른 페이지 로딩 — 이 모든 것을 기존과 동일한 시각적 품질로 누리세요.',
+    html: 'JPG를 WebP로 변환하는 것은 현재 웹사이트에 적용할 수 있는 가장 간단하고 비용 효율적인 최적화 중 하나입니다. 이 도구를 사용하면 이미지가 기기를 떠나지 않고도 몇 초 만에 무료로 변환할 수 있습니다. 더 적은 킬로바이트, 더 나은 LCP, 더 빠른 페이지 로딩 - 이 모든 것을 기존과 동일한 시각적 품질로 누리세요.',
   },
 ];
 

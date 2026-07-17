@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Selecionar arquivos',
   processedFiles: 'Arquivos processados',
   downloadAll: 'Baixar tudo (.zip)',
-  pending: 'Pendente': 'Referências Bibliográficas',
+  pending: 'Pendente',
+  bibliographyTitle: 'Referências Bibliográficas',
   faqTitle: 'Perguntas Frequentes',
 };
 
@@ -119,12 +120,12 @@ const seo: SvgAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Ao contrário da conversão para JPG, ao exportar para PNG o canvas retém o canal alfa completo: as áreas transparentes no SVG original tornam-se píxeis totalmente transparentes no PNG resultante — sem preenchimento de fundo branco. A exportação utiliza o método <code>toDataURL(\'image/png\')</code> com compressão lossless.',
+    html: 'Ao contrário da conversão para JPG, ao exportar para PNG o canvas retém o canal alfa completo: as áreas transparentes no SVG original tornam-se píxeis totalmente transparentes no PNG resultante - sem preenchimento de fundo branco. A exportação utiliza o método <code>toDataURL(\'image/png\')</code> com compressão lossless.',
   },
   {
     type: 'tip',
     title: 'Dica antes de rasterizar',
-    html: 'Escolha o seu tamanho de exportação PNG com cuidado — rasterizar um SVG é um processo de sentido único: você não pode recuperar os vetores a partir do PNG resultante. Mantenha sempre o SVG original como fonte mestre e gere PNGs na resolução mais alta que você possa vir a precisar.',
+    html: 'Escolha o seu tamanho de exportação PNG com cuidado - rasterizar um SVG é um processo de sentido único: você não pode recuperar os vetores a partir do PNG resultante. Mantenha sempre o SVG original como fonte mestre e gere PNGs na resolução mais alta que você possa vir a precisar.',
   },
   {
     type: 'title',

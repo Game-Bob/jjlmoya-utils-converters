@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Select files',
   processedFiles: 'Processed files',
   downloadAll: 'Download All (.zip)',
-  pending: 'Pending': 'Bibliographic References',
+  pending: 'Pending',
+  bibliographyTitle: 'Bibliographic References',
   faqTitle: 'Frequently Asked Questions',
 };
 
@@ -59,7 +60,7 @@ const seo: JpgAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'The <strong>ICO</strong> format is Microsoft\'s standard for Windows application icons and website favicons. Unlike simply renaming a JPG as .ico, a genuine ICO file requires a specific binary structure with 22-byte headers and an embedded image directory. <strong>JPG</strong> is the most common starting point for creating these icons — a company logo, a profile photo, or any image you want to turn into the visual icon of your application or website.',
+    html: 'The <strong>ICO</strong> format is Microsoft\'s standard for Windows application icons and website favicons. Unlike simply renaming a JPG as .ico, a genuine ICO file requires a specific binary structure with 22-byte headers and an embedded image directory. <strong>JPG</strong> is the most common starting point for creating these icons - a company logo, a profile photo, or any image you want to turn into the visual icon of your application or website.',
   },
   {
     type: 'title',
@@ -68,11 +69,11 @@ const seo: JpgAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>JPG</strong> is a source format, not a destination for icons. Perfect for photographs and banners, but incompatible with systems that require icons: Windows Explorer, the browser\'s bookmark bar, desktop shortcuts, or PWA application manifests. An operating system or browser looking for an icon expects the ICO format — and if it doesn\'t find it, it will display a generic icon or a broken square.',
+    html: '<strong>JPG</strong> is a source format, not a destination for icons. Perfect for photographs and banners, but incompatible with systems that require icons: Windows Explorer, the browser\'s bookmark bar, desktop shortcuts, or PWA application manifests. An operating system or browser looking for an icon expects the ICO format - and if it doesn\'t find it, it will display a generic icon or a broken square.',
   },
   {
     type: 'paragraph',
-    html: 'The <strong>ICO</strong> format was designed to contain multiple resolutions in a single file: <strong>16×16</strong> for the bookmark bar, <strong>32×32</strong> for shortcuts, <strong>48×48</strong> for the file explorer, and <strong>256×256</strong> for high-density displays. Browsers and operating systems automatically select the appropriate resolution based on the display context — the user doesn\'t have to manage anything.',
+    html: 'The <strong>ICO</strong> format was designed to contain multiple resolutions in a single file: <strong>16×16</strong> for the bookmark bar, <strong>32×32</strong> for shortcuts, <strong>48×48</strong> for the file explorer, and <strong>256×256</strong> for high-density displays. Browsers and operating systems automatically select the appropriate resolution based on the display context - the user doesn\'t have to manage anything.',
   },
   {
     type: 'title',
@@ -100,8 +101,8 @@ const seo: JpgAIcoLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Instant speed — zero network latency',
-          'Complete privacy — 0 bytes sent externally',
+          'Instant speed - zero network latency',
+          'Complete privacy - 0 bytes sent externally',
           'No MB limits or file count restrictions',
           'Clean interface, no ads or tracking',
         ],
@@ -115,16 +116,16 @@ const seo: JpgAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'The JPG is decoded and drawn onto an in-memory <strong>HTML5 Canvas</strong>. Since the ICO format requires a square image, the engine automatically detects if the JPG is rectangular and crops it by centering the most relevant part. It then builds the standard Microsoft ICO header with the correct magic number (<code>00 00 01 00</code>), the image directory, and the encoded pixel data. The result is a genuine binary .ico file — not a renamed PNG.',
+    html: 'The JPG is decoded and drawn onto an in-memory <strong>HTML5 Canvas</strong>. Since the ICO format requires a square image, the engine automatically detects if the JPG is rectangular and crops it by centering the most relevant part. It then builds the standard Microsoft ICO header with the correct magic number (<code>00 00 01 00</code>), the image directory, and the encoded pixel data. The result is a genuine binary .ico file - not a renamed PNG.',
   },
   {
     type: 'paragraph',
-    html: 'Since JPG lacks an alpha channel, the resulting ICO will also have no transparency — it will have a solid background inherited from the original photograph. If you need a favicon with a transparent background (for example, to adapt to dark or light bookmark bars), the recommended workflow is: remove the background in an editor, save as PNG, and use the PNG to ICO converter.',
+    html: 'Since JPG lacks an alpha channel, the resulting ICO will also have no transparency - it will have a solid background inherited from the original photograph. If you need a favicon with a transparent background (for example, to adapt to dark or light bookmark bars), the recommended workflow is: remove the background in an editor, save as PNG, and use the PNG to ICO converter.',
   },
   {
     type: 'tip',
     title: 'Tip: multiple resolutions in a single ICO',
-    html: 'ICO files can pack <strong>multiple resolutions</strong> into a single file — the browser or OS automatically picks the most appropriate one for each context. For the best possible result, use a square JPG of at least <strong>256×256 pixels</strong> as your source: this gives the converter enough information to generate sharp 16×16, 32×32, and 48×48 sizes without pixelation.',
+    html: 'ICO files can pack <strong>multiple resolutions</strong> into a single file - the browser or OS automatically picks the most appropriate one for each context. For the best possible result, use a square JPG of at least <strong>256×256 pixels</strong> as your source: this gives the converter enough information to generate sharp 16×16, 32×32, and 48×48 sizes without pixelation.',
   },
   {
     type: 'title',

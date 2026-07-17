@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Välj filer',
   processedFiles: 'Bearbetade filer',
   downloadAll: 'Ladda ner alla (.zip)',
-  pending: 'Väntande': 'Bibliografiska Referenser',
+  pending: 'Väntande',
+  bibliographyTitle: 'Bibliografiska Referenser',
   faqTitle: 'Vanliga Frågor',
 };
 
@@ -59,7 +60,7 @@ const seo: JpgAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>JPG</strong> är oslagbart för kamerafotografier, men har en akilleshäl: varje gång du sparar filen tillämpas dess förlustbringande komprimering igen, vilket gradvis försämrar kanter och gradienter. <strong>PNG</strong> använder förlustfri komprimering – när filen väl har sparats är pixlarna oföränderliga. Att konvertera en JPG till PNG är den avgörande operationen när du behöver förbereda en bild för intensiv redigering, lägga till en transparent bakgrund eller integrera den i ett designflöde som kräver flera sparanden.',
+    html: '<strong>JPG</strong> är oslagbart för kamerafotografier, men har en akilleshäl: varje gång du sparar filen tillämpas dess förlustbringande komprimering igen, vilket gradvis försämrar kanter och gradienter. <strong>PNG</strong> använder förlustfri komprimering - när filen väl har sparats är pixlarna oföränderliga. Att konvertera en JPG till PNG är den avgörande operationen när du behöver förbereda en bild för intensiv redigering, lägga till en transparent bakgrund eller integrera den i ett designflöde som kräver flera sparanden.',
   },
   {
     type: 'title',
@@ -100,8 +101,8 @@ const seo: JpgAPngLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Omedelbar hastighet – noll nätverkslatens',
-          'Total integritet – 0 byte skickas externt',
+          'Omedelbar hastighet - noll nätverkslatens',
+          'Total integritet - 0 byte skickas externt',
           'Inga MB-begränsningar eller begränsningar på antal filer',
           'Rent gränssnitt, utan annonser eller spårning',
         ],
@@ -115,16 +116,16 @@ const seo: JpgAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Processen är rent lokal: webbläsaren skapar en <strong>Blob</strong> med den valda JPG-filen och ritar den på en <strong>HTML5 Canvas</strong> i minnet. När den väl har renderats anropas <code>toDataURL(\'image/png\')</code> – webbläsarens integrerade PNG-codec kodar om varje pixel utan att tillämpa någon ny förlustbringande komprimering. Resultatet är en PNG som troget bevarar JPG-filens nuvarande tillstånd: varken bättre eller sämre, bara fryst.',
+    html: 'Processen är rent lokal: webbläsaren skapar en <strong>Blob</strong> med den valda JPG-filen och ritar den på en <strong>HTML5 Canvas</strong> i minnet. När den väl har renderats anropas <code>toDataURL(\'image/png\')</code> - webbläsarens integrerade PNG-codec kodar om varje pixel utan att tillämpa någon ny förlustbringande komprimering. Resultatet är en PNG som troget bevarar JPG-filens nuvarande tillstånd: varken bättre eller sämre, bara fryst.',
   },
   {
     type: 'paragraph',
-    html: 'Den resulterande PNG-filen kommer att använda förlustfri DEFLATE-komprimering, samma som används av professionella verktyg som Photoshop eller GIMP. Dess storlek kommer att vara större än den ursprungliga JPG-filen – vanligtvis mellan 2 och 5 gånger – eftersom den lagrar alla pixlar utan att kasta bort information. Det är priset man betalar för trohet och oändlig redigerbarhet.',
+    html: 'Den resulterande PNG-filen kommer att använda förlustfri DEFLATE-komprimering, samma som används av professionella verktyg som Photoshop eller GIMP. Dess storlek kommer att vara större än den ursprungliga JPG-filen - vanligtvis mellan 2 och 5 gånger - eftersom den lagrar alla pixlar utan att kasta bort information. Det är priset man betalar för trohet och oändlig redigerbarhet.',
   },
   {
     type: 'tip',
     title: 'Viktigt: PNG återställer inte JPEG kvalitet',
-    html: 'Att konvertera en JPG till PNG <strong>återställer inte den förlorade kvaliteten</strong> under den ursprungliga JPEG-komprimeringen. Om din JPG redan hade blockeffekter eller färgbrus, kommer PNG att bevara dem intakta – det förhindrar helt enkelt att fler läggs till. Tänk på konverteringen som att "frysa" bildens nuvarande tillstånd så att framtida redigeringar inte försämrar den ytterligare.',
+    html: 'Att konvertera en JPG till PNG <strong>återställer inte den förlorade kvaliteten</strong> under den ursprungliga JPEG-komprimeringen. Om din JPG redan hade blockeffekter eller färgbrus, kommer PNG att bevara dem intakta - det förhindrar helt enkelt att fler läggs till. Tänk på konverteringen som att "frysa" bildens nuvarande tillstånd så att framtida redigeringar inte försämrar den ytterligare.',
   },
   {
     type: 'title',

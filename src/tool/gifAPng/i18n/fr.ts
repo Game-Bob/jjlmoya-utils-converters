@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Sélectionner des fichiers',
   processedFiles: 'Fichiers traités',
   downloadAll: 'Tout télécharger (.zip)',
-  pending: 'En attente': 'Références Bibliographiques',
+  pending: 'En attente',
+  bibliographyTitle: 'Références Bibliographiques',
   faqTitle: 'Questions Fréquentes',
 };
 
@@ -54,29 +55,29 @@ const howTo: GifAPngLocaleContent['howTo'] = [
 const seo: GifAPngLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Convertisseur GIF vers PNG : Dépassez les Limites de Couleurs et de Transparence du GIF',
+    text: 'Convertisseur GIF vers PNG: Dépassez les Limites de Couleurs et de Transparence du GIF',
     level: 2,
   },
   {
     type: 'paragraph',
-    html: 'Le GIF a été conçu à une époque où les moniteurs pouvaient à peine afficher 256 couleurs. Des décennies plus tard, cette limitation reste sa plus grande faiblesse. Le PNG a été créé précisément pour remplacer le GIF dans tous les cas d\'usage où la qualité et la transparence importent : logos, icônes, graphiques d\'interface et toute image à fond transparent devant s\'afficher parfaitement sur n\'importe quelle couleur de fond.',
+    html: 'Le GIF a été conçu à une époque où les moniteurs pouvaient à peine afficher 256 couleurs. Des décennies plus tard, cette limitation reste sa plus grande faiblesse. Le PNG a été créé précisément pour remplacer le GIF dans tous les cas d\'usage où la qualité et la transparence importent: logos, icônes, graphiques d\'interface et toute image à fond transparent devant s\'afficher parfaitement sur n\'importe quelle couleur de fond.',
   },
   {
     type: 'title',
-    text: 'GIF vs PNG : la révolution des 16 millions de couleurs',
+    text: 'GIF vs PNG: la révolution des 16 millions de couleurs',
     level: 3,
   },
   {
     type: 'paragraph',
-    html: 'La différence la plus critique entre GIF et PNG n\'est pas seulement le nombre de couleurs. Le GIF supporte une transparence binaire : chaque pixel est soit opaque soit totalement transparent, sans gradation. Le PNG, en revanche, supporte un canal alpha complet avec 256 niveaux d\'opacité par pixel. Cela signifie que les bords d\'un logo en PNG peuvent être parfaitement lissés, tandis que ceux du GIF affichent un crénelage caractéristique sur les fonds colorés.',
+    html: 'La différence la plus critique entre GIF et PNG n\'est pas seulement le nombre de couleurs. Le GIF supporte une transparence binaire: chaque pixel est soit opaque soit totalement transparent, sans gradation. Le PNG, en revanche, supporte un canal alpha complet avec 256 niveaux d\'opacité par pixel. Cela signifie que les bords d\'un logo en PNG peuvent être parfaitement lissés, tandis que ceux du GIF affichent un crénelage caractéristique sur les fonds colorés.',
   },
   {
     type: 'paragraph',
-    html: 'En plus d\'une transparence supérieure, le PNG supprime la limite de 256 couleurs du GIF. Captures d\'écran, illustrations avec dégradés, logos avec ombres — tout s\'affiche bien mieux en PNG. Et comme il utilise une compression sans perte, chaque pixel conserve sa valeur exacte d\'origine, sans les artefacts qu\'une conversion JPG introduirait.',
+    html: 'En plus d\'une transparence supérieure, le PNG supprime la limite de 256 couleurs du GIF. Captures d\'écran, illustrations avec dégradés, logos avec ombres - tout s\'affiche bien mieux en PNG. Et comme il utilise une compression sans perte, chaque pixel conserve sa valeur exacte d\'origine, sans les artefacts qu\'une conversion JPG introduirait.',
   },
   {
     type: 'title',
-    text: 'Comparaison d\'Architecture : Local vs Cloud',
+    text: 'Comparaison d\'Architecture: Local vs Cloud',
     level: 3,
   },
   {
@@ -103,7 +104,7 @@ const seo: GifAPngLocaleContent['seo'] = [
           'Le GIF ne quitte jamais votre appareil',
           'Conversion instantanée sans réseau',
           'Aucune limite de fichiers ni de taille',
-          'Confidentialité absolue : 0 octet envoyé',
+          'Confidentialité absolue: 0 octet envoyé',
         ],
       },
     ],
@@ -124,7 +125,7 @@ const seo: GifAPngLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'Transparence binaire du GIF vs canal alpha complet du PNG',
-    html: 'Le GIF ne supporte que la transparence binaire (opaque ou transparent). Lors de la conversion en PNG, les pixels semi-transparents du GIF sont préservés tels que le navigateur les interprète. Si votre GIF a des bords crénelés, le PNG les conservera — mais vous pourrez ensuite les lisser avec un anti-aliasing dans n\'importe quel éditeur, chose impossible avec le GIF original.',
+    html: 'Le GIF ne supporte que la transparence binaire (opaque ou transparent). Lors de la conversion en PNG, les pixels semi-transparents du GIF sont préservés tels que le navigateur les interprète. Si votre GIF a des bords crénelés, le PNG les conservera - mais vous pourrez ensuite les lisser avec un anti-aliasing dans n\'importe quel éditeur, chose impossible avec le GIF original.',
   },
   {
     type: 'title',
@@ -144,12 +145,12 @@ const seo: GifAPngLocaleContent['seo'] = [
   },
   {
     type: 'title',
-    text: 'Conclusion : le PNG est ce que le GIF a toujours voulu être',
+    text: 'Conclusion: le PNG est ce que le GIF a toujours voulu être',
     level: 3,
   },
   {
     type: 'paragraph',
-    html: 'Convertir un GIF en PNG n\'est pas seulement changer de format : c\'est mettre à jour une image vers le standard moderne que le GIF n\'a jamais pu atteindre. Plus de couleurs, meilleure transparence, moins de poids. Notre outil effectue cette conversion en quelques millisecondes, directement dans votre navigateur, sans envoyer aucune donnée à l\'extérieur.',
+    html: 'Convertir un GIF en PNG n\'est pas seulement changer de format: c\'est mettre à jour une image vers le standard moderne que le GIF n\'a jamais pu atteindre. Plus de couleurs, meilleure transparence, moins de poids. Notre outil effectue cette conversion en quelques millisecondes, directement dans votre navigateur, sans envoyer aucune donnée à l\'extérieur.',
   },
 ];
 

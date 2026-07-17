@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: '파일 선택',
   processedFiles: '처리된 파일',
   downloadAll: '모두 다운로드 (.zip)',
-  pending: '대기 중': '참고 문헌',
+  pending: '대기 중',
+  bibliographyTitle: '참고 문헌',
   faqTitle: '자주 묻는 질문',
 };
 
@@ -101,7 +102,7 @@ const seo: JpgAIcoLocaleContent['seo'] = [
         highlight: true,
         points: [
           '네트워크 지연 없는 즉각적인 속도',
-          '완벽한 개인 정보 보호 — 외부로 전송되는 데이터 0바이트',
+          '완벽한 개인 정보 보호 - 외부로 전송되는 데이터 0바이트',
           '용량 제한이나 파일 개수 제한 없음',
           '광고나 추적 없는 깨끗한 인터페이스',
         ],

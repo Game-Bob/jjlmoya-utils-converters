@@ -1,6 +1,6 @@
 import type { BibliographyEntry } from '../../types';
 
-export const bibliography: BibliographyEntry[] = ['bibliography'] = [
+export const bibliography: BibliographyEntry[] = [
   {
     name: 'JPEG.org: Die JPEG-Standards',
     url: 'https://jpeg.org/jpeg/',

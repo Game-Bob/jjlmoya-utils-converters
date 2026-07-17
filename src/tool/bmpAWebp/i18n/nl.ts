@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Bestanden selecteren',
   processedFiles: 'Verwerkte bestanden',
   downloadAll: 'Alles downloaden (.zip)',
-  pending: 'In afwachting': 'Bibliografische Referenties',
+  pending: 'In afwachting',
+  bibliographyTitle: 'Bibliografische Referenties',
   faqTitle: 'Veelgestelde Vragen',
 };
 
@@ -101,7 +102,7 @@ const seo: BmpAWebpLocaleContent['seo'] = [
         highlight: true,
         points: [
           'Directe conversie zonder netwerkoverdracht',
-          'Absolute privacy — 0 bytes verlaten je apparaat',
+          'Absolute privacy - 0 bytes verlaten je apparaat',
           'Zonder groottebeperkingen per bestand',
           'Werkt zonder internetverbinding',
         ],
@@ -135,11 +136,11 @@ const seo: BmpAWebpLocaleContent['seo'] = [
     type: 'list',
     icon: 'mdi:check-circle',
     items: [
-      'Webpublicatie — Chrome, Firefox, Safari, Edge en alle moderne browsers.',
-      'Sociale netwerken — Instagram, Twitter, Facebook accepteren WebP op eigen wijze.',
-      'Web-apps en PWA — minimale groottes voor direct laden.',
-      'Efficiënte archivering — vervangt collecties van oude BMP\'s en bespaart gigabytes.',
-      'E-mailmarketing — lichte afbeeldingen die snel laden in elke moderne e-mailclient.',
+      'Webpublicatie - Chrome, Firefox, Safari, Edge en alle moderne browsers.',
+      'Sociale netwerken - Instagram, Twitter, Facebook accepteren WebP op eigen wijze.',
+      'Web-apps en PWA - minimale groottes voor direct laden.',
+      'Efficiënte archivering - vervangt collecties van oude BMP\'s en bespaart gigabytes.',
+      'E-mailmarketing - lichte afbeeldingen die snel laden in elke moderne e-mailclient.',
     ],
   },
   {
@@ -149,7 +150,7 @@ const seo: BmpAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Als je oude BMP-bestanden van Windows, ongecomprimeerde screenshots of afbeeldingen van oude tools hebt, is het converteren naar WebP de meest impactvolle actie die je kunt ondernemen om je opslag en webprestaties te optimaliseren. Met onze tool is de conversie direct, privé en zonder beperkingen — precies zoals het zou moeten zijn.',
+    html: 'Als je oude BMP-bestanden van Windows, ongecomprimeerde screenshots of afbeeldingen van oude tools hebt, is het converteren naar WebP de meest impactvolle actie die je kunt ondernemen om je opslag en webprestaties te optimaliseren. Met onze tool is de conversie direct, privé en zonder beperkingen - precies zoals het zou moeten zijn.',
   },
 ];
 

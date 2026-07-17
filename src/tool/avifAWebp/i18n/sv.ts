@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Välj filer',
   processedFiles: 'Bearbetade filer',
   downloadAll: 'Ladda ner alla (.zip)',
-  pending: 'Väntande': 'Bibliografiska Referenser',
+  pending: 'Väntande',
+  bibliographyTitle: 'Bibliografiska Referenser',
   faqTitle: 'Vanliga Frågor',
 };
 
@@ -59,7 +60,7 @@ const seo: AvifAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'AVIF är det mest avancerade bildformatet som finns tillgängligt idag: mindre än WebP, mindre än JPG, med överlägsen visuell kvalitet. Adoptionen har dock varit ojämn – Safari stödde det inte förrän 2024, och många äldre mobila enheter känner inte till det. WebP däremot har varit etablerat i åratal som den moderna webbstandarden med över 95 % globalt stöd. Att konvertera AVIF till WebP är det pragmatiska beslutet när du behöver modernitet utan att riskera kompatibiliteten.',
+    html: 'AVIF är det mest avancerade bildformatet som finns tillgängligt idag: mindre än WebP, mindre än JPG, med överlägsen visuell kvalitet. Adoptionen har dock varit ojämn - Safari stödde det inte förrän 2024, och många äldre mobila enheter känner inte till det. WebP däremot har varit etablerat i åratal som den moderna webbstandarden med över 95 % globalt stöd. Att konvertera AVIF till WebP är det pragmatiska beslutet när du behöver modernitet utan att riskera kompatibiliteten.',
   },
   {
     type: 'title',
@@ -68,7 +69,7 @@ const seo: AvifAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'AVIF erbjuder den mest avancerade kompressionen som finns tillgänglig – vanligtvis 20–30 % mindre än WebP vid samma kvalitet. Dess teknologi baserad på AV1 är den modernaste i branschen. AVIF-stödet har dock fortfarande blinda fläckar: äldre Safari-versioner, vissa webbläsare på äldre Android-enheter och vissa bildvisare för skrivbordet känner inte igen det. För webbproduktion med bred och varierad publik innebär detta en risk.',
+    html: 'AVIF erbjuder den mest avancerade kompressionen som finns tillgänglig - vanligtvis 20-30 % mindre än WebP vid samma kvalitet. Dess teknologi baserad på AV1 är den modernaste i branschen. AVIF-stödet har dock fortfarande blinda fläckar: äldre Safari-versioner, vissa webbläsare på äldre Android-enheter och vissa bildvisare för skrivbordet känner inte igen det. För webbproduktion med bred och varierad publik innebär detta en risk.',
   },
   {
     type: 'paragraph',
@@ -100,7 +101,7 @@ const seo: AvifAWebpLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Total integritet – 0 byte lämnar din enhet',
+          'Total integritet - 0 byte lämnar din enhet',
           'Omedelbar hastighet utan nätverksberoende',
           'Inga begränsningar för storlek eller antal filer',
           'Fungerar utan internetanslutning',
@@ -124,7 +125,7 @@ const seo: AvifAWebpLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'WebP: den moderna utvecklarens pragmatiska val',
-    html: 'WebP har över 95 % stöd i webbläsare – AVIF växer men når ännu inte den siffran. För produktionssajter utan adaptiv formatdetektering är WebP det säkra valet som täcker nästan alla målgrupper. Konvertera dina AVIF till WebP och leverera moderna bilder med förtroende.',
+    html: 'WebP har över 95 % stöd i webbläsare - AVIF växer men når ännu inte den siffran. För produktionssajter utan adaptiv formatdetektering är WebP det säkra valet som täcker nästan alla målgrupper. Konvertera dina AVIF till WebP och leverera moderna bilder med förtroende.',
   },
   {
     type: 'title',
@@ -149,7 +150,7 @@ const seo: AvifAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'AVIF är framkanten av bildkompression, men WebP är det pålitliga och universella valet för det moderna webbechosystemet. Med vårt verktyg konverterar du från det senaste till det mest stödda på ett ögonblick – utan att ladda upp något till någon server, med total integritet och utan storleksbegränsningar.',
+    html: 'AVIF är framkanten av bildkompression, men WebP är det pålitliga och universella valet för det moderna webbechosystemet. Med vårt verktyg konverterar du från det senaste till det mest stödda på ett ögonblick - utan att ladda upp något till någon server, med total integritet och utan storleksbegränsningar.',
   },
 ];
 

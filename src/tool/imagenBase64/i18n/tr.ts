@@ -18,7 +18,8 @@ const ui: ImageToBase64UI = {
   dataUriPlaceholder: 'Data URI kodunu görmek için bir görüntü yükleyin...',
   base64Placeholder: 'Saf Base64 kodunu görmek için bir görüntü yükleyin...',
   toastMessage: 'Kod panoya kopyalandı!',
-  invalidImageAlert: 'Lütfen geçerli bir görüntü dosyası yükleyin.': 'Bibliyografik Referanslar',
+  invalidImageAlert: 'Lütfen geçerli bir görüntü dosyası yükleyin.',
+  bibliographyTitle: 'Bibliyografik Referanslar',
   faqTitle: 'Sıkça Sorulan Sorular',
 };
 
@@ -120,7 +121,7 @@ const seo: ImagenBase64LocaleContent['seo'] = [
   },
   {
     type: 'tip',
-    title: 'Büyük görüntüler için Base64\'ten kaçının — bunun yerine bir CDN kullanın',
+    title: 'Büyük görüntüler için Base64\'ten kaçının - bunun yerine bir CDN kullanın',
     html: '10-20 KB\'tan daha büyük görüntüleriniz varsa, Base64 performansa zarar verir: HTML/CSS boyutunu şişirir, tarayıcının görüntüyü bağımsız olarak önbelleğe almasını engeller ve ayrıştırıcı devasa dizeyi işlerken oluşturmayı engeller. Büyük görüntüler için her zaman uygun önbellek başlıklarına sahip bir CDN\'den sunun.',
   },
   {

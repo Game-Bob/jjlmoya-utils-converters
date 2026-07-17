@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: '파일 선택',
   processedFiles: '처리된 파일',
   downloadAll: '모두 다운로드 (.zip)',
-  pending: '대기 중': '참고 문헌',
+  pending: '대기 중',
+  bibliographyTitle: '참고 문헌',
   faqTitle: '자주 묻는 질문',
 };
 
@@ -100,7 +101,7 @@ const seo: AvifAWebpLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          '완벽한 프라이버시 — 0바이트가 장치 외부로 나감',
+          '완벽한 프라이버시 - 0바이트가 장치 외부로 나감',
           '네트워크 의존성 없는 즉각적인 속도',
           '크기나 파일 개수 제한 없음',
           '인터넷 연결 없이도 작동',

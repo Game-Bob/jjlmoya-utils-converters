@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Seleziona i file',
   processedFiles: 'File elaborati',
   downloadAll: 'Scarica tutto (.zip)',
-  pending: 'In attesa': 'Riferimenti Bibliografici',
+  pending: 'In attesa',
+  bibliographyTitle: 'Riferimenti Bibliografici',
   faqTitle: 'Domande Frequenti',
 };
 
@@ -124,7 +125,7 @@ const seo: AvifAJpgLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'L\'equilibrio perfetto tra compressione e compatibilità',
-    html: 'L\'AVIF è più piccolo del 50% rispetto al JPG a parità di qualità — ma il JPG ha una compatibilità del 100% con qualsiasi software. Se ricevi immagini AVIF dal server e hai bisogno di modificarle, inviarle via email o aprirle in strumenti desktop, convertile prima in JPG.',
+    html: 'L\'AVIF è più piccolo del 50% rispetto al JPG a parità di qualità - ma il JPG ha una compatibilità del 100% con qualsiasi software. Se ricevi immagini AVIF dal server e hai bisogno di modificarle, inviarle via email o aprirle in strumenti desktop, convertile prima in JPG.',
   },
   {
     type: 'title',

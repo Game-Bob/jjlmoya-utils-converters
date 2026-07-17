@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Seleziona i file',
   processedFiles: 'File elaborati',
   downloadAll: 'Scarica tutto (.zip)',
-  pending: 'In attesa': 'Riferimenti Bibliografici',
+  pending: 'In attesa',
+  bibliographyTitle: 'Riferimenti Bibliografici',
   faqTitle: 'Domande Frequenti',
 };
 
@@ -100,8 +101,8 @@ const seo: JpgAPngLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Velocità istantanea — zero latenza di rete',
-          'Privacy totale — 0 byte inviati all\'esterno',
+          'Velocità istantanea - zero latenza di rete',
+          'Privacy totale - 0 byte inviati all\'esterno',
           'Nessun limite di MB né di numero di file',
           'Interfaccia pulita, senza annunci o tracciamenti',
         ],
@@ -115,11 +116,11 @@ const seo: JpgAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Il processo è puramente locale: il browser crea un <strong>Blob</strong> con il JPG selezionato e lo disegna su un <strong>Canvas HTML5</strong> in memoria. Una volta renderizzato, viene chiamato <code>toDataURL(\'image/png\')</code> — il codec PNG integrato nel browser ricodifica ogni pixel senza applicare alcuna nuova compressione con perdita. Il risultato è un PNG che preserva fedelmente lo stato attuale del JPG: né meglio né peggio, semplicemente congelato.',
+    html: 'Il processo è puramente locale: il browser crea un <strong>Blob</strong> con il JPG selezionato e lo disegna su un <strong>Canvas HTML5</strong> in memoria. Una volta renderizzato, viene chiamato <code>toDataURL(\'image/png\')</code> - il codec PNG integrato nel browser ricodifica ogni pixel senza applicare alcuna nuova compressione con perdita. Il risultato è un PNG che preserva fedelmente lo stato attuale del JPG: né meglio né peggio, semplicemente congelato.',
   },
   {
     type: 'paragraph',
-    html: 'Il PNG risultante utilizzerà la compressione DEFLATE senza perdita, la stessa impiegata da strumenti professionali come Photoshop o GIMP. La sua dimensione sarà maggiore rispetto al JPG originale — normalmente tra 2 e 5 volte — perché memorizza tutti i pixel senza scartare informazioni. È il prezzo da pagare per la fedeltà e l\'editabilità infinita.',
+    html: 'Il PNG risultante utilizzerà la compressione DEFLATE senza perdita, la stessa impiegata da strumenti professionali come Photoshop o GIMP. La sua dimensione sarà maggiore rispetto al JPG originale - normalmente tra 2 e 5 volte - perché memorizza tutti i pixel senza scartare informazioni. È il prezzo da pagare per la fedeltà e l\'editabilità infinita.',
   },
   {
     type: 'tip',

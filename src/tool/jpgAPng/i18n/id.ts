@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Pilih file',
   processedFiles: 'File yang diproses',
   downloadAll: 'Unduh Semua (.zip)',
-  pending: 'Tertunda': 'Referensi Bibliografi',
+  pending: 'Tertunda',
+  bibliographyTitle: 'Referensi Bibliografi',
   faqTitle: 'Pertanyaan Umum',
 };
 
@@ -59,7 +60,7 @@ const seo: JpgAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>JPG</strong> tidak tertandingi untuk foto kamera, tetapi memiliki kelemahan: setiap kali Anda menyimpan file, kompresi dengan hilangnya kualitas (lossy) diterapkan kembali, yang secara bertahap merusak tepi dan gradien. <strong>PNG</strong> menggunakan kompresi tanpa kehilangan (lossless) — sekali disimpan, piksel tidak berubah. Mengubah JPG ke PNG adalah operasi kunci saat Anda perlu menyiapkan gambar untuk pengeditan intensif, menambahkan latar belakang transparan, atau mengintegrasikannya ke dalam alur desain yang memerlukan penyimpanan berulang kali.',
+    html: '<strong>JPG</strong> tidak tertandingi untuk foto kamera, tetapi memiliki kelemahan: setiap kali Anda menyimpan file, kompresi dengan hilangnya kualitas (lossy) diterapkan kembali, yang secara bertahap merusak tepi dan gradien. <strong>PNG</strong> menggunakan kompresi tanpa kehilangan (lossless) - sekali disimpan, piksel tidak berubah. Mengubah JPG ke PNG adalah operasi kunci saat Anda perlu menyiapkan gambar untuk pengeditan intensif, menambahkan latar belakang transparan, atau mengintegrasikannya ke dalam alur desain yang memerlukan penyimpanan berulang kali.',
   },
   {
     type: 'title',
@@ -100,8 +101,8 @@ const seo: JpgAPngLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Kecepatan instan — nol latensi jaringan',
-          'Privasi total — 0 byte dikirim ke luar',
+          'Kecepatan instan - nol latensi jaringan',
+          'Privasi total - 0 byte dikirim ke luar',
           'Tanpa batasan MB atau jumlah file',
           'Antarmuka bersih, tanpa iklan atau pelacakan',
         ],
@@ -115,16 +116,16 @@ const seo: JpgAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Prosesnya murni lokal: browser membuat <strong>Blob</strong> dengan JPG yang dipilih dan menggambarnya di atas <strong>Canvas HTML5</strong> di memori. Setelah dirender, <code>toDataURL(\'image/png\')</code> dipanggil — codec PNG yang terintegrasi dalam browser mengode ulang setiap piksel tanpa menerapkan kompresi baru yang merusak kualitas. Hasilnya adalah PNG yang secara setia menjaga kondisi JPG saat ini: tidak lebih baik atau lebih buruk, hanya dibekukan.',
+    html: 'Prosesnya murni lokal: browser membuat <strong>Blob</strong> dengan JPG yang dipilih dan menggambarnya di atas <strong>Canvas HTML5</strong> di memori. Setelah dirender, <code>toDataURL(\'image/png\')</code> dipanggil - codec PNG yang terintegrasi dalam browser mengode ulang setiap piksel tanpa menerapkan kompresi baru yang merusak kualitas. Hasilnya adalah PNG yang secara setia menjaga kondisi JPG saat ini: tidak lebih baik atau lebih buruk, hanya dibekukan.',
   },
   {
     type: 'paragraph',
-    html: 'PNG yang dihasilkan akan menggunakan kompresi DEFLATE tanpa kehilangan, sama seperti yang digunakan oleh alat profesional seperti Photoshop atau GIMP. Ukurannya akan lebih besar dari JPG asli — biasanya antara 2 hingga 5 kali — karena menyimpan semua piksel tanpa membuang informasi. Ini adalah harga yang harus dibayar untuk kesetiaan dan kemampuan pengeditan yang tak terbatas.',
+    html: 'PNG yang dihasilkan akan menggunakan kompresi DEFLATE tanpa kehilangan, sama seperti yang digunakan oleh alat profesional seperti Photoshop atau GIMP. Ukurannya akan lebih besar dari JPG asli - biasanya antara 2 hingga 5 kali - karena menyimpan semua piksel tanpa membuang informasi. Ini adalah harga yang harus dibayar untuk kesetiaan dan kemampuan pengeditan yang tak terbatas.',
   },
   {
     type: 'tip',
     title: 'Penting: PNG tidak memulihkan kualitas JPEG',
-    html: 'Mengubah JPG ke PNG <strong>tidak memulihkan kualitas yang hilang</strong> selama kompresi JPEG asli. Jika JPG Anda sudah memiliki artefak blok atau noise warna, PNG akan menyimpannya secara utuh — ia hanya mencegah penambahan artefak lainnya. Anggaplah konversi sebagai cara untuk "membekukan" kondisi gambar saat ini agar pengeditan di masa mendatang tidak semakin merusak kualitasnya.',
+    html: 'Mengubah JPG ke PNG <strong>tidak memulihkan kualitas yang hilang</strong> selama kompresi JPEG asli. Jika JPG Anda sudah memiliki artefak blok atau noise warna, PNG akan menyimpannya secara utuh - ia hanya mencegah penambahan artefak lainnya. Anggaplah konversi sebagai cara untuk "membekukan" kondisi gambar saat ini agar pengeditan di masa mendatang tidak semakin merusak kualitasnya.',
   },
   {
     type: 'title',

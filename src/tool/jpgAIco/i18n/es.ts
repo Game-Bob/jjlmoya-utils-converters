@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Seleccionar archivos',
   processedFiles: 'Archivos procesados',
   downloadAll: 'Descargar Todo (.zip)',
-  pending: 'Pendiente': 'Referencias Bibliográficas',
+  pending: 'Pendiente',
+  bibliographyTitle: 'Referencias Bibliográficas',
   faqTitle: 'Preguntas Frecuentes',
 };
 
@@ -59,7 +60,7 @@ const seo: JpgAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'El formato <strong>ICO</strong> es el estándar de Microsoft para iconos de Windows y favicons de páginas web. A diferencia de simplemente renombrar un JPG como .ico, un archivo ICO genuino requiere una estructura binaria específica con cabeceras de 22 bytes y un directorio de imágenes embebido. El <strong>JPG</strong> es el punto de partida más común para crear estos iconos — un logotipo de empresa, una fotografía de perfil o cualquier imagen que quieras convertir en el icono visual de tu aplicación o sitio web.',
+    html: 'El formato <strong>ICO</strong> es el estándar de Microsoft para iconos de Windows y favicons de páginas web. A diferencia de simplemente renombrar un JPG como .ico, un archivo ICO genuino requiere una estructura binaria específica con cabeceras de 22 bytes y un directorio de imágenes embebido. El <strong>JPG</strong> es el punto de partida más común para crear estos iconos - un logotipo de empresa, una fotografía de perfil o cualquier imagen que quieras convertir en el icono visual de tu aplicación o sitio web.',
   },
   {
     type: 'title',
@@ -68,7 +69,7 @@ const seo: JpgAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'El <strong>JPG</strong> es el formato de origen, no el destino. Perfectamente adecuado para fotografías y banners, pero incompatible con los sistemas que exigen iconos: Windows Explorer, la barra de favoritos del navegador, los accesos directos del escritorio o los manifest de aplicaciones PWA. Un sistema operativo o navegador que busca un icono espera el formato ICO — y si no lo encuentra, mostrará un icono genérico o un cuadrado roto.',
+    html: 'El <strong>JPG</strong> es el formato de origen, no el destino. Perfectamente adecuado para fotografías y banners, pero incompatible con los sistemas que exigen iconos: Windows Explorer, la barra de favoritos del navegador, los accesos directos del escritorio o los manifest de aplicaciones PWA. Un sistema operativo o navegador que busca un icono espera el formato ICO - y si no lo encuentra, mostrará un icono genérico o un cuadrado roto.',
   },
   {
     type: 'paragraph',
@@ -100,8 +101,8 @@ const seo: JpgAIcoLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Velocidad instantánea — cero latencia de red',
-          'Privacidad total — 0 bytes enviados al exterior',
+          'Velocidad instantánea - cero latencia de red',
+          'Privacidad total - 0 bytes enviados al exterior',
           'Sin límites de MB ni de número de archivos',
           'Interfaz limpia, sin anuncios ni rastreos',
         ],
@@ -119,12 +120,12 @@ const seo: JpgAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Dado que el JPG carece de canal alfa, el ICO resultante tampoco tendrá transparencia — tendrá un fondo sólido heredado de la fotografía original. Si necesitas un favicon con fondo transparente (por ejemplo, para que se adapte a barras de favoritos oscuras o claras), el flujo recomendado es: elimina el fondo en un editor, guarda como PNG und usa el convertidor de PNG a ICO.',
+    html: 'Dado que el JPG carece de canal alfa, el ICO resultante tampoco tendrá transparencia - tendrá un fondo sólido heredado de la fotografía original. Si necesitas un favicon con fondo transparente (por ejemplo, para que se adapte a barras de favoritos oscuras o claras), el flujo recomendado es: elimina el fondo en un editor, guarda como PNG und usa el convertidor de PNG a ICO.',
   },
   {
     type: 'tip',
     title: 'Consejo: resoluciones múltiples en un solo ICO',
-    html: 'Los archivos ICO pueden empaquetar <strong>varias resoluciones</strong> en un único fichero — el navegador o el sistema operativo elige automáticamente la más adecuada según el contexto. Para el mejor resultado posible, usa como fuente un JPG cuadrado de al menos <strong>256×256 píxeles</strong>: así el convertidor tendrá suficiente información para generar con nitidez los tamaños 16×16, 32×32 und 48×48 sin pixelado.',
+    html: 'Los archivos ICO pueden empaquetar <strong>varias resoluciones</strong> en un único fichero - el navegador o el sistema operativo elige automáticamente la más adecuada según el contexto. Para el mejor resultado posible, usa como fuente un JPG cuadrado de al menos <strong>256×256 píxeles</strong>: así el convertidor tendrá suficiente información para generar con nitidez los tamaños 16×16, 32×32 und 48×48 sin pixelado.',
   },
   {
     type: 'title',

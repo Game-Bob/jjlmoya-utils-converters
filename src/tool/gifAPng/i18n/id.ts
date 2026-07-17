@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Pilih file',
   processedFiles: 'File yang diproses',
   downloadAll: 'Unduh Semua (.zip)',
-  pending: 'Tertunda': 'Referensi Bibliografi',
+  pending: 'Tertunda',
+  bibliographyTitle: 'Referensi Bibliografi',
   faqTitle: 'Pertanyaan Umum',
 };
 
@@ -124,7 +125,7 @@ const seo: GifAPngLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'Transparansi biner GIF vs saluran alfa PNG',
-    html: 'GIF hanya mendukung transparansi biner (buram atau transparan). Saat dikonversi ke PNG, piksel semi-transparan dari GIF tetap dipertahankan seperti yang diinterpretasikan oleh browser. Jika GIF Anda memiliki tepi yang bergerigi, PNG akan tetap menjaganya — tetapi Anda dapat mengeditnya dengan penghalusan tepi di editor mana pun, sesuatu yang tidak mungkin dilakukan dengan GIF asli.',
+    html: 'GIF hanya mendukung transparansi biner (buram atau transparan). Saat dikonversi ke PNG, piksel semi-transparan dari GIF tetap dipertahankan seperti yang diinterpretasikan oleh browser. Jika GIF Anda memiliki tepi yang bergerigi, PNG akan tetap menjaganya - tetapi Anda dapat mengeditnya dengan penghalusan tepi di editor mana pun, sesuatu yang tidak mungkin dilakukan dengan GIF asli.',
   },
   {
     type: 'title',

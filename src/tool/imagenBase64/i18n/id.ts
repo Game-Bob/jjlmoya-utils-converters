@@ -18,7 +18,8 @@ const ui: ImageToBase64UI = {
   dataUriPlaceholder: 'Unggah gambar untuk melihat kode Data URI...',
   base64Placeholder: 'Unggah gambar untuk melihat kode Base64 murni...',
   toastMessage: 'Kode disalin ke papan klip!',
-  invalidImageAlert: 'Silakan unggah file gambar yang valid.': 'Referensi Bibliografi',
+  invalidImageAlert: 'Silakan unggah file gambar yang valid.',
+  bibliographyTitle: 'Referensi Bibliografi',
   faqTitle: 'Pertanyaan yang Sering Diajukan',
 };
 
@@ -68,7 +69,7 @@ const seo: ImagenBase64LocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Base64 adalah teknik pengkodean yang mengubah data biner — seperti gambar — menjadi string teks ASCII murni. Hasilnya adalah Data URI: URL mandiri yang dimulai dengan <code>data:image/png;base64,...</code> dan berisi seluruh gambar yang dikodekan. Dengan menyematkan kode ini langsung di HTML, CSS, atau JSON Anda, gambar akan dimuat tanpa permintaan HTTP tambahan ke server — nol latensi jaringan, pemuatan instan.',
+    html: 'Base64 adalah teknik pengkodean yang mengubah data biner - seperti gambar - menjadi string teks ASCII murni. Hasilnya adalah Data URI: URL mandiri yang dimulai dengan <code>data:image/png;base64,...</code> dan berisi seluruh gambar yang dikodekan. Dengan menyematkan kode ini langsung di HTML, CSS, atau JSON Anda, gambar akan dimuat tanpa permintaan HTTP tambahan ke server - nol latensi jaringan, pemuatan instan.',
   },
   {
     type: 'title',
@@ -77,7 +78,7 @@ const seo: ImagenBase64LocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Argumen utama untuk Base64 adalah penghapusan permintaan jaringan. Setiap gambar pada halaman web berarti permintaan HTTP dengan overhead koneksi, DNS, jabat tangan TLS, dan latensi. Untuk gambar kritis yang sangat kecil — logo aplikasi utama, favicon, ikon UI — menyematkannya dalam Base64 di CSS atau HTML akan menghapus biaya tersebut dan menjamin gambar ditampilkan secara instan bahkan sebelum browser menyimpan apa pun di cache.',
+    html: 'Argumen utama untuk Base64 adalah penghapusan permintaan jaringan. Setiap gambar pada halaman web berarti permintaan HTTP dengan overhead koneksi, DNS, jabat tangan TLS, dan latensi. Untuk gambar kritis yang sangat kecil - logo aplikasi utama, favicon, ikon UI - menyematkannya dalam Base64 di CSS atau HTML akan menghapus biaya tersebut dan menjamin gambar ditampilkan secara instan bahkan sebelum browser menyimpan apa pun di cache.',
   },
   {
     type: 'paragraph',
@@ -106,12 +107,12 @@ const seo: ImagenBase64LocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Saat Anda memilih atau menarik gambar, API <code>FileReader</code> browser membacanya langsung dari disk sebagai data biner di RAM. Metode <code>readAsDataURL()</code> mengubah byte biner tersebut menjadi representasi Base64 menggunakan algoritme RFC 4648 — setiap 3 byte data asli direpresentasikan sebagai 4 karakter ASCII dari alfabet Base64. Hasilnya mencakup tipe MIME yang benar yang dideteksi secara otomatis.',
+    html: 'Saat Anda memilih atau menarik gambar, API <code>FileReader</code> browser membacanya langsung dari disk sebagai data biner di RAM. Metode <code>readAsDataURL()</code> mengubah byte biner tersebut menjadi representasi Base64 menggunakan algoritme RFC 4648 - setiap 3 byte data asli direpresentasikan sebagai 4 karakter ASCII dari alfabet Base64. Hasilnya mencakup tipe MIME yang benar yang dideteksi secara otomatis.',
   },
   {
     type: 'tip',
     title: 'Gunakan hanya untuk gambar kecil (di bawah 10 KB)',
-    html: 'Base64 meningkatkan ukuran file sekitar 33%: gambar 10 KB menjadi teks ~13,3 KB. Untuk ikon dan logo kecil, biaya ini minimal dan penghapusan permintaan HTTP mengimbanginya. Untuk foto atau gambar besar, overhead ukurannya signifikan — selalu gunakan CDN untuk gambar besar.',
+    html: 'Base64 meningkatkan ukuran file sekitar 33%: gambar 10 KB menjadi teks ~13,3 KB. Untuk ikon dan logo kecil, biaya ini minimal dan penghapusan permintaan HTTP mengimbanginya. Untuk foto atau gambar besar, overhead ukurannya signifikan - selalu gunakan CDN untuk gambar besar.',
   },
   {
     type: 'title',
@@ -120,7 +121,7 @@ const seo: ImagenBase64LocaleContent['seo'] = [
   },
   {
     type: 'tip',
-    title: 'Hindari Base64 untuk gambar besar — gunakan CDN sebagai gantinya',
+    title: 'Hindari Base64 untuk gambar besar: gunakan CDN sebagai gantinya',
     html: 'Jika Anda memiliki gambar yang lebih besar dari 10-20 KB, Base64 merusak kinerja: ia membengkakkan ukuran HTML/CSS, mencegah browser menyimpan gambar secara independen di cache, dan memblokir rendering saat parser memproses string raksasa tersebut. Untuk gambar besar, selalu sajikan dari CDN dengan header cache yang sesuai.',
   },
   {
@@ -130,7 +131,7 @@ const seo: ImagenBase64LocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Data URI kompatibel dengan 100% browser modern dan sebagian besar klien email. Alat kami memproses semuanya secara lokal melalui API FileReader — gambar Anda tidak pernah meninggalkan perangkat Anda. Hal ini membuatnya cocok untuk gambar perusahaan, tangkapan layar pribadi, atau konten visual rahasia apa pun yang perlu Anda konversi ke Base64.',
+    html: 'Data URI kompatibel dengan 100% browser modern dan sebagian besar klien email. Alat kami memproses semuanya secara lokal melalui API FileReader - gambar Anda tidak pernah meninggalkan perangkat Anda. Hal ini membuatnya cocok untuk gambar perusahaan, tangkapan layar pribadi, atau konten visual rahasia apa pun yang perlu Anda konversi ke Base64.',
   },
   {
     type: 'title',

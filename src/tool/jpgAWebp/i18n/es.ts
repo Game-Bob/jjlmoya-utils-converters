@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Seleccionar archivos',
   processedFiles: 'Archivos procesados',
   downloadAll: 'Descargar Todo (.zip)',
-  pending: 'Pendiente': 'Referencias Bibliográficas',
+  pending: 'Pendiente',
+  bibliographyTitle: 'Referencias Bibliográficas',
   faqTitle: 'Preguntas Frecuentes',
 };
 
@@ -101,7 +102,7 @@ const seo: JpgAWebpLocaleContent['seo'] = [
         highlight: true,
         points: [
           'Velocidad instantánea: cero latencia de red',
-          'Privacidad total — 0 bytes enviados al exterior',
+          'Privacidad total - 0 bytes enviados al exterior',
           'Sin límites de MB ni de número de archivos',
           'Interfaz limpia, sin anuncios ni rastreos',
         ],
@@ -124,7 +125,7 @@ const seo: JpgAWebpLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'Consejo Core Web Vitals: LCP y el peso de las imágenes',
-    html: 'El <strong>Largest Contentful Paint (LCP)</strong> es la métrica de Google que mide cuánto tarda en cargarse el elemento visual más grande de tu página. Un JPG de cabecera de 1,5 MB puede convertirse en un WebP de apenas 900 KB — o incluso 600 KB — sin diferencia visual apreciable. Ese ahorro del <strong>25-35%</strong> puede mover tu LCP de "Necesita mejorar" a "Bueno" y subir posiciones en los resultados de búsqueda.',
+    html: 'El <strong>Largest Contentful Paint (LCP)</strong> es la métrica de Google que mide cuánto tarda en cargarse el elemento visual más grande de tu página. Un JPG de cabecera de 1,5 MB puede convertirse en un WebP de apenas 900 KB - o incluso 600 KB - sin diferencia visual apreciable. Ese ahorro del <strong>25-35%</strong> puede mover tu LCP de "Necesita mejorar" a "Bueno" y subir posiciones en los resultados de búsqueda.',
   },
   {
     type: 'title',
@@ -149,7 +150,7 @@ const seo: JpgAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Convertir tus JPG a WebP es hoy una de las optimizaciones más sencillas y rentables que puedes aplicar a cualquier sitio web. Con esta herramienta lo haces en segundos, de forma gratuita y sin que tus imágenes salgan de tu dispositivo. Menos kilobytes, mejor LCP, más velocidad — y todo eso con el mismo aspecto visual que ya tenías.',
+    html: 'Convertir tus JPG a WebP es hoy una de las optimizaciones más sencillas y rentables que puedes aplicar a cualquier sitio web. Con esta herramienta lo haces en segundos, de forma gratuita y sin que tus imágenes salgan de tu dispositivo. Menos kilobytes, mejor LCP, más velocidad - y todo eso con el mismo aspecto visual que ya tenías.',
   },
 ];
 

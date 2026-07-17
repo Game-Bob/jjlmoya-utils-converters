@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Wybierz pliki',
   processedFiles: 'Przetworzone pliki',
   downloadAll: 'Pobierz wszystko (.zip)',
-  pending: 'Oczekujące': 'Bibliografia',
+  pending: 'Oczekujące',
+  bibliographyTitle: 'Bibliografia',
   faqTitle: 'Często Zadawane Pytania',
 };
 
@@ -59,7 +60,7 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>PNG z przezroczystością</strong> to idealny materiał wyjściowy do tworzenia profesjonalnych ikon ICO. W przeciwieństwie do JPG (który nie posiada kanału alfa) lub formatów stratnych, PNG daje dokładnie to, czego wymaga format ICO: ostre piksele, wyraźne krawędzie i 32-bitowy kanał alfa, który pozwala ikonie idealnie wtopić się w dowolne tło — czy to biały pasek zakładek Safari, ciemny pasek Firefoxa czy pulpit Windows 11.',
+    html: '<strong>PNG z przezroczystością</strong> to idealny materiał wyjściowy do tworzenia profesjonalnych ikon ICO. W przeciwieństwie do JPG (który nie posiada kanału alfa) lub formatów stratnych, PNG daje dokładnie to, czego wymaga format ICO: ostre piksele, wyraźne krawędzie i 32-bitowy kanał alfa, który pozwala ikonie idealnie wtopić się w dowolne tło - czy to biały pasek zakładek Safari, ciemny pasek Firefoxa czy pulpit Windows 11.',
   },
   {
     type: 'title',
@@ -68,7 +69,7 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>PNG</strong> to format roboczy: to w nim projektujesz logo, eksportujesz z Figmy lub Illustratora i zapisujesz wersje edytowalne. Jego przezroczystość, precyzja pikseli i bezstratna kompresja sprawiają, że jest bezkonkurencyjny w procesie projektowania. Jednak przeglądarki, systemy operacyjne und aplikacje Windows szukające favikony lub ikony aplikacji nie akceptują bezpośrednio PNG — wymagają formatu ICO.',
+    html: '<strong>PNG</strong> to format roboczy: to w nim projektujesz logo, eksportujesz z Figmy lub Illustratora i zapisujesz wersje edytowalne. Jego przezroczystość, precyzja pikseli i bezstratna kompresja sprawiają, że jest bezkonkurencyjny w procesie projektowania. Jednak przeglądarki, systemy operacyjne und aplikacje Windows szukające favikony lub ikony aplikacji nie akceptują bezpośrednio PNG - wymagają formatu ICO.',
   },
   {
     type: 'paragraph',
@@ -100,8 +101,8 @@ const seo: PngAIcoLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Błyskawiczna prędkość — zero opóźnień sieciowych',
-          'Pełna prywatność — 0 bajtów wysłanych na zewnątrz',
+          'Błyskawiczna prędkość - zero opóźnień sieciowych',
+          'Pełna prywatność - 0 bajtów wysłanych na zewnątrz',
           'Brak limitów MB lub ograniczeń liczby plików',
           'Czysty interfejs, bez reklam i śledzenia',
         ],
@@ -119,12 +120,12 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Przezroczystość pliku PNG jest w pełni zachowana w wynikowym pliku ICO — przezroczyste piksele pozostają przezroczyste, półprzezroczyste zachowują swoją dokładną wartość alfa, und nieprzezroczyste zachowują swój pierwotny kolor. Jest to kluczowe dla logotypów na zmiennym tle: Twoja favikona będzie wyglądać poprawnie w trybie jasnym, ciemnym oraz w dowolnym połączeniu kolorów interfejsu przeglądarki.',
+    html: 'Przezroczystość pliku PNG jest w pełni zachowana w wynikowym pliku ICO - przezroczyste piksele pozostają przezroczyste, półprzezroczyste zachowują swoją dokładną wartość alfa, und nieprzezroczyste zachowują swój pierwotny kolor. Jest to kluczowe dla logotypów na zmiennym tle: Twoja favikona będzie wyglądać poprawnie w trybie jasnym, ciemnym oraz w dowolnym połączeniu kolorów interfejsu przeglądarki.',
   },
   {
     type: 'tip',
     title: 'Wskazówka: użyj PNG 512x512 jako źródła',
-    html: 'Aby uzyskać najlepszy możliwy wynik, jako obrazu źródłowego użyj <strong>kwadratowego pliku PNG o wymiarach 512x512</strong>. Taka rozdzielczość daje konwerterowi wystarczającą ilość informacji do wygenerowania wszystkich standardowych rozmiarów ICO z doskonałą ostrością — od favikony 16x16 po ikonę 256x256 dla ekranów o wysokiej gęstości — bez pikselozy i utraty detali na krawędziach. Im większy źródłowy PNG, tym lepiej będą wyglądać małe rozmiary ikon.',
+    html: 'Aby uzyskać najlepszy możliwy wynik, jako obrazu źródłowego użyj <strong>kwadratowego pliku PNG o wymiarach 512x512</strong>. Taka rozdzielczość daje konwerterowi wystarczającą ilość informacji do wygenerowania wszystkich standardowych rozmiarów ICO z doskonałą ostrością - od favikony 16x16 po ikonę 256x256 dla ekranów o wysokiej gęstości - bez pikselozy i utraty detali na krawędziach. Im większy źródłowy PNG, tym lepiej będą wyglądać małe rozmiary ikon.',
   },
   {
     type: 'title',
@@ -149,7 +150,7 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'PNG z przezroczystością to bez wątpienia najlepszy punkt wyjścia do tworzenia profesjonalnej jakości ikon ICO. Dzięki temu narzędziu konwersja jest natychmiastowa, kanały alfa są w pełni zachowane und wynikiem jest autentyczne ICO z poprawną strukturą binarną. Bez przesyłania logo na żaden serwer, bez znaków wodnych i limitów — oraz z idealną przezroczystością we wszystkich rozmiarach.',
+    html: 'PNG z przezroczystością to bez wątpienia najlepszy punkt wyjścia do tworzenia profesjonalnej jakości ikon ICO. Dzięki temu narzędziu konwersja jest natychmiastowa, kanały alfa są w pełni zachowane und wynikiem jest autentyczne ICO z poprawną strukturą binarną. Bez przesyłania logo na żaden serwer, bez znaków wodnych i limitów - oraz z idealną przezroczystością we wszystkich rozmiarach.',
   },
 ];
 

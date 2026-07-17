@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Sélectionner des fichiers',
   processedFiles: 'Fichiers traités',
   downloadAll: 'Tout télécharger (.zip)',
-  pending: 'En attente': 'Références Bibliographiques',
+  pending: 'En attente',
+  bibliographyTitle: 'Références Bibliographiques',
   faqTitle: 'Questions Fréquentes',
 };
 
@@ -54,12 +55,12 @@ const howTo: BmpAWebpLocaleContent['howTo'] = [
 const seo: BmpAWebpLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Convertisseur BMP vers WebP : La Réduction de Taille la Plus Extrême Possible',
+    text: 'Convertisseur BMP vers WebP: La Réduction de Taille la Plus Extrême Possible',
     level: 2,
   },
   {
     type: 'paragraph',
-    html: 'Convertir BMP en WebP est sans conteste la transformation la plus spectaculaire que vous puissiez faire avec une image. Le format BMP (Bitmap) est le format le plus ancien et le plus lourd de l\'écosystème numérique : il stocke chaque pixel sans aucune compression, produisant des fichiers qui peuvent peser 20, 50 ou même 100 fois plus que leur équivalent moderne. WebP, développé par Google, applique des algorithmes de compression de dernière génération qui réduisent la taille au minimum possible tout en maintenant une excellente qualité visuelle.',
+    html: 'Convertir BMP en WebP est sans conteste la transformation la plus spectaculaire que vous puissiez faire avec une image. Le format BMP (Bitmap) est le format le plus ancien et le plus lourd de l\'écosystème numérique: il stocke chaque pixel sans aucune compression, produisant des fichiers qui peuvent peser 20, 50 ou même 100 fois plus que leur équivalent moderne. WebP, développé par Google, applique des algorithmes de compression de dernière génération qui réduisent la taille au minimum possible tout en maintenant une excellente qualité visuelle.',
   },
   {
     type: 'title',
@@ -68,7 +69,7 @@ const seo: BmpAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Le format BMP est né dans les années 80 pour Windows, à une époque où l\'espace disque était abondant et la compression n\'était pas une priorité. Chaque pixel est stocké tel quel, sans aucun algorithme de réduction : une image de 1920x1080 pixels en BMP occupe exactement 5,93 Mo quel que soit son contenu. Cela le rend idéal pour les captures d\'écran internes ou l\'édition sans perte, mais totalement inadapté au web ou au stockage moderne.',
+    html: 'Le format BMP est né dans les années 80 pour Windows, à une époque où l\'espace disque était abondant et la compression n\'était pas une priorité. Chaque pixel est stocké tel quel, sans aucun algorithme de réduction: une image de 1920x1080 pixels en BMP occupe exactement 5,93 Mo quel que soit son contenu. Cela le rend idéal pour les captures d\'écran internes ou l\'édition sans perte, mais totalement inadapté au web ou au stockage moderne.',
   },
   {
     type: 'paragraph',
@@ -76,7 +77,7 @@ const seo: BmpAWebpLocaleContent['seo'] = [
   },
   {
     type: 'title',
-    text: 'Comparatif : Convertisseurs Cloud vs Notre Architecture Locale',
+    text: 'Comparatif: Convertisseurs Cloud vs Notre Architecture Locale',
     level: 3,
   },
   {
@@ -101,7 +102,7 @@ const seo: BmpAWebpLocaleContent['seo'] = [
         highlight: true,
         points: [
           'Conversion instantanée sans transfert réseau',
-          'Confidentialité absolue — 0 octet ne quitte votre appareil',
+          'Confidentialité absolue - 0 octet ne quitte votre appareil',
           'Aucune limite de taille de fichier',
           'Fonctionne sans connexion internet',
         ],
@@ -135,21 +136,21 @@ const seo: BmpAWebpLocaleContent['seo'] = [
     type: 'list',
     icon: 'mdi:check-circle',
     items: [
-      'Publication web — Chrome, Firefox, Safari, Edge et tous les navigateurs modernes.',
-      'Réseaux sociaux — Instagram, Twitter, Facebook acceptent nativement le WebP.',
-      'Applications web et PWA — tailles minimales pour un chargement instantané.',
-      'Archivage efficace — remplacez les collections BMP héritées en économisant des gigaoctets.',
-      'Email marketing — images légères qui chargent rapidement dans tout client de messagerie moderne.',
+      'Publication web - Chrome, Firefox, Safari, Edge et tous les navigateurs modernes.',
+      'Réseaux sociaux - Instagram, Twitter, Facebook acceptent nativement le WebP.',
+      'Applications web et PWA - tailles minimales pour un chargement instantané.',
+      'Archivage efficace - remplacez les collections BMP héritées en économisant des gigaoctets.',
+      'Email marketing - images légères qui chargent rapidement dans tout client de messagerie moderne.',
     ],
   },
   {
     type: 'title',
-    text: 'Conclusion : La conversion la plus impactante en un seul clic',
+    text: 'Conclusion: La conversion la plus impactante en un seul clic',
     level: 3,
   },
   {
     type: 'paragraph',
-    html: 'Si vous avez des fichiers BMP hérités de Windows, des captures d\'écran non compressées ou des images provenant d\'anciens outils, les convertir en WebP est l\'action la plus impactante que vous puissiez prendre pour optimiser votre stockage et vos performances web. Avec notre outil, la conversion est instantanée, privée et sans limites — exactement comme elle devrait être.',
+    html: 'Si vous avez des fichiers BMP hérités de Windows, des captures d\'écran non compressées ou des images provenant d\'anciens outils, les convertir en WebP est l\'action la plus impactante que vous puissiez prendre pour optimiser votre stockage et vos performances web. Avec notre outil, la conversion est instantanée, privée et sans limites - exactement comme elle devrait être.',
   },
 ];
 

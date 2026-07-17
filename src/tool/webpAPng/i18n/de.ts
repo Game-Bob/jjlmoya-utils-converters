@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Dateien auswählen',
   processedFiles: 'Verarbeitete Dateien',
   downloadAll: 'Alles herunterladen (.zip)',
-  pending: 'Ausstehend': 'Literaturhinweise',
+  pending: 'Ausstehend',
+  bibliographyTitle: 'Literaturhinweise',
   faqTitle: 'Häufig gestellte Fragen',
 };
 
@@ -124,7 +125,7 @@ const seo: WebpAPngLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'Tipp für Editoren',
-    html: 'Verwenden Sie PNG, wenn Sie das Bild weiter bearbeiten müssen. Die verlustfreie Kompression garantiert, dass durch wiederholtes Speichern keine Qualitätsverluste entstehen – entscheidend bei der Arbeit mit Ebenen, Masken oder Farbanpassungen in Photoshop oder Figma.',
+    html: 'Verwenden Sie PNG, wenn Sie das Bild weiter bearbeiten müssen. Die verlustfreie Kompression garantiert, dass durch wiederholtes Speichern keine Qualitätsverluste entstehen - entscheidend bei der Arbeit mit Ebenen, Masken oder Farbanpassungen in Photoshop oder Figma.',
   },
   {
     type: 'title',
@@ -149,7 +150,7 @@ const seo: WebpAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Wenn WebP das Format für Webserver ist, dann ist PNG das Format für das Designstudio. Dieses Tool konvertiert Ihre WebP-Assets in produktionsbereite PNGs mit intakter Transparenz und maximaler Qualität – alles in Ihrem Browser und ohne dass Ihre Dateien jemals Ihren Rechner verlassen.',
+    html: 'Wenn WebP das Format für Webserver ist, dann ist PNG das Format für das Designstudio. Dieses Tool konvertiert Ihre WebP-Assets in produktionsbereite PNGs mit intakter Transparenz und maximaler Qualität - alles in Ihrem Browser und ohne dass Ihre Dateien jemals Ihren Rechner verlassen.',
   },
 ];
 

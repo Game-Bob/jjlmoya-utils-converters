@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: '选择文件',
   processedFiles: '已处理文件',
   downloadAll: '下载全部 (.zip)',
-  pending: '等待中': '参考文献',
+  pending: '等待中',
+  bibliographyTitle: '参考文献',
   faqTitle: '常见问题',
 };
 
@@ -59,7 +60,7 @@ const seo: AvifAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'AVIF 是目前最先进的图像格式：比 WebP 小，比 JPG 小，视觉质量更高。然而，它的采用情况参差不齐——Safari 直到 2024 年才支持它，许多旧的移动设备也无法识别它。相比之下，WebP 多年来作为现代网页标准已被确立，拥有超过 95% 的全球支持。当您需要现代性而又不愿承担兼容性风险时，将 AVIF 转换为 WebP 是务实的决策。',
+    html: 'AVIF 是目前最先进的图像格式：比 WebP 小，比 JPG 小，视觉质量更高。然而，它的采用情况参差不齐-Safari 直到 2024 年才支持它，许多旧的移动设备也无法识别它。相比之下，WebP 多年来作为现代网页标准已被确立，拥有超过 95% 的全球支持。当您需要现代性而又不愿承担兼容性风险时，将 AVIF 转换为 WebP 是务实的决策。',
   },
   {
     type: 'title',
@@ -68,7 +69,7 @@ const seo: AvifAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'AVIF 提供了目前最先进的压缩技术——在相同质量下，通常比 WebP 小 20-30%。其基于 AV1 的技术是行业内最先进的。然而，AVIF 的支持仍存在盲点：旧版本的 Safari、旧版 Android 上的某些浏览器以及某些桌面图像播放器无法识别它。对于拥有广泛且多样化受众的网页生产来说，这构成了风险。',
+    html: 'AVIF 提供了目前最先进的压缩技术-在相同质量下，通常比 WebP 小 20-30%。其基于 AV1 的技术是行业内最先进的。然而，AVIF 的支持仍存在盲点：旧版本的 Safari、旧版 Android 上的某些浏览器以及某些桌面图像播放器无法识别它。对于拥有广泛且多样化受众的网页生产来说，这构成了风险。',
   },
   {
     type: 'paragraph',
@@ -100,7 +101,7 @@ const seo: AvifAWebpLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          '完全隐私——0 字节离开您的设备',
+          '完全隐私-0 字节离开您的设备',
           '即时处理，不依赖网络',
           '没有大小或文件数量限制',
           '可在无网络连接的情况下工作',
@@ -124,7 +125,7 @@ const seo: AvifAWebpLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'WebP：现代开发者的务实选择',
-    html: 'WebP 拥有超过 95% 的浏览器支持——AVIF 正在增长，但尚未达到这个数字。对于不具备自适应格式检测的生产站点，WebP 是覆盖几乎所有受众的安全选择。将您的 AVIF 转换为 WebP，放心地提供现代图像。',
+    html: 'WebP 拥有超过 95% 的浏览器支持-AVIF 正在增长，但尚未达到这个数字。对于不具备自适应格式检测的生产站点，WebP 是覆盖几乎所有受众的安全选择。将您的 AVIF 转换为 WebP，放心地提供现代图像。',
   },
   {
     type: 'title',
@@ -149,7 +150,7 @@ const seo: AvifAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'AVIF 是图像压缩的前沿，但 WebP 是现代网页生态系统中可靠且通用的选择。使用我们的工具，您可以瞬间从最新格式转换为支持最广的格式——无需向服务器上传任何内容，拥有完全隐私且无大小限制。',
+    html: 'AVIF 是图像压缩的前沿，但 WebP 是现代网页生态系统中可靠且通用的选择。使用我们的工具，您可以瞬间从最新格式转换为支持最广的格式-无需向服务器上传任何内容，拥有完全隐私且无大小限制。',
   },
 ];
 

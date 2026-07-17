@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Bestanden selecteren',
   processedFiles: 'Verwerkte bestanden',
   downloadAll: 'Alles downloaden (.zip)',
-  pending: 'In afwachting': 'Bibliografische Referenties',
+  pending: 'In afwachting',
+  bibliographyTitle: 'Bibliografische Referenties',
   faqTitle: 'Veelgestelde Vragen',
 };
 
@@ -59,7 +60,7 @@ const seo: JpgAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Het <strong>JPG</strong>-formaat heeft decennialang de digitale fotografie gedomineerd — universeel compatibel en breed ondersteund. Maar Google heeft <strong>WebP</strong> ontwikkeld om JPG op eigen terrein te verslaan: dezelfde visuele kwaliteit bij een 25–35% kleinere bestandsgrootte. Voor ontwikkelaars en marketingteams die vechten tegen trage laadtijden, is het converteren van JPG naar WebP de optimalisatie met het hoogste rendement die je kunt toepassen zonder aan je ontwerp te komen.',
+    html: 'Het <strong>JPG</strong>-formaat heeft decennialang de digitale fotografie gedomineerd - universeel compatibel en breed ondersteund. Maar Google heeft <strong>WebP</strong> ontwikkeld om JPG op eigen terrein te verslaan: dezelfde visuele kwaliteit bij een 25-35% kleinere bestandsgrootte. Voor ontwikkelaars en marketingteams die vechten tegen trage laadtijden, is het converteren van JPG naar WebP de optimalisatie met het hoogste rendement die je kunt toepassen zonder aan je ontwerp te komen.',
   },
   {
     type: 'title',
@@ -68,11 +69,11 @@ const seo: JpgAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>JPG</strong> blijft de juiste keuze wanneer je universele compatibiliteit nodig hebt: e-mails aan klanten, Word-documenten, verouderde social mediaplatforms of CMS-systemen die WebP nog niet accepteren. Het dertigjarige ecosysteem garandeert dat elk scherm, elke printer of elke viewer het zonder problemen zal openen. Het belangrijkste nadeel is de grootte — een header-JPG van 1,5 MB kan de LCP-score van je pagina verslechteren en de drempelwaarden van Core Web Vitals overschrijden.',
+    html: '<strong>JPG</strong> blijft de juiste keuze wanneer je universele compatibiliteit nodig hebt: e-mails aan klanten, Word-documenten, verouderde social mediaplatforms of CMS-systemen die WebP nog niet accepteren. Het dertigjarige ecosysteem garandeert dat elk scherm, elke printer of elke viewer het zonder problemen zal openen. Het belangrijkste nadeel is de grootte - een header-JPG van 1,5 MB kan de LCP-score van je pagina verslechteren en de drempelwaarden van Core Web Vitals overschrijden.',
   },
   {
     type: 'paragraph',
-    html: '<strong>WebP</strong> is de slimme keuze voor alle inhoud op je website. Chrome, Firefox, Safari en Edge ondersteunen het al jaren systeemeigen. Productafbeeldingen in e-commerce, blogbanners, videominiaturen en elke online gepubliceerde foto profiteren direct: lichtere pagina\'s, betere Google PageSpeed Insights-scores en een soepelere gebruikerservaring — vooral op trage mobiele verbindingen.',
+    html: '<strong>WebP</strong> is de slimme keuze voor alle inhoud op je website. Chrome, Firefox, Safari en Edge ondersteunen het al jaren systeemeigen. Productafbeeldingen in e-commerce, blogbanners, videominiaturen en elke online gepubliceerde foto profiteren direct: lichtere pagina\'s, betere Google PageSpeed Insights-scores en een soepelere gebruikerservaring - vooral op trage mobiele verbindingen.',
   },
   {
     type: 'title',
@@ -100,8 +101,8 @@ const seo: JpgAWebpLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Onmiddellijke snelheid — geen netwerklatentie',
-          'Volledige privacy — 0 bytes extern verzonden',
+          'Onmiddellijke snelheid - geen netwerklatentie',
+          'Volledige privacy - 0 bytes extern verzonden',
           'Geen MB-limieten of beperkingen op aantal bestanden',
           'Schone interface, geen advertenties of tracking',
         ],
@@ -115,16 +116,16 @@ const seo: JpgAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Wanneer je een JPG in de tool sleept, maakt de browser een <strong>Blob-object</strong> aan dat alleen in je RAM leeft. Die Blob wordt gedecodeerd en getekend op een onzichtbaar <strong>HTML5 Canvas</strong>-element. Omdat JPG geen alfakanaal heeft, is de conversie naar WebP direct: de engine exporteert het canvas door <code>toDataURL(\'image/webp\')</code> aan te roepen, wat een byte-stream genereert die je besturingssysteem onmiddellijk downloadt — zonder tussenkomst van een server.',
+    html: 'Wanneer je een JPG in de tool sleept, maakt de browser een <strong>Blob-object</strong> aan dat alleen in je RAM leeft. Die Blob wordt gedecodeerd en getekend op een onzichtbaar <strong>HTML5 Canvas</strong>-element. Omdat JPG geen alfakanaal heeft, is de conversie naar WebP direct: de engine exporteert het canvas door <code>toDataURL(\'image/webp\')</code> aan te roepen, wat een byte-stream genereert die je besturingssysteem onmiddellijk downloadt - zonder tussenkomst van een server.',
   },
   {
     type: 'paragraph',
-    html: 'Het WebP-compressiealgoritme combineert blokvoorspellingstechnieken (vergelijkbaar met die in VP8, de videocodec van Google) met kleurtransformaties en rekenkundig coderen. Het resultaat is een bestand dat dezelfde perceptuele informatie bevat als de originele JPG, maar veel efficiënter is verpakt — wat betekent dat er bij elk paginabezoek minder kilobytes worden overgedragen.',
+    html: 'Het WebP-compressiealgoritme combineert blokvoorspellingstechnieken (vergelijkbaar met die in VP8, de videocodec van Google) met kleurtransformaties en rekenkundig coderen. Het resultaat is een bestand dat dezelfde perceptuele informatie bevat als de originele JPG, maar veel efficiënter is verpakt - wat betekent dat er bij elk paginabezoek minder kilobytes worden overgedragen.',
   },
   {
     type: 'tip',
     title: 'Core Web Vitals Tip: LCP en beeldgewicht',
-    html: 'De <strong>Largest Contentful Paint (LCP)</strong> is de Google-metriek die meet hoe lang het duurt om het grootste visuele element op je pagina te laden. Een header-JPG van 1,5 MB kan een WebP worden van slechts 900 KB — of zelfs 600 KB — zonder merkbaar visueel verschil. Die <strong>besparing van 25–35%</strong> kan je LCP verschuiven van "Verbetering nodig" naar "Goed" en je positie in de zoekresultaten verbeteren.',
+    html: 'De <strong>Largest Contentful Paint (LCP)</strong> is de Google-metriek die meet hoe lang het duurt om het grootste visuele element op je pagina te laden. Een header-JPG van 1,5 MB kan een WebP worden van slechts 900 KB - of zelfs 600 KB - zonder merkbaar visueel verschil. Die <strong>besparing van 25-35%</strong> kan je LCP verschuiven van "Verbetering nodig" naar "Goed" en je positie in de zoekresultaten verbeteren.',
   },
   {
     type: 'title',
@@ -149,7 +150,7 @@ const seo: JpgAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Het converteren van je JPG\'s naar WebP is tegenwoordig een van de eenvoudigste en meest kosteneffectieve optimalisaties die je op elke website kunt toepassen. Met deze tool doe je het in seconden, gratis en zonder dat je afbeeldingen je apparaat ooit verlaten. Minder kilobytes, betere LCP, snellere pagina\'s — allemaal met exact hetzelfde visuele uiterlijk dat je al had.',
+    html: 'Het converteren van je JPG\'s naar WebP is tegenwoordig een van de eenvoudigste en meest kosteneffectieve optimalisaties die je op elke website kunt toepassen. Met deze tool doe je het in seconden, gratis en zonder dat je afbeeldingen je apparaat ooit verlaten. Minder kilobytes, betere LCP, snellere pagina\'s - allemaal met exact hetzelfde visuele uiterlijk dat je al had.',
   },
 ];
 

@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: '选择文件',
   processedFiles: '已处理文件',
   downloadAll: '下载全部 (.zip)',
-  pending: '等待中': '参考文献',
+  pending: '等待中',
+  bibliographyTitle: '参考文献',
   faqTitle: '常见问题',
 };
 
@@ -59,7 +60,7 @@ const seo: AvifAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'AVIF 是在网页上分发图像的理想格式——小巧、高效且高质量。但是，当需要对这些图像进行编辑、修饰或在设计工具中处理时，AVIF 就成了障碍。Figma、Photoshop、Illustrator、Sketch 以及几乎所有的专业设计工具都期望接收 PNG 来进行透明度处理和无损编辑。将 AVIF 转换为 PNG 是连接网页分发世界与创意编辑世界之间的桥梁。',
+    html: 'AVIF 是在网页上分发图像的理想格式-小巧、高效且高质量。但是，当需要对这些图像进行编辑、修饰或在设计工具中处理时，AVIF 就成了障碍。Figma、Photoshop、Illustrator、Sketch 以及几乎所有的专业设计工具都期望接收 PNG 来进行透明度处理和无损编辑。将 AVIF 转换为 PNG 是连接网页分发世界与创意编辑世界之间的桥梁。',
   },
   {
     type: 'title',
@@ -149,7 +150,7 @@ const seo: AvifAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'AVIF 和 PNG 是现代工作流中的完美拍档：AVIF 用于高效网页分发，PNG 用于设计工具内的编辑和协作。使用我们的转换器，两者之间的转换是即时的、私密的，且能保留每一个细节——这正是当您的视觉资产至关重要时所需要的。',
+    html: 'AVIF 和 PNG 是现代工作流中的完美拍档：AVIF 用于高效网页分发，PNG 用于设计工具内的编辑和协作。使用我们的转换器，两者之间的转换是即时的、私密的，且能保留每一个细节-这正是当您的视觉资产至关重要时所需要的。',
   },
 ];
 

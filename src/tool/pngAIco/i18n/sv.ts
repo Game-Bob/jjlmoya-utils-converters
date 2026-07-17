@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Välj filer',
   processedFiles: 'Bearbetade filer',
   downloadAll: 'Ladda ner alla (.zip)',
-  pending: 'Väntande': 'Bibliografiska Referenser',
+  pending: 'Väntande',
+  bibliographyTitle: 'Bibliografiska Referenser',
   faqTitle: 'Vanliga Frågor',
 };
 
@@ -59,7 +60,7 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>PNG med transparens</strong> är det ideala utgångsmaterialet för att skapa professionella ICO-ikoner. Till skillnad från JPG (som inte har någon alfakanal) eller format med dataförlust, ger PNG dig exakt vad ICO-formatet behöver: skarpa pixlar, rena kanter och en 32-bitars alfakanal som gör att ikonen kan integreras perfekt över vilken bakgrund som helst — oavsett om det är Safaris vita bokmärkesfält, Firefox mörka fält eller Windows 11-skrivbordet.',
+    html: '<strong>PNG med transparens</strong> är det ideala utgångsmaterialet för att skapa professionella ICO-ikoner. Till skillnad från JPG (som inte har någon alfakanal) eller format med dataförlust, ger PNG dig exakt vad ICO-formatet behöver: skarpa pixlar, rena kanter och en 32-bitars alfakanal som gör att ikonen kan integreras perfekt över vilken bakgrund som helst - oavsett om det är Safaris vita bokmärkesfält, Firefox mörka fält eller Windows 11-skrivbordet.',
   },
   {
     type: 'title',
@@ -68,7 +69,7 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>PNG</strong> är arbetsformatet: det är där du designar din logotyp, exporterar från Figma eller Illustrator och sparar dina redigerbara versioner. Dess transparens, pixelprecision och förlustfria komprimering gör det oslagbart för designprocessen. Men webbläsare, operativsystem und Windows-applikationer som letar efter en favicon eller appikon accepterar inte PNG direkt — de behöver ICO.',
+    html: '<strong>PNG</strong> är arbetsformatet: det är där du designar din logotyp, exporterar från Figma eller Illustrator och sparar dina redigerbara versioner. Dess transparens, pixelprecision och förlustfria komprimering gör det oslagbart för designprocessen. Men webbläsare, operativsystem und Windows-applikationer som letar efter en favicon eller appikon accepterar inte PNG direkt - de behöver ICO.',
   },
   {
     type: 'paragraph',
@@ -100,8 +101,8 @@ const seo: PngAIcoLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Omedelbar hastighet — noll nätverkslatens',
-          'Komplett integritet — 0 byte skickas externt',
+          'Omedelbar hastighet - noll nätverkslatens',
+          'Komplett integritet - 0 byte skickas externt',
           'Inga MB-gränser eller begränsningar på antal filer',
           'Rent gränssnitt, inga annonser eller spårning',
         ],
@@ -119,12 +120,12 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Transparensen i PNG-filen bevaras helt i den resulterande ICO-filen — transparenta pixlar förblir transparenta, halvtransparenta pixlar behåller sitt exakta alfavärde und opaka pixlar behåller sin ursprungliga färg. Detta är avgörande för logotyper på varierande bakgrunder: din favicon kommer att se korrekt ut i ljust läge, mörkt läge und alla kombinationer av webbläsargränssnittets färger.',
+    html: 'Transparensen i PNG-filen bevaras helt i den resulterande ICO-filen - transparenta pixlar förblir transparenta, halvtransparenta pixlar behåller sitt exakta alfavärde und opaka pixlar behåller sin ursprungliga färg. Detta är avgörande för logotyper på varierande bakgrunder: din favicon kommer att se korrekt ut i ljust läge, mörkt läge und alla kombinationer av webbläsargränssnittets färger.',
   },
   {
     type: 'tip',
     title: 'Tips: använd en 512×512 PNG som källa',
-    html: 'För bästa möjliga resultat, använd en <strong>kvadratisk 512×512 PNG</strong> som källbild. Denna upplösning ger konverteraren tillräckligt med information för att generera alla standard ICO-storlekar med skärpa — från 16×16 favicon upp till 256×256 för högupplösta skärmar — utan pixelering eller förlust av kantdetaljer. Ju större käll-PNG, desto bättre kommer de små ikonstorlekarna att se ut.',
+    html: 'För bästa möjliga resultat, använd en <strong>kvadratisk 512×512 PNG</strong> som källbild. Denna upplösning ger konverteraren tillräckligt med information för att generera alla standard ICO-storlekar med skärpa - från 16×16 favicon upp till 256×256 för högupplösta skärmar - utan pixelering eller förlust av kantdetaljer. Ju större käll-PNG, desto bättre kommer de små ikonstorlekarna att se ut.',
   },
   {
     type: 'title',
@@ -149,7 +150,7 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'PNG med transparens är utan tvekan den bästa utgångspunkten för att skapa ICO-ikoner av professionell kvalitet. Med detta verktyg sker konverteringen omedelbart, alfakanaler bevaras fullt ut und den resulterande filen är en äkta ICO met korrekt binär struktur. Ingen uppladdning av din logotyp till någon server, inga vattenstämplar, inga gränser — und perfekt transparens i alla storlekar.',
+    html: 'PNG med transparens är utan tvekan den bästa utgångspunkten för att skapa ICO-ikoner av professionell kvalitet. Med detta verktyg sker konverteringen omedelbart, alfakanaler bevaras fullt ut und den resulterande filen är en äkta ICO met korrekt binär struktur. Ingen uppladdning av din logotyp till någon server, inga vattenstämplar, inga gränser - und perfekt transparens i alla storlekar.',
   },
 ];
 

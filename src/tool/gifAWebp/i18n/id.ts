@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Pilih file',
   processedFiles: 'File yang diproses',
   downloadAll: 'Unduh Semua (.zip)',
-  pending: 'Tertunda': 'Referensi Bibliografi',
+  pending: 'Tertunda',
+  bibliographyTitle: 'Referensi Bibliografi',
   faqTitle: 'Pertanyaan yang Sering Diajukan',
 };
 
@@ -68,11 +69,11 @@ const seo: GifAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'GIF adalah format dari tahun 1987 yang awalnya tidak dirancang untuk animasi — fitur tersebut datang sebagai "hack" kemudian. Palet 256 warnanya, kompresi yang tidak efisien, dan ketidakmampuan untuk menangani audio menjadikannya format yang usang. WebP, yang dikembangkan oleh Google pada tahun 2010, menawarkan kompresi superior baik lossy maupun lossless, dukungan animasi asli, dan saluran alpha penuh.',
+    html: 'GIF adalah format dari tahun 1987 yang awalnya tidak dirancang untuk animasi - fitur tersebut datang sebagai "hack" kemudian. Palet 256 warnanya, kompresi yang tidak efisien, dan ketidakmampuan untuk menangani audio menjadikannya format yang usang. WebP, yang dikembangkan oleh Google pada tahun 2010, menawarkan kompresi superior baik lossy maupun lossless, dukungan animasi asli, dan saluran alpha penuh.',
   },
   {
     type: 'paragraph',
-    html: 'Bagi pengembang web, mengganti GIF dengan WebP pada halaman dapat berarti peningkatan skor Google PageSpeed sebesar 10 hingga 30 poin. Berat halaman yang lebih sedikit berarti Core Web Vitals yang lebih baik, peringkat SEO yang lebih baik, dan biaya bandwidth yang lebih rendah di server. Ini bukan sekadar peningkatan estetika — ini adalah keputusan arsitektur teknis.',
+    html: 'Bagi pengembang web, mengganti GIF dengan WebP pada halaman dapat berarti peningkatan skor Google PageSpeed sebesar 10 hingga 30 poin. Berat halaman yang lebih sedikit berarti Core Web Vitals yang lebih baik, peringkat SEO yang lebih baik, dan biaya bandwidth yang lebih rendah di server. Ini bukan sekadar peningkatan estetika - ini adalah keputusan arsitektur teknis.',
   },
   {
     type: 'title',

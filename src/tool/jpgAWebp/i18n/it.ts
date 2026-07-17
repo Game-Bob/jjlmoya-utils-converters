@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Seleziona file',
   processedFiles: 'File elaborati',
   downloadAll: 'Scarica tutto (.zip)',
-  pending: 'In attesa': 'Riferimenti Bibliografici',
+  pending: 'In attesa',
+  bibliographyTitle: 'Riferimenti Bibliografici',
   faqTitle: 'Domande Frequenti',
 };
 
@@ -100,8 +101,8 @@ const seo: JpgAWebpLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Velocità istantanea — latenza di rete zero',
-          'Privacy completa — 0 byte inviati esternamente',
+          'Velocità istantanea - latenza di rete zero',
+          'Privacy completa - 0 byte inviati esternamente',
           'Nessun limite di MB o restrizioni sul numero di file',
           'Interfaccia pulita, senza pubblicità o tracciamento',
         ],
@@ -115,7 +116,7 @@ const seo: JpgAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Quando trascini un JPG nello strumento, il browser crea un <strong>oggetto Blob</strong> che risiede solo nella tua RAM. Quel Blob viene decodificato e disegnato su un elemento <strong>HTML5 Canvas</strong> invisibile. Poiché il JPG non ha un canale alfa, la conversione in WebP è diretta: il motore esporta il canvas chiamando <code>toDataURL(\'image/webp\')</code>, generando un flusso di byte che il tuo sistema operativo scarica istantaneamente — senza coinvolgere alcun server.',
+    html: 'Quando trascini un JPG nello strumento, il browser crea un <strong>oggetto Blob</strong> che risiede solo nella tua RAM. Quel Blob viene decodificato e disegnato su un elemento <strong>HTML5 Canvas</strong> invisibile. Poiché il JPG non ha un canale alfa, la conversione in WebP è diretta: il motore esporta il canvas chiamando <code>toDataURL(\'image/webp\')</code>, generando un flusso di byte che il tuo sistema operativo scarica istantaneamente - senza coinvolgere alcun server.',
   },
   {
     type: 'paragraph',
@@ -124,7 +125,7 @@ const seo: JpgAWebpLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'Suggerimento Core Web Vitals: LCP e peso dell\'immagine',
-    html: 'Il <strong>Largest Contentful Paint (LCP)</strong> è la metrica di Google che misura quanto tempo occorre per caricare l\'elemento visivo più grande della tua pagina. Un JPG header da 1,5 MB può diventare un WebP di soli 900 KB — o addirittura 600 KB — senza differenze visive evidenti. Quel <strong>risparmio del 25-35%</strong> può spostare il tuo LCP da "Necessita miglioramento" a "Buono" e spingerti in alto nelle classifiche di ricerca.',
+    html: 'Il <strong>Largest Contentful Paint (LCP)</strong> è la metrica di Google che misura quanto tempo occorre per caricare l\'elemento visivo più grande della tua pagina. Un JPG header da 1,5 MB può diventare un WebP di soli 900 KB - o addirittura 600 KB - senza differenze visive evidenti. Quel <strong>risparmio del 25-35%</strong> può spostare il tuo LCP da "Necessita miglioramento" a "Buono" e spingerti in alto nelle classifiche di ricerca.',
   },
   {
     type: 'title',
@@ -149,7 +150,7 @@ const seo: JpgAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Convertire i tuoi JPG in WebP è oggi una delle ottimizzazioni più semplici ed efficaci che si possano applicare a qualsiasi sito web. Con questo strumento lo fai in pochi secondi, gratuitamente e senza che le tue immagini lascino mai il tuo dispositivo. Meno kilobyte, miglior LCP, pagine più veloci — tutto con l\'esatto aspetto visivo che avevi già.',
+    html: 'Convertire i tuoi JPG in WebP è oggi una delle ottimizzazioni più semplici ed efficaci che si possano applicare a qualsiasi sito web. Con questo strumento lo fai in pochi secondi, gratuitamente e senza che le tue immagini lascino mai il tuo dispositivo. Meno kilobyte, miglior LCP, pagine più veloci - tutto con l\'esatto aspetto visivo che avevi già.',
   },
 ];
 

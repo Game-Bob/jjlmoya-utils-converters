@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Selecionar arquivos',
   processedFiles: 'Arquivos processados',
   downloadAll: 'Baixar tudo (.zip)',
-  pending: 'Pendente': 'Referências Bibliográficas',
+  pending: 'Pendente',
+  bibliographyTitle: 'Referências Bibliográficas',
   faqTitle: 'Perguntas Frequentes',
 };
 
@@ -59,7 +60,7 @@ const seo: PngAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'O <strong>PNG</strong> tem sido o formato de referência para imagens web com transparência durante décadas — logótipos, ícones, elementos de UI, imagens de produtos em fundos recortados. O seu problema é o tamanho do arquivo: a compressão sem perdas que garante a qualidade também gera arquivos visivelmente grandes. O <strong>WebP</strong> da Google resolve esta contradição: suporta o canal alfa (transparência) <em>e</em> comprime muito melhor do que o PNG, tornando a mudança de PNG para WebP no seu website uma otimização perfeita que não sacrifica nada.',
+    html: 'O <strong>PNG</strong> tem sido o formato de referência para imagens web com transparência durante décadas - logótipos, ícones, elementos de UI, imagens de produtos em fundos recortados. O seu problema é o tamanho do arquivo: a compressão sem perdas que garante a qualidade também gera arquivos visivelmente grandes. O <strong>WebP</strong> da Google resolve esta contradição: suporta o canal alfa (transparência) <em>e</em> comprime muito melhor do que o PNG, tornando a mudança de PNG para WebP no seu website uma otimização perfeita que não sacrifica nada.',
   },
   {
     type: 'title',
@@ -100,8 +101,8 @@ const seo: PngAWebpLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Velocidade instantânea — latência de rede zero',
-          'Privacidade total — 0 bytes enviados externamente',
+          'Velocidade instantânea - latência de rede zero',
+          'Privacidade total - 0 bytes enviados externamente',
           'Sem limites de MB ou restrições no número de arquivos',
           'Interface limpa, sem anúncios ou rastreamento',
         ],
@@ -115,7 +116,7 @@ const seo: PngAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'O PNG é carregado localmente e descodificado num <strong>HTML5 Canvas</strong> em memória. A API Canvas preserva o canal alfa do PNG original — todos os píxeis transparentes e semitransparentes são mantidos intactos no buffer de píxeis RGBA. O canvas é então exportado chamando <code>toDataURL(\'image/webp\')</code>, que aplica o codec WebP do navegador (baseado no libwebp da Google) para gerar um arquivo mais compacto sem alterar os dados de transparência.',
+    html: 'O PNG é carregado localmente e descodificado num <strong>HTML5 Canvas</strong> em memória. A API Canvas preserva o canal alfa do PNG original - todos os píxeis transparentes e semitransparentes são mantidos intactos no buffer de píxeis RGBA. O canvas é então exportado chamando <code>toDataURL(\'image/webp\')</code>, que aplica o codec WebP do navegador (baseado no libwebp da Google) para gerar um arquivo mais compacto sem alterar os dados de transparência.',
   },
   {
     type: 'paragraph',
@@ -149,7 +150,7 @@ const seo: PngAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'A mudança de PNG para WebP é a otimização de imagem web mais completa disponível: obtém arquivos mais leves, preserva a transparência e melhora as métricas de Core Web Vitals sem alterar nada no seu design visual. Esta ferramenta faz isso instantaneamente, gratuitamente e de forma completamente privada — as suas imagens são processadas no seu navegador e nunca viajam para qualquer servidor externo.',
+    html: 'A mudança de PNG para WebP é a otimização de imagem web mais completa disponível: obtém arquivos mais leves, preserva a transparência e melhora as métricas de Core Web Vitals sem alterar nada no seu design visual. Esta ferramenta faz isso instantaneamente, gratuitamente e de forma completamente privada - as suas imagens são processadas no seu navegador e nunca viajam para qualquer servidor externo.',
   },
 ];
 

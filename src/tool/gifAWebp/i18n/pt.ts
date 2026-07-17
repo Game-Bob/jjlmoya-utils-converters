@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Selecionar arquivos',
   processedFiles: 'Arquivos processados',
   downloadAll: 'Baixar tudo (.zip)',
-  pending: 'Pendente': 'Referências Bibliográficas',
+  pending: 'Pendente',
+  bibliographyTitle: 'Referências Bibliográficas',
   faqTitle: 'Perguntas Frequentes',
 };
 
@@ -68,11 +69,11 @@ const seo: GifAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'O GIF é um formato de 1987 não projetado originalmente para animações — essa funcionalidade surgiu como um "hack" posterior. A sua paleta de 256 cores, a compressão ineficiente e a incapacidade de lidar com áudio tornam-no um formato obsoleto. O WebP, desenvolvido pela Google em 2010, oferece compressão superior, tanto com perdas como sem perdas, suporte nativo para animações e canal alpha completo.',
+    html: 'O GIF é um formato de 1987 não projetado originalmente para animações - essa funcionalidade surgiu como um "hack" posterior. A sua paleta de 256 cores, a compressão ineficiente e a incapacidade de lidar com áudio tornam-no um formato obsoleto. O WebP, desenvolvido pela Google em 2010, oferece compressão superior, tanto com perdas como sem perdas, suporte nativo para animações e canal alpha completo.',
   },
   {
     type: 'paragraph',
-    html: 'Para um desenvolvedor web, substituir GIFs por WebP nas páginas pode significar uma melhoria na pontuação do Google PageSpeed de 10 a 30 pontos. Menos peso de página significa melhores Core Web Vitals, melhor posicionamento SEO e menores custos de largura de banda nos servidores. Não é apenas uma melhoria estética — é uma decisão de arquitetura técnica.',
+    html: 'Para um desenvolvedor web, substituir GIFs por WebP nas páginas pode significar uma melhoria na pontuação do Google PageSpeed de 10 a 30 pontos. Menos peso de página significa melhores Core Web Vitals, melhor posicionamento SEO e menores custos de largura de banda nos servidores. Não é apenas uma melhoria estética - é uma decisão de arquitetura técnica.',
   },
   {
     type: 'title',

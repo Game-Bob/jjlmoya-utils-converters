@@ -1,6 +1,6 @@
 import type { BibliographyEntry } from '../../types';
 
-export const bibliography: BibliographyEntry[] = ['bibliography'] = [
+export const bibliography: BibliographyEntry[] = [
   {
     name: 'Microsoft ICO Format Technische Struktur',
     url: 'https://en.wikipedia.org/wiki/ICO_(file_format)',

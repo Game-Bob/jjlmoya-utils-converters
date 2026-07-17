@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Wybierz pliki',
   processedFiles: 'Przetworzone pliki',
   downloadAll: 'Pobierz wszystko (.zip)',
-  pending: 'Oczekiwanie': 'Bibliografia',
+  pending: 'Oczekiwanie',
+  bibliographyTitle: 'Bibliografia',
   faqTitle: 'Często zadawane pytania',
 };
 
@@ -101,7 +102,7 @@ const seo: BmpAWebpLocaleContent['seo'] = [
         highlight: true,
         points: [
           'Natychmiastowa konwersja bez transmisji sieciowej',
-          'Absolutna prywatność — 0 bajtów opuszcza Twoje urządzenie',
+          'Absolutna prywatność - 0 bajtów opuszcza Twoje urządzenie',
           'Brak limitów rozmiaru na plik',
           'Działa bez połączenia z internetem',
         ],
@@ -135,11 +136,11 @@ const seo: BmpAWebpLocaleContent['seo'] = [
     type: 'list',
     icon: 'mdi:check-circle',
     items: [
-      'Publikowanie w internecie — Chrome, Firefox, Safari, Edge i wszystkie nowoczesne przeglądarki.',
-      'Media społecznościowe — Instagram, Twitter, Facebook natywnie akceptują format WebP.',
-      'Aplikacje internetowe i PWA — minimalne rozmiary dla natychmiastowego ładowania.',
-      'Wydajne archiwizowanie — zastępuje kolekcje starych plików BMP, oszczędzając gigabajty.',
-      'Marketing e-mailowy — lekkie obrazy, które ładują się szybko w każdym nowoczesnym kliencie pocztowym.',
+      'Publikowanie w internecie - Chrome, Firefox, Safari, Edge i wszystkie nowoczesne przeglądarki.',
+      'Media społecznościowe - Instagram, Twitter, Facebook natywnie akceptują format WebP.',
+      'Aplikacje internetowe i PWA - minimalne rozmiary dla natychmiastowego ładowania.',
+      'Wydajne archiwizowanie - zastępuje kolekcje starych plików BMP, oszczędzając gigabajty.',
+      'Marketing e-mailowy - lekkie obrazy, które ładują się szybko w każdym nowoczesnym kliencie pocztowym.',
     ],
   },
   {
@@ -149,7 +150,7 @@ const seo: BmpAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Jeśli posiadasz stare pliki BMP z systemu Windows, nieskompresowane zrzuty ekranu lub obrazy ze starych narzędzi, konwersja ich na format WebP to najbardziej uderzające działanie, jakie możesz podjąć, aby zoptymalizować miejsce na dysku i wydajność strony internetowej. Dzięki naszemu narzędziu konwersja jest natychmiastowa, prywatna i bez limitów — dokładnie tak, jak powinno być.',
+    html: 'Jeśli posiadasz stare pliki BMP z systemu Windows, nieskompresowane zrzuty ekranu lub obrazy ze starych narzędzi, konwersja ich na format WebP to najbardziej uderzające działanie, jakie możesz podjąć, aby zoptymalizować miejsce na dysku i wydajność strony internetowej. Dzięki naszemu narzędziu konwersja jest natychmiastowa, prywatna i bez limitów - dokładnie tak, jak powinno być.',
   },
 ];
 

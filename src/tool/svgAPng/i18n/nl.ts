@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Bestanden selecteren',
   processedFiles: 'Verwerkte bestanden',
   downloadAll: 'Alles downloaden (.zip)',
-  pending: 'In afwachting': 'Bibliografische Referenties',
+  pending: 'In afwachting',
+  bibliographyTitle: 'Bibliografische Referenties',
   faqTitle: 'Veelgestelde Vragen',
 };
 
@@ -119,12 +120,12 @@ const seo: SvgAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'In tegenstelling tot conversie naar JPG, behoudt het canvas bij het exporteren naar PNG het volledige alfakanaal: transparante gebieden in de originele SVG worden volledig transparante pixels in de resulterende PNG — geen witte achtergrondvulling. De export maakt gebruik van de methote <code>toDataURL(\'image/png\')</code> met lossless compressie.',
+    html: 'In tegenstelling tot conversie naar JPG, behoudt het canvas bij het exporteren naar PNG het volledige alfakanaal: transparante gebieden in de originele SVG worden volledig transparante pixels in de resulterende PNG - geen witte achtergrondvulling. De export maakt gebruik van de methote <code>toDataURL(\'image/png\')</code> met lossless compressie.',
   },
   {
     type: 'tip',
     title: 'Tip voor het rasteren',
-    html: 'Kies je PNG-exportgrootte zorgvuldig — het rasteren van een SVG is een eenrichtingsproces: je kunt de vectoren niet herstellen uit de resulterende PNG. Bewaar altijd de originele SVG als bronbestand en genereer PNG\'s met de hoogste resolutie die je ooit nodig zou kunnen hebben.',
+    html: 'Kies je PNG-exportgrootte zorgvuldig - het rasteren van een SVG is een eenrichtingsproces: je kunt de vectoren niet herstellen uit de resulterende PNG. Bewaar altijd de originele SVG als bronbestand en genereer PNG\'s met de hoogste resolutie die je ooit nodig zou kunnen hebben.',
   },
   {
     type: 'title',

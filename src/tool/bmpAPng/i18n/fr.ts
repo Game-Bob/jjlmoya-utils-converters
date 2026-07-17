@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Sélectionner des fichiers',
   processedFiles: 'Fichiers traités',
   downloadAll: 'Tout télécharger (.zip)',
-  pending: 'En attente': 'Références Bibliographiques',
+  pending: 'En attente',
+  bibliographyTitle: 'Références Bibliographiques',
   faqTitle: 'Questions Fréquentes',
 };
 
@@ -22,7 +23,7 @@ const faq: BmpAPngLocaleContent['faq'] = [
   {
     question: 'Quelle est la principale différence entre BMP et PNG ?',
     answer:
-      'BMP et PNG sont tous deux des formats sans perte. La différence réside dans l\'optimisation : PNG utilise des algorithmes de compression modernes pour stocker la même image en occupant 5 à 10 fois moins de mémoire que le BMP.',
+      'BMP et PNG sont tous deux des formats sans perte. La différence réside dans l\'optimisation: PNG utilise des algorithmes de compression modernes pour stocker la même image en occupant 5 à 10 fois moins de mémoire que le BMP.',
   },
   {
     question: 'La conversion est-elle vraiment privée ?',
@@ -54,29 +55,29 @@ const howTo: BmpAPngLocaleContent['howTo'] = [
 const seo: BmpAPngLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Convertisseur BMP vers PNG : Le Remplacement Sans Perte du Format BMP',
+    text: 'Convertisseur BMP vers PNG: Le Remplacement Sans Perte du Format BMP',
     level: 2,
   },
   {
     type: 'paragraph',
-    html: 'Le BMP est un format non compressé qui occupe d\'énormes quantités d\'espace sans aucun avantage technique par rapport au PNG. Les deux sont des formats sans perte : ils stockent chaque pixel avec une précision absolue. Mais le PNG ajoute une compression sans perte via l\'algorithme Deflate, réduisant la taille du fichier de 3 à 5 fois sans sacrifier un seul bit d\'information visuelle. Le PNG est, en substance, ce que le BMP a toujours voulu être.',
+    html: 'Le BMP est un format non compressé qui occupe d\'énormes quantités d\'espace sans aucun avantage technique par rapport au PNG. Les deux sont des formats sans perte: ils stockent chaque pixel avec une précision absolue. Mais le PNG ajoute une compression sans perte via l\'algorithme Deflate, réduisant la taille du fichier de 3 à 5 fois sans sacrifier un seul bit d\'information visuelle. Le PNG est, en substance, ce que le BMP a toujours voulu être.',
   },
   {
     type: 'title',
-    text: 'BMP vs PNG : même qualité, taille de fichier radicalement différente',
+    text: 'BMP vs PNG: même qualité, taille de fichier radicalement différente',
     level: 3,
   },
   {
     type: 'paragraph',
-    html: 'La différence fondamentale entre BMP et PNG ne réside pas dans la qualité de l\'image — les deux sont sans perte — mais dans l\'efficacité de stockage. Le BMP stocke les pixels bruts : sans compression, sans optimisation, sans considération pour l\'espace. Le PNG analyse les motifs de pixels répétés et les code de manière compacte grâce à Deflate, le même algorithme utilisé par ZIP.',
+    html: 'La différence fondamentale entre BMP et PNG ne réside pas dans la qualité de l\'image - les deux sont sans perte - mais dans l\'efficacité de stockage. Le BMP stocke les pixels bruts: sans compression, sans optimisation, sans considération pour l\'espace. Le PNG analyse les motifs de pixels répétés et les code de manière compacte grâce à Deflate, le même algorithme utilisé par ZIP.',
   },
   {
     type: 'paragraph',
-    html: 'En plus d\'une compression supérieure, le PNG ajoute une fonctionnalité que le BMP n\'a jamais eue : le canal alpha complet pour la transparence. Captures d\'écran, graphiques d\'interface, logos, diagrammes techniques — tous ces types d\'images bénéficient énormément de la conversion en PNG, qui préserve chaque valeur de couleur exacte tout en réduisant le poids du fichier à une fraction de l\'original.',
+    html: 'En plus d\'une compression supérieure, le PNG ajoute une fonctionnalité que le BMP n\'a jamais eue: le canal alpha complet pour la transparence. Captures d\'écran, graphiques d\'interface, logos, diagrammes techniques - tous ces types d\'images bénéficient énormément de la conversion en PNG, qui préserve chaque valeur de couleur exacte tout en réduisant le poids du fichier à une fraction de l\'original.',
   },
   {
     type: 'title',
-    text: 'Comparaison d\'Architecture : Local vs Cloud',
+    text: 'Comparaison d\'Architecture: Local vs Cloud',
     level: 3,
   },
   {
@@ -103,7 +104,7 @@ const seo: BmpAPngLocaleContent['seo'] = [
           'Le BMP est traité localement, ne quitte jamais votre appareil',
           'Conversion instantanée en quelques millisecondes',
           'Aucune limite de taille ni de nombre de fichiers',
-          'Confidentialité totale : 0 octet envoyé à l\'extérieur',
+          'Confidentialité totale: 0 octet envoyé à l\'extérieur',
         ],
       },
     ],
@@ -119,7 +120,7 @@ const seo: BmpAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Contrairement à la conversion JPG, la conversion PNG est complètement sans perte : chaque valeur de couleur du BMP original est préservée exactement dans le PNG résultant. Aucun artefact, aucun lissage des bords, aucune perte d\'information. Le fichier final est visuellement identique au BMP mais occupe 3 à 5 fois moins d\'espace disque.',
+    html: 'Contrairement à la conversion JPG, la conversion PNG est complètement sans perte: chaque valeur de couleur du BMP original est préservée exactement dans le PNG résultant. Aucun artefact, aucun lissage des bords, aucune perte d\'information. Le fichier final est visuellement identique au BMP mais occupe 3 à 5 fois moins d\'espace disque.',
   },
   {
     type: 'tip',
@@ -144,12 +145,12 @@ const seo: BmpAPngLocaleContent['seo'] = [
   },
   {
     type: 'title',
-    text: 'Conclusion : le PNG est ce que le BMP aurait toujours dû être',
+    text: 'Conclusion: le PNG est ce que le BMP aurait toujours dû être',
     level: 3,
   },
   {
     type: 'paragraph',
-    html: 'Convertir BMP en PNG est la modernisation la plus naturelle d\'un fichier image : même qualité sans perte, plus grande compatibilité, support de transparence et 3 à 5 fois moins de poids. Notre outil effectue cette conversion en millisecondes, directement dans votre navigateur, sans envoyer aucun fichier vers aucun serveur.',
+    html: 'Convertir BMP en PNG est la modernisation la plus naturelle d\'un fichier image: même qualité sans perte, plus grande compatibilité, support de transparence et 3 à 5 fois moins de poids. Notre outil effectue cette conversion en millisecondes, directement dans votre navigateur, sans envoyer aucun fichier vers aucun serveur.',
   },
 ];
 

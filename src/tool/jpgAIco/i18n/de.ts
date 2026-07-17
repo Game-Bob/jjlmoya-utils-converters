@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Dateien auswählen',
   processedFiles: 'Verarbeitete Dateien',
   downloadAll: 'Alles herunterladen (.zip)',
-  pending: 'Ausstehend': 'Literaturhinweise',
+  pending: 'Ausstehend',
+  bibliographyTitle: 'Literaturhinweise',
   faqTitle: 'Häufig gestellte Fragen',
 };
 
@@ -59,7 +60,7 @@ const seo: JpgAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Das <strong>ICO</strong>-Format ist der Microsoft-Standard für Symbole in Windows-Anwendungen und Favicons von Websites. Im Gegensatz zum einfachen Umbenennen eines JPG in .ico erfordert eine echte ICO-Datei eine spezifische binäre Struktur mit 22-Byte-Headern und einem eingebetteten Bildverzeichnis. <strong>JPG</strong> ist der am häufigsten gewählte Ausgangspunkt für die Erstellung dieser Icons – ein Firmenlogo, ein Profilfoto oder jedes Bild, das Sie zum visuellen Erkennungsmerkmal Ihrer Anwendung oder Website machen möchten.',
+    html: 'Das <strong>ICO</strong>-Format ist der Microsoft-Standard für Symbole in Windows-Anwendungen und Favicons von Websites. Im Gegensatz zum einfachen Umbenennen eines JPG in .ico erfordert eine echte ICO-Datei eine spezifische binäre Struktur mit 22-Byte-Headern und einem eingebetteten Bildverzeichnis. <strong>JPG</strong> ist der am häufigsten gewählte Ausgangspunkt für die Erstellung dieser Icons - ein Firmenlogo, ein Profilfoto oder jedes Bild, das Sie zum visuellen Erkennungsmerkmal Ihrer Anwendung oder Website machen möchten.',
   },
   {
     type: 'title',
@@ -68,11 +69,11 @@ const seo: JpgAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>JPG</strong> ist ein Quellformat, kein Zielformat für Symbole. Es eignet sich hervorragend für Fotografien und Banner, ist jedoch inkompatibel mit Systemen, die Icons erfordern: Windows Explorer, die Lesezeichenleiste des Browsers, Desktop-Verknüpfungen oder PWA-Anwendungsmanifeste. Ein Betriebssystem oder Browser, der nach einem Icon sucht, erwartet das ICO-Format – und wenn es dieses nicht findet, wird ein generisches Symbol oder ein fehlerhaftes Quadrat angezeigt.',
+    html: '<strong>JPG</strong> ist ein Quellformat, kein Zielformat für Symbole. Es eignet sich hervorragend für Fotografien und Banner, ist jedoch inkompatibel mit Systemen, die Icons erfordern: Windows Explorer, die Lesezeichenleiste des Browsers, Desktop-Verknüpfungen oder PWA-Anwendungsmanifeste. Ein Betriebssystem oder Browser, der nach einem Icon sucht, erwartet das ICO-Format - und wenn es dieses nicht findet, wird ein generisches Symbol oder ein fehlerhaftes Quadrat angezeigt.',
   },
   {
     type: 'paragraph',
-    html: 'Das <strong>ICO</strong>-Format wurde entwickelt, um mehrere Auflösungen in einer einzigen Datei zu speichern: <strong>16×16</strong> für die Lesezeichenleiste, <strong>32×32</strong> für Verknüpfungen, <strong>48×48</strong> für den Datei-Explorer und <strong>256×256</strong> für hochauflösende Displays. Browser und Betriebssysteme wählen automatisch die passende Auflösung basierend auf dem Anzeigekontext aus – der Benutzer muss nichts weiter tun.',
+    html: 'Das <strong>ICO</strong>-Format wurde entwickelt, um mehrere Auflösungen in einer einzigen Datei zu speichern: <strong>16×16</strong> für die Lesezeichenleiste, <strong>32×32</strong> für Verknüpfungen, <strong>48×48</strong> für den Datei-Explorer und <strong>256×256</strong> für hochauflösende Displays. Browser und Betriebssysteme wählen automatisch die passende Auflösung basierend auf dem Anzeigekontext aus - der Benutzer muss nichts weiter tun.',
   },
   {
     type: 'title',
@@ -100,8 +101,8 @@ const seo: JpgAIcoLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Sofortige Geschwindigkeit – keine Netzwerklatenz',
-          'Vollständige Privatsphäre – 0 Byte werden extern gesendet',
+          'Sofortige Geschwindigkeit - keine Netzwerklatenz',
+          'Vollständige Privatsphäre - 0 Byte werden extern gesendet',
           'Keine Megabyte-Limits oder Dateianzahlbeschränkungen',
           'Saubere Benutzeroberfläche, keine Werbung oder Tracking',
         ],
@@ -115,16 +116,16 @@ const seo: JpgAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Das JPG wird dekodiert und auf ein im Speicher befindliches <strong>HTML5 Canvas</strong> gezeichnet. Da das ICO-Format ein quadratisches Bild erfordert, erkennt die Engine automatisch, ob das JPG rechteckig ist, und schneidet es zu, indem sie den relevantesten Teil zentriert. Anschließend wird der Standard-Microsoft-ICO-Header mit der korrekten Magic Number (<code>00 00 01 00</code>), dem Bildverzeichnis und den kodierten Pixeldaten erstellt. Das Ergebnis ist eine echte binäre .ico-Datei – kein umbenanntes PNG.',
+    html: 'Das JPG wird dekodiert und auf ein im Speicher befindliches <strong>HTML5 Canvas</strong> gezeichnet. Da das ICO-Format ein quadratisches Bild erfordert, erkennt die Engine automatisch, ob das JPG rechteckig ist, und schneidet es zu, indem sie den relevantesten Teil zentriert. Anschließend wird der Standard-Microsoft-ICO-Header mit der korrekten Magic Number (<code>00 00 01 00</code>), dem Bildverzeichnis und den kodierten Pixeldaten erstellt. Das Ergebnis ist eine echte binäre .ico-Datei - kein umbenanntes PNG.',
   },
   {
     type: 'paragraph',
-    html: 'Da JPG kein Alpha-Kanal besitzt, wird das resultierende ICO ebenfalls keine Transparenz aufweisen – es wird einen soliden Hintergrund haben, der vom Originalfoto übernommen wurde. Wenn Sie ein Favicon mit transparentem Hintergrund benötigen (zum Beispiel zur Anpassung an dunkle oder helle Lesezeichenleisten), ist der empfohlene Arbeitsablauf: Hintergrund in einem Editor entfernen, als PNG speichern und den PNG zu ICO Konverter verwenden.',
+    html: 'Da JPG kein Alpha-Kanal besitzt, wird das resultierende ICO ebenfalls keine Transparenz aufweisen - es wird einen soliden Hintergrund haben, der vom Originalfoto übernommen wurde. Wenn Sie ein Favicon mit transparentem Hintergrund benötigen (zum Beispiel zur Anpassung an dunkle oder helle Lesezeichenleisten), ist der empfohlene Arbeitsablauf: Hintergrund in einem Editor entfernen, als PNG speichern und den PNG zu ICO Konverter verwenden.',
   },
   {
     type: 'tip',
     title: 'Tipp: Mehrere Auflösungen in einer einzigen ICO Datei',
-    html: 'ICO-Dateien können <strong>mehrere Auflösungen</strong> in einer einzigen Datei packen – der Browser oder das Betriebssystem wählt automatisch die passendste für den jeweiligen Kontext aus. Für das bestmögliche Ergebnis verwenden Sie ein quadratisches JPG mit mindestens <strong>256×256 Pixeln</strong> als Quelle: Dies gibt dem Konverter genügend Informationen, um scharfe 16×16, 32×32 und 48×48 Größen ohne Verpixelung zu generieren.',
+    html: 'ICO-Dateien können <strong>mehrere Auflösungen</strong> in einer einzigen Datei packen - der Browser oder das Betriebssystem wählt automatisch die passendste für den jeweiligen Kontext aus. Für das bestmögliche Ergebnis verwenden Sie ein quadratisches JPG mit mindestens <strong>256×256 Pixeln</strong> als Quelle: Dies gibt dem Konverter genügend Informationen, um scharfe 16×16, 32×32 und 48×48 Größen ohne Verpixelung zu generieren.',
   },
   {
     type: 'title',

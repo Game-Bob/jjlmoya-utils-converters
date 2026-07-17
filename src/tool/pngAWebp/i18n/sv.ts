@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Välj filer',
   processedFiles: 'Bearbetade filer',
   downloadAll: 'Ladda ner alla (.zip)',
-  pending: 'Väntande': 'Bibliografiska Referenser',
+  pending: 'Väntande',
+  bibliographyTitle: 'Bibliografiska Referenser',
   faqTitle: 'Vanliga Frågor',
 };
 
@@ -59,7 +60,7 @@ const seo: PngAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>PNG</strong> har varit referensformatet för webbbilder med transparens i årtionden — logotyper, ikoner, UI-element, produktbilder på utskurna bakgrunder. Problemet är filstorleken: den förlustfria komprimeringen som garanterar kvalitet genererar också märkbart stora filer. Googles <strong>WebP</strong> löser denna motsägelse: det stöder alfakanalen (transparens) <em>och</em> komprimerar mycket bättre än PNG, vilket gör bytet från PNG till WebP på din webbplats till en perfekt optimering som inte offrar något.',
+    html: '<strong>PNG</strong> har varit referensformatet för webbbilder med transparens i årtionden - logotyper, ikoner, UI-element, produktbilder på utskurna bakgrunder. Problemet är filstorleken: den förlustfria komprimeringen som garanterar kvalitet genererar också märkbart stora filer. Googles <strong>WebP</strong> löser denna motsägelse: det stöder alfakanalen (transparens) <em>och</em> komprimerar mycket bättre än PNG, vilket gör bytet från PNG till WebP på din webbplats till en perfekt optimering som inte offrar något.',
   },
   {
     type: 'title',
@@ -68,7 +69,7 @@ const seo: PngAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>PNG</strong> förblir rätt format när kompatibilitet är avgörande: designverktyg som Photoshop eller Figma, arbetsflöden för utskrift, äldre skrivbordsapplikationer eller sammanhang där WebP-stöd inte kan garanteras. Det är också det ideala formatet för att spara arbetslager i redigeringsflöden, eftersom dess förlustfria komprimering bevarar varje pixel. Kostnaden: filer som kan väga 3–8 gånger mer än deras WebP-motsvarighet.',
+    html: '<strong>PNG</strong> förblir rätt format när kompatibilitet är avgörande: designverktyg som Photoshop eller Figma, arbetsflöden för utskrift, äldre skrivbordsapplikationer eller sammanhang där WebP-stöd inte kan garanteras. Det är också det ideala formatet för att spara arbetslager i redigeringsflöden, eftersom dess förlustfria komprimering bevarar varje pixel. Kostnaden: filer som kan väga 3-8 gånger mer än deras WebP-motsvarighet.',
   },
   {
     type: 'paragraph',
@@ -100,8 +101,8 @@ const seo: PngAWebpLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Omedelbar hastighet — noll nätverkslatens',
-          'Komplett integritet — 0 byte skickas externt',
+          'Omedelbar hastighet - noll nätverkslatens',
+          'Komplett integritet - 0 byte skickas externt',
           'Inga MB-gränser eller begränsningar på antal filer',
           'Rent gränssnitt, inga annonser eller spårning',
         ],
@@ -115,7 +116,7 @@ const seo: PngAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'PNG-filen laddas lokalt och avkodas till ett <strong>HTML5 Canvas</strong> i minnet. Canvas-API:et bevarar alfakanalen från den ursprungliga PNG-filen — alla transparenta och halvtransparenta pixlar hålls intakta i RGBA-pixelbufferten. Canvasen exporteras sedan genom att anropa <code>toDataURL(\'image/webp\')</code>, vilket tillämpar webbläsarens WebP-codec (baserat på Googles libwebp) för att generera en mer kompakt fil utan att ändra transparensdatan.',
+    html: 'PNG-filen laddas lokalt och avkodas till ett <strong>HTML5 Canvas</strong> i minnet. Canvas-API:et bevarar alfakanalen från den ursprungliga PNG-filen - alla transparenta och halvtransparenta pixlar hålls intakta i RGBA-pixelbufferten. Canvasen exporteras sedan genom att anropa <code>toDataURL(\'image/webp\')</code>, vilket tillämpar webbläsarens WebP-codec (baserat på Googles libwebp) för att generera en mer kompakt fil utan att ändra transparensdatan.',
   },
   {
     type: 'paragraph',
@@ -149,7 +150,7 @@ const seo: PngAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Bytet från PNG till WebP är den mest kompletta optimeringen av webbbilder som finns tillgänglig: du får lättare filer, bevarar transparens och förbättrar Core Web Vitals-mått utan att ändra någonting i din visuella design. Detta verktyg gör det omedelbart, gratis och helt privat — dina bilder bearbetas i din webbläsare och skickas aldrig till någon extern server.',
+    html: 'Bytet från PNG till WebP är den mest kompletta optimeringen av webbbilder som finns tillgänglig: du får lättare filer, bevarar transparens och förbättrar Core Web Vitals-mått utan att ändra någonting i din visuella design. Detta verktyg gör det omedelbart, gratis och helt privat - dina bilder bearbetas i din webbläsare och skickas aldrig till någon extern server.',
   },
 ];
 

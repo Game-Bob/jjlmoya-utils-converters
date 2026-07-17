@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Välj filer',
   processedFiles: 'Bearbetade filer',
   downloadAll: 'Ladda ner alla (.zip)',
-  pending: 'Väntande': 'Bibliografiska Referenser',
+  pending: 'Väntande',
+  bibliographyTitle: 'Bibliografiska Referenser',
   faqTitle: 'Vanliga Frågor',
 };
 
@@ -72,7 +73,7 @@ const seo: GifAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Förutom överlägsen transparens tar PNG bort gränsen på 256 färger för GIF. Skärmdumpar, illustrationer med toningar, logotyper med skuggor – alla ser betydligt bättre ut i PNG. Och eftersom det är en förlustfri komprimering behåller varje pixel exakt sitt ursprungliga värde, utan de artefakter som en konvertering till JPG skulle introducera.',
+    html: 'Förutom överlägsen transparens tar PNG bort gränsen på 256 färger för GIF. Skärmdumpar, illustrationer med toningar, logotyper med skuggor - alla ser betydligt bättre ut i PNG. Och eftersom det är en förlustfri komprimering behåller varje pixel exakt sitt ursprungliga värde, utan de artefakter som en konvertering till JPG skulle introducera.',
   },
   {
     type: 'title',
@@ -124,7 +125,7 @@ const seo: GifAPngLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'Binär transparens för GIF vs alfakanal för PNG',
-    html: 'GIF stöder endast binär transparens (opak eller transparent). Vid konvertering till PNG bibehålls de halvtransparenta pixlarna i GIF-filen så som webbläsaren tolkar dem. Om din GIF har tandade kanter kommer PNG-filen att behålla dem — men du kan redigera dem med kantutjämning i valfri redigerare, något som är omöjligt med den ursprungliga GIF-filen.',
+    html: 'GIF stöder endast binär transparens (opak eller transparent). Vid konvertering till PNG bibehålls de halvtransparenta pixlarna i GIF-filen så som webbläsaren tolkar dem. Om din GIF har tandade kanter kommer PNG-filen att behålla dem - men du kan redigera dem med kantutjämning i valfri redigerare, något som är omöjligt med den ursprungliga GIF-filen.',
   },
   {
     type: 'title',

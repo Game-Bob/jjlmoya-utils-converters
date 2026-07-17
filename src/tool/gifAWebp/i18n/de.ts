@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Dateien auswählen',
   processedFiles: 'Verarbeitete Dateien',
   downloadAll: 'Alles herunterladen (.zip)',
-  pending: 'Ausstehend': 'Literaturhinweise',
+  pending: 'Ausstehend',
+  bibliographyTitle: 'Literaturhinweise',
   faqTitle: 'Häufig gestellte Fragen',
 };
 
@@ -68,11 +69,11 @@ const seo: GifAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'GIF ist ein Format von 1987, das ursprünglich nicht für Animationen konzipiert wurde – diese Funktion kam erst als späterer Hack hinzu. Seine 256-Farben-Palette, die ineffiziente Kompression und die Unfähigkeit, Audio zu verarbeiten, machen es zu einem veralteten Format. WebP, 2010 von Google entwickelt, bietet überlegene verlustbehaftete und verlustfreie Kompression, native Animationsunterstützung und vollen Alpha-Kanal.',
+    html: 'GIF ist ein Format von 1987, das ursprünglich nicht für Animationen konzipiert wurde - diese Funktion kam erst als späterer Hack hinzu. Seine 256-Farben-Palette, die ineffiziente Kompression und die Unfähigkeit, Audio zu verarbeiten, machen es zu einem veralteten Format. WebP, 2010 von Google entwickelt, bietet überlegene verlustbehaftete und verlustfreie Kompression, native Animationsunterstützung und vollen Alpha-Kanal.',
   },
   {
     type: 'paragraph',
-    html: 'Für einen Webentwickler kann der Ersatz von GIFs durch WebP auf Seiten eine Verbesserung des Google PageSpeed Scores um 10 bis 30 Punkte bedeuten. Weniger Seitengewicht bedeutet bessere Core Web Vitals, bessere SEO-Rankings und niedrigere Bandbreitenkosten auf den Servern. Es ist nicht nur eine ästhetische Verbesserung – es ist eine Entscheidung für die technische Architektur.',
+    html: 'Für einen Webentwickler kann der Ersatz von GIFs durch WebP auf Seiten eine Verbesserung des Google PageSpeed Scores um 10 bis 30 Punkte bedeuten. Weniger Seitengewicht bedeutet bessere Core Web Vitals, bessere SEO-Rankings und niedrigere Bandbreitenkosten auf den Servern. Es ist nicht nur eine ästhetische Verbesserung - es ist eine Entscheidung für die technische Architektur.',
   },
   {
     type: 'title',

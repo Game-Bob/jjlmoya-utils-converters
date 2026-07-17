@@ -18,7 +18,8 @@ const ui: ImageToBase64UI = {
   dataUriPlaceholder: 'Téléchargez une image pour voir le code Data URI...',
   base64Placeholder: 'Téléchargez une image pour voir le code Base64 pur...',
   toastMessage: 'Code copié dans le presse-papiers !',
-  invalidImageAlert: 'Veuillez télécharger un fichier image valide.': 'Références Bibliographiques',
+  invalidImageAlert: 'Veuillez télécharger un fichier image valide.',
+  bibliographyTitle: 'Références Bibliographiques',
   faqTitle: 'Questions Fréquentes',
 };
 
@@ -52,7 +53,7 @@ const howTo: ImagenBase64LocaleContent['howTo'] = [
   },
   {
     name: 'Copiez le code généré',
-    text: 'Vous verrez deux zones de texte : le Data URI complet (prêt à utiliser dans src="" ou CSS) et le Base64 pur pour d\'autres utilisations.',
+    text: 'Vous verrez deux zones de texte: le Data URI complet (prêt à utiliser dans src="" ou CSS) et le Base64 pur pour d\'autres utilisations.',
   },
   {
     name: 'Utilisez le code dans votre projet',
@@ -63,12 +64,12 @@ const howTo: ImagenBase64LocaleContent['howTo'] = [
 const seo: ImagenBase64LocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Convertisseur Image vers Base64 : Intégrez des Images Sans Requêtes HTTP',
+    text: 'Convertisseur Image vers Base64: Intégrez des Images Sans Requêtes HTTP',
     level: 2,
   },
   {
     type: 'paragraph',
-    html: 'Base64 est une technique d\'encodage qui transforme des données binaires — comme une image — en une chaîne de texte ASCII pur. Le résultat est un Data URI : une URL auto-contenue qui commence par <code>data:image/png;base64,...</code> et contient l\'image entière encodée. En intégrant ce code directement dans votre HTML, CSS ou JSON, l\'image se charge sans aucune requête HTTP supplémentaire au serveur — zéro latence réseau, chargement instantané.',
+    html: 'Base64 est une technique d\'encodage qui transforme des données binaires - comme une image - en une chaîne de texte ASCII pur. Le résultat est un Data URI: une URL auto-contenue qui commence par <code>data:image/png;base64,...</code> et contient l\'image entière encodée. En intégrant ce code directement dans votre HTML, CSS ou JSON, l\'image se charge sans aucune requête HTTP supplémentaire au serveur - zéro latence réseau, chargement instantané.',
   },
   {
     type: 'title',
@@ -77,11 +78,11 @@ const seo: ImagenBase64LocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Le principal argument en faveur de Base64 est l\'élimination des requêtes réseau. Chaque image sur une page web représente une requête HTTP avec son overhead de connexion, DNS, handshake TLS et latence. Pour les très petites images critiques — le logo principal de l\'application, le favicon, une icône d\'interface — les intégrer en Base64 dans le CSS ou HTML élimine ce coût et garantit leur affichage instantané même avant que le navigateur n\'ait rien mis en cache.',
+    html: 'Le principal argument en faveur de Base64 est l\'élimination des requêtes réseau. Chaque image sur une page web représente une requête HTTP avec son overhead de connexion, DNS, handshake TLS et latence. Pour les très petites images critiques - le logo principal de l\'application, le favicon, une icône d\'interface - les intégrer en Base64 dans le CSS ou HTML élimine ce coût et garantit leur affichage instantané même avant que le navigateur n\'ait rien mis en cache.',
   },
   {
     type: 'paragraph',
-    html: 'Cette technique est particulièrement puissante dans les applications SPA (Single Page Applications) où le bundle JavaScript et CSS est généré au moment de la compilation : intégrer de petites images dans le bundle garantit qu\'elles se chargent avec le code sans requêtes supplémentaires. Elle est aussi indispensable pour les emails HTML, où les clients de messagerie bloquent les images externes mais affichent toujours les Data URIs intégrés.',
+    html: 'Cette technique est particulièrement puissante dans les applications SPA (Single Page Applications) où le bundle JavaScript et CSS est généré au moment de la compilation: intégrer de petites images dans le bundle garantit qu\'elles se chargent avec le code sans requêtes supplémentaires. Elle est aussi indispensable pour les emails HTML, où les clients de messagerie bloquent les images externes mais affichent toujours les Data URIs intégrés.',
   },
   {
     type: 'title',
@@ -92,11 +93,11 @@ const seo: ImagenBase64LocaleContent['seo'] = [
     type: 'list',
     icon: 'mdi:check-circle',
     items: [
-      'HTML inline : <code>&lt;img src="data:image/png;base64,..."&gt;</code> pour les icônes critiques.',
-      'CSS background : <code>background-image: url("data:image/svg+xml;base64,...")</code> pour les SVGs d\'interface.',
-      'JSON et APIs REST : envoi d\'images comme données texte dans les payloads JSON.',
-      'Emails HTML : images intégrées qui s\'affichent même quand le client bloque les URLs externes.',
-      'Intégration SVG : intégrer des images raster dans des fichiers SVG comme données inline.',
+      'HTML inline: <code>&lt;img src="data:image/png;base64,..."&gt;</code> pour les icônes critiques.',
+      'CSS background: <code>background-image: url("data:image/svg+xml;base64,...")</code> pour les SVGs d\'interface.',
+      'JSON et APIs REST: envoi d\'images comme données texte dans les payloads JSON.',
+      'Emails HTML: images intégrées qui s\'affichent même quand le client bloque les URLs externes.',
+      'Intégration SVG: intégrer des images raster dans des fichiers SVG comme données inline.',
     ],
   },
   {
@@ -106,12 +107,12 @@ const seo: ImagenBase64LocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Lorsque vous sélectionnez ou faites glisser une image, l\'API <code>FileReader</code> du navigateur la lit directement depuis le disque comme données binaires en RAM. La méthode <code>readAsDataURL()</code> convertit ces octets binaires en leur représentation Base64 selon l\'algorithme RFC 4648 — chaque 3 octets de données originales sont représentés par 4 caractères ASCII de l\'alphabet Base64. Le résultat inclut le type MIME correct détecté automatiquement.',
+    html: 'Lorsque vous sélectionnez ou faites glisser une image, l\'API <code>FileReader</code> du navigateur la lit directement depuis le disque comme données binaires en RAM. La méthode <code>readAsDataURL()</code> convertit ces octets binaires en leur représentation Base64 selon l\'algorithme RFC 4648 - chaque 3 octets de données originales sont représentés par 4 caractères ASCII de l\'alphabet Base64. Le résultat inclut le type MIME correct détecté automatiquement.',
   },
   {
     type: 'tip',
     title: 'Utilisez',
-    html: 'Base64 augmente la taille du fichier d\'environ 33% : une image de 10 Ko devient ~13,3 Ko de texte. Pour les petites icônes et logos, ce coût est minimal et l\'élimination de la requête HTTP le compense. Pour les photographies ou grandes images, le surcoût de taille est significatif — utilisez toujours un CDN pour les grandes images.',
+    html: 'Base64 augmente la taille du fichier d\'environ 33%: une image de 10 Ko devient ~13,3 Ko de texte. Pour les petites icônes et logos, ce coût est minimal et l\'élimination de la requête HTTP le compense. Pour les photographies ou grandes images, le surcoût de taille est significatif - utilisez toujours un CDN pour les grandes images.',
   },
   {
     type: 'title',
@@ -120,8 +121,8 @@ const seo: ImagenBase64LocaleContent['seo'] = [
   },
   {
     type: 'tip',
-    title: 'Évitez Base64 pour les grandes images — utilisez un CDN',
-    html: 'Si vous avez des images de plus de 10-20 Ko, Base64 nuit aux performances : il gonfle la taille du HTML/CSS, empêche le navigateur de mettre l\'image en cache de façon indépendante, et bloque le rendu pendant que le parseur traite la chaîne géante. Pour les grandes images, servez toujours depuis un CDN avec des en-têtes de cache appropriés.',
+    title: 'Évitez Base64 pour les grandes images: utilisez un CDN',
+    html: 'Si vous avez des images de plus de 10-20 Ko, Base64 nuit aux performances: il gonfle la taille du HTML/CSS, empêche le navigateur de mettre l\'image en cache de façon indépendante, et bloque le rendu pendant que le parseur traite la chaîne géante. Pour les grandes images, servez toujours depuis un CDN avec des en-têtes de cache appropriés.',
   },
   {
     type: 'title',
@@ -130,11 +131,11 @@ const seo: ImagenBase64LocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Les Data URIs sont compatibles avec 100% des navigateurs modernes et la plupart des clients de messagerie. Notre outil traite tout localement via l\'API FileReader — vos images ne quittent jamais votre appareil. Cela le rend adapté aux images d\'entreprise, aux captures d\'écran privées ou à tout contenu visuel confidentiel que vous devez convertir en Base64.',
+    html: 'Les Data URIs sont compatibles avec 100% des navigateurs modernes et la plupart des clients de messagerie. Notre outil traite tout localement via l\'API FileReader - vos images ne quittent jamais votre appareil. Cela le rend adapté aux images d\'entreprise, aux captures d\'écran privées ou à tout contenu visuel confidentiel que vous devez convertir en Base64.',
   },
   {
     type: 'title',
-    text: 'Conclusion : L\'outil d\'intégration le plus rapide et le plus privé',
+    text: 'Conclusion: L\'outil d\'intégration le plus rapide et le plus privé',
     level: 3,
   },
   {

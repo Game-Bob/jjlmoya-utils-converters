@@ -13,8 +13,8 @@ const ui: ImageConverterUI = {
   convertText: '立即将它们转换为 ICO',
   selectFiles: '选择文件',
   processedFiles: '已处理文件',
-  downloadAll: '下载全部 (.zip)',
-  pending: '等待中': '参考文献',
+  pending: '等待中',
+  bibliographyTitle: '参考文献',
   faqTitle: '常见问题',
 };
 

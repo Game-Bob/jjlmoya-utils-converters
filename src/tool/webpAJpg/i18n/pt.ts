@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Selecionar arquivos',
   processedFiles: 'Arquivos processados',
   downloadAll: 'Baixar tudo (.zip)',
-  pending: 'Pendente': 'Referências Bibliográficas',
+  pending: 'Pendente',
+  bibliographyTitle: 'Referências Bibliográficas',
   faqTitle: 'Perguntas Frequentes',
 };
 
@@ -68,7 +69,7 @@ const seo: WebpAJpgLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'O WebP brilha em ambientes controlados: sites modernos no Chrome, Edge ou Firefox, onde a compatibilidade do navegador pode ser garantida. A sua compressão superior reduz o peso do arquivo em 25–35% em comparação com um JPG equivalente, melhorando os tempos de carregamento e as métricas de Core Web Vitals. É o formato ideal quando você controla o ambiente de visualização.',
+    html: 'O WebP brilha em ambientes controlados: sites modernos no Chrome, Edge ou Firefox, onde a compatibilidade do navegador pode ser garantida. A sua compressão superior reduz o peso do arquivo em 25-35% em comparação com um JPG equivalente, melhorando os tempos de carregamento e as métricas de Core Web Vitals. É o formato ideal quando você controla o ambiente de visualização.',
   },
   {
     type: 'paragraph',
@@ -124,7 +125,7 @@ const seo: WebpAJpgLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'Dica de compatibilidade',
-    html: 'Ao compartilhar fotos com utilizadores não técnicos ou enviá-las por e-mail, use sempre JPG — zero problemas de compatibilidade em qualquer cliente de e-mail, sistema operativo ou dispositivo, sem exceções e sem surpresas desagradáveis.',
+    html: 'Ao compartilhar fotos com utilizadores não técnicos ou enviá-las por e-mail, use sempre JPG - zero problemas de compatibilidade em qualquer cliente de e-mail, sistema operativo ou dispositivo, sem exceções e sem surpresas desagradáveis.',
   },
   {
     type: 'title',

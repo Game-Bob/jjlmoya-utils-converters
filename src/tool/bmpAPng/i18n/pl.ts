@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Wybierz pliki',
   processedFiles: 'Przetworzone pliki',
   downloadAll: 'Pobierz wszystko (.zip)',
-  pending: 'Oczekiwanie': 'Bibliografia',
+  pending: 'Oczekiwanie',
+  bibliographyTitle: 'Bibliografia',
   faqTitle: 'Często zadawane pytania',
 };
 
@@ -68,7 +69,7 @@ const seo: BmpAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Podstawowa różnica między BMP a PNG nie polega na jakości obrazu — oba formaty są bezstratne — ale na efektywności przechowywania. BMP przechowuje surowe piksele: bez kompresji, bez optymalizacji, bez zważania na miejsce. PNG analizuje powtarzające się wzorce pikseli i koduje je w sposób kompaktowy za pomocą Deflate, tego samego algorytmu, którego używa ZIP.',
+    html: 'Podstawowa różnica między BMP a PNG nie polega na jakości obrazu - oba formaty są bezstratne - ale na efektywności przechowywania. BMP przechowuje surowe piksele: bez kompresji, bez optymalizacji, bez zważania na miejsce. PNG analizuje powtarzające się wzorce pikseli i koduje je w sposób kompaktowy za pomocą Deflate, tego samego algorytmu, którego używa ZIP.',
   },
   {
     type: 'paragraph',

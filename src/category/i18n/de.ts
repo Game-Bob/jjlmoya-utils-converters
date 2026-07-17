@@ -22,7 +22,7 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: 'Die Wahl des richtigen Bildformats hat direkten Einfluss auf die Web-Performance, die Gerätekompatibilität und die wahrgenommene visuelle Qualität. Unsere <strong>Online-Bild-Konverter</strong> decken die von Designern, Webentwicklern und Fotografen am häufigsten benötigten Konvertierungswege ab – ganz ohne externe Server, die die Vertraulichkeit Ihrer Dateien gefährden könnten.',
+      html: 'Die Wahl des richtigen Bildformats hat direkten Einfluss auf die Web-Performance, die Gerätekompatibilität und die wahrgenommene visuelle Qualität. Unsere <strong>Online-Bild-Konverter</strong> decken die von Designern, Webentwicklern und Fotografen am häufigsten benötigten Konvertierungswege ab - ganz ohne externe Server, die die Vertraulichkeit Ihrer Dateien gefährden könnten.',
     },
     {
       type: 'title',

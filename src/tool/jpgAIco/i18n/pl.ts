@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Wybierz pliki',
   processedFiles: 'Przetworzone pliki',
   downloadAll: 'Pobierz wszystko (.zip)',
-  pending: 'Oczekujące': 'Bibliografia',
+  pending: 'Oczekujące',
+  bibliographyTitle: 'Bibliografia',
   faqTitle: 'Często Zadawane Pytania',
 };
 
@@ -59,7 +60,7 @@ const seo: JpgAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Format <strong>ICO</strong> to standard firmy Microsoft dla ikon aplikacji Windows i favikon stron internetowych. W przeciwieństwie do zwykłej zmiany nazwy pliku JPG na .ico, autentyczny plik ICO wymaga specyficznej struktury binarnej z 22-bajtowymi nagłówkami i wbudowanym katalogiem obrazów. <strong>JPG</strong> jest najczęstszym punktem wyjścia do tworzenia tych ikon — logo firmy, zdjęcia profilowego lub dowolnego obrazu, który chcesz zamienić w wizualny symbol swojej aplikacji lub strony internetowej.',
+    html: 'Format <strong>ICO</strong> to standard firmy Microsoft dla ikon aplikacji Windows i favikon stron internetowych. W przeciwieństwie do zwykłej zmiany nazwy pliku JPG na .ico, autentyczny plik ICO wymaga specyficznej struktury binarnej z 22-bajtowymi nagłówkami i wbudowanym katalogiem obrazów. <strong>JPG</strong> jest najczęstszym punktem wyjścia do tworzenia tych ikon - logo firmy, zdjęcia profilowego lub dowolnego obrazu, który chcesz zamienić w wizualny symbol swojej aplikacji lub strony internetowej.',
   },
   {
     type: 'title',
@@ -68,11 +69,11 @@ const seo: JpgAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>JPG</strong> to format źródłowy, a nie docelowy dla ikon. Idealny do zdjęć i banerów, ale niekompatybilny z systemami wymagającymi ikon: Eksploratorem plików Windows, paskiem zakładek przeglądarki, skrótami na pulpicie czy manifestami aplikacji PWA. System operacyjny lub przeglądarka szukająca ikony oczekuje formatu ICO — a jeśli go nie znajdzie, wyświetli ikonę ogólną lub uszkodzony kwadrat.',
+    html: '<strong>JPG</strong> to format źródłowy, a nie docelowy dla ikon. Idealny do zdjęć i banerów, ale niekompatybilny z systemami wymagającymi ikon: Eksploratorem plików Windows, paskiem zakładek przeglądarki, skrótami na pulpicie czy manifestami aplikacji PWA. System operacyjny lub przeglądarka szukająca ikony oczekuje formatu ICO - a jeśli go nie znajdzie, wyświetli ikonę ogólną lub uszkodzony kwadrat.',
   },
   {
     type: 'paragraph',
-    html: 'Format <strong>ICO</strong> został zaprojektowany tak, aby zawierał wiele rozdzielczości w jednym pliku: <strong>16×16</strong> dla paska zakładek, <strong>32×32</strong> dla skrótów, <strong>48×48</strong> dla eksploratora plików i <strong>256×256</strong> dla wyświetlaczy o wysokiej gęstości. Przeglądarki i systemy operacyjne automatycznie wybierają odpowiednią rozdzielczość w zależności od kontekstu wyświetlania — użytkownik nie musi niczym zarządzać.',
+    html: 'Format <strong>ICO</strong> został zaprojektowany tak, aby zawierał wiele rozdzielczości w jednym pliku: <strong>16×16</strong> dla paska zakładek, <strong>32×32</strong> dla skrótów, <strong>48×48</strong> dla eksploratora plików i <strong>256×256</strong> dla wyświetlaczy o wysokiej gęstości. Przeglądarki i systemy operacyjne automatycznie wybierają odpowiednią rozdzielczość w zależności od kontekstu wyświetlania - użytkownik nie musi niczym zarządzać.',
   },
   {
     type: 'title',
@@ -100,8 +101,8 @@ const seo: JpgAIcoLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Błyskawiczna prędkość — zero opóźnień sieciowych',
-          'Pełna prywatność — 0 bajtów wysłanych na zewnątrz',
+          'Błyskawiczna prędkość - zero opóźnień sieciowych',
+          'Pełna prywatność - 0 bajtów wysłanych na zewnątrz',
           'Brak limitów MB lub ograniczeń liczby plików',
           'Czysty interfejs, bez reklam i śledzenia',
         ],
@@ -115,16 +116,16 @@ const seo: JpgAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Plik JPG jest dekodowany i rysowany na <strong>HTML5 Canvas</strong> w pamięci. Ponieważ format ICO wymaga kwadratowego obrazu, silnik automatycznie wykrywa, czy plik JPG jest prostokątny i przycina go, centrując najważniejszą część. Następnie buduje standardowy nagłówek Microsoft ICO z poprawną sygnaturą (<code>00 00 01 00</code>), katalogiem obrazów i zakodowanymi danymi pikseli. Wynikiem jest autentyczny binarny plik .ico — a nie zmieniony format PNG.',
+    html: 'Plik JPG jest dekodowany i rysowany na <strong>HTML5 Canvas</strong> w pamięci. Ponieważ format ICO wymaga kwadratowego obrazu, silnik automatycznie wykrywa, czy plik JPG jest prostokątny i przycina go, centrując najważniejszą część. Następnie buduje standardowy nagłówek Microsoft ICO z poprawną sygnaturą (<code>00 00 01 00</code>), katalogiem obrazów i zakodowanymi danymi pikseli. Wynikiem jest autentyczny binarny plik .ico - a nie zmieniony format PNG.',
   },
   {
     type: 'paragraph',
-    html: 'Ponieważ w formacie JPG brakuje kanału alfa, wynikowy plik ICO również nie będzie miał przezroczystości — będzie miał jednolite tło odziedziczone po oryginalnym zdjęciu. Jeśli potrzebujesz favikony z przezroczystym tłem (na przykład, aby dostosować ją do ciemnych lub jasnych pasków zakładek), zalecanym sposobem pracy jest: usunięcie tła w edytorze, zapisanie jako PNG und użycie konwertera PNG na ICO.',
+    html: 'Ponieważ w formacie JPG brakuje kanału alfa, wynikowy plik ICO również nie będzie miał przezroczystości - będzie miał jednolite tło odziedziczone po oryginalnym zdjęciu. Jeśli potrzebujesz favikony z przezroczystym tłem (na przykład, aby dostosować ją do ciemnych lub jasnych pasków zakładek), zalecanym sposobem pracy jest: usunięcie tła w edytorze, zapisanie jako PNG und użycie konwertera PNG na ICO.',
   },
   {
     type: 'tip',
     title: 'Wskazówka: wiele rozdzielczości w jednym pliku ICO',
-    html: 'Pliki ICO mogą zawierać <strong>wiele rozdzielczości</strong> w jednym pliku — przeglądarka lub system operacyjny automatycznie wybierają najbardziej odpowiednią dla każdego kontekstu. Aby uzyskać najlepszy możliwy wynik, użyj jako źródła kwadratowego zdjęcia JPG o rozdzielczości co najmniej <strong>256×256 pikseli</strong>: daje to konwerterowi wystarczającą ilość informacji do wygenerowania ostrych rozmiarów 16×16, 32×32 und 48×48 bez pikselozy.',
+    html: 'Pliki ICO mogą zawierać <strong>wiele rozdzielczości</strong> w jednym pliku - przeglądarka lub system operacyjny automatycznie wybierają najbardziej odpowiednią dla każdego kontekstu. Aby uzyskać najlepszy możliwy wynik, użyj jako źródła kwadratowego zdjęcia JPG o rozdzielczości co najmniej <strong>256×256 pikseli</strong>: daje to konwerterowi wystarczającą ilość informacji do wygenerowania ostrych rozmiarów 16×16, 32×32 und 48×48 bez pikselozy.',
   },
   {
     type: 'title',

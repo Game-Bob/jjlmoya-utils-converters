@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Dosyaları seçin',
   processedFiles: 'İşlenmiş dosyalar',
   downloadAll: 'Tümünü İndir (.zip)',
-  pending: 'Bekliyor': 'Bibliyografik Referanslar',
+  pending: 'Bekliyor',
+  bibliographyTitle: 'Bibliyografik Referanslar',
   faqTitle: 'Sıkça Sorulan Sorular',
 };
 
@@ -59,7 +60,7 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>Şeffaf PNG</strong>, profesyonel ICO simgeleri oluşturmak için ideal başlangıç malzemesidir. JPG (alfa kanalı olmayan) veya kayıplı formatların aksine, PNG size tam olarak ICO formatının ihtiyaç duyduğu şeyi sunar: keskin pikseller, temiz kenarlar ve simgenin her türlü arka plan üzerinde mükemmel bir şekilde bütünleşmesini sağlayan 32 bitlik bir alfa kanalı — ister Safari\'nin beyaz yer imi çubuğu, ister Firefox\'un koyu çubuğu veya Windows 11 masaüstü olsun.',
+    html: '<strong>Şeffaf PNG</strong>, profesyonel ICO simgeleri oluşturmak için ideal başlangıç malzemesidir. JPG (alfa kanalı olmayan) veya kayıplı formatların aksine, PNG size tam olarak ICO formatının ihtiyaç duyduğu şeyi sunar: keskin pikseller, temiz kenarlar ve simgenin her türlü arka plan üzerinde mükemmel bir şekilde bütünleşmesini sağlayan 32 bitlik bir alfa kanalı - ister Safari\'nin beyaz yer imi çubuğu, ister Firefox\'un koyu çubuğu veya Windows 11 masaüstü olsun.',
   },
   {
     type: 'title',
@@ -68,7 +69,7 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>PNG</strong> çalışma formatıdır: logonuzu tasarladığınız, Figma veya Illustrator\'dan dışa aktardığınız ve düzenlenebilir sürümlerinizi kaydettiğiniz yerdir. Şeffaflığı, piksel hassasiyeti ve kayıpsız sıkıştırması onu tasarım süreci için rakipsiz kılar. Ancak favicon veya uygulama simgesi arayan tarayıcılar, işletim sistemleri ve Windows uygulamaları PNG\'yi doğrudan kabul etmez — ICO\'ya ihtiyaç duyarlar.',
+    html: '<strong>PNG</strong> çalışma formatıdır: logonuzu tasarladığınız, Figma veya Illustrator\'dan dışa aktardığınız ve düzenlenebilir sürümlerinizi kaydettiğiniz yerdir. Şeffaflığı, piksel hassasiyeti ve kayıpsız sıkıştırması onu tasarım süreci için rakipsiz kılar. Ancak favicon veya uygulama simgesi arayan tarayıcılar, işletim sistemleri ve Windows uygulamaları PNG\'yi doğrudan kabul etmez - ICO\'ya ihtiyaç duyarlar.',
   },
   {
     type: 'paragraph',
@@ -100,8 +101,8 @@ const seo: PngAIcoLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Anında hız — sıfır ağ gecikmesi',
-          'Tam gizlilik — harici olarak gönderilen 0 bayt',
+          'Anında hız - sıfır ağ gecikmesi',
+          'Tam gizlilik - harici olarak gönderilen 0 bayt',
           'MB sınırı veya dosya sayısı kısıtlaması yok',
           'Temiz arayüz, reklam veya izleme yok',
         ],
@@ -119,7 +120,7 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'PNG\'nin şeffaflığı ortaya çıkan ICO\'da tamamen korunur — şeffaf pikseller şeffaf kalır, yarı şeffaf pikseller tam alfa değerlerini korur und opak pikseller orijinal renklerini korur. Bu, değişken arka planlardaki logolar için kritik öneme sahiptir: favicon\'unuz açık modda, koyu modda und tarayıcı arayüz renklerinin any kombinasyonunda doğru görünecektir.',
+    html: 'PNG\'nin şeffaflığı ortaya çıkan ICO\'da tamamen korunur - şeffaf pikseller şeffaf kalır, yarı şeffaf pikseller tam alfa değerlerini korur und opak pikseller orijinal renklerini korur. Bu, değişken arka planlardaki logolar için kritik öneme sahiptir: favicon\'unuz açık modda, koyu modda und tarayıcı arayüz renklerinin any kombinasyonunda doğru görünecektir.',
   },
   {
     type: 'tip',
@@ -149,7 +150,7 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Şeffaf PNG, hiç şüphesiz profesyonel kalitede ICO simgeleri oluşturmak için en iyi başlangıç noktasıdır. Bu araçla dönüştürme anlıktır, alfa kanalları tamamen korunur und elde edilen dosya doğru ikili yapıya sahip orijinal bir ICO\'dur. Logonuzun any sunucuya yüklenmesi yok, filigran yok, sınır yok — und her boyutta mükemmel şeffaflık.',
+    html: 'Şeffaf PNG, hiç şüphesiz profesyonel kalitede ICO simgeleri oluşturmak için en iyi başlangıç noktasıdır. Bu araçla dönüştürme anlıktır, alfa kanalları tamamen korunur und elde edilen dosya doğru ikili yapıya sahip orijinal bir ICO\'dur. Logonuzun any sunucuya yüklenmesi yok, filigran yok, sınır yok - und her boyutta mükemmel şeffaflık.',
   },
 ];
 

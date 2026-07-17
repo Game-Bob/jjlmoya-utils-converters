@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Selecionar arquivos',
   processedFiles: 'Arquivos processados',
   downloadAll: 'Baixar tudo (.zip)',
-  pending: 'Pendente': 'Referências Bibliográficas',
+  pending: 'Pendente',
+  bibliographyTitle: 'Referências Bibliográficas',
   faqTitle: 'Perguntas Frequentes',
 };
 
@@ -59,7 +60,7 @@ const seo: JpgAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'O formato <strong>ICO</strong> é o padrão da Microsoft para ícones de aplicações Windows e favicons de websites. Ao contrário de simplesmente renomear um JPG como .ico, un arquivo ICO genuíno requer uma estrutura binária específica com cabeçalhos de 22 bytes e um diretório de imagens incorporado. O <strong>JPG</strong> é o ponto de partida mais comum para a criação destes ícones — um logótipo de empresa, uma foto de perfil ou qualquer imagem que queira transformar no ícone visual da sua aplicação ou website.',
+    html: 'O formato <strong>ICO</strong> é o padrão da Microsoft para ícones de aplicações Windows e favicons de websites. Ao contrário de simplesmente renomear um JPG como .ico, un arquivo ICO genuíno requer uma estrutura binária específica com cabeçalhos de 22 bytes e um diretório de imagens incorporado. O <strong>JPG</strong> é o ponto de partida mais comum para a criação destes ícones - um logótipo de empresa, uma foto de perfil ou qualquer imagem que queira transformar no ícone visual da sua aplicação ou website.',
   },
   {
     type: 'title',
@@ -68,11 +69,11 @@ const seo: JpgAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'O <strong>JPG</strong> é um formato de origem, não um destino para ícones. Perfeito para fotografias e banners, mas incompatível com sistemas que requerem ícones: Explorador de Arquivos do Windows, a barra de favoritos do navegador, atalhos do ambiente de trabalho ou manifestos de aplicações PWA. Um sistema operativo ou navegador que procura um ícone espera o formato ICO — e se não o encontrar, exibirá um ícone genérico ou um quadrado quebrado.',
+    html: 'O <strong>JPG</strong> é um formato de origem, não um destino para ícones. Perfeito para fotografias e banners, mas incompatível com sistemas que requerem ícones: Explorador de Arquivos do Windows, a barra de favoritos do navegador, atalhos do ambiente de trabalho ou manifestos de aplicações PWA. Um sistema operativo ou navegador que procura um ícone espera o formato ICO - e se não o encontrar, exibirá um ícone genérico ou um quadrado quebrado.',
   },
   {
     type: 'paragraph',
-    html: 'O formato <strong>ICO</strong> foi concebido para conter múltiplas resoluções num único arquivo: <strong>16×16</strong> para a barra de favoritos, <strong>32×32</strong> para atalhos, <strong>48×48</strong> para o explorador de arquivos e <strong>256×256</strong> para ecrãs de alta densidade. Os navegadores e sistemas operativos selecionam automaticamente a resolução apropriada com base no contexto de exibição — o utilizador não tem de gerir nada.',
+    html: 'O formato <strong>ICO</strong> foi concebido para conter múltiplas resoluções num único arquivo: <strong>16×16</strong> para a barra de favoritos, <strong>32×32</strong> para atalhos, <strong>48×48</strong> para o explorador de arquivos e <strong>256×256</strong> para ecrãs de alta densidade. Os navegadores e sistemas operativos selecionam automaticamente a resolução apropriada com base no contexto de exibição - o utilizador não tem de gerir nada.',
   },
   {
     type: 'title',
@@ -100,8 +101,8 @@ const seo: JpgAIcoLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Velocidade instantânea — latência de rede zero',
-          'Privacidade total — 0 bytes enviados externamente',
+          'Velocidade instantânea - latência de rede zero',
+          'Privacidade total - 0 bytes enviados externamente',
           'Sem limites de MB ou restrições no número de arquivos',
           'Interface limpa, sem anúncios ou rastreamento',
         ],
@@ -115,16 +116,16 @@ const seo: JpgAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'O JPG é descodificado e desenhado num <strong>HTML5 Canvas</strong> em memória. Como o formato ICO requer uma imagem quadrada, o motor deteta automaticamente se o JPG é retangular e recorta-o centrando a parte mais relevante. Em seguida, constrói o cabeçalho padrão da Microsoft ICO com o número mágico correto (<code>00 00 01 00</code>), o diretório de imagens und os dados de píxeis codificados. O resultado é um arquivo binário .ico genuíno — não um PNG renomeado.',
+    html: 'O JPG é descodificado e desenhado num <strong>HTML5 Canvas</strong> em memória. Como o formato ICO requer uma imagem quadrada, o motor deteta automaticamente se o JPG é retangular e recorta-o centrando a parte mais relevante. Em seguida, constrói o cabeçalho padrão da Microsoft ICO com o número mágico correto (<code>00 00 01 00</code>), o diretório de imagens und os dados de píxeis codificados. O resultado é um arquivo binário .ico genuíno - não um PNG renomeado.',
   },
   {
     type: 'paragraph',
-    html: 'Como o JPG não tem canal alfa, o ICO resultante também não terá transparência — terá um fundo sólido herdado da fotografia original. Se precisar de um favicon com fundo transparente (por exemplo, para se adaptar a barras de favoritos escuras ou claras), o fluxo recomendado é: remover o fundo num editor, guardar como PNG und utilizar o convertidor de PNG para ICO.',
+    html: 'Como o JPG não tem canal alfa, o ICO resultante também não terá transparência - terá um fundo sólido herdado da fotografia original. Se precisar de um favicon com fundo transparente (por exemplo, para se adaptar a barras de favoritos escuras ou claras), o fluxo recomendado é: remover o fundo num editor, guardar como PNG und utilizar o convertidor de PNG para ICO.',
   },
   {
     type: 'tip',
     title: 'Dica: múltiplas resoluções num único ICO',
-    html: 'Os arquivos ICO podem agrupar <strong>múltiplas resoluções</strong> num único arquivo — o navegador ou SO seleciona automaticamente a mais apropriada para cada contexto. Para obter o melhor resultado possível, utilize um JPG quadrado com pelo menos <strong>256×256 píxeis</strong> como fonte: isto dá ao convertidor informações suficientes para gerar tamanhos nítidos de 16×16, 32×32 und 48×48 sem pixelização.',
+    html: 'Os arquivos ICO podem agrupar <strong>múltiplas resoluções</strong> num único arquivo - o navegador ou SO seleciona automaticamente a mais apropriada para cada contexto. Para obter o melhor resultado possível, utilize um JPG quadrado com pelo menos <strong>256×256 píxeis</strong> como fonte: isto dá ao convertidor informações suficientes para gerar tamanhos nítidos de 16×16, 32×32 und 48×48 sem pixelização.',
   },
   {
     type: 'title',

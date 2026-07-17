@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Sélectionner des fichiers',
   processedFiles: 'Fichiers traités',
   downloadAll: 'Tout télécharger (.zip)',
-  pending: 'En attente': 'Références Bibliographiques',
+  pending: 'En attente',
+  bibliographyTitle: 'Références Bibliographiques',
   faqTitle: 'Questions Fréquentes',
 };
 
@@ -54,16 +55,16 @@ const howTo: WebpAIcoLocaleContent['howTo'] = [
 const seo: WebpAIcoLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Convertisseur WebP vers ICO : Créez des Favicons Parfaits depuis vos Assets Modernos',
+    text: 'Convertisseur WebP vers ICO: Créez des Favicons Parfaits depuis vos Assets Modernos',
     level: 2,
   },
   {
     type: 'paragraph',
-    html: 'Les flux de travail de design web modernes produisent des ressources au format <strong>WebP</strong> : logos optimisés, icônes d\'interface et éléments de marque. Mais lorsqu\'il faut configurer le <strong>favicon</strong> de votre site ou les icônes d\'une application de bureau Windows, le format requis est toujours <strong>ICO</strong>. Convertir WebP en ICO vous permet de réutiliser vos assets de la meilleure qualité sans perdre la source originale.',
+    html: 'Les flux de travail de design web modernes produisent des ressources au format <strong>WebP</strong>: logos optimisés, icônes d\'interface et éléments de marque. Mais lorsqu\'il faut configurer le <strong>favicon</strong> de votre site ou les icônes d\'une application de bureau Windows, le format requis est toujours <strong>ICO</strong>. Convertir WebP en ICO vous permet de réutiliser vos assets de la meilleure qualité sans perdre la source originale.',
   },
   {
     type: 'title',
-    text: 'WebP vs ICO : Des Formats aux Objectifs Distincts',
+    text: 'WebP vs ICO: Des Formats aux Objectifs Distincts',
     level: 3,
   },
   {
@@ -76,7 +77,7 @@ const seo: WebpAIcoLocaleContent['seo'] = [
   },
   {
     type: 'title',
-    text: 'Comparatif : Conversion Locale vs Cloud',
+    text: 'Comparatif: Conversion Locale vs Cloud',
     level: 3,
   },
   {

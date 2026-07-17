@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Seleccionar archivos',
   processedFiles: 'Archivos procesados',
   downloadAll: 'Descargar Todo (.zip)',
-  pending: 'Pendiente': 'Referencias Bibliográficas',
+  pending: 'Pendiente',
+  bibliographyTitle: 'Referencias Bibliográficas',
   faqTitle: 'Preguntas Frecuentes',
 };
 
@@ -101,7 +102,7 @@ const seo: BmpAWebpLocaleContent['seo'] = [
         highlight: true,
         points: [
           'Conversión instantánea sin transferencia de red',
-          'Privacidad absoluta — 0 bytes salen de tu dispositivo',
+          'Privacidad absoluta - 0 bytes salen de tu dispositivo',
           'Sin límites de tamaño por archivo',
           'Funciona sin conexión a internet',
         ],
@@ -135,11 +136,11 @@ const seo: BmpAWebpLocaleContent['seo'] = [
     type: 'list',
     icon: 'mdi:check-circle',
     items: [
-      'Publicación web — Chrome, Firefox, Safari, Edge y todos los navegadores modernos.',
-      'Redes sociales — Instagram, Twitter, Facebook aceptan WebP de forma nativa.',
-      'Aplicaciones web y PWA — tamaños mínimos para carga instantánea.',
-      'Archivado eficiente — sustituye colecciones de BMPs heredados ahorrando gigabytes.',
-      'Email marketing — imágenes ligeras que cargan rápido en cualquier cliente de correo moderno.',
+      'Publicación web - Chrome, Firefox, Safari, Edge y todos los navegadores modernos.',
+      'Redes sociales - Instagram, Twitter, Facebook aceptan WebP de forma nativa.',
+      'Aplicaciones web y PWA - tamaños mínimos para carga instantánea.',
+      'Archivado eficiente - sustituye colecciones de BMPs heredados ahorrando gigabytes.',
+      'Email marketing - imágenes ligeras que cargan rápido en cualquier cliente de correo moderno.',
     ],
   },
   {
@@ -149,7 +150,7 @@ const seo: BmpAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Si tienes archivos BMP heredados de Windows, capturas de pantalla sin comprimir o imágenes de herramientas antiguas, convertirlos a WebP es la acción más impactante que puedes tomar para optimizar tu almacenamiento y rendimiento web. Con nuestra herramienta, la conversión es instantánea, privada y sin límites — exactamente como debería ser.',
+    html: 'Si tienes archivos BMP heredados de Windows, capturas de pantalla sin comprimir o imágenes de herramientas antiguas, convertirlos a WebP es la acción más impactante que puedes tomar para optimizar tu almacenamiento y rendimiento web. Con nuestra herramienta, la conversión es instantánea, privada y sin límites - exactamente como debería ser.',
   },
 ];
 

@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Pilih file',
   processedFiles: 'File yang diproses',
   downloadAll: 'Unduh Semua (.zip)',
-  pending: 'Menunggu': 'Referensi Bibliografi',
+  pending: 'Menunggu',
+  bibliographyTitle: 'Referensi Bibliografi',
   faqTitle: 'Pertanyaan yang Sering Diajukan',
 };
 
@@ -59,7 +60,7 @@ const seo: PngAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>PNG</strong> telah menjadi format referensi untuk gambar web dengan transparansi selama beberapa dekade — logo, ikon, elemen UI, gambar produk dengan latar belakang transparan. Masalahnya adalah ukuran file: kompresi lossless yang menjamin kualitas juga menghasilkan file yang sangat besar. <strong>WebP</strong> Google memecahkan kontradiksi ini: ia mendukung saluran alfa (transparansi) <em>dan</em> mengompresi jauh lebih baik daripada PNG, menjadikan peralihan dari PNG ke WebP di situs web Anda sebagai optimasi sempurna yang tidak mengorbankan apa pun.',
+    html: '<strong>PNG</strong> telah menjadi format referensi untuk gambar web dengan transparansi selama beberapa dekade - logo, ikon, elemen UI, gambar produk dengan latar belakang transparan. Masalahnya adalah ukuran file: kompresi lossless yang menjamin kualitas juga menghasilkan file yang sangat besar. <strong>WebP</strong> Google memecahkan kontradiksi ini: ia mendukung saluran alfa (transparansi) <em>dan</em> mengompresi jauh lebih baik daripada PNG, menjadikan peralihan dari PNG ke WebP di situs web Anda sebagai optimasi sempurna yang tidak mengorbankan apa pun.',
   },
   {
     type: 'title',
@@ -68,7 +69,7 @@ const seo: PngAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>PNG</strong> tetap merupakan format yang tepat ketika kompatibilitas sangat penting: alat desain seperti Photoshop atau Figma, alur kerja cetak, aplikasi desktop lama, atau konteks apa pun di mana dukungan WebP tidak dijamin. Ini juga merupakan format ideal untuk menyimpan lapisan kerja dalam alur pengeditan, karena kompresi lossless-nya mempertahankan setiap piksel. Biayanya: file yang bisa berbobot 3–8 kali lebih berat daripada ekuivalen WebP-nya.',
+    html: '<strong>PNG</strong> tetap merupakan format yang tepat ketika kompatibilitas sangat penting: alat desain seperti Photoshop atau Figma, alur kerja cetak, aplikasi desktop lama, atau konteks apa pun di mana dukungan WebP tidak dijamin. Ini juga merupakan format ideal untuk menyimpan lapisan kerja dalam alur pengeditan, karena kompresi lossless-nya mempertahankan setiap piksel. Biayanya: file yang bisa berbobot 3-8 kali lebih berat daripada ekuivalen WebP-nya.',
   },
   {
     type: 'paragraph',
@@ -100,8 +101,8 @@ const seo: PngAWebpLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Kecepatan instan — nol latensi jaringan',
-          'Privasi lengkap — 0 byte dikirim secara eksternal',
+          'Kecepatan instan - nol latensi jaringan',
+          'Privasi lengkap - 0 byte dikirim secara eksternal',
           'Tanpa batas MB atau batasan jumlah file',
           'Antarmuka bersih, tanpa iklan atau pelacakan',
         ],
@@ -115,7 +116,7 @@ const seo: PngAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'PNG dimuat secara lokal dan didekodekan ke dalam <strong>HTML5 Canvas</strong> dalam memori. API Canvas mempertahankan saluran alfa dari PNG asli — semua piksel transparan dan semi-transparan dipertahankan secara utuh dalam buffer piksel RGBA. Kanvas kemudian diekspor dengan memanggil <code>toDataURL(\'image/webp\')</code>, yang menerapkan codec WebP browser (berdasarkan libwebp Google) untuk menghasilkan file yang lebih ringkas tanpa mengubah data transparansi.',
+    html: 'PNG dimuat secara lokal dan didekodekan ke dalam <strong>HTML5 Canvas</strong> dalam memori. API Canvas mempertahankan saluran alfa dari PNG asli - semua piksel transparan dan semi-transparan dipertahankan secara utuh dalam buffer piksel RGBA. Kanvas kemudian diekspor dengan memanggil <code>toDataURL(\'image/webp\')</code>, yang menerapkan codec WebP browser (berdasarkan libwebp Google) untuk menghasilkan file yang lebih ringkas tanpa mengubah data transparansi.',
   },
   {
     type: 'paragraph',
@@ -149,7 +150,7 @@ const seo: PngAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Peralihan dari PNG ke WebP adalah optimasi gambar web terlengkap yang tersedia: Anda mendapatkan file yang lebih ringan, mempertahankan transparansi, dan meningkatkan metrik Core Web Vitals tanpa mengubah apa pun pada desain visual Anda. Alat ini melakukannya secara instan, gratis, dan sepenuhnya privat — gambar Anda diproses di browser Anda dan tidak pernah dikirim ke server eksternal mana pun.',
+    html: 'Peralihan dari PNG ke WebP adalah optimasi gambar web terlengkap yang tersedia: Anda mendapatkan file yang lebih ringan, mempertahankan transparansi, dan meningkatkan metrik Core Web Vitals tanpa mengubah apa pun pada desain visual Anda. Alat ini melakukannya secara instan, gratis, dan sepenuhnya privat - gambar Anda diproses di browser Anda dan tidak pernah dikirim ke server eksternal mana pun.',
   },
 ];
 

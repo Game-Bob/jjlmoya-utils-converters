@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Dosyaları seçin',
   processedFiles: 'İşlenen dosyalar',
   downloadAll: 'Tümünü İndir (.zip)',
-  pending: 'Bekliyor': 'Bibliyografik Referanslar',
+  pending: 'Bekliyor',
+  bibliographyTitle: 'Bibliyografik Referanslar',
   faqTitle: 'Sıkça Sorulan Sorular',
 };
 
@@ -100,7 +101,7 @@ const seo: AvifAWebpLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Tam gizlilik — 0 bayt cihazınızdan çıkar',
+          'Tam gizlilik - 0 bayt cihazınızdan çıkar',
           'Ağ bağımlılığı olmadan anında hız',
           'Boyut veya dosya sayısı sınırı yok',
           'İnternet bağlantısı olmadan çalışır',

@@ -18,7 +18,8 @@ const ui: ImageToBase64UI = {
   dataUriPlaceholder: 'Upload an image to see the Data URI code...',
   base64Placeholder: 'Upload an image to see the pure Base64 code...',
   toastMessage: 'Code copied to clipboard!',
-  invalidImageAlert: 'Please upload a valid image file.': 'Bibliographic References',
+  invalidImageAlert: 'Please upload a valid image file.',
+  bibliographyTitle: 'Bibliographic References',
   faqTitle: 'Frequently Asked Questions',
 };
 
@@ -68,7 +69,7 @@ const seo: ImagenBase64LocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Base64 is an encoding technique that transforms binary data — like an image — into a pure ASCII text string. The result is a Data URI: a self-contained URL that starts with <code>data:image/png;base64,...</code> and contains the entire encoded image. By embedding this code directly in your HTML, CSS or JSON, the image loads without any additional HTTP request to the server — zero network latency, instant loading.',
+    html: 'Base64 is an encoding technique that transforms binary data - like an image - into a pure ASCII text string. The result is a Data URI: a self-contained URL that starts with <code>data:image/png;base64,...</code> and contains the entire encoded image. By embedding this code directly in your HTML, CSS or JSON, the image loads without any additional HTTP request to the server - zero network latency, instant loading.',
   },
   {
     type: 'title',
@@ -77,7 +78,7 @@ const seo: ImagenBase64LocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'The main argument for Base64 is the elimination of network requests. Every image on a web page means an HTTP request with its overhead of connection, DNS, TLS handshake and latency. For very small critical images — the main application logo, favicon, a UI icon — embedding them in Base64 in the CSS or HTML eliminates that cost and guarantees they display instantly even before the browser has cached anything.',
+    html: 'The main argument for Base64 is the elimination of network requests. Every image on a web page means an HTTP request with its overhead of connection, DNS, TLS handshake and latency. For very small critical images - the main application logo, favicon, a UI icon - embedding them in Base64 in the CSS or HTML eliminates that cost and guarantees they display instantly even before the browser has cached anything.',
   },
   {
     type: 'paragraph',
@@ -106,12 +107,12 @@ const seo: ImagenBase64LocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'When you select or drag an image, the browser\'s <code>FileReader</code> API reads it directly from disk as binary data in RAM. The <code>readAsDataURL()</code> method converts those binary bytes to their Base64 representation using the RFC 4648 algorithm — every 3 bytes of original data are represented as 4 ASCII characters from the Base64 alphabet. The result includes the automatically detected correct MIME type.',
+    html: 'When you select or drag an image, the browser\'s <code>FileReader</code> API reads it directly from disk as binary data in RAM. The <code>readAsDataURL()</code> method converts those binary bytes to their Base64 representation using the RFC 4648 algorithm - every 3 bytes of original data are represented as 4 ASCII characters from the Base64 alphabet. The result includes the automatically detected correct MIME type.',
   },
   {
     type: 'tip',
     title: 'Use it only for small images (under 10 KB)',
-    html: 'Base64 increases file size by approximately 33%: a 10 KB image becomes ~13.3 KB of text. For small icons and logos this cost is minimal and the elimination of the HTTP request compensates for it. For photographs or large images, the size overhead is significant — always use a CDN for large images.',
+    html: 'Base64 increases file size by approximately 33%: a 10 KB image becomes ~13.3 KB of text. For small icons and logos this cost is minimal and the elimination of the HTTP request compensates for it. For photographs or large images, the size overhead is significant - always use a CDN for large images.',
   },
   {
     type: 'title',
@@ -120,7 +121,7 @@ const seo: ImagenBase64LocaleContent['seo'] = [
   },
   {
     type: 'tip',
-    title: 'Avoid Base64 for large images — use a CDN instead',
+    title: 'Avoid Base64 for large images: use a CDN instead',
     html: 'If you have images larger than 10-20 KB, Base64 hurts performance: it inflates HTML/CSS size, prevents the browser from caching the image independently, and blocks rendering while the parser processes the giant string. For large images, always serve from a CDN with appropriate cache headers.',
   },
   {
@@ -130,7 +131,7 @@ const seo: ImagenBase64LocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Data URIs are compatible with 100% of modern browsers and most email clients. Our tool processes everything locally via the FileReader API — your images never leave your device. This makes it suitable for corporate images, private screenshots or any confidential visual content that you need to convert to Base64.',
+    html: 'Data URIs are compatible with 100% of modern browsers and most email clients. Our tool processes everything locally via the FileReader API - your images never leave your device. This makes it suitable for corporate images, private screenshots or any confidential visual content that you need to convert to Base64.',
   },
   {
     type: 'title',

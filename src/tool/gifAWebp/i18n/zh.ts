@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: '选择文件',
   processedFiles: '已处理文件',
   downloadAll: '下载全部 (.zip)',
-  pending: '等待中': '参考文献',
+  pending: '等待中',
+  bibliographyTitle: '参考文献',
   faqTitle: '常见问题',
 };
 
@@ -47,7 +48,7 @@ const howTo: GifAWebpLocaleContent['howTo'] = [
   },
   {
     name: '保存您干净的结果集',
-    text: '单独获取提取的文件，或按“下载 Zip”打包所有内容。',
+    text: '单独获取提取的文件，或按\"下载 Zip\"打包所有内容。',
   },
 ];
 
@@ -68,11 +69,11 @@ const seo: GifAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'GIF 是一种 1987 年的格式，最初并非为动画设计——该功能是后来作为一种“黑客”手段加入的。它的 256 色调色板、低效率的压缩以及无法处理音频，使其成为一种过时的格式。WebP 由 Google 在 2010 年开发，提供卓越的有损和无损压缩、原生动画支持以及完整的 Alpha 通道。',
+    html: 'GIF 是一种 1987 年的格式，最初并非为动画设计-该功能是后来作为一种\"黑客\"手段加入的。它的 256 色调色板、低效率的压缩以及无法处理音频，使其成为一种过时的格式。WebP 由 Google 在 2010 年开发，提供卓越的有损和无损压缩、原生动画支持以及完整的 Alpha 通道。',
   },
   {
     type: 'paragraph',
-    html: '对于 Web 开发人员来说，在页面上用 WebP 取代 GIF 可能意味着 Google PageSpeed 分数提高 10 到 30 分。更轻的页面重量意味着更好的 Core Web Vitals、更好的 SEO 排名以及更低的服务器带宽成本。这不仅仅是美学上的提升——它是一项技术架构决策。',
+    html: '对于 Web 开发人员来说，在页面上用 WebP 取代 GIF 可能意味着 Google PageSpeed 分数提高 10 到 30 分。更轻的页面重量意味着更好的 Core Web Vitals、更好的 SEO 排名以及更低的服务器带宽成本。这不仅仅是美学上的提升-它是一项技术架构决策。',
   },
   {
     type: 'title',

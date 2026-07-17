@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Välj filer',
   processedFiles: 'Bearbetade filer',
   downloadAll: 'Ladda ner alla (.zip)',
-  pending: 'Väntande': 'Bibliografiska Referenser',
+  pending: 'Väntande',
+  bibliographyTitle: 'Bibliografiska Referenser',
   faqTitle: 'Vanliga Frågor',
 };
 
@@ -59,7 +60,7 @@ const seo: JpgAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>ICO</strong>-formatet är Microsofts standard for Windows-applikationsikoner och webbplatsers favicons. Till skillnad från att bara byta namn på en JPG till .ico, kräver en äkta ICO-fil en specifik binär struktur med 22-byte headers och en inbäddad bildkatalog. <strong>JPG</strong> är den vanligaste utgångspunkten for att skapa dessa ikoner — en företagslogotyp, ett profilfoto eller vilken bild som helst som du vill forvandla till din applikations eller webbplats visuella ikon.',
+    html: '<strong>ICO</strong>-formatet är Microsofts standard for Windows-applikationsikoner och webbplatsers favicons. Till skillnad från att bara byta namn på en JPG till .ico, kräver en äkta ICO-fil en specifik binär struktur med 22-byte headers och en inbäddad bildkatalog. <strong>JPG</strong> är den vanligaste utgångspunkten for att skapa dessa ikoner - en företagslogotyp, ett profilfoto eller vilken bild som helst som du vill forvandla till din applikations eller webbplats visuella ikon.',
   },
   {
     type: 'title',
@@ -68,11 +69,11 @@ const seo: JpgAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>JPG</strong> är ett källformat, inte ett målformat for ikoner. Perfekt for fotografier och banners, men inkompatibelt med system som kräver ikoner: Windows Explorer, webbläsarens bokmärkesfält, skrivbordsgenvägar eller PWA-applikationsmanifest. Ett operativsystem eller en webbläsare som letar efter en ikon forväntar sig ICO-formatet — och om den inte hittar det visas en generisk ikon eller en trasig kvadrat.',
+    html: '<strong>JPG</strong> är ett källformat, inte ett målformat for ikoner. Perfekt for fotografier och banners, men inkompatibelt med system som kräver ikoner: Windows Explorer, webbläsarens bokmärkesfält, skrivbordsgenvägar eller PWA-applikationsmanifest. Ett operativsystem eller en webbläsare som letar efter en ikon forväntar sig ICO-formatet - och om den inte hittar det visas en generisk ikon eller en trasig kvadrat.',
   },
   {
     type: 'paragraph',
-    html: '<strong>ICO</strong>-formatet designades for att innehålla flera upplösningar i en enda fil: <strong>16×16</strong> for bokmärkesfältet, <strong>32×32</strong> for genvägar, <strong>48×48</strong> for filutforskaren och <strong>256×256</strong> for högupplösta skärmar. Webbläsare och operativsystem väljer automatiskt lämplig upplösning baserat på visningssammanhanget — användaren behöver inte hantera någonting.',
+    html: '<strong>ICO</strong>-formatet designades for att innehålla flera upplösningar i en enda fil: <strong>16×16</strong> for bokmärkesfältet, <strong>32×32</strong> for genvägar, <strong>48×48</strong> for filutforskaren och <strong>256×256</strong> for högupplösta skärmar. Webbläsare och operativsystem väljer automatiskt lämplig upplösning baserat på visningssammanhanget - användaren behöver inte hantera någonting.',
   },
   {
     type: 'title',
@@ -100,8 +101,8 @@ const seo: JpgAIcoLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Omedelbar hastighet — noll nätverkslatens',
-          'Komplett integritet — 0 byte skickas externt',
+          'Omedelbar hastighet - noll nätverkslatens',
+          'Komplett integritet - 0 byte skickas externt',
           'Inga MB-gränser eller begränsningar på antal filer',
           'Rent gränssnitt, inga annonser eller spårning',
         ],
@@ -115,16 +116,16 @@ const seo: JpgAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'JPG-filen avkodas och ritas på ett <strong>HTML5 Canvas</strong> i minnet. Eftersom ICO-formatet kräver en kvadratisk bild detekterar motorn automatiskt om JPG-filen är rektangulär och beskär den genom att centrera den mest relevanta delen. Sedan bygger den standarden for Microsoft ICO-header med korrekt magic number (<code>00 00 01 00</code>), bildkatalogen und den kodade pixeldatan. Resultatet är en äkta binär .ico-fil — inte en omdöpt PNG.',
+    html: 'JPG-filen avkodas och ritas på ett <strong>HTML5 Canvas</strong> i minnet. Eftersom ICO-formatet kräver en kvadratisk bild detekterar motorn automatiskt om JPG-filen är rektangulär och beskär den genom att centrera den mest relevanta delen. Sedan bygger den standarden for Microsoft ICO-header med korrekt magic number (<code>00 00 01 00</code>), bildkatalogen und den kodade pixeldatan. Resultatet är en äkta binär .ico-fil - inte en omdöpt PNG.',
   },
   {
     type: 'paragraph',
-    html: 'Eftersom JPG saknar en alfakanal kommer den resulterande ICO-filen inte heller att ha någon transparens — den kommer att ha en solid bakgrund som ärvts från det ursprungliga fotot. Om du behöver en favicon med transparent bakgrund (till exempel for att anpassa dig till mörka eller ljusa bokmärkesfält) är det rekommenderade arbetsflödet: ta bort bakgrunden i en redigerare, spara som PNG und använd PNG till ICO-konverteraren.',
+    html: 'Eftersom JPG saknar en alfakanal kommer den resulterande ICO-filen inte heller att ha någon transparens - den kommer att ha en solid bakgrund som ärvts från det ursprungliga fotot. Om du behöver en favicon med transparent bakgrund (till exempel for att anpassa dig till mörka eller ljusa bokmärkesfält) är det rekommenderade arbetsflödet: ta bort bakgrunden i en redigerare, spara som PNG und använd PNG till ICO-konverteraren.',
   },
   {
     type: 'tip',
     title: 'Tips: flera upplösningar i en enda ICO',
-    html: 'ICO-filer kan packa <strong>flera upplösningar</strong> i en enda fil — webbläsaren eller OS väljer automatiskt den lämpligaste for varje sammanhang. För bästa möjliga resultat, använd en kvadratisk JPG på minst <strong>256×256 pixlar</strong> som källa: detta ger konverteraren tillräckligt med information for att generera skarpa 16×16, 32×32 und 48×48 storlekar utan pixelering.',
+    html: 'ICO-filer kan packa <strong>flera upplösningar</strong> i en enda fil - webbläsaren eller OS väljer automatiskt den lämpligaste for varje sammanhang. För bästa möjliga resultat, använd en kvadratisk JPG på minst <strong>256×256 pixlar</strong> som källa: detta ger konverteraren tillräckligt med information for att generera skarpa 16×16, 32×32 und 48×48 storlekar utan pixelering.',
   },
   {
     type: 'title',

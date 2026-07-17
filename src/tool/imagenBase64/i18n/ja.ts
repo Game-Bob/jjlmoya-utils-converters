@@ -18,7 +18,8 @@ const ui: ImageToBase64UI = {
   dataUriPlaceholder: '画像をアップロードしてData URIコードを表示...',
   base64Placeholder: '画像をアップロードして純粋なBase64コードを表示...',
   toastMessage: 'コードをクリップボードにコピーしました！',
-  invalidImageAlert: '有効な画像ファイルをアップロードしてください。': '参考文献',
+  invalidImageAlert: '有効な画像ファイルをアップロードしてください。',
+  bibliographyTitle: '参考文献',
   faqTitle: 'よくある質問',
 };
 

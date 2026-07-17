@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Selecionar ficheiros',
   processedFiles: 'Ficheiros processados',
   downloadAll: 'Descarregar Tudo (.zip)',
-  pending: 'Pendente': 'Referências Bibliográficas',
+  pending: 'Pendente',
+  bibliographyTitle: 'Referências Bibliográficas',
   faqTitle: 'Perguntas Frequentes',
 };
 
@@ -59,7 +60,7 @@ const seo: JpgAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'O <strong>JPG</strong> é insuperável para fotografias de câmara, mas tem um calcanhar de Aquiles: cada vez que guarda o ficheiro, aplica de novo a sua compressão com perda, degradando progressivamente os bordos e os gradientes. O <strong>PNG</strong> usa compressão sem perda — uma vez guardado, os píxeis são imutáveis. Converter um JPG para PNG é a operação chave quando precisa de preparar uma imagem para edição intensiva, adicionar um fundo transparente ou integrá-la num fluxo de design que requer vários salvamentos.',
+    html: 'O <strong>JPG</strong> é insuperável para fotografias de câmara, mas tem um calcanhar de Aquiles: cada vez que guarda o ficheiro, aplica de novo a sua compressão com perda, degradando progressivamente os bordos e os gradientes. O <strong>PNG</strong> usa compressão sem perda - uma vez guardado, os píxeis são imutáveis. Converter um JPG para PNG é a operação chave quando precisa de preparar uma imagem para edição intensiva, adicionar um fundo transparente ou integrá-la num fluxo de design que requer vários salvamentos.',
   },
   {
     type: 'title',
@@ -100,8 +101,8 @@ const seo: JpgAPngLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Velocidade instantânea — zero latência de rede',
-          'Privacidade total — 0 bytes enviados para o exterior',
+          'Velocidade instantânea - zero latência de rede',
+          'Privacidade total - 0 bytes enviados para o exterior',
           'Sem limites de MB nem de número de ficheiros',
           'Interface limpa, sem anúncios nem rastreios',
         ],
@@ -115,16 +116,16 @@ const seo: JpgAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'O processo é puramente local: o navegador cria um <strong>Blob</strong> com o JPG selecionado e desenha-o sobre um <strong>Canvas HTML5</strong> em memória. Uma vez renderizado, é chamado <code>toDataURL(\'image/png\')</code> — o codec PNG integrado no navegador recodifica cada píxel sem aplicar nenhuma nova compressão com perda. O resultado é um PNG que preserva fielmente o estado atual do JPG: nem melhor nem pior, simplesmente congelado.',
+    html: 'O processo é puramente local: o navegador cria um <strong>Blob</strong> com o JPG selecionado e desenha-o sobre um <strong>Canvas HTML5</strong> em memória. Uma vez renderizado, é chamado <code>toDataURL(\'image/png\')</code> - o codec PNG integrado no navegador recodifica cada píxel sem aplicar nenhuma nova compressão com perda. O resultado é um PNG que preserva fielmente o estado atual do JPG: nem melhor nem pior, simplesmente congelado.',
   },
   {
     type: 'paragraph',
-    html: 'O PNG resultante utilizará compressão DEFLATE sem perda, a mesma que empregam ferramentas profissionais como o Photoshop ou o GIMP. O seu tamanho será maior do que o JPG original — normalmente entre 2 e 5 vezes — porque armazena todos os píxeis sem descartar informação. É o preço que se paga pela fidelidade e pela editabilidade infinita.',
+    html: 'O PNG resultante utilizará compressão DEFLATE sem perda, a mesma que empregam ferramentas profissionais como o Photoshop ou o GIMP. O seu tamanho será maior do que o JPG original - normalmente entre 2 e 5 vezes - porque armazena todos os píxeis sem descartar informação. É o preço que se paga pela fidelidade e pela editabilidade infinita.',
   },
   {
     type: 'tip',
     title: 'Importante: o PNG não recupera a qualidade JPEG',
-    html: 'Converter um JPG para PNG <strong>não recupera a qualidade perdida</strong> durante a compressão JPEG original. Se o seu JPG já tinha artefactos de bloco ou ruído de cor, o PNG conservá-los-á intactos — simplesmente evita que se adicionem mais. Pense na conversão como "congelar" o estado atual da imagem para que edições futuras não a degradem mais.',
+    html: 'Converter um JPG para PNG <strong>não recupera a qualidade perdida</strong> durante a compressão JPEG original. Se o seu JPG já tinha artefactos de bloco ou ruído de cor, o PNG conservá-los-á intactos - simplesmente evita que se adicionem mais. Pense na conversão como "congelar" o estado atual da imagem para que edições futuras não a degradem mais.',
   },
   {
     type: 'title',

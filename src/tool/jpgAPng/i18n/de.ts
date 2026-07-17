@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Dateien auswählen',
   processedFiles: 'Verarbeitete Dateien',
   downloadAll: 'Alles herunterladen (.zip)',
-  pending: 'Ausstehend': 'Literaturhinweise',
+  pending: 'Ausstehend',
+  bibliographyTitle: 'Literaturhinweise',
   faqTitle: 'Häufig gestellte Fragen',
 };
 
@@ -59,7 +60,7 @@ const seo: JpgAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>JPG</strong> ist für Kamerafotos unschlagbar, hat aber eine Schwachstelle: Bei jedem Speichern der Datei wird die verlustbehaftete Kompression erneut angewendet, wodurch Kanten und Verläufe schrittweise verschlechtert werden. <strong>PNG</strong> verwendet verlustfreie Kompression – einmal gespeichert, sind die Pixel unveränderlich. Die Konvertierung von JPG in PNG ist der entscheidende Vorgang, wenn Sie ein Bild für eine intensive Bearbeitung vorbereiten, einen transparenten Hintergrund hinzufügen oder es in einen Designfluss integrieren müssen, der mehrfaches Speichern erfordert.',
+    html: '<strong>JPG</strong> ist für Kamerafotos unschlagbar, hat aber eine Schwachstelle: Bei jedem Speichern der Datei wird die verlustbehaftete Kompression erneut angewendet, wodurch Kanten und Verläufe schrittweise verschlechtert werden. <strong>PNG</strong> verwendet verlustfreie Kompression - einmal gespeichert, sind die Pixel unveränderlich. Die Konvertierung von JPG in PNG ist der entscheidende Vorgang, wenn Sie ein Bild für eine intensive Bearbeitung vorbereiten, einen transparenten Hintergrund hinzufügen oder es in einen Designfluss integrieren müssen, der mehrfaches Speichern erfordert.',
   },
   {
     type: 'title',
@@ -100,8 +101,8 @@ const seo: JpgAPngLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Sofortige Geschwindigkeit – null Netzwerklatenz',
-          'Vollständige Privatsphäre – 0 Bytes nach außen gesendet',
+          'Sofortige Geschwindigkeit - null Netzwerklatenz',
+          'Vollständige Privatsphäre - 0 Bytes nach außen gesendet',
           'Keine MB-Limits oder Beschränkungen der Dateianzahl',
           'Saubere Schnittstelle, ohne Anzeigen oder Tracking',
         ],
@@ -115,16 +116,16 @@ const seo: JpgAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Der Prozess ist rein lokal: Der Browser erstellt einen <strong>Blob</strong> mit dem ausgewählten JPG und zeichnet ihn auf einen <strong>HTML5 Canvas</strong> im Speicher. Sobald er gerendert ist, wird <code>toDataURL(\'image/png\')</code> aufgerufen – der im Browser integrierte PNG-Codec rekodiert jedes Pixel, ohne eine neue verlustbehaftete Kompression anzuwenden. Das Ergebnis ist ein PNG, das den aktuellen Zustand des JPG originalgetreu bewahrt: nicht besser und nicht schlechter, einfach eingefroren.',
+    html: 'Der Prozess ist rein lokal: Der Browser erstellt einen <strong>Blob</strong> mit dem ausgewählten JPG und zeichnet ihn auf einen <strong>HTML5 Canvas</strong> im Speicher. Sobald er gerendert ist, wird <code>toDataURL(\'image/png\')</code> aufgerufen - der im Browser integrierte PNG-Codec rekodiert jedes Pixel, ohne eine neue verlustbehaftete Kompression anzuwenden. Das Ergebnis ist ein PNG, das den aktuellen Zustand des JPG originalgetreu bewahrt: nicht besser und nicht schlechter, einfach eingefroren.',
   },
   {
     type: 'paragraph',
-    html: 'Das resultierende PNG verwendet verlustfreie DEFLATE-Kompression, dieselbe, die von professionellen Tools wie Photoshop oder GIMP verwendet wird. Seine Größe wird größer sein als die des ursprünglichen JPG – normalerweise zwischen dem 2- und 5-fachen –, da es alle Pixel speichert, ohne Informationen zu verwerfen. Das ist der Preis für Treue und unendliche Editierbarkeit.',
+    html: 'Das resultierende PNG verwendet verlustfreie DEFLATE-Kompression, dieselbe, die von professionellen Tools wie Photoshop oder GIMP verwendet wird. Seine Größe wird größer sein als die des ursprünglichen JPG - normalerweise zwischen dem 2- und 5-fachen -, da es alle Pixel speichert, ohne Informationen zu verwerfen. Das ist der Preis für Treue und unendliche Editierbarkeit.',
   },
   {
     type: 'tip',
     title: 'Wichtig: Das PNG stellt keine JPEG Qualität wieder her',
-    html: 'Das Konvertieren eines JPG in PNG <strong>stellt die verlorene Qualität nicht wieder her</strong>, die während der ursprünglichen JPEG-Kompression verloren gegangen ist. Wenn Ihr JPG bereits Blockartefakte oder Farbrauschen hatte, wird das PNG diese intakt bewahren – es verhindert lediglich, dass weitere hinzugefügt werden. Betrachten Sie die Konvertierung als ein "Einfrieren" des aktuellen Zustands des Bildes, damit zukünftige Bearbeitungen es nicht weiter verschlechtern.',
+    html: 'Das Konvertieren eines JPG in PNG <strong>stellt die verlorene Qualität nicht wieder her</strong>, die während der ursprünglichen JPEG-Kompression verloren gegangen ist. Wenn Ihr JPG bereits Blockartefakte oder Farbrauschen hatte, wird das PNG diese intakt bewahren - es verhindert lediglich, dass weitere hinzugefügt werden. Betrachten Sie die Konvertierung als ein "Einfrieren" des aktuellen Zustands des Bildes, damit zukünftige Bearbeitungen es nicht weiter verschlechtern.',
   },
   {
     type: 'title',

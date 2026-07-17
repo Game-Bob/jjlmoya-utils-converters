@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: '选择文件',
   processedFiles: '已处理文件',
   downloadAll: '下载全部 (.zip)',
-  pending: '等待中': '参考文献',
+  pending: '等待中',
+  bibliographyTitle: '参考文献',
   faqTitle: '常见问题',
 };
 
@@ -59,7 +60,7 @@ const seo: JpgAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>JPG</strong> 格式在数字摄影领域占据统治地位已有数十年——兼容性极佳且获得广泛支持。但 Google 设计了 <strong>WebP</strong> 格式来在相同画质下挑战 JPG: 在相同视觉质量的前提下, 文件大小可减少 25–35%。对于致力于解决网页加载缓慢问题的开发人员和营销团队来说, 将 JPG 转换为 WebP 是在不改变设计的前提下, 投资回报率最高的一项优化措施。',
+    html: '<strong>JPG</strong> 格式在数字摄影领域占据统治地位已有数十年-兼容性极佳且获得广泛支持。但 Google 设计了 <strong>WebP</strong> 格式来在相同画质下挑战 JPG: 在相同视觉质量的前提下, 文件大小可减少 25-35%。对于致力于解决网页加载缓慢问题的开发人员和营销团队来说, 将 JPG 转换为 WebP 是在不改变设计的前提下, 投资回报率最高的一项优化措施。',
   },
   {
     type: 'title',
@@ -68,7 +69,7 @@ const seo: JpgAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '当您需要极致的通用兼容性时, <strong>JPG</strong> 仍然是正确的选择: 例如发送给客户的电子邮件、Word 文档、旧版社交媒体平台或尚未接受 WebP 的 CMS 系统。它长达三十年的生态系统保证了任何屏幕、打印机或查看器都能无缝打开它。其主要缺点是体积——1.5 MB 的首屏 JPG 图片可能会降低页面的 LCP 评分, 从而无法达到 Core Web Vitals 的标准。',
+    html: '当您需要极致的通用兼容性时, <strong>JPG</strong> 仍然是正确的选择: 例如发送给客户的电子邮件、Word 文档、旧版社交媒体平台或尚未接受 WebP 的 CMS 系统。它长达三十年的生态系统保证了任何屏幕、打印机或查看器都能无缝打开它。其主要缺点是体积-1.5 MB 的首屏 JPG 图片可能会降低页面的 LCP 评分, 从而无法达到 Core Web Vitals 的标准。',
   },
   {
     type: 'paragraph',
@@ -100,8 +101,8 @@ const seo: JpgAWebpLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          '即时处理——零网络延迟',
-          '完全私密——数据向外发送量为 0 字节',
+          '即时处理-零网络延迟',
+          '完全私密-数据向外发送量为 0 字节',
           '没有 MB 限制或文件数量限制',
           '界面简洁, 无广告或追踪',
         ],
@@ -115,16 +116,16 @@ const seo: JpgAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '当您将 JPG 拖入工具时, 浏览器会创建一个仅存在于 RAM 中的 <strong>Blob 对象</strong>。该 Blob 会被解码并绘制到不可见的 <strong>HTML5 Canvas</strong> 元素中。由于 JPG 不含透明通道, 转换过程非常直接: 引擎通过调用 <code>toDataURL(\'image/webp\')</code> 导出画布, 生成一组由您的操作系统即时下载的字节流——整个过程完全不涉及服务器。',
+    html: '当您将 JPG 拖入工具时, 浏览器会创建一个仅存在于 RAM 中的 <strong>Blob 对象</strong>。该 Blob 会被解码并绘制到不可见的 <strong>HTML5 Canvas</strong> 元素中。由于 JPG 不含透明通道, 转换过程非常直接: 引擎通过调用 <code>toDataURL(\'image/webp\')</code> 导出画布, 生成一组由您的操作系统即时下载的字节流-整个过程完全不涉及服务器。',
   },
   {
     type: 'paragraph',
-    html: 'WebP 压缩算法结合了块预测技术 (类似于 Google VP8 视频编解码器中的技术) 以及色彩转换和算术编码。其结果是生成的文件包含与原始 JPG 相同的视觉感知信息, 但封装效率要高得多——这意味着每次页面访问时传输的千字节更少。',
+    html: 'WebP 压缩算法结合了块预测技术 (类似于 Google VP8 视频编解码器中的技术) 以及色彩转换和算术编码。其结果是生成的文件包含与原始 JPG 相同的视觉感知信息, 但封装效率要高得多-这意味着每次页面访问时传输的千字节更少。',
   },
   {
     type: 'tip',
     title: 'Core Web Vitals 提示: LCP 与图像重量',
-    html: '<strong>最大内容绘画 (LCP)</strong> 是 Google 衡量网页上最大视觉元素加载速度的指标。一个 1.5 MB 的首屏 JPG 可以在没有视觉差异的情况下转换成仅 900 KB (甚至 600 KB) 的 WebP。这 <strong>25–35% 的空间节省</strong> 可以让您的 LCP 评分从“需要改进”变为“良好”, 并提升搜索排名。',
+    html: '<strong>最大内容绘画 (LCP)</strong> 是 Google 衡量网页上最大视觉元素加载速度的指标。一个 1.5 MB 的首屏 JPG 可以在没有视觉差异的情况下转换成仅 900 KB (甚至 600 KB) 的 WebP。这 <strong>25-35% 的空间节省</strong> 可以让您的 LCP 评分从\"需要改进\"变为\"良好\", 并提升搜索排名。',
   },
   {
     type: 'title',
@@ -149,7 +150,7 @@ const seo: JpgAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '将您的 JPG 转换为 WebP 是当今任何网站能采用的最简单、最经济的优化措施之一。使用此工具, 您可以在几秒钟内免费完成, 且您的图像永远不会离开您的设备。更少的千字节, 更好的 LCP, 更快的网页——而这一切都建立在您已经拥有的完全相同的视觉效果之上。',
+    html: '将您的 JPG 转换为 WebP 是当今任何网站能采用的最简单、最经济的优化措施之一。使用此工具, 您可以在几秒钟内免费完成, 且您的图像永远不会离开您的设备。更少的千字节, 更好的 LCP, 更快的网页-而这一切都建立在您已经拥有的完全相同的视觉效果之上。',
   },
 ];
 

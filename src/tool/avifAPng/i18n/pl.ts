@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Wybierz pliki',
   processedFiles: 'Przetworzone pliki',
   downloadAll: 'Pobierz wszystko (.zip)',
-  pending: 'Oczekiwanie': 'Bibliografia',
+  pending: 'Oczekiwanie',
+  bibliographyTitle: 'Bibliografia',
   faqTitle: 'Często zadawane pytania',
 };
 
@@ -59,7 +60,7 @@ const seo: AvifAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'AVIF to format idealny do dostarczania obrazów w sieci — małe pliki, wysoka jakość. Kiedy jednak przychodzi czas na edycję, retusz lub pracę z tymi obrazami w narzędziach projektowych, AVIF staje się przeszkodą. Figma, Photoshop, Illustrator, Sketch i praktycznie każde profesjonalne narzędzie do projektowania oczekują przesyłania plików PNG do pracy z przezroczystościami i bezstratnej edycji. Konwersja AVIF na PNG to most między światem dystrybucji internetowej a światem kreatywnej edycji.',
+    html: 'AVIF to format idealny do dostarczania obrazów w sieci - małe pliki, wysoka jakość. Kiedy jednak przychodzi czas na edycję, retusz lub pracę z tymi obrazami w narzędziach projektowych, AVIF staje się przeszkodą. Figma, Photoshop, Illustrator, Sketch i praktycznie każde profesjonalne narzędzie do projektowania oczekują przesyłania plików PNG do pracy z przezroczystościami i bezstratnej edycji. Konwersja AVIF na PNG to most między światem dystrybucji internetowej a światem kreatywnej edycji.',
   },
   {
     type: 'title',
@@ -115,7 +116,7 @@ const seo: AvifAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Nowoczesne przeglądarki dekodują format AVIF natywnie dzięki wbudowanym silnikom AV1. Przy ładowaniu pliku przeglądarka dekoduje go w pamięci, zachowując wszystkie informacje o kanale alfa. Zdekodowany obraz — wraz z przezroczystościami — jest rysowany na elemencie <code>Canvas</code> HTML5 z odpowiednim trybem kompozycji w celu zachowania kanału alfa.',
+    html: 'Nowoczesne przeglądarki dekodują format AVIF natywnie dzięki wbudowanym silnikom AV1. Przy ładowaniu pliku przeglądarka dekoduje go w pamięci, zachowując wszystkie informacje o kanale alfa. Zdekodowany obraz - wraz z przezroczystościami - jest rysowany na elemencie <code>Canvas</code> HTML5 z odpowiednim trybem kompozycji w celu zachowania kanału alfa.',
   },
   {
     type: 'paragraph',
@@ -149,7 +150,7 @@ const seo: AvifAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'AVIF i PNG to idealni partnerzy w nowoczesnym procesie roboczym: AVIF do wydajnej dystrybucji w sieci, PNG do edycji i współpracy w narzędziach projektowych. Dzięki naszemu konwerterowi przejście z jednego formatu do drugiego jest natychmiastowe, prywatne i zachowuje każdy detal — dokładnie to, czego potrzebujesz, gdy Twoje zasoby wizualne mają znaczenie.',
+    html: 'AVIF i PNG to idealni partnerzy w nowoczesnym procesie roboczym: AVIF do wydajnej dystrybucji w sieci, PNG do edycji i współpracy w narzędziach projektowych. Dzięki naszemu konwerterowi przejście z jednego formatu do drugiego jest natychmiastowe, prywatne i zachowuje każdy detal - dokładnie to, czego potrzebujesz, gdy Twoje zasoby wizualne mają znaczenie.',
   },
 ];
 

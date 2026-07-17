@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Wybierz pliki',
   processedFiles: 'Przetworzone pliki',
   downloadAll: 'Pobierz wszystko (.zip)',
-  pending: 'Oczekiwanie': 'Bibliografia',
+  pending: 'Oczekiwanie',
+  bibliographyTitle: 'Bibliografia',
   faqTitle: 'Często zadawane pytania',
 };
 
@@ -72,7 +73,7 @@ const seo: GifAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Oprócz doskonałej przezroczystości, PNG eliminuje limit 256 kolorów GIF. Zrzuty ekranu, ilustracje z gradientami, logo z cieniami – wszystkie wyglądają znacznie lepiej w formacie PNG. A ponieważ jest to kompresja bezstratna, każdy piksel zachowuje dokładnie oryginalną wartość, bez artefaktów, które wprowadziłaby konwersja do JPG.',
+    html: 'Oprócz doskonałej przezroczystości, PNG eliminuje limit 256 kolorów GIF. Zrzuty ekranu, ilustracje z gradientami, logo z cieniami - wszystkie wyglądają znacznie lepiej w formacie PNG. A ponieważ jest to kompresja bezstratna, każdy piksel zachowuje dokładnie oryginalną wartość, bez artefaktów, które wprowadziłaby konwersja do JPG.',
   },
   {
     type: 'title',
@@ -124,7 +125,7 @@ const seo: GifAPngLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'Przezroczystość binarna GIF vs kanał alfa PNG',
-    html: 'GIF obsługuje tylko przezroczystość binarną (nieprzezroczysty lub przezroczysty). Przy konwersji do PNG, półprzezroczyste piksele GIF są zachowywane tak, jak interpretuje je przeglądarka. Jeśli Twój GIF ma ząbkowane krawędzie, plik PNG je zachowa – ale będziesz mógł je edytować z wygładzaniem krawędzi w dowolnym edytorze, co jest niemożliwe w przypadku oryginalnego GIF-a.',
+    html: 'GIF obsługuje tylko przezroczystość binarną (nieprzezroczysty lub przezroczysty). Przy konwersji do PNG, półprzezroczyste piksele GIF są zachowywane tak, jak interpretuje je przeglądarka. Jeśli Twój GIF ma ząbkowane krawędzie, plik PNG je zachowa - ale będziesz mógł je edytować z wygładzaniem krawędzi w dowolnym edytorze, co jest niemożliwe w przypadku oryginalnego GIF-a.',
   },
   {
     type: 'title',

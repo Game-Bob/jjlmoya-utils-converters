@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Sélectionner des fichiers',
   processedFiles: 'Fichiers traités',
   downloadAll: 'Tout télécharger (.zip)',
-  pending: 'En attente': 'Références Bibliographiques',
+  pending: 'En attente',
+  bibliographyTitle: 'Références Bibliographiques',
   faqTitle: 'Questions Fréquentes',
 };
 
@@ -54,7 +55,7 @@ const howTo: GifAJpgLocaleContent['howTo'] = [
 const seo: GifAJpgLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Convertisseur GIF vers JPG : Extrayez des Fotogrammes en Images Haute Qualité',
+    text: 'Convertisseur GIF vers JPG: Extrayez des Fotogrammes en Images Haute Qualité',
     level: 2,
   },
   {
@@ -63,20 +64,20 @@ const seo: GifAJpgLocaleContent['seo'] = [
   },
   {
     type: 'title',
-    text: 'GIF vs JPG : deux formats aux objectifs opposés',
+    text: 'GIF vs JPG: deux formats aux objectifs opposés',
     level: 3,
   },
   {
     type: 'paragraph',
-    html: 'Le GIF (Graphics Interchange Format) a été conçu en 1987 avec une limitation sévère qui persiste encore aujourd\'hui : il ne peut représenter que 256 couleurs par image. Cette contrainte technique n\'avait pas d\'importance pour les animations simples à palettes réduites, mais elle en fait un format visuellement pauvre pour la photographie réelle. Le JPG, en revanche, peut restituer des millions de couleurs grâce à des algorithmes de compression perceptuelle avancés.',
+    html: 'Le GIF (Graphics Interchange Format) a été conçu en 1987 avec une limitation sévère qui persiste encore aujourd\'hui: il ne peut représenter que 256 couleurs par image. Cette contrainte technique n\'avait pas d\'importance pour les animations simples à palettes réduites, mais elle en fait un format visuellement pauvre pour la photographie réelle. Le JPG, en revanche, peut restituer des millions de couleurs grâce à des algorithmes de compression perceptuelle avancés.',
   },
   {
     type: 'paragraph',
-    html: 'Extraire une image d\'un GIF et la sauvegarder en JPG offre de nombreuses applications pratiques : générer des miniatures pour les lecteurs vidéo, créer des aperçus pour les systèmes de gestion de contenu, obtenir des images statiques pour des présentations, ou simplement archiver un moment visuel d\'une animation complexe. Le JPG résultant sera bien plus léger que le GIF original et universellement compatible.',
+    html: 'Extraire une image d\'un GIF et la sauvegarder en JPG offre de nombreuses applications pratiques: générer des miniatures pour les lecteurs vidéo, créer des aperçus pour les systèmes de gestion de contenu, obtenir des images statiques pour des présentations, ou simplement archiver un moment visuel d\'une animation complexe. Le JPG résultant sera bien plus léger que le GIF original et universellement compatible.',
   },
   {
     type: 'title',
-    text: 'Comparaison d\'Architecture : Local vs Cloud',
+    text: 'Comparaison d\'Architecture: Local vs Cloud',
     level: 3,
   },
   {
@@ -103,7 +104,7 @@ const seo: GifAJpgLocaleContent['seo'] = [
           'Le GIF ne quitte jamais votre appareil',
           'Vitesse instantanée sans attente réseau',
           'Aucune limite de taille ni de quota de fichiers',
-          'Confidentialité totale : 0 octet envoyé à l\'extérieur',
+          'Confidentialité totale: 0 octet envoyé à l\'extérieur',
         ],
       },
     ],
@@ -124,7 +125,7 @@ const seo: GifAJpgLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'Palette de couleurs limitée du GIF',
-    html: 'Le GIF ne peut contenir que 256 couleurs par image. Le JPG extrait héritera de cette palette réduite du fichier original : si le GIF contenait des dégradés ou des photographies, il peut apparaître avec une certaine postérisation. Pour de meilleurs résultats, utilisez des GIF avec des couleurs simples ou des illustrations.',
+    html: 'Le GIF ne peut contenir que 256 couleurs par image. Le JPG extrait héritera de cette palette réduite du fichier original: si le GIF contenait des dégradés ou des photographies, il peut apparaître avec une certaine postérisation. Pour de meilleurs résultats, utilisez des GIF avec des couleurs simples ou des illustrations.',
   },
   {
     type: 'title',
@@ -144,7 +145,7 @@ const seo: GifAJpgLocaleContent['seo'] = [
   },
   {
     type: 'title',
-    text: 'Conclusion : l\'image qui vaut plus que l\'animation',
+    text: 'Conclusion: l\'image qui vaut plus que l\'animation',
     level: 3,
   },
   {

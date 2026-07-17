@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Select files',
   processedFiles: 'Processed files',
   downloadAll: 'Download All (.zip)',
-  pending: 'Pending': 'Bibliographic References',
+  pending: 'Pending',
+  bibliographyTitle: 'Bibliographic References',
   faqTitle: 'Frequently Asked Questions',
 };
 
@@ -119,12 +120,12 @@ const seo: SvgAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Unlike conversion to JPG, when exporting to PNG the canvas retains the full alpha channel: transparent areas in the original SVG become fully transparent pixels in the resulting PNG — no white background fill. The export uses the <code>toDataURL(\'image/png\')</code> method with lossless compression.',
+    html: 'Unlike conversion to JPG, when exporting to PNG the canvas retains the full alpha channel: transparent areas in the original SVG become fully transparent pixels in the resulting PNG - no white background fill. The export uses the <code>toDataURL(\'image/png\')</code> method with lossless compression.',
   },
   {
     type: 'tip',
     title: 'Tip before rasterising',
-    html: 'Choose your PNG export size carefully — rasterising an SVG is a one-way process: you cannot recover the vectors from the resulting PNG. Always keep the original SVG as the master source, and generate PNGs at the highest resolution you may ever need.',
+    html: 'Choose your PNG export size carefully - rasterising an SVG is a one-way process: you cannot recover the vectors from the resulting PNG. Always keep the original SVG as the master source, and generate PNGs at the highest resolution you may ever need.',
   },
   {
     type: 'title',

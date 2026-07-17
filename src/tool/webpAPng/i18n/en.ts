@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Select files',
   processedFiles: 'Processed files',
   downloadAll: 'Download All (.zip)',
-  pending: 'Pending': 'Bibliographic References',
+  pending: 'Pending',
+  bibliographyTitle: 'Bibliographic References',
   faqTitle: 'Frequently Asked Questions',
 };
 
@@ -124,7 +125,7 @@ const seo: WebpAPngLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'Tip for editors',
-    html: 'Use PNG when you need to continue editing the image. Lossless compression guarantees no quality degradation from repeated saves — critical when working with layers, masks or colour adjustments in Photoshop or Figma.',
+    html: 'Use PNG when you need to continue editing the image. Lossless compression guarantees no quality degradation from repeated saves - critical when working with layers, masks or colour adjustments in Photoshop or Figma.',
   },
   {
     type: 'title',
@@ -149,7 +150,7 @@ const seo: WebpAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'If WebP is the web server format, PNG is the design studio format. This tool converts your WebP assets into production-ready PNGs, with transparency intact and maximum quality — all in your browser and without your files ever leaving your machine.',
+    html: 'If WebP is the web server format, PNG is the design studio format. This tool converts your WebP assets into production-ready PNGs, with transparency intact and maximum quality - all in your browser and without your files ever leaving your machine.',
   },
 ];
 

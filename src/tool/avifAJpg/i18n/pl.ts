@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Wybierz pliki',
   processedFiles: 'Przetworzone pliki',
   downloadAll: 'Pobierz wszystko (.zip)',
-  pending: 'Oczekiwanie': 'Bibliografia',
+  pending: 'Oczekiwanie',
+  bibliographyTitle: 'Bibliografia',
   faqTitle: 'Często zadawane pytania',
 };
 
@@ -124,7 +125,7 @@ const seo: AvifAJpgLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'Idealna równowaga między kompresją a kompatybilnością',
-    html: 'AVIF jest o 50% mniejszy niż JPG przy tej samej jakości — jednak JPG oferuje 100% kompatybilności z każdym oprogramowaniem. Jeśli otrzymasz obrazy AVIF i chcesz je edytować, wysłać e-mailem lub otworzyć w programach komputerowych, najpierw skonwertuj je do formatu JPG.',
+    html: 'AVIF jest o 50% mniejszy niż JPG przy tej samej jakości - jednak JPG oferuje 100% kompatybilności z każdym oprogramowaniem. Jeśli otrzymasz obrazy AVIF i chcesz je edytować, wysłać e-mailem lub otworzyć w programach komputerowych, najpierw skonwertuj je do formatu JPG.',
   },
   {
     type: 'title',

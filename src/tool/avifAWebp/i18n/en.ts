@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Select files',
   processedFiles: 'Processed files',
   downloadAll: 'Download All (.zip)',
-  pending: 'Pending': 'Bibliographic References',
+  pending: 'Pending',
+  bibliographyTitle: 'Bibliographic References',
   faqTitle: 'Frequently Asked Questions',
 };
 
@@ -59,7 +60,7 @@ const seo: AvifAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'AVIF is the most advanced image format available today: smaller than WebP, smaller than JPG, with superior visual quality. However, its adoption has been uneven — Safari did not support it until 2024, and many older mobile devices do not recognize it. WebP, on the other hand, has been established as the modern web standard for years with over 95% global support. Converting AVIF to WebP is the pragmatic decision when you need modernity without risking compatibility.',
+    html: 'AVIF is the most advanced image format available today: smaller than WebP, smaller than JPG, with superior visual quality. However, its adoption has been uneven - Safari did not support it until 2024, and many older mobile devices do not recognize it. WebP, on the other hand, has been established as the modern web standard for years with over 95% global support. Converting AVIF to WebP is the pragmatic decision when you need modernity without risking compatibility.',
   },
   {
     type: 'title',
@@ -68,7 +69,7 @@ const seo: AvifAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'AVIF delivers the most advanced compression available — typically 20-30% smaller than WebP at the same quality. Its AV1-based technology is the most modern in the industry. However, AVIF support still has blind spots: older Safari versions, some browsers on older Android devices, and certain desktop image viewers do not recognize it. For production web with broad and diverse audiences, this poses a risk.',
+    html: 'AVIF delivers the most advanced compression available - typically 20-30% smaller than WebP at the same quality. Its AV1-based technology is the most modern in the industry. However, AVIF support still has blind spots: older Safari versions, some browsers on older Android devices, and certain desktop image viewers do not recognize it. For production web with broad and diverse audiences, this poses a risk.',
   },
   {
     type: 'paragraph',
@@ -100,7 +101,7 @@ const seo: AvifAWebpLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Total privacy — 0 bytes leave your device',
+          'Total privacy - 0 bytes leave your device',
           'Instant speed without network dependency',
           'No size or file count limits',
           'Works without an internet connection',
@@ -124,7 +125,7 @@ const seo: AvifAWebpLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'WebP: the pragmatic choice of the modern developer',
-    html: 'WebP has over 95% browser support — AVIF is growing but has not reached that figure yet. For production sites without adaptive format detection, WebP is the safe choice that covers almost any audience. Convert your AVIFs to WebP and serve modern images with confidence.',
+    html: 'WebP has over 95% browser support - AVIF is growing but has not reached that figure yet. For production sites without adaptive format detection, WebP is the safe choice that covers almost any audience. Convert your AVIFs to WebP and serve modern images with confidence.',
   },
   {
     type: 'title',
@@ -149,7 +150,7 @@ const seo: AvifAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'AVIF is the cutting edge of image compression, but WebP is the reliable and universal choice of the modern web ecosystem. With our tool, you convert from the newest to the most supported in an instant — without uploading anything to any server, with total privacy and no size limits.',
+    html: 'AVIF is the cutting edge of image compression, but WebP is the reliable and universal choice of the modern web ecosystem. With our tool, you convert from the newest to the most supported in an instant - without uploading anything to any server, with total privacy and no size limits.',
   },
 ];
 

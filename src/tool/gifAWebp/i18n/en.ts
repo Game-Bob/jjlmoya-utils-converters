@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Select files',
   processedFiles: 'Processed files',
   downloadAll: 'Download All (.zip)',
-  pending: 'Pending': 'Bibliographic References',
+  pending: 'Pending',
+  bibliographyTitle: 'Bibliographic References',
   faqTitle: 'Frequently Asked Questions',
 };
 
@@ -68,11 +69,11 @@ const seo: GifAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'GIF is a 1987 format not originally designed for animations — that feature arrived as a later hack. Its 256-color palette, inefficient compression, and inability to handle audio make it an obsolete format. WebP, developed by Google in 2010, offers superior compression both lossy and lossless, native animation support, and full alpha channel.',
+    html: 'GIF is a 1987 format not originally designed for animations - that feature arrived as a later hack. Its 256-color palette, inefficient compression, and inability to handle audio make it an obsolete format. WebP, developed by Google in 2010, offers superior compression both lossy and lossless, native animation support, and full alpha channel.',
   },
   {
     type: 'paragraph',
-    html: 'For a web developer, replacing GIFs with WebP on pages can mean a 10-30 point improvement in Google PageSpeed score. Less page weight means better Core Web Vitals, better SEO rankings, and lower bandwidth costs on servers. It is not just an aesthetic improvement — it is a technical architecture decision.',
+    html: 'For a web developer, replacing GIFs with WebP on pages can mean a 10-30 point improvement in Google PageSpeed score. Less page weight means better Core Web Vitals, better SEO rankings, and lower bandwidth costs on servers. It is not just an aesthetic improvement - it is a technical architecture decision.',
   },
   {
     type: 'title',

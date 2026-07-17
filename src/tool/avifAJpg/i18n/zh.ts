@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: '选择文件',
   processedFiles: '已处理文件',
   downloadAll: '下载全部 (.zip)',
-  pending: '等待中': '参考文献记录',
+  pending: '等待中',
+  bibliographyTitle: '参考文献记录',
   faqTitle: '常见问题',
 };
 
@@ -47,7 +48,7 @@ const howTo: AvifAJpgLocaleContent['howTo'] = [
   },
   {
     name: '保存或下载 ZIP',
-    text: '逐个下载新的 JPG 图像，或者如果进行了批量处理，点击“下载全部”进行保存。',
+    text: '逐个下载新的 JPG 图像，或者如果进行了批量处理，点击\"下载全部\"进行保存。',
   },
 ];
 
@@ -68,7 +69,7 @@ const seo: AvifAJpgLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'AVIF 的压缩能力非常出色：在 JPG 中占用 4 MB 的高分辨率照片，在 AVIF 中仅占 2 MB 且能保持相同的感知质量。这对于对加载性能要求极高的网页分发来说非常完美。然而，在浏览器之外，AVIF 几乎是“隐身”的：Windows 资源管理器无法预览它，相机也无法直接导出它，设计师们在工作流中也不太愿意接受它。',
+    html: 'AVIF 的压缩能力非常出色：在 JPG 中占用 4 MB 的高分辨率照片，在 AVIF 中仅占 2 MB 且能保持相同的感知质量。这对于对加载性能要求极高的网页分发来说非常完美。然而，在浏览器之外，AVIF 几乎是\"隐身\"的：Windows 资源管理器无法预览它，相机也无法直接导出它，设计师们在工作流中也不太愿意接受它。',
   },
   {
     type: 'paragraph',
@@ -124,7 +125,7 @@ const seo: AvifAJpgLocaleContent['seo'] = [
   {
     type: 'tip',
     title: '压缩与兼容性的平衡',
-    html: '在相同质量下，AVIF 比 JPG 小 50% —— 但 JPG 与任何软件都有 100% 的兼容性。如果您从服务器收到 AVIF 图像，且需要编辑、发送邮件或在桌面工具中打开它们，请先将它们转换为 JPG。',
+    html: '在相同质量下，AVIF 比 JPG 小 50% - 但 JPG 与任何软件都有 100% 的兼容性。如果您从服务器收到 AVIF 图像，且需要编辑、发送邮件或在桌面工具中打开它们，请先将它们转换为 JPG。',
   },
   {
     type: 'title',

@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Sélectionner des fichiers',
   processedFiles: 'Fichiers traités',
   downloadAll: 'Tout télécharger (.zip)',
-  pending: 'En attente': 'Références Bibliographiques',
+  pending: 'En attente',
+  bibliographyTitle: 'Références Bibliographiques',
   faqTitle: 'Questions Fréquentes',
 };
 
@@ -54,29 +55,29 @@ const howTo: WebpAJpgLocaleContent['howTo'] = [
 const seo: WebpAJpgLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Convertisseur WebP vers JPG : Compatibilité Universelle sans Compromettre la Confidentialité',
+    text: 'Convertisseur WebP vers JPG: Compatibilité Universelle sans Compromettre la Confidentialité',
     level: 2,
   },
   {
     type: 'paragraph',
-    html: '<strong>WebP</strong> est le pari de Google sur l\'efficacité : des images plus légères avec une qualité comparable au JPG traditionnel. Cependant, sa compatibilité reste un problème dans le monde réel. Les clients de messagerie comme Outlook, les anciens logiciels de conception, les applications de messagerie et les flux de travail en entreprise dépendent toujours de l\'ubiquitaire <strong>JPG</strong>. Convertir WebP en JPG est le pont entre le web moderne et le monde réel.',
+    html: '<strong>WebP</strong> est le pari de Google sur l\'efficacité: des images plus légères avec une qualité comparable au JPG traditionnel. Cependant, sa compatibilité reste un problème dans le monde réel. Les clients de messagerie comme Outlook, les anciens logiciels de conception, les applications de messagerie et les flux de travail en entreprise dépendent toujours de l\'ubiquitaire <strong>JPG</strong>. Convertir WebP en JPG est le pont entre le web moderne et le monde réel.',
   },
   {
     type: 'title',
-    text: 'WebP vs JPG : Quand utiliser chaque format ?',
+    text: 'WebP vs JPG: Quand utiliser chaque format ?',
     level: 3,
   },
   {
     type: 'paragraph',
-    html: 'WebP excelle dans les environnements contrôlés : sites web modernes sur Chrome, Edge ou Firefox où la compatibilité du navigateur peut être garantie. Sa compression supérieure réduit le poids des fichiers de 25-35% par rapport à un JPG équivalent, améliorant les temps de chargement et les métriques Core Web Vitals. C\'est le format idéal lorsque vous contrôlez l\'environnement de visualisation.',
+    html: 'WebP excelle dans les environnements contrôlés: sites web modernes sur Chrome, Edge ou Firefox où la compatibilité du navigateur peut être garantie. Sa compression supérieure réduit le poids des fichiers de 25-35% par rapport à un JPG équivalent, améliorant les temps de chargement et les métriques Core Web Vitals. C\'est le format idéal lorsque vous contrôlez l\'environnement de visualisation.',
   },
   {
     type: 'paragraph',
-    html: 'Le JPG, quant à lui, fonctionne dans <em>absolument tous les contextes</em> : pièces jointes d\'e-mails, présentations PowerPoint, documents Word, imprimantes domestiques, applications d\'édition héritées et plateformes sociales sans exception. Si vous avez besoin que quelqu\'un ouvre votre image sans friction technique, le JPG est la bonne réponse.',
+    html: 'Le JPG, quant à lui, fonctionne dans <em>absolument tous les contextes</em>: pièces jointes d\'e-mails, présentations PowerPoint, documents Word, imprimantes domestiques, applications d\'édition héritées et plateformes sociales sans exception. Si vous avez besoin que quelqu\'un ouvre votre image sans friction technique, le JPG est la bonne réponse.',
   },
   {
     type: 'title',
-    text: 'Comparatif : Conversion Locale vs Cloud',
+    text: 'Comparatif: Conversion Locale vs Cloud',
     level: 3,
   },
   {
@@ -100,7 +101,7 @@ const seo: WebpAJpgLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Zéro octet envoyé : tout se passe dans votre mémoire RAM',
+          'Zéro octet envoyé: tout se passe dans votre mémoire RAM',
           'Vitesse instantanée sans dépendre de votre connexion',
           'Aucune limite sur la taille des fichiers ou le nombre de fichiers',
           'Idéal pour les photos personnelles, médicales ou d\'entreprise',
@@ -119,12 +120,12 @@ const seo: WebpAJpgLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'L\'étape finale est l\'exportation : la méthode <code>toDataURL(\'image/jpeg\')</code> du Canvas convertit les pixels du canevas en un flux d\'octets JPG compressé de haute qualité. Ce flux est livré directement au système de téléchargement du navigateur, sans aucune communication réseau. Tout le processus prend quelques millisecondes, même pour des images de plusieurs mégapixels.',
+    html: 'L\'étape finale est l\'exportation: la méthode <code>toDataURL(\'image/jpeg\')</code> du Canvas convertit les pixels du canevas en un flux d\'octets JPG compressé de haute qualité. Ce flux est livré directement au système de téléchargement du navigateur, sans aucune communication réseau. Tout le processus prend quelques millisecondes, même pour des images de plusieurs mégapixels.',
   },
   {
     type: 'tip',
     title: 'Conseil de compatibilité',
-    html: 'Lorsque vous partagez des photos avec des utilisateurs non techniques ou que vous les envoyez par e-mail, utilisez toujours le JPG — zéro problème de compatibilité sur n\'importe quel client de messagerie, système d\'exploitation ou appareil, sans exception et sans mauvaise surprise.',
+    html: 'Lorsque vous partagez des photos avec des utilisateurs non techniques ou que vous les envoyez par e-mail, utilisez toujours le JPG - zéro problème de compatibilité sur n\'importe quel client de messagerie, système d\'exploitation ou appareil, sans exception et sans mauvaise surprise.',
   },
   {
     type: 'title',

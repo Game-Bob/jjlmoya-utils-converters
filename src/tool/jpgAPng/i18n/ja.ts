@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'ファイルを選択',
   processedFiles: '処理済みファイル',
   downloadAll: 'すべてダウンロード (.zip)',
-  pending: '待機中': '参考文献',
+  pending: '待機中',
+  bibliographyTitle: '参考文献',
   faqTitle: 'よくある質問',
 };
 
@@ -100,8 +101,8 @@ const seo: JpgAPngLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          '瞬時の速度 — ネットワーク遅延ゼロ',
-          '完全なプライバシー — 0バイトが外部に送信される',
+          '瞬時の速度 - ネットワーク遅延ゼロ',
+          '完全なプライバシー - 0バイトが外部に送信される',
           'ファイルサイズやファイル数の制限なし',
           '広告やトラッキングのないクリーンなインターフェース',
         ],

@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Sélectionner des fichiers',
   processedFiles: 'Fichiers traités',
   downloadAll: 'Tout télécharger (.zip)',
-  pending: 'En attente': 'Références Bibliographiques',
+  pending: 'En attente',
+  bibliographyTitle: 'Références Bibliographiques',
   faqTitle: 'Questions Fréquentes',
 };
 
@@ -54,21 +55,21 @@ const howTo: AvifAJpgLocaleContent['howTo'] = [
 const seo: AvifAJpgLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Convertisseur AVIF vers JPG : Compatibilité Universelle pour Vos Images Modernes',
+    text: 'Convertisseur AVIF vers JPG: Compatibilité Universelle pour Vos Images Modernes',
     level: 2,
   },
   {
     type: 'paragraph',
-    html: 'AVIF (AV1 Image File Format) est le format d\'image le plus efficace disponible aujourd\'hui. Développé par l\'Alliance for Open Media et basé sur le codec vidéo AV1, il offre une compression 50% meilleure que le JPG à la même qualité visuelle. Cependant, cet avantage technique a un prix : AVIF n\'est pas pris en charge par Photoshop, Lightroom, la visionneuse de photos Windows, ni par la plupart des outils d\'édition et de visualisation traditionnels. Convertir en JPG résout ce problème à la racine.',
+    html: 'AVIF (AV1 Image File Format) est le format d\'image le plus efficace disponible aujourd\'hui. Développé par l\'Alliance for Open Media et basé sur le codec vidéo AV1, il offre une compression 50% meilleure que le JPG à la même qualité visuelle. Cependant, cet avantage technique a un prix: AVIF n\'est pas pris en charge par Photoshop, Lightroom, la visionneuse de photos Windows, ni par la plupart des outils d\'édition et de visualisation traditionnels. Convertir en JPG résout ce problème à la racine.',
   },
   {
     type: 'title',
-    text: 'AVIF vs JPG : Efficacité versus Compatibilité Universelle',
+    text: 'AVIF vs JPG: Efficacité versus Compatibilité Universelle',
     level: 3,
   },
   {
     type: 'paragraph',
-    html: 'AVIF compresse de manière extraordinaire : une photo haute résolution qui pèse 4 Mo en JPG peut peser à peine 2 Mo en AVIF à la même qualité perçue. Cela le rend parfait pour la livraison web où les performances de chargement sont critiques. Cependant, en dehors du navigateur, AVIF est pratiquement invisible : Windows Explorer ne le prévisualise pas, les appareils photo ne l\'exportent pas, et les designers ne l\'accueillent pas favorablement dans leurs flux de travail.',
+    html: 'AVIF compresse de manière extraordinaire: une photo haute résolution qui pèse 4 Mo en JPG peut peser à peine 2 Mo en AVIF à la même qualité perçue. Cela le rend parfait pour la livraison web où les performances de chargement sont critiques. Cependant, en dehors du navigateur, AVIF est pratiquement invisible: Windows Explorer ne le prévisualise pas, les appareils photo ne l\'exportent pas, et les designers ne l\'accueillent pas favorablement dans leurs flux de travail.',
   },
   {
     type: 'paragraph',
@@ -76,7 +77,7 @@ const seo: AvifAJpgLocaleContent['seo'] = [
   },
   {
     type: 'title',
-    text: 'Comparatif : Convertisseurs Cloud vs Notre Architecture Locale',
+    text: 'Comparatif: Convertisseurs Cloud vs Notre Architecture Locale',
     level: 3,
   },
   {
@@ -124,11 +125,11 @@ const seo: AvifAJpgLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'L\'équilibre parfait entre compression et compatibilité',
-    html: 'AVIF est 50% plus petit que JPG à qualité égale — mais JPG a une compatibilité de 100% avec n\'importe quel logiciel. Si vous recevez des images AVIF du serveur et devez les éditer, les envoyer par email ou les ouvrir dans des outils de bureau, convertissez-les d\'abord en JPG.',
+    html: 'AVIF est 50% plus petit que JPG à qualité égale - mais JPG a une compatibilité de 100% avec n\'importe quel logiciel. Si vous recevez des images AVIF du serveur et devez les éditer, les envoyer par email ou les ouvrir dans des outils de bureau, convertissez-les d\'abord en JPG.',
   },
   {
     type: 'title',
-    text: 'Cas d\'utilisation : quand convertir AVIF en JPG',
+    text: 'Cas d\'utilisation: quand convertir AVIF en JPG',
     level: 3,
   },
   {
@@ -139,17 +140,17 @@ const seo: AvifAJpgLocaleContent['seo'] = [
       'Partage d\'images avec des utilisateurs sur des appareils ou systèmes d\'exploitation anciens.',
       'Pièces jointes d\'emails pour garantir la visualisation dans n\'importe quel client de messagerie.',
       'Publication sur des plateformes qui n\'acceptent pas l\'AVIF comme format de téléversement.',
-      'Impression : les services d\'impression professionnels travaillent nativement avec le JPG.',
+      'Impression: les services d\'impression professionnels travaillent nativement avec le JPG.',
     ],
   },
   {
     type: 'title',
-    text: 'Conclusion : La compatibilité universelle en une seule étape',
+    text: 'Conclusion: La compatibilité universelle en une seule étape',
     level: 3,
   },
   {
     type: 'paragraph',
-    html: 'AVIF est l\'avenir de la compression d\'images, mais le présent exige de la compatibilité. Notre convertisseur vous permet d\'obtenir le meilleur des deux mondes : recevez et stockez des images en AVIF pour une efficacité maximale, et convertissez-les instantanément en JPG quand vous avez besoin qu\'elles fonctionnent dans n\'importe quel contexte. Le tout en toute confidentialité, gratuitement et sans limites.',
+    html: 'AVIF est l\'avenir de la compression d\'images, mais le présent exige de la compatibilité. Notre convertisseur vous permet d\'obtenir le meilleur des deux mondes: recevez et stockez des images en AVIF pour une efficacité maximale, et convertissez-les instantanément en JPG quand vous avez besoin qu\'elles fonctionnent dans n\'importe quel contexte. Le tout en toute confidentialité, gratuitement et sans limites.',
   },
 ];
 

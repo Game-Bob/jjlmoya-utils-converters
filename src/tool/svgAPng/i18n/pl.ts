@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Wybierz pliki',
   processedFiles: 'Przetworzone pliki',
   downloadAll: 'Pobierz wszystko (.zip)',
-  pending: 'Oczekujące': 'Bibliografia',
+  pending: 'Oczekujące',
+  bibliographyTitle: 'Bibliografia',
   faqTitle: 'Często Zadawane Pytania',
 };
 
@@ -119,12 +120,12 @@ const seo: SvgAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'W przeciwieństwie do konwersji na JPG, podczas eksportu do PNG płótno zachowuje pełny kanał alfa: przezroczyste obszary w oryginalnym SVG stają się w pełni przezroczystymi pikselami w wynikowym pliku PNG — bez wypełnienia tła na biało. Eksport wykorzystuje metodę <code>toDataURL(\'image/png\')</code> z bezstratną kompresją.',
+    html: 'W przeciwieństwie do konwersji na JPG, podczas eksportu do PNG płótno zachowuje pełny kanał alfa: przezroczyste obszary w oryginalnym SVG stają się w pełni przezroczystymi pikselami w wynikowym pliku PNG - bez wypełnienia tła na biało. Eksport wykorzystuje metodę <code>toDataURL(\'image/png\')</code> z bezstratną kompresją.',
   },
   {
     type: 'tip',
     title: 'Wskazówka przed rasteryzacją',
-    html: 'Dokładnie wybierz rozmiar eksportu PNG — rasteryzacja pliku SVG jest procesem jednokierunkowym: nie można odzyskać wektorów z wynikowego pliku PNG. Zawsze zachowuj oryginalny plik SVG jako źródło master i generuj pliki PNG w najwyższej rozdzielczości, jakiej możesz kiedykolwiek potrzebować.',
+    html: 'Dokładnie wybierz rozmiar eksportu PNG - rasteryzacja pliku SVG jest procesem jednokierunkowym: nie można odzyskać wektorów z wynikowego pliku PNG. Zawsze zachowuj oryginalny plik SVG jako źródło master i generuj pliki PNG w najwyższej rozdzielczości, jakiej możesz kiedykolwiek potrzebować.',
   },
   {
     type: 'title',

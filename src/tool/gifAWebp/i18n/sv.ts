@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Välj filer',
   processedFiles: 'Bearbetade filer',
   downloadAll: 'Ladda ner alla (.zip)',
-  pending: 'Väntande': 'Bibliografiska Referenser',
+  pending: 'Väntande',
+  bibliographyTitle: 'Bibliografiska Referenser',
   faqTitle: 'Vanliga Frågor',
 };
 
@@ -68,11 +69,11 @@ const seo: GifAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'GIF är ett format från 1987 som ursprungligen inte var designat för animationer – den funktionen kom till som ett senare hack. Dess 256-färgers palett, ineffektiva komprimering och oförmåga att hantera ljud gör det till ett föråldrat format. WebP, utvecklat av Google 2010, erbjuder överlägsen komprimering (både förlustfri och med förlust), inbyggt stöd för animationer och full alfakanal.',
+    html: 'GIF är ett format från 1987 som ursprungligen inte var designat för animationer - den funktionen kom till som ett senare hack. Dess 256-färgers palett, ineffektiva komprimering och oförmåga att hantera ljud gör det till ett föråldrat format. WebP, utvecklat av Google 2010, erbjuder överlägsen komprimering (både förlustfri och med förlust), inbyggt stöd för animationer och full alfakanal.',
   },
   {
     type: 'paragraph',
-    html: 'För en webbutvecklare kan byte av GIF-filer mot WebP på sidor innebära en förbättring av Google PageSpeed-poängen med 10 till 30 punkter. Mindre sidvikt innebär bättre Core Web Vitals, bättre SEO-rankning och lägre bandbreddskostnader på servrar. Det är inte bara en estetisk förbättring – det är ett tekniskt arkitekturbeslut.',
+    html: 'För en webbutvecklare kan byte av GIF-filer mot WebP på sidor innebära en förbättring av Google PageSpeed-poängen med 10 till 30 punkter. Mindre sidvikt innebär bättre Core Web Vitals, bättre SEO-rankning och lägre bandbreddskostnader på servrar. Det är inte bara en estetisk förbättring - det är ett tekniskt arkitekturbeslut.',
   },
   {
     type: 'title',

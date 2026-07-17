@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Select files',
   processedFiles: 'Processed files',
   downloadAll: 'Download All (.zip)',
-  pending: 'Pending': 'Bibliographic References',
+  pending: 'Pending',
+  bibliographyTitle: 'Bibliographic References',
   faqTitle: 'Frequently Asked Questions',
 };
 
@@ -59,7 +60,7 @@ const seo: PngAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>PNG</strong> has been the reference format for web images with transparency for decades — logos, icons, UI elements, product images on cut-out backgrounds. Its problem is file size: the lossless compression that guarantees quality also generates noticeably large files. Google\'s <strong>WebP</strong> solves this contradiction: it supports the alpha channel (transparency) <em>and</em> compresses far better than PNG, making the switch from PNG to WebP on your website a perfect optimization that sacrifices nothing.',
+    html: '<strong>PNG</strong> has been the reference format for web images with transparency for decades - logos, icons, UI elements, product images on cut-out backgrounds. Its problem is file size: the lossless compression that guarantees quality also generates noticeably large files. Google\'s <strong>WebP</strong> solves this contradiction: it supports the alpha channel (transparency) <em>and</em> compresses far better than PNG, making the switch from PNG to WebP on your website a perfect optimization that sacrifices nothing.',
   },
   {
     type: 'title',
@@ -68,7 +69,7 @@ const seo: PngAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>PNG</strong> remains the right format when compatibility is critical: design tools like Photoshop or Figma, print workflows, legacy desktop applications, or any context where WebP support is not guaranteed. It is also the ideal format for saving working layers in editing pipelines, since its lossless compression preserves every pixel. The cost: files that can weigh 3–8 times more than their WebP equivalent.',
+    html: '<strong>PNG</strong> remains the right format when compatibility is critical: design tools like Photoshop or Figma, print workflows, legacy desktop applications, or any context where WebP support is not guaranteed. It is also the ideal format for saving working layers in editing pipelines, since its lossless compression preserves every pixel. The cost: files that can weigh 3-8 times more than their WebP equivalent.',
   },
   {
     type: 'paragraph',
@@ -100,8 +101,8 @@ const seo: PngAWebpLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Instant speed — zero network latency',
-          'Complete privacy — 0 bytes sent externally',
+          'Instant speed - zero network latency',
+          'Complete privacy - 0 bytes sent externally',
           'No MB limits or file count restrictions',
           'Clean interface, no ads or tracking',
         ],
@@ -115,7 +116,7 @@ const seo: PngAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'The PNG is loaded locally and decoded into an in-memory <strong>HTML5 Canvas</strong>. The Canvas API preserves the alpha channel from the original PNG — all transparent and semi-transparent pixels are maintained intact in the RGBA pixel buffer. The canvas is then exported by calling <code>toDataURL(\'image/webp\')</code>, which applies the browser\'s WebP codec (based on Google\'s libwebp) to generate a more compact file without altering the transparency data.',
+    html: 'The PNG is loaded locally and decoded into an in-memory <strong>HTML5 Canvas</strong>. The Canvas API preserves the alpha channel from the original PNG - all transparent and semi-transparent pixels are maintained intact in the RGBA pixel buffer. The canvas is then exported by calling <code>toDataURL(\'image/webp\')</code>, which applies the browser\'s WebP codec (based on Google\'s libwebp) to generate a more compact file without altering the transparency data.',
   },
   {
     type: 'paragraph',
@@ -149,7 +150,7 @@ const seo: PngAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'The move from PNG to WebP is the most complete web image optimization available: you get lighter files, preserve transparency, and improve Core Web Vitals metrics without changing anything about your visual design. This tool does it instantly, for free, and completely privately — your images are processed in your browser and never travel to any external server.',
+    html: 'The move from PNG to WebP is the most complete web image optimization available: you get lighter files, preserve transparency, and improve Core Web Vitals metrics without changing anything about your visual design. This tool does it instantly, for free, and completely privately - your images are processed in your browser and never travel to any external server.',
   },
 ];
 

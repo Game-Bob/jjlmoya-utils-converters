@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: '选择文件',
   processedFiles: '已处理文件',
   downloadAll: '下载全部 (.zip)',
-  pending: '等待中': '参考文献',
+  pending: '等待中',
+  bibliographyTitle: '参考文献',
   faqTitle: '常见问题',
 };
 
@@ -101,7 +102,7 @@ const seo: BmpAWebpLocaleContent['seo'] = [
         highlight: true,
         points: [
           '无需网络传输，即时转换',
-          '绝对隐私——0 字节离开您的设备',
+          '绝对隐私-0 字节离开您的设备',
           '不限单个文件的大小',
           '无需互联网连接即可工作',
         ],
@@ -135,11 +136,11 @@ const seo: BmpAWebpLocaleContent['seo'] = [
     type: 'list',
     icon: 'mdi:check-circle',
     items: [
-      '网页发布——Chrome、Firefox、Safari、Edge 及所有现代浏览器均支持。',
-      '社交网络——Instagram、Twitter、Facebook 原生接受 WebP。',
-      '网页应用与 PWA——极小体积实现即时加载。',
-      '高效归档——替换陈旧的 BMP 集合，节省数以 GB 计的空间。',
-      '邮件营销——轻量级图像，在任何现代邮件客户端中都能快速加载。',
+      '网页发布-Chrome、Firefox、Safari、Edge 及所有现代浏览器均支持。',
+      '社交网络-Instagram、Twitter、Facebook 原生接受 WebP。',
+      '网页应用与 PWA-极小体积实现即时加载。',
+      '高效归档-替换陈旧的 BMP 集合，节省数以 GB 计的空间。',
+      '邮件营销-轻量级图像，在任何现代邮件客户端中都能快速加载。',
     ],
   },
   {
@@ -149,7 +150,7 @@ const seo: BmpAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '如果您有来自 Windows 的陈旧 BMP 文件、未经压缩的截图或来自旧工具的图像，将它们转换为 WebP 是优化存储和网页性能的最有效行动。使用我们的工具，转换是即时的、私密的且无限制的——正应如此。',
+    html: '如果您有来自 Windows 的陈旧 BMP 文件、未经压缩的截图或来自旧工具的图像，将它们转换为 WebP 是优化存储和网页性能的最有效行动。使用我们的工具，转换是即时的、私密的且无限制的-正应如此。',
   },
 ];
 

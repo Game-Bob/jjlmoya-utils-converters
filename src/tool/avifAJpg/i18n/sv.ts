@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Välj filer',
   processedFiles: 'Bearbetade filer',
   downloadAll: 'Ladda ner alla (.zip)',
-  pending: 'Väntande': 'Bibliografiska Referenser',
+  pending: 'Väntande',
+  bibliographyTitle: 'Bibliografiska Referenser',
   faqTitle: 'Vanliga Frågor',
 };
 
@@ -124,7 +125,7 @@ const seo: AvifAJpgLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'Den perfekta balansen mellan kompression och kompatibilitet',
-    html: 'AVIF är 50 % mindre än JPG med samma kvalitet – men JPG har 100 % kompatibilitet med all programvara. Om du får AVIF-bilder från en server och behöver redigera dem, e-posta dem eller öppna dem i skrivbordsverktyg, konvertera dem till JPG först.',
+    html: 'AVIF är 50 % mindre än JPG med samma kvalitet - men JPG har 100 % kompatibilitet med all programvara. Om du får AVIF-bilder från en server och behöver redigera dem, e-posta dem eller öppna dem i skrivbordsverktyg, konvertera dem till JPG först.',
   },
   {
     type: 'title',

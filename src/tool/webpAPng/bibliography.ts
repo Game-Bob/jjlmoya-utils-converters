@@ -1,6 +1,6 @@
 import type { BibliographyEntry } from '../../types';
 
-export const bibliography: BibliographyEntry[] = ['bibliography'] = [
+export const bibliography: BibliographyEntry[] = [
   {
     name: 'Dokumentation der WebP-API und -Bibliothek',
     url: 'https://developers.google.com/speed/webp/docs/api',

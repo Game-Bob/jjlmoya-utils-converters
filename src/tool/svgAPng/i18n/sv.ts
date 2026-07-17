@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Välj filer',
   processedFiles: 'Bearbetade filer',
   downloadAll: 'Ladda ner alla (.zip)',
-  pending: 'Väntande': 'Bibliografiska Referenser',
+  pending: 'Väntande',
+  bibliographyTitle: 'Bibliografiska Referenser',
   faqTitle: 'Vanliga Frågor',
 };
 
@@ -119,12 +120,12 @@ const seo: SvgAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Till skillnad från konvertering till JPG behåller canvasen den fullständiga alfakanalen vid export till PNG: transparenta områden i den ursprungliga SVG-filen blir helt transparenta pixlar i den resulterande PNG-filen – ingen vit bakgrundsfyllning. Exporten använder metoden <code>toDataURL(\'image/png\')</code> med förlustfri komprimering.',
+    html: 'Till skillnad från konvertering till JPG behåller canvasen den fullständiga alfakanalen vid export till PNG: transparenta områden i den ursprungliga SVG-filen blir helt transparenta pixlar i den resulterande PNG-filen - ingen vit bakgrundsfyllning. Exporten använder metoden <code>toDataURL(\'image/png\')</code> med förlustfri komprimering.',
   },
   {
     type: 'tip',
     title: 'Tips före rastrering',
-    html: 'Välj din PNG-exportstorlek noggrant – att rastrera en SVG är en enkelriktad process: du kan inte återfå vektorerna från den resulterande PNG-filen. Behåll alltid den ursprungliga SVG-filen som masterkälla och generera PNG-filer i den högsta upplösning du någonsin kan tänkas behöva.',
+    html: 'Välj din PNG-exportstorlek noggrant - att rastrera en SVG är en enkelriktad process: du kan inte återfå vektorerna från den resulterande PNG-filen. Behåll alltid den ursprungliga SVG-filen som masterkälla och generera PNG-filer i den högsta upplösning du någonsin kan tänkas behöva.',
   },
   {
     type: 'title',

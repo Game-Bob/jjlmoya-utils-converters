@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Sélectionner des fichiers',
   processedFiles: 'Fichiers traités',
   downloadAll: 'Tout télécharger (.zip)',
-  pending: 'En attente': 'Références Bibliographiques',
+  pending: 'En attente',
+  bibliographyTitle: 'Références Bibliographiques',
   faqTitle: 'Questions Fréquentes',
 };
 
@@ -54,21 +55,21 @@ const howTo: AvifAPngLocaleContent['howTo'] = [
 const seo: AvifAPngLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Convertisseur AVIF vers PNG : De la Livraison Web à l\'Édition Professionnelle',
+    text: 'Convertisseur AVIF vers PNG: De la Livraison Web à l\'Édition Professionnelle',
     level: 2,
   },
   {
     type: 'paragraph',
-    html: 'AVIF est le format idéal pour servir des images sur le web — petit, efficace et de haute qualité. Mais quand vient le moment d\'éditer, retoucher ou travailler avec ces images dans des outils de design, AVIF devient un obstacle. Figma, Photoshop, Illustrator, Sketch et pratiquement tout outil de design professionnel attendent du PNG pour le travail avec la transparence et l\'édition sans perte. Convertir AVIF en PNG est le pont entre le monde de la livraison web et celui de la création.',
+    html: 'AVIF est le format idéal pour servir des images sur le web - petit, efficace et de haute qualité. Mais quand vient le moment d\'éditer, retoucher ou travailler avec ces images dans des outils de design, AVIF devient un obstacle. Figma, Photoshop, Illustrator, Sketch et pratiquement tout outil de design professionnel attendent du PNG pour le travail avec la transparence et l\'édition sans perte. Convertir AVIF en PNG est le pont entre le monde de la livraison web et celui de la création.',
   },
   {
     type: 'title',
-    text: 'AVIF vs PNG : Livraison vs Édition',
+    text: 'AVIF vs PNG: Livraison vs Édition',
     level: 3,
   },
   {
     type: 'paragraph',
-    html: 'AVIF excelle comme format de livraison : fichiers petits, chargement rapide, support du canal alpha et qualité visuelle exceptionnelle. Cependant, son écosystème d\'outils est limité. La plupart des logiciels de design ne peuvent pas importer AVIF directement, ce qui perturbe les flux de travail créatifs. Essayer d\'ouvrir un AVIF dans Figma ou l\'importer comme calque dans Photoshop ne fonctionne tout simplement pas.',
+    html: 'AVIF excelle comme format de livraison: fichiers petits, chargement rapide, support du canal alpha et qualité visuelle exceptionnelle. Cependant, son écosystème d\'outils est limité. La plupart des logiciels de design ne peuvent pas importer AVIF directement, ce qui perturbe les flux de travail créatifs. Essayer d\'ouvrir un AVIF dans Figma ou l\'importer comme calque dans Photoshop ne fonctionne tout simplement pas.',
   },
   {
     type: 'paragraph',
@@ -76,7 +77,7 @@ const seo: AvifAPngLocaleContent['seo'] = [
   },
   {
     type: 'title',
-    text: 'Comparatif : Convertisseurs Cloud vs Notre Architecture Locale',
+    text: 'Comparatif: Convertisseurs Cloud vs Notre Architecture Locale',
     level: 3,
   },
   {
@@ -115,7 +116,7 @@ const seo: AvifAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Les navigateurs modernes décodent AVIF nativement grâce à leurs moteurs AV1 intégrés. Lors du chargement du fichier, le navigateur le décode en mémoire en préservant toutes les informations du canal alpha. L\'image décodée — y compris ses transparences — est dessinée sur un élément <code>Canvas</code> HTML5 avec le mode de composition correct pour préserver le canal alpha.',
+    html: 'Les navigateurs modernes décodent AVIF nativement grâce à leurs moteurs AV1 intégrés. Lors du chargement du fichier, le navigateur le décode en mémoire en préservant toutes les informations du canal alpha. L\'image décodée - y compris ses transparences - est dessinée sur un élément <code>Canvas</code> HTML5 avec le mode de composition correct pour préserver le canal alpha.',
   },
   {
     type: 'paragraph',
@@ -128,7 +129,7 @@ const seo: AvifAPngLocaleContent['seo'] = [
   },
   {
     type: 'title',
-    text: 'Cas d\'utilisation : quand vous avez besoin de convertir AVIF en PNG',
+    text: 'Cas d\'utilisation: quand vous avez besoin de convertir AVIF en PNG',
     level: 3,
   },
   {
@@ -144,12 +145,12 @@ const seo: AvifAPngLocaleContent['seo'] = [
   },
   {
     type: 'title',
-    text: 'Conclusion : Le pont entre le web et le design',
+    text: 'Conclusion: Le pont entre le web et le design',
     level: 3,
   },
   {
     type: 'paragraph',
-    html: 'AVIF et PNG sont des compagnons parfaits dans un flux de travail moderne : AVIF pour la livraison web efficace, PNG pour l\'édition et la collaboration dans les outils de design. Avec notre convertisseur, le passage de l\'un à l\'autre est instantané, privé et préserve chaque détail — exactement ce dont vous avez besoin quand vos ressources visuelles comptent.',
+    html: 'AVIF et PNG sont des compagnons parfaits dans un flux de travail moderne: AVIF pour la livraison web efficace, PNG pour l\'édition et la collaboration dans les outils de design. Avec notre convertisseur, le passage de l\'un à l\'autre est instantané, privé et préserve chaque détail - exactement ce dont vous avez besoin quand vos ressources visuelles comptent.',
   },
 ];
 

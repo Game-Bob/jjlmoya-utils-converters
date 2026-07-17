@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Dateien auswählen',
   processedFiles: 'Verarbeitete Dateien',
   downloadAll: 'Alles herunterladen (.zip)',
-  pending: 'Ausstehend': 'Literaturhinweise',
+  pending: 'Ausstehend',
+  bibliographyTitle: 'Literaturhinweise',
   faqTitle: 'Häufig gestellte Fragen',
 };
 
@@ -59,7 +60,7 @@ const seo: PngAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>PNG</strong> war jahrzehntelang das Referenzformat für Webbilder mit Transparenz – Logos, Icons, UI-Elemente, Produktbilder auf freigestelltem Hintergrund. Das Problem ist die Dateigröße: Die verlustfreie Kompression, die Qualität garantiert, erzeugt auch spürbar große Dateien. Googles <strong>WebP</strong> löst diesen Widerspruch: Es unterstützt den Alpha-Kanal (Transparenz) <em>und</em> komprimiert weitaus besser als PNG, was den Wechsel von PNG zu WebP auf Ihrer Website zu einer perfekten Optimierung macht, bei der Sie auf nichts verzichten müssen.',
+    html: '<strong>PNG</strong> war jahrzehntelang das Referenzformat für Webbilder mit Transparenz - Logos, Icons, UI-Elemente, Produktbilder auf freigestelltem Hintergrund. Das Problem ist die Dateigröße: Die verlustfreie Kompression, die Qualität garantiert, erzeugt auch spürbar große Dateien. Googles <strong>WebP</strong> löst diesen Widerspruch: Es unterstützt den Alpha-Kanal (Transparenz) <em>und</em> komprimiert weitaus besser als PNG, was den Wechsel von PNG zu WebP auf Ihrer Website zu einer perfekten Optimierung macht, bei der Sie auf nichts verzichten müssen.',
   },
   {
     type: 'title',
@@ -68,7 +69,7 @@ const seo: PngAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>PNG</strong> bleibt das richtige Format, wenn Kompatibilität entscheidend ist: Design-Tools wie Photoshop oder Figma, Druck-Workflows, ältere Desktop-Anwendungen oder jeder Kontext, in dem WebP-Unterstützung nicht garantiert ist. Es ist auch das ideale Format für das Speichern von Arbeitsebenen in Bearbeitungspipelines, da seine verlustfreie Kompression jeden Pixel bewahrt. Der Preis: Dateien, die 3–8 Mal mehr wiegen können als ihr WebP-Äquivalent.',
+    html: '<strong>PNG</strong> bleibt das richtige Format, wenn Kompatibilität entscheidend ist: Design-Tools wie Photoshop oder Figma, Druck-Workflows, ältere Desktop-Anwendungen oder jeder Kontext, in dem WebP-Unterstützung nicht garantiert ist. Es ist auch das ideale Format für das Speichern von Arbeitsebenen in Bearbeitungspipelines, da seine verlustfreie Kompression jeden Pixel bewahrt. Der Preis: Dateien, die 3-8 Mal mehr wiegen können als ihr WebP-Äquivalent.',
   },
   {
     type: 'paragraph',
@@ -100,8 +101,8 @@ const seo: PngAWebpLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Sofortige Geschwindigkeit – keine Netzwerklatenz',
-          'Vollständige Privatsphäre – 0 Byte werden extern gesendet',
+          'Sofortige Geschwindigkeit - keine Netzwerklatenz',
+          'Vollständige Privatsphäre - 0 Byte werden extern gesendet',
           'Keine Megabyte-Limits oder Dateianzahlbeschränkungen',
           'Saubere Benutzeroberfläche, keine Werbung oder Tracking',
         ],
@@ -115,7 +116,7 @@ const seo: PngAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Die PNG wird lokal geladen und in einem im Speicher befindlichen <strong>HTML5 Canvas</strong> dekodiert. Die Canvas-API bewahrt den Alpha-Kanal der ursprünglichen PNG – alle transparenten und halbtransparenten Pixel bleiben im RGBA-Pixelbuffer intakt. Das Canvas wird dann durch Aufruf von <code>toDataURL(\'image/webp\')</code> exportiert, wodurch der WebP-Codec des Browsers (basierend auf Googles libwebp) angewendet wird, um eine kompaktere Datei zu erzeugen, ohne die Transparenzdaten zu verändern.',
+    html: 'Die PNG wird lokal geladen und in einem im Speicher befindlichen <strong>HTML5 Canvas</strong> dekodiert. Die Canvas-API bewahrt den Alpha-Kanal der ursprünglichen PNG - alle transparenten und halbtransparenten Pixel bleiben im RGBA-Pixelbuffer intakt. Das Canvas wird dann durch Aufruf von <code>toDataURL(\'image/webp\')</code> exportiert, wodurch der WebP-Codec des Browsers (basierend auf Googles libwebp) angewendet wird, um eine kompaktere Datei zu erzeugen, ohne die Transparenzdaten zu verändern.',
   },
   {
     type: 'paragraph',
@@ -149,7 +150,7 @@ const seo: PngAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Der Wechsel von PNG zu WebP ist die umfassendste Webbild-Optimierung, die verfügbar ist: Sie erhalten leichtere Dateien, bewahren die Transparenz und verbessern die Core Web Vitals-Metriken, ohne etwas an Ihrem visuellen Design zu ändern. Dieses Tool erledigt das sofort, kostenlos und völlig privat – Ihre Bilder werden in Ihrem Browser verarbeitet und verlassen niemals Ihr Gerät.',
+    html: 'Der Wechsel von PNG zu WebP ist die umfassendste Webbild-Optimierung, die verfügbar ist: Sie erhalten leichtere Dateien, bewahren die Transparenz und verbessern die Core Web Vitals-Metriken, ohne etwas an Ihrem visuellen Design zu ändern. Dieses Tool erledigt das sofort, kostenlos und völlig privat - Ihre Bilder werden in Ihrem Browser verarbeitet und verlassen niemals Ihr Gerät.',
   },
 ];
 

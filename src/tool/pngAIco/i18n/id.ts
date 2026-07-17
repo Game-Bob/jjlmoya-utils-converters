@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Pilih file',
   processedFiles: 'File yang diproses',
   downloadAll: 'Unduh Semua (.zip)',
-  pending: 'Menunggu': 'Referensi Bibliografi',
+  pending: 'Menunggu',
+  bibliographyTitle: 'Referensi Bibliografi',
   faqTitle: 'Pertanyaan yang Sering Diajukan',
 };
 
@@ -59,7 +60,7 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>PNG dengan transparansi</strong> adalah bahan awal yang ideal untuk membuat ikon ICO profesional. Tidak seperti JPG (yang tidak memiliki saluran alfa) atau format lossy, PNG memberikan apa yang dibutuhkan format ICO: piksel yang tajam, tepi yang bersih, und saluran alfa 32-bit yang memungkinkan ikon berintegrasi sempurna di latar belakang apa pun — baik bilah bookmark putih Safari, bilah gelap Firefox, atau desktop Windows 11.',
+    html: '<strong>PNG dengan transparansi</strong> adalah bahan awal yang ideal untuk membuat ikon ICO profesional. Tidak seperti JPG (yang tidak memiliki saluran alfa) atau format lossy, PNG memberikan apa yang dibutuhkan format ICO: piksel yang tajam, tepi yang bersih, und saluran alfa 32-bit yang memungkinkan ikon berintegrasi sempurna di latar belakang apa pun - baik bilah bookmark putih Safari, bilah gelap Firefox, atau desktop Windows 11.',
   },
   {
     type: 'title',
@@ -68,7 +69,7 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>PNG</strong> adalah format kerja: di sinilah Anda mendesain logo, mengekspor dari Figma atau Illustrator, und menyimpan versi yang dapat diedit. Transparansi, presisi piksel, und kompresi lossless menjadikannya tak terkalahkan untuk proses desain. Namun browser, sistem operasi, und aplikasi Windows yang mencari favicon atau ikon aplikasi tidak menerima PNG secara langsung — mereka membutuhkan ICO.',
+    html: '<strong>PNG</strong> adalah format kerja: di sinilah Anda mendesain logo, mengekspor dari Figma atau Illustrator, und menyimpan versi yang dapat diedit. Transparansi, presisi piksel, und kompresi lossless menjadikannya tak terkalahkan untuk proses desain. Namun browser, sistem operasi, und aplikasi Windows yang mencari favicon atau ikon aplikasi tidak menerima PNG secara langsung - mereka membutuhkan ICO.',
   },
   {
     type: 'paragraph',
@@ -100,8 +101,8 @@ const seo: PngAIcoLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Kecepatan instan — nol latensi jaringan',
-          'Privasi lengkap — 0 byte dikirim secara eksternal',
+          'Kecepatan instan - nol latensi jaringan',
+          'Privasi lengkap - 0 byte dikirim secara eksternal',
           'Tanpa batas MB atau batasan jumlah file',
           'Antarmuka bersih, tanpa iklan atau pelacakan',
         ],
@@ -119,12 +120,12 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Transparansi PNG dipertahankan sepenuhnya dalam ICO yang dihasilkan — piksel transparan tetap transparan, piksel semi-transparan mempertahankan nilai alfa yang tepat, und piksel opak mempertahankan warna aslinya. Ini sangat penting untuk logo pada latar belakang variabel: favicon Anda akan terlihat benar dalam mode terang, mode gelap, und kombinasi warna antarmuka browser apa pun.',
+    html: 'Transparansi PNG dipertahankan sepenuhnya dalam ICO yang dihasilkan - piksel transparan tetap transparan, piksel semi-transparan mempertahankan nilai alfa yang tepat, und piksel opak mempertahankan warna aslinya. Ini sangat penting untuk logo pada latar belakang variabel: favicon Anda akan terlihat benar dalam mode terang, mode gelap, und kombinasi warna antarmuka browser apa pun.',
   },
   {
     type: 'tip',
     title: 'Tip: gunakan PNG 512×512 sebagai sumber Anda',
-    html: 'Untuk hasil terbaik, gunakan <strong>PNG persegi 512×512</strong> sebagai gambar sumber Anda. Resolusi ini memberikan informasi yang cukup kepada konverter untuk menghasilkan semua ukuran ICO standar dengan tajam — dari favicon 16×16 hingga 256×256 untuk layar dengan kepadatan tinggi — tanpa pikselasi atau kehilangan detail tepi. Semakin besar sumber PNG, semakin baik tampilan ukuran ikon kecil.',
+    html: 'Untuk hasil terbaik, gunakan <strong>PNG persegi 512×512</strong> sebagai gambar sumber Anda. Resolusi ini memberikan informasi yang cukup kepada konverter untuk menghasilkan semua ukuran ICO standar dengan tajam - dari favicon 16×16 hingga 256×256 untuk layar dengan kepadatan tinggi - tanpa pikselasi atau kehilangan detail tepi. Semakin besar sumber PNG, semakin baik tampilan ukuran ikon kecil.',
   },
   {
     type: 'title',
@@ -149,7 +150,7 @@ const seo: PngAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'PNG dengan transparansi tidak diragukan lagi merupakan titik awal terbaik untuk membuat ikon ICO berkualitas profesional. Dengan alat ini, konversi dilakukan secara instan, saluran alfa dipertahankan sepenuhnya, und file yang dihasilkan adalah ICO asli dengan struktur biner yang benar. Tidak perlu mengunggah logo ke server mana pun, tanpa watermark, tanpa batas — und transparansi sempurna di semua ukuran.',
+    html: 'PNG dengan transparansi tidak diragukan lagi merupakan titik awal terbaik untuk membuat ikon ICO berkualitas profesional. Dengan alat ini, konversi dilakukan secara instan, saluran alfa dipertahankan sepenuhnya, und file yang dihasilkan adalah ICO asli dengan struktur biner yang benar. Tidak perlu mengunggah logo ke server mana pun, tanpa watermark, tanpa batas - und transparansi sempurna di semua ukuran.',
   },
 ];
 

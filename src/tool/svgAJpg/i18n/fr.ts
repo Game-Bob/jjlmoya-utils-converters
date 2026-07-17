@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Sélectionner des fichiers',
   processedFiles: 'Fichiers traités',
   downloadAll: 'Tout télécharger (.zip)',
-  pending: 'En attente': 'Références Bibliographiques',
+  pending: 'En attente',
+  bibliographyTitle: 'Références Bibliographiques',
   faqTitle: 'Questions Fréquentes',
 };
 
@@ -54,16 +55,16 @@ const howTo: SvgAJpgLocaleContent['howTo'] = [
 const seo: SvgAJpgLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Convertisseur SVG vers JPG : Emmenez vos Vecteurs sur Toutes les Plateformes',
+    text: 'Convertisseur SVG vers JPG: Emmenez vos Vecteurs sur Toutes les Plateformes',
     level: 2,
   },
   {
     type: 'paragraph',
-    html: 'Le format <strong>SVG</strong> est le langage natif du web moderne : léger, évolutif, éditable. Mais il existe des plateformes entières qui ne comprennent tout simplement pas les vecteurs. Les réseaux sociaux, les clients de messagerie, les documents Word, les applications d\'impression et la grande majorité des logiciels du monde réel fonctionnent avec des images rastérisées. Le <strong>JPG</strong> est le plus petit dénominateur commun universel : accepté partout, sans exception, sans plugins ni conversions supplémentaires.',
+    html: 'Le format <strong>SVG</strong> est le langage natif du web moderne: léger, évolutif, éditable. Mais il existe des plateformes entières qui ne comprennent tout simplement pas les vecteurs. Les réseaux sociaux, les clients de messagerie, les documents Word, les applications d\'impression et la grande majorité des logiciels du monde réel fonctionnent avec des images rastérisées. Le <strong>JPG</strong> est le plus petit dénominateur commun universel: accepté partout, sans exception, sans plugins ni conversions supplémentaires.',
   },
   {
     type: 'title',
-    text: 'SVG vs JPG : Quand le Vecteur Doit Devenir une Photo',
+    text: 'SVG vs JPG: Quand le Vecteur Doit Devenir une Photo',
     level: 3,
   },
   {
@@ -72,11 +73,11 @@ const seo: SvgAJpgLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'JPG convertit chaque image en matrice de pixels avec des informations de couleur compressées par l\'algorithme JPEG. Ne supportant pas le canal alpha, le convertisseur fusionne automatiquement le fond avec du blanc solide. En échange, vous obtenez un fichier qui s\'ouvre sur <em>n\'importe quel appareil de la planète</em> : vieux téléphones, imprimantes, téléviseurs intelligents, applications d\'édition vieilles de vingt ans. C\'est le format du plus petit dénominateur commun, et dans bien des contextes, le plus précieux.',
+    html: 'JPG convertit chaque image en matrice de pixels avec des informations de couleur compressées par l\'algorithme JPEG. Ne supportant pas le canal alpha, le convertisseur fusionne automatiquement le fond avec du blanc solide. En échange, vous obtenez un fichier qui s\'ouvre sur <em>n\'importe quel appareil de la planète</em>: vieux téléphones, imprimantes, téléviseurs intelligents, applications d\'édition vieilles de vingt ans. C\'est le format du plus petit dénominateur commun, et dans bien des contextes, le plus précieux.',
   },
   {
     type: 'title',
-    text: 'Comparatif : Conversion Locale vs Cloud',
+    text: 'Comparatif: Conversion Locale vs Cloud',
     level: 3,
   },
   {

@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Bestanden selecteren',
   processedFiles: 'Verwerkte bestanden',
   downloadAll: 'Alles downloaden (.zip)',
-  pending: 'In afwachting': 'Bibliografische Referenties',
+  pending: 'In afwachting',
+  bibliographyTitle: 'Bibliografische Referenties',
   faqTitle: 'Veelgestelde Vragen',
 };
 
@@ -59,7 +60,7 @@ const seo: AvifAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'AVIF is het ideale formaat voor het aanbieden van afbeeldingen op het web — klein, efficiënt en van hoge kwaliteit. Maar wanneer het tijd is om die afbeeldingen te bewerken, te retoucheren of ermee te werken in ontwerptools, wordt AVIF een obstakel. Figma, Photoshop, Illustrator, Sketch en vrijwel elke professionele ontwerptool verwachten PNG voor het werken met transparanties en verliesvrije bewerking. AVIF naar PNG converteren is de brug tussen de wereld van webdistributie en die van creatieve bewerking.',
+    html: 'AVIF is het ideale formaat voor het aanbieden van afbeeldingen op het web - klein, efficiënt en van hoge kwaliteit. Maar wanneer het tijd is om die afbeeldingen te bewerken, te retoucheren of ermee te werken in ontwerptools, wordt AVIF een obstakel. Figma, Photoshop, Illustrator, Sketch en vrijwel elke professionele ontwerptool verwachten PNG voor het werken met transparanties en verliesvrije bewerking. AVIF naar PNG converteren is de brug tussen de wereld van webdistributie en die van creatieve bewerking.',
   },
   {
     type: 'title',
@@ -115,7 +116,7 @@ const seo: AvifAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Moderne browsers decoderen AVIF standaard dankzij hun geïntegreerde AV1-engines. Bij het laden van het bestand decodeert de browser het in het geheugen met behoud van alle informatie van het alfakanaal. De gedecodeerde afbeelding — inclusief de transparanties — wordt op een HTML5-<code>Canvas</code>-element getekend met de juiste compositiemodus om het alfakanaal te behouden.',
+    html: 'Moderne browsers decoderen AVIF standaard dankzij hun geïntegreerde AV1-engines. Bij het laden van het bestand decodeert de browser het in het geheugen met behoud van alle informatie van het alfakanaal. De gedecodeerde afbeelding - inclusief de transparanties - wordt op een HTML5-<code>Canvas</code>-element getekend met de juiste compositiemodus om het alfakanaal te behouden.',
   },
   {
     type: 'paragraph',
@@ -149,7 +150,7 @@ const seo: AvifAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'AVIF en PNG zijn perfecte partners in een moderne workflow: AVIF voor efficiënte weblevering, PNG voor bewerking en samenwerking in ontwerptools. Met onze converter is de overgang van de een naar de ander direct, privé en behoudt elk detail — precies wat je nodig hebt wanneer je visuele assets belangrijk zijn.',
+    html: 'AVIF en PNG zijn perfecte partners in een moderne workflow: AVIF voor efficiënte weblevering, PNG voor bewerking en samenwerking in ontwerptools. Met onze converter is de overgang van de een naar de ander direct, privé en behoudt elk detail - precies wat je nodig hebt wanneer je visuele assets belangrijk zijn.',
   },
 ];
 

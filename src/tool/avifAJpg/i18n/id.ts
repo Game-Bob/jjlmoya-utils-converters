@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Pilih file',
   processedFiles: 'File yang diproses',
   downloadAll: 'Unduh Semua (.zip)',
-  pending: 'Tertunda': 'Referensi Bibliografi',
+  pending: 'Tertunda',
+  bibliographyTitle: 'Referensi Bibliografi',
   faqTitle: 'Pertanyaan Umum',
 };
 
@@ -124,7 +125,7 @@ const seo: AvifAJpgLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'Keseimbangan sempurna antara kompresi dan kompatibilitas',
-    html: 'AVIF 50% lebih kecil dari JPG untuk kualitas yang sama — tetapi JPG memiliki kompatibilitas 100% dengan perangkat lunak apa pun. Jika Anda menerima gambar AVIF dari server dan perlu mengeditnya, mengirimnya melalui email, atau membukanya di alat desktop, ubah ke JPG terlebih dahulu.',
+    html: 'AVIF 50% lebih kecil dari JPG untuk kualitas yang sama - tetapi JPG memiliki kompatibilitas 100% dengan perangkat lunak apa pun. Jika Anda menerima gambar AVIF dari server dan perlu mengeditnya, mengirimnya melalui email, atau membukanya di alat desktop, ubah ke JPG terlebih dahulu.',
   },
   {
     type: 'title',

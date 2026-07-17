@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: '选择文件',
   processedFiles: '已处理文件',
   downloadAll: '下载全部 (.zip)',
-  pending: '等待中': '参考文献',
+  pending: '等待中',
+  bibliographyTitle: '参考文献',
   faqTitle: '常见问题',
 };
 
@@ -124,7 +125,7 @@ const seo: WebpAPngLocaleContent['seo'] = [
   {
     type: 'tip',
     title: '编辑器提示',
-    html: '当您需要继续编辑图像时, 请使用 PNG。无损压缩保证了反复保存不会导致质量下降——这在 Photoshop 或 Figma 中处理图层、蒙版或色彩调整时至关重要。',
+    html: '当您需要继续编辑图像时, 请使用 PNG。无损压缩保证了反复保存不会导致质量下降-这在 Photoshop 或 Figma 中处理图层、蒙版或色彩调整时至关重要。',
   },
   {
     type: 'title',
@@ -149,7 +150,7 @@ const seo: WebpAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '如果 WebP 是网页服务器格式, 那么 PNG 就是设计工作室格式。此工具将您的 WebP 素材转换为生产就绪的 PNG, 保留透明度和最高质量——一切都在您的浏览器中完成, 且您的文件永远不会离开您的机器。',
+    html: '如果 WebP 是网页服务器格式, 那么 PNG 就是设计工作室格式。此工具将您的 WebP 素材转换为生产就绪的 PNG, 保留透明度和最高质量-一切都在您的浏览器中完成, 且您的文件永远不会离开您的机器。',
   },
 ];
 

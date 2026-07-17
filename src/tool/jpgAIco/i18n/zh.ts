@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: '选择文件',
   processedFiles: '已处理文件',
   downloadAll: '下载全部 (.zip)',
-  pending: '等待中': '参考文献',
+  pending: '等待中',
+  bibliographyTitle: '参考文献',
   faqTitle: '常见问题',
 };
 
@@ -59,7 +60,7 @@ const seo: JpgAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>ICO</strong> 格式是 Microsoft 针对 Windows 应用程序图标和网站 favicon 的标准。与简单地将 JPG 重命名为 .ico 不同, 真正的 ICO 文件需要特定的二进制结构, 其中包含 22 字节的标头和嵌入的图像目录。 <strong>JPG</strong> 是创建这些图标最常见的起点——公司徽标、个人资料图片或任何您想变成应用程序或网站视觉标志的图像。',
+    html: '<strong>ICO</strong> 格式是 Microsoft 针对 Windows 应用程序图标和网站 favicon 的标准。与简单地将 JPG 重命名为 .ico 不同, 真正的 ICO 文件需要特定的二进制结构, 其中包含 22 字节的标头和嵌入的图像目录。 <strong>JPG</strong> 是创建这些图标最常见的起点-公司徽标、个人资料图片或任何您想变成应用程序或网站视觉标志的图像。',
   },
   {
     type: 'title',
@@ -68,11 +69,11 @@ const seo: JpgAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>JPG</strong> 是源格式, 而不是图标的目标格式。它非常适合照片和横幅, 但与需要图标的系统不兼容: Windows 资源管理器、浏览器的书签栏、桌面快捷方式或 PWA 应用程序清单。寻找图标的操作系统或浏览器期望的是 ICO 格式——如果找不到, 它将显示通用图标或破裂的正方形。',
+    html: '<strong>JPG</strong> 是源格式, 而不是图标的目标格式。它非常适合照片和横幅, 但与需要图标的系统不兼容: Windows 资源管理器、浏览器的书签栏、桌面快捷方式或 PWA 应用程序清单。寻找图标的操作系统或浏览器期望的是 ICO 格式-如果找不到, 它将显示通用图标或破裂的正方形。',
   },
   {
     type: 'paragraph',
-    html: '<strong>ICO</strong> 格式设计用于在单个文件中包含多种分辨率: 书签栏使用 <strong>16×16</strong>, 快捷方式使用 <strong>32×32</strong>, 资源管理器使用 <strong>48×48</strong>, 高密度显示器使用 <strong>256×256</strong>。浏览器和操作系统会根据显示环境自动选择合适的分辨率——用户无需进行任何管理。',
+    html: '<strong>ICO</strong> 格式设计用于在单个文件中包含多种分辨率: 书签栏使用 <strong>16×16</strong>, 快捷方式使用 <strong>32×32</strong>, 资源管理器使用 <strong>48×48</strong>, 高密度显示器使用 <strong>256×256</strong>。浏览器和操作系统会根据显示环境自动选择合适的分辨率-用户无需进行任何管理。',
   },
   {
     type: 'title',
@@ -100,8 +101,8 @@ const seo: JpgAIcoLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          '即时速度——零网络延迟',
-          '完全私密——数据发送量为 0 字节',
+          '即时速度-零网络延迟',
+          '完全私密-数据发送量为 0 字节',
           '没有 MB 限制或文件数量限制',
           '界面简洁, 无广告或追踪',
         ],
@@ -115,16 +116,16 @@ const seo: JpgAIcoLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'JPG 被解码并绘制到内存中的 <strong>HTML5 Canvas</strong> 上。由于 ICO 格式要求正方形图像, 引擎会自动检测 JPG 是否为长方形, 并通过使最相关的部分居中来进行裁剪。然后, 它使用正确的魔数 (<code>00 00 01 00</code>)、图像目录和编码后的像素数据构建标准的 Microsoft ICO 标头。结果是一个真正的二进制 .ico 文件——而不是重命名的 PNG。',
+    html: 'JPG 被解码并绘制到内存中的 <strong>HTML5 Canvas</strong> 上。由于 ICO 格式要求正方形图像, 引擎会自动检测 JPG 是否为长方形, 并通过使最相关的部分居中来进行裁剪。然后, 它使用正确的魔数 (<code>00 00 01 00</code>)、图像目录和编码后的像素数据构建标准的 Microsoft ICO 标头。结果是一个真正的二进制 .ico 文件-而不是重命名的 PNG。',
   },
   {
     type: 'paragraph',
-    html: '由于 JPG 缺少 Alpha 通道, 生成的 ICO 也不会有透明度——它将具有从原始照片继承的实心背景。如果您需要具有透明背景的 favicon (例如, 为了适应深色或浅色书签栏), 建议的工作流程是: 在编辑器中删除背景, 保存为 PNG, 然后使用 PNG 转 ICO 转换器。',
+    html: '由于 JPG 缺少 Alpha 通道, 生成的 ICO 也不会有透明度-它将具有从原始照片继承的实心背景。如果您需要具有透明背景的 favicon (例如, 为了适应深色或浅色书签栏), 建议的工作流程是: 在编辑器中删除背景, 保存为 PNG, 然后使用 PNG 转 ICO 转换器。',
   },
   {
     type: 'tip',
     title: '提示: 单个 ICO 中的多种分辨率',
-    html: 'ICO 文件夹可以在单个文件中打包 <strong>多种分辨率</strong> —— 浏览器或操作系统会自动为每个环境选择最合适的一个。为了获得最佳效果, 请使用至少 <strong>256×256 像素</strong> 的正方形 JPG 作为源文件: 这为转换器提供了足够的信息, 可以在不像素化的情况下生成清晰的 16×16、32×32 und 48×48 尺寸。',
+    html: 'ICO 文件夹可以在单个文件中打包 <strong>多种分辨率</strong> - 浏览器或操作系统会自动为每个环境选择最合适的一个。为了获得最佳效果, 请使用至少 <strong>256×256 像素</strong> 的正方形 JPG 作为源文件: 这为转换器提供了足够的信息, 可以在不像素化的情况下生成清晰的 16×16、32×32 und 48×48 尺寸。',
   },
   {
     type: 'title',

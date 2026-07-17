@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Sélectionner des fichiers',
   processedFiles: 'Fichiers traités',
   downloadAll: 'Tout télécharger (.zip)',
-  pending: 'En attente': 'Références Bibliographiques',
+  pending: 'En attente',
+  bibliographyTitle: 'Références Bibliographiques',
   faqTitle: 'Questions Fréquentes',
 };
 
@@ -54,12 +55,12 @@ const howTo: JpgAPngLocaleContent['howTo'] = [
 const seo: JpgAPngLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Convertisseur JPG vers PNG : Éditez sans perte de qualité et ajoutez de la transparence',
+    text: 'Convertisseur JPG vers PNG: Éditez sans perte de qualité et ajoutez de la transparence',
     level: 2,
   },
   {
     type: 'paragraph',
-    html: 'Le <strong>JPG</strong> est imbattable pour les photos de caméra, mais il a un talon d\'Achille : chaque fois que vous sauvegardez le fichier, il applique à nouveau sa compression avec perte, dégradant progressivement les bords et les dégradés. Le <strong>PNG</strong> utilise une compression sans perte — une fois sauvegardé, les pixels sont immuables. Convertir un JPG en PNG est l\'étape essentielle lorsque vous devez préparer une image pour une édition intensive, ajouter un fond transparent ou l\'intégrer dans un flux de travail de design nécessitant plusieurs sauvegardes.',
+    html: 'Le <strong>JPG</strong> est imbattable pour les photos de caméra, mais il a un talon d\'Achille: chaque fois que vous sauvegardez le fichier, il applique à nouveau sa compression avec perte, dégradant progressivement les bords et les dégradés. Le <strong>PNG</strong> utilise une compression sans perte - une fois sauvegardé, les pixels sont immuables. Convertir un JPG en PNG est l\'étape essentielle lorsque vous devez préparer une image pour une édition intensive, ajouter un fond transparent ou l\'intégrer dans un flux de travail de design nécessitant plusieurs sauvegardes.',
   },
   {
     type: 'title',
@@ -68,15 +69,15 @@ const seo: JpgAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Le <strong>JPG</strong> est le roi de la photographie : fichiers légers, compatibles avec tout. Mais ses artefacts de compression s\'accumulent à chaque édition et re-sauvegarde. Si vous devez recadrer, retoucher ou ajouter du texte à une image à plusieurs reprises, partir d\'un JPG signifie introduire de la dégradation à chaque cycle. Le JPG est également dépourvu de canal alpha : il ne peut pas avoir de fonds transparents, ce qui l\'exclut pour les logos, icônes et éléments d\'interface.',
+    html: 'Le <strong>JPG</strong> est le roi de la photographie: fichiers légers, compatibles avec tout. Mais ses artefacts de compression s\'accumulent à chaque édition et re-sauvegarde. Si vous devez recadrer, retoucher ou ajouter du texte à une image à plusieurs reprises, partir d\'un JPG signifie introduire de la dégradation à chaque cycle. Le JPG est également dépourvu de canal alpha: il ne peut pas avoir de fonds transparents, ce qui l\'exclut pour les logos, icônes et éléments d\'interface.',
   },
   {
     type: 'paragraph',
-    html: 'Le <strong>PNG</strong> est le bon choix pour les logos d\'entreprise, les captures d\'écran avec du texte net, les éléments d\'interface, les images de produits sur fond blanc à découper, ou tout actif graphique qui sera édité plus d\'une fois. La compression sans perte garantit que les bords du texte restent parfaitement définis et que les couleurs unies demeurent pures — sans bruit JPEG.',
+    html: 'Le <strong>PNG</strong> est le bon choix pour les logos d\'entreprise, les captures d\'écran avec du texte net, les éléments d\'interface, les images de produits sur fond blanc à découper, ou tout actif graphique qui sera édité plus d\'une fois. La compression sans perte garantit que les bords du texte restent parfaitement définis et que les couleurs unies demeurent pures - sans bruit JPEG.',
   },
   {
     type: 'title',
-    text: 'Comparatif : Conversion locale vs Cloud',
+    text: 'Comparatif: Conversion locale vs Cloud',
     level: 3,
   },
   {
@@ -100,8 +101,8 @@ const seo: JpgAPngLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Vitesse instantanée — zéro latence réseau',
-          'Confidentialité totale — 0 octet envoyé à l\'extérieur',
+          'Vitesse instantanée - zéro latence réseau',
+          'Confidentialité totale - 0 octet envoyé à l\'extérieur',
           'Aucune limite de taille ni de nombre de fichiers',
           'Interface épurée, sans publicités ni traçage',
         ],
@@ -115,16 +116,16 @@ const seo: JpgAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Le processus est entièrement local : le navigateur crée un <strong>Blob</strong> à partir du JPG sélectionné et le dessine sur un <strong>Canvas HTML5</strong> en mémoire. Une fois rendu, il appelle <code>toDataURL(\'image/png\')</code> — le codec PNG intégré au navigateur ré-encode chaque pixel sans appliquer aucune nouvelle compression avec perte. Le résultat est un PNG qui préserve fidèlement l\'état actuel du JPG : ni meilleur ni moins bon, simplement figé.',
+    html: 'Le processus est entièrement local: le navigateur crée un <strong>Blob</strong> à partir du JPG sélectionné et le dessine sur un <strong>Canvas HTML5</strong> en mémoire. Une fois rendu, il appelle <code>toDataURL(\'image/png\')</code> - le codec PNG intégré au navigateur ré-encode chaque pixel sans appliquer aucune nouvelle compression avec perte. Le résultat est un PNG qui préserve fidèlement l\'état actuel du JPG: ni meilleur ni moins bon, simplement figé.',
   },
   {
     type: 'paragraph',
-    html: 'Le PNG résultant utilise la compression sans perte DEFLATE, la même qu\'emploient des outils professionnels comme Photoshop ou GIMP. Sa taille sera plus grande que le JPG original — généralement 2 à 5 fois — car il stocke tous les pixels sans en éliminer. C\'est le prix à payer pour la fidélité et l\'éditabilité infinie.',
+    html: 'Le PNG résultant utilise la compression sans perte DEFLATE, la même qu\'emploient des outils professionnels comme Photoshop ou GIMP. Sa taille sera plus grande que le JPG original - généralement 2 à 5 fois - car il stocke tous les pixels sans en éliminer. C\'est le prix à payer pour la fidélité et l\'éditabilité infinie.',
   },
   {
     type: 'tip',
-    title: 'Important : le PNG ne récupère pas la qualité JPEG',
-    html: 'Convertir un JPG en PNG <strong>ne récupère pas la qualité perdue</strong> lors de la compression JPEG originale. Si votre JPG présentait déjà des artefacts de blocs ou du bruit de couleur, le PNG les conservera intacts — il empêche simplement d\'en ajouter davantage. Considérez la conversion comme le fait de "figer" l\'état actuel de l\'image pour que les éditions futures ne la dégradent pas davantage.',
+    title: 'Important: le PNG ne récupère pas la qualité JPEG',
+    html: 'Convertir un JPG en PNG <strong>ne récupère pas la qualité perdue</strong> lors de la compression JPEG originale. Si votre JPG présentait déjà des artefacts de blocs ou du bruit de couleur, le PNG les conservera intacts - il empêche simplement d\'en ajouter davantage. Considérez la conversion comme le fait de "figer" l\'état actuel de l\'image pour que les éditions futures ne la dégradent pas davantage.',
   },
   {
     type: 'title',
@@ -149,7 +150,7 @@ const seo: JpgAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'La conversion de JPG en PNG est la première étape de tout flux de travail de design sérieux. Elle ne transforme pas la qualité originale, mais protège chaque pixel des éditions futures. Avec cet outil, le processus se déroule instantanément et de manière totalement privée — vos images professionnelles ou personnelles ne quittent à aucun moment votre appareil.',
+    html: 'La conversion de JPG en PNG est la première étape de tout flux de travail de design sérieux. Elle ne transforme pas la qualité originale, mais protège chaque pixel des éditions futures. Avec cet outil, le processus se déroule instantanément et de manière totalement privée - vos images professionnelles ou personnelles ne quittent à aucun moment votre appareil.',
   },
 ];
 

@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Välj filer',
   processedFiles: 'Bearbetade filer',
   downloadAll: 'Ladda ner alla (.zip)',
-  pending: 'Väntande': 'Bibliografiska Referenser',
+  pending: 'Väntande',
+  bibliographyTitle: 'Bibliografiska Referenser',
   faqTitle: 'Vanliga Frågor',
 };
 
@@ -101,7 +102,7 @@ const seo: BmpAWebpLocaleContent['seo'] = [
         highlight: true,
         points: [
           'Omedelbar konvertering utan nätverksöverföring',
-          'Absolut integritet — 0 byte lämnar din enhet',
+          'Absolut integritet - 0 byte lämnar din enhet',
           'Inga storleksbegränsningar per fil',
           'Fungerar utan internetanslutning',
         ],
@@ -135,11 +136,11 @@ const seo: BmpAWebpLocaleContent['seo'] = [
     type: 'list',
     icon: 'mdi:check-circle',
     items: [
-      'Webbpublicering — Chrome, Firefox, Safari, Edge och alla moderna webbläsare.',
-      'Sociala nätverk — Instagram, Twitter, Facebook accepterar WebP lokalt.',
-      'Webbappar och PWA — minimala storlekar för omedelbar laddning.',
-      'Effektiv arkivering — ersätter kollektioner av gamla BMP:er och sparar gigabyte.',
-      'E-postmarknadsföring — lätta bilder som laddas snabbt i alla moderna e-postklienter.',
+      'Webbpublicering - Chrome, Firefox, Safari, Edge och alla moderna webbläsare.',
+      'Sociala nätverk - Instagram, Twitter, Facebook accepterar WebP lokalt.',
+      'Webbappar och PWA - minimala storlekar för omedelbar laddning.',
+      'Effektiv arkivering - ersätter kollektioner av gamla BMP:er och sparar gigabyte.',
+      'E-postmarknadsföring - lätta bilder som laddas snabbt i alla moderna e-postklienter.',
     ],
   },
   {
@@ -149,7 +150,7 @@ const seo: BmpAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Om du har gamla BMP-filer från Windows, okomprimerade skärmdumpar eller bilder från gamla verktyg, är konvertering till WebP den mest effektfulla åtgärden du kan vidta för att optimera din lagring och webbprestanda. Med vårt verktyg är konverteringen omedelbar, privat och utan begränsningar — precis som den ska vara.',
+    html: 'Om du har gamla BMP-filer från Windows, okomprimerade skärmdumpar eller bilder från gamla verktyg, är konvertering till WebP den mest effektfulla åtgärden du kan vidta för att optimera din lagring och webbprestanda. Med vårt verktyg är konverteringen omedelbar, privat och utan begränsningar - precis som den ska vara.',
   },
 ];
 

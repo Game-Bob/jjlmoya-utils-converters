@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Seleziona file',
   processedFiles: 'File elaborati',
   downloadAll: 'Scarica tutto (.zip)',
-  pending: 'In attesa': 'Riferimenti Bibliografici',
+  pending: 'In attesa',
+  bibliographyTitle: 'Riferimenti Bibliografici',
   faqTitle: 'Domande Frequenti',
 };
 
@@ -100,8 +101,8 @@ const seo: PngAWebpLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Velocità istantanea — latenza di rete zero',
-          'Privacy completa — 0 byte inviati esternamente',
+          'Velocità istantanea - latenza di rete zero',
+          'Privacy completa - 0 byte inviati esternamente',
           'Nessun limite di MB o restrizioni sul numero di file',
           'Interfaccia pulita, senza pubblicità o tracciamento',
         ],

@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Bestanden selecteren',
   processedFiles: 'Verwerkte bestanden',
   downloadAll: 'Alles downloaden (.zip)',
-  pending: 'In afwachting': 'Bibliografische Referenties',
+  pending: 'In afwachting',
+  bibliographyTitle: 'Bibliografische Referenties',
   faqTitle: 'Veelgestelde Vragen',
 };
 
@@ -124,7 +125,7 @@ const seo: GifAPngLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'Binaire transparantie van GIF vs alfakanaal van PNG',
-    html: 'GIF ondersteunt alleen binaire transparantie (ondoorzichtig of transparant). Bij het converteren naar PNG blijven de half-transparante pixels van de GIF behouden zoals de browser ze interpreteert. Als je GIF kartelige randen heeft, zal de PNG deze behouden — maar je kunt ze bewerken met randverzachting in elke editor, iets wat onmogelijk is met de originele GIF.',
+    html: 'GIF ondersteunt alleen binaire transparantie (ondoorzichtig of transparant). Bij het converteren naar PNG blijven de half-transparante pixels van de GIF behouden zoals de browser ze interpreteert. Als je GIF kartelige randen heeft, zal de PNG deze behouden - maar je kunt ze bewerken met randverzachting in elke editor, iets wat onmogelijk is met de originele GIF.',
   },
   {
     type: 'title',

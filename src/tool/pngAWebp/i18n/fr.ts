@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Sélectionner des fichiers',
   processedFiles: 'Fichiers traités',
   downloadAll: 'Tout télécharger (.zip)',
-  pending: 'En attente': 'Références Bibliographiques',
+  pending: 'En attente',
+  bibliographyTitle: 'Références Bibliographiques',
   faqTitle: 'Questions Fréquentes',
 };
 
@@ -54,12 +55,12 @@ const howTo: PngAWebpLocaleContent['howTo'] = [
 const seo: PngAWebpLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Convertisseur PNG vers WebP : Transparence et Compression Moderne pour le Web',
+    text: 'Convertisseur PNG vers WebP: Transparence et Compression Moderne pour le Web',
     level: 2,
   },
   {
     type: 'paragraph',
-    html: 'Le <strong>PNG</strong> est le format de référence pour les images web avec transparence depuis des décennies — logos, icônes, éléments d\'interface, images de produits sur fond découpé. Son problème est le poids : la compression sans perte qui garantit sa qualité génère également des fichiers notablement volumineux. Le <strong>WebP</strong> de Google résout cette contradiction : il supporte le canal alpha (transparence) <em>et</em> compresse bien mieux que le PNG, faisant du passage de PNG à WebP l\'optimisation parfaite qui ne sacrifie rien.',
+    html: 'Le <strong>PNG</strong> est le format de référence pour les images web avec transparence depuis des décennies - logos, icônes, éléments d\'interface, images de produits sur fond découpé. Son problème est le poids: la compression sans perte qui garantit sa qualité génère également des fichiers notablement volumineux. Le <strong>WebP</strong> de Google résout cette contradiction: il supporte le canal alpha (transparence) <em>et</em> compresse bien mieux que le PNG, faisant du passage de PNG à WebP l\'optimisation parfaite qui ne sacrifie rien.',
   },
   {
     type: 'title',
@@ -68,15 +69,15 @@ const seo: PngAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Le <strong>PNG</strong> reste le bon format lorsque la compatibilité est critique : outils de design comme Photoshop ou Figma, flux d\'impression, applications de bureau ancienne ou tout contexte où le support WebP n\'est pas garanti. C\'est aussi le format idéal pour sauvegarder les calques de travail dans les pipelines d\'édition, car sa compression sans perte préserve chaque pixel. Le coût : des fichiers qui peuvent peser 3 à 8 fois plus que leur équivalent WebP.',
+    html: 'Le <strong>PNG</strong> reste le bon format lorsque la compatibilité est critique: outils de design comme Photoshop ou Figma, flux d\'impression, applications de bureau ancienne ou tout contexte où le support WebP n\'est pas garanti. C\'est aussi le format idéal pour sauvegarder les calques de travail dans les pipelines d\'édition, car sa compression sans perte préserve chaque pixel. Le coût: des fichiers qui peuvent peser 3 à 8 fois plus que leur équivalent WebP.',
   },
   {
     type: 'paragraph',
-    html: 'Le <strong>WebP</strong> est le remplacement naturel du PNG pour tout le contenu web moderne. Chrome, Firefox, Safari et Edge le supportent nativement. Une image WebP sans perte est 26 % plus petite que le PNG équivalent ; en mode avec perte, elle peut être jusqu\'à 40 % plus petite avec une qualité visuelle pratiquement indistinguible. Et, point crucial pour le design web : <strong>WebP préserve la transparence alpha</strong> exactement comme le PNG, sans aucun compromis visuel.',
+    html: 'Le <strong>WebP</strong> est le remplacement naturel du PNG pour tout le contenu web moderne. Chrome, Firefox, Safari et Edge le supportent nativement. Une image WebP sans perte est 26 % plus petite que le PNG équivalent ; en mode avec perte, elle peut être jusqu\'à 40 % plus petite avec une qualité visuelle pratiquement indistinguible. Et, point crucial pour le design web: <strong>WebP préserve la transparence alpha</strong> exactement comme le PNG, sans aucun compromis visuel.',
   },
   {
     type: 'title',
-    text: 'Comparatif : Conversion locale vs Cloud',
+    text: 'Comparatif: Conversion locale vs Cloud',
     level: 3,
   },
   {
@@ -100,8 +101,8 @@ const seo: PngAWebpLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Vitesse instantanée — zéro latence réseau',
-          'Confidentialité totale — 0 octet envoyé à l\'extérieur',
+          'Vitesse instantanée - zéro latence réseau',
+          'Confidentialité totale - 0 octet envoyé à l\'extérieur',
           'Aucune limite de taille ni de nombre de fichiers',
           'Interface épurée, sans publicités ni traçage',
         ],
@@ -115,16 +116,16 @@ const seo: PngAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Le PNG est chargé localement et décodé dans un <strong>Canvas HTML5</strong> en mémoire. L\'API Canvas préserve le canal alpha du PNG original — tous les pixels transparents et semi-transparents sont maintenus intacts dans le tampon de pixels RGBA. Le canvas est ensuite exporté en appelant <code>toDataURL(\'image/webp\')</code>, qui applique le codec WebP du navigateur (basé sur libwebp de Google) pour générer un fichier plus compact sans altérer les données de transparence.',
+    html: 'Le PNG est chargé localement et décodé dans un <strong>Canvas HTML5</strong> en mémoire. L\'API Canvas préserve le canal alpha du PNG original - tous les pixels transparents et semi-transparents sont maintenus intacts dans le tampon de pixels RGBA. Le canvas est ensuite exporté en appelant <code>toDataURL(\'image/webp\')</code>, qui applique le codec WebP du navigateur (basé sur libwebp de Google) pour générer un fichier plus compact sans altérer les données de transparence.',
   },
   {
     type: 'paragraph',
-    html: 'WebP utilise deux modes de compression : le mode sans perte (<em>lossless</em>) pour les images où chaque pixel doit être exactement fidèle à l\'original, et le mode avec perte (<em>lossy</em>) pour les photos et éléments où de petites différences sont imperceptibles. Le mode sans perte produit des fichiers 26 % plus petits que le PNG ; le mode avec perte peut atteindre des réductions jusqu\'à 40 % par rapport au PNG tout en maintenant une excellente qualité visuelle.',
+    html: 'WebP utilise deux modes de compression: le mode sans perte (<em>lossless</em>) pour les images où chaque pixel doit être exactement fidèle à l\'original, et le mode avec perte (<em>lossy</em>) pour les photos et éléments où de petites différences sont imperceptibles. Le mode sans perte produit des fichiers 26 % plus petits que le PNG ; le mode avec perte peut atteindre des réductions jusqu\'à 40 % par rapport au PNG tout en maintenant une excellente qualité visuelle.',
   },
   {
     type: 'tip',
-    title: 'Conseil : WebP surpasse à la fois PNG et JPG sur le web',
-    html: 'WebP en mode sans perte est plus petit que le PNG. WebP en mode avec perte est plus petit que le JPG. Cela fait de WebP le <strong>seul format qui remplace les deux</strong> dans le contexte web. Convertissez vos PNG transparents en WebP avant de les mettre en ligne : Google PageSpeed Insights le détecte et le valorise positivement dans les audits "Servir les images dans des formats modernes".',
+    title: 'Conseil: WebP surpasse à la fois PNG et JPG sur le web',
+    html: 'WebP en mode sans perte est plus petit que le PNG. WebP en mode avec perte est plus petit que le JPG. Cela fait de WebP le <strong>seul format qui remplace les deux</strong> dans le contexte web. Convertissez vos PNG transparents en WebP avant de les mettre en ligne: Google PageSpeed Insights le détecte et le valorise positivement dans les audits "Servir les images dans des formats modernes".',
   },
   {
     type: 'title',
@@ -149,7 +150,7 @@ const seo: PngAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Le passage de PNG à WebP est l\'optimisation d\'images web la plus complète disponible : vous obtenez des fichiers plus légers, vous préservez la transparence et vous améliorez les métriques Core Web Vitals sans rien changer à votre design visuel. Cet outil le fait instantanément, gratuitement et de manière totalement privée — vos images sont traitées dans votre navigateur et ne voyagent jamais vers aucun serveur externe.',
+    html: 'Le passage de PNG à WebP est l\'optimisation d\'images web la plus complète disponible: vous obtenez des fichiers plus légers, vous préservez la transparence et vous améliorez les métriques Core Web Vitals sans rien changer à votre design visuel. Cet outil le fait instantanément, gratuitement et de manière totalement privée - vos images sont traitées dans votre navigateur et ne voyagent jamais vers aucun serveur externe.',
   },
 ];
 

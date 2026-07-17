@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: '파일 선택',
   processedFiles: '처리된 파일',
   downloadAll: '모두 다운로드 (.zip)',
-  pending: '대기 중': '참고 문헌',
+  pending: '대기 중',
+  bibliographyTitle: '참고 문헌',
   faqTitle: '자주 묻는 질문',
 };
 
@@ -100,8 +101,8 @@ const seo: JpgAPngLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          '실시간 속도 — 네트워크 지연 제로',
-          '철저한 프라이버시 — 외부로 0바이트 전송',
+          '실시간 속도 - 네트워크 지연 제로',
+          '철저한 프라이버시 - 외부로 0바이트 전송',
           '용량 및 파일 개수 제한 없음',
           '광고나 추적이 없는 깨끗한 인터페이스',
         ],

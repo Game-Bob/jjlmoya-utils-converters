@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Dosyaları seçin',
   processedFiles: 'İşlenen dosyalar',
   downloadAll: 'Tümünü İndir (.zip)',
-  pending: 'Bekliyor': 'Bibliyografik Referanslar',
+  pending: 'Bekliyor',
+  bibliographyTitle: 'Bibliyografik Referanslar',
   faqTitle: 'Sıkça Sorulan Sorular',
 };
 
@@ -100,8 +101,8 @@ const seo: JpgAPngLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Anında hız — sıfır ağ gecikmesi',
-          'Tam gizlilik — dışarıya 0 bayt gönderilir',
+          'Anında hız - sıfır ağ gecikmesi',
+          'Tam gizlilik - dışarıya 0 bayt gönderilir',
           'MB veya dosya sayısı sınırı yok',
           'Reklam veya izleme içermeyen temiz arayüz',
         ],
@@ -115,16 +116,16 @@ const seo: JpgAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Süreç tamamen yereldir: tarayıcı seçilen JPG ile bir <strong>Blob</strong> oluşturur ve bunu bellekteki bir <strong>Canvas HTML5</strong> üzerine çizer. Oluşturulduktan sonra <code>toDataURL(\'image/png\')</code> çağrılır — tarayıcıya entegre PNG kodeği, herhangi bir yeni kayıplı sıkıştırma uygulamadan her pikseli yeniden kodlar. Sonuç, JPG\'nin mevcut durumunu sadık bir şekilde koruyan bir PNG\'dir: ne daha iyi ne daha kötü, sadece dondurulmuş halidir.',
+    html: 'Süreç tamamen yereldir: tarayıcı seçilen JPG ile bir <strong>Blob</strong> oluşturur ve bunu bellekteki bir <strong>Canvas HTML5</strong> üzerine çizer. Oluşturulduktan sonra <code>toDataURL(\'image/png\')</code> çağrılır - tarayıcıya entegre PNG kodeği, herhangi bir yeni kayıplı sıkıştırma uygulamadan her pikseli yeniden kodlar. Sonuç, JPG\'nin mevcut durumunu sadık bir şekilde koruyan bir PNG\'dir: ne daha iyi ne daha kötü, sadece dondurulmuş halidir.',
   },
   {
     type: 'paragraph',
-    html: 'Elde edilen PNG, Photoshop veya GIMP gibi profesyonel araçlarda kullanılan kayıpsız DEFLATE sıkıştırmasını kullanacaktır. Boyutu, tüm pikselleri bilgi atmadan sakladığı için orijinal JPG\'den — genellikle 2 ila 5 kat — daha büyük olacaktır. Bu, aslına uygunluk ve sonsuz düzenlenebilirlik için ödenen bedeldir.',
+    html: 'Elde edilen PNG, Photoshop veya GIMP gibi profesyonel araçlarda kullanılan kayıpsız DEFLATE sıkıştırmasını kullanacaktır. Boyutu, tüm pikselleri bilgi atmadan sakladığı için orijinal JPG\'den - genellikle 2 ila 5 kat - daha büyük olacaktır. Bu, aslına uygunluk ve sonsuz düzenlenebilirlik için ödenen bedeldir.',
   },
   {
     type: 'tip',
     title: 'Önemli: PNG, JPEG kalitesini geri getirmez',
-    html: 'Bir JPG görüntüsünü PNG\'ye dönüştürmek, orijinal JPEG sıkıştırması sırasında <strong>kaybedilen kaliteyi geri getirmez</strong>. JPG dosyanızda blok kusurları veya renk paraziti varsa, PNG bunları bozulmadan koruyacaktır — sadece daha fazlasının eklenmesini engeller. Dönüşümü, görüntünün mevcut durumunu "dondurmak" olarak düşünün, böylece gelecekteki düzenlemeler görüntüyü daha fazla bozmaz.',
+    html: 'Bir JPG görüntüsünü PNG\'ye dönüştürmek, orijinal JPEG sıkıştırması sırasında <strong>kaybedilen kaliteyi geri getirmez</strong>. JPG dosyanızda blok kusurları veya renk paraziti varsa, PNG bunları bozulmadan koruyacaktır - sadece daha fazlasının eklenmesini engeller. Dönüşümü, görüntünün mevcut durumunu "dondurmak" olarak düşünün, böylece gelecekteki düzenlemeler görüntüyü daha fazla bozmaz.',
   },
   {
     type: 'title',

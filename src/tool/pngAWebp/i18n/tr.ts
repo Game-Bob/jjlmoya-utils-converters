@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Dosyaları seçin',
   processedFiles: 'İşlenmiş dosyalar',
   downloadAll: 'Tümünü İndir (.zip)',
-  pending: 'Bekliyor': 'Bibliyografik Referanslar',
+  pending: 'Bekliyor',
+  bibliographyTitle: 'Bibliyografik Referanslar',
   faqTitle: 'Sıkça Sorulan Sorular',
 };
 
@@ -59,7 +60,7 @@ const seo: PngAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>PNG</strong>, onlarca yıldır şeffaflığa sahip web görüntüleri için referans format olmuştur — logolar, simgeler, kullanıcı arayüzü öğeleri, dekupe edilmiş arka planlara sahip ürün görüntüleri. Sorunu dosya boyutudur: kaliteyi garanti eden kayıpsız sıkıştırma aynı zamanda belirgin şekilde büyük dosyalar oluşturur. Google\'ın <strong>WebP</strong>\'si bu çelişkiyi çözer: alfa kanalını (şeffaflığı) destekler <em>ve</em> PNG\'den çok daha iyi sıkıştırır; bu da web sitenizde PNG\'den WebP\'ye geçişi hiçbir şeyden ödün vermeyen mükemmel bir optimizasyon haline getirir.',
+    html: '<strong>PNG</strong>, onlarca yıldır şeffaflığa sahip web görüntüleri için referans format olmuştur - logolar, simgeler, kullanıcı arayüzü öğeleri, dekupe edilmiş arka planlara sahip ürün görüntüleri. Sorunu dosya boyutudur: kaliteyi garanti eden kayıpsız sıkıştırma aynı zamanda belirgin şekilde büyük dosyalar oluşturur. Google\'ın <strong>WebP</strong>\'si bu çelişkiyi çözer: alfa kanalını (şeffaflığı) destekler <em>ve</em> PNG\'den çok daha iyi sıkıştırır; bu da web sitenizde PNG\'den WebP\'ye geçişi hiçbir şeyden ödün vermeyen mükemmel bir optimizasyon haline getirir.',
   },
   {
     type: 'title',
@@ -100,8 +101,8 @@ const seo: PngAWebpLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Anında hız — sıfır ağ gecikmesi',
-          'Tam gizlilik — harici olarak gönderilen 0 bayt',
+          'Anında hız - sıfır ağ gecikmesi',
+          'Tam gizlilik - harici olarak gönderilen 0 bayt',
           'MB sınırı veya dosya sayısı kısıtlaması yok',
           'Temiz arayüz, reklam veya izleme yok',
         ],
@@ -115,7 +116,7 @@ const seo: PngAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'PNG yerel olarak yüklenir ve bellekteki bir <strong>HTML5 Canvas</strong>\'a çözülür. Canvas API\'si orijinal PNG\'deki alfa kanalını korur — tüm şeffaf ve yarı şeffaf pikseller RGBA piksel arabelleğinde sağlam tutulur. Ardından tuval, şeffaflık verilerini değiştirmeden daha kompakt bir dosya oluşturmak için tarayıcının (Google\'ın libwebp tabanlı) WebP codec bileşenini uygulayan <code>toDataURL(\'image/webp\')</code> çağrısı yapılarak dışa aktarılır.',
+    html: 'PNG yerel olarak yüklenir ve bellekteki bir <strong>HTML5 Canvas</strong>\'a çözülür. Canvas API\'si orijinal PNG\'deki alfa kanalını korur - tüm şeffaf ve yarı şeffaf pikseller RGBA piksel arabelleğinde sağlam tutulur. Ardından tuval, şeffaflık verilerini değiştirmeden daha kompakt bir dosya oluşturmak için tarayıcının (Google\'ın libwebp tabanlı) WebP codec bileşenini uygulayan <code>toDataURL(\'image/webp\')</code> çağrısı yapılarak dışa aktarılır.',
   },
   {
     type: 'paragraph',
@@ -149,7 +150,7 @@ const seo: PngAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'PNG\'den WebP\'ye geçiş, mevcut en eksiksiz web görüntüsü optimizasyonudur: görsel tasarımınız hakkında hiçbir şeyi değiştirmeden daha hafif dosyalar elde eder, şeffaflığı korur ve Core Web Vitals metriklerini iyileştirir. Bu araç bunu anında, ücretsiz ve tamamen gizli bir şekilde yapar — görüntüleriniz tarayıcınızda işlenir ve asla harici bir sunucuya gitmez.',
+    html: 'PNG\'den WebP\'ye geçiş, mevcut en eksiksiz web görüntüsü optimizasyonudur: görsel tasarımınız hakkında hiçbir şeyi değiştirmeden daha hafif dosyalar elde eder, şeffaflığı korur ve Core Web Vitals metriklerini iyileştirir. Bu araç bunu anında, ücretsiz ve tamamen gizli bir şekilde yapar - görüntüleriniz tarayıcınızda işlenir ve asla harici bir sunucuya gitmez.',
   },
 ];
 

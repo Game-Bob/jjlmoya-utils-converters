@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Pilih file',
   processedFiles: 'File yang diproses',
   downloadAll: 'Unduh Semua (.zip)',
-  pending: 'Tertunda': 'Referensi Bibliografi',
+  pending: 'Tertunda',
+  bibliographyTitle: 'Referensi Bibliografi',
   faqTitle: 'Pertanyaan Umum',
 };
 
@@ -101,7 +102,7 @@ const seo: BmpAWebpLocaleContent['seo'] = [
         highlight: true,
         points: [
           'Konversi instan tanpa transfer jaringan',
-          'Privasi absolut — 0 byte yang keluar dari perangkat Anda',
+          'Privasi absolut - 0 byte yang keluar dari perangkat Anda',
           'Tanpa batasan ukuran per file',
           'Berfungsi tanpa koneksi internet',
         ],
@@ -135,11 +136,11 @@ const seo: BmpAWebpLocaleContent['seo'] = [
     type: 'list',
     icon: 'mdi:check-circle',
     items: [
-      'Publikasi web — Chrome, Firefox, Safari, Edge, dan semua browser modern.',
-      'Jejaring sosial — Instagram, Twitter, Facebook menerima WebP secara native.',
-      'Aplikasi web dan PWA — ukuran minimum untuk pemuatan instan.',
-      'Pengarsipan efisien — menggantikan koleksi BMP warisan dengan penghematan gigabyte.',
-      'Pemasaran email — gambar ringan yang memuat cepat di klien email modern mana pun.',
+      'Publikasi web - Chrome, Firefox, Safari, Edge, dan semua browser modern.',
+      'Jejaring sosial - Instagram, Twitter, Facebook menerima WebP secara native.',
+      'Aplikasi web dan PWA - ukuran minimum untuk pemuatan instan.',
+      'Pengarsipan efisien - menggantikan koleksi BMP warisan dengan penghematan gigabyte.',
+      'Pemasaran email - gambar ringan yang memuat cepat di klien email modern mana pun.',
     ],
   },
   {
@@ -149,7 +150,7 @@ const seo: BmpAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Jika Anda memiliki file BMP warisan dari Windows, tangkapan layar tanpa kompresi, atau gambar dari alat lama, mengubahnya ke WebP adalah tindakan paling berdampak yang dapat Anda lakukan untuk mengoptimalkan penyimpanan dan kinerja web Anda. Dengan alat kami, konversi instan, pribadi, dan tanpa batas — persis seperti yang seharusnya.',
+    html: 'Jika Anda memiliki file BMP warisan dari Windows, tangkapan layar tanpa kompresi, atau gambar dari alat lama, mengubahnya ke WebP adalah tindakan paling berdampak yang dapat Anda lakukan untuk mengoptimalkan penyimpanan dan kinerja web Anda. Dengan alat kami, konversi instan, pribadi, dan tanpa batas - persis seperti yang seharusnya.',
   },
 ];
 

@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Selecionar ficheiros',
   processedFiles: 'Ficheiros processados',
   downloadAll: 'Descarregar Tudo (.zip)',
-  pending: 'Pendente': 'Referências Bibliográficas',
+  pending: 'Pendente',
+  bibliographyTitle: 'Referências Bibliográficas',
   faqTitle: 'Perguntas Frequentes',
 };
 
@@ -59,7 +60,7 @@ const seo: AvifAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'O AVIF é o formato de imagem mais avançado disponível hoje: mais pequeno que o WebP, mais pequeno que o JPG, com uma qualidade visual superior. No entanto, a sua adoção tem sido irregular — o Safari não o suportou até 2024, e muitos dispositivos móveis mais antigos não o reconhecem. O WebP, por outro lado, está consolidado há anos como o padrão moderno da web com mais de 95% de suporte global. Converter AVIF para WebP é a decisão pragmática quando precisa de modernidade sem arriscar a compatibilidade.',
+    html: 'O AVIF é o formato de imagem mais avançado disponível hoje: mais pequeno que o WebP, mais pequeno que o JPG, com uma qualidade visual superior. No entanto, a sua adoção tem sido irregular - o Safari não o suportou até 2024, e muitos dispositivos móveis mais antigos não o reconhecem. O WebP, por outro lado, está consolidado há anos como o padrão moderno da web com mais de 95% de suporte global. Converter AVIF para WebP é a decisão pragmática quando precisa de modernidade sem arriscar a compatibilidade.',
   },
   {
     type: 'title',
@@ -68,7 +69,7 @@ const seo: AvifAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'O AVIF oferece a compressão mais avançada disponível — tipicamente 20-30% mais pequeno que o WebP com a mesma qualidade. A sua tecnologia baseada em AV1 é a mais moderna do setor. No entanto, o suporte de AVIF ainda tem pontos cegos: versões antigas do Safari, alguns navegadores em Android mais antigo e certos visualizadores de imagem de ambiente de trabalho não o reconhecem. Para produção web com audiências amplas e diversas, isto representa um risco.',
+    html: 'O AVIF oferece a compressão mais avançada disponível - tipicamente 20-30% mais pequeno que o WebP com a mesma qualidade. A sua tecnologia baseada em AV1 é a mais moderna do setor. No entanto, o suporte de AVIF ainda tem pontos cegos: versões antigas do Safari, alguns navegadores em Android mais antigo e certos visualizadores de imagem de ambiente de trabalho não o reconhecem. Para produção web com audiências amplas e diversas, isto representa um risco.',
   },
   {
     type: 'paragraph',
@@ -100,7 +101,7 @@ const seo: AvifAWebpLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Privacidade total — 0 bytes saem do seu dispositivo',
+          'Privacidade total - 0 bytes saem do seu dispositivo',
           'Velocidade instantânea sem dependência de rede',
           'Sem limites de tamanho nem de número de ficheiros',
           'Funciona sem ligação à Internet',
@@ -124,7 +125,7 @@ const seo: AvifAWebpLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'WebP: a escolha pragmática do programador moderno',
-    html: 'O WebP tem mais de 95% de suporte em navegadores — o AVIF está a crescer mas ainda não chega a esse número. Para sítios em produção sem deteção de formato adaptativa, o WebP é a escolha segura que cobre quase qualquer audiência. Converta os seus AVIF para WebP e sirva imagens modernas com confiança.',
+    html: 'O WebP tem mais de 95% de suporte em navegadores - o AVIF está a crescer mas ainda não chega a esse número. Para sítios em produção sem deteção de formato adaptativa, o WebP é a escolha segura que cobre quase qualquer audiência. Converta os seus AVIF para WebP e sirva imagens modernas com confiança.',
   },
   {
     type: 'title',
@@ -149,7 +150,7 @@ const seo: AvifAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'O AVIF é a vanguarda da compressão de imagens, mas o WebP é a escolha fiável e universal do ecossistema web moderno. Com a nossa ferramenta, converte do mais novo para o mais suportado num instante — sem carregar nada para nenhum servidor, com privacidade total e sem limites de tamanho.',
+    html: 'O AVIF é a vanguarda da compressão de imagens, mas o WebP é a escolha fiável e universal do ecossistema web moderno. Com a nossa ferramenta, converte do mais novo para o mais suportado num instante - sem carregar nada para nenhum servidor, com privacidade total e sem limites de tamanho.',
   },
 ];
 

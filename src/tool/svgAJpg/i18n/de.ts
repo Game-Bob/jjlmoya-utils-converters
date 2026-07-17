@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Dateien auswählen',
   processedFiles: 'Verarbeitete Dateien',
   downloadAll: 'Alles herunterladen (.zip)',
-  pending: 'Ausstehend': 'Literaturhinweise',
+  pending: 'Ausstehend',
+  bibliographyTitle: 'Literaturhinweise',
   faqTitle: 'Häufig gestellte Fragen',
 };
 
@@ -149,7 +150,7 @@ const seo: SvgAJpgLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Die reale Welt spricht immer noch in Pixeln. Dieses Tool übersetzt Ihre SVG-Vektoren in Sekundenschnelle in die universelle Sprache von JPG – mit hochauflösendem Rendering und ohne dass Ihre proprietären Designs jemals Ihren Browser verlassen.',
+    html: 'Die reale Welt spricht immer noch in Pixeln. Dieses Tool übersetzt Ihre SVG-Vektoren in Sekundenschnelle in die universelle Sprache von JPG - mit hochauflösendem Rendering und ohne dass Ihre proprietären Designs jemals Ihren Browser verlassen.',
   },
 ];
 

@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: '选择文件',
   processedFiles: '已处理文件',
   downloadAll: '下载全部 (.zip)',
-  pending: '等待中': '参考文献',
+  pending: '等待中',
+  bibliographyTitle: '参考文献',
   faqTitle: '常见问题',
 };
 
@@ -119,12 +120,12 @@ const seo: SvgAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '与转换为 JPG 不同, 在导出为 PNG 时, 画布保留了完整的 Alpha 通道: 原始 SVG 中的透明区域在生成的 PNG 中变为完全透明的像素——没有白色背景填充。导出使用具有无损压缩特性的 <code>toDataURL(\'image/png\')</code> 方法。',
+    html: '与转换为 JPG 不同, 在导出为 PNG 时, 画布保留了完整的 Alpha 通道: 原始 SVG 中的透明区域在生成的 PNG 中变为完全透明的像素-没有白色背景填充。导出使用具有无损压缩特性的 <code>toDataURL(\'image/png\')</code> 方法。',
   },
   {
     type: 'tip',
     title: '栅格化前的提示',
-    html: '请谨慎选择您的 PNG 导出尺寸——将 SVG 栅格化是一个单向过程: 您无法从生成的 PNG 中恢复矢量数据。请始终保留原始 SVG 作为母带源, 并以您可能需要的最高分辨率生成 PNG。',
+    html: '请谨慎选择您的 PNG 导出尺寸-将 SVG 栅格化是一个单向过程: 您无法从生成的 PNG 中恢复矢量数据。请始终保留原始 SVG 作为母带源, 并以您可能需要的最高分辨率生成 PNG。',
   },
   {
     type: 'title',

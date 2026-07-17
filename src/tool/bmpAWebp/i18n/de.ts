@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Dateien auswählen',
   processedFiles: 'Verarbeitete Dateien',
   downloadAll: 'Alles herunterladen (.zip)',
-  pending: 'Ausstehend': 'Literaturhinweise',
+  pending: 'Ausstehend',
+  bibliographyTitle: 'Literaturhinweise',
   faqTitle: 'Häufig gestellte Fragen',
 };
 
@@ -101,7 +102,7 @@ const seo: BmpAWebpLocaleContent['seo'] = [
         highlight: true,
         points: [
           'Sofortige Konvertierung ohne Netzwerktransfer',
-          'Absolute Privatsphäre — 0 Bytes verlassen Ihr Gerät',
+          'Absolute Privatsphäre - 0 Bytes verlassen Ihr Gerät',
           'Keine Größenlimits pro Datei',
           'Funktioniert ohne Internetverbindung',
         ],
@@ -135,11 +136,11 @@ const seo: BmpAWebpLocaleContent['seo'] = [
     type: 'list',
     icon: 'mdi:check-circle',
     items: [
-      'Web-Veröffentlichung — Chrome, Firefox, Safari, Edge und alle modernen Browser.',
-      'Soziale Netzwerke — Instagram, Twitter, Facebook akzeptieren WebP nativ.',
-      'Web-Apps und PWAs — minimale Größen für sofortiges Laden.',
-      'Effiziente Archivierung — ersetzt Sammlungen alter BMPs und spart Gigabytes.',
-      'E-Mail-Marketing — leichte Bilder, die in jedem modernen E-Mail-Client schnell laden.',
+      'Web-Veröffentlichung - Chrome, Firefox, Safari, Edge und alle modernen Browser.',
+      'Soziale Netzwerke - Instagram, Twitter, Facebook akzeptieren WebP nativ.',
+      'Web-Apps und PWAs - minimale Größen für sofortiges Laden.',
+      'Effiziente Archivierung - ersetzt Sammlungen alter BMPs und spart Gigabytes.',
+      'E-Mail-Marketing - leichte Bilder, die in jedem modernen E-Mail-Client schnell laden.',
     ],
   },
   {
@@ -149,7 +150,7 @@ const seo: BmpAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Wenn Sie alte BMP-Dateien von Windows, unkomprimierte Screenshots oder Bilder von alten Tools haben, ist die Konvertierung in WebP der wirkungsvollste Schritt, den Sie zur Optimierung Ihres Speichers und Ihrer Web-Performance unternehmen können. Mit unserem Tool erfolgt die Konvertierung sofort, privat und ohne Limits — genau so, wie es sein sollte.',
+    html: 'Wenn Sie alte BMP-Dateien von Windows, unkomprimierte Screenshots oder Bilder von alten Tools haben, ist die Konvertierung in WebP der wirkungsvollste Schritt, den Sie zur Optimierung Ihres Speichers und Ihrer Web-Performance unternehmen können. Mit unserem Tool erfolgt die Konvertierung sofort, privat und ohne Limits - genau so, wie es sein sollte.',
   },
 ];
 

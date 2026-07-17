@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Selecionar arquivos',
   processedFiles: 'Arquivos processados',
   downloadAll: 'Baixar tudo (.zip)',
-  pending: 'Pendente': 'Referências Bibliográficas',
+  pending: 'Pendente',
+  bibliographyTitle: 'Referências Bibliográficas',
   faqTitle: 'Perguntas Frequentes',
 };
 
@@ -124,7 +125,7 @@ const seo: WebpAPngLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'Dica para editores',
-    html: 'Use PNG quando precisar de continuar a editar a imagem. A compressão lossless garante que não haja degradação da qualidade devido a salvamentos repetidos — crítico ao trabalhar com camadas, máscaras ou ajustes de cor no Photoshop ou Figma.',
+    html: 'Use PNG quando precisar de continuar a editar a imagem. A compressão lossless garante que não haja degradação da qualidade devido a salvamentos repetidos - crítico ao trabalhar com camadas, máscaras ou ajustes de cor no Photoshop ou Figma.',
   },
   {
     type: 'title',
@@ -149,7 +150,7 @@ const seo: WebpAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'Se o WebP é o formato do servidor web, o PNG é o formato do estúdio de design. Esta ferramenta converte os seus assets WebP em PNGs prontos para produção, com transparência intacta e qualidade máxima — tudo no seu navegador e sem que os seus arquivos saiam da sua máquina.',
+    html: 'Se o WebP é o formato do servidor web, o PNG é o formato do estúdio de design. Esta ferramenta converte os seus assets WebP em PNGs prontos para produção, com transparência intacta e qualidade máxima - tudo no seu navegador e sem que os seus arquivos saiam da sua máquina.',
   },
 ];
 

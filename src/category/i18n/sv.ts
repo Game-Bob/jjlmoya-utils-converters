@@ -31,7 +31,7 @@ export const content: CategoryLocaleContent = {
     },
     {
       type: 'paragraph',
-      html: '<strong>PNG-formatet</strong> utmärker sig för sin förlustfria komprimering och stöd för transparens (alfakanal), och är standarden för logotyper, ikoner och grafik med skarpa kanter. <strong>JPG-formatet</strong> erbjuder maximal universell kompatibilitet och reducerade storlekar för foton, men offrar kvalitet vid varje sparande. <strong>WebP-formatet</strong>, utvecklat av Google, kombinerar det bästa av båda: 30–40 % bättre komprimering än PNG/JPG med stöd för transparens och animering, och är nu det rekommenderade formatet av Core Web Vitals för att förbättra LCP.',
+      html: '<strong>PNG-formatet</strong> utmärker sig för sin förlustfria komprimering och stöd för transparens (alfakanal), och är standarden för logotyper, ikoner och grafik med skarpa kanter. <strong>JPG-formatet</strong> erbjuder maximal universell kompatibilitet och reducerade storlekar för foton, men offrar kvalitet vid varje sparande. <strong>WebP-formatet</strong>, utvecklat av Google, kombinerar det bästa av båda: 30-40 % bättre komprimering än PNG/JPG med stöd för transparens och animering, och är nu det rekommenderade formatet av Core Web Vitals för att förbättra LCP.',
     },
     {
       type: 'table',

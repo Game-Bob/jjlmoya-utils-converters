@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Select files',
   processedFiles: 'Processed files',
   downloadAll: 'Download All (.zip)',
-  pending: 'Pending': 'Bibliographic References',
+  pending: 'Pending',
+  bibliographyTitle: 'Bibliographic References',
   faqTitle: 'Frequently Asked Questions',
 };
 
@@ -68,11 +69,11 @@ const seo: BmpAPngLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'The fundamental difference between BMP and PNG is not image quality — both are lossless — but storage efficiency. BMP stores pixels raw: no compression, no optimization, no consideration for space. PNG analyzes repeated pixel patterns and encodes them compactly using Deflate, the same algorithm used by ZIP.',
+    html: 'The fundamental difference between BMP and PNG is not image quality - both are lossless - but storage efficiency. BMP stores pixels raw: no compression, no optimization, no consideration for space. PNG analyzes repeated pixel patterns and encodes them compactly using Deflate, the same algorithm used by ZIP.',
   },
   {
     type: 'paragraph',
-    html: 'Beyond superior compression, PNG adds a feature BMP never had: full alpha channel for transparency. Screenshots, UI graphics, logos, technical diagrams — all these image types benefit enormously from conversion to PNG, which preserves every exact color value while reducing file weight to a fraction of the original.',
+    html: 'Beyond superior compression, PNG adds a feature BMP never had: full alpha channel for transparency. Screenshots, UI graphics, logos, technical diagrams - all these image types benefit enormously from conversion to PNG, which preserves every exact color value while reducing file weight to a fraction of the original.',
   },
   {
     type: 'title',

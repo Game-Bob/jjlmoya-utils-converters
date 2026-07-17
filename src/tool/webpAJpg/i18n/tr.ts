@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: 'Dosyaları seçin',
   processedFiles: 'İşlenmiş dosyalar',
   downloadAll: 'Tümünü İndir (.zip)',
-  pending: 'Bekliyor': 'Bibliyografik Referanslar',
+  pending: 'Bekliyor',
+  bibliographyTitle: 'Bibliyografik Referanslar',
   faqTitle: 'Sıkça Sorulan Sorular',
 };
 
@@ -124,7 +125,7 @@ const seo: WebpAJpgLocaleContent['seo'] = [
   {
     type: 'tip',
     title: 'Uyumluluk ipucu',
-    html: 'Fotoğrafları teknik olmayan kullanıcılarla paylaşırken veya e-posta yoluyla gönderirken daima JPG kullanın — herhangi bir e-posta istemcisi, işletim sistemi veya cihazda sıfır uyumluluk sorunu, istisna yok ve hoş olmayan sürprizler yok.',
+    html: 'Fotoğrafları teknik olmayan kullanıcılarla paylaşırken veya e-posta yoluyla gönderirken daima JPG kullanın - herhangi bir e-posta istemcisi, işletim sistemi veya cihazda sıfır uyumluluk sorunu, istisna yok ve hoş olmayan sürprizler yok.',
   },
   {
     type: 'title',

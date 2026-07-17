@@ -14,7 +14,8 @@ const ui: ImageConverterUI = {
   selectFiles: '选择文件',
   processedFiles: '已处理文件',
   downloadAll: '下载全部 (.zip)',
-  pending: '等待中': '参考文献',
+  pending: '等待中',
+  bibliographyTitle: '参考文献',
   faqTitle: '常见问题',
 };
 
@@ -59,7 +60,7 @@ const seo: PngAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: '<strong>PNG</strong> 几十年来一直是带透明度的 Web 图像的标准格式——标志、图标、UI 元素、抠图背景的产品图。其问题在于文件体积: 保证质量的无损压缩也会产生显著的大文件。Google 的 <strong>WebP</strong> 解决了这一矛盾: 它支持 Alpha 通道(透明度) <em>且</em> 压缩率远高于 PNG, 这使得在您的网站上将 PNG 切换为 WebP 成为一种不牺牲任何质量的完美优化。',
+    html: '<strong>PNG</strong> 几十年来一直是带透明度的 Web 图像的标准格式-标志、图标、UI 元素、抠图背景的产品图。其问题在于文件体积: 保证质量的无损压缩也会产生显著的大文件。Google 的 <strong>WebP</strong> 解决了这一矛盾: 它支持 Alpha 通道(透明度) <em>且</em> 压缩率远高于 PNG, 这使得在您的网站上将 PNG 切换为 WebP 成为一种不牺牲任何质量的完美优化。',
   },
   {
     type: 'title',
@@ -100,8 +101,8 @@ const seo: PngAWebpLocaleContent['seo'] = [
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          '即时处理——零网络延迟',
-          '完全私密——数据向外发送量为 0 字节',
+          '即时处理-零网络延迟',
+          '完全私密-数据向外发送量为 0 字节',
           '无 MB 限制或文件数量限制',
           '界面简洁, 无广告或追踪',
         ],
@@ -115,7 +116,7 @@ const seo: PngAWebpLocaleContent['seo'] = [
   },
   {
     type: 'paragraph',
-    html: 'PNG 文件被本地加载并解码到内存中的 <strong>HTML5 Canvas</strong> 中。Canvas API 保留了原始 PNG 的 Alpha 通道——所有透明和半透明像素在 RGBA 像素缓冲区中保持原样。然后通过调用 <code>toDataURL(\'image/webp\')</code> 导出画布, 该方法应用浏览器的 WebP 编解码器 (基于 Google 的 libwebp) 来生成更紧凑的文件, 而不会改变透明度数据。',
+    html: 'PNG 文件被本地加载并解码到内存中的 <strong>HTML5 Canvas</strong> 中。Canvas API 保留了原始 PNG 的 Alpha 通道-所有透明和半透明像素在 RGBA 像素缓冲区中保持原样。然后通过调用 <code>toDataURL(\'image/webp\')</code> 导出画布, 该方法应用浏览器的 WebP 编解码器 (基于 Google 的 libwebp) 来生成更紧凑的文件, 而不会改变透明度数据。',
   },
   {
     type: 'paragraph',
@@ -124,7 +125,7 @@ const seo: PngAWebpLocaleContent['seo'] = [
   {
     type: 'tip',
     title: '提示: 在 Web 端, WebP 同时超越了 PNG 和 JPG',
-    html: '无损模式下的 WebP 比 PNG 小。有损模式下的 WebP 比 JPG 小。这使得 WebP 成为 Web 环境下 <strong>唯一能够同时取代两者的格式</strong>。在上传之前将您的透明 PNG 转换为 WebP: Google PageSpeed Insights 会检测到这一点, 并在“以现代格式提供图像”审计中给出正面评分。',
+    html: '无损模式下的 WebP 比 PNG 小。有损模式下的 WebP 比 JPG 小。这使得 WebP 成为 Web 环境下 <strong>唯一能够同时取代两者的格式</strong>。在上传之前将您的透明 PNG 转换为 WebP: Google PageSpeed Insights 会检测到这一点, 并在\"以现代格式提供图像\"审计中给出正面评分。',
   },
   {
     type: 'title',
