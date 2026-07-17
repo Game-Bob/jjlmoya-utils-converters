@@ -1,4 +1,4 @@
-﻿import eslintPluginAstro from "eslint-plugin-astro";
+import eslintPluginAstro from "eslint-plugin-astro";
 import tseslint from "typescript-eslint";
 import noComments from "eslint-plugin-no-comments";
 
@@ -163,6 +163,12 @@ export default [
             "complexity": "off",
             "no-comments/disallowComments": "off",
             "max-lines": "off",
+        },
+    },
+    {
+        files: ["**/pages/[locale]/[slug].astro"],
+        rules: {
+            "custom/no-css-comments": "off",
         },
     },
     {
