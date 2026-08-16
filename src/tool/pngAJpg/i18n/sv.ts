@@ -21,24 +21,24 @@ const ui: ImageConverterUI = {
 
 const faq: PngAJpgLocaleContent['faq'] = [
   {
-    question: '¿Por qué elegir nuestro convertidor local de PNG a JPG?',
+    question: 'Varför välja vår lokala PNG till JPG-konverterare?',
     answer:
-      'A diferencia de las herramientas convencionales, nuestra utilidad procesa los archivos íntegramente en tu navegador. Tus imágenes nunca tocan un disco duro ajeno, garantizando la total soberanía y privacidad de tus datos.',
+      'Till skillnad från vanliga tjänster behandlar verktyget filerna helt i webbläsaren. Bilderna skickas aldrig till en fjärrdisk, så du behåller kontrollen och dataskyddet.',
   },
   {
-    question: '¿JPG o PNG? ¿Cuál es mejor para mi caso?',
+    question: 'JPG eller PNG: vilket format passar bäst?',
     answer:
-      'El PNG es ideal para logotipos y elementos con transparencia. Sin embargo, el JPG es el estándar de oro para fotografías y banners web, ya que logra pesos mucho más reducidos, mejorando drásticamente la velocidad de carga de un sitio.',
+      'PNG passar för logotyper och genomskinliga element. JPG är bättre för foton och webbbanners eftersom filerna blir mycket mindre och sidorna laddas snabbare.',
   },
   {
-    question: '¿Cómo funciona la conversión técnica sin subir nada?',
+    question: 'Hur fungerar konverteringen utan uppladdning?',
     answer:
-      'Utilizamos la potencia del Canvas de HTML5. El navegador recrea la imagen en un lienzo virtual invisible, rellena las transparencias con blanco y genera un flujo de bytes que descargas directamente al instante.',
+      'Vi använder HTML5 Canvas. Webbläsaren återskapar bilden på en osynlig virtuell yta, fyller genomskinliga områden med vitt och skapar JPEG-data direkt för nedladdning.',
   },
   {
-    question: '¿Es seguro para documentos confidenciales?',
+    question: 'Är verktyget säkert för konfidentiella dokument?',
     answer:
-      'Sí, es la opción más segura para profesionales de la banca, salud o derecho. Al ser una "caja negra" que solo usa tu RAM, lo que pasa dentro muere al cerrar la pestaña, evitando filtraciones en nubes de terceros.',
+      'Ja. För bank-, vård- och juridiska dokument är lokal behandling säkrare: filerna stannar i enhetens RAM och försvinner när fliken stängs.',
   },
 ];
 
@@ -60,110 +60,110 @@ const howTo: PngAJpgLocaleContent['howTo'] = [
 const seo: PngAJpgLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Convertidor de PNG a JPG: La Guía Definitiva para la Optimización de Imágenes',
+    text: 'Konvertera PNG till JPG: praktisk guide för bildoptimering',
     level: 2,
   },
   {
     type: 'paragraph',
-    html: 'En el mundo del diseño digital y el desarrollo web, la eficiencia lo es todo. El formato PNG (Portable Network Graphics) es amado por su capacidad de mantener transparencias y su compresión sin pérdida, pero tiene un gran enemigo: el peso del archivo. Cuando necesitas que tu sitio web vuele o que tus emails carguen instantáneamente, el paso de PNG a JPG es la decisión técnica más inteligente.',
+    html: 'Inom digital design och webbutveckling är snabbhet viktig. PNG bevarar transparens och förlustfri kvalitet, men filerna kan bli stora. JPG passar när webbsidor och bilagor behöver laddas snabbt.',
   },
   {
     type: 'title',
-    text: '¿JPG o PNG?',
+    text: 'JPG eller PNG: vad ska du välja?',
     level: 3,
   },
   {
     type: 'paragraph',
-    html: 'No existe un formato mejor que otro, sino una herramienta para cada necesidad. El PNG es un formato sin pérdida, ideal para maquetas de interfaces, logotipos con texto pequeño y elementos visuales que requieren un fondo transparente. Sin embargo, esta fidelidad tiene un coste: archivos que pueden ser 5 o 10 veces más pesados que su equivalente comprimido.',
+    html: 'Det finns inget format som är bäst i alla situationer. PNG passar gränssnitt, logotyper och transparens, men förlustfri komprimering kan ge betydligt större filer.',
   },
   {
     type: 'paragraph',
-    html: 'El JPG (Joint Photographic Experts Group), por otro lado, utiliza algoritmos de discretización para eliminar información que el ojo humano apenas percibe, logrando pesos pluma. Es el estándar de oro para fotografías, banners publicitarios y redes sociales. Al convertir tus PNG a JPG, estás traduciendo fidelidad geométrica por velocidad de red.',
+    html: 'JPG tar bort detaljer som ögat knappt märker och ger lätta bilder. Det passar foton, banners och sociala medier när snabb överföring är viktigare än perfekt pixeldata.',
   },
   {
     type: 'title',
-    text: 'Comparativa de Arquitectura: Local vs Nube',
+    text: 'Teknisk jämförelse: lokalt eller i molnet',
     level: 3,
   },
   {
     type: 'comparative',
     items: [
       {
-        title: 'Convertidores Cloud',
-        description: 'Herramientas tradicionales que suben tus fotos a un servidor remoto.',
+        title: 'Molnbaserade konverterare',
+        description: 'Traditionella tjänster som laddar upp dina bilder till en fjärrserver.',
         icon: 'mdi:cloud-upload',
         pointIcon: 'mdi:close-circle-outline',
         points: [
-          'Latencia de red (Upload/Download)',
-          'Riesgo de filtración de datos privados',
-          'Límites de tamaño por archivo',
-          'Publicidad y rastreadores',
+          'Nätverksfördröjning (uppladdning/nedladdning)',
+          'Risk för läckta privata data',
+          'Storleksgränser per fil',
+          'Reklam och spårare',
         ],
       },
       {
-        title: 'Nuestra Arquitectura Local',
-        description: 'Procesamiento directo en tu hardware mediante tecnología Vanilla JS.',
+        title: 'Vår lokala arkitektur',
+        description: 'Direkt behandling på din enhet med vanlig JavaScript.',
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Velocidad instantánea sin red',
-          'Privacidad garantizada (0 bytes enviados)',
-          'Sin límites de MB por archivo',
-          'Interfaz profesional y limpia',
+          'Omedelbar hastighet utan nätverk',
+          'Garanterad integritet (noll byte skickas)',
+          'Ingen MB-gräns per fil',
+          'Rent och professionellt gränssnitt',
         ],
       },
     ],
   },
   {
     type: 'title',
-    text: 'Cómo funciona la conversión técnica',
+    text: 'Så fungerar den tekniska konverteringen',
     level: 3,
   },
   {
     type: 'paragraph',
-    html: 'Probablemente te preguntes cómo es posible convertir una imagen sin enviarla a un servidor. La magia reside en la potencia de los navegadores modernos. Cuando seleccionas un archivo, generamos un Blob que solo existe en tu RAM. Ese Blob se dibuja en un elemento HTML5 Canvas invisible.',
+    html: 'Konverteringen utan server använder moderna webbläsar-API:er. När du väljer en fil skapas en tillfällig Blob i RAM-minnet och ritas på en osynlig HTML5 Canvas.',
   },
   {
     type: 'paragraph',
-    html: 'Dado que el JPG no soporta transparencias, nuestro algoritmo rellena el fondo con un color blanco sólido antes de "pintar" el PNG encima. Una vez compuesta la imagen, ejecutamos el método de exportación nativo, generando un flujo de bytes que tu ordenador descarga directamente.',
+    html: 'JPG stöder inte transparens, så genomskinliga områden fylls med vitt före rendering. Canvas skapar sedan JPEG-data som sparas direkt på enheten.',
   },
   {
     type: 'tip',
-    title: 'Consejo SEO: El Peso Ideal',
-    html: 'Google penaliza activamente los sitios web lentos. Si tu Largest Contentful Paint (LCP) es alto por culpa de un PNG de cabecera de 2MB, convertirlo a un JPG de 200KB puede mejorar tus métricas de PageSpeed instantáneamente sin diferencias visuales.',
+    title: 'SEO tips för rätt filstorlek',
+    html: 'En lättare bild kan förbättra LCP och PageSpeed. Att göra en stor PNG till en mindre JPG är särskilt användbart i sidhuvuden och bildrika sidor.',
   },
   {
     type: 'title',
-    text: 'Seguridad para Empresas y Profesionales',
+    text: 'Säkerhet för företag och yrkesverksamma',
     level: 3,
   },
   {
     type: 'paragraph',
-    html: 'Si trabajas en sectores sensibles como la banca, la salud o el derecho, subir archivos a conversores online es una violación de seguridad. Nuestra herramienta funciona como una "caja negra": lo que pasa dentro se queda en tu RAM. Es la única forma segura de trabajar con documentos confidenciales.',
+    html: 'För bank, vård och juridik kan uppladdning till externa tjänster innebära risker. Här sker behandlingen i webbläsarens RAM utan att filerna skickas till molnet.',
   },
   {
     type: 'title',
-    text: 'Compatibilidad del Resultado',
+    text: 'Resultatets kompatibilitet',
     level: 3,
   },
   {
     type: 'list',
     icon: 'mdi:check-circle',
     items: [
-      'Visores de Windows, macOS y dispositivos móviles.',
-      'Redes sociales (Instagram, LinkedIn, etc).',
-      'Herramientas de ofimática (Word, PowerPoint).',
-      'Gestores de contenido (WordPress, Shopify).',
+      'Bildvisare i Windows, macOS och mobila enheter.',
+      'Sociala nätverk (Instagram, LinkedIn med flera).',
+      'Kontorsverktyg (Word, PowerPoint).',
+      'Innehållshanterare (WordPress, Shopify).',
     ],
   },
   {
     type: 'title',
-    text: 'Conclusión: Optimiza como un Pro',
+    text: 'Slutsats: optimera med kontroll',
     level: 3,
   },
   {
     type: 'paragraph',
-    html: 'Este convertidor no es solo una página más; es una pieza de ingeniería diseñada para facilitarte la vida. Ya seas un desarrollador o un usuario doméstico, aquí tienes la solución definitiva para ahorrar megabytes y mantener tus datos a salvo.',
+    html: 'Konverteraren kombinerar snabbhet och integritet. Oavsett om du utvecklar webben eller använder verktyget hemma kan du minska bilder utan att lämna över filerna till en tredje part.',
   },
 ];
 

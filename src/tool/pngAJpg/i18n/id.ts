@@ -21,24 +21,24 @@ const ui: ImageConverterUI = {
 
 const faq: PngAJpgLocaleContent['faq'] = [
   {
-    question: '¿Por qué elegir nuestro convertidor local de PNG a JPG?',
+    question: 'Mengapa memilih konverter PNG ke JPG lokal kami?',
     answer:
-      'A diferencia de las herramientas convencionales, nuestra utilidad procesa los archivos íntegramente en tu navegador. Tus imágenes nunca tocan un disco duro ajeno, garantizando la total soberanía y privacidad de tus datos.',
+      'Berbeda dari layanan biasa, alat ini memproses file sepenuhnya di browser. Gambar Anda tidak dikirim ke disk jarak jauh, sehingga kendali dan privasi data tetap terjaga.',
   },
   {
-    question: '¿JPG o PNG? ¿Cuál es mejor para mi caso?',
+    question: 'JPG atau PNG: mana yang cocok untuk saya?',
     answer:
-      'El PNG es ideal para logotipos y elementos con transparencia. Sin embargo, el JPG es el estándar de oro para fotografías y banners web, ya que logra pesos mucho más reducidos, mejorando drásticamente la velocidad de carga de un sitio.',
+      'PNG cocok untuk logo dan elemen transparan. JPG lebih sesuai untuk foto dan banner web karena ukurannya jauh lebih kecil sehingga halaman dimuat lebih cepat.',
   },
   {
-    question: '¿Cómo funciona la conversión técnica sin subir nada?',
+    question: 'Bagaimana konversi bekerja tanpa mengunggah file?',
     answer:
-      'Utilizamos la potencia del Canvas de HTML5. El navegador recrea la imagen en un lienzo virtual invisible, rellena las transparencias con blanco y genera un flujo de bytes que descargas directamente al instante.',
+      'Kami menggunakan Canvas HTML5. Browser membuat ulang gambar pada kanvas virtual yang tidak terlihat, mengisi area transparan dengan putih, lalu menghasilkan data JPEG untuk diunduh.',
   },
   {
-    question: '¿Es seguro para documentos confidenciales?',
+    question: 'Apakah aman untuk dokumen rahasia?',
     answer:
-      'Sí, es la opción más segura para profesionales de la banca, salud o derecho. Al ser una "caja negra" que solo usa tu RAM, lo que pasa dentro muere al cerrar la pestaña, evitando filtraciones en nubes de terceros.',
+      'Ya. Untuk dokumen perbankan, kesehatan, atau hukum, pemrosesan lokal lebih aman: data hanya berada di RAM perangkat dan berhenti saat tab ditutup.',
   },
 ];
 
@@ -60,110 +60,110 @@ const howTo: PngAJpgLocaleContent['howTo'] = [
 const seo: PngAJpgLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Convertidor de PNG a JPG: La Guía Definitiva para la Optimización de Imágenes',
+    text: 'Konverter PNG ke JPG: panduan praktis mengoptimalkan gambar',
     level: 2,
   },
   {
     type: 'paragraph',
-    html: 'En el mundo del diseño digital y el desarrollo web, la eficiencia lo es todo. El formato PNG (Portable Network Graphics) es amado por su capacidad de mantener transparencias y su compresión sin pérdida, pero tiene un gran enemigo: el peso del archivo. Cuando necesitas que tu sitio web vuele o que tus emails carguen instantáneamente, el paso de PNG a JPG es la decisión técnica más inteligente.',
+    html: 'Dalam desain digital dan pengembangan web, kecepatan sangat penting. PNG mempertahankan transparansi dan kualitas tanpa kehilangan, tetapi ukurannya bisa besar. Untuk halaman cepat dan lampiran ringan, JPG sering menjadi pilihan praktis.',
   },
   {
     type: 'title',
-    text: '¿JPG o PNG?',
+    text: 'JPG atau PNG: mana yang sebaiknya dipilih?',
     level: 3,
   },
   {
     type: 'paragraph',
-    html: 'No existe un formato mejor que otro, sino una herramienta para cada necesidad. El PNG es un formato sin pérdida, ideal para maquetas de interfaces, logotipos con texto pequeño y elementos visuales que requieren un fondo transparente. Sin embargo, esta fidelidad tiene un coste: archivos que pueden ser 5 o 10 veces más pesados que su equivalente comprimido.',
+    html: 'Tidak ada format terbaik untuk semua kebutuhan. PNG cocok untuk antarmuka, logo, dan latar transparan, tetapi kompresi tanpa kehilangan dapat menghasilkan file yang jauh lebih besar.',
   },
   {
     type: 'paragraph',
-    html: 'El JPG (Joint Photographic Experts Group), por otro lado, utiliza algoritmos de discretización para eliminar información que el ojo humano apenas percibe, logrando pesos pluma. Es el estándar de oro para fotografías, banners publicitarios y redes sociales. Al convertir tus PNG a JPG, estás traduciendo fidelidad geométrica por velocidad de red.',
+    html: 'JPG mengurangi detail yang sulit dilihat mata sehingga ukuran gambar lebih ringan. Format ini cocok untuk foto, banner, dan media sosial ketika kecepatan unduh lebih penting.',
   },
   {
     type: 'title',
-    text: 'Comparativa de Arquitectura: Local vs Nube',
+    text: 'Perbandingan teknis: proses lokal dan cloud',
     level: 3,
   },
   {
     type: 'comparative',
     items: [
       {
-        title: 'Convertidores Cloud',
-        description: 'Herramientas tradicionales que suben tus fotos a un servidor remoto.',
+        title: 'Konverter berbasis cloud',
+        description: 'Layanan tradisional yang mengunggah foto ke server jarak jauh.',
         icon: 'mdi:cloud-upload',
         pointIcon: 'mdi:close-circle-outline',
         points: [
-          'Latencia de red (Upload/Download)',
-          'Riesgo de filtración de datos privados',
-          'Límites de tamaño por archivo',
-          'Publicidad y rastreadores',
+          'Latensi jaringan (unggah/unduh)',
+          'Risiko kebocoran data pribadi',
+          'Batas ukuran file',
+          'Iklan dan pelacak',
         ],
       },
       {
-        title: 'Nuestra Arquitectura Local',
-        description: 'Procesamiento directo en tu hardware mediante tecnología Vanilla JS.',
+        title: 'Arsitektur lokal kami',
+        description: 'Pemrosesan langsung pada perangkat dengan JavaScript asli.',
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Velocidad instantánea sin red',
-          'Privacidad garantizada (0 bytes enviados)',
-          'Sin límites de MB por archivo',
-          'Interfaz profesional y limpia',
+          'Kecepatan langsung tanpa jaringan',
+          'Privasi terjamin (nol byte dikirim)',
+          'Tanpa batas MB per file',
+          'Antarmuka bersih dan profesional',
         ],
       },
     ],
   },
   {
     type: 'title',
-    text: 'Cómo funciona la conversión técnica',
+    text: 'Cara kerja konversi teknis',
     level: 3,
   },
   {
     type: 'paragraph',
-    html: 'Probablemente te preguntes cómo es posible convertir una imagen sin enviarla a un servidor. La magia reside en la potencia de los navegadores modernos. Cuando seleccionas un archivo, generamos un Blob que solo existe en tu RAM. Ese Blob se dibuja en un elemento HTML5 Canvas invisible.',
+    html: 'Konversi tanpa server memanfaatkan API browser modern. Saat file dipilih, browser membuat Blob sementara di RAM lalu menggambarnya pada Canvas HTML5 yang tidak terlihat.',
   },
   {
     type: 'paragraph',
-    html: 'Dado que el JPG no soporta transparencias, nuestro algoritmo rellena el fondo con un color blanco sólido antes de "pintar" el PNG encima. Una vez compuesta la imagen, ejecutamos el método de exportación nativo, generando un flujo de bytes que tu ordenador descarga directamente.',
+    html: 'JPG tidak mendukung transparansi, sehingga area transparan diisi putih sebelum gambar dirender. Canvas kemudian menghasilkan data JPEG yang langsung disimpan di perangkat.',
   },
   {
     type: 'tip',
-    title: 'Consejo SEO: El Peso Ideal',
-    html: 'Google penaliza activamente los sitios web lentos. Si tu Largest Contentful Paint (LCP) es alto por culpa de un PNG de cabecera de 2MB, convertirlo a un JPG de 200KB puede mejorar tus métricas de PageSpeed instantáneamente sin diferencias visuales.',
+    title: 'Tips SEO: ukuran yang ideal',
+    html: 'Gambar yang lebih ringan dapat memperbaiki LCP dan metrik PageSpeed. Mengubah PNG besar menjadi JPG yang lebih kecil berguna untuk header dan halaman dengan banyak gambar.',
   },
   {
     type: 'title',
-    text: 'Seguridad para Empresas y Profesionales',
+    text: 'Keamanan untuk perusahaan dan profesional',
     level: 3,
   },
   {
     type: 'paragraph',
-    html: 'Si trabajas en sectores sensibles como la banca, la salud o el derecho, subir archivos a conversores online es una violación de seguridad. Nuestra herramienta funciona como una "caja negra": lo que pasa dentro se queda en tu RAM. Es la única forma segura de trabajar con documentos confidenciales.',
+    html: 'Untuk perbankan, kesehatan, dan hukum, mengirim file ke layanan eksternal dapat berisiko. Di sini pemrosesan berlangsung di RAM browser tanpa mengunggah data ke cloud.',
   },
   {
     type: 'title',
-    text: 'Compatibilidad del Resultado',
+    text: 'Kompatibilitas hasil',
     level: 3,
   },
   {
     type: 'list',
     icon: 'mdi:check-circle',
     items: [
-      'Visores de Windows, macOS y dispositivos móviles.',
-      'Redes sociales (Instagram, LinkedIn, etc).',
-      'Herramientas de ofimática (Word, PowerPoint).',
-      'Gestores de contenido (WordPress, Shopify).',
+      'Penampil Windows, macOS, dan perangkat seluler.',
+      'Media sosial (Instagram, LinkedIn, dan lainnya).',
+      'Perangkat lunak kantor (Word, PowerPoint).',
+      'Pengelola konten (WordPress, Shopify).',
     ],
   },
   {
     type: 'title',
-    text: 'Conclusión: Optimiza como un Pro',
+    text: 'Kesimpulan: optimalkan dengan tepat',
     level: 3,
   },
   {
     type: 'paragraph',
-    html: 'Este convertidor no es solo una página más; es una pieza de ingeniería diseñada para facilitarte la vida. Ya seas un desarrollador o un usuario doméstico, aquí tienes la solución definitiva para ahorrar megabytes y mantener tus datos a salvo.',
+    html: 'Konverter ini menggabungkan kecepatan dan privasi. Baik Anda pengembang maupun pengguna rumahan, Anda dapat mengecilkan gambar tanpa menyerahkan file ke layanan pihak ketiga.',
   },
 ];
 
