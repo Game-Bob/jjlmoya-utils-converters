@@ -21,25 +21,21 @@ const ui: ImageConverterUI = {
 
 const faq: PngAJpgLocaleContent['faq'] = [
   {
-    question: '为什么要选择我们的本地 PNG 转 JPG 转换器？',
-    answer:
-      '与传统工具不同，我们的实用程序完全在您的浏览器中处理文件。您的图像永远不会触及他人的硬盘，保证了您数据的完全主权和隐私。',
+    "question": "为什么选择我们的本地 PNG 转 JPG 转换器？",
+    "answer": "与普通的在线转换工具不同，我们的程序完全在您的浏览器内部处理图片。您的文件绝不会上传到第三方服务器，保证绝对的数据隐私。"
   },
   {
-    question: 'JPG 还是 PNG？哪种更适合我的情况？',
-    answer:
-      'PNG 是具有透明度要求的徽标和元素的理想选择。然而，JPG 是摄影和网页横幅的黄金标准，因为它能达到更小的文件体积，从而显著提高网站的加载速度。',
+    "question": "JPG 与 PNG：哪种格式更适合您？",
+    "answer": "PNG 非常适合包含透明背景的标志和图标。JPG 具有更高的压缩率，文件体积更小，非常适合网页照片和广告横幅。"
   },
   {
-    question: '如何在不上传任何内容的情况下进行技术转换？',
-    answer:
-      '我们利用 HTML5 Canvas 的强大功能。浏览器在一个不可见的虚拟画布上重建图像，用白色填充透明部分，并生成可以直接立即下载的字节流。',
+    "question": "无需上传的本地转换是如何实现的？",
+    "answer": "我们使用了 HTML5 Canvas 技术。浏览器在后台的虚拟画布上绘制 PNG 图片，将透明区域填充为纯白背景，并直接生成 JPG 字节流。"
   },
   {
-    question: '对于机密文档安全吗？',
-    answer:
-      '是的，对于银行业、医疗保健或法律行业的专业人士来说，这是最安全的选择。作为一个仅使用您内存的\"黑匣子\"，关闭标签页后，内部发生的一切都会消失，从而避免了第三方云端的泄露。',
-  },
+    "question": "处理商业机密或敏感文件安全吗？",
+    "answer": "非常安全。所有数据仅储存在您的浏览器内存中，关闭标签页后临时数据将立刻完全销毁。"
+  }
 ];
 
 const howTo: PngAJpgLocaleContent['howTo'] = [
@@ -59,112 +55,112 @@ const howTo: PngAJpgLocaleContent['howTo'] = [
 
 const seo: PngAJpgLocaleContent['seo'] = [
   {
-    type: 'title',
-    text: 'PNG 转 JPG 转换器：图像优化终极指南',
-    level: 2,
+    "type": "title",
+    "text": "PNG转JPG在线转换器：图像优化指南",
+    "level": 2
   },
   {
-    type: 'paragraph',
-    html: '在数字设计和网页开发的世界中，效率就是一切。PNG (Portable Network Graphics) 格式因其保持透明度的能力和无损压缩而受到喜爱，但它有一个大敌人：文件重量。当您希望您的网站飞速运行或您的电子邮件即时加载时，从 PNG 转换为 JPG 是最明智的技术决策。',
+    "type": "paragraph",
+    "html": "在浏览器中直接将PNG图片转换为JPG格式，无需上传服务器，保护隐私并提高网站加载速度。"
   },
   {
-    type: 'title',
-    text: 'JPG 还是 PNG？',
-    level: 3,
+    "type": "title",
+    "text": "JPG 与 PNG 对比",
+    "level": 3
   },
   {
-    type: 'paragraph',
-    html: '没有一种格式优于另一种格式，只有适合每种需求的工具。PNG 是无损格式，非常适合界面模型、带有小文本的徽标以及需要透明背景的视觉元素。然而，这种忠实性是有代价的：文件体积可能比压缩后的同类产品重 5 或 10 倍。',
+    "type": "paragraph",
+    "html": "PNG支持透明背景但体积较大；JPG压缩率高且体积小，非常适合网页图片和照片。"
   },
   {
-    type: 'paragraph',
-    html: '另一方面，JPG (Joint Photographic Experts Group) 使用离散化算法技术来删除人眼几乎察觉不到的信息，从而实现羽量级的大小。它是摄影、广告横幅和社交媒体的黄金标准。通过将 PNG 转换为 JPG，您是将几何保真度换取网络速度。',
+    "type": "paragraph",
+    "html": "转换为JPG可以在保持良好视觉质量的同时大幅减少文件大小。"
   },
   {
-    type: 'title',
-    text: '架构对比：本地 vs 云端',
-    level: 3,
+    "type": "title",
+    "text": "本地处理与云端转换对比",
+    "level": 3
   },
   {
-    type: 'comparative',
-    items: [
+    "type": "comparative",
+    "items": [
       {
-        title: '云端转换器',
-        description: '将您的照片上传到远程服务器的传统工具。',
-        icon: 'mdi:cloud-upload',
-        pointIcon: 'mdi:close-circle-outline',
-        points: [
-          '网络延迟（上传/下载）',
-          '私有数据泄露风险',
-          '每个文件的尺寸限制',
-          '广告和追踪器',
-        ],
+        "title": "云端转换工具",
+        "description": "需要将图片上传到远程服务器。",
+        "icon": "mdi:cloud-upload",
+        "pointIcon": "mdi:close-circle-outline",
+        "points": [
+          "网络传输延迟",
+          "隐私泄露风险",
+          "文件大小限制",
+          "广告弹窗"
+        ]
       },
       {
-        title: '我们的本地架构',
-        description: '通过 Vanilla JS 技术在您的硬件上直接处理。',
-        icon: 'mdi:laptop-mac',
-        highlight: true,
-        points: [
-          '无需网络的即时速度',
-          '隐私保证（发送数据为 0 字节）',
-          '无单文件大小限制',
-          '专业且干净的界面',
-        ],
-      },
-    ],
+        "title": "本地转换架构",
+        "description": "基于HTML5 Canvas技术的本地直接处理。",
+        "icon": "mdi:laptop-mac",
+        "highlight": true,
+        "points": [
+          "秒级极速转换",
+          "绝对隐私安全（0字节上传）",
+          "无文件大小限制",
+          "界面简洁"
+        ]
+      }
+    ]
   },
   {
-    type: 'title',
-    text: '技术转换的工作原理',
-    level: 3,
+    "type": "title",
+    "text": "本地转换技术原理",
+    "level": 3
   },
   {
-    type: 'paragraph',
-    html: '您可能想知道如何在不发送到服务器的情况下转换图像。奥秘在于现代浏览器的强大功能。当您选择一个文件时，我们会生成一个仅存在于您内存中的 Blob。该 Blob 会被绘制在一个不可见的 HTML5 Canvas 元素上。',
+    "type": "paragraph",
+    "html": "利用浏览器原生的Canvas API，在内存中渲染图像并自动充填白色背景后导出JPG字节流。"
   },
   {
-    type: 'paragraph',
-    html: '由于 JPG 不支持透明度，我们的算法会在\"绘制\"PNG 之前先用纯白色填充背景。合成图像后，我们执行原生导出方法，生成可供您的计算机直接下载的字节流。',
+    "type": "paragraph",
+    "html": "透明区域将自动替换为纯白背景，完美适配JPG标准。"
   },
   {
-    type: 'tip',
-    title: 'SEO 建议：理想的文件重量',
-    html: 'Google 会主动惩罚缓慢的网站。如果您的 Largest Contentful Paint (LCP) 因为一个 2MB 的头部 PNG 而偏高，那么将其转换为 200KB 的 JPG 可以在不影响视觉效果的情况下立即改善您的 PageSpeed 指标。',
+    "type": "tip",
+    "title": "SEO 优化建议",
+    "html": "压缩网页图片体积可显著改善 PageSpeed 指标和用户体验。"
   },
   {
-    type: 'title',
-    text: '企业和专业人士的安全保障',
-    level: 3,
+    "type": "title",
+    "text": "企业级数据安全",
+    "level": 3
   },
   {
-    type: 'paragraph',
-    html: '如果您在银行、医疗保健或法律等敏感行业工作，将文件上传到在线转换器属于安全违规行为。我们的工具就像一个\"黑匣子\"：内部发生的一切都留在您的内存中。这是处理机密文档唯一安全的方法。',
+    "type": "paragraph",
+    "html": "处理敏感文件更安全，关闭标签页后所有临时内存数据即刻销毁。"
   },
   {
-    type: 'title',
-    text: '结果的兼容性',
-    level: 3,
+    "type": "title",
+    "text": "兼容性说明",
+    "level": 3
   },
   {
-    type: 'list',
-    icon: 'mdi:check-circle',
-    items: [
-      'Windows、macOS 和移动设备查看器。',
-      '社交网络 (Instagram, LinkedIn 等)。',
-      '办公工具 (Word, PowerPoint)。',
-      '内容管理系统 (WordPress, Shopify)。',
-    ],
+    "type": "list",
+    "icon": "mdi:check-circle",
+    "items": [
+      "主流操作系统与移动设备",
+      "社交媒体平台",
+      "办公软件",
+      "CMS建站系统"
+    ]
   },
   {
-    type: 'title',
-    text: '结论：像专业人士一样优化',
-    level: 3,
+    "type": "title",
+    "text": "总结",
+    "level": 3
   },
   {
-    type: 'paragraph',
-    html: '这个转换器不只是另一个网页；它是为您生活更便捷而设计的工程杰作。无论您是开发人员还是家庭用户，这里都有节省空间并确保数据安全的终极解决方案。',
-  },
+    "type": "paragraph",
+    "html": "兼具高速与安全的专业图像处理工具。"
+  }
 ];
 
 

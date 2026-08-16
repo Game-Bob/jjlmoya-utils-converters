@@ -21,19 +21,24 @@ const ui: ImageConverterUI = {
 
 const faq: PngAJpgLocaleContent['faq'] = [
   {
-    question: 'Pourquoi convertir PNG en JPG ?',
+    question: '¿Por qué elegir nuestro convertidor local de PNG a JPG?',
     answer:
-      'Le format PNG maintient une haute qualité et la transparence, mais produit de gros fichiers. La conversion en JPG est idéale pour les photos légères dans les e-mails ou les sites web rapides lorsqu\'un fond solide est acceptable.',
+      'A diferencia de las herramientas convencionales, nuestra utilidad procesa los archivos íntegramente en tu navegador. Tus imágenes nunca tocan un disco duro ajeno, garantizando la total soberanía y privacidad de tus datos.',
   },
   {
-    question: 'Vais-je perdre des détails pendant la conversion ?',
+    question: '¿JPG o PNG? ¿Cuál es mejor para mi caso?',
     answer:
-      'Nous appliquons un taux de compression équilibré de haute qualité, de sorte que les différences dans les photographies et les dégradés seront presque imperceptibles à l\'œil, mais vous remarquerez l\'économie dans la taille finale du fichier.',
+      'El PNG es ideal para logotipos y elementos con transparencia. Sin embargo, el JPG es el estándar de oro para fotografías y banners web, ya que logra pesos mucho más reducidos, mejorando drásticamente la velocidad de carga de un sitio.',
   },
   {
-    question: 'Mes photos sont-elles traitées en toute sécurité ?',
+    question: '¿Cómo funciona la conversión técnica sin subir nada?',
     answer:
-      'Absolument oui. Nous n\'utilisons pas de serveurs cloud ; l\'algorithme de conversion s\'exécute via le Canvas HTML5 de votre propre navigateur web de manière isolée.',
+      'Utilizamos la potencia del Canvas de HTML5. El navegador recrea la imagen en un lienzo virtual invisible, rellena las transparencias con blanco y genera un flujo de bytes que descargas directamente al instante.',
+  },
+  {
+    question: '¿Es seguro para documentos confidenciales?',
+    answer:
+      'Sí, es la opción más segura para profesionales de la banca, salud o derecho. Al ser una "caja negra" que solo usa tu RAM, lo que pasa dentro muere al cerrar la pestaña, evitando filtraciones en nubes de terceros.',
   },
 ];
 
@@ -55,42 +60,110 @@ const howTo: PngAJpgLocaleContent['howTo'] = [
 const seo: PngAJpgLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Convertisseur PNG vers JPG en Ligne Gratuit',
+    text: 'Convertidor de PNG a JPG: La Guía Definitiva para la Optimización de Imágenes',
+    level: 2,
   },
   {
     type: 'paragraph',
-    html:
-      'Le format PNG (Portable Network Graphics) est largement utilisé pour sa qualité sans perte et son support de la transparence (canal alpha). Cependant, cette fidélité a un coût: les fichiers PNG sont considérablement plus grands que leurs équivalents JPG, notamment pour les photographies ou les images avec des dégradés complexes.',
+    html: 'En el mundo del diseño digital y el desarrollo web, la eficiencia lo es todo. El formato PNG (Portable Network Graphics) es amado por su capacidad de mantener transparencias y su compresión sin pérdida, pero tiene un gran enemigo: el peso del archivo. Cuando necesitas que tu sitio web vuele o que tus emails carguen instantáneamente, el paso de PNG a JPG es la decisión técnica más inteligente.',
+  },
+  {
+    type: 'title',
+    text: '¿JPG o PNG?',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'Le JPG (ou JPEG) utilise un algorithme de compression avec perte qui réduit considérablement la taille du fichier. Pour les photographies et les images où une légère perte de détail est acceptable, JPG est le choix standard. Un PNG de 2 Mo peut devenir un JPG de 200 Ko avec une qualité visuelle pratiquement identique.',
+    html: 'No existe un formato mejor que otro, sino una herramienta para cada necesidad. El PNG es un formato sin pérdida, ideal para maquetas de interfaces, logotipos con texto pequeño y elementos visuales que requieren un fondo transparente. Sin embargo, esta fidelidad tiene un coste: archivos que pueden ser 5 o 10 veces más pesados que su equivalente comprimido.',
   },
   {
     type: 'paragraph',
-    html:
-      'Notre convertisseur PNG vers JPG fonctionne entièrement dans votre navigateur via l\'API Canvas HTML5. Les zones transparentes du PNG original sont remplacées par un fond blanc solide, car le format JPG ne supporte pas le canal alpha.',
+    html: 'El JPG (Joint Photographic Experts Group), por otro lado, utiliza algoritmos de discretización para eliminar información que el ojo humano apenas percibe, logrando pesos pluma. Es el estándar de oro para fotografías, banners publicitarios y redes sociales. Al convertir tus PNG a JPG, estás traduciendo fidelidad geométrica por velocidad de red.',
+  },
+  {
+    type: 'title',
+    text: 'Comparativa de Arquitectura: Local vs Nube',
+    level: 3,
+  },
+  {
+    type: 'comparative',
+    items: [
+      {
+        title: 'Convertidores Cloud',
+        description: 'Herramientas tradicionales que suben tus fotos a un servidor remoto.',
+        icon: 'mdi:cloud-upload',
+        pointIcon: 'mdi:close-circle-outline',
+        points: [
+          'Latencia de red (Upload/Download)',
+          'Riesgo de filtración de datos privados',
+          'Límites de tamaño por archivo',
+          'Publicidad y rastreadores',
+        ],
+      },
+      {
+        title: 'Nuestra Arquitectura Local',
+        description: 'Procesamiento directo en tu hardware mediante tecnología Vanilla JS.',
+        icon: 'mdi:laptop-mac',
+        highlight: true,
+        points: [
+          'Velocidad instantánea sin red',
+          'Privacidad garantizada (0 bytes enviados)',
+          'Sin límites de MB por archivo',
+          'Interfaz profesional y limpia',
+        ],
+      },
+    ],
+  },
+  {
+    type: 'title',
+    text: 'Cómo funciona la conversión técnica',
+    level: 3,
+  },
+  {
+    type: 'paragraph',
+    html: 'Probablemente te preguntes cómo es posible convertir una imagen sin enviarla a un servidor. La magia reside en la potencia de los navegadores modernos. Cuando seleccionas un archivo, generamos un Blob que solo existe en tu RAM. Ese Blob se dibuja en un elemento HTML5 Canvas invisible.',
+  },
+  {
+    type: 'paragraph',
+    html: 'Dado que el JPG no soporta transparencias, nuestro algoritmo rellena el fondo con un color blanco sólido antes de "pintar" el PNG encima. Una vez compuesta la imagen, ejecutamos el método de exportación nativo, generando un flujo de bytes que tu ordenador descarga directamente.',
   },
   {
     type: 'tip',
-    html:
-      'Pour les images avec du texte ou des logos nécessitant des fonds transparents, envisagez d\'utiliser WebP plutôt que JPG. WebP offre une compression similaire mais conserve la transparence.',
+    title: 'Consejo SEO: El Peso Ideal',
+    html: 'Google penaliza activamente los sitios web lentos. Si tu Largest Contentful Paint (LCP) es alto por culpa de un PNG de cabecera de 2MB, convertirlo a un JPG de 200KB puede mejorar tus métricas de PageSpeed instantáneamente sin diferencias visuales.',
+  },
+  {
+    type: 'title',
+    text: 'Seguridad para Empresas y Profesionales',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'Le JPG peut réduire la taille d\'une image photographique de 70 % à 90 % par rapport au PNG, selon la complexité de l\'image et les paramètres de qualité appliqués.',
+    html: 'Si trabajas en sectores sensibles como la banca, la salud o el derecho, subir archivos a conversores online es una violación de seguridad. Nuestra herramienta funciona como una "caja negra": lo que pasa dentro se queda en tu RAM. Es la única forma segura de trabajar con documentos confidenciales.',
+  },
+  {
+    type: 'title',
+    text: 'Compatibilidad del Resultado',
+    level: 3,
+  },
+  {
+    type: 'list',
+    icon: 'mdi:check-circle',
+    items: [
+      'Visores de Windows, macOS y dispositivos móviles.',
+      'Redes sociales (Instagram, LinkedIn, etc).',
+      'Herramientas de ofimática (Word, PowerPoint).',
+      'Gestores de contenido (WordPress, Shopify).',
+    ],
+  },
+  {
+    type: 'title',
+    text: 'Conclusión: Optimiza como un Pro',
+    level: 3,
   },
   {
     type: 'paragraph',
-    html:
-      'Les cas d\'utilisation typiques pour la conversion PNG vers JPG comprennent: préparer des images pour l\'e-mail, optimiser les photos de produits pour les boutiques en ligne, réduire le poids des captures d\'écran avant de les partager, et compresser les images pour un chargement plus rapide des pages web.',
-  },
-  {
-    type: 'paragraph',
-    html:
-      'Convertissez PNG en JPG instantanément, gratuitement et en toute confidentialité directement dans votre navigateur. Sans inscription, sans limites et sans compromettre la sécurité de vos fichiers.',
+    html: 'Este convertidor no es solo una página más; es una pieza de ingeniería diseñada para facilitarte la vida. Ya seas un desarrollador o un usuario doméstico, aquí tienes la solución definitiva para ahorrar megabytes y mantener tus datos a salvo.',
   },
 ];
 

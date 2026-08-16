@@ -21,24 +21,24 @@ const ui: ImageConverterUI = {
 
 const faq: PngAJpgLocaleContent['faq'] = [
   {
-    question: 'Neden yerel PNG - JPG dönüştürücümüzü seçmelisiniz?',
+    question: '¿Por qué elegir nuestro convertidor local de PNG a JPG?',
     answer:
-      'Geleneksel araçların aksine, yardımcı programımız dosyaları tamamen tarayıcınızda işler. Görüntüleriniz asla başkasının sabit diskine değmez, bu da verilerinizin tam egemenliğini ve gizliliğini garanti eder.',
+      'A diferencia de las herramientas convencionales, nuestra utilidad procesa los archivos íntegramente en tu navegador. Tus imágenes nunca tocan un disco duro ajeno, garantizando la total soberanía y privacidad de tus datos.',
   },
   {
-    question: 'JPG mi yoksa PNG mi? Benim durumum için hangisi daha iyi?',
+    question: '¿JPG o PNG? ¿Cuál es mejor para mi caso?',
     answer:
-      'PNG, logolar ve şeffaflık içeren öğeler için idealdir. Ancak JPG, web sitelerinin yükleme hızını önemli ölçüde artıran çok daha düşük ağırlıklara ulaştığı için fotoğraflar ve web banner\'ları için altın standarttır.',
+      'El PNG es ideal para logotipos y elementos con transparencia. Sin embargo, el JPG es el estándar de oro para fotografías y banners web, ya que logra pesos mucho más reducidos, mejorando drásticamente la velocidad de carga de un sitio.',
   },
   {
-    question: 'Hiçbir şey yüklemeden teknik dönüşüm nasıl çalışıyor?',
+    question: '¿Cómo funciona la conversión técnica sin subir nada?',
     answer:
-      'HTML5 Canvas\'ın gücünü kullanıyoruz. Tarayıcı, görüntüyü görünmez bir sanal tuval üzerinde yeniden oluşturur, şeffaflıkları beyaza boyar ve anında doğrudan indirdiğiniz bir bayt akışı oluşturur.',
+      'Utilizamos la potencia del Canvas de HTML5. El navegador recrea la imagen en un lienzo virtual invisible, rellena las transparencias con blanco y genera un flujo de bytes que descargas directamente al instante.',
   },
   {
-    question: 'Gizli belgeler için güvenli mi?',
+    question: '¿Es seguro para documentos confidenciales?',
     answer:
-      'Evet, bankacılık, sağlık veya hukuk sektörlerindeki profesyoneller için en güvenli seçenektir. Sadece RAM\'inizi kullanan bir "kara kutu" olduğu için, içinde olup bitenler sekmeyi kapattığınızda ölür ve üçüncü taraf bulutlarda sızıntıları önler.',
+      'Sí, es la opción más segura para profesionales de la banca, salud o derecho. Al ser una "caja negra" que solo usa tu RAM, lo que pasa dentro muere al cerrar la pestaña, evitando filtraciones en nubes de terceros.',
   },
 ];
 
@@ -60,110 +60,110 @@ const howTo: PngAJpgLocaleContent['howTo'] = [
 const seo: PngAJpgLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'PNG - JPG Dönüştürücü: Görüntü Optimizasyonu İçin Kesin Kılavuz',
+    text: 'Convertidor de PNG a JPG: La Guía Definitiva para la Optimización de Imágenes',
     level: 2,
   },
   {
     type: 'paragraph',
-    html: 'Dijital tasarım ve web geliştirme dünyasında verimlilik her şeydir. PNG (Portable Network Graphics) formatı, şeffaflıkları koruma yeteneği ve kayıpsız sıkıştırması nedeniyle sevilir, ancak büyük bir düşmanı vardır: dosya ağırlığı. Web sitenizin uçmasını veya e-postalarınızın anında yüklenmesini istediğinizde, PNG\'den JPG\'ye geçiş en akıllıca teknik karardır.',
+    html: 'En el mundo del diseño digital y el desarrollo web, la eficiencia lo es todo. El formato PNG (Portable Network Graphics) es amado por su capacidad de mantener transparencias y su compresión sin pérdida, pero tiene un gran enemigo: el peso del archivo. Cuando necesitas que tu sitio web vuele o que tus emails carguen instantáneamente, el paso de PNG a JPG es la decisión técnica más inteligente.',
   },
   {
     type: 'title',
-    text: 'JPG mi yoksa PNG mi?',
+    text: '¿JPG o PNG?',
     level: 3,
   },
   {
     type: 'paragraph',
-    html: 'Bir format diğerinden daha iyi değildir, her ihtiyaca uygun bir araç vardır. PNG kayıpsız bir formattır; arayüz maketleri, küçük metinli logolar ve şeffaf arka plan gerektiren görsel öğeler için idealdir. Ancak bu sadakatin bir bedeli vardır: dosyalar sıkıştırılmış eşdeğerinden 5 veya 10 kat daha ağır olabilir.',
+    html: 'No existe un formato mejor que otro, sino una herramienta para cada necesidad. El PNG es un formato sin pérdida, ideal para maquetas de interfaces, logotipos con texto pequeño y elementos visuales que requieren un fondo transparente. Sin embargo, esta fidelidad tiene un coste: archivos que pueden ser 5 o 10 veces más pesados que su equivalente comprimido.',
   },
   {
     type: 'paragraph',
-    html: 'Öte yandan JPG (Joint Photographic Experts Group), insan gözünün neredeyse hiç fark etmediği bilgileri kaldırmak için ayrıklaştırma algoritmaları kullanarak tüy siklet ağırlıklara ulaşır. Fotoğraflar, reklam banner\'ları ve sosyal medya için altın standarttır. PNG\'lerinizi JPG\'ye dönüştürerek geometrik sadakati ağ hızıyla değiştiriyorsunuz.',
+    html: 'El JPG (Joint Photographic Experts Group), por otro lado, utiliza algoritmos de discretización para eliminar información que el ojo humano apenas percibe, logrando pesos pluma. Es el estándar de oro para fotografías, banners publicitarios y redes sociales. Al convertir tus PNG a JPG, estás traduciendo fidelidad geométrica por velocidad de red.',
   },
   {
     type: 'title',
-    text: 'Mimari Karşılaştırması: Yerel ve Bulut',
+    text: 'Comparativa de Arquitectura: Local vs Nube',
     level: 3,
   },
   {
     type: 'comparative',
     items: [
       {
-        title: 'Bulut Dönüştürücüler',
-        description: 'Fotoğraflarınızı uzak bir sunucuya yükleyen geleneksel araçlar.',
+        title: 'Convertidores Cloud',
+        description: 'Herramientas tradicionales que suben tus fotos a un servidor remoto.',
         icon: 'mdi:cloud-upload',
         pointIcon: 'mdi:close-circle-outline',
         points: [
-          'Ağ gecikmesi (Yükleme/İndirme)',
-          'Özel verilerin sızma riski',
-          'Dosya başına boyut sınırları',
-          'Reklamlar ve izleyiciler',
+          'Latencia de red (Upload/Download)',
+          'Riesgo de filtración de datos privados',
+          'Límites de tamaño por archivo',
+          'Publicidad y rastreadores',
         ],
       },
       {
-        title: 'Yerel Mimarimiz',
-        description: 'Vanilla JS teknolojisi aracılığıyla donanımınızda doğrudan işleme.',
+        title: 'Nuestra Arquitectura Local',
+        description: 'Procesamiento directo en tu hardware mediante tecnología Vanilla JS.',
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Ağsız anında hız',
-          'Garantili gizlilik (0 bayt gönderildi)',
-          'Dosya başına MB sınırı yok',
-          'Profesyonel ve temiz arayüz',
+          'Velocidad instantánea sin red',
+          'Privacidad garantizada (0 bytes enviados)',
+          'Sin límites de MB por archivo',
+          'Interfaz profesional y limpia',
         ],
       },
     ],
   },
   {
     type: 'title',
-    text: 'Teknik dönüşüm nasıl çalışır?',
+    text: 'Cómo funciona la conversión técnica',
     level: 3,
   },
   {
     type: 'paragraph',
-    html: 'Bir görüntüyü sunucuya göndermeden nasıl dönüştürmenin mümkün olduğunu merak ediyor olmalısınız. Sihir, modern tarayıcıların gücünde yatıyor. Bir dosya seçtiğinizde, yalnızca RAM\'inizde bulunan bir Blob oluşturuyoruz. Bu Blob, görünmez bir HTML5 Canvas öğesi üzerinde çizilir.',
+    html: 'Probablemente te preguntes cómo es posible convertir una imagen sin enviarla a un servidor. La magia reside en la potencia de los navegadores modernos. Cuando seleccionas un archivo, generamos un Blob que solo existe en tu RAM. Ese Blob se dibuja en un elemento HTML5 Canvas invisible.',
   },
   {
     type: 'paragraph',
-    html: 'JPG şeffaflığı desteklemediği için algoritmamız, PNG\'yi üzerine "boyamadan" önce arka planı düz beyaz bir renkle doldurur. Görüntü oluşturulduktan sonra yerel dışa aktarma yöntemini çalıştırarak bilgisayarınızın doğrudan indirdiği bir bayt akışı oluşturuyoruz.',
+    html: 'Dado que el JPG no soporta transparencias, nuestro algoritmo rellena el fondo con un color blanco sólido antes de "pintar" el PNG encima. Una vez compuesta la imagen, ejecutamos el método de exportación nativo, generando un flujo de bytes que tu ordenador descarga directamente.',
   },
   {
     type: 'tip',
-    title: 'SEO İpucu: İdeal Ağırlık',
-    html: 'Google, yavaş web sitelerini aktif olarak cezalandırır. Largest Contentful Paint (LCP) değeriniz 2MB\'lık bir başlık PNG\'si nedeniyle yüksekse, bunu 200KB\'lık bir JPG\'ye dönüştürmek, görsel fark olmadan PageSpeed metriklerinizi anında iyileştirebilir.',
+    title: 'Consejo SEO: El Peso Ideal',
+    html: 'Google penaliza activamente los sitios web lentos. Si tu Largest Contentful Paint (LCP) es alto por culpa de un PNG de cabecera de 2MB, convertirlo a un JPG de 200KB puede mejorar tus métricas de PageSpeed instantáneamente sin diferencias visuales.',
   },
   {
     type: 'title',
-    text: 'Şirketler ve Profesyoneller İçin Güvenlik',
+    text: 'Seguridad para Empresas y Profesionales',
     level: 3,
   },
   {
     type: 'paragraph',
-    html: 'Bankacılık, sağlık veya hukuk gibi hassas sektörlerde çalışıyorsanız, dosyaları çevrimiçi dönüştürücülere yüklemek bir güvenlik ihlalidir. Aracımız bir "kara kutu" gibi çalışır: içinde ne oluyorsa RAM\'inizde kalır. Gizli belgelerle çalışmanın tek güvenli yolu budur.',
+    html: 'Si trabajas en sectores sensibles como la banca, la salud o el derecho, subir archivos a conversores online es una violación de seguridad. Nuestra herramienta funciona como una "caja negra": lo que pasa dentro se queda en tu RAM. Es la única forma segura de trabajar con documentos confidenciales.',
   },
   {
     type: 'title',
-    text: 'Sonucun Uyumluluğu',
+    text: 'Compatibilidad del Resultado',
     level: 3,
   },
   {
     type: 'list',
     icon: 'mdi:check-circle',
     items: [
-      'Windows, macOS ve mobil cihaz görüntüleyicileri.',
-      'Sosyal ağlar (Instagram, LinkedIn vb.).',
-      'Ofis araçları (Word, PowerPoint).',
-      'İçerik yöneticileri (WordPress, Shopify).',
+      'Visores de Windows, macOS y dispositivos móviles.',
+      'Redes sociales (Instagram, LinkedIn, etc).',
+      'Herramientas de ofimática (Word, PowerPoint).',
+      'Gestores de contenido (WordPress, Shopify).',
     ],
   },
   {
     type: 'title',
-    text: 'Sonuç: Bir Profesyonel Gibi Optimize Edin',
+    text: 'Conclusión: Optimiza como un Pro',
     level: 3,
   },
   {
     type: 'paragraph',
-    html: 'Bu dönüştürücü sadece başka bir sayfa değil; hayatınızı kolaylaştırmak için tasarlanmış bir mühendislik harikasıdır. İster bir geliştirici ister bir ev kullanıcısı olun, megabaytlardan tasarruf etmek ve verilerinizi güvende tutmak için nihai çözüm burada.',
+    html: 'Este convertidor no es solo una página más; es una pieza de ingeniería diseñada para facilitarte la vida. Ya seas un desarrollador o un usuario doméstico, aquí tienes la solución definitiva para ahorrar megabytes y mantener tus datos a salvo.',
   },
 ];
 

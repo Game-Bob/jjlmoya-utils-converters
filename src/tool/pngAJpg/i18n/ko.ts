@@ -21,25 +21,21 @@ const ui: ImageConverterUI = {
 
 const faq: PngAJpgLocaleContent['faq'] = [
   {
-    question: '왜 우리의 로컬 PNG to JPG 변환기를 선택해야 하나요?',
-    answer:
-      '기존 도구와 달리, 우리의 유틸리티는 브라우저 내에서 파일을 완전히 처리합니다. 사용자의 이미지는 타인의 하드 드라이브에 절대 닿지 않으므로, 데이터의 완전한 주권과 개인정보 보호를 보장합니다.',
+    "question": "왜 로컬 PNG-JPG 변환기를 선택해야 하나요?",
+    "answer": "일반적인 온라인 변환기와 달리 모든 이미지를 브라우저 내부에서 처리합니다. 외부 서버로 파일이 전송되지 않아 데이터 보안이 완벽하게 유지됩니다."
   },
   {
-    question: 'JPG 또는 PNG? 제 경우에 무엇이 더 나을까요?',
-    answer:
-      'PNG는 로고나 투명도가 필요한 요소에 이상적입니다. 하지만 JPG는 사진 및 웹 배너의 골드 표준이며, 훨씬 작은 파일 크기를 달성하여 사이트 로딩 속도를 획기적으로 향상시킵니다.',
+    "question": "JPG와 PNG 중 어떤 포맷이 적합한가요?",
+    "answer": "PNG는 투명 배경과 로고에 최적화되어 있습니다. JPG는 압축률이 높아 파일 용량이 훨씬 작으므로 웹사이트 사진이나 배너에 적합합니다."
   },
   {
-    question: '업로드 없이 기술적인 변환이 어떻게 이루어지나요?',
-    answer:
-      '우리는 HTML5 Canvas의 힘을 사용합니다. 브라우저는 투명한 가상 캔버스에 이미지를 재현하고, 투명한 부분을 흰색으로 채운 뒤, 즉시 다운로드 가능한 바이트 스트림을 생성합니다.',
+    "question": "서버 업로드 없는 기술적 변환 원리는 무엇인가요?",
+    "answer": "HTML5 Canvas 기술을 이용합니다. 브라우저가 투명 캔버스에 이미지를 그리고 투명 영역을 흰색으로 채운 후 JPG 바이트 스트림을 생성합니다."
   },
   {
-    question: '기밀 문서에 사용해도 안전한가요?',
-    answer:
-      '네, 은행, 의료 또는 법률 분야의 전문가들에게 가장 안전한 옵션입니다. 사용자의 RAM만 사용하는 "블랙박스" 역할을 하므로, 탭을 닫는 즉시 내부에서 일어나는 모든 데이터는 소멸되어 제3자 클라우드로의 유출을 방지합니다.',
-  },
+    "question": "기밀 문서 및 기업 데이터에 안전한가요?",
+    "answer": "네, 매우 안전합니다. 모든 데이터는 브라우저 메모리에만 존재하며 탭을 닫으면 즉시 완전히 삭제됩니다."
+  }
 ];
 
 const howTo: PngAJpgLocaleContent['howTo'] = [
@@ -59,112 +55,112 @@ const howTo: PngAJpgLocaleContent['howTo'] = [
 
 const seo: PngAJpgLocaleContent['seo'] = [
   {
-    type: 'title',
-    text: 'PNG to JPG 변환기: 이미지 최적화를 위한 최종 가이드',
-    level: 2,
+    "type": "title",
+    "text": "PNG에서 JPG로 변환기: 이미지 최적화 가이드",
+    "level": 2
   },
   {
-    type: 'paragraph',
-    html: '디지털 디자인과 웹 개발의 세계에서 효율성은 곧 모든 것입니다. PNG(Portable Network Graphics) 형식은 투명도를 유지하고 무손실 압축을 제공하여 사랑받지만, 큰 적이 하나 있습니다. 바로 파일 무게입니다. 웹사이트를 빠르게 운영하거나 이메일을 즉시 로드하고 싶다면, PNG에서 JPG로의 전환은 가장 현명한 기술적 결정입니다.',
+    "type": "paragraph",
+    "html": "웹사이트 속도를 높이고 파일 용량을 줄이기 위한 PNG 대 JPG 변환 가이드입니다."
   },
   {
-    type: 'title',
-    text: 'JPG 또는 PNG?',
-    level: 3,
+    "type": "title",
+    "text": "JPG 대 PNG 선택",
+    "level": 3
   },
   {
-    type: 'paragraph',
-    html: '어느 한 형식이 다른 형식보다 우월한 것이 아니라, 필요에 따른 도구의 선택이 중요합니다. PNG는 무손실 형식으로, 인터페이스 목업, 작은 텍스트가 포함된 로고, 투명한 배경이 필요한 시각적 요소에 이상적입니다. 하지만 이러한 충실도에는 대가가 따릅니다. 압축된 JPG보다 파일 크기가 5배에서 10배 더 무거울 수 있습니다.',
+    "type": "paragraph",
+    "html": "PNG는 투명 배경과 로고에 적합하며, JPG는 사진과 웹 배너에 최적화된 고압축 용량을 제공합니다."
   },
   {
-    type: 'paragraph',
-    html: '반면 JPG(Joint Photographic Experts Group)는 인간의 눈이 거의 인지하지 못하는 정보를 제거하는 이산화 알고리즘을 사용하여 매우 가벼운 파일 크기를 달성합니다. 사진, 광고 배너 및 소셜 미디어를 위한 골드 표준입니다. PNG를 JPG로 변환함으로써, 기하학적 충실도를 네트워크 속도와 교환하게 됩니다.',
+    "type": "paragraph",
+    "html": "웹사이트 로딩 속도를 향상시키려면 이미지 용량을 경량화하는 것이 필수적입니다."
   },
   {
-    type: 'title',
-    text: '아키텍처 비교: 로컬 대 클라우드',
-    level: 3,
+    "type": "title",
+    "text": "로컬 방식 대 클라우드 방식 비교",
+    "level": 3
   },
   {
-    type: 'comparative',
-    items: [
+    "type": "comparative",
+    "items": [
       {
-        title: '클라우드 변환기',
-        description: '사진을 원격 서버로 업로드하는 기존 도구입니다.',
-        icon: 'mdi:cloud-upload',
-        pointIcon: 'mdi:close-circle-outline',
-        points: [
-          '네트워크 지연 (업로드/다운로드)',
-          '개인 데이터 유출 위험',
-          '파일당 크기 제한',
-          '광고 및 추적기',
-        ],
+        "title": "클라우드 변환기",
+        "description": "서버에 파일을 업로드하여 처리하는 방식.",
+        "icon": "mdi:cloud-upload",
+        "pointIcon": "mdi:close-circle-outline",
+        "points": [
+          "네트워크 지연 발생",
+          "개인정보 유출 위험",
+          "용량 제한",
+          "광고"
+        ]
       },
       {
-        title: '우리의 로컬 아키텍처',
-        description: 'Vanilla JS 기술을 통해 사용자 하드웨어에서 직접 처리합니다.',
-        icon: 'mdi:laptop-mac',
-        highlight: true,
-        points: [
-          '네트워크가 필요 없는 즉각적인 속도',
-          '개인정보 보호 보장 (0바이트 전송)',
-          '파일당 MB 제한 없음',
-          '프로페셔널하고 깔끔한 인터페이스',
-        ],
-      },
-    ],
+        "title": "자사 로컬 변환기",
+        "description": "웹 브라우저 내부에서 직접 변환하는 방식.",
+        "icon": "mdi:laptop-mac",
+        "highlight": true,
+        "points": [
+          "즉각적인 변환 속도",
+          "완벽한 보안 (서버 전송 없음)",
+          "용량 제한 없음",
+          "깔끔한 환경"
+        ]
+      }
+    ]
   },
   {
-    type: 'title',
-    text: '기술적 변환의 원리',
-    level: 3,
+    "type": "title",
+    "text": "기술적 변환 원리",
+    "level": 3
   },
   {
-    type: 'paragraph',
-    html: '서버로 전송하지 않고 이미지를 변환하는 것이 어떻게 가능한지 궁금하실 것입니다. 그 마법은 현대 브라우저의 힘에 있습니다. 파일을 선택하면 사용자의 RAM에만 존재하는 Blob을 생성합니다. 그 Blob은 보이지 않는 HTML5 Canvas 요소 위에 그려집니다.',
+    "type": "paragraph",
+    "html": "HTML5 Canvas 기술을 활용하여 브라우저 메모리상에서 이미지를 렌더링하고 바로 저장합니다."
   },
   {
-    type: 'paragraph',
-    html: 'JPG는 투명도를 지원하지 않기 때문에, 우리의 알고리즘은 PNG를 "그리기" 전에 배경을 흰색으로 채웁니다. 이미지가 구성되면 네이티브 내보내기 메서드를 실행하여 사용자의 컴퓨터가 직접 다운로드하는 바이트 스트림을 생성합니다.',
+    "type": "paragraph",
+    "html": "투명 영역은 자동으로 흰색 배경으로 채워져 깨끗한 JPG 파일로 완성됩니다."
   },
   {
-    type: 'tip',
-    title: 'SEO 팁: 이상적인 파일 크기',
-    html: 'Google은 느린 웹사이트에 대해 불이익을 줍니다. 2MB 크기의 헤더 PNG 때문에 Largest Contentful Paint(LCP)가 높다면, 이를 200KB 크기의 JPG로 변환하여 시각적 차이 없이 즉시 PageSpeed 지표를 개선할 수 있습니다.',
+    "type": "tip",
+    "title": "SEO 팁",
+    "html": "웹용 이미지를 압축하여 PageSpeed 점수를 높이세요."
   },
   {
-    type: 'title',
-    text: '기업 및 전문가를 위한 보안',
-    level: 3,
+    "type": "title",
+    "text": "기업용 보안",
+    "level": 3
   },
   {
-    type: 'paragraph',
-    html: '금융, 의료 또는 법률과 같은 민감한 분야에서 일하는 경우, 온라인 변환기에 파일을 업로드하는 것은 보안 위반입니다. 우리의 도구는 "블랙박스"처럼 작동합니다. 내부에서 일어나는 모든 일은 사용자의 RAM에 머뭅니다. 기밀 문서를 다루는 유일하고 안전한 방법입니다.',
+    "type": "paragraph",
+    "html": "민감한 문서도 안심하고 처리할 수 있는 격리된 로컬 환경을 제공합니다."
   },
   {
-    type: 'title',
-    text: '결과물의 호환성',
-    level: 3,
+    "type": "title",
+    "text": "호환성",
+    "level": 3
   },
   {
-    type: 'list',
-    icon: 'mdi:check-circle',
-    items: [
-      'Windows, macOS 및 모바일 장치 뷰어.',
-      '소셜 네트워크 (Instagram, LinkedIn 등).',
-      '오피스 도구 (Word, PowerPoint).',
-      '콘텐츠 관리 시스템 (WordPress, Shopify).',
-    ],
+    "type": "list",
+    "icon": "mdi:check-circle",
+    "items": [
+      "모든 OS 뷰어",
+      "SNS 플랫폼",
+      "오피스 프로그램",
+      "CMS 시스템"
+    ]
   },
   {
-    type: 'title',
-    text: '결론: 프로처럼 최적화하세요',
-    level: 3,
+    "type": "title",
+    "text": "결론",
+    "level": 3
   },
   {
-    type: 'paragraph',
-    html: '이 변환기는 단순한 페이지가 아니라 사용자의 삶을 편리하게 만들기 위해 설계된 공학의 정수입니다. 개발자이든 일반 사용자이든, 여기에서 메가바이트를 절약하고 데이터를 안전하게 지키기 위한 최상의 해결책을 찾으실 수 있습니다.',
-  },
+    "type": "paragraph",
+    "html": "안전하고 빠른 최상의 이미지 변환 솔루션입니다."
+  }
 ];
 
 

@@ -21,24 +21,24 @@ const ui: ImageConverterUI = {
 
 const faq: PngAJpgLocaleContent['faq'] = [
   {
-    question: 'Porquê escolher o nosso conversor local de PNG para JPG?',
+    question: '¿Por qué elegir nuestro convertidor local de PNG a JPG?',
     answer:
-      'Ao contrário das ferramentas convencionais, o nosso utilitário processa os ficheiros inteiramente no seu navegador. As suas imagens nunca tocam num disco rígido de terceiros, garantindo a total soberania e privacidade dos seus dados.',
+      'A diferencia de las herramientas convencionales, nuestra utilidad procesa los archivos íntegramente en tu navegador. Tus imágenes nunca tocan un disco duro ajeno, garantizando la total soberanía y privacidad de tus datos.',
   },
   {
-    question: 'JPG ou PNG? Qual é o melhor para o meu caso?',
+    question: '¿JPG o PNG? ¿Cuál es mejor para mi caso?',
     answer:
-      'O PNG é ideal para logótipos e elementos com transparência. No entanto, o JPG é o padrão de excelência para fotografias e banners web, uma vez que atinge pesos muito mais reduzidos, melhorando drasticamente a velocidade de carregamento de um sítio.',
+      'El PNG es ideal para logotipos y elementos con transparencia. Sin embargo, el JPG es el estándar de oro para fotografías y banners web, ya que logra pesos mucho más reducidos, mejorando drásticamente la velocidad de carga de un sitio.',
   },
   {
-    question: 'Como funciona a conversão técnica sem enviar nada?',
+    question: '¿Cómo funciona la conversión técnica sin subir nada?',
     answer:
-      'Utilizamos o poder do Canvas do HTML5. O navegador recria a imagem numa tela virtual invisível, preenche as transparências com branco e gera um fluxo de bytes que o utilizador descarrega diretamente no instante.',
+      'Utilizamos la potencia del Canvas de HTML5. El navegador recrea la imagen en un lienzo virtual invisible, rellena las transparencias con blanco y genera un flujo de bytes que descargas directamente al instante.',
   },
   {
-    question: 'É seguro para documentos confidenciais?',
+    question: '¿Es seguro para documentos confidenciales?',
     answer:
-      'Sim, é a opção mais segura para profissionais da banca, saúde ou direito. Sendo uma "caixa negra" que utiliza apenas a sua memória RAM, o que acontece lá dentro morre ao fechar o separador, evitando fugas em nuvens de terceiros.',
+      'Sí, es la opción más segura para profesionales de la banca, salud o derecho. Al ser una "caja negra" que solo usa tu RAM, lo que pasa dentro muere al cerrar la pestaña, evitando filtraciones en nubes de terceros.',
   },
 ];
 
@@ -60,110 +60,110 @@ const howTo: PngAJpgLocaleContent['howTo'] = [
 const seo: PngAJpgLocaleContent['seo'] = [
   {
     type: 'title',
-    text: 'Conversor de PNG para JPG: O Guia Definitivo para a Optimização de Imagens',
+    text: 'Convertidor de PNG a JPG: La Guía Definitiva para la Optimización de Imágenes',
     level: 2,
   },
   {
     type: 'paragraph',
-    html: 'No mundo do design digital e do desenvolvimento web, a eficiência é tudo. O formato PNG (Portable Network Graphics) é amado pela sua capacidade de manter transparências e pela sua compressão sem perda, mas tem um grande inimigo: o peso do ficheiro. Quando precisa que o seu sítio web voe ou que os seus emails carreguem instantaneamente, a mudança de PNG para JPG é a decisão técnica mais inteligente.',
+    html: 'En el mundo del diseño digital y el desarrollo web, la eficiencia lo es todo. El formato PNG (Portable Network Graphics) es amado por su capacidad de mantener transparencias y su compresión sin pérdida, pero tiene un gran enemigo: el peso del archivo. Cuando necesitas que tu sitio web vuele o que tus emails carguen instantáneamente, el paso de PNG a JPG es la decisión técnica más inteligente.',
   },
   {
     type: 'title',
-    text: 'JPG ou PNG?',
+    text: '¿JPG o PNG?',
     level: 3,
   },
   {
     type: 'paragraph',
-    html: 'Não existe um formato melhor do que o outro, mas sim uma ferramenta para cada necessidade. O PNG é um formato sem perda, ideal para maquetes de interfaces, logótipos com texto pequeno e elementos visuais que requerem um fundo transparente. No entanto, esta fidelidade tem um custo: ficheiros que podem ser 5 ou 10 vezes mais pesados do que o seu equivalente comprimido.',
+    html: 'No existe un formato mejor que otro, sino una herramienta para cada necesidad. El PNG es un formato sin pérdida, ideal para maquetas de interfaces, logotipos con texto pequeño y elementos visuales que requieren un fondo transparente. Sin embargo, esta fidelidad tiene un coste: archivos que pueden ser 5 o 10 veces más pesados que su equivalente comprimido.',
   },
   {
     type: 'paragraph',
-    html: 'O JPG (Joint Photographic Experts Group), por outro lado, utiliza algoritmos de discretização para remover informação que o olho humano mal percebe, conseguindo pesos pluma. É o padrão de excelência para fotografias, banners publicitários e redes sociais. Ao converter os seus PNG para JPG, está a trocar fidelidade geométrica por velocidade de rede.',
+    html: 'El JPG (Joint Photographic Experts Group), por otro lado, utiliza algoritmos de discretización para eliminar información que el ojo humano apenas percibe, logrando pesos pluma. Es el estándar de oro para fotografías, banners publicitarios y redes sociales. Al convertir tus PNG a JPG, estás traduciendo fidelidad geométrica por velocidad de red.',
   },
   {
     type: 'title',
-    text: 'Comparação de Arquitetura: Local vs Nuvem',
+    text: 'Comparativa de Arquitectura: Local vs Nube',
     level: 3,
   },
   {
     type: 'comparative',
     items: [
       {
-        title: 'Conversores Cloud',
-        description: 'Ferramentas tradicionais que enviam as suas fotos para um servidor remoto.',
+        title: 'Convertidores Cloud',
+        description: 'Herramientas tradicionales que suben tus fotos a un servidor remoto.',
         icon: 'mdi:cloud-upload',
         pointIcon: 'mdi:close-circle-outline',
         points: [
-          'Latência de rede (Upload/Download)',
-          'Risco de fuga de dados privados',
-          'Limites de tamanho por ficheiro',
-          'Publicidade e rastreadores',
+          'Latencia de red (Upload/Download)',
+          'Riesgo de filtración de datos privados',
+          'Límites de tamaño por archivo',
+          'Publicidad y rastreadores',
         ],
       },
       {
-        title: 'A Nossa Arquitetura Local',
-        description: 'Processamento direto no seu hardware através de tecnologia Vanilla JS.',
+        title: 'Nuestra Arquitectura Local',
+        description: 'Procesamiento directo en tu hardware mediante tecnología Vanilla JS.',
         icon: 'mdi:laptop-mac',
         highlight: true,
         points: [
-          'Velocidade instantânea sem rede',
-          'Privacidade garantida (0 bytes enviados)',
-          'Sem limites de MB por ficheiro',
-          'Interface profissional e limpa',
+          'Velocidad instantánea sin red',
+          'Privacidad garantizada (0 bytes enviados)',
+          'Sin límites de MB por archivo',
+          'Interfaz profesional y limpia',
         ],
       },
     ],
   },
   {
     type: 'title',
-    text: 'Como funciona a conversão técnica',
+    text: 'Cómo funciona la conversión técnica',
     level: 3,
   },
   {
     type: 'paragraph',
-    html: 'Provavelmente pergunta-se como é possível converter uma imagem sem a enviar para um servidor. A magia reside no poder dos navegadores modernos. Quando seleciona um ficheiro, geramos um Blob que apenas existe na sua memória RAM. Esse Blob é desenhado num elemento HTML5 Canvas invisível.',
+    html: 'Probablemente te preguntes cómo es posible convertir una imagen sin enviarla a un servidor. La magia reside en la potencia de los navegadores modernos. Cuando seleccionas un archivo, generamos un Blob que solo existe en tu RAM. Ese Blob se dibuja en un elemento HTML5 Canvas invisible.',
   },
   {
     type: 'paragraph',
-    html: 'Dado que o JPG não suporta transparências, o nosso algoritmo preenche o fundo com uma cor branca sólida antes de "pintar" o PNG por cima. Uma vez composta a imagem, executamos o método de exportação nativo, gerando um fluxo de bytes que o seu computador descarrega diretamente.',
+    html: 'Dado que el JPG no soporta transparencias, nuestro algoritmo rellena el fondo con un color blanco sólido antes de "pintar" el PNG encima. Una vez compuesta la imagen, ejecutamos el método de exportación nativo, generando un flujo de bytes que tu ordenador descarga directamente.',
   },
   {
     type: 'tip',
-    title: 'Conselho SEO: O Peso Ideal',
-    html: 'A Google penaliza ativamente os sítios web lentos. Se o seu Largest Contentful Paint (LCP) é elevado por culpa de um PNG de cabeçalho de 2MB, convertê-lo para um JPG de 200KB pode melhorar as suas métricas de PageSpeed instantaneamente, sem diferenças visuais.',
+    title: 'Consejo SEO: El Peso Ideal',
+    html: 'Google penaliza activamente los sitios web lentos. Si tu Largest Contentful Paint (LCP) es alto por culpa de un PNG de cabecera de 2MB, convertirlo a un JPG de 200KB puede mejorar tus métricas de PageSpeed instantáneamente sin diferencias visuales.',
   },
   {
     type: 'title',
-    text: 'Segurança para Empresas e Profissionais',
+    text: 'Seguridad para Empresas y Profesionales',
     level: 3,
   },
   {
     type: 'paragraph',
-    html: 'Se trabalha em setores sensíveis como a banca, a saúde ou o direito, enviar ficheiros para conversores online é uma violação de segurança. A nossa ferramenta funciona como uma "caixa negra": o que acontece lá dentro fica na sua RAM. É a única forma segura de trabalhar com documentos confidenciais.',
+    html: 'Si trabajas en sectores sensibles como la banca, la salud o el derecho, subir archivos a conversores online es una violación de seguridad. Nuestra herramienta funciona como una "caja negra": lo que pasa dentro se queda en tu RAM. Es la única forma segura de trabajar con documentos confidenciales.',
   },
   {
     type: 'title',
-    text: 'Compatibilidade do Resultado',
+    text: 'Compatibilidad del Resultado',
     level: 3,
   },
   {
     type: 'list',
     icon: 'mdi:check-circle',
     items: [
-      'Visualizadores do Windows, macOS e dispositivos móveis.',
-      'Redes sociais (Instagram, LinkedIn, etc).',
-      'Ferramentas de escritório (Word, PowerPoint).',
-      'Gestores de conteúdo (WordPress, Shopify).',
+      'Visores de Windows, macOS y dispositivos móviles.',
+      'Redes sociales (Instagram, LinkedIn, etc).',
+      'Herramientas de ofimática (Word, PowerPoint).',
+      'Gestores de contenido (WordPress, Shopify).',
     ],
   },
   {
     type: 'title',
-    text: 'Conclusão: Otimize como um Profissional',
+    text: 'Conclusión: Optimiza como un Pro',
     level: 3,
   },
   {
     type: 'paragraph',
-    html: 'Este conversor não é apenas mais uma página; é uma peça de engenharia desenhada para lhe facilitar a vida. Quer seja um programador ou um utilizador doméstico, aqui tem a solução definitiva para poupar megabytes e manter os seus dados a salvo.',
+    html: 'Este convertidor no es solo una página más; es una pieza de ingeniería diseñada para facilitarte la vida. Ya seas un desarrollador o un usuario doméstico, aquí tienes la solución definitiva para ahorrar megabytes y mantener tus datos a salvo.',
   },
 ];
 
