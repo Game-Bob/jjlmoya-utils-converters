@@ -2,16 +2,38 @@ import type { SEOSection } from '@jjlmoya/utils-shared';
 
 type FAQ = { question: string; answer: string };
 type Step = { name: string; text: string };
-
-export function buildPngJpgSeo(source: {
+type Source = {
   title: string;
   description: string;
   faq: FAQ[];
   howTo: Step[];
-}): SEOSection[] {
-  const faq = (index: number) => source.faq[index % source.faq.length];
-  const step = (index: number) => source.howTo[index % source.howTo.length];
+};
 
+type Indexed<T> = (index: number) => T;
+
+function buildComparison(source: Source, faq: Indexed<FAQ>, step: Indexed<Step>): SEOSection {
+  return {
+    type: 'comparative',
+    items: [
+      {
+        title: faq(0).question,
+        description: faq(0).answer,
+        icon: 'mdi:cloud-upload',
+        pointIcon: 'mdi:close-circle-outline',
+        points: [step(0).name, step(1).name],
+      },
+      {
+        title: source.title,
+        description: step(0).text,
+        icon: 'mdi:laptop-mac',
+        highlight: true,
+        points: [step(1).name, step(2).name],
+      },
+    ],
+  };
+}
+
+function buildOpeningSections(source: Source, faq: Indexed<FAQ>, step: Indexed<Step>): SEOSection[] {
   return [
     { type: 'title', text: source.title, level: 2 },
     { type: 'paragraph', html: source.description },
@@ -19,25 +41,12 @@ export function buildPngJpgSeo(source: {
     { type: 'paragraph', html: faq(1).answer },
     { type: 'paragraph', html: faq(2).answer },
     { type: 'title', text: faq(0).question, level: 3 },
-    {
-      type: 'comparative',
-      items: [
-        {
-          title: faq(0).question,
-          description: faq(0).answer,
-          icon: 'mdi:cloud-upload',
-          pointIcon: 'mdi:close-circle-outline',
-          points: [step(0).name, step(1).name],
-        },
-        {
-          title: source.title,
-          description: step(0).text,
-          icon: 'mdi:laptop-mac',
-          highlight: true,
-          points: [step(1).name, step(2).name],
-        },
-      ],
-    },
+    buildComparison(source, faq, step),
+  ];
+}
+
+function buildClosingSections(source: Source, faq: Indexed<FAQ>, step: Indexed<Step>): SEOSection[] {
+  return [
     { type: 'title', text: faq(2).question, level: 3 },
     { type: 'paragraph', html: step(0).text },
     { type: 'paragraph', html: step(1).text },
@@ -52,5 +61,15 @@ export function buildPngJpgSeo(source: {
     },
     { type: 'title', text: step(2).name, level: 3 },
     { type: 'paragraph', html: source.description },
+  ];
+}
+
+export function buildPngJpgSeo(source: Source): SEOSection[] {
+  const faq = (index: number) => source.faq[index % source.faq.length];
+  const step = (index: number) => source.howTo[index % source.howTo.length];
+
+  return [
+    ...buildOpeningSections(source, faq, step),
+    ...buildClosingSections(source, faq, step),
   ];
 }
