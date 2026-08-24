@@ -1,0 +1,10 @@
+---
+import '../../shared/image-to-pdf.css';
+import ImageToPdfConverter from '../../shared/ImageToPdfConverter.astro';
+import type { ImageToPdfUI } from '../../shared/image-to-pdf/ui';
+
+interface Props { ui: ImageToPdfUI }
+const { ui } = Astro.props;
+---
+
+<ImageToPdfConverter ui={ui} sourceFormat="jpg" />

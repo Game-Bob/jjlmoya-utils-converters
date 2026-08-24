@@ -20,6 +20,9 @@ import { GIF_A_WEBP_TOOL } from './tool/gifAWebp';
 import { PNG_A_ICO_TOOL } from './tool/pngAIco';
 import { JPG_A_ICO_TOOL } from './tool/jpgAIco';
 import { WEBP_A_ICO_TOOL } from './tool/webpAIco';
+import { JPG_TO_PDF_TOOL } from './tool/jpgToPdf';
+import { PNG_TO_PDF_TOOL } from './tool/pngToPdf';
+import { WEBP_TO_PDF_TOOL } from './tool/webpToPdf';
 import type { ToolDefinition } from './types';
 
 export const ALL_TOOLS: ToolDefinition[] = [
@@ -44,6 +47,9 @@ export const ALL_TOOLS: ToolDefinition[] = [
   PNG_A_ICO_TOOL,
   JPG_A_ICO_TOOL,
   WEBP_A_ICO_TOOL,
+  JPG_TO_PDF_TOOL,
+  PNG_TO_PDF_TOOL,
+  WEBP_TO_PDF_TOOL,
 ];
 
 export {
@@ -68,5 +74,7 @@ export {
   PNG_A_ICO_TOOL,
   JPG_A_ICO_TOOL,
   WEBP_A_ICO_TOOL,
+  JPG_TO_PDF_TOOL,
+  PNG_TO_PDF_TOOL,
+  WEBP_TO_PDF_TOOL,
 };
-

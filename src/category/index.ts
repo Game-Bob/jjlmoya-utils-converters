@@ -20,6 +20,9 @@ import { gifAWebp } from '../tool/gifAWebp/entry';
 import { pngAIco } from '../tool/pngAIco/entry';
 import { jpgAIco } from '../tool/jpgAIco/entry';
 import { webpAIco } from '../tool/webpAIco/entry';
+import { jpgToPdf } from '../tool/jpgToPdf/entry';
+import { pngToPdf } from '../tool/pngToPdf/entry';
+import { webpToPdf } from '../tool/webpToPdf/entry';
 
 export const convertersCategory: ConvertersCategoryEntry = {
   icon: 'mdi:image-sync',
@@ -30,6 +33,7 @@ export const convertersCategory: ConvertersCategoryEntry = {
     avifAJpg, avifAPng, avifAWebp,
     gifAJpg, gifAPng, gifAWebp,
     pngAIco, jpgAIco, webpAIco,
+    jpgToPdf, pngToPdf, webpToPdf,
   ],
   i18n: {
     de: () => import('./i18n/de').then((m) => m.content),

@@ -24,10 +24,9 @@ describe('I18n Coverage Validation', () => {
 
       it('all locale loaders should be functions', () => {
         EXPECTED_LOCALES.forEach((locale) => {
-          const loader = entry.i18n[locale as keyof typeof entry.i18n];
           expect(
-            typeof loader,
-            `Tool "${entry.id}" locale "${locale}" loader is not a function`,
+            typeof entry.i18n[locale],
+            `Locale "${locale}" loader for "${entry.id}" is not a function`,
           ).toBe('function');
         });
       });

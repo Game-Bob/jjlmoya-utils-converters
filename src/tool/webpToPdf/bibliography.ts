@@ -1,0 +1,12 @@
+import type { BibliographyEntry } from '../../types';
+
+export const bibliography: BibliographyEntry[] = [
+  {
+    name: 'Adobe PDF Reference 1.7',
+    url: 'https://opensource.adobe.com/dc-acrobat-sdk-docs/pdfs/pdf_reference_1-7.pdf',
+  },
+  {
+    name: 'WebP Documentation',
+    url: 'https://developers.google.com/speed/webp/docs/',
+  },
+];

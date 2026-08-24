@@ -1,0 +1,80 @@
+---
+import type { ImageToPdfUI, SourceImageFormat } from './image-to-pdf/ui';
+
+interface Props {
+  ui: ImageToPdfUI;
+  sourceFormat: SourceImageFormat;
+}
+
+const { ui, sourceFormat } = Astro.props;
+const accept = sourceFormat === 'jpg' ? '.jpg,.jpeg,image/jpeg' : `.${sourceFormat},image/${sourceFormat}`;
+---
+
+<div class:list={["pdf-converter", `pdf-converter-${sourceFormat}`]} data-source-format={sourceFormat} data-ui={JSON.stringify(ui)}>
+  <section class="pdf-converter-stage" id="pdf-dropzone">
+    <span class="pdf-converter-mark" aria-hidden="true">PDF</span>
+    <h2>{ui.dropTitle}</h2>
+    <p>{ui.dropText}</p>
+    <p class="pdf-converter-privacy">{ui.privacyNote}</p>
+    <button class="pdf-converter-select" type="button">{ui.selectFiles}</button>
+    <input class="pdf-file-input" id="pdf-file-input" type="file" accept={accept} multiple hidden />
+  </section>
+
+  <section class="pdf-converter-workspace" id="pdf-workspace" hidden>
+    <div class="pdf-converter-toolbar">
+      <div>
+        <h2>{ui.optionsTitle}</h2>
+        <p><span id="pdf-page-size-value"></span> · <span id="pdf-orientation-value"></span></p>
+      </div>
+      <button class="pdf-converter-secondary" id="pdf-reset" type="button">{ui.reset}</button>
+    </div>
+
+    <div class="pdf-converter-content">
+      <section class="pdf-converter-options" aria-labelledby="pdf-options-title">
+        <h3 id="pdf-options-title">{ui.settingsTitle}</h3>
+        <div class="pdf-converter-option-line">
+          <span class="pdf-converter-option-label">{ui.pageSizeLabel}</span>
+          <div class="pdf-converter-choices">
+            <button class="pdf-converter-choice" type="button" data-page-size="a4" aria-pressed="false">{ui.a4}</button>
+            <button class="pdf-converter-choice" type="button" data-page-size="letter" aria-pressed="false">{ui.letter}</button>
+          </div>
+        </div>
+        <div class="pdf-converter-option-line">
+          <span class="pdf-converter-option-label">{ui.orientationLabel}</span>
+          <div class="pdf-converter-choices">
+            <button class="pdf-converter-choice" type="button" data-orientation="portrait" aria-pressed="false">{ui.portrait}</button>
+            <button class="pdf-converter-choice" type="button" data-orientation="landscape" aria-pressed="false">{ui.landscape}</button>
+          </div>
+        </div>
+        <div class="pdf-converter-option-line">
+          <div class="pdf-converter-toolbar"><span class="pdf-converter-option-label">{ui.marginLabel}</span><strong class="pdf-converter-value" id="pdf-margin-value"></strong></div>
+          <input class="pdf-converter-range" id="pdf-margin" type="range" min="0" max="32" step="1" value="12" aria-label={ui.marginLabel} />
+        </div>
+      </section>
+
+      <section class="pdf-converter-pages" aria-labelledby="pdf-pages-title">
+        <div class="pdf-converter-pages-header">
+          <div>
+            <h3 id="pdf-pages-title">{ui.pagesTitle}</h3>
+            <p>{ui.reorderHint}</p>
+          </div>
+        </div>
+        <ol class="pdf-pages" id="pdf-page-list"><li class="pdf-pages-empty">{ui.emptyPages}</li></ol>
+      </section>
+    </div>
+
+    <div class="pdf-converter-footer">
+      <span class="pdf-converter-status" id="pdf-status" data-tone="neutral">{ui.ready}</span>
+      <div class="pdf-converter-actions">
+        <button class="pdf-converter-primary" id="pdf-create" type="button" disabled>{ui.createPdf}</button>
+        <a class="pdf-converter-download" id="pdf-download" href="#" hidden>{ui.downloadPdf}</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script>
+  import { mountImageToPdf } from './image-to-pdf/controller';
+
+  document.querySelectorAll<HTMLElement>('.pdf-converter').forEach(mountImageToPdf);
+</script>

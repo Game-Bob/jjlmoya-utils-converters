@@ -62,4 +62,7 @@ import { webpAIco } from './tool/webpAIco/entry';
 import { webpAJpg } from './tool/webpAJpg/entry';
 import { webpAPng } from './tool/webpAPng/entry';
 import { imagenBase64 } from './tool/imagenBase64/entry';
-export const ALL_ENTRIES = [avifAJpg, avifAPng, avifAWebp, bmpAJpg, bmpAPng, bmpAWebp, gifAJpg, gifAPng, gifAWebp, imagenBase64, jpgAIco, jpgAPng, jpgAWebp, pngAIco, pngAJpg, pngAWebp, svgAJpg, svgAPng, webpAIco, webpAJpg, webpAPng];
+import { jpgToPdf } from './tool/jpgToPdf/entry';
+import { pngToPdf } from './tool/pngToPdf/entry';
+import { webpToPdf } from './tool/webpToPdf/entry';
+export const ALL_ENTRIES = [avifAJpg, avifAPng, avifAWebp, bmpAJpg, bmpAPng, bmpAWebp, gifAJpg, gifAPng, gifAWebp, imagenBase64, jpgAIco, jpgAPng, jpgAWebp, pngAIco, pngAJpg, pngAWebp, svgAJpg, svgAPng, webpAIco, webpAJpg, webpAPng, jpgToPdf, pngToPdf, webpToPdf];

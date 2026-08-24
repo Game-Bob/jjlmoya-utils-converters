@@ -19,6 +19,9 @@ export * from './tool/gifAWebp';
 export * from './tool/pngAIco';
 export * from './tool/jpgAIco';
 export * from './tool/webpAIco';
+export * from './tool/jpgToPdf';
+export * from './tool/pngToPdf';
+export * from './tool/webpToPdf';
 
 export { convertersCategory } from './category';
 export const ConvertersCategorySEO = () => import('./category/seo.astro').then((m) => m.default);
