@@ -3,7 +3,7 @@ import type { CategoryLocaleContent } from '../../types';
 export const content: CategoryLocaleContent = {
   slug: 'afbeelding-converters',
   title: 'Online Afbeelding Converters',
-  description: 'Gratis tools om afbeeldingen te converteren tussen PNG, JPG, WebP, SVG, AVIF, GIF, BMP en ICO formaten. Alles wordt lokaal in je browser verwerkt zonder iets naar het internet te uploaden.',
+  description: 'Gratis beeldconverters voor PNG, JPG, WebP, SVG, AVIF, GIF, BMP en ICO. De verwerking gebeurt lokaal in je browser zonder bestanden naar internet te uploaden.',
   seo: [
     {
       type: 'summary',

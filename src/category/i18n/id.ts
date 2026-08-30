@@ -3,7 +3,7 @@ import type { CategoryLocaleContent } from '../../types';
 export const content: CategoryLocaleContent = {
   slug: 'pengonversi-gambar',
   title: 'Pengonversi Gambar Online',
-  description: 'Alat gratis untuk mengonversi gambar antara format PNG, JPG, WebP, SVG, AVIF, GIF, BMP, dan ICO. Semuanya diproses secara lokal di browser Anda tanpa mengunggah apa pun ke internet.',
+  description: 'Konverter gambar gratis untuk PNG, JPG, WebP, SVG, AVIF, GIF, BMP, dan ICO. Pemrosesan berjalan secara lokal di browser tanpa mengunggah file ke internet.',
   seo: [
     {
       type: 'summary',

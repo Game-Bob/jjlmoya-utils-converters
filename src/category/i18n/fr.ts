@@ -3,7 +3,7 @@ import type { CategoryLocaleContent } from '../../types';
 export const content: CategoryLocaleContent = {
   slug: 'convertisseurs-image',
   title: 'Convertisseurs d\'Image en Ligne',
-  description: 'Outils gratuits pour convertir des images entre les formats PNG, JPG, WebP, SVG, AVIF, GIF, BMP et ICO. Tout est traité localement dans votre navigateur sans rien télécharger sur internet.',
+  description: "Convertisseurs d'images gratuits pour PNG, JPG, WebP, SVG, AVIF, GIF, BMP et ICO. Le traitement reste local dans votre navigateur, sans envoyer de fichiers sur Internet.",
   seo: [
     {
       type: 'summary',

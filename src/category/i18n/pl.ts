@@ -3,7 +3,7 @@ import type { CategoryLocaleContent } from '../../types';
 export const content: CategoryLocaleContent = {
   slug: 'konwertery-obrazow',
   title: 'Konwertery Obrazów Online',
-  description: 'Darmowe narzędzia do konwersji obrazów między formatami PNG, JPG, WebP, SVG, AVIF, GIF, BMP i ICO. Wszystko jest przetwarzane lokalnie w Twojej przeglądarce, bez przesyłania plików do Internetu.',
+  description: 'Darmowe konwertery obrazów PNG, JPG, WebP, SVG, AVIF, GIF, BMP i ICO. Przetwarzanie odbywa się lokalnie w przeglądarce, bez wysyłania plików do Internetu.',
   seo: [
     {
       type: 'summary',
