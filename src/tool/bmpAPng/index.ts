@@ -1,3 +1,4 @@
+import type { ToolDefinition } from '../../types';
 import { bmpAPng } from './entry';
 export * from './entry';
 export const BMP_A_PNG_TOOL: ToolDefinition = {

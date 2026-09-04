@@ -1,3 +1,4 @@
+import type { ToolDefinition } from '../../types';
 import { bmpAWebp } from './entry';
 export * from './entry';
 export const BMP_A_WEBP_TOOL: ToolDefinition = {

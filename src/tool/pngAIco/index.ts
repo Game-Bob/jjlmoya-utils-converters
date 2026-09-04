@@ -1,3 +1,4 @@
+import type { ToolDefinition } from '../../types';
 import { pngAIco } from './entry';
 export * from './entry';
 export const PNG_A_ICO_TOOL: ToolDefinition = {

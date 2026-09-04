@@ -1,3 +1,4 @@
+import type { ToolDefinition } from '../../types';
 import { jpgAWebp } from './entry';
 export * from './entry';
 export const JPG_A_WEBP_TOOL: ToolDefinition = {

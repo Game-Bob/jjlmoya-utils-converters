@@ -1,3 +1,4 @@
+import type { ToolDefinition } from '../../types';
 import { svgAPng } from './entry';
 export * from './entry';
 export const SVG_A_PNG_TOOL: ToolDefinition = {

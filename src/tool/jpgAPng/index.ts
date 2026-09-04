@@ -1,3 +1,4 @@
+import type { ToolDefinition } from '../../types';
 import { jpgAPng } from './entry';
 export * from './entry';
 export const JPG_A_PNG_TOOL: ToolDefinition = {

@@ -1,3 +1,4 @@
+import type { ToolDefinition } from '../../types';
 import { webpAPng } from './entry';
 export * from './entry';
 export const WEBP_A_PNG_TOOL: ToolDefinition = {
