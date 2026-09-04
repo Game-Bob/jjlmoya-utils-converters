@@ -7,315 +7,159 @@
     "preview_urls": true,
     "routes": [
         {
-            "pattern": "www.jjlmoya.es/utilidades/categorias/convertidores-imagen",
+            "pattern": "www.jjlmoya.es/utilidades/categorias/convertidores-imagen*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/categorias/convertidores-imagen/*",
+            "pattern": "www.jjlmoya.es/utilidades/convertidor-avif-a-jpg*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-avif-a-jpg",
+            "pattern": "www.jjlmoya.es/utilidades/convertidor-avif-a-png*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-avif-a-jpg/*",
+            "pattern": "www.jjlmoya.es/utilidades/convertidor-avif-a-webp*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-avif-a-png",
+            "pattern": "www.jjlmoya.es/utilidades/convertidor-bmp-a-jpg*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-avif-a-png/*",
+            "pattern": "www.jjlmoya.es/utilidades/convertidor-bmp-a-png*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-avif-a-webp",
+            "pattern": "www.jjlmoya.es/utilidades/convertidor-bmp-a-webp*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-avif-a-webp/*",
+            "pattern": "www.jjlmoya.es/utilidades/convertidor-gif-a-jpg*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-bmp-a-jpg",
+            "pattern": "www.jjlmoya.es/utilidades/convertidor-gif-a-png*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-bmp-a-jpg/*",
+            "pattern": "www.jjlmoya.es/utilidades/convertidor-gif-a-webp*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-bmp-a-png",
+            "pattern": "www.jjlmoya.es/utilidades/convertidor-imagen-base64*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-bmp-a-png/*",
+            "pattern": "www.jjlmoya.es/utilidades/convertidor-jpg-a-ico*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-bmp-a-webp",
+            "pattern": "www.jjlmoya.es/utilidades/convertidor-jpg-a-png*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-bmp-a-webp/*",
+            "pattern": "www.jjlmoya.es/utilidades/convertidor-jpg-a-webp*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-gif-a-jpg",
+            "pattern": "www.jjlmoya.es/utilidades/convertidor-jpg-a-pdf*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-gif-a-jpg/*",
+            "pattern": "www.jjlmoya.es/utilidades/convertidor-png-a-ico*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-gif-a-png",
+            "pattern": "www.jjlmoya.es/utilidades/convertidor-png-a-jpg*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-gif-a-png/*",
+            "pattern": "www.jjlmoya.es/utilidades/convertidor-png-a-webp*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-gif-a-webp",
+            "pattern": "www.jjlmoya.es/utilidades/convertidor-png-a-pdf*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-gif-a-webp/*",
+            "pattern": "www.jjlmoya.es/utilidades/convertidor-svg-a-jpg*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-imagen-base64",
+            "pattern": "www.jjlmoya.es/utilidades/convertidor-svg-a-png*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-imagen-base64/*",
+            "pattern": "www.jjlmoya.es/utilidades/convertidor-webp-a-ico*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-jpg-a-ico",
+            "pattern": "www.jjlmoya.es/utilidades/convertidor-webp-a-jpg*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-jpg-a-ico/*",
+            "pattern": "www.jjlmoya.es/utilidades/convertidor-webp-a-png*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-jpg-a-png",
+            "pattern": "www.jjlmoya.es/utilidades/convertidor-webp-a-pdf*",
             "zone_name": "jjlmoya.es"
         },
         {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-jpg-a-png/*",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-jpg-a-webp",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-jpg-a-webp/*",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-jpg-a-pdf",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-jpg-a-pdf/*",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-png-a-ico",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-png-a-ico/*",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-png-a-jpg",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-png-a-jpg/*",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-png-a-webp",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-png-a-webp/*",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-png-a-pdf",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-png-a-pdf/*",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-svg-a-jpg",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-svg-a-jpg/*",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-svg-a-png",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-svg-a-png/*",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-webp-a-ico",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-webp-a-ico/*",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-webp-a-jpg",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-webp-a-jpg/*",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-webp-a-png",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-webp-a-png/*",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-webp-a-pdf",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.jjlmoya.es/utilidades/convertidor-webp-a-pdf/*",
-            "zone_name": "jjlmoya.es"
-        },
-        {
-            "pattern": "www.gamebob.dev/en/utilities/categories/image-converters",
+            "pattern": "www.gamebob.dev/en/utilities/categories/image-converters*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/en/utilities/categories/image-converters/*",
+            "pattern": "www.gamebob.dev/fr/utilitaires/categories/convertisseurs-image*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/fr/utilitaires/categories/convertisseurs-image",
+            "pattern": "www.gamebob.dev/de/werkzeuge/kategorien/bild-konverter*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/fr/utilitaires/categories/convertisseurs-image/*",
+            "pattern": "www.gamebob.dev/it/utilita/categorie/convertitori-di-immagini*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/de/werkzeuge/kategorien/bild-konverter",
+            "pattern": "www.gamebob.dev/pt/utilidades/categorias/conversores-de-imagem*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/de/werkzeuge/kategorien/bild-konverter/*",
+            "pattern": "www.gamebob.dev/nl/hulpmiddelen/categorieen/afbeelding-converters*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/it/utilita/categorie/convertitori-di-immagini",
+            "pattern": "www.gamebob.dev/sv/verktyg/kategorier/bildkonverterare*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/it/utilita/categorie/convertitori-di-immagini/*",
+            "pattern": "www.gamebob.dev/pl/narzedzia/kategorie/konwertery-obrazow*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/pt/utilidades/categorias/conversores-de-imagem",
+            "pattern": "www.gamebob.dev/id/utilitas/kategori/pengonversi-gambar*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/pt/utilidades/categorias/conversores-de-imagem/*",
+            "pattern": "www.gamebob.dev/tr/araclar/kategoriler/goruntu-donusturuculer*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/nl/hulpmiddelen/categorieen/afbeelding-converters",
+            "pattern": "www.gamebob.dev/ru/instrumenty/kategorii/konveryery-izobrazhenij*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/nl/hulpmiddelen/categorieen/afbeelding-converters/*",
+            "pattern": "www.gamebob.dev/ja/utilities/categories/image-converters*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/sv/verktyg/kategorier/bildkonverterare",
+            "pattern": "www.gamebob.dev/ko/utilities/categories/image-converters*",
             "zone_name": "gamebob.dev"
         },
         {
-            "pattern": "www.gamebob.dev/sv/verktyg/kategorier/bildkonverterare/*",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/pl/narzedzia/kategorie/konwertery-obrazow",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/pl/narzedzia/kategorie/konwertery-obrazow/*",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/id/utilitas/kategori/pengonversi-gambar",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/id/utilitas/kategori/pengonversi-gambar/*",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/tr/araclar/kategoriler/goruntu-donusturuculer",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/tr/araclar/kategoriler/goruntu-donusturuculer/*",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/ru/instrumenty/kategorii/konveryery-izobrazhenij",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/ru/instrumenty/kategorii/konveryery-izobrazhenij/*",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/ja/utilities/categories/image-converters",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/ja/utilities/categories/image-converters/*",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/ko/utilities/categories/image-converters",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/ko/utilities/categories/image-converters/*",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/zh/utilities/categories/image-converters",
-            "zone_name": "gamebob.dev"
-        },
-        {
-            "pattern": "www.gamebob.dev/zh/utilities/categories/image-converters/*",
+            "pattern": "www.gamebob.dev/zh/utilities/categories/image-converters*",
             "zone_name": "gamebob.dev"
         },
         {
