@@ -3,7 +3,7 @@ import { bibliography } from '../bibliography';
 import type { WebpToPdfLocaleContent } from '../entry';
 import type { ImageToPdfUI } from '../../../shared/image-to-pdf/ui';
 
-const slug = 'jpg-in-pdf-umwandeln';
+const slug = 'webp-in-pdf-umwandeln';
 const title = "WebP in PDF Umwandler";
 const description = "Wandeln Sie WebP-Bilder direkt im Browser in ein geordnetes PDF um. Wählen Sie Papierformat, Ausrichtung und Ränder ohne Upload.";
 

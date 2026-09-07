@@ -3,7 +3,7 @@ import { bibliography } from '../bibliography';
 import type { PngToPdfLocaleContent } from '../entry';
 import type { ImageToPdfUI } from '../../../shared/image-to-pdf/ui';
 
-const slug = 'jpg-naar-pdf-omzetten';
+const slug = 'png-naar-pdf-omzetten';
 const title = "PNG naar PDF Omzetter";
 const description = "Zet PNG-afbeeldingen in uw browser om naar een geordende PDF. Kies papierformaat, oriëntatie en marges zonder bestanden te uploaden.";
 

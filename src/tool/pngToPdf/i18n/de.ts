@@ -3,7 +3,7 @@ import { bibliography } from '../bibliography';
 import type { PngToPdfLocaleContent } from '../entry';
 import type { ImageToPdfUI } from '../../../shared/image-to-pdf/ui';
 
-const slug = 'jpg-in-pdf-umwandeln';
+const slug = 'png-in-pdf-umwandeln';
 const title = "PNG in PDF Umwandler";
 const description = "Wandeln Sie PNG-Bilder direkt im Browser in ein geordnetes PDF um. Wählen Sie Papierformat, Ausrichtung und Ränder ohne Upload.";
 

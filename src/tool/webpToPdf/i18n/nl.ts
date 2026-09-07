@@ -3,7 +3,7 @@ import { bibliography } from '../bibliography';
 import type { WebpToPdfLocaleContent } from '../entry';
 import type { ImageToPdfUI } from '../../../shared/image-to-pdf/ui';
 
-const slug = 'jpg-naar-pdf-omzetten';
+const slug = 'webp-naar-pdf-omzetten';
 const title = "WebP naar PDF Omzetter";
 const description = "Zet WebP-afbeeldingen in uw browser om naar een geordende PDF. Kies papierformaat, oriëntatie en marges zonder bestanden te uploaden.";
 
